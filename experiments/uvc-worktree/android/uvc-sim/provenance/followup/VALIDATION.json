@@ -1,0 +1,236 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-11-10T14:45:12.940036+00:00",
+  "baseline": "e189341cdf339be8bd6d72284dcec44bccfa7319",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "working_directory": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research",
+  "passed": true,
+  "commands": [
+    {
+      "name": "libyuv replay and integrity",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "android/uvc-sim/provenance/followup/libyuv/check_replay.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS replay, missing/tampered source rejection, semantic metadata checks and report consistency\n",
+      "stderr": ""
+    },
+    {
+      "name": "UAC replay and integrity",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "android/uvc-sim/provenance/followup/uac/check_replay.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: full offline replay; missing/tampered cache rejected; online tamper rejected; lock respected; altered result rejected; prior evidence unchanged\n",
+      "stderr": ""
+    },
+    {
+      "name": "video source replay",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "android/uvc-sim/provenance/followup/video-alternatives/inspect_sources.py",
+        "--existing-cache",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"source_inputs_verified\": 5,\n  \"custom_API_occurrences_outside_libyuv\": 2,\n  \"literal_custom_symbols_outside_vendor\": [\n    \"ABGRToRGB565\",\n    \"ABGRToYUY2\"\n  ],\n  \"official_archive_has_custom_APIs\": false,\n  \"native_build_executed\": false,\n  \"hardware_tested\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "video integrity",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "android/uvc-sim/provenance/followup/video-alternatives",
+        "-p",
+        "test_inspection.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_changed_cache_cannot_be_accepted_by_adjacent_receipt (test_inspection.IntegrityTests.test_changed_cache_cannot_be_accepted_by_adjacent_receipt) ... ok\ntest_changed_payload_rejected_by_tracked_pin (test_inspection.IntegrityTests.test_changed_payload_rejected_by_tracked_pin) ... ok\ntest_missing_offline_input_is_failure (test_inspection.IntegrityTests.test_missing_offline_input_is_failure) ... ok\ntest_missing_report_requires_explicit_generation (test_inspection.IntegrityTests.test_missing_report_requires_explicit_generation) ... ok\ntest_unsafe_archive_name_rejected_without_extraction (test_inspection.IntegrityTests.test_unsafe_archive_name_rejected_without_extraction) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.017s\n\nOK\n"
+    },
+    {
+      "name": "platform replay and integrity",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "android/uvc-sim/provenance/followup/platform-alternatives/check_integrity.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"passed\": true, \"checks\": 6, \"tracked_inputs_unchanged\": true}\n",
+      "stderr": ""
+    },
+    {
+      "name": "platform independently reconstructed cache replay",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "android/uvc-sim/provenance/followup/platform-alternatives/audit_platform.py",
+        "--offline",
+        "--cache",
+        "android\\uvc-sim\\build\\native-research\\platform-alternatives-rebuild"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"result\": \"pass\", \"inputs_verified\": 9, \"report_sha256\": \"c31c694408c70cc3d2222663888f7b570efce03cd56cfc76f71c11a6a78a38dd\"}\n",
+      "stderr": ""
+    }
+  ],
+  "delivery_files": [
+    {
+      "path": "GATE_REPORT.md",
+      "size": 10292,
+      "sha256": "dd9cf21283377fad7b978e2589d8da881278a4f101e30dc7799fc78e7619185e"
+    },
+    {
+      "path": "libyuv/check_replay.py",
+      "size": 3182,
+      "sha256": "cf6ec32f4d0c5e91ca7a4cbd2c46ecd9f864199d82e6c27d7bf04fb05b81fd10"
+    },
+    {
+      "path": "libyuv/inputs.json",
+      "size": 8527,
+      "sha256": "122197150fde4917e57b626b8e3a85a01d3c7fbd4d32f38b2e2c505f9ddb9dbe"
+    },
+    {
+      "path": "libyuv/README.md",
+      "size": 13241,
+      "sha256": "a606f68cfcdcba77f9b74ec541d80a62bca6c1371a7c9440b0b7782f3eb22be8"
+    },
+    {
+      "path": "libyuv/replay-checks.json",
+      "size": 8137,
+      "sha256": "5423c09f5a19e979151da529a726d101f6921b5929830552665489cfbdf5fcdb"
+    },
+    {
+      "path": "libyuv/report.json",
+      "size": 76290,
+      "sha256": "74660a491cd2e0192e56446a14e4fe6ef935189bbcb9e603724ef5059f1c8cbe"
+    },
+    {
+      "path": "libyuv/search-observations.json",
+      "size": 10034,
+      "sha256": "e20ee93148fadb8b061e520d529a6b2f99800a3c116a7bba3add2b53b8488ef3"
+    },
+    {
+      "path": "libyuv/units.json",
+      "size": 5678,
+      "sha256": "1383a63938976c3d049be8cd7496f2f2bd122cc200daa11f9b37c25001d6ab69"
+    },
+    {
+      "path": "libyuv/verify_sources.py",
+      "size": 15586,
+      "sha256": "6d9c3ccf033fd9d3f983a9eb17e40af9d64e8b53e4942b4326777cd31372995b"
+    },
+    {
+      "path": "platform-alternatives/audit_platform.py",
+      "size": 8084,
+      "sha256": "1a1691d6c17f7a5e9fb9ba235476b902e5c82cf0c45d8c7731e70f8aa9364dc5"
+    },
+    {
+      "path": "platform-alternatives/check_integrity.py",
+      "size": 3581,
+      "sha256": "80969e556bb4f816736f9d0c3c2f384005dc472486677d7ffd60033bf8d38b69"
+    },
+    {
+      "path": "platform-alternatives/INPUT_LOCK.json",
+      "size": 2937,
+      "sha256": "8fa8afa096dcd5aa2f9da82c911dea426afab71cece78886dd9c6f56782c600b"
+    },
+    {
+      "path": "platform-alternatives/integrity-checks.json",
+      "size": 1979,
+      "sha256": "1c986e915ec18b663f47f4589611b6587ac7dc4e3aeac9097566008554ae6526"
+    },
+    {
+      "path": "platform-alternatives/REPORT.md",
+      "size": 9373,
+      "sha256": "944186ccba3a340a6a6dec1dd471bb0296505f0dad754c56b5256bf3feb5c6dc"
+    },
+    {
+      "path": "platform-alternatives/static-evidence.json",
+      "size": 8220,
+      "sha256": "c31c694408c70cc3d2222663888f7b570efce03cd56cfc76f71c11a6a78a38dd"
+    },
+    {
+      "path": "uac/check_replay.py",
+      "size": 3485,
+      "sha256": "d802bf4dcb0ba7447bbbfcea48a3a74d878b2a535a681daa97d2fa504603bc77"
+    },
+    {
+      "path": "uac/collect_followup.py",
+      "size": 15267,
+      "sha256": "6bb4ecbd79f5a8186c5b66419a529a67e67c6d27f655300b359ba65b64d4695e"
+    },
+    {
+      "path": "uac/discovery-log.json",
+      "size": 5227,
+      "sha256": "feaf1162a7d00acacfa4c6c81b7dd24b47f434f820e100697216dd0ff1862431"
+    },
+    {
+      "path": "uac/evidence.json",
+      "size": 40893,
+      "sha256": "295a8aaf93c8b8d82eb548b657c1fb1c1e1cd8c27d84ce6b7e709b21f706dab7"
+    },
+    {
+      "path": "uac/REPORT.md",
+      "size": 17285,
+      "sha256": "c2de02391fadfd6b4a6937db3740fd008a67c30b286da19d94e68e71ac161af3"
+    },
+    {
+      "path": "uac/retrieval-index.json",
+      "size": 19426,
+      "sha256": "bbb969b9de5cef0b955ad1f3762e0b39d0d25c465f2b506b8aaf8751bc5f110b"
+    },
+    {
+      "path": "validate_followup.py",
+      "size": 3871,
+      "sha256": "b0dadd006cd4d84ddfc1a03cfb2bbb46acaf1fa9c1bebb2f71a3f0a5ae67eead"
+    },
+    {
+      "path": "video-alternatives/evidence.json",
+      "size": 285602,
+      "sha256": "63a7b439af6ef0a54f67b6eee45eea86a12d9ad2c753c622a83af746a026e5d6"
+    },
+    {
+      "path": "video-alternatives/inputs.lock.json",
+      "size": 1971,
+      "sha256": "2593f7926b9e8d311ed40ab24ce542178986a47315a4f73e2161faf3194bc563"
+    },
+    {
+      "path": "video-alternatives/inspect_sources.py",
+      "size": 11249,
+      "sha256": "b72c5407871cfc18d8b321ec37dcd4333f98b9b8de6edbf2d28bcfdb7c5c1119"
+    },
+    {
+      "path": "video-alternatives/README.md",
+      "size": 20111,
+      "sha256": "95c63618c0e0fc52fe085fe104de04d4fed7d2ab68523bed0c45de15e23ca909"
+    },
+    {
+      "path": "video-alternatives/test_inspection.py",
+      "size": 2755,
+      "sha256": "3581f1dc7e784ac8922abd3e44c237d013fd925a2bc6a95054e8c3d1face234e"
+    }
+  ],
+  "scope": "Static audit input/replay integrity only. No application, native build or hardware tests.",
+  "network_scope": "The libyuv integrity check re-fetches one missing fixed commit record into an isolated cache; other commands are offline.",
+  "manifest_scope": "Hashes describe this delivery before commit. Re-running checks may regenerate timestamp/path-bearing validation logs.",
+  "not_run": [
+    "upstream code execution",
+    "native compilation or loading",
+    "real device capture",
+    "application regression (runtime unchanged)",
+    "actual Gradle variant resolution"
+  ]
+}

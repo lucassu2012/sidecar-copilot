@@ -1,0 +1,495 @@
+{
+  "schema": 1,
+  "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+  "scope": "Fixed-source static facts and explicitly labelled engineering choices; no Android execution or OEM proof.",
+  "claims": [
+    {
+      "id": "usb-result-fill-in",
+      "kind": "source_fact",
+      "statement": "Immediate results and the SystemUI dialog pass device/grant extras in a new Intent to PendingIntent.send.",
+      "refs": [
+        {
+          "source_id": "UsbUserPermissionManager",
+          "start_line": 716,
+          "end_line": 743,
+          "contains": [
+            "Intent intent = new Intent();",
+            "pi.send(mContext, 0, intent);"
+          ]
+        },
+        {
+          "source_id": "UsbDialogHelper",
+          "start_line": 243,
+          "end_line": 255,
+          "contains": [
+            "intent.putExtra(UsbManager.EXTRA_PERMISSION_GRANTED, permissionGranted);",
+            "mPendingIntent.send(mContext, 0, intent);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "immutable-drops-fill-in",
+      "kind": "source_fact",
+      "statement": "PendingIntentRecord merges the supplied Intent only without FLAG_IMMUTABLE; an immutable PI loses these newly supplied result extras.",
+      "refs": [
+        {
+          "source_id": "PendingIntentRecord",
+          "start_line": 486,
+          "end_line": 503,
+          "contains": [
+            "if (!immutable) {",
+            "finalIntent.fillIn(intent, key.flags);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mutable-api-levels",
+      "kind": "source_fact",
+      "statement": "The API35 source documents default mutable through R and explicit mutability starting S; target U+ mutable implicit intents are restricted.",
+      "refs": [
+        {
+          "source_id": "PendingIntent",
+          "start_line": 268,
+          "end_line": 281,
+          "contains": [
+            "be mutable by default",
+            "public static final int FLAG_MUTABLE = 1<<25;"
+          ]
+        },
+        {
+          "source_id": "PendingIntent",
+          "start_line": 291,
+          "end_line": 304,
+          "contains": [
+            "implicit Intent within will throw an",
+            "FLAG_ALLOW_UNSAFE_IMPLICIT_INTENT"
+          ]
+        },
+        {
+          "source_id": "PendingIntent",
+          "start_line": 439,
+          "end_line": 458,
+          "contains": [
+            "PENDING_INTENT_EXPLICIT_MUTABILITY_REQUIRED"
+          ]
+        },
+        {
+          "source_id": "PendingIntent",
+          "start_line": 487,
+          "end_line": 492,
+          "contains": [
+            "(intent.getComponent() == null) && (intent.getPackage() == null)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intent-identity",
+      "kind": "source_fact",
+      "statement": "Intent.filterEquals compares action/data/type/identifier/package/component/categories, not extras. An extra-only nonce cannot separate PI identities.",
+      "refs": [
+        {
+          "source_id": "Intent",
+          "start_line": 11682,
+          "end_line": 11707,
+          "contains": [
+            "any extra data included in the intents",
+            "Objects.equals(this.mData, other.mData)",
+            "Objects.equals(this.mComponent, other.mComponent)"
+          ]
+        },
+        {
+          "source_id": "PendingIntent",
+          "start_line": 105,
+          "end_line": 130,
+          "contains": [
+            "filterEquals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "one-shot",
+      "kind": "source_fact",
+      "statement": "ONE_SHOT limits PI sends; local one-use correlation is still needed and does not revoke an Android USB grant.",
+      "refs": [
+        {
+          "source_id": "PendingIntent",
+          "start_line": 212,
+          "end_line": 221,
+          "contains": [
+            "only once",
+            "FLAG_ONE_SHOT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "base-routing-preserved",
+      "kind": "source_fact",
+      "statement": "No FILL_IN overrides preserves populated action/data and component; existing base extras win conflicts, so USB result extras must not be prefilled.",
+      "refs": [
+        {
+          "source_id": "Intent",
+          "start_line": 11535,
+          "end_line": 11549,
+          "contains": [
+            "(mAction == null || (flags&FILL_IN_ACTION) != 0)",
+            "(flags&FILL_IN_DATA) != 0"
+          ]
+        },
+        {
+          "source_id": "Intent",
+          "start_line": 11586,
+          "end_line": 11610,
+          "contains": [
+            "(flags&FILL_IN_COMPONENT) != 0",
+            "newb.putAll(mExtras);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pi-creator-identity",
+      "kind": "source_fact",
+      "statement": "AMS records app creator UID, validates package ownership and passes it to PendingIntentController.",
+      "refs": [
+        {
+          "source_id": "ActivityManagerService",
+          "start_line": 5521,
+          "end_line": 5537,
+          "contains": [
+            "Binder.getCallingUid()",
+            "capabilities and not the system"
+          ]
+        },
+        {
+          "source_id": "ActivityManagerService",
+          "start_line": 5613,
+          "end_line": 5635,
+          "contains": [
+            "owningUid",
+            "mPendingIntentController.getIntentSender"
+          ]
+        },
+        {
+          "source_id": "PendingIntentController",
+          "start_line": 199,
+          "end_line": 208,
+          "contains": [
+            "new PendingIntentRecord(this, key, callingUid)"
+          ]
+        },
+        {
+          "source_id": "PendingIntentRecord",
+          "start_line": 282,
+          "end_line": 289,
+          "contains": [
+            "uid = _u;"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pi-broadcast-identity",
+      "kind": "source_fact",
+      "statement": "Creator UID and actual sender UID remain separate; broadcast permission checks receive creator UID as callingUid.",
+      "refs": [
+        {
+          "source_id": "PendingIntentRecord",
+          "start_line": 657,
+          "end_line": 661,
+          "contains": [
+            "key.featureId, uid, callingUid, callingPid, finalIntent"
+          ]
+        },
+        {
+          "source_id": "ActivityManagerService",
+          "start_line": 16338,
+          "end_line": 16357,
+          "contains": [
+            "int realCallingUid, int realCallingPid",
+            "uid, realCallingUid, realCallingPid"
+          ]
+        },
+        {
+          "source_id": "ActivityManagerService",
+          "start_line": 16123,
+          "end_line": 16129,
+          "contains": [
+            "callingPid, callingUid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "private-manifest-receiver",
+      "kind": "source_fact",
+      "statement": "Manifest exported checks use callingUid and allow same-app access. An explicit app-created PI can target its own unexported receiver under these checks; other delivery policies are not completely proven.",
+      "refs": [
+        {
+          "source_id": "BroadcastSkipPolicy",
+          "start_line": 124,
+          "end_line": 129,
+          "contains": [
+            "r.callingPid, r.callingUid, info.activityInfo.applicationInfo.uid",
+            "info.activityInfo.exported"
+          ]
+        },
+        {
+          "source_id": "ActivityManager",
+          "start_line": 5133,
+          "end_line": 5136,
+          "contains": [
+            "UserHandle.isSameApp(uid, owningUid)",
+            "PackageManager.PERMISSION_GRANTED"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usb-detach-protected",
+      "kind": "source_fact",
+      "statement": "USB_DEVICE_DETACHED is protected. Ordinary non-system senders are rejected; the privileged allowlist is broader than UID1000.",
+      "refs": [
+        {
+          "source_id": "AndroidManifest",
+          "start_line": 306,
+          "end_line": 312,
+          "contains": [
+            "<protected-broadcast android:name=\"android.hardware.usb.action.USB_DEVICE_DETACHED\" />"
+          ]
+        },
+        {
+          "source_id": "ActivityManagerService",
+          "start_line": 15520,
+          "end_line": 15544,
+          "contains": [
+            "case SYSTEM_UID:",
+            "case PHONE_UID:",
+            "if (isProtectedBroadcast)",
+            "throw new SecurityException(msg);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usb-detach-send",
+      "kind": "source_fact",
+      "statement": "Host removal calls the permission manager, which clears temporary grants and broadcasts DETACHED with the device to all users.",
+      "refs": [
+        {
+          "source_id": "UsbHostManager",
+          "start_line": 488,
+          "end_line": 500,
+          "contains": [
+            "Called from JNI",
+            "mPermissionManager.usbDeviceRemoved(device);"
+          ]
+        },
+        {
+          "source_id": "UsbPermissionManager",
+          "start_line": 84,
+          "end_line": 100,
+          "contains": [
+            "removeDevicePermissions(device)",
+            "Intent.FLAG_RECEIVER_INCLUDE_BACKGROUND",
+            "mContext.sendBroadcastAsUser(intent, UserHandle.ALL);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usb-system-server-chain",
+      "kind": "source_fact",
+      "statement": "This reference starts UsbService in system_server with UID1000 and builds host/permission managers using its context.",
+      "refs": [
+        {
+          "source_id": "ZygoteInit",
+          "start_line": 661,
+          "end_line": 671,
+          "contains": [
+            "\"--setuid=1000\"",
+            "\"com.android.server.SystemServer\""
+          ]
+        },
+        {
+          "source_id": "SystemServer",
+          "start_line": 2326,
+          "end_line": 2332,
+          "contains": [
+            "mSystemServiceManager.startService(UsbService.Lifecycle.class);"
+          ]
+        },
+        {
+          "source_id": "UsbService",
+          "start_line": 104,
+          "end_line": 108,
+          "contains": [
+            "new UsbService(getContext())"
+          ]
+        },
+        {
+          "source_id": "UsbService",
+          "start_line": 185,
+          "end_line": 195,
+          "contains": [
+            "new UsbPermissionManager(context, this)",
+            "new UsbHostManager(context, mAlsaManager, mPermissionManager)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "private-dynamic-system-broadcast",
+      "kind": "source_fact",
+      "statement": "The unexported dynamic receiver permission check grants root/system access; reference system USB detach does not require exporting this receiver.",
+      "refs": [
+        {
+          "source_id": "BroadcastSkipPolicy",
+          "start_line": 601,
+          "end_line": 606,
+          "contains": [
+            "originalCallingUid",
+            "!filter.exported && checkComponentPermission"
+          ]
+        },
+        {
+          "source_id": "ActivityManager",
+          "start_line": 5109,
+          "end_line": 5112,
+          "contains": [
+            "Process.SYSTEM_UID"
+          ]
+        },
+        {
+          "source_id": "ActivityManager",
+          "start_line": 5123,
+          "end_line": 5127,
+          "contains": [
+            "canAccessUnexportedComponents(uid)",
+            "PackageManager.PERMISSION_GRANTED"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protected-filter-registration",
+      "kind": "source_fact",
+      "statement": "AMS checks whether every filter action is protected. Such filters are exempt from the explicit-export-state requirement; NOT_EXPORTED is still a narrow choice on API33+.",
+      "refs": [
+        {
+          "source_id": "ActivityManagerService",
+          "start_line": 14747,
+          "end_line": 14776,
+          "contains": [
+            "boolean onlyProtectedBroadcasts = true;",
+            "isProtectedBroadcast(action)"
+          ]
+        },
+        {
+          "source_id": "ActivityManagerService",
+          "start_line": 14823,
+          "end_line": 14843,
+          "contains": [
+            "if (!onlyProtectedBroadcasts)",
+            "else if ((flags & Context.RECEIVER_NOT_EXPORTED) == 0)",
+            "Dynamic receivers are exported by default for versions prior to T"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "typed-parcelable",
+      "kind": "source_fact",
+      "statement": "The old Intent Parcelable getter is deprecated from TIRAMISU in favor of the typed overload; the bridge branches on API33 and rejects wrong types.",
+      "refs": [
+        {
+          "source_id": "Intent",
+          "start_line": 9466,
+          "end_line": 9474,
+          "contains": [
+            "TIRAMISU",
+            "getParcelableExtra(String name)"
+          ]
+        },
+        {
+          "source_id": "Intent",
+          "start_line": 9484,
+          "end_line": 9490,
+          "contains": [
+            "getParcelableExtra(@Nullable String name, @NonNull Class<T> clazz)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "privacy-and-camera",
+      "kind": "source_fact",
+      "statement": "Reference USB permission checks include video camera privacy/CAMERA permission and audio microphone privacy; they explicitly do not require RECORD_AUDIO at this point and do not establish an audio route.",
+      "refs": [
+        {
+          "source_id": "UsbUserPermissionManager",
+          "start_line": 199,
+          "end_line": 220,
+          "contains": [
+            "isCameraPrivacyEnabled || !isCameraPermissionGranted",
+            "Only check for microphone privacy and not RECORD_AUDIO permission",
+            "Sensors.MICROPHONE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "false-not-user-denial",
+      "kind": "source_fact",
+      "statement": "Missing CAMERA permission can return false immediately without showing the USB dialog; false need not mean a user denial.",
+      "refs": [
+        {
+          "source_id": "UsbUserPermissionManager",
+          "start_line": 731,
+          "end_line": 743,
+          "contains": [
+            "If the app doesn't have camera permission do not request permission",
+            "intent.putExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "minimum-bridge-plan",
+      "kind": "engineering_recommendation",
+      "statement": "Engineering choice: API30 ONE_SHOT without IMMUTABLE; API31+ ONE_SHOT|MUTABLE; explicit own unexported receiver; unpredictable unique action/data; no FILL_IN overrides/result extras; one-use registry. Do not leak the PI. Same-UID code is not isolated.",
+      "refs": [
+        {
+          "source_id": "PendingIntentRecord",
+          "start_line": 486,
+          "end_line": 503,
+          "contains": [
+            "if (!immutable)"
+          ]
+        },
+        {
+          "source_id": "Intent",
+          "start_line": 11695,
+          "end_line": 11707,
+          "contains": [
+            "this.mAction",
+            "this.mData",
+            "this.mComponent"
+          ]
+        },
+        {
+          "source_id": "ActivityManager",
+          "start_line": 5133,
+          "end_line": 5136,
+          "contains": [
+            "UserHandle.isSameApp"
+          ]
+        }
+      ]
+    }
+  ]
+}

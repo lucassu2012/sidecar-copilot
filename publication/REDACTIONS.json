@@ -1,0 +1,348 @@
+{
+  "description": "Only publication copies were edited. Main app candidate source bytes are unchanged. Original local files remain untouched. Imported metadata public identities were recomputed with original identities retained.",
+  "files": [
+    {
+      "path": "android/uvc-contract/VALIDATION.md",
+      "original_sha256": "28b5e42a6baaad6889d9af0d494d15fd03dda899768d51255fb4cb060b0a0b48",
+      "published_sha256": "94ba81abaf8b5e7f65256d9272a95e0aeafd63959fdf8221c921c732c9b32cd8",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "android/uvc-integration/provenance/bridge/inputs-lock.json",
+      "original_sha256": "3e4b8d1a50f9a3653a49ca7eac23b4a9a5fd2f88245ae371a1500a68e854688a",
+      "published_sha256": "fa4f960f95a435f3b282b150593066240ded606c20034e34d823a244d3a0b41f",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "android/uvc-integration/provenance/source-manifest.json",
+      "original_sha256": "bddd8c4249a39d50d4f5da5fb658660f10803c78a6a87b531157687a195000b2",
+      "published_sha256": "2a977c3a78757d0b30ecb920d61c1725da3d5210cc906655f7f7311d6aef9265",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "android/uvc-sim/FRAME_ORDER_FIX.md",
+      "original_sha256": "ef6ad65b389f74e315e3ba6b705c82af159762895119c80ddcb543e7c5c75e35",
+      "published_sha256": "b54646c9ebe2dc1d4a252e3d6566a463e71b28c0555ea348dd0352cca93acc9e",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "android/uvc-sim/INTEGRATION.md",
+      "original_sha256": "a78f020772f3730c61128328435ee212738c225630ce09f2eac3bbf333a58e9a",
+      "published_sha256": "0562625c9686f0022b31e95a5e139021646bfa2d22b309059c5f94deedcaba46",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "android/uvc-sim/PREMERGE_REVIEW.md",
+      "original_sha256": "52286c44f2110e1257d7a100552554df5dc4e041eedc40712fdfc541a8846470",
+      "published_sha256": "36d87da1df7a438eba31b4809604383b1971542a0ca733673464f1dd3d68e914",
+      "reasons": [
+        "Local Windows account path anonymized",
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "android/uvc-sim/README.md",
+      "original_sha256": "d93d5bfa8224e1fc07052e48a5d708872ca7b79753e8a11d8164c78cd4636197",
+      "published_sha256": "62c8bbca3dc5db26c65c83990ecbc6354910606d094527e5c146ab18c74727de",
+      "reasons": [
+        "Local Windows account path anonymized",
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "android/uvc-sim/review-evidence/license-review.md",
+      "original_sha256": "85c5151d8a0823bd21a7e3dfa10bbb6b6c0c0788b5d755a7ddd0d019c3280ed1",
+      "published_sha256": "757ee1d06bec0236e44b2f82ba433d76959631acbaf3ec4d662bef5cd0bf89cf",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "docs/UI_PRIVACY.md",
+      "original_sha256": "a2ba3a1708754e20336a4c579217d4d49ce3761ff37b7bce527f9af742dd1b20",
+      "published_sha256": "4e4ddb3a7103dee3e5f185e6a298d9690b727fdacc94c88d1b2176d587571f54",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "docs/BASELINE.md",
+      "original_sha256": "40f0194b077bbe8a2b76ab5af2ccbce0309fb19ca8e19d431ab659132ff31640",
+      "published_sha256": "1a9488925cb3a6b81b610adf2a3754a01e17d4697cd81091ca1f1a113a8833c6",
+      "reasons": [
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/FRAME_ORDER_FIX.md",
+      "original_sha256": "d2bcde91fe4fbe397bfd2f26d732ca67e0298d22029285c9cbb184515c067242",
+      "published_sha256": "f828cf6179da5591773fc0d0d1424cc95cf7240bb866917d36174ebe4e49e1b7",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/PREMERGE_REVIEW.md",
+      "original_sha256": "fd8c77a8ff4629b7dc2e19828df6463f7c50d1a3e30584927ba16957c68b9cfb",
+      "published_sha256": "82e251dd75322cf731753f814f0a73bd4819aec19a7cea4be7e65f17ca2a85bc",
+      "reasons": [
+        "Local Windows account path anonymized",
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/README.md",
+      "original_sha256": "dac571d75b5309aa3a5f8d840da8dd997d740c26be0410bcdfbca259c7574e95",
+      "published_sha256": "6a5ca4e0d897a945b43a12f0bcb51e729769c8d0aa86488e8bd0f01cf9e3fb6e",
+      "reasons": [
+        "Local Windows account path anonymized",
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/android-bridge-experiment/inputs-lock.json",
+      "original_sha256": "3e4b8d1a50f9a3653a49ca7eac23b4a9a5fd2f88245ae371a1500a68e854688a",
+      "published_sha256": "fa4f960f95a435f3b282b150593066240ded606c20034e34d823a244d3a0b41f",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/android-bridge-experiment/validation.json",
+      "original_sha256": "ba3361b02c93d12fdbb5520097fbc79cc490c3dcf9267f431202b4f13371018f",
+      "published_sha256": "d52c7cddba69102542fef22f3624aa66b5b320e93ab7b225e5a9693def927501",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/contract-baseline/VALIDATION.md",
+      "original_sha256": "28b5e42a6baaad6889d9af0d494d15fd03dda899768d51255fb4cb060b0a0b48",
+      "published_sha256": "94ba81abaf8b5e7f65256d9272a95e0aeafd63959fdf8221c921c732c9b32cd8",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/contract-baseline/evidence/java-inputs.json",
+      "original_sha256": "196921c036e5e9e08ecaec7fc163324f6552c45aef7e9f9992e43a27710a63ba",
+      "published_sha256": "fd10a568ff4e08985a60f2b82b32868d534d63923e8ef26640ee396d9df15570",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/contract-baseline/evidence/java-receipt.json",
+      "original_sha256": "a4c13c892fa6873e8c270eb0ddef1768a4b28e1d0f0d72c93084695eb6f3ff36",
+      "published_sha256": "9c86d25ce08360782fd254ff3f26f1e62e40f8dc0ef4af0174b0d498c2769d74",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/contract-baseline/manifest.json",
+      "original_sha256": "54c68bbb4115f42a4ad5d6685b7f897cc33999ef403825651f5b883c9984189d",
+      "published_sha256": "02537ab0ac1f0e4f84b02e1229e2a8e0dab2baebefe2105422887af68c340b18",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/usb-owner-experiment/evidence/first-run.json",
+      "original_sha256": "f5935fff5bf544d6ff0f1cf2a198802153eeb10b7c3c05795c065e4d3e748037",
+      "published_sha256": "4f23e25634c4d7cdd6df7634267da6def9a8936088bb380139c42726f8445193",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/usb-owner-experiment/validation.json",
+      "original_sha256": "86db865c786a05e7f59f5120b2955eee6f3b7bc2bdc9c0de48c19e3d251cb718",
+      "published_sha256": "8863ea2c62fa3e6ea7084109a946ce15da55d6873c9a97107200e13181a60115",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/native-experiment/validation.json",
+      "original_sha256": "ff074d48cfa78c3ee4bf07c01894812d02b8dc20e22fcfa9629243450091106a",
+      "published_sha256": "bbf83d4becaeec17c490f9dc6ec29f4d339c7a568e28d0d403cdcc76fdb2801b",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/protocol-research/README.md",
+      "original_sha256": "5883e5a995e5d9bfb52b137cf57084e707257b6835be4c404ca8455185d387b7",
+      "published_sha256": "89f65a47f23b3da312919cba1e5fc59bb6ef2e78174a9e0387ce31a1e4da1080",
+      "reasons": [
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/GATE_REPORT.md",
+      "original_sha256": "4b4cce25241d813ebd32ba9f3cefe98a2ee8859ceb4be6aec23cbf76d4a94270",
+      "published_sha256": "9fd16b84b9588982cb41cb4678397a89e59a763b4c619b140e6a75810488726d",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/feasibility/REPORT.md",
+      "original_sha256": "97c57b9e94992cc8f640f9a721ea901f37700dd03eaf53f33980d3e8a5088a53",
+      "published_sha256": "a228305d3acdc9cfa28e40394f013efee35a5b521bc90edfb408bb33f43fbd3d",
+      "reasons": [
+        "Local Windows account path anonymized",
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/feasibility/VALIDATION.json",
+      "original_sha256": "2707c39fef6d0fa60f8cc347d348892e821ecf1fc7089576b5168ccf752800dd",
+      "published_sha256": "a2bed642b93f2632545ecb1a761cd7b54614564726758f78f24c3d413d58fc49",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/feasibility/audio-gap/scenario-contract.json",
+      "original_sha256": "13357c7a26be0a9a4ebea1dfcf0e802fa06adb6cd8972194c783b657f9e66ede",
+      "published_sha256": "167417d46d563ac5dbb8f7463db4ba68662e90ed531af8b63a3b94042f45f1f9",
+      "reasons": [
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/feasibility/capabilities/REPORT.md",
+      "original_sha256": "7274496adfb92d6a33d56d340092b5e14f7c611a2f82cad3c32328a7aebf1d02",
+      "published_sha256": "e33bde597359277da9547d578667cf28cd32a2c47f14fb1f73880a37c98509c8",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/feasibility/synthetic/README.md",
+      "original_sha256": "77618c02f491c7ee9548cbcbb535d0894696c2d206c0d0b2edcbfa318ea4f729",
+      "published_sha256": "d53fa64a7f487e7501a9dfbbd1f392cfac5c341b24ba4269d0addf58df761499",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/followup/GATE_REPORT.md",
+      "original_sha256": "dd9cf21283377fad7b978e2589d8da881278a4f101e30dc7799fc78e7619185e",
+      "published_sha256": "d3a23e1d17e50d293c02bfe7a7e632b3228cba8db7c7ef366e0f4d45f7ac3277",
+      "reasons": [
+        "Local Windows account path anonymized",
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/followup/VALIDATION.json",
+      "original_sha256": "cbffab4b8c274040799630b7de8566e076364c5ea34de967328231a9e6773e77",
+      "published_sha256": "9dd3405ad13302e5cbe6eabd51e794cf0d48183ef89fec6582ca49ae40725ad7",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/followup/libyuv/replay-checks.json",
+      "original_sha256": "5423c09f5a19e979151da529a726d101f6921b5929830552665489cfbdf5fcdb",
+      "published_sha256": "d82311a0853ce832b8dcb8018f82483d93b56dcdd37371927a18b2a4e44d2876",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/followup/video-alternatives/README.md",
+      "original_sha256": "95c63618c0e0fc52fe085fe104de04d4fed7d2ab68523bed0c45de15e23ca909",
+      "published_sha256": "ed78f00d47491126c63c56741646a544f86e99c8e6a8aaa9f9f26a52644545f0",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/hutool/README.md",
+      "original_sha256": "3562e439c2581c79e6c67b51f784804813a5dac958d4ac1681aad04fd12609dc",
+      "published_sha256": "4c538ae58a6cdeee7f681491c73f3e186b1c3fde0c6e25f765f28033686dc935",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/libyuv/integrity-checks.json",
+      "original_sha256": "510199093668eb0899009e4db197ac7281bb5721fa8ad467e45aba93c1b127b0",
+      "published_sha256": "80fcdfae672c0c47a79b18e938d30068f43bea6e40db1012bc19302b19def197",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/libyuv/metadata-rebuild-checks.json",
+      "original_sha256": "dbc27a18441c3e62e435774d0376b5a95d889b27480503e590107f25f16f7251",
+      "published_sha256": "f605e420b8b679cac01afad68f59ff3ce92559773144627ee52ef784877427e1",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/replay-results.json",
+      "original_sha256": "5416a8081aa252a63335dbddbb981f09cf2de11f5240678542d660e00b0375c1",
+      "published_sha256": "484467458c16d0319878c79579c324289491f45590c8ad79bcdf1c2dd7dc0d49",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/routes/REPORT.md",
+      "original_sha256": "6135214d41e1993b97c39d1a9f159d2a9e9e0efa07d6da6b9830fc6344cfb8d0",
+      "published_sha256": "d3606e7e645c1cb2419c0589848f80f211b5dccdd0eab5ff02e4ef48e786aa31",
+      "reasons": [
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/review-evidence/license-review.md",
+      "original_sha256": "f3110012755a0b94ff9cc9445f1b1aca4de8c19a710037906c6befd175fb0023",
+      "published_sha256": "3ee06f1d8cdf60944bd7ee073f3420d8047735771e75d9ed9b51a6f4c3262653",
+      "reasons": [
+        "Local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "experiments/uvc-slice/README.md",
+      "original_sha256": "6ad9a156fb211e59ece61d562fc0b7f1ff938335c521c497603bfc531f776d6f",
+      "published_sha256": "f2f0b457a5ed4927d5f4893ab9b1183f824d7ac5b67e0ead3b672878f6b79298",
+      "reasons": [
+        "Local Windows account path anonymized",
+        "Private artifact identifiers omitted"
+      ]
+    },
+    {
+      "path": "experiments/uvc-worktree/android/uvc-sim/provenance/replay-results.json",
+      "original_sha256": "484467458c16d0319878c79579c324289491f45590c8ad79bcdf1c2dd7dc0d49",
+      "published_sha256": "df7cb4273d1d1ede9bb919a5a2a124b17fcbfed91b7ea3e7fd6647193bcd8a34",
+      "reasons": [
+        "Nested JSON local Windows account path anonymized"
+      ]
+    },
+    {
+      "path": "android/uvc-integration/.gitattributes",
+      "original_sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+      "published_sha256": "22106984a6c1274ead5c283789ca11d75b303658949aaa627698747e7b2d6160",
+      "reasons": [
+        "Disable Git line-ending conversion in the public copy to preserve audited source and provenance byte hashes"
+      ]
+    }
+  ]
+}

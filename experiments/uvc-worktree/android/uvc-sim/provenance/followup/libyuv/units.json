@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "units": [
+    {
+      "path": "source/convert_argb.cc",
+      "kind": "function",
+      "name": "YUY2ToABGR",
+      "upstream_name": "YUY2ToARGB"
+    },
+    {
+      "path": "source/convert_from_argb.cc",
+      "kind": "function",
+      "name": "ABGRToYUY2",
+      "upstream_name": "ARGBToYUY2"
+    },
+    {
+      "path": "source/convert_from_argb.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565",
+      "upstream_name": "ARGBToRGB565"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "struct",
+      "name": "ABGRBuffers",
+      "upstream_name": "ARGBBuffers"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI420ToABGR",
+      "upstream_name": "JpegI420ToARGB"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI422ToABGR",
+      "upstream_name": "JpegI422ToARGB"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI444ToABGR",
+      "upstream_name": "JpegI444ToARGB"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI400ToABGR",
+      "upstream_name": "JpegI400ToARGB"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "MJPGToABGR",
+      "upstream_name": "MJPGToARGB"
+    },
+    {
+      "path": "source/row_common.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565Row_C",
+      "upstream_name": "ARGBToRGB565Row_C"
+    },
+    {
+      "path": "source/row_common.cc",
+      "kind": "function",
+      "name": "YUY2ToABGRRow_C",
+      "upstream_name": "YUY2ToARGBRow_C"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "function",
+      "name": "YUY2ToABGRRow_NEON",
+      "upstream_name": "YUY2ToARGBRow_NEON"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565Row_NEON",
+      "upstream_name": "ARGBToRGB565Row_NEON"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "YUVTOBGR",
+      "upstream_name": "YUVTORGB"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "BGRTOBGR8",
+      "upstream_name": "RGBTORGB8"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "ABGRTORGB565",
+      "upstream_name": "ARGBTORGB565"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "function",
+      "name": "YUY2ToABGRRow_NEON",
+      "upstream_name": "YUY2ToARGBRow_NEON"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565Row_NEON",
+      "upstream_name": "ARGBToRGB565Row_NEON"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "macro",
+      "name": "YUVTOBGR",
+      "upstream_name": "YUVTORGB"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "macro",
+      "name": "BGRTOBGR8",
+      "upstream_name": "RGBTORGB8"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "macro",
+      "name": "ABGRTORGB565",
+      "upstream_name": "ARGBTORGB565"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "STOREABGR",
+      "upstream_name": "STORERGBA"
+    },
+    {
+      "path": "source/row_any.cc",
+      "kind": "wrapper",
+      "name": "ABGRToRGB565Row_Any_NEON",
+      "upstream_name": "ARGBToRGB565Row_Any_NEON"
+    },
+    {
+      "path": "source/row_any.cc",
+      "kind": "wrapper",
+      "name": "YUY2ToABGRRow_Any_NEON",
+      "upstream_name": "YUY2ToARGBRow_Any_NEON"
+    },
+    {
+      "path": "include/libyuv/convert_argb.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGR",
+      "upstream_name": "YUY2ToARGB"
+    },
+    {
+      "path": "include/libyuv/convert_argb.h",
+      "kind": "declaration",
+      "name": "MJPGToABGR",
+      "upstream_name": "MJPGToARGB"
+    },
+    {
+      "path": "include/libyuv/convert_from_argb.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565",
+      "upstream_name": "ARGBToRGB565"
+    },
+    {
+      "path": "include/libyuv/convert_from_argb.h",
+      "kind": "declaration",
+      "name": "ABGRToYUY2",
+      "upstream_name": "ARGBToYUY2"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGRRow_NEON",
+      "upstream_name": "YUY2ToARGBRow_NEON"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565Row_NEON",
+      "upstream_name": "ARGBToRGB565Row_NEON"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565Row_C",
+      "upstream_name": "ARGBToRGB565Row_C"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGRRow_C",
+      "upstream_name": "YUY2ToARGBRow_C"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565Row_Any_NEON",
+      "upstream_name": "ARGBToRGB565Row_Any_NEON"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGRRow_Any_NEON",
+      "upstream_name": "YUY2ToARGBRow_Any_NEON"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "macro",
+      "name": "HAS_ABGRTORGB24ROW_NEON",
+      "upstream_name": "HAS_ARGBTORGB24ROW_NEON"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "macro",
+      "name": "HAS_ABGRTORGB565ROW_NEON",
+      "upstream_name": "HAS_ARGBTORGB565ROW_NEON"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "macro",
+      "name": "HAS_YUY2TOABGRROW_NEON",
+      "upstream_name": "HAS_YUY2TOARGBROW_NEON"
+    }
+  ]
+}

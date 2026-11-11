@@ -1,0 +1,293 @@
+{
+  "schema": 1,
+  "scope": "Self-authored controlled Windows host native ownership experiment only",
+  "started_utc": "2026-11-10T17:55:08.399869+00:00",
+  "ended_utc": "2026-11-10T17:55:21.243073+00:00",
+  "pass": true,
+  "failure": null,
+  "results": [
+    {
+      "name": "asan_smoke_positive",
+      "pass": true,
+      "category": "detector_smoke"
+    },
+    {
+      "name": "asan_smoke_negative",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "callback_before_submit_return",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "terminal_before_cancel_return",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "cancel_not_found",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "submit_busy",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "control_outer_timeout",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "status_resubmit_stop",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "missing_callback",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "late_open",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 288,
+        "cleared_bytes": 288
+      }
+    },
+    {
+      "name": "status_resubmit_admitted",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 4,
+        "destroyed": 4,
+        "live_bytes": 0,
+        "peak_bytes": 704,
+        "cleared_bytes": 704
+      }
+    },
+    {
+      "name": "fd_zero",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 2,
+        "destroyed": 2,
+        "live_bytes": 0,
+        "peak_bytes": 192,
+        "cleared_bytes": 192
+      }
+    },
+    {
+      "name": "app_buffer_stop",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 921792,
+        "cleared_bytes": 921792
+      }
+    },
+    {
+      "name": "stale_binding",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 2,
+        "destroyed": 2,
+        "live_bytes": 0,
+        "peak_bytes": 192,
+        "cleared_bytes": 192
+      }
+    },
+    {
+      "name": "byte_budget",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 921792,
+        "cleared_bytes": 921792
+      }
+    },
+    {
+      "name": "negative_fd",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 2,
+        "destroyed": 2,
+        "live_bytes": 0,
+        "peak_bytes": 192,
+        "cleared_bytes": 192
+      }
+    },
+    {
+      "name": "binding_entrypoints",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 5,
+        "destroyed": 5,
+        "live_bytes": 0,
+        "peak_bytes": 640,
+        "cleared_bytes": 640
+      }
+    },
+    {
+      "name": "stopping_borrow_admission",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 3,
+        "destroyed": 3,
+        "live_bytes": 0,
+        "peak_bytes": 448,
+        "cleared_bytes": 448
+      }
+    },
+    {
+      "name": "concurrent_close",
+      "pass": true,
+      "category": "correct_policy",
+      "memory": {
+        "allocated": 2,
+        "destroyed": 2,
+        "live_bytes": 0,
+        "peak_bytes": 192,
+        "cleared_bytes": 192
+      }
+    },
+    {
+      "name": "callback_before_submit_return",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "terminal_before_cancel_return",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "cancel_not_found",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "submit_busy",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "control_outer_timeout",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "status_resubmit_stop",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "missing_callback",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "late_open",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "status_resubmit_admitted",
+      "pass": true,
+      "category": "expected_asan_failure"
+    },
+    {
+      "name": "fd_zero",
+      "pass": true,
+      "category": "expected_invariant_failure"
+    },
+    {
+      "name": "app_buffer_stop",
+      "pass": true,
+      "category": "expected_invariant_failure"
+    },
+    {
+      "name": "stale_binding",
+      "pass": true,
+      "category": "expected_invariant_failure"
+    }
+  ],
+  "not_executed": [
+    "TSan",
+    "LeakSanitizer",
+    "upstream libusb/libuvc compilation",
+    "JNI",
+    "Android ABI",
+    "USB/ADB/emulator/device",
+    "physical acquisition or PRD gate acceptance"
+  ]
+}

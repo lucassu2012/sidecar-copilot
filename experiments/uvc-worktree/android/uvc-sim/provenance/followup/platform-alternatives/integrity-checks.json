@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "exit_code": 0,
+      "expected_diagnostic": null,
+      "passed": true,
+      "scenario": "offline",
+      "stderr": "",
+      "stdout": "{\"result\": \"pass\", \"inputs_verified\": 9, \"report_sha256\": \"c31c694408c70cc3d2222663888f7b570efce03cd56cfc76f71c11a6a78a38dd\"}"
+    },
+    {
+      "exit_code": 1,
+      "expected_diagnostic": "missing locked input",
+      "passed": true,
+      "scenario": "missing",
+      "stderr": "FileNotFoundError: missing locked input: <isolated-validation-cache>\\missing\\cache\\external-device.raw",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "expected_diagnostic": "input integrity mismatch",
+      "passed": true,
+      "scenario": "tamper",
+      "stderr": "ValueError: input integrity mismatch: external-device",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "expected_diagnostic": "replay differs from tracked report",
+      "passed": true,
+      "scenario": "report",
+      "stderr": "ValueError: replay differs from tracked report",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "expected_diagnostic": "missing tracked report",
+      "passed": true,
+      "scenario": "missing-report",
+      "stderr": "FileNotFoundError: missing tracked report; use --write-report only for explicit regeneration",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "expected_diagnostic": "bootstrap refuses",
+      "passed": true,
+      "scenario": "bootstrap",
+      "stderr": "ValueError: bootstrap refuses to overwrite existing input lock",
+      "stdout": ""
+    }
+  ],
+  "passed": true,
+  "python": "3.14.2",
+  "schema": 1,
+  "script_sha256": "1a1691d6c17f7a5e9fb9ba235476b902e5c82cf0c45d8c7731e70f8aa9364dc5",
+  "tracked_hashes": {
+    "INPUT_LOCK.json": "8fa8afa096dcd5aa2f9da82c911dea426afab71cece78886dd9c6f56782c600b",
+    "static-evidence.json": "c31c694408c70cc3d2222663888f7b570efce03cd56cfc76f71c11a6a78a38dd"
+  },
+  "tracked_inputs_unchanged": true
+}

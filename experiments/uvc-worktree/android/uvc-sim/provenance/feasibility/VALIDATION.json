@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-11-10T15:08:17.679389+00:00",
+  "baseline": "c1afb3f61fa309bde0437fa2019c352ddc1792ba",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "passed": true,
+  "commands": [
+    {
+      "name": "fixed source and dependency inventory",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-O",
+        "android/uvc-sim/provenance/feasibility/capabilities/inventory.py",
+        "--source-cache",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"verified_inputs\": 8,\n  \"java_candidates\": 12,\n  \"whole_source_pom_union\": 117,\n  \"annotation_pom_union\": 5,\n  \"native_components\": 6,\n  \"mode\": \"static-only\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "inventory integrity",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "android/uvc-sim/provenance/feasibility/capabilities",
+        "-p",
+        "test_inventory.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_archive_traversal_fails_without_extraction (test_inventory.InventoryChecks.test_archive_traversal_fails_without_extraction) ... ok\ntest_changed_input_fails_against_tracked_hash (test_inventory.InventoryChecks.test_changed_input_fails_against_tracked_hash) ... ok\ntest_comments_and_strings_do_not_pull_unrelated_java (test_inventory.InventoryChecks.test_comments_and_strings_do_not_pull_unrelated_java) ... ok\ntest_missing_reports_cannot_be_success (test_inventory.InventoryChecks.test_missing_reports_cannot_be_success) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.016s\n\nOK\n"
+    },
+    {
+      "name": "scalar pixel contract and fixed source replay",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "android/uvc-sim/provenance/feasibility/synthetic/pixel_contracts.py",
+        "--cache",
+        "android\\uvc-sim\\build\\feasibility\\synthetic\\fresh-files"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"checks_passed\": 48, \"patterns\": 10, \"results_sha256\": \"4ed2d78d6870a656f180d8e04c212007c47288515d0d91432de4e764c94478e1\", \"stored_results_match\": true, \"native_executed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "name": "scalar experiment integrity and negative controls",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "android/uvc-sim/provenance/feasibility/synthetic",
+        "-p",
+        "test_replay.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_corrupt_first_cache_fails_even_if_fallback_is_good (test_replay.ReplayIntegrity.test_corrupt_first_cache_fails_even_if_fallback_is_good) ... ok\ntest_empty_cache_fetch_checks_lock_then_replays_offline (test_replay.ReplayIntegrity.test_empty_cache_fetch_checks_lock_then_replays_offline) ... ok\ntest_gitiles_text_locks_decoded_bytes_and_records_raw_transport (test_replay.ReplayIntegrity.test_gitiles_text_locks_decoded_bytes_and_records_raw_transport) ... ok\ntest_hardcoded_oracle_catches_preserving_rgbx_alpha (test_replay.ReplayIntegrity.test_hardcoded_oracle_catches_preserving_rgbx_alpha) ... ok\ntest_hardcoded_oracle_catches_wrong_red_blue_shuffle (test_replay.ReplayIntegrity.test_hardcoded_oracle_catches_wrong_red_blue_shuffle) ... ok\ntest_hardcoded_oracle_catches_wrong_yuy2_rounding_branch (test_replay.ReplayIntegrity.test_hardcoded_oracle_catches_wrong_yuy2_rounding_branch) ... ok\ntest_missing_offline_fails_without_network (test_replay.ReplayIntegrity.test_missing_offline_fails_without_network) ... ok\ntest_recorded_numerical_report_matches_reexecution (test_replay.ReplayIntegrity.test_recorded_numerical_report_matches_reexecution) ... ok\ntest_same_size_byte_flip_fails_hash (test_replay.ReplayIntegrity.test_same_size_byte_flip_fails_hash) ... ok\ntest_wrong_download_never_becomes_cache (test_replay.ReplayIntegrity.test_wrong_download_never_becomes_cache) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.036s\n\nOK\n"
+    },
+    {
+      "name": "owned JVM bridge and worker-failure control",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-B",
+        "android/uvc-sim/provenance/feasibility/bridge/run_experiment.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"passed\": true, \"outcome\": {\"passed\": true, \"scenarios\": 4, \"checks\": 42, \"native_code_executed\": false, \"hardware_tested\": false}, \"results_sha256\": \"950caabebd0d180fa71f7ffa2110425674d6ea0e8ec6a84b8a4f4735de1ca6ca\"}\n",
+      "stderr": ""
+    }
+  ],
+  "audio_plan_structure": {
+    "structure_valid": true,
+    "scenarios": 11,
+    "declared_predicates": 17,
+    "predicate_references_checked": 47,
+    "scenarios_executed": 0,
+    "sha256": "13357c7a26be0a9a4ebea1dfcf0e802fa06adb6cd8972194c783b657f9e66ede"
+  },
+  "delivery_files": [
+    {
+      "path": "audio-gap/REPORT.md",
+      "bytes": 7181,
+      "sha256": "a70d752dbfb109973fb6835adb0c0d02bed6816919a7ff0bf61b253e59d7a54c"
+    },
+    {
+      "path": "audio-gap/scenario-contract.json",
+      "bytes": 20928,
+      "sha256": "13357c7a26be0a9a4ebea1dfcf0e802fa06adb6cd8972194c783b657f9e66ede"
+    },
+    {
+      "path": "bridge/PixelBridgeExperiment.java",
+      "bytes": 10199,
+      "sha256": "f35e3c3420bddc75590158027747080ef6fe88327f26eaf5f77b994a306eec7c"
+    },
+    {
+      "path": "bridge/README.md",
+      "bytes": 5794,
+      "sha256": "1ab3abc913e0965bb8788d975666c5c14d7c33b0609939d52671ca033ef60b53"
+    },
+    {
+      "path": "bridge/results.json",
+      "bytes": 5315,
+      "sha256": "950caabebd0d180fa71f7ffa2110425674d6ea0e8ec6a84b8a4f4735de1ca6ca"
+    },
+    {
+      "path": "bridge/run_experiment.py",
+      "bytes": 5788,
+      "sha256": "2f6b2de60fede8e07e55eacc4bfd6e41f8e9c0fcfb127ba3c7301346776b814a"
+    },
+    {
+      "path": "capabilities/capabilities.json",
+      "bytes": 825820,
+      "sha256": "3f281782d2977caf9cec824407939d624e612cb0d45898dd4fb8af58c1fe44bc"
+    },
+    {
+      "path": "capabilities/DECLARED_DEPENDENCIES.md",
+      "bytes": 42412,
+      "sha256": "09e6483337dc9e09b30f6dc003e5493b655dbfdb6867889f520271cab1fd923f"
+    },
+    {
+      "path": "capabilities/inputs.lock.json",
+      "bytes": 2353,
+      "sha256": "308cc06ce873f31e523d612676002526542e485c584b8e98b3c489bec9b4c361"
+    },
+    {
+      "path": "capabilities/inventory.py",
+      "bytes": 13186,
+      "sha256": "f7e977d734bda53b0fe5c5e88c000fe591bdcc77897904deb0438d0ff1764fa8"
+    },
+    {
+      "path": "capabilities/JAVA_CANDIDATES.md",
+      "bytes": 4160,
+      "sha256": "6d8b07eb6d732a043fc1a1e0fcf81d5393da9798e5096e97f32ecd8ccddb2964"
+    },
+    {
+      "path": "capabilities/NATIVE_SOURCES.md",
+      "bytes": 1946,
+      "sha256": "a11d195bee3039cf0b0a35bfdab7e84af8379e92ad56aac8ef9bdebfcc609eab"
+    },
+    {
+      "path": "capabilities/REPORT.md",
+      "bytes": 24580,
+      "sha256": "7274496adfb92d6a33d56d340092b5e14f7c611a2f82cad3c32328a7aebf1d02"
+    },
+    {
+      "path": "capabilities/test_inventory.py",
+      "bytes": 2290,
+      "sha256": "3274218ce1cc893b2ec1f71c9fa988c0b34b6dbdb8e52b0eabf3148ac3769cd6"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 11689,
+      "sha256": "97c57b9e94992cc8f640f9a721ea901f37700dd03eaf53f33980d3e8a5088a53"
+    },
+    {
+      "path": "synthetic/inputs.lock.json",
+      "bytes": 4275,
+      "sha256": "429e34d03abea5473e6ff6d4304e3e7d04c9fb49104629b38a53aa10391386ff"
+    },
+    {
+      "path": "synthetic/pixel_contracts.py",
+      "bytes": 24755,
+      "sha256": "47d54ab890a5386ef89069e10d2e8a8514d5c243b0cd6b701251156fb3d07fcb"
+    },
+    {
+      "path": "synthetic/README.md",
+      "bytes": 14412,
+      "sha256": "77618c02f491c7ee9548cbcbb535d0894696c2d206c0d0b2edcbfa318ea4f729"
+    },
+    {
+      "path": "synthetic/results.json",
+      "bytes": 17646,
+      "sha256": "4ed2d78d6870a656f180d8e04c212007c47288515d0d91432de4e764c94478e1"
+    },
+    {
+      "path": "synthetic/test_replay.py",
+      "bytes": 5139,
+      "sha256": "9e500c54120189c498999422d87afadfca2a5ee8856ec73cc7dff5e103e4d605"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 5026,
+      "sha256": "a5b7041ee4d4e37885fa1773e3b3fb44e76370271fab7c1af2d3631c4d86271e"
+    }
+  ],
+  "scope": "Fixed static input replay, project-owned scalar/JVM experiments, and unexecuted audio-plan structure only.",
+  "network_used_by_this_runner": false,
+  "native_upstream_code_executed": false,
+  "devices_accessed": false,
+  "application_dependencies_changed": false,
+  "not_established": [
+    "official libyuv binary behavior",
+    "UVC or UAC driver operation",
+    "production memory or performance",
+    "audio scenario execution",
+    "device support or PRD phase exit",
+    "native distribution clearance"
+  ],
+  "post_run_documentation_review": {
+    "updated_at_utc": "2026-11-10T15:11:46.322361+00:00",
+    "files": [
+      "capabilities/REPORT.md",
+      "synthetic/README.md"
+    ],
+    "reason": "Clarify libyuv is optional when conversion is needed and preserve existing source/license gates without adding an approval flow; no code or numerical outputs changed."
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "kind": "documentation_verification_boundary_not_runtime_state",
+  "baseline_commit": "3dbbcb17f26816689d4b51b714996d937b9f4acd",
+  "document": "android/uvc-sim/interface-contract/DEVICE_PREREQUISITES.md",
+  "current_review": {
+    "method": "Read inherited evidence and define interface/device prerequisites only",
+    "model_rerun": false,
+    "native_or_jni_executed": false,
+    "device_accessed": false,
+    "network_accessed": false,
+    "production_modified": false,
+    "new_prd_features_states_or_test_numbers": false,
+    "current_evidence_level": "candidate_plan_and_original_model",
+    "real_driver_completion_established": false,
+    "public_contract_owner": "main_integration"
+  },
+  "recorded_inputs": [
+    {
+      "path": "android/uvc-sim/protocol-research/validation.json",
+      "bytes": 277901,
+      "sha256": "a51f4b7ddb6c18fb82ce272862a60c14c007c6e1486e28d498c4114437d91b4a"
+    },
+    {
+      "path": "android/uvc-sim/protocol-research/EXPLORATION.md",
+      "bytes": 12350,
+      "sha256": "3a7018a3c3582815d4feec073d80509c5f1ae572061624f9d36e620b6030a624"
+    },
+    {
+      "path": "android/uvc-sim/protocol-research/API.md",
+      "bytes": 15553,
+      "sha256": "3df5939d8ab883b80401548ea8c9e51237cecb9143e76302ed6dc50409056368"
+    },
+    {
+      "path": "android/uvc-sim/protocol-research/SCENARIOS.md",
+      "bytes": 13506,
+      "sha256": "0a1484f08a8ae2237ae2ed07133d22e18f78c7447fb897a870a21cf2130f7b37"
+    },
+    {
+      "path": "android/uvc-sim/protocol-research/README.md",
+      "bytes": 8227,
+      "sha256": "5883e5a995e5d9bfb52b137cf57084e707257b6835be4c404ca8455185d387b7"
+    }
+  ],
+  "inherited_record": {
+    "path": "android/uvc-sim/protocol-research/validation.json",
+    "baseline_commit": "c8874f6f39dddcd39a63289787fc3ba7a42b2cad",
+    "observed_at_utc": "2026-11-10T16:04:13.411938+00:00",
+    "results_origin": "previous_record_not_executed_this_round",
+    "unittest_selector": "/results/0/stdout",
+    "exploration_selector": "/results/1/exploration",
+    "native_driver_tests_executed": 0,
+    "device_accessed": false,
+    "model_sha256": "3b94a901bbc01d994c72773e2b4f9f067fd1411842b3a7cd5da35b955b1461f8",
+    "explorer_sha256": "06eff4a6e4ef911e8666920f3fbc3d7b3b613c812e784835db40429828c840b0"
+  },
+  "model_counts": {
+    "unittest": {
+      "total": 38,
+      "normal_methods": 27,
+      "model_fault_methods": 4,
+      "oracle_mutation_methods": 7,
+      "stdout_marker": "PROTOCOL_TESTS=38 MODEL_NEGATIVE_CONTROLS=4 ORACLE_MUTATION_CHECKS=7 RESULT=PASS",
+      "counts_subtests_separately": false
+    },
+    "bounds": {
+      "cancel_results_per_cycle": 1,
+      "depth": 12,
+      "initial_transfers_per_session": 2,
+      "main_sessions": 1,
+      "max_status_submissions": 2,
+      "states_per_run": 4000,
+      "timeouts_per_control_cycle": 1
+    },
+    "positive_runs": [
+      {
+        "scenario": "status+async_control",
+        "visited_nodes": 4000,
+        "expanded_nodes": 4000,
+        "attempted_edges": 27644,
+        "accepted_edges": 27644,
+        "duplicate_edges": 17112,
+        "native_closed_nodes": 0,
+        "pending_nodes": 3991,
+        "open_quiescent_nodes": 9,
+        "state_cap_blocked_edges": 6533,
+        "depth_frontier_nodes": 0,
+        "depth_frontier_pending": 0,
+        "stalled_pending_nodes": 0,
+        "rejected_actions": 0,
+        "counterexample": null
+      },
+      {
+        "scenario": "status+blocking_control",
+        "visited_nodes": 1272,
+        "expanded_nodes": 1104,
+        "attempted_edges": 5214,
+        "accepted_edges": 5214,
+        "duplicate_edges": 3943,
+        "native_closed_nodes": 168,
+        "pending_nodes": 934,
+        "open_quiescent_nodes": 170,
+        "state_cap_blocked_edges": 0,
+        "depth_frontier_nodes": 0,
+        "depth_frontier_pending": 0,
+        "stalled_pending_nodes": 0,
+        "rejected_actions": 0,
+        "counterexample": null
+      }
+    ],
+    "negative_fault_policies": [
+      "timeout_release",
+      "stop_pump",
+      "ignore_status",
+      "late_resubmit"
+    ],
+    "all_negative_controls_detected": true,
+    "observed_positive_safety": true,
+    "native_closed_reached_in_each_positive_run": false,
+    "directed_closed_witnesses": [
+      {
+        "scenario": "status+async_control",
+        "native_closed": true
+      },
+      {
+        "scenario": "status+blocking_control",
+        "native_closed": true
+      }
+    ],
+    "directed_identity_checks_passed": 17,
+    "directed_cancel_checks_passed": 3
+  },
+  "count_interpretation": {
+    "async_cap": "4000 retained visited nodes; 6533 blocked successor edges, not distinct omitted states",
+    "async_closed_zero": "No retained native-closed node; not a proof of unreachability. Checked successor events may close resources without retaining the capped node.",
+    "blocking_closed_168": "168 graph nodes in the stated bounded action space, not 168 independent device shutdown trials",
+    "blocking_no_frontier": "Exhausted only this enumerator and these finite bounds, not real concurrency",
+    "two_directed_witnesses": "Existence of two deliberately scheduled native-closure paths; they do not replace async BFS closed-node coverage",
+    "no_liveness_claim": "No fairness, eventual terminal/return, real-time deadline, or deadlock-freedom proof",
+    "pending_nodes": "Outstanding resource obligations; not successes and not automatically deadlocks",
+    "closed_scope": "Native resources only; main graph seeds contain no Java frames",
+    "negative_controls": "Intentional model policies, not upstream defect reproductions; unittest oracle removes fault/unsafe labels",
+    "main_graph_exclusions": [
+      "image transfers",
+      "Java copy and drain Cartesian space",
+      "multiple sessions",
+      "open failure permutations",
+      "explicit cancel-call stack Cartesian space"
+    ]
+  },
+  "critical_unverified_contracts": {
+    "timeout_and_blocking_return": {
+      "owner": "main_integration_and_native_adapter",
+      "model_fact": "A requester timeout requests stop/cancel but cannot discharge a blocking native call; only actual return does.",
+      "required_evidence": "Actual native return or truthful unresolved ownership; independent implementation evidence for any promised bounded stop.",
+      "forbidden_inference": "Future.cancel, NOT_FOUND, deadline expiry, or worker exit means native stack returned."
+    },
+    "callback_before_submit_return": {
+      "owner": "native_adapter_with_main_integration_contract",
+      "model_fact": "Submit registration, acceptance, and return are one atomic model action.",
+      "required_evidence": "Isolated native backend runs callback before submit returns and proves separate adapter-owned operation/session/user_data and any objects still accessible by return handling or callbacks remain protected by independent references. Return handling must not assume the raw transfer still exists.",
+      "raw_transfer_policy": "Fixed libusb permits terminal callback-side free before public successful submit return; its success tail no longer dereferences the transfer. Deferring raw transfer free until adapter call/callback references finish is an optional conservative project policy, requiring LIBUSB_TRANSFER_FREE_TRANSFER disabled and coordinated buffer flags and sole ownership, not a universal libusb rule.",
+      "native_contract_reference": "android/uvc-sim/interface-contract/NATIVE_CONTRACT.md",
+      "forbidden_inference": "Explicit cancel/control stack checks cover every native API stack, or libusb universally requires the raw transfer to outlive the public submit return."
+    },
+    "pending_open_start_and_close": {
+      "owner": "main_integration_and_native_adapter",
+      "model_fact": "Open and initial submits are synchronous setup; no pending-open/start API.",
+      "required_evidence": "Defined late-handle cleanup and source/confirmation/start contract; actual implementation interleavings for stop during open/start/close.",
+      "forbidden_inference": "Stopping after atomic open proves cancellation of blocking open/start."
+    },
+    "combined_application_stop": {
+      "owner": "main_integration",
+      "model_fact": "Native drain is separate from Java owned-array drain.",
+      "required_evidence": "Per-generation publication revocation, native completion, Java/JNI/processing/preview ownership drain, and truthful combined result.",
+      "forbidden_inference": "Existing StopReceipt.confirmed or model native_drain_confirmed alone proves full application drain."
+    },
+    "adversarial_reopen_fixture": {
+      "owner": "main_integration",
+      "model_fact": "Reopen after old native release while old Java frames remain is used to inject stale deliveries.",
+      "required_evidence": "Product restart continues to obey the frozen combined stop gate.",
+      "forbidden_inference": "Fixture open success authorizes bypassing full_drain in the product."
+    }
+  },
+  "public_contract_prerequisites": {
+    "owner": "main_integration",
+    "deliverables": [
+      "Immutable selected attachment/authorization/connection binding and sole FD owner",
+      "Separate open/probe, actual source/mode confirmation, and explicit start semantics",
+      "Separate wire encoding/mode and sink pixel layout/color/stride/alpha contract",
+      "Per-generation identity, clock domain, sequence and existing error-outlet mapping",
+      "Combined native and application-buffer stop completion with uncertain results retained",
+      "Cross-layer memory budget, bounded queues, and ownership on successful or throwing delivery"
+    ],
+    "not_defined_here": [
+      "new public API signatures",
+      "new product states",
+      "new PRD test IDs"
+    ],
+    "evidence_before_real_capture": "Reviewed contract plus implementation evidence; documentation alone does not open the real-source gate"
+  },
+  "isolated_native_evidence_needed": [
+    {
+      "area": "all_native_call_stack_borrows",
+      "owner": "native_adapter",
+      "required": [
+        "callback before submit return",
+        "stop during open/start return",
+        "callback exit before cancel return",
+        "actual submit return-code reconciliation with existing submission and late callback ownership",
+        "independent adapter operation-state references protect objects still accessible by calls, return handling or callbacks; raw transfer deallocation follows the explicitly chosen owner and auto-free policy"
+      ],
+      "executed_this_round": false
+    },
+    {
+      "area": "status_image_control_teardown",
+      "owner": "native_adapter",
+      "required": [
+        "fixed-source status cancellation and no-resubmit patch",
+        "independent status/image/control terminal accounting",
+        "NOT_FOUND with queued terminal",
+        "cancel error and missing completion",
+        "event pump stays available until all required progress is complete"
+      ],
+      "executed_this_round": false
+    },
+    {
+      "area": "blocking_control_and_failure",
+      "owner": "native_adapter",
+      "required": [
+        "actual return distinct from timeout",
+        "error propagation",
+        "resource retention on permanently absent return",
+        "implementation basis for required bounded stop"
+      ],
+      "executed_this_round": false
+    },
+    {
+      "area": "pixel_jni_memory_ownership",
+      "owner": "pixel_bridge_and_native_adapter",
+      "required": [
+        "borrowed source reused after callback",
+        "allocation and queue failure",
+        "JNI exception and throwing delivery ownership",
+        "full-byte wipe and release",
+        "in-progress buffer at stop",
+        "cross-layer peak memory evidence",
+        "no unmasked output bypass"
+      ],
+      "executed_this_round": false
+    },
+    {
+      "area": "fixed_artifact_and_actual_dependency_closure",
+      "owner": "build_and_license_review",
+      "required": [
+        "source commits and patches",
+        "toolchain ABI and build flags",
+        "artifact hash and actual linked/loaded dependencies",
+        "license/NOTICE/corresponding-source materials for the artifact"
+      ],
+      "executed_this_round": false
+    }
+  ],
+  "device_or_oem_only_evidence_needed": {
+    "owner": "main_integration_coordinates_device_verification",
+    "combination_freeze": [
+      "app/native artifact hashes",
+      "Android/OEM build and kernel",
+      "API and ABI",
+      "phone/capture-card model and firmware",
+      "cable/hub/power and USB link",
+      "selected source and negotiated exact mode",
+      "observation duration"
+    ],
+    "observations": [
+      "actual authorization and FD wrap/claim behavior",
+      "OEM/kernel/SELinux and USB controller behavior",
+      "real terminal/cancel/hotplug/permission-revocation behavior",
+      "actual wire encoding, frame layout, colors, source readability and masking",
+      "host-side cessation and separately observed device-side behavior",
+      "combined native/application drain under existing lifecycle cases",
+      "power/bandwidth/thermal/performance on the frozen combination"
+    ],
+    "not_inferred_from_model": true,
+    "executed_this_round": false,
+    "authorization_rule": "Use existing admission conditions; this document creates no new approval flow and enables no device action."
+  },
+  "evidence_collection_fields": {
+    "purpose": "Future verification artifacts; not newly implemented telemetry or API",
+    "build_and_combination": [
+      "run_id",
+      "commit",
+      "artifact_sha256",
+      "native_source_and_patch_hashes",
+      "toolchain_abi_flags",
+      "actual_dependency_manifest_ref",
+      "license_material_ref",
+      "oem_build_kernel",
+      "hardware_firmware_combination",
+      "cable_power_combination",
+      "wire_mode_interval",
+      "observation_duration"
+    ],
+    "identity": [
+      "safe_session_correlation",
+      "attachment_generation",
+      "authorization_revision",
+      "source_confirmation_ref",
+      "safe_handle_lease_fd_owner_tokens"
+    ],
+    "native_events": [
+      "transfer_id",
+      "submission",
+      "kind",
+      "submit_enter_return",
+      "callback_enter_exit",
+      "cancel_enter_return_result",
+      "blocking_control_enter_return",
+      "terminal_queued_delivered",
+      "pump_lifecycle",
+      "monotonic_timestamp_and_clock_domain"
+    ],
+    "pixels_and_memory": [
+      "wire_sink_descriptions",
+      "actual_length_stride_planes",
+      "copy_and_owner_handoff",
+      "frame_generation_sequence",
+      "queue_inflight_preview_counts",
+      "layer_bytes_and_peak",
+      "drop_reason",
+      "full_wipe_and_release_evidence",
+      "masked_hash_if_used"
+    ],
+    "stop_and_errors": [
+      "publication_revoked",
+      "all_native_obligations_and_stacks_done",
+      "jni_handle_context_pump_fd_end",
+      "application_owned_drain",
+      "combined_stop_result",
+      "native_error_and_existing_outlet",
+      "unresolved_obligations",
+      "negative_control_detection",
+      "stderr_assertions"
+    ],
+    "archive": [
+      "input_and_log_hashes",
+      "command",
+      "operator_owner",
+      "execution_boundary",
+      "start_end_time",
+      "expected_actual",
+      "failure_or_not_executed_reason"
+    ],
+    "raw_permission_credentials_or_native_addresses_required": false,
+    "actual_frames_follow_existing_source_and_masking_rules": true
+  },
+  "actionable_waits": [
+    {
+      "owner": "main_integration",
+      "waiting_for": "Frozen public contract and PRD mapping for ownership, formats, clocks/errors, total memory and combined stop."
+    },
+    {
+      "owner": "native_adapter",
+      "waiting_for": "Reviewed fixed-source changes and isolated C/JNI evidence for actual call stacks, status teardown, error/return and cleanup."
+    },
+    {
+      "owner": "build_and_license_review",
+      "waiting_for": "Specific test artifact and complete actual dependency/license closure; source match and binary reproducibility kept distinct."
+    },
+    {
+      "owner": "main_integration_and_device_verification",
+      "waiting_for": "Prior evidence and frozen authorized combination; collect actual device/OEM evidence under existing admission conditions."
+    }
+  ],
+  "final_boundary": "Plan and model evidence do not establish a completed real driver, hardware compatibility, deployment readiness, or permission to bypass combined stop."
+}

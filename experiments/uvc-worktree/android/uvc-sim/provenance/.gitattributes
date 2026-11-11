@@ -1,0 +1,2 @@
+# Audit records and locks are hashed as bytes; preserve their recorded line endings.
+* -text whitespace=trailing-space,space-before-tab,cr-at-eol

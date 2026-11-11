@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "note": "Fixed inputs only; raw bytes except versioned Git commit semantic projection. Canonical excludes mutable GitHub account/verification fields, retains Git author/committer,message,tree,parents,SHA. Raw observation hashes retained. No upstream execution.",
+  "inputs": {
+    "uvcandroid.tar.gz": {
+      "url": "https://codeload.github.com/shiyinghan/UVCAndroid/tar.gz/fcdae5f9a194e2111d57019176b53470a120415b",
+      "integrity": "raw",
+      "sha256": "2b48b1f8b4fd71b92dcb9654c63ad70b2f757a819f62d2a054a7d606210a449f",
+      "size": 4188074
+    },
+    "libyuv-official.tar.gz": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+archive/3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz",
+      "integrity": "raw",
+      "sha256": "49998fb4ff4dd5438c7170d47c8861cbe33c842315bb0d021da4d8e4f993ff2f",
+      "size": 564884
+    },
+    "saki-frame.c": {
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libuvc/src/frame.c",
+      "integrity": "raw",
+      "git_blob": "27e5ad7672e73d750ff97d0a1ae05bc1ca695b19",
+      "negative_symbol_scope": true,
+      "sha256": "3019d72617bdfd787673e243b3ec0cdd182ee958561e3c9d4f730fab469e278e",
+      "size": 43003
+    },
+    "saki-frame-mjpeg.c": {
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libuvc/src/frame-mjpeg.c",
+      "integrity": "raw",
+      "git_blob": "da275efab9fdee84941d0d3b04fb1c1b9d957646",
+      "negative_symbol_scope": true,
+      "sha256": "94ccb98c842c64058c4a642a9118e9283b54887cb4cd4d1004d1ff94a5912aad",
+      "size": 17334
+    },
+    "saki-README.md": {
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/README.md",
+      "integrity": "raw",
+      "git_blob": "a6bdc99dd33a653f87a1db349abc2e1111fc5904",
+      "sha256": "ead03b974f7a88764fc1686d58d3584421a9d174ea2a63a1e974effaa7fad00a",
+      "size": 8253
+    },
+    "preimport-frame.c": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/09cf0a27e5bbf8db3b20dfc76c7e0a0ed9dae2af/libuvccamera/src/main/jni/libuvc/src/frame.c",
+      "integrity": "raw",
+      "git_blob": "a1a48adad54267f011d861a8d0ed385898277a81",
+      "negative_symbol_scope": true,
+      "sha256": "0431855c696218aaaaeac6f079b8499f9eb51e4c0edc6fc8438b35e9e56e0092",
+      "size": 45687
+    },
+    "preimport-frame-mjpeg.c": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/09cf0a27e5bbf8db3b20dfc76c7e0a0ed9dae2af/libuvccamera/src/main/jni/libuvc/src/frame-mjpeg.c",
+      "integrity": "raw",
+      "git_blob": "145ef82ff71b6cc6e9e25a75b8a2fab5db3da38a",
+      "negative_symbol_scope": true,
+      "sha256": "12d7ae335ec501e13f30fe964e3261c6138530c2ae3f3cdc11fca6b7abc2213a",
+      "size": 15825
+    },
+    "official-libuvc-frame.c": {
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/frame.c",
+      "integrity": "raw",
+      "git_blob": "5d240043ae1e62a974fbfb31d4b03811cadf1c50",
+      "negative_symbol_scope": true,
+      "sha256": "641f326cdbe283914ef11f547df7967c4b91ba92158d3886cec0c6d6391e6b1b",
+      "size": 16801
+    },
+    "openterface-convert_jpeg.cc": {
+      "url": "https://raw.githubusercontent.com/TechxArtisanStudio/Openterface_Android/210ab6143e0a1bf50cf638b897656151deba67a4/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+      "integrity": "raw",
+      "compare_vendored_path": "source/convert_jpeg.cc",
+      "sha256": "3cde3a148bbf87b55705da6c4b8b46a91b9d3a65beebb24fc576895ac870543d",
+      "size": 29062
+    },
+    "openterface-row_common.cc": {
+      "url": "https://raw.githubusercontent.com/TechxArtisanStudio/Openterface_Android/210ab6143e0a1bf50cf638b897656151deba67a4/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+      "integrity": "raw",
+      "compare_vendored_path": "source/row_common.cc",
+      "sha256": "e0728f60f9e1c42326a12c12e88109a58ef5e256f4d54eb946b894075fcf6545",
+      "size": 140708
+    },
+    "openterface-LICENSE": {
+      "url": "https://raw.githubusercontent.com/TechxArtisanStudio/Openterface_Android/210ab6143e0a1bf50cf638b897656151deba67a4/LICENSE",
+      "integrity": "raw",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    "import-root-LICENSE": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/05435d727fcdd74fc44fd2a3826ee57213dbb07e/LICENSE",
+      "integrity": "raw",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    "import.commit.json": {
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/commits/05435d727fcdd74fc44fd2a3826ee57213dbb07e",
+      "integrity": "github-git-commit-v1",
+      "sha256": "d685b98f1430da10bdbdeea076471206ed631b3a5cadc3a22b2032e7ed1ece4c",
+      "size": 413,
+      "observed_raw_sha256": "9bc7e91e00673eb2af2aa07718c84adb86cf05e6b7fea4ee48f3cf6d4125b066"
+    },
+    "max-page.commit.json": {
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/commits/569e118d7514193da204b953ebbe47c9c87cdbe9",
+      "integrity": "github-git-commit-v1",
+      "sha256": "6eac0616dd659faf6ba7fb2d6053d148be3836cfaf707ca853f9e39f1768cae9",
+      "size": 377,
+      "observed_raw_sha256": "58bcbbd3eaf5d663b5d8ae9e14aef34ca58515b4e4bfeee0e69b38883113a800"
+    },
+    "common-page.commit.json": {
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/commits/c06f4edf10b6e67bffc5364642857af75944f294",
+      "integrity": "github-git-commit-v1",
+      "sha256": "5722f5219d37d979320241e6cdc9d6dfc7b577ad6e50bb2690ed0327014b190e",
+      "size": 380,
+      "observed_raw_sha256": "a33f659778ea959a800b7abba8719e3250bbe1912981390080034628dec4943a"
+    },
+    "openterface.commit.json": {
+      "url": "https://api.github.com/repos/TechxArtisanStudio/Openterface_Android/git/commits/210ab6143e0a1bf50cf638b897656151deba67a4",
+      "integrity": "github-git-commit-v1",
+      "sha256": "514601856ae80bc2ddcbd0879961e091ca84611d238cc2896f298faea28fdec1",
+      "size": 356,
+      "observed_raw_sha256": "bf2c1a036afd47cf9c16c4c928921416be79a207a3da371e86959cf458b55451"
+    },
+    "bear.commit.json": {
+      "url": "https://api.github.com/repos/BEAR678/UVC/git/commits/8f700cd500d7be3a55df3caf260bbf0a52f61f80",
+      "integrity": "github-git-commit-v1",
+      "sha256": "c0d9a3cbc8f3fbc08c09de0d0dffc7d4f2515c610a932addf4a5e84bb29ea30e",
+      "size": 406,
+      "observed_raw_sha256": "84de2414b038263667dcfb30a20e8f2349cc4000b03c0c6e0e57728260c6c94d"
+    },
+    "catchpig.commit.json": {
+      "url": "https://api.github.com/repos/catchpig/AndroidUVCCamera/git/commits/c8db6fa0e33a95b0abc183bd4b643a788bc68b52",
+      "integrity": "github-git-commit-v1",
+      "sha256": "d69f3fd8def4e0afb1f16b3a36b4d66e6cffd2f63299d7b9af14afd7700d7458",
+      "size": 318,
+      "observed_raw_sha256": "2d626e9078373977a46a904053497b53ab0d494a335bafa93ddfcc5312a9b601"
+    },
+    "leong.commit.json": {
+      "url": "https://api.github.com/repos/LeongOoiTam/BlindNaviApp/git/commits/05435d727fcdd74fc44fd2a3826ee57213dbb07e",
+      "integrity": "github-git-commit-v1",
+      "sha256": "d685b98f1430da10bdbdeea076471206ed631b3a5cadc3a22b2032e7ed1ece4c",
+      "size": 413,
+      "observed_raw_sha256": "c4e92241955b0a0f2e753b66f8bfd20401a01c3293cae4244d46c57725daeed8"
+    },
+    "m6m.commit.json": {
+      "url": "https://api.github.com/repos/M6M-ar/SeaCucumberMonitor/git/commits/aef416f50a4d63bdb210e34b7769de22e8f1e664",
+      "integrity": "github-git-commit-v1",
+      "sha256": "dd1487da5e0703567589426d97462f8587472b0c788d96ec562ec442e18dcfc5",
+      "size": 354,
+      "observed_raw_sha256": "5d5adf38d652ee5edd4527531d9ef1ca7cc75fa240cc941631b2b6e7c702e707"
+    },
+    "bondcast.commit.json": {
+      "url": "https://api.github.com/repos/i30mb1/Bondcast/git/commits/91ec6e25e2fe2ae181ccb36ce5f19267a978947c",
+      "integrity": "github-git-commit-v1",
+      "sha256": "f4a6aab7da80e2eb49ca2b977f1705cee47ba7fbccb518feaaec0442495b4f22",
+      "size": 423,
+      "observed_raw_sha256": "db121ed4ca78d913d9b9828048bbc19807c13f2ef4878127ff1c4cf1438d6b53"
+    }
+  }
+}

@@ -1,0 +1,4424 @@
+{
+  "observed_at_utc": "2026-11-10T13:58:06.101054+00:00",
+  "repository": "jiangdongguo/AndroidUSBCamera",
+  "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "pyelftools": "0.33",
+  "audit_tools": {
+    "pyelftools_source": "https://pypi.org/project/pyelftools/0.33/",
+    "preexisting": true,
+    "installed_during_audit": false,
+    "candidate_binaries_executed": false
+  },
+  "binaries": [
+    {
+      "abi": "arm64-v8a",
+      "path": "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+      "git_blob_sha1": "67d3f29decb2594babb06370387deea105ebba18",
+      "sha256": "e4c6af125ef73573e9334fb9ac6eff2a50856c33f34ab758c7bb830499dc054f",
+      "bytes": 22432,
+      "elf": {
+        "class": 64,
+        "machine": "EM_AARCH64",
+        "little_endian": true,
+        "needed": [
+          "libusb100.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so",
+          "libdl.so"
+        ],
+        "soname": [
+          "libUACAudio.so"
+        ],
+        "notes": [
+          {
+            "section": ".note.gnu.build-id",
+            "name": "GNU",
+            "type": "NT_GNU_BUILD_ID",
+            "description": "5d7f4a1664c7182b8434518a44b362f923bb9d52"
+          },
+          {
+            "section": ".note.android.ident",
+            "name": "Android",
+            "type": "NT_GNU_ABI_TAG",
+            "description": "150000007232310000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000036313133363639000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "android_ident_decoded": {
+              "api_level": 21,
+              "ndk_version": "r21",
+              "ndk_build": "6113669"
+            }
+          }
+        ],
+        "exported_dynamic_symbols": [
+          "JNI_OnLoad",
+          "JNI_OnUnload",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Z13setField_longP7_JNIEnvP8_jobjectPKcl",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__bss_end__",
+          "__bss_start",
+          "__bss_start__",
+          "__end__",
+          "_bss_end__",
+          "_edata",
+          "_end",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback"
+        ],
+        "undefined_dynamic_symbols": [
+          "_ZdlPv",
+          "_Znwm",
+          "__android_log_print",
+          "__cxa_atexit",
+          "__cxa_finalize",
+          "__errno",
+          "__stack_chk_fail",
+          "basename",
+          "dup",
+          "exit",
+          "gettid",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "malloc",
+          "memset",
+          "pthread_create",
+          "strerror"
+        ],
+        "relevant_ascii_strings": [
+          ".gnu.version",
+          ".gnu.version_r",
+          ".note.android.ident",
+          "Android",
+          "Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)",
+          "Audio loop:",
+          "Audio loop: %d",
+          "Audio loop: ----> %d",
+          "Audio loop: destroyAudio %d",
+          "Audio loop: destroyAudio stopCapture status = %d",
+          "Audio loop: isRunning %d",
+          "Audio loop: startCapture status=%d, audioObject=%p",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USBAudio",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__android_log_print",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback",
+          "_uac_stream_callback NO_DEVICE:%d",
+          "audio_stream",
+          "before libusb_get_device_with_fd vid:%d pid:%d",
+          "before libusb_init2 ret:%s",
+          "before scan_audio_interface ret:%s",
+          "jni/usbAudio/native_usb_audio.cpp",
+          "libUACAudio.so",
+          "libUVCCamera",
+          "libusb100.so",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_iso_packet_descriptor actual_length:%d length:%d",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "libusb_submit_transfer failed: %s, errno:%s",
+          "scan_audio_interface",
+          "scan_audio_interface :%d",
+          "scan_audio_interface err: ret:%s",
+          "set mic config fail %d libusb:%s,errno:%s"
+        ]
+      }
+    },
+    {
+      "abi": "armeabi-v7a",
+      "path": "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+      "git_blob_sha1": "1d85d6f9fc2843b48fe6b3941d47abdff6b8d330",
+      "sha256": "adcde2a84392d9ce95a6db2b6a169792cb6c2a077d7eef224ff28c07afd28672",
+      "bytes": 26208,
+      "elf": {
+        "class": 32,
+        "machine": "EM_ARM",
+        "little_endian": true,
+        "needed": [
+          "libdl.so",
+          "libusb100.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so"
+        ],
+        "soname": [
+          "libUACAudio.so"
+        ],
+        "notes": [
+          {
+            "section": ".note.android.ident",
+            "name": "Android",
+            "type": "NT_GNU_ABI_TAG",
+            "description": "110000007232310000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000036313133363639000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "android_ident_decoded": {
+              "api_level": 17,
+              "ndk_version": "r21",
+              "ndk_build": "6113669"
+            }
+          },
+          {
+            "section": ".note.gnu.build-id",
+            "name": "GNU",
+            "type": "NT_GNU_BUILD_ID",
+            "description": "9d347a52ec665382b69961c02ce257c882fb87fe"
+          },
+          {
+            "section": ".note.gnu.gold-version",
+            "name": "GNU",
+            "type": "NT_GNU_GOLD_VERSION",
+            "description": "gold 1.12"
+          }
+        ],
+        "exported_dynamic_symbols": [
+          "JNI_OnLoad",
+          "JNI_OnUnload",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Unwind_Complete",
+          "_Unwind_DeleteException",
+          "_Unwind_GetLanguageSpecificData",
+          "_Unwind_GetRegionStart",
+          "_Unwind_RaiseException",
+          "_Unwind_Resume",
+          "_Unwind_VRS_Get",
+          "_Unwind_VRS_Interpret",
+          "_Unwind_VRS_Pop",
+          "_Unwind_VRS_Set",
+          "_Z13setField_longP7_JNIEnvP8_jobjectPKcx",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__aeabi_unwind_cpp_pr0",
+          "__aeabi_unwind_cpp_pr1",
+          "__aeabi_unwind_cpp_pr2",
+          "__bss_start",
+          "__gnu_unwind_frame",
+          "_edata",
+          "_end",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback",
+          "decode_eht_entry",
+          "unw_get_fpreg",
+          "unw_get_proc_info",
+          "unw_get_proc_name",
+          "unw_get_reg",
+          "unw_getcontext",
+          "unw_init_local",
+          "unw_is_fpreg",
+          "unw_is_signal_frame",
+          "unw_local_addr_space",
+          "unw_regname",
+          "unw_resume",
+          "unw_save_vfp_as_X",
+          "unw_set_fpreg",
+          "unw_set_reg",
+          "unw_step"
+        ],
+        "undefined_dynamic_symbols": [
+          "_ZdlPv",
+          "_Znwj",
+          "__aeabi_memclr",
+          "__aeabi_memcpy",
+          "__android_log_print",
+          "__cxa_atexit",
+          "__cxa_finalize",
+          "__errno",
+          "__gnu_Unwind_Find_exidx",
+          "__sF",
+          "__stack_chk_fail",
+          "__stack_chk_guard",
+          "abort",
+          "basename",
+          "dladdr",
+          "dup",
+          "exit",
+          "fflush",
+          "fprintf",
+          "gettid",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "malloc",
+          "pthread_create",
+          "snprintf",
+          "strerror"
+        ],
+        "relevant_ascii_strings": [
+          ".gnu.version",
+          ".gnu.version_d",
+          ".gnu.version_r",
+          ".note.android.ident",
+          ".note.gnu.gold-version",
+          "/usr/local/google/buildbot/src/android/ndk-release-r21/external/libcxx/../../external/libunwind_llvm/src/Registers.hpp",
+          "/usr/local/google/buildbot/src/android/ndk-release-r21/external/libcxx/../../external/libunwind_llvm/src/Unwind-EHABI.cpp",
+          "/usr/local/google/buildbot/src/android/ndk-release-r21/external/libcxx/../../external/libunwind_llvm/src/UnwindCursor.hpp",
+          "Android",
+          "Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)",
+          "Audio loop:",
+          "Audio loop: %d",
+          "Audio loop: ----> %d",
+          "Audio loop: destroyAudio %d",
+          "Audio loop: destroyAudio stopCapture status = %d",
+          "Audio loop: isRunning %d",
+          "Audio loop: startCapture status=%d, audioObject=%p",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USBAudio",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__android_log_print",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback",
+          "_uac_stream_callback NO_DEVICE:%d",
+          "audio_stream",
+          "before libusb_get_device_with_fd vid:%d pid:%d",
+          "before libusb_init2 ret:%s",
+          "before scan_audio_interface ret:%s",
+          "jni/usbAudio/native_usb_audio.cpp",
+          "libUACAudio.so",
+          "libUVCCamera",
+          "libusb100.so",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_iso_packet_descriptor actual_length:%d length:%d",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "libusb_submit_transfer failed: %s, errno:%s",
+          "scan_audio_interface",
+          "scan_audio_interface :%d",
+          "scan_audio_interface err: ret:%s",
+          "set mic config fail %d libusb:%s,errno:%s"
+        ]
+      }
+    },
+    {
+      "abi": "x86",
+      "path": "libuvc/src/main/jniLibs/x86/libUACAudio.so",
+      "git_blob_sha1": "97608acbd5f14a068af72dc464565c6732be92e1",
+      "sha256": "8c3ba934a42a833d95f772e60eff2ebcfeb4dd42dd7bcd85f1de4b3c9e0d673d",
+      "bytes": 17952,
+      "elf": {
+        "class": 32,
+        "machine": "EM_386",
+        "little_endian": true,
+        "needed": [
+          "libusb100.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so",
+          "libdl.so"
+        ],
+        "soname": [
+          "libUACAudio.so"
+        ],
+        "notes": [
+          {
+            "section": ".note.android.ident",
+            "name": "Android",
+            "type": "NT_GNU_ABI_TAG",
+            "description": "110000007232310000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000036313133363639000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "android_ident_decoded": {
+              "api_level": 17,
+              "ndk_version": "r21",
+              "ndk_build": "6113669"
+            }
+          },
+          {
+            "section": ".note.gnu.build-id",
+            "name": "GNU",
+            "type": "NT_GNU_BUILD_ID",
+            "description": "5913b2857c720c9204d739fd5396f0bdfd971915"
+          },
+          {
+            "section": ".note.gnu.gold-version",
+            "name": "GNU",
+            "type": "NT_GNU_GOLD_VERSION",
+            "description": "gold 1.12"
+          }
+        ],
+        "exported_dynamic_symbols": [
+          "JNI_OnLoad",
+          "JNI_OnUnload",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Z13setField_longP7_JNIEnvP8_jobjectPKcx",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__bss_start",
+          "_edata",
+          "_end",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback"
+        ],
+        "undefined_dynamic_symbols": [
+          "_ZdlPv",
+          "_Znwj",
+          "__android_log_print",
+          "__cxa_atexit",
+          "__cxa_finalize",
+          "__errno",
+          "__stack_chk_fail",
+          "basename",
+          "dup",
+          "exit",
+          "gettid",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "malloc",
+          "memset",
+          "pthread_create",
+          "strerror"
+        ],
+        "relevant_ascii_strings": [
+          ".gnu.version",
+          ".gnu.version_d",
+          ".gnu.version_r",
+          ".note.android.ident",
+          ".note.gnu.gold-version",
+          "Android",
+          "Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)",
+          "Audio loop:",
+          "Audio loop: %d",
+          "Audio loop: ----> %d",
+          "Audio loop: destroyAudio %d",
+          "Audio loop: destroyAudio stopCapture status = %d",
+          "Audio loop: isRunning %d",
+          "Audio loop: startCapture status=%d, audioObject=%p",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USBAudio",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__android_log_print",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback",
+          "_uac_stream_callback NO_DEVICE:%d",
+          "audio_stream",
+          "before libusb_get_device_with_fd vid:%d pid:%d",
+          "before libusb_init2 ret:%s",
+          "before scan_audio_interface ret:%s",
+          "jni/usbAudio/native_usb_audio.cpp",
+          "libUACAudio.so",
+          "libUVCCamera",
+          "libusb100.so",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_iso_packet_descriptor actual_length:%d length:%d",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "libusb_submit_transfer failed: %s, errno:%s",
+          "scan_audio_interface",
+          "scan_audio_interface :%d",
+          "scan_audio_interface err: ret:%s",
+          "set mic config fail %d libusb:%s,errno:%s"
+        ]
+      }
+    },
+    {
+      "abi": "x86_64",
+      "path": "libuvc/src/main/jniLibs/x86_64/libUACAudio.so",
+      "git_blob_sha1": "ed02062380e2d99b422c45fa7f0439890a1ba42c",
+      "sha256": "e0b7e998d24fcfb41d401c2b139bef67ccaa6f0689dc26cbf90dc6082f06ca38",
+      "bytes": 22696,
+      "elf": {
+        "class": 64,
+        "machine": "EM_X86_64",
+        "little_endian": true,
+        "needed": [
+          "libusb100.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so",
+          "libdl.so"
+        ],
+        "soname": [
+          "libUACAudio.so"
+        ],
+        "notes": [
+          {
+            "section": ".note.android.ident",
+            "name": "Android",
+            "type": "NT_GNU_ABI_TAG",
+            "description": "150000007232310000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000036313133363639000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "android_ident_decoded": {
+              "api_level": 21,
+              "ndk_version": "r21",
+              "ndk_build": "6113669"
+            }
+          },
+          {
+            "section": ".note.gnu.build-id",
+            "name": "GNU",
+            "type": "NT_GNU_BUILD_ID",
+            "description": "bec80954624b7c9970d299dd7dafc6b4bafba818"
+          },
+          {
+            "section": ".note.gnu.gold-version",
+            "name": "GNU",
+            "type": "NT_GNU_GOLD_VERSION",
+            "description": "gold 1.12"
+          }
+        ],
+        "exported_dynamic_symbols": [
+          "JNI_OnLoad",
+          "JNI_OnUnload",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Z13setField_longP7_JNIEnvP8_jobjectPKcl",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__bss_start",
+          "_edata",
+          "_end",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback"
+        ],
+        "undefined_dynamic_symbols": [
+          "_ZdlPv",
+          "_Znwm",
+          "__android_log_print",
+          "__cxa_atexit",
+          "__cxa_finalize",
+          "__errno",
+          "__stack_chk_fail",
+          "basename",
+          "dup",
+          "exit",
+          "gettid",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "malloc",
+          "memset",
+          "pthread_create",
+          "strerror"
+        ],
+        "relevant_ascii_strings": [
+          ".gnu.version",
+          ".gnu.version_d",
+          ".gnu.version_r",
+          ".note.android.ident",
+          ".note.gnu.gold-version",
+          "Android",
+          "Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)",
+          "Audio loop:",
+          "Audio loop: %d",
+          "Audio loop: ----> %d",
+          "Audio loop: destroyAudio %d",
+          "Audio loop: destroyAudio stopCapture status = %d",
+          "Audio loop: isRunning %d",
+          "Audio loop: startCapture status=%d, audioObject=%p",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+          "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+          "Java_com_jiangdg_uac_UACAudio_nativeInit",
+          "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+          "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+          "Java_com_jiangdg_uac_UACAudio_nativeStopRecord",
+          "USBAudio",
+          "USB_REQ_CS_ENDPOINT_GET",
+          "USB_REQ_CS_ENDPOINT_SET",
+          "_Z17play_audio_threadPv",
+          "_ZN8USBAudio10closeAudioEv",
+          "_ZN8USBAudio11setCallbackEP7_JavaVMP7_JNIEnvP8_jobject",
+          "_ZN8USBAudio11stopCaptureEv",
+          "_ZN8USBAudio12startCaptureEv",
+          "_ZN8USBAudio15getChannelCountEv",
+          "_ZN8USBAudio16getBitResolutionEv",
+          "_ZN8USBAudio17fill_iso_transferEv",
+          "_ZN8USBAudio17operate_interfaceEP20libusb_device_handlei",
+          "_ZN8USBAudio18interface_claim_ifEP20libusb_device_handle",
+          "_ZN8USBAudio18set_sample_rate_v1Ei",
+          "_ZN8USBAudio20scan_audio_interfaceEP13libusb_device",
+          "_ZN8USBAudio21set_audio_stream_descEPK27libusb_interface_descriptor",
+          "_ZN8USBAudio9initAudioEiiiiiPKc",
+          "_ZN8USBAudio9isRunningEv",
+          "_ZN8USBAudioC1Ev",
+          "_ZN8USBAudioC2Ev",
+          "_ZNK8USBAudio13getSampleRateEv",
+          "__android_log_print",
+          "_uac_process_payload_iso",
+          "_uac_stream_callback",
+          "_uac_stream_callback NO_DEVICE:%d",
+          "audio_stream",
+          "before libusb_get_device_with_fd vid:%d pid:%d",
+          "before libusb_init2 ret:%s",
+          "before scan_audio_interface ret:%s",
+          "jni/usbAudio/native_usb_audio.cpp",
+          "libUACAudio.so",
+          "libUVCCamera",
+          "libusb100.so",
+          "libusb_alloc_transfer",
+          "libusb_claim_interface",
+          "libusb_close",
+          "libusb_control_transfer",
+          "libusb_detach_kernel_driver",
+          "libusb_error_name",
+          "libusb_exit",
+          "libusb_free_config_descriptor",
+          "libusb_get_config_descriptor",
+          "libusb_get_device_with_fd",
+          "libusb_handle_events",
+          "libusb_init2",
+          "libusb_iso_packet_descriptor actual_length:%d length:%d",
+          "libusb_kernel_driver_active",
+          "libusb_open",
+          "libusb_ref_device",
+          "libusb_release_interface",
+          "libusb_set_device_fd",
+          "libusb_set_interface_alt_setting",
+          "libusb_submit_transfer",
+          "libusb_submit_transfer failed: %s, errno:%s",
+          "scan_audio_interface",
+          "scan_audio_interface :%d",
+          "scan_audio_interface err: ret:%s",
+          "set mic config fail %d libusb:%s,errno:%s"
+        ]
+      }
+    }
+  ],
+  "path_history": {
+    "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so": [
+      {
+        "sha": "ccdb068d3aa0e89ce0147ba82228f4c48752c2a4",
+        "date": "2023-02-10T09:14:55Z",
+        "message": "[dev] version 3.3.0 development"
+      },
+      {
+        "sha": "bd1d02fbfc9e14657194a93264577eeafb3c3b9f",
+        "date": "2022-09-15T02:25:37Z",
+        "message": "[opt] remove \".so\" files to \"jinLibs\" directory"
+      }
+    ],
+    "libuvc/libs/arm64-v8a/libUACAudio.so": [
+      {
+        "sha": "bd1d02fbfc9e14657194a93264577eeafb3c3b9f",
+        "date": "2022-09-15T02:25:37Z",
+        "message": "[opt] remove \".so\" files to \"jinLibs\" directory"
+      },
+      {
+        "sha": "0781eb5c6fea87c69a81077c8bbc8564c39a15a3",
+        "date": "2022-09-14T10:22:09Z",
+        "message": "[dev] support record device mic(UAC)"
+      }
+    ],
+    "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so": [
+      {
+        "sha": "ccdb068d3aa0e89ce0147ba82228f4c48752c2a4",
+        "date": "2023-02-10T09:14:55Z",
+        "message": "[dev] version 3.3.0 development"
+      },
+      {
+        "sha": "bd1d02fbfc9e14657194a93264577eeafb3c3b9f",
+        "date": "2022-09-15T02:25:37Z",
+        "message": "[opt] remove \".so\" files to \"jinLibs\" directory"
+      }
+    ],
+    "libuvc/libs/armeabi-v7a/libUACAudio.so": [
+      {
+        "sha": "bd1d02fbfc9e14657194a93264577eeafb3c3b9f",
+        "date": "2022-09-15T02:25:37Z",
+        "message": "[opt] remove \".so\" files to \"jinLibs\" directory"
+      },
+      {
+        "sha": "0781eb5c6fea87c69a81077c8bbc8564c39a15a3",
+        "date": "2022-09-14T10:22:09Z",
+        "message": "[dev] support record device mic(UAC)"
+      }
+    ],
+    "libuvc/src/main/jniLibs/x86/libUACAudio.so": [
+      {
+        "sha": "829d32edf581bd9edf7766adfb1d30985f892db3",
+        "date": "2023-02-10T09:39:04Z",
+        "message": "[dev] support x86 & x86_64"
+      }
+    ],
+    "libuvc/libs/x86/libUACAudio.so": [],
+    "libuvc/src/main/jniLibs/x86_64/libUACAudio.so": [
+      {
+        "sha": "829d32edf581bd9edf7766adfb1d30985f892db3",
+        "date": "2023-02-10T09:39:04Z",
+        "message": "[dev] support x86 & x86_64"
+      }
+    ],
+    "libuvc/libs/x86_64/libUACAudio.so": []
+  },
+  "upstream_license_paths": [
+    "LICENSE",
+    "libuvc/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md",
+    "libuvc/src/main/jni/libjpeg-turbo-1.5.0/release/License.rtf",
+    "libuvc/src/main/jni/libusb/COPYING",
+    "libuvc/src/main/jni/rapidjson/license.txt",
+    "libuvc/src/main/jni/rapidjson/thirdparty/jsoncpp/LICENSE",
+    "libuvc/src/main/jni/rapidjson/thirdparty/yajl/COPYING"
+  ],
+  "source_scan": {
+    "archive_url": "https://codeload.github.com/jiangdongguo/AndroidUSBCamera/zip/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+    "native_source_files_scanned": 427,
+    "native_patterns": [
+      "UACAudio",
+      "com_jiangdg_uac",
+      "libuac",
+      "PortAudio",
+      "portaudio",
+      "nativeSetAudioCallback",
+      "native_usb_audio",
+      "USBAudio",
+      "_uac_process_payload_iso"
+    ],
+    "native_matches": [],
+    "wiring_matches": [
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/MultiCameraClient.kt",
+        "line": 16,
+        "text": "import com.jiangdg.ausbc.encode.audio.AudioStrategyUAC"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/MultiCameraClient.kt",
+        "line": 379,
+        "text": "                        if (isNeedGLESRender && !mCameraRequest!!.isCaptureRawImage) {"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/MultiCameraClient.kt",
+        "line": 421,
+        "text": "                        AudioStrategyUAC(mCtrlBlock!!)"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/MultiCameraClient.kt",
+        "line": 434,
+        "text": "                        return AudioStrategyUAC(mCtrlBlock!!)"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/CameraUVC.kt",
+        "line": 196,
+        "text": "        if (! isNeedGLESRender || mCameraRequest!!.isRawPreviewData || mCameraRequest!!.isCaptureRawImage) {"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/bean/CameraRequest.kt",
+        "line": 34,
+        "text": "    var isCaptureRawImage: Boolean = false"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/bean/CameraRequest.kt",
+        "line": 139,
+        "text": "         * @param isCaptureRawImage default is false"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/bean/CameraRequest.kt",
+        "line": 142,
+        "text": "        fun setCaptureRawImage(isCaptureRawImage: Boolean): Builder {"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/bean/CameraRequest.kt",
+        "line": 143,
+        "text": "            mRequest.isCaptureRawImage = isCaptureRawImage"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "line": 22,
+        "text": "import com.jiangdg.uac.UACAudioCallBack"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "line": 23,
+        "text": "import com.jiangdg.uac.UACAudioHandler"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "line": 31,
+        "text": "class AudioStrategyUAC(private val ctrlBlock: USBMonitor.UsbControlBlock): IAudioStrategy {"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "line": 32,
+        "text": "    private var mUacHandler: UACAudioHandler? = null"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "line": 35,
+        "text": "    private val mCallback = UACAudioCallBack { data ->"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "line": 43,
+        "text": "        mUacHandler = UACAudioHandler.createHandler(ctrlBlock)"
+      },
+      {
+        "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "line": 104,
+        "text": "        private const val TAG = \"AudioUac\""
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "line": 12,
+        "text": "public class UACAudio {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "line": 13,
+        "text": "    private static final String TAG = \"UACAudio\";"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "line": 18,
+        "text": "    public UACAudioCallBack mAudioCallBack;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "line": 26,
+        "text": "        System.loadLibrary(\"UACAudio\");"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "line": 97,
+        "text": "    public void addAudioCallBack(UACAudioCallBack callBack) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+        "line": 7,
+        "text": "public interface UACAudioCallBack {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 19,
+        "text": "public class UACAudioHandler extends Handler {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 20,
+        "text": "    private static final String TAG = \"UACAudioHandler\";"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 28,
+        "text": "    public static UACAudioHandler createHandler(USBMonitor.UsbControlBlock ctrlBlock) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 29,
+        "text": "        AudioThread audioThread = new AudioThread(UACAudioHandler.class, ctrlBlock);"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 34,
+        "text": "    private UACAudioHandler(AudioThread thread) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 66,
+        "text": "    public UACAudio.AudioStatus getAudioStatus() {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 69,
+        "text": "            return UACAudio.AudioStatus.ERROR;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 98,
+        "text": "    public void addDataCallBack(UACAudioCallBack callBack) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 109,
+        "text": "    public void removeDataCallBack(UACAudioCallBack callBack) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 163,
+        "text": "        private final Class<UACAudioHandler> mHandlerClass;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 164,
+        "text": "        private UACAudioHandler mUACHandler;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 165,
+        "text": "        private UACAudio mUACAudio;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 167,
+        "text": "        private final Set<UACAudioCallBack> mCallBackList = new CopyOnWriteArraySet<>();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 169,
+        "text": "        public AudioThread(Class<UACAudioHandler> handlerClass, USBMonitor.UsbControlBlock ctrlBlock) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 179,
+        "text": "                mUACAudio = new UACAudio();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 180,
+        "text": "                mUACAudio.init(mCtrlBlock);"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 181,
+        "text": "                mUACAudio.addAudioCallBack(this::callOnDataCallBack);"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 188,
+        "text": "            if (mUACAudio == null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 192,
+        "text": "            mUACAudio.startRecording();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 197,
+        "text": "            if (mUACAudio == null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 201,
+        "text": "            mUACAudio.stopRecording();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 207,
+        "text": "            if (mUACAudio != null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 208,
+        "text": "                mUACAudio.release();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 209,
+        "text": "                mUACAudio = null;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 224,
+        "text": "                if (mUACAudio == null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 230,
+        "text": "                    return mUACAudio != null ? mUACAudio.getSampleRate() : -1;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 232,
+        "text": "                return mUACAudio.getSampleRate();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 238,
+        "text": "                if (mUACAudio == null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 244,
+        "text": "                    return mUACAudio != null ? mUACAudio.getChannelCount() : -1;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 246,
+        "text": "                return mUACAudio.getChannelCount();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 252,
+        "text": "                if (mUACAudio == null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 258,
+        "text": "                    return mUACAudio != null ? mUACAudio.getBitResolution() : -1;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 260,
+        "text": "                return mUACAudio.getBitResolution();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 264,
+        "text": "        public UACAudio.AudioStatus getAudioStatus() {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 266,
+        "text": "                if (mUACAudio == null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 272,
+        "text": "                    return mUACAudio != null ? mUACAudio.getAudioStatus() : UACAudio.AudioStatus.ERROR;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 274,
+        "text": "                return mUACAudio.getAudioStatus();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 280,
+        "text": "                if (mUACAudio == null) {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 286,
+        "text": "                    return mUACAudio != null && mUACAudio.isRecording();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 288,
+        "text": "                return mUACAudio.isRecording();"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 296,
+        "text": "            UACAudioHandler uacHandler = null;"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 298,
+        "text": "                Constructor<UACAudioHandler> constructor = mHandlerClass.getDeclaredConstructor(AudioThread.class);"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 301,
+        "text": "                Log.e(TAG, \"UACAudioHandler new failed, \" + e.getMessage());"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 321,
+        "text": "        public UACAudioHandler getHandler() {"
+      },
+      {
+        "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "line": 337,
+        "text": "            for (UACAudioCallBack callBack: mCallBackList) {"
+      }
+    ],
+    "limits": "Static textual scan, case-sensitive explicit patterns, files <=4 MB; absent names do not prove absent functionality or rights."
+  },
+  "historical_commits": [
+    {
+      "sha": "0781eb5c6fea87c69a81077c8bbc8564c39a15a3",
+      "date": "2022-09-14T10:22:09Z",
+      "message": "[dev] support record device mic(UAC)",
+      "parents": [
+        "cb97eed264f971fc8638b6b16dc5e1e4fb406ef0"
+      ],
+      "uac_changes": [
+        {
+          "filename": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioUac.kt",
+          "status": "added",
+          "previous_filename": null,
+          "sha": "87a8f8373aea0f0803c760a7b2fec6d24a0b4f58"
+        },
+        {
+          "filename": "libuvc/libs/arm64-v8a/libUACAudio.so",
+          "status": "added",
+          "previous_filename": null,
+          "sha": "4865dd8a8780ebce50df7823a99e9106aaa0218c"
+        },
+        {
+          "filename": "libuvc/libs/armeabi-v7a/libUACAudio.so",
+          "status": "added",
+          "previous_filename": null,
+          "sha": "ca0c2bcf3071cf35a633ea53a8f2dcfb50c96bf3"
+        },
+        {
+          "filename": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+          "status": "modified",
+          "previous_filename": null,
+          "sha": "d6694fccff108b467277eb0a51d803a65c4a27d6"
+        },
+        {
+          "filename": "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+          "status": "added",
+          "previous_filename": null,
+          "sha": "c19d50dc308d12043837a84277decce0b0ae9607"
+        },
+        {
+          "filename": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+          "status": "added",
+          "previous_filename": null,
+          "sha": "032e0585c82fac92c2cabd9747f60e4baec7b61c"
+        }
+      ],
+      "changed_files_examined": 31,
+      "file_pages_examined": 1
+    },
+    {
+      "sha": "bd1d02fbfc9e14657194a93264577eeafb3c3b9f",
+      "date": "2022-09-15T02:25:37Z",
+      "message": "[opt] remove \".so\" files to \"jinLibs\" directory",
+      "parents": [
+        "d95a32f2e618535616942f6a7e4937b2f9548e6a"
+      ],
+      "uac_changes": [
+        {
+          "filename": "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+          "status": "renamed",
+          "previous_filename": "libuvc/libs/arm64-v8a/libUACAudio.so",
+          "sha": "4865dd8a8780ebce50df7823a99e9106aaa0218c"
+        },
+        {
+          "filename": "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+          "status": "renamed",
+          "previous_filename": "libuvc/libs/armeabi-v7a/libUACAudio.so",
+          "sha": "ca0c2bcf3071cf35a633ea53a8f2dcfb50c96bf3"
+        }
+      ],
+      "changed_files_examined": 11,
+      "file_pages_examined": 1
+    },
+    {
+      "sha": "ccdb068d3aa0e89ce0147ba82228f4c48752c2a4",
+      "date": "2023-02-10T09:14:55Z",
+      "message": "[dev] version 3.3.0 development",
+      "parents": [
+        "7a9a9cfc9c4810ddf26c4d218ccb50ce9aebaedb"
+      ],
+      "uac_changes": [
+        {
+          "filename": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+          "status": "renamed",
+          "previous_filename": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioUac.kt",
+          "sha": "9ade4bb57832c72e78e253ced219a96c749889de"
+        },
+        {
+          "filename": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+          "status": "modified",
+          "previous_filename": null,
+          "sha": "d8c760fb27c30f66dc6a818bddafc03719dc7d10"
+        },
+        {
+          "filename": "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+          "status": "modified",
+          "previous_filename": null,
+          "sha": "d5bac2bf211701130c53394fd58413e24c376276"
+        },
+        {
+          "filename": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+          "status": "modified",
+          "previous_filename": null,
+          "sha": "88ad4950767fd02d7c03b10f9e4cf2fa0e8f9a24"
+        },
+        {
+          "filename": "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+          "status": "modified",
+          "previous_filename": null,
+          "sha": "67d3f29decb2594babb06370387deea105ebba18"
+        },
+        {
+          "filename": "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+          "status": "modified",
+          "previous_filename": null,
+          "sha": "1d85d6f9fc2843b48fe6b3941d47abdff6b8d330"
+        }
+      ],
+      "changed_files_examined": 108,
+      "file_pages_examined": 2
+    },
+    {
+      "sha": "829d32edf581bd9edf7766adfb1d30985f892db3",
+      "date": "2023-02-10T09:39:04Z",
+      "message": "[dev] support x86 & x86_64",
+      "parents": [
+        "ccdb068d3aa0e89ce0147ba82228f4c48752c2a4"
+      ],
+      "uac_changes": [
+        {
+          "filename": "libuvc/src/main/jniLibs/x86/libUACAudio.so",
+          "status": "added",
+          "previous_filename": null,
+          "sha": "97608acbd5f14a068af72dc464565c6732be92e1"
+        },
+        {
+          "filename": "libuvc/src/main/jniLibs/x86_64/libUACAudio.so",
+          "status": "added",
+          "previous_filename": null,
+          "sha": "ed02062380e2d99b422c45fa7f0439890a1ba42c"
+        }
+      ],
+      "changed_files_examined": 13,
+      "file_pages_examined": 1
+    }
+  ],
+  "native_packaging_graph": [
+    {
+      "path": "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+      "sha256": "e4c6af125ef73573e9334fb9ac6eff2a50856c33f34ab758c7bb830499dc054f",
+      "needed": [
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libUACAudio.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/arm64-v8a/libUVCCamera.so",
+      "sha256": "be70408a35ceeb565c4e17de4694ee80835a0d5fbe228548eaf5df248b6ee90d",
+      "needed": [
+        "libusb100.so",
+        "libuvc.so",
+        "libdl.so",
+        "liblog.so",
+        "libandroid.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libUVCCamera.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/arm64-v8a/libjpeg-turbo1500.so",
+      "sha256": "a0864511892a1ab371c2d8b7bf8f2ad0482d5600e5b78f7c34bad052dd14de63",
+      "needed": [
+        "libdl.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libjpeg-turbo1500.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/arm64-v8a/libusb100.so",
+      "sha256": "23475f3bf8a0b343f0839ca28bf61c91ee6b6a9fb7074f1e2a4c0641b7fe5974",
+      "needed": [
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libusb100.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/arm64-v8a/libuvc.so",
+      "sha256": "9c1d30a73fc756060316dd3bdd6a9d4b2a4cf30295445aa420fb8cdac958018c",
+      "needed": [
+        "libjpeg-turbo1500.so",
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libuvc.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+      "sha256": "adcde2a84392d9ce95a6db2b6a169792cb6c2a077d7eef224ff28c07afd28672",
+      "needed": [
+        "libdl.so",
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libUACAudio.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/armeabi-v7a/libUVCCamera.so",
+      "sha256": "b2234c830f40a2da5cd5e7785e654184e569cdfc6b10c3808480bb205580f269",
+      "needed": [
+        "libdl.so",
+        "libusb100.so",
+        "libuvc.so",
+        "liblog.so",
+        "libandroid.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libUVCCamera.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/armeabi-v7a/libjpeg-turbo1500.so",
+      "sha256": "78f7fe4260a7ce307a028f5979898a7418c2d5e07336e26f0bffc993c0f90d5b",
+      "needed": [
+        "libdl.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libjpeg-turbo1500.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/armeabi-v7a/libusb100.so",
+      "sha256": "bab5c448224a97c70368f95d46d50db3c613b626e919f48b8d5a4e2b936494ae",
+      "needed": [
+        "libdl.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libusb100.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/armeabi-v7a/libuvc.so",
+      "sha256": "d30a496d2d7de1d2637a2ed189d7b5e449eb2545f10aa0af0625cca4f2a5d9ea",
+      "needed": [
+        "libdl.so",
+        "libjpeg-turbo1500.so",
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libuvc.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86/libUACAudio.so",
+      "sha256": "8c3ba934a42a833d95f772e60eff2ebcfeb4dd42dd7bcd85f1de4b3c9e0d673d",
+      "needed": [
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libUACAudio.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86/libUVCCamera.so",
+      "sha256": "3d38ffe2431054e7f2ea28d75014c8edc371fe7f69b8f8dd6b661623861390fb",
+      "needed": [
+        "libusb100.so",
+        "libuvc.so",
+        "libdl.so",
+        "liblog.so",
+        "libandroid.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libUVCCamera.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86/libjpeg-turbo1500.so",
+      "sha256": "4b588ee8d28e19e7411189a3ae7eecbc0e20f2165342feaad0cf1a4325050479",
+      "needed": [
+        "libdl.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libjpeg-turbo1500.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86/libusb100.so",
+      "sha256": "f1dcb4e58614d4e7aa291878ceb5c87156f97f65c0c35b299f40b0b9a7494746",
+      "needed": [
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libusb100.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86/libuvc.so",
+      "sha256": "5cd039c45a646bc6e8b63f0c6a2aac74118931dae892f33742fc16dc8fd079e8",
+      "needed": [
+        "libjpeg-turbo1500.so",
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libuvc.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86_64/libUACAudio.so",
+      "sha256": "e0b7e998d24fcfb41d401c2b139bef67ccaa6f0689dc26cbf90dc6082f06ca38",
+      "needed": [
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libUACAudio.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86_64/libUVCCamera.so",
+      "sha256": "59740d6a5c0b6349b9c241c00b27872b008be9c9ef1b5a7543c58e5a4be99cff",
+      "needed": [
+        "libusb100.so",
+        "libuvc.so",
+        "libdl.so",
+        "liblog.so",
+        "libandroid.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libUVCCamera.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86_64/libjpeg-turbo1500.so",
+      "sha256": "eb3c8fbbd645040feba9da61123d32e1d208f8132928e5e94877deb4a3a218ea",
+      "needed": [
+        "libdl.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so"
+      ],
+      "soname": [
+        "libjpeg-turbo1500.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86_64/libusb100.so",
+      "sha256": "9a0ff790bcb956cf971a0fe4efb1f8771c42328b3ea86ecd19b8010b503add2e",
+      "needed": [
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libusb100.so"
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jniLibs/x86_64/libuvc.so",
+      "sha256": "830c8f8de44c68d5540b38b3609e022fd43a98a2e1a7952ee2c84daeeb46b085",
+      "needed": [
+        "libjpeg-turbo1500.so",
+        "libusb100.so",
+        "liblog.so",
+        "libc.so",
+        "libm.so",
+        "libstdc++.so",
+        "libdl.so"
+      ],
+      "soname": [
+        "libuvc.so"
+      ]
+    }
+  ],
+  "source_excerpts": [
+    {
+      "path": "libausbc/build.gradle",
+      "lines": [
+        {
+          "line": 18,
+          "text": ""
+        },
+        {
+          "line": 19,
+          "text": "    buildTypes {"
+        },
+        {
+          "line": 20,
+          "text": "        release {"
+        },
+        {
+          "line": 21,
+          "text": "            minifyEnabled false"
+        },
+        {
+          "line": 22,
+          "text": "            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'"
+        },
+        {
+          "line": 23,
+          "text": "        }"
+        },
+        {
+          "line": 24,
+          "text": "    }"
+        },
+        {
+          "line": 25,
+          "text": "    compileOptions {"
+        },
+        {
+          "line": 38,
+          "text": "    api 'com.elvishew:xlog:1.11.0'"
+        },
+        {
+          "line": 39,
+          "text": "//    implementation fileTree(\"libs\")"
+        },
+        {
+          "line": 40,
+          "text": ""
+        },
+        {
+          "line": 41,
+          "text": "    implementation project(path: ':libuvc')"
+        },
+        {
+          "line": 42,
+          "text": "    api project(path: ':libnative')"
+        },
+        {
+          "line": 43,
+          "text": "}"
+        }
+      ]
+    },
+    {
+      "path": "libausbc/src/main/java/com/jiangdg/ausbc/MultiCameraClient.kt",
+      "lines": [
+        {
+          "line": 12,
+          "text": "import com.jiangdg.ausbc.encode.AACEncodeProcessor"
+        },
+        {
+          "line": 13,
+          "text": "import com.jiangdg.ausbc.encode.AbstractProcessor"
+        },
+        {
+          "line": 14,
+          "text": "import com.jiangdg.ausbc.encode.H264EncodeProcessor"
+        },
+        {
+          "line": 15,
+          "text": "import com.jiangdg.ausbc.encode.audio.AudioStrategySystem"
+        },
+        {
+          "line": 16,
+          "text": "import com.jiangdg.ausbc.encode.audio.AudioStrategyUAC"
+        },
+        {
+          "line": 17,
+          "text": "import com.jiangdg.ausbc.encode.audio.IAudioStrategy"
+        },
+        {
+          "line": 18,
+          "text": "import com.jiangdg.ausbc.encode.bean.RawData"
+        },
+        {
+          "line": 19,
+          "text": "import com.jiangdg.ausbc.encode.muxer.Mp4Muxer"
+        },
+        {
+          "line": 20,
+          "text": "import com.jiangdg.ausbc.render.RenderManager"
+        },
+        {
+          "line": 21,
+          "text": "import com.jiangdg.ausbc.render.effect.AbstractEffect"
+        },
+        {
+          "line": 411,
+          "text": "        protected abstract fun closeCameraInternal()"
+        },
+        {
+          "line": 412,
+          "text": "        protected abstract fun captureImageInternal(savePath: String?, callback: ICaptureCallBack)"
+        },
+        {
+          "line": 413,
+          "text": ""
+        },
+        {
+          "line": 414,
+          "text": "        protected open fun getAudioStrategy(): IAudioStrategy? {"
+        },
+        {
+          "line": 415,
+          "text": "            return when(mCameraRequest?.audioSource) {"
+        },
+        {
+          "line": 416,
+          "text": "                CameraRequest.AudioSource.SOURCE_AUTO -> {"
+        },
+        {
+          "line": 417,
+          "text": "                    if (isMicSupported(device) && mCtrlBlock!=null) {"
+        },
+        {
+          "line": 418,
+          "text": "                        if (Utils.debugCamera) {"
+        },
+        {
+          "line": 419,
+          "text": "                            Logger.i(TAG, \"Audio record by using device internal mic\")"
+        },
+        {
+          "line": 420,
+          "text": "                        }"
+        },
+        {
+          "line": 421,
+          "text": "                        AudioStrategyUAC(mCtrlBlock!!)"
+        },
+        {
+          "line": 422,
+          "text": "                    } else {"
+        },
+        {
+          "line": 423,
+          "text": "                        if (Utils.debugCamera) {"
+        },
+        {
+          "line": 424,
+          "text": "                            Logger.i(TAG, \"Audio record by using system mic\")"
+        },
+        {
+          "line": 425,
+          "text": "                        }"
+        },
+        {
+          "line": 426,
+          "text": "                        AudioStrategySystem()"
+        },
+        {
+          "line": 427,
+          "text": "                    }"
+        },
+        {
+          "line": 428,
+          "text": "                }"
+        },
+        {
+          "line": 429,
+          "text": "                CameraRequest.AudioSource.SOURCE_DEV_MIC -> {"
+        },
+        {
+          "line": 430,
+          "text": "                    if (isMicSupported(device) && mCtrlBlock!=null) {"
+        },
+        {
+          "line": 431,
+          "text": "                        if (Utils.debugCamera) {"
+        },
+        {
+          "line": 432,
+          "text": "                            Logger.i(TAG, \"Audio record by using device internal mic\")"
+        },
+        {
+          "line": 433,
+          "text": "                        }"
+        },
+        {
+          "line": 434,
+          "text": "                        return AudioStrategyUAC(mCtrlBlock!!)"
+        },
+        {
+          "line": 435,
+          "text": "                    }"
+        },
+        {
+          "line": 436,
+          "text": "                    return null"
+        },
+        {
+          "line": 437,
+          "text": "                }"
+        },
+        {
+          "line": 438,
+          "text": "                CameraRequest.AudioSource.SOURCE_SYS_MIC -> {"
+        },
+        {
+          "line": 439,
+          "text": "                    if (Utils.debugCamera) {"
+        },
+        {
+          "line": 440,
+          "text": "                        Logger.i(TAG, \"Audio record by using system mic\")"
+        },
+        {
+          "line": 441,
+          "text": "                    }"
+        },
+        {
+          "line": 442,
+          "text": "                    AudioStrategySystem()"
+        },
+        {
+          "line": 443,
+          "text": "                }"
+        },
+        {
+          "line": 444,
+          "text": "                else -> {"
+        },
+        {
+          "line": 445,
+          "text": "                    null"
+        },
+        {
+          "line": 446,
+          "text": "                }"
+        },
+        {
+          "line": 463,
+          "text": "        protected fun initEncodeProcessor(previewWidth: Int, previewHeight: Int) {"
+        },
+        {
+          "line": 464,
+          "text": "            releaseEncodeProcessor()"
+        },
+        {
+          "line": 465,
+          "text": "            // create audio process"
+        },
+        {
+          "line": 466,
+          "text": "            getAudioStrategy()?.let { audio->"
+        },
+        {
+          "line": 467,
+          "text": "                AACEncodeProcessor(audio)"
+        },
+        {
+          "line": 468,
+          "text": "            }?.also { processor ->"
+        },
+        {
+          "line": 469,
+          "text": "                mAudioProcess = processor"
+        },
+        {
+          "line": 470,
+          "text": "            }"
+        }
+      ]
+    },
+    {
+      "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/bean/CameraRequest.kt",
+      "lines": [
+        {
+          "line": 1,
+          "text": "/*"
+        },
+        {
+          "line": 2,
+          "text": " * Copyright 2017-2023 Jiangdg"
+        },
+        {
+          "line": 3,
+          "text": " *"
+        },
+        {
+          "line": 4,
+          "text": " * Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 5,
+          "text": " * you may not use this file except in compliance with the License."
+        },
+        {
+          "line": 6,
+          "text": " * You may obtain a copy of the License at"
+        },
+        {
+          "line": 34,
+          "text": "    var isCaptureRawImage: Boolean = false"
+        },
+        {
+          "line": 35,
+          "text": "    var defaultEffect: AbstractEffect? = null"
+        },
+        {
+          "line": 36,
+          "text": "    var defaultRotateType: RotateType = RotateType.ANGLE_0"
+        },
+        {
+          "line": 37,
+          "text": "    var audioSource: AudioSource = AudioSource.SOURCE_AUTO"
+        },
+        {
+          "line": 38,
+          "text": "    var previewFormat: PreviewFormat = PreviewFormat.FORMAT_MJPEG"
+        },
+        {
+          "line": 39,
+          "text": ""
+        },
+        {
+          "line": 40,
+          "text": "    @kotlin.Deprecated(\"Deprecated since version 3.3.0\")"
+        },
+        {
+          "line": 41,
+          "text": "    var cameraId: String = \"\""
+        },
+        {
+          "line": 169,
+          "text": "        /**"
+        },
+        {
+          "line": 170,
+          "text": "         * Set audio source"
+        },
+        {
+          "line": 171,
+          "text": "         *"
+        },
+        {
+          "line": 172,
+          "text": "         * @param source audio record source, default is [AudioSource.SOURCE_AUTO]"
+        },
+        {
+          "line": 173,
+          "text": "         * @return see [Builder]"
+        },
+        {
+          "line": 174,
+          "text": "         */"
+        },
+        {
+          "line": 175,
+          "text": "        fun setAudioSource(source: AudioSource): Builder {"
+        },
+        {
+          "line": 176,
+          "text": "            mRequest.audioSource = source"
+        },
+        {
+          "line": 177,
+          "text": "            return this"
+        },
+        {
+          "line": 178,
+          "text": "        }"
+        },
+        {
+          "line": 179,
+          "text": ""
+        },
+        {
+          "line": 212,
+          "text": "    /**"
+        },
+        {
+          "line": 213,
+          "text": "     * Audio record source"
+        },
+        {
+          "line": 214,
+          "text": "     *"
+        },
+        {
+          "line": 215,
+          "text": "     * NONE: not record audio"
+        },
+        {
+          "line": 216,
+          "text": "     * SOURCE_SYS_MIC: record from system mic"
+        },
+        {
+          "line": 217,
+          "text": "     * SOURCE_DEV_MIC: record from camera device mic(UAC)"
+        },
+        {
+          "line": 218,
+          "text": "     * SOURCE_AUTO: record from camera device mic, if unsupported"
+        },
+        {
+          "line": 219,
+          "text": "     *              switch to system mic.default mode."
+        },
+        {
+          "line": 220,
+          "text": "     */"
+        },
+        {
+          "line": 221,
+          "text": "    enum class AudioSource {"
+        },
+        {
+          "line": 222,
+          "text": "        NONE,"
+        },
+        {
+          "line": 223,
+          "text": "        SOURCE_SYS_MIC,"
+        },
+        {
+          "line": 224,
+          "text": "        SOURCE_DEV_MIC,"
+        },
+        {
+          "line": 225,
+          "text": "        SOURCE_AUTO"
+        },
+        {
+          "line": 226,
+          "text": "    }"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/build.gradle",
+      "lines": [
+        {
+          "line": 27,
+          "text": ""
+        },
+        {
+          "line": 28,
+          "text": "    buildTypes {"
+        },
+        {
+          "line": 29,
+          "text": "        release {"
+        },
+        {
+          "line": 30,
+          "text": "            minifyEnabled false"
+        },
+        {
+          "line": 31,
+          "text": "            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'"
+        },
+        {
+          "line": 32,
+          "text": "        }"
+        },
+        {
+          "line": 33,
+          "text": "    }"
+        },
+        {
+          "line": 34,
+          "text": "}"
+        },
+        {
+          "line": 35,
+          "text": ""
+        },
+        {
+          "line": 36,
+          "text": "tasks.withType(JavaCompile) {"
+        },
+        {
+          "line": 37,
+          "text": "\tcompileTask -> compileTask.dependsOn ndkBuild"
+        },
+        {
+          "line": 38,
+          "text": "}"
+        },
+        {
+          "line": 39,
+          "text": ""
+        },
+        {
+          "line": 40,
+          "text": "String getNdkBuildPath() {"
+        },
+        {
+          "line": 41,
+          "text": "\tdef ndkBuildingDir = System.getenv(\"NDK_HOME\")"
+        },
+        {
+          "line": 42,
+          "text": "\tif (ndkBuildingDir==null || ndkBuildingDir.isEmpty()) {"
+        },
+        {
+          "line": 43,
+          "text": "\t\tProperties properties = new Properties()"
+        },
+        {
+          "line": 44,
+          "text": "\t\tproperties.load(project.rootProject.file('local.properties').newDataInputStream())"
+        },
+        {
+          "line": 45,
+          "text": "\t\tndkBuildingDir = properties.getProperty(\"ndk.dir\")"
+        },
+        {
+          "line": 46,
+          "text": "\t}"
+        },
+        {
+          "line": 47,
+          "text": "\tdef ndkBuildPath = ndkBuildingDir"
+        },
+        {
+          "line": 48,
+          "text": "\tif (Os.isFamily(Os.FAMILY_WINDOWS)) {"
+        },
+        {
+          "line": 49,
+          "text": "\t\tndkBuildPath = ndkBuildingDir + '/ndk-build.cmd'"
+        },
+        {
+          "line": 50,
+          "text": "\t} else {"
+        },
+        {
+          "line": 51,
+          "text": "\t\tndkBuildPath = ndkBuildingDir + '/ndk-build'"
+        },
+        {
+          "line": 52,
+          "text": "\t}"
+        },
+        {
+          "line": 53,
+          "text": "\treturn ndkBuildPath"
+        },
+        {
+          "line": 54,
+          "text": "}"
+        },
+        {
+          "line": 55,
+          "text": ""
+        },
+        {
+          "line": 56,
+          "text": "task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {"
+        },
+        {
+          "line": 57,
+          "text": "\tprintln('executing ndkBuild')"
+        },
+        {
+          "line": 58,
+          "text": "\tdef ndkBuildPath = getNdkBuildPath();"
+        },
+        {
+          "line": 59,
+          "text": "\tcommandLine ndkBuildPath, '-j8', '-C', file('src/main').absolutePath"
+        },
+        {
+          "line": 60,
+          "text": "}"
+        },
+        {
+          "line": 61,
+          "text": ""
+        },
+        {
+          "line": 62,
+          "text": "task ndkClean(type: Exec, description: 'clean JNI libraries') {"
+        },
+        {
+          "line": 63,
+          "text": "\tprintln('executing ndkBuild clean')"
+        },
+        {
+          "line": 64,
+          "text": "\tdef ndkBuildPath = getNdkBuildPath();"
+        },
+        {
+          "line": 65,
+          "text": "\tcommandLine ndkBuildPath, 'clean', '-C', file('src/main').absolutePath"
+        },
+        {
+          "line": 66,
+          "text": "}"
+        },
+        {
+          "line": 67,
+          "text": ""
+        },
+        {
+          "line": 68,
+          "text": "clean.dependsOn 'ndkClean'"
+        },
+        {
+          "line": 69,
+          "text": ""
+        },
+        {
+          "line": 71,
+          "text": "    implementation fileTree(dir: new File(buildDir, 'libs'), include: '*.jar')"
+        },
+        {
+          "line": 72,
+          "text": "\timplementation \"androidx.appcompat:appcompat:${androidXVersion}\""
+        },
+        {
+          "line": 73,
+          "text": "\timplementation 'com.elvishew:xlog:1.11.0'"
+        },
+        {
+          "line": 74,
+          "text": "//\timplementation project(path: ':libuvccommon')"
+        },
+        {
+          "line": 75,
+          "text": "}"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+      "lines": [
+        {
+          "line": 23,
+          "text": "    private long mNativePtr;"
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "    static {"
+        },
+        {
+          "line": 26,
+          "text": "        System.loadLibrary(\"UACAudio\");"
+        },
+        {
+          "line": 27,
+          "text": "    }"
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "    public void init(USBMonitor.UsbControlBlock ctrlBlock) {"
+        },
+        {
+          "line": 30,
+          "text": "        int result = -1;"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/java/com/jiangdg/uvc/UVCCamera.java",
+      "lines": [
+        {
+          "line": 2,
+          "text": " *  UVCCamera"
+        },
+        {
+          "line": 3,
+          "text": " *  library and sample to access to UVC web camera on non-rooted Android device"
+        },
+        {
+          "line": 4,
+          "text": " *"
+        },
+        {
+          "line": 5,
+          "text": " * Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 6,
+          "text": " *"
+        },
+        {
+          "line": 7,
+          "text": " *  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 8,
+          "text": " *  you may not use this file except in compliance with the License."
+        },
+        {
+          "line": 9,
+          "text": " *   You may obtain a copy of the License at"
+        },
+        {
+          "line": 17,
+          "text": " *   limitations under the License."
+        },
+        {
+          "line": 18,
+          "text": " *"
+        },
+        {
+          "line": 19,
+          "text": " *  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 20,
+          "text": " *  Files in the libjpeg-turbo, libusb, libuvc, rapidjson folder"
+        },
+        {
+          "line": 21,
+          "text": " *  may have a different license, see the respective files."
+        },
+        {
+          "line": 22,
+          "text": " */"
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 24,
+          "text": "package com.jiangdg.uvc;"
+        },
+        {
+          "line": 101,
+          "text": "    public static final int PU_AVIDEO_LOCK\t\t= 0x80020000;\t// D17: AnaXLogWrapper Video Lock Status"
+        },
+        {
+          "line": 102,
+          "text": "    public static final int PU_CONTRAST_AUTO\t= 0x80040000;\t// D18: Contrast, Auto"
+        },
+        {
+          "line": 103,
+          "text": ""
+        },
+        {
+          "line": 104,
+          "text": "\t// uvc_status_class from libuvc.h"
+        },
+        {
+          "line": 105,
+          "text": "\tpublic static final int STATUS_CLASS_CONTROL = 0x10;"
+        },
+        {
+          "line": 106,
+          "text": "\tpublic static final int STATUS_CLASS_CONTROL_CAMERA = 0x11;"
+        },
+        {
+          "line": 107,
+          "text": "\tpublic static final int STATUS_CLASS_CONTROL_PROCESSING = 0x12;"
+        },
+        {
+          "line": 108,
+          "text": ""
+        },
+        {
+          "line": 109,
+          "text": "\t// uvc_status_attribute from libuvc.h"
+        },
+        {
+          "line": 110,
+          "text": "\tpublic static final int STATUS_ATTRIBUTE_VALUE_CHANGE = 0x00;"
+        },
+        {
+          "line": 111,
+          "text": "\tpublic static final int STATUS_ATTRIBUTE_INFO_CHANGE = 0x01;"
+        },
+        {
+          "line": 112,
+          "text": "\tpublic static final int STATUS_ATTRIBUTE_FAILURE_CHANGE = 0x02;"
+        },
+        {
+          "line": 113,
+          "text": "\tpublic static final int STATUS_ATTRIBUTE_UNKNOWN = 0xff;"
+        },
+        {
+          "line": 115,
+          "text": "\tprivate static boolean isLoaded;"
+        },
+        {
+          "line": 116,
+          "text": "\tstatic {"
+        },
+        {
+          "line": 117,
+          "text": "\t\tif (!isLoaded) {"
+        },
+        {
+          "line": 118,
+          "text": "\t\t\tSystem.loadLibrary(\"jpeg-turbo1500\");"
+        },
+        {
+          "line": 119,
+          "text": "\t\t\tSystem.loadLibrary(\"usb100\");"
+        },
+        {
+          "line": 120,
+          "text": "\t\t\tSystem.loadLibrary(\"uvc\");"
+        },
+        {
+          "line": 121,
+          "text": "\t\t\tSystem.loadLibrary(\"UVCCamera\");"
+        },
+        {
+          "line": 122,
+          "text": "\t\t\tisLoaded = true;"
+        },
+        {
+          "line": 123,
+          "text": "\t\t}"
+        },
+        {
+          "line": 124,
+          "text": "\t}"
+        },
+        {
+          "line": 125,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jni/Android.mk",
+      "lines": [
+        {
+          "line": 1,
+          "text": "#include $(call all-subdir-makefiles)"
+        },
+        {
+          "line": 2,
+          "text": "PROJ_PATH\t:= $(call my-dir)"
+        },
+        {
+          "line": 3,
+          "text": "include $(CLEAR_VARS)"
+        },
+        {
+          "line": 4,
+          "text": "include $(PROJ_PATH)/UVCCamera/Android.mk"
+        },
+        {
+          "line": 5,
+          "text": "include $(PROJ_PATH)/libjpeg-turbo-1.5.0/Android.mk"
+        },
+        {
+          "line": 6,
+          "text": "include $(PROJ_PATH)/libusb/android/jni/Android.mk"
+        },
+        {
+          "line": 7,
+          "text": "include $(PROJ_PATH)/libuvc/android/jni/Android.mk"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jni/UVCCamera/Android.mk",
+      "lines": [
+        {
+          "line": 2,
+          "text": "# * UVCCamera"
+        },
+        {
+          "line": 3,
+          "text": "# * library and sample to access to UVC web camera on non-rooted Android device"
+        },
+        {
+          "line": 4,
+          "text": "# * "
+        },
+        {
+          "line": 5,
+          "text": "# * Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 6,
+          "text": "# * "
+        },
+        {
+          "line": 7,
+          "text": "# * File name: Android.mk"
+        },
+        {
+          "line": 8,
+          "text": "# * "
+        },
+        {
+          "line": 9,
+          "text": "# * Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "# *  limitations under the License."
+        },
+        {
+          "line": 20,
+          "text": "# * "
+        },
+        {
+          "line": 21,
+          "text": "# * All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 22,
+          "text": "# * Files in the jni/libjpeg, jni/libusb, jin/libuvc, jni/rapidjson folder may have a different license, see the respective files."
+        },
+        {
+          "line": 23,
+          "text": "#*/"
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "######################################################################"
+        },
+        {
+          "line": 26,
+          "text": "# Make shared library libUVCCamera.so"
+        },
+        {
+          "line": 27,
+          "text": "######################################################################"
+        },
+        {
+          "line": 28,
+          "text": "LOCAL_PATH\t:= $(call my-dir)"
+        },
+        {
+          "line": 29,
+          "text": "include $(CLEAR_VARS)"
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "######################################################################"
+        },
+        {
+          "line": 32,
+          "text": "# Make shared library libUVCCamera.so"
+        },
+        {
+          "line": 33,
+          "text": "######################################################################"
+        },
+        {
+          "line": 34,
+          "text": "CFLAGS := -Werror"
+        },
+        {
+          "line": 35,
+          "text": ""
+        },
+        {
+          "line": 36,
+          "text": "LOCAL_C_INCLUDES := \\"
+        },
+        {
+          "line": 37,
+          "text": "\t\t$(LOCAL_PATH)/ \\"
+        },
+        {
+          "line": 38,
+          "text": "\t\t$(LOCAL_PATH)/../ \\"
+        },
+        {
+          "line": 39,
+          "text": "\t\t$(LOCAL_PATH)/../rapidjson/include \\"
+        },
+        {
+          "line": 40,
+          "text": ""
+        },
+        {
+          "line": 41,
+          "text": "LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)"
+        },
+        {
+          "line": 42,
+          "text": "LOCAL_CFLAGS += -DANDROID_NDK"
+        },
+        {
+          "line": 43,
+          "text": "LOCAL_CFLAGS += -DLOG_NDEBUG"
+        },
+        {
+          "line": 44,
+          "text": "LOCAL_CFLAGS += -DACCESS_RAW_DESCRIPTORS"
+        },
+        {
+          "line": 45,
+          "text": "LOCAL_CFLAGS += -O3 -fstrict-aliasing -fprefetch-loop-arrays"
+        },
+        {
+          "line": 46,
+          "text": ""
+        },
+        {
+          "line": 47,
+          "text": "LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -ldl"
+        },
+        {
+          "line": 48,
+          "text": "LOCAL_LDLIBS += -llog"
+        },
+        {
+          "line": 49,
+          "text": "LOCAL_LDLIBS += -landroid"
+        },
+        {
+          "line": 50,
+          "text": ""
+        },
+        {
+          "line": 51,
+          "text": "LOCAL_SHARED_LIBRARIES += usb100 uvc"
+        },
+        {
+          "line": 52,
+          "text": ""
+        },
+        {
+          "line": 53,
+          "text": "LOCAL_ARM_MODE := arm"
+        },
+        {
+          "line": 54,
+          "text": ""
+        },
+        {
+          "line": 55,
+          "text": "LOCAL_SRC_FILES := \\"
+        },
+        {
+          "line": 56,
+          "text": "\t\t_onload.cpp \\"
+        },
+        {
+          "line": 57,
+          "text": "\t\tutilbase.cpp \\"
+        },
+        {
+          "line": 58,
+          "text": "\t\tUVCCamera.cpp \\"
+        },
+        {
+          "line": 59,
+          "text": "\t\tUVCPreview.cpp \\"
+        },
+        {
+          "line": 62,
+          "text": "\t\tParameters.cpp \\"
+        },
+        {
+          "line": 63,
+          "text": "\t\tserenegiant_usb_UVCCamera.cpp"
+        },
+        {
+          "line": 64,
+          "text": ""
+        },
+        {
+          "line": 65,
+          "text": "LOCAL_MODULE    := UVCCamera"
+        },
+        {
+          "line": 66,
+          "text": "include $(BUILD_SHARED_LIBRARY)"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jni/libusb/android/jni/Android.mk",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# Android build config for libusb, examples and tests"
+        },
+        {
+          "line": 2,
+          "text": "# Copyright © 2012-2013 RealVNC Ltd. <toby.gray@realvnc.com>"
+        },
+        {
+          "line": 3,
+          "text": "#"
+        },
+        {
+          "line": 4,
+          "text": "# This library is free software; you can redistribute it and/or"
+        },
+        {
+          "line": 5,
+          "text": "# modify it under the terms of the GNU Lesser General Public"
+        },
+        {
+          "line": 6,
+          "text": "# License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 7,
+          "text": "# version 2.1 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 8,
+          "text": "#"
+        },
+        {
+          "line": 9,
+          "text": "# This library is distributed in the hope that it will be useful,"
+        },
+        {
+          "line": 10,
+          "text": "# but WITHOUT ANY WARRANTY; without even the implied warranty of"
+        },
+        {
+          "line": 11,
+          "text": "# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU"
+        },
+        {
+          "line": 12,
+          "text": "# Lesser General Public License for more details."
+        },
+        {
+          "line": 13,
+          "text": "#"
+        },
+        {
+          "line": 14,
+          "text": "# You should have received a copy of the GNU Lesser General Public"
+        },
+        {
+          "line": 15,
+          "text": "# License along with this library; if not, write to the Free Software"
+        },
+        {
+          "line": 16,
+          "text": "# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+        },
+        {
+          "line": 17,
+          "text": "#"
+        },
+        {
+          "line": 18,
+          "text": ""
+        },
+        {
+          "line": 19,
+          "text": "LOCAL_PATH:= $(call my-dir)"
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": "include $(LOCAL_PATH)/libusb.mk"
+        },
+        {
+          "line": 22,
+          "text": "#include $(LOCAL_PATH)/examples.mk"
+        },
+        {
+          "line": 23,
+          "text": "#include $(LOCAL_PATH)/tests.mk"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jni/libusb/android/jni/libusb.mk",
+      "lines": [
+        {
+          "line": 1,
+          "text": "# modified saki@serenegiant <t_saki@serenegiant.com>"
+        },
+        {
+          "line": 2,
+          "text": "# Copyright (C)2014-2016"
+        },
+        {
+          "line": 3,
+          "text": "#"
+        },
+        {
+          "line": 4,
+          "text": "# Android build config for libusb"
+        },
+        {
+          "line": 5,
+          "text": "# Copyright © 2012-2013 RealVNC Ltd. <toby.gray@realvnc.com>"
+        },
+        {
+          "line": 6,
+          "text": "#"
+        },
+        {
+          "line": 7,
+          "text": "# This library is free software; you can redistribute it and/or"
+        },
+        {
+          "line": 8,
+          "text": "# modify it under the terms of the GNU Lesser General Public"
+        },
+        {
+          "line": 9,
+          "text": "# License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 10,
+          "text": "# version 2.1 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 11,
+          "text": "#"
+        },
+        {
+          "line": 12,
+          "text": "# This library is distributed in the hope that it will be useful,"
+        },
+        {
+          "line": 13,
+          "text": "# but WITHOUT ANY WARRANTY; without even the implied warranty of"
+        },
+        {
+          "line": 14,
+          "text": "# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU"
+        },
+        {
+          "line": 15,
+          "text": "# Lesser General Public License for more details."
+        },
+        {
+          "line": 16,
+          "text": "#"
+        },
+        {
+          "line": 17,
+          "text": "# You should have received a copy of the GNU Lesser General Public"
+        },
+        {
+          "line": 18,
+          "text": "# License along with this library; if not, write to the Free Software"
+        },
+        {
+          "line": 19,
+          "text": "# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+        },
+        {
+          "line": 20,
+          "text": "#"
+        },
+        {
+          "line": 21,
+          "text": "######################################################################"
+        },
+        {
+          "line": 22,
+          "text": "# libusb.a"
+        },
+        {
+          "line": 23,
+          "text": "######################################################################"
+        },
+        {
+          "line": 24,
+          "text": "LOCAL_PATH\t\t\t:= $(call my-dir)/../.."
+        },
+        {
+          "line": 25,
+          "text": "include $(CLEAR_VARS)"
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "# changed linux_usbfs.c => android_usbfs.c"
+        },
+        {
+          "line": 28,
+          "text": "# changed linux_netlink.c => android_netlink.c"
+        },
+        {
+          "line": 29,
+          "text": "# these sources are also modified."
+        },
+        {
+          "line": 30,
+          "text": "LOCAL_SRC_FILES := \\"
+        },
+        {
+          "line": 31,
+          "text": "\tlibusb/core.c \\"
+        },
+        {
+          "line": 32,
+          "text": "\tlibusb/descriptor.c \\"
+        },
+        {
+          "line": 33,
+          "text": "\tlibusb/hotplug.c \\"
+        },
+        {
+          "line": 34,
+          "text": "\tlibusb/io.c \\"
+        },
+        {
+          "line": 39,
+          "text": "\tlibusb/os/threads_posix.c \\"
+        },
+        {
+          "line": 40,
+          "text": "\tlibusb/os/android_netlink.c"
+        },
+        {
+          "line": 41,
+          "text": ""
+        },
+        {
+          "line": 42,
+          "text": "LOCAL_C_INCLUDES += \\"
+        },
+        {
+          "line": 43,
+          "text": "\t$(LOCAL_PATH)/ \\"
+        },
+        {
+          "line": 44,
+          "text": "\t$(LOCAL_PATH)/libusb \\"
+        },
+        {
+          "line": 45,
+          "text": "\t$(LOCAL_PATH)/libusb/os \\"
+        },
+        {
+          "line": 46,
+          "text": "\t$(LOCAL_PATH)/../ \\"
+        },
+        {
+          "line": 47,
+          "text": "\t$(LOCAL_PATH)/../include \\"
+        },
+        {
+          "line": 48,
+          "text": "\t$(LOCAL_PATH)/android \\"
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": "LOCAL_EXPORT_C_INCLUDES := \\"
+        },
+        {
+          "line": 51,
+          "text": "\t$(LOCAL_PATH)/ \\"
+        },
+        {
+          "line": 52,
+          "text": "\t$(LOCAL_PATH)/libusb"
+        },
+        {
+          "line": 53,
+          "text": ""
+        },
+        {
+          "line": 54,
+          "text": "# add some flags"
+        },
+        {
+          "line": 55,
+          "text": "LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%)"
+        },
+        {
+          "line": 56,
+          "text": "LOCAL_CFLAGS += -DANDROID_NDK"
+        },
+        {
+          "line": 57,
+          "text": "LOCAL_CFLAGS += -DLOG_NDEBUG"
+        },
+        {
+          "line": 58,
+          "text": "LOCAL_CFLAGS += -DACCESS_RAW_DESCRIPTORS"
+        },
+        {
+          "line": 59,
+          "text": "LOCAL_CFLAGS += -O3 -fstrict-aliasing -fprefetch-loop-arrays"
+        },
+        {
+          "line": 60,
+          "text": "LOCAL_EXPORT_LDLIBS += -llog"
+        },
+        {
+          "line": 61,
+          "text": "LOCAL_ARM_MODE := arm"
+        },
+        {
+          "line": 62,
+          "text": ""
+        },
+        {
+          "line": 63,
+          "text": "LOCAL_MODULE := libusb100_static"
+        },
+        {
+          "line": 64,
+          "text": "include $(BUILD_STATIC_LIBRARY)"
+        },
+        {
+          "line": 65,
+          "text": ""
+        },
+        {
+          "line": 66,
+          "text": "######################################################################"
+        },
+        {
+          "line": 67,
+          "text": "# libusb100.so"
+        },
+        {
+          "line": 68,
+          "text": "######################################################################"
+        },
+        {
+          "line": 69,
+          "text": "include $(CLEAR_VARS)"
+        },
+        {
+          "line": 70,
+          "text": "LOCAL_MODULE_TAGS := optional"
+        },
+        {
+          "line": 71,
+          "text": "LOCAL_EXPORT_LDLIBS += -llog"
+        },
+        {
+          "line": 72,
+          "text": ""
+        },
+        {
+          "line": 73,
+          "text": "LOCAL_WHOLE_STATIC_LIBRARIES = libusb100_static"
+        },
+        {
+          "line": 74,
+          "text": ""
+        },
+        {
+          "line": 75,
+          "text": "LOCAL_MODULE := libusb100"
+        },
+        {
+          "line": 76,
+          "text": "include $(BUILD_SHARED_LIBRARY)"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jni/libusb/libusb/core.c",
+      "lines": [
+        {
+          "line": 2,
+          "text": "/*"
+        },
+        {
+          "line": 3,
+          "text": " * add some functions for no-rooted Android"
+        },
+        {
+          "line": 4,
+          "text": " * add optimaization when compiling with gcc"
+        },
+        {
+          "line": 5,
+          "text": " * Copyright © 2014-2017 saki <t_saki@serenegiant.com>"
+        },
+        {
+          "line": 6,
+          "text": " *"
+        },
+        {
+          "line": 7,
+          "text": " * Core functions for libusb"
+        },
+        {
+          "line": 8,
+          "text": " * Copyright © 2012-2013 Nathan Hjelm <hjelmn@cs.unm.edu>"
+        },
+        {
+          "line": 9,
+          "text": " * Copyright © 2007-2008 Daniel Drake <dsd@gentoo.org>"
+        },
+        {
+          "line": 10,
+          "text": " * Copyright © 2001 Johannes Erdfelt <johannes@erdfelt.com>"
+        },
+        {
+          "line": 11,
+          "text": " *"
+        },
+        {
+          "line": 12,
+          "text": " * This library is free software; you can redistribute it and/or"
+        },
+        {
+          "line": 13,
+          "text": " * modify it under the terms of the GNU Lesser General Public"
+        },
+        {
+          "line": 14,
+          "text": " * License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 15,
+          "text": " * version 2.1 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 16,
+          "text": " *"
+        },
+        {
+          "line": 17,
+          "text": " * This library is distributed in the hope that it will be useful,"
+        },
+        {
+          "line": 18,
+          "text": " * but WITHOUT ANY WARRANTY; without even the implied warranty of"
+        },
+        {
+          "line": 19,
+          "text": " * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU"
+        },
+        {
+          "line": 20,
+          "text": " * Lesser General Public License for more details."
+        },
+        {
+          "line": 21,
+          "text": " *"
+        },
+        {
+          "line": 22,
+          "text": " * You should have received a copy of the GNU Lesser General Public"
+        },
+        {
+          "line": 23,
+          "text": " * License along with this library; if not, write to the Free Software"
+        },
+        {
+          "line": 24,
+          "text": " * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+        },
+        {
+          "line": 25,
+          "text": " */"
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "#define LOCAL_DEBUG 0"
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "#define LOG_TAG \"libusb/core\""
+        },
+        {
+          "line": 30,
+          "text": "#if 1\t// デバッグ情報を出さない時1"
+        },
+        {
+          "line": 31,
+          "text": "\t#ifndef LOG_NDEBUG"
+        },
+        {
+          "line": 152,
+          "text": " *"
+        },
+        {
+          "line": 153,
+          "text": " * \\section msglog Debug message logging"
+        },
+        {
+          "line": 154,
+          "text": " *"
+        },
+        {
+          "line": 155,
+          "text": " * libusb uses stderr for all logging. By default, logging is set to NONE,"
+        },
+        {
+          "line": 156,
+          "text": " * which means that no output will be produced. However, unless the library"
+        },
+        {
+          "line": 157,
+          "text": " * has been compiled with logging disabled, then any application calls to"
+        },
+        {
+          "line": 158,
+          "text": " * libusb_set_debug(), or the setting of the environmental variable"
+        },
+        {
+          "line": 159,
+          "text": " * LIBUSB_DEBUG outside of the application, can result in logging being"
+        },
+        {
+          "line": 854,
+          "text": "/** \\ingroup dev"
+        },
+        {
+          "line": 855,
+          "text": " * Get the list of all port numbers from root for the specified device"
+        },
+        {
+          "line": 856,
+          "text": " *"
+        },
+        {
+          "line": 857,
+          "text": " * Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 858,
+          "text": " * \\param dev a device"
+        },
+        {
+          "line": 859,
+          "text": " * \\param port_numbers the array that should contain the port numbers"
+        },
+        {
+          "line": 860,
+          "text": " * \\param port_numbers_len the maximum length of the array. As per the USB 3.0"
+        },
+        {
+          "line": 861,
+          "text": " * specs, the current maximum limit for the depth is 7."
+        },
+        {
+          "line": 1241,
+          "text": "\treturn LIBUSB_SUCCESS;"
+        },
+        {
+          "line": 1242,
+          "text": "}"
+        },
+        {
+          "line": 1243,
+          "text": ""
+        },
+        {
+          "line": 1244,
+          "text": "int API_EXPORTED libusb_set_device_fd(libusb_device *dev, int fd) {"
+        },
+        {
+          "line": 1245,
+          "text": ""
+        },
+        {
+          "line": 1246,
+          "text": "\treturn usbi_backend->set_device_fd(dev, fd);"
+        },
+        {
+          "line": 1247,
+          "text": "}"
+        },
+        {
+          "line": 1248,
+          "text": ""
+        },
+        {
+          "line": 1249,
+          "text": "libusb_device * LIBUSB_CALL libusb_get_device_with_fd(libusb_context *ctx,"
+        },
+        {
+          "line": 1250,
+          "text": "\tint vid, int pid, const char *serial, int fd, int busnum, int devaddr) {"
+        },
+        {
+          "line": 1251,
+          "text": ""
+        },
+        {
+          "line": 1252,
+          "text": "\tENTER();"
+        },
+        {
+          "line": 1253,
+          "text": ""
+        },
+        {
+          "line": 1803,
+          "text": " * If libusb_alloc_streams() returns with a value of N, you may use stream ids"
+        },
+        {
+          "line": 1804,
+          "text": " * 1 to N."
+        },
+        {
+          "line": 1805,
+          "text": " *"
+        },
+        {
+          "line": 1806,
+          "text": " * Since version 1.0.19, \\ref LIBUSB_API_VERSION >= 0x01000103"
+        },
+        {
+          "line": 1807,
+          "text": " *"
+        },
+        {
+          "line": 1808,
+          "text": " * \\param dev a device handle"
+        },
+        {
+          "line": 1809,
+          "text": " * \\param num_streams number of streams to try to allocate"
+        },
+        {
+          "line": 1810,
+          "text": " * \\param endpoints array of endpoints to allocate streams on"
+        },
+        {
+          "line": 1831,
+          "text": " *"
+        },
+        {
+          "line": 1832,
+          "text": " * Note streams are automatically free-ed when releasing an interface."
+        },
+        {
+          "line": 1833,
+          "text": " *"
+        },
+        {
+          "line": 1834,
+          "text": " * Since version 1.0.19, \\ref LIBUSB_API_VERSION >= 0x01000103"
+        },
+        {
+          "line": 1835,
+          "text": " *"
+        },
+        {
+          "line": 1836,
+          "text": " * \\param dev a device handle"
+        },
+        {
+          "line": 1837,
+          "text": " * \\param endpoints array of endpoints to free streams on"
+        },
+        {
+          "line": 1838,
+          "text": " * \\param num_endpoints length of the endpoints array"
+        },
+        {
+          "line": 2007,
+          "text": "/** \\ingroup lib"
+        },
+        {
+          "line": 2008,
+          "text": " * Set log message verbosity."
+        },
+        {
+          "line": 2009,
+          "text": " *"
+        },
+        {
+          "line": 2010,
+          "text": " * The default level is LIBUSB_LOG_LEVEL_NONE, which means no messages are ever"
+        },
+        {
+          "line": 2011,
+          "text": " * printed. If you choose to increase the message verbosity level, ensure"
+        },
+        {
+          "line": 2012,
+          "text": " * that your application does not close the stdout/stderr file descriptors."
+        },
+        {
+          "line": 2013,
+          "text": " *"
+        },
+        {
+          "line": 2014,
+          "text": " * You are advised to use level LIBUSB_LOG_LEVEL_WARNING. libusb is conservative"
+        },
+        {
+          "line": 2036,
+          "text": "\t\tctx->debug = level;"
+        },
+        {
+          "line": 2037,
+          "text": "}"
+        },
+        {
+          "line": 2038,
+          "text": ""
+        },
+        {
+          "line": 2039,
+          "text": "int API_EXPORTED libusb_init2(libusb_context **context, const char *usbfs) {"
+        },
+        {
+          "line": 2040,
+          "text": "\tENTER();"
+        },
+        {
+          "line": 2041,
+          "text": "\tstruct libusb_device *dev, *next;"
+        },
+        {
+          "line": 2042,
+          "text": "\tchar *dbg = getenv(\"LIBUSB_DEBUG\");"
+        },
+        {
+          "line": 2043,
+          "text": "\tstruct libusb_context *ctx;"
+        },
+        {
+          "line": 2188,
+          "text": " */"
+        },
+        {
+          "line": 2189,
+          "text": "int API_EXPORTED libusb_init(libusb_context **context) {"
+        },
+        {
+          "line": 2190,
+          "text": ""
+        },
+        {
+          "line": 2191,
+          "text": "\treturn libusb_init2(context, NULL);"
+        },
+        {
+          "line": 2192,
+          "text": "#if 0"
+        },
+        {
+          "line": 2193,
+          "text": "\tstruct libusb_device *dev, *next;"
+        },
+        {
+          "line": 2194,
+          "text": "\tchar *dbg = getenv(\"LIBUSB_DEBUG\");"
+        },
+        {
+          "line": 2195,
+          "text": "\tstruct libusb_context *ctx;"
+        },
+        {
+          "line": 2466,
+          "text": "#elif defined(__ANDROID__)"
+        },
+        {
+          "line": 2467,
+          "text": "\tint priority = ANDROID_LOG_UNKNOWN;"
+        },
+        {
+          "line": 2468,
+          "text": "\tswitch (level) {"
+        },
+        {
+          "line": 2469,
+          "text": "\tcase LIBUSB_LOG_LEVEL_NONE: break;\t// XXX add to avoid warning when compiling with clang"
+        },
+        {
+          "line": 2470,
+          "text": "\tcase LIBUSB_LOG_LEVEL_INFO: priority = ANDROID_LOG_INFO; break;"
+        },
+        {
+          "line": 2471,
+          "text": "\tcase LIBUSB_LOG_LEVEL_WARNING: priority = ANDROID_LOG_WARN; break;"
+        },
+        {
+          "line": 2472,
+          "text": "\tcase LIBUSB_LOG_LEVEL_ERROR: priority = ANDROID_LOG_ERROR; break;"
+        },
+        {
+          "line": 2473,
+          "text": "\tcase LIBUSB_LOG_LEVEL_DEBUG: priority = ANDROID_LOG_DEBUG; break;"
+        },
+        {
+          "line": 2559,
+          "text": "\tcase LIBUSB_LOG_LEVEL_DEBUG:"
+        },
+        {
+          "line": 2560,
+          "text": "\t\tprefix = \"debug\";"
+        },
+        {
+          "line": 2561,
+          "text": "\t\tbreak;"
+        },
+        {
+          "line": 2562,
+          "text": "\tcase LIBUSB_LOG_LEVEL_NONE:"
+        },
+        {
+          "line": 2563,
+          "text": "\t\treturn;"
+        },
+        {
+          "line": 2564,
+          "text": "\tdefault:"
+        },
+        {
+          "line": 2565,
+          "text": "\t\tprefix = \"unknown\";"
+        },
+        {
+          "line": 2566,
+          "text": "\t\tbreak;"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jni/libusb/libusb/libusb.h",
+      "lines": [
+        {
+          "line": 1,
+          "text": "/*"
+        },
+        {
+          "line": 2,
+          "text": " * Public libusb header file"
+        },
+        {
+          "line": 3,
+          "text": " * Copyright © 2001 Johannes Erdfelt <johannes@erdfelt.com>"
+        },
+        {
+          "line": 4,
+          "text": " * Copyright © 2007-2008 Daniel Drake <dsd@gentoo.org>"
+        },
+        {
+          "line": 5,
+          "text": " * Copyright © 2012 Pete Batard <pete@akeo.ie>"
+        },
+        {
+          "line": 6,
+          "text": " * Copyright © 2012 Nathan Hjelm <hjelmn@cs.unm.edu>"
+        },
+        {
+          "line": 7,
+          "text": " * For more information, please visit: http://libusb.info"
+        },
+        {
+          "line": 8,
+          "text": " *"
+        },
+        {
+          "line": 9,
+          "text": " * This library is free software; you can redistribute it and/or"
+        },
+        {
+          "line": 10,
+          "text": " * modify it under the terms of the GNU Lesser General Public"
+        },
+        {
+          "line": 11,
+          "text": " * License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 12,
+          "text": " * version 2.1 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 13,
+          "text": " *"
+        },
+        {
+          "line": 14,
+          "text": " * This library is distributed in the hope that it will be useful,"
+        },
+        {
+          "line": 15,
+          "text": " * but WITHOUT ANY WARRANTY; without even the implied warranty of"
+        },
+        {
+          "line": 16,
+          "text": " * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU"
+        },
+        {
+          "line": 17,
+          "text": " * Lesser General Public License for more details."
+        },
+        {
+          "line": 18,
+          "text": " *"
+        },
+        {
+          "line": 19,
+          "text": " * You should have received a copy of the GNU Lesser General Public"
+        },
+        {
+          "line": 20,
+          "text": " * License along with this library; if not, write to the Free Software"
+        },
+        {
+          "line": 21,
+          "text": " * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
+        },
+        {
+          "line": 22,
+          "text": " */"
+        },
+        {
+          "line": 23,
+          "text": ""
+        },
+        {
+          "line": 121,
+          "text": "#define LIBUSB_CALL"
+        },
+        {
+          "line": 122,
+          "text": "#endif"
+        },
+        {
+          "line": 123,
+          "text": ""
+        },
+        {
+          "line": 124,
+          "text": "/** \\def LIBUSB_API_VERSION"
+        },
+        {
+          "line": 125,
+          "text": " * \\ingroup misc"
+        },
+        {
+          "line": 126,
+          "text": " * libusb's API version."
+        },
+        {
+          "line": 127,
+          "text": " *"
+        },
+        {
+          "line": 128,
+          "text": " * Since version 1.0.13, to help with feature detection, libusb defines"
+        },
+        {
+          "line": 129,
+          "text": " * a LIBUSB_API_VERSION macro that gets increased every time there is a"
+        },
+        {
+          "line": 130,
+          "text": " * significant change to the API, such as the introduction of a new call,"
+        },
+        {
+          "line": 131,
+          "text": " * the definition of a new macro/enum member, or any other element that"
+        },
+        {
+          "line": 132,
+          "text": " * libusb applications may want to detect at compilation time."
+        },
+        {
+          "line": 133,
+          "text": " *"
+        },
+        {
+          "line": 134,
+          "text": " * The macro is typically used in an application as follows:"
+        },
+        {
+          "line": 135,
+          "text": " * \\code"
+        },
+        {
+          "line": 136,
+          "text": " * #if defined(LIBUSB_API_VERSION) && (LIBUSB_API_VERSION >= 0x01001234)"
+        },
+        {
+          "line": 137,
+          "text": " * // Use one of the newer features from the libusb API"
+        },
+        {
+          "line": 138,
+          "text": " * #endif"
+        },
+        {
+          "line": 139,
+          "text": " * \\endcode"
+        },
+        {
+          "line": 140,
+          "text": " *"
+        },
+        {
+          "line": 141,
+          "text": " * Another feature of LIBUSB_API_VERSION is that it can be used to detect"
+        },
+        {
+          "line": 142,
+          "text": " * whether you are compiling against the libusb or the libusb library."
+        },
+        {
+          "line": 143,
+          "text": " *"
+        },
+        {
+          "line": 144,
+          "text": " * Internally, LIBUSB_API_VERSION is defined as follows:"
+        },
+        {
+          "line": 145,
+          "text": " * (libusb major << 24) | (libusb minor << 16) | (16 bit incremental)"
+        },
+        {
+          "line": 146,
+          "text": " */"
+        },
+        {
+          "line": 147,
+          "text": "#define LIBUSB_API_VERSION 0x01000103"
+        },
+        {
+          "line": 148,
+          "text": ""
+        },
+        {
+          "line": 149,
+          "text": "/* The following is kept for compatibility, but will be deprecated in the future */"
+        },
+        {
+          "line": 150,
+          "text": "#define LIBUSBX_API_VERSION LIBUSB_API_VERSION"
+        },
+        {
+          "line": 151,
+          "text": ""
+        },
+        {
+          "line": 152,
+          "text": "#ifdef __cplusplus"
+        },
+        {
+          "line": 153,
+          "text": "extern \"C\" {"
+        },
+        {
+          "line": 154,
+          "text": "#endif"
+        },
+        {
+          "line": 470,
+          "text": " */"
+        },
+        {
+          "line": 471,
+          "text": "enum libusb_iso_sync_type {"
+        },
+        {
+          "line": 472,
+          "text": "\t/** No synchronization */"
+        },
+        {
+          "line": 473,
+          "text": "\tLIBUSB_ISO_SYNC_TYPE_NONE = 0,"
+        },
+        {
+          "line": 474,
+          "text": ""
+        },
+        {
+          "line": 475,
+          "text": "\t/** Asynchronous */"
+        },
+        {
+          "line": 476,
+          "text": "\tLIBUSB_ISO_SYNC_TYPE_ASYNC = 1,"
+        },
+        {
+          "line": 477,
+          "text": ""
+        },
+        {
+          "line": 828,
+          "text": ""
+        },
+        {
+          "line": 829,
+          "text": "/** \\ingroup desc"
+        },
+        {
+          "line": 830,
+          "text": " * A structure representing the USB 2.0 Extension descriptor"
+        },
+        {
+          "line": 831,
+          "text": " * This descriptor is documented in section 9.6.2.1 of the USB 3.0 specification."
+        },
+        {
+          "line": 832,
+          "text": " * All multiple-byte fields are represented in host-endian format."
+        },
+        {
+          "line": 833,
+          "text": " */"
+        },
+        {
+          "line": 834,
+          "text": "struct libusb_usb_2_0_extension_descriptor {"
+        },
+        {
+          "line": 835,
+          "text": "\t/** Size of this descriptor (in bytes) */"
+        },
+        {
+          "line": 1342,
+          "text": ""
+        },
+        {
+          "line": 1343,
+          "text": "/** \\ingroup lib"
+        },
+        {
+          "line": 1344,
+          "text": " *  Log message levels."
+        },
+        {
+          "line": 1345,
+          "text": " *  - LIBUSB_LOG_LEVEL_NONE (0)    : no messages ever printed by the library (default)"
+        },
+        {
+          "line": 1346,
+          "text": " *  - LIBUSB_LOG_LEVEL_ERROR (1)   : error messages are printed to stderr"
+        },
+        {
+          "line": 1347,
+          "text": " *  - LIBUSB_LOG_LEVEL_WARNING (2) : warning and error messages are printed to stderr"
+        },
+        {
+          "line": 1348,
+          "text": " *  - LIBUSB_LOG_LEVEL_INFO (3)    : informational messages are printed to stdout, warning"
+        },
+        {
+          "line": 1349,
+          "text": " *    and error messages are printed to stderr"
+        },
+        {
+          "line": 1351,
+          "text": " *    warnings and errors to stderr"
+        },
+        {
+          "line": 1352,
+          "text": " */"
+        },
+        {
+          "line": 1353,
+          "text": "enum libusb_log_level {"
+        },
+        {
+          "line": 1354,
+          "text": "\tLIBUSB_LOG_LEVEL_NONE = 0,"
+        },
+        {
+          "line": 1355,
+          "text": "\tLIBUSB_LOG_LEVEL_ERROR,"
+        },
+        {
+          "line": 1356,
+          "text": "\tLIBUSB_LOG_LEVEL_WARNING,"
+        },
+        {
+          "line": 1357,
+          "text": "\tLIBUSB_LOG_LEVEL_INFO,"
+        },
+        {
+          "line": 1358,
+          "text": "\tLIBUSB_LOG_LEVEL_DEBUG,"
+        },
+        {
+          "line": 1359,
+          "text": "};"
+        },
+        {
+          "line": 1360,
+          "text": ""
+        },
+        {
+          "line": 1361,
+          "text": "int LIBUSB_CALL libusb_init(libusb_context **ctx);"
+        },
+        {
+          "line": 1362,
+          "text": "int LIBUSB_CALL libusb_init2(libusb_context **ctx, const char *usbfs);"
+        },
+        {
+          "line": 1363,
+          "text": "void LIBUSB_CALL libusb_exit(libusb_context *ctx);"
+        },
+        {
+          "line": 1364,
+          "text": "void LIBUSB_CALL libusb_set_debug(libusb_context *ctx, int level);"
+        },
+        {
+          "line": 1365,
+          "text": "const struct libusb_version * LIBUSB_CALL libusb_get_version(void);"
+        },
+        {
+          "line": 1366,
+          "text": "int LIBUSB_CALL libusb_has_capability(uint32_t capability);"
+        },
+        {
+          "line": 1430,
+          "text": "int LIBUSB_CALL libusb_get_max_iso_packet_size(libusb_device *dev,"
+        },
+        {
+          "line": 1431,
+          "text": "\tunsigned char endpoint);"
+        },
+        {
+          "line": 1432,
+          "text": ""
+        },
+        {
+          "line": 1433,
+          "text": "int LIBUSB_CALL libusb_set_device_fd(libusb_device *dev, int fd);\t// XXX add for mainly non-rooted Android"
+        },
+        {
+          "line": 1434,
+          "text": "libusb_device * LIBUSB_CALL libusb_get_device_with_fd(libusb_context *ctx,"
+        },
+        {
+          "line": 1435,
+          "text": "\tint vid, int pid, const char *serial, int fd, int busnum, int devaddr);"
+        },
+        {
+          "line": 1436,
+          "text": "int LIBUSB_CALL libusb_open(libusb_device *dev, libusb_device_handle **handle);"
+        },
+        {
+          "line": 1437,
+          "text": "void LIBUSB_CALL libusb_close(libusb_device_handle *dev_handle);"
+        },
+        {
+          "line": 1438,
+          "text": "libusb_device * LIBUSB_CALL libusb_get_device(libusb_device_handle *dev_handle);"
+        },
+        {
+          "line": 1627,
+          "text": " * Helper function to populate the required \\ref libusb_transfer fields"
+        },
+        {
+          "line": 1628,
+          "text": " * for a bulk transfer using bulk streams."
+        },
+        {
+          "line": 1629,
+          "text": " *"
+        },
+        {
+          "line": 1630,
+          "text": " * Since version 1.0.19, \\ref LIBUSB_API_VERSION >= 0x01000103"
+        },
+        {
+          "line": 1631,
+          "text": " *"
+        },
+        {
+          "line": 1632,
+          "text": " * \\param transfer the transfer to populate"
+        },
+        {
+          "line": 1633,
+          "text": " * \\param dev_handle handle of the device that will handle the transfer"
+        },
+        {
+          "line": 1634,
+          "text": " * \\param endpoint address of the endpoint where this transfer will be sent"
+        },
+        {
+          "line": 1935,
+          "text": " * per libusb_context and it is safe to call libusb_hotplug_deregister_callback()"
+        },
+        {
+          "line": 1936,
+          "text": " * on an already deregisted callback."
+        },
+        {
+          "line": 1937,
+          "text": " *"
+        },
+        {
+          "line": 1938,
+          "text": " * Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 1939,
+          "text": " *"
+        },
+        {
+          "line": 1940,
+          "text": " * For more information, see \\ref hotplug."
+        },
+        {
+          "line": 1941,
+          "text": " */"
+        },
+        {
+          "line": 1942,
+          "text": "typedef int libusb_hotplug_callback_handle;"
+        },
+        {
+          "line": 1943,
+          "text": ""
+        },
+        {
+          "line": 1944,
+          "text": "/** \\ingroup hotplug"
+        },
+        {
+          "line": 1945,
+          "text": " *"
+        },
+        {
+          "line": 1946,
+          "text": " * Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 1947,
+          "text": " *"
+        },
+        {
+          "line": 1948,
+          "text": " * Flags for hotplug events */"
+        },
+        {
+          "line": 1949,
+          "text": "typedef enum {"
+        },
+        {
+          "line": 1950,
+          "text": "\t/** Arm the callback and fire it for all matching currently attached devices. */"
+        },
+        {
+          "line": 1953,
+          "text": ""
+        },
+        {
+          "line": 1954,
+          "text": "/** \\ingroup hotplug"
+        },
+        {
+          "line": 1955,
+          "text": " *"
+        },
+        {
+          "line": 1956,
+          "text": " * Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 1957,
+          "text": " *"
+        },
+        {
+          "line": 1958,
+          "text": " * Hotplug events */"
+        },
+        {
+          "line": 1959,
+          "text": "typedef enum {"
+        },
+        {
+          "line": 1960,
+          "text": "\t/** A device has been plugged in and is ready to use */"
+        },
+        {
+          "line": 1983,
+          "text": " * It is safe to call either libusb_hotplug_register_callback() or"
+        },
+        {
+          "line": 1984,
+          "text": " * libusb_hotplug_deregister_callback() from within a callback function."
+        },
+        {
+          "line": 1985,
+          "text": " *"
+        },
+        {
+          "line": 1986,
+          "text": " * Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 1987,
+          "text": " *"
+        },
+        {
+          "line": 1988,
+          "text": " * \\param ctx            context of this notification"
+        },
+        {
+          "line": 1989,
+          "text": " * \\param device         libusb_device this event occurred on"
+        },
+        {
+          "line": 1990,
+          "text": " * \\param event          event that occurred"
+        },
+        {
+          "line": 2017,
+          "text": " * from libusb_handle_events(); and/or your callback may be called for the"
+        },
+        {
+          "line": 2018,
+          "text": " * removal of a device for which an arrived call was never made."
+        },
+        {
+          "line": 2019,
+          "text": " *"
+        },
+        {
+          "line": 2020,
+          "text": " * Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 2021,
+          "text": " *"
+        },
+        {
+          "line": 2022,
+          "text": " * \\param[in] ctx context to register this callback with"
+        },
+        {
+          "line": 2023,
+          "text": " * \\param[in] events bitwise or of events that will trigger this callback. See \\ref"
+        },
+        {
+          "line": 2024,
+          "text": " *            libusb_hotplug_event"
+        },
+        {
+          "line": 2046,
+          "text": " * Deregister a callback from a libusb_context. This function is safe to call from within"
+        },
+        {
+          "line": 2047,
+          "text": " * a hotplug callback."
+        },
+        {
+          "line": 2048,
+          "text": " *"
+        },
+        {
+          "line": 2049,
+          "text": " * Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 2050,
+          "text": " *"
+        },
+        {
+          "line": 2051,
+          "text": " * \\param[in] ctx context this callback is registered with"
+        },
+        {
+          "line": 2052,
+          "text": " * \\param[in] handle the handle of the callback to deregister"
+        },
+        {
+          "line": 2053,
+          "text": " */"
+        }
+      ]
+    },
+    {
+      "path": "libuvc/src/main/jni/libusb/libusb/version.h",
+      "lines": []
+    },
+    {
+      "path": "libuvc/src/main/jni/libusb/libusb/version_nano.h",
+      "lines": []
+    }
+  ],
+  "introduction_tree_uac_paths": [
+    "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioUac.kt",
+    "libuvc/libs/arm64-v8a/libUACAudio.so",
+    "libuvc/libs/armeabi-v7a/libUACAudio.so",
+    "libuvc/src/main/java/com/jiangdg/uac",
+    "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+    "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+    "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java"
+  ],
+  "introduction_tree_truncated": false,
+  "uac_paths": [
+    "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+    "libuvc/src/main/java/com/jiangdg/uac",
+    "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+    "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+    "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+    "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+    "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+    "libuvc/src/main/jniLibs/x86/libUACAudio.so",
+    "libuvc/src/main/jniLibs/x86_64/libUACAudio.so"
+  ],
+  "maintainer_comment": {
+    "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/issues/494#issuecomment-1321350701",
+    "created_at": "2022-11-21T02:02:41Z",
+    "updated_at": "2022-11-21T02:02:41Z",
+    "body": "音频还没调通，还有点问题。",
+    "author_association": "OWNER",
+    "user": "jiangdongguo"
+  },
+  "pull_753_snapshot": {
+    "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/pull/753",
+    "state": "open",
+    "merged": false,
+    "base_sha": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+    "head_sha": "ffbf0fb17ad9baefd229e87ea990d11e56f421fe",
+    "updated_at": "2026-03-14T23:05:04Z",
+    "files_page_limit": 100,
+    "uac_files": [
+      {
+        "filename": "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+        "status": "removed",
+        "sha": "67d3f29decb2594babb06370387deea105ebba18"
+      },
+      {
+        "filename": "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+        "status": "removed",
+        "sha": "1d85d6f9fc2843b48fe6b3941d47abdff6b8d330"
+      },
+      {
+        "filename": "libuvc/src/main/jniLibs/x86/libUACAudio.so",
+        "status": "removed",
+        "sha": "97608acbd5f14a068af72dc464565c6732be92e1"
+      },
+      {
+        "filename": "libuvc/src/main/jniLibs/x86_64/libUACAudio.so",
+        "status": "removed",
+        "sha": "ed02062380e2d99b422c45fa7f0439890a1ba42c"
+      }
+    ]
+  }
+}

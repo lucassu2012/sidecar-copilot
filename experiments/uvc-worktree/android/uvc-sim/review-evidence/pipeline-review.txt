@@ -1,0 +1,7 @@
+coordinator last accepted sequence=2
+publication sequences=2,1
+preview pixel=111111ff; newest frame expected=222222ff
+Exception in thread "main" java.lang.AssertionError: late sequence 1 overwrote already published sequence 2
+	at local.sidecar.copilot.uvcsim.PipelineReviewChecks.require(PipelineReviewChecks.java:31)
+	at local.sidecar.copilot.uvcsim.PipelineReviewChecks.orderRegression(PipelineReviewChecks.java:196)
+	at local.sidecar.copilot.uvcsim.PipelineReviewChecks.main(PipelineReviewChecks.java:60)

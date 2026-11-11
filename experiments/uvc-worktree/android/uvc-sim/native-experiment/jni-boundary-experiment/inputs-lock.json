@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "git_base": "62eb3485a056c91720609f38ba436122bfdcb420",
+  "scope": "Existing local compiler/JDK and unchanged Java contract/adapter/owner sources; no native driver linked.",
+  "inherited": [
+    {
+      "path": "contract-baseline/src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+      "bytes": 4064,
+      "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+    },
+    {
+      "path": "contract-baseline/src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+      "bytes": 3891,
+      "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+    },
+    {
+      "path": "contract-baseline/src/local/sidecar/copilot/uvccontract/UvcContract.java",
+      "bytes": 15549,
+      "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+    },
+    {
+      "path": "src/local/sidecar/copilot/uvcadapter/BackendPort.java",
+      "bytes": 3807,
+      "sha256": "d063d51451e53acf960a0b9cd00e3e32ed7a0e152ae8fc0fc608c9aca59d1a4b"
+    },
+    {
+      "path": "src/local/sidecar/copilot/uvcadapter/IsolatedCaptureSession.java",
+      "bytes": 25322,
+      "sha256": "fedcf080407c9d591f6ebd7f6140229bf7f076508483f4910617650e6000eefd"
+    },
+    {
+      "path": "src/local/sidecar/copilot/uvcadapter/OwnedFrameBridge.java",
+      "bytes": 10811,
+      "sha256": "c3ee156b548c6a17acdb33b6e7efc31f90d57d1c5726988fa37f09f469d408e8"
+    },
+    {
+      "path": "usb-owner-experiment/src/local/sidecar/copilot/usbowner/PlatformUsbPort.java",
+      "bytes": 2142,
+      "sha256": "f46ebe272b2a363363533103ccd54cf7ca23c088d4f4409c6d0973563de5dc26"
+    },
+    {
+      "path": "usb-owner-experiment/src/local/sidecar/copilot/usbowner/UsbConnectionOwner.java",
+      "bytes": 21946,
+      "sha256": "4929ba6a44201b9846a809ea2a4ee059e466d740eb0e0cbaad32ca6c4dcb227d"
+    },
+    {
+      "path": "contract-baseline/manifest.json",
+      "bytes": 3755,
+      "sha256": "54c68bbb4115f42a4ad5d6685b7f897cc33999ef403825651f5b883c9984189d"
+    }
+  ],
+  "tools": [
+    {
+      "path": "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+      "bytes": 50344,
+      "sha256": "b3afe83e1ab067da4c56f1a7b2ba4c14ec832d694333f35b2b45178e9ac596ef"
+    },
+    {
+      "path": "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe",
+      "bytes": 24232,
+      "sha256": "988446ceec6e33ce0420ddf2489bb13d3a2278b4c8745309123dfa8f2c0dd0ce"
+    },
+    {
+      "path": "E:\\tools\\jdk-17.0.19+10\\include\\jni.h",
+      "bytes": 75678,
+      "sha256": "1266aea5b9f5d5db1cb6f8e5c6c43cfa7f80bc4f72d7fe42c6131bb939dc70f4"
+    },
+    {
+      "path": "E:\\tools\\jdk-17.0.19+10\\include\\win32\\jni_md.h",
+      "bytes": 1510,
+      "sha256": "3cacac1e4802ec246ea7c0c6772d4ac40c9f7255d4df095cfffe601137689771"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat",
+      "bytes": 39,
+      "sha256": "6b516d8fcf543c14b2d861e1f45661e0029230fe0dc48e86ce78522801822209"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe",
+      "bytes": 682576,
+      "sha256": "a560c2e6d5c3c30bf563ba5285576e9423f18d44165e1398539d912866a4daab"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\c1.dll",
+      "bytes": 3474976,
+      "sha256": "9524fe99701ac4f66b66b01672093bc40b2c281a776c3c00d4955cf36ea0714b"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\c1xx.dll",
+      "bytes": 12529736,
+      "sha256": "415abf3faff5a565f22ac3b060ad7f5064f0e5b75fb51c593ef21dca64818d55"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\c2.dll",
+      "bytes": 10834504,
+      "sha256": "8d9e355f7d3b96b7bc4bd05f8a2205bd76f08b5432dd0b225ad9bfca0926ce7b"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\link.exe",
+      "bytes": 3422320,
+      "sha256": "a54ec9d687df02a64932149eb910685a113838df5d80e72b91e58d1c4be9e39e"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\dumpbin.exe",
+      "bytes": 22584,
+      "sha256": "04f871a1a0724d4024224c60de755e80ec57ef92d13b5e1c86ed1f22ca135a71"
+    }
+  ]
+}

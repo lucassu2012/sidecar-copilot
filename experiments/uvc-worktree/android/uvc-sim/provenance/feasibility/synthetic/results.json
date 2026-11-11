@@ -1,0 +1,733 @@
+{
+  "checks": [
+    {
+      "actual": "000000ffffffffffff0000ff00ff00ff0000ffffffff00ff00ffffffff00ffff",
+      "expected": "000000ffffffffffff0000ff00ff00ff0000ffffffff00ff00ffffffff00ffff",
+      "name": "RGBX color bars become opaque RGBA"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "blindly preserving X fails the opaque oracle"
+    },
+    {
+      "actual": "11223300557799ffabcdef7ffe01cd811234564280402003",
+      "expected": "11223300557799ffabcdef7ffe01cd811234564280402003",
+      "name": "odd width and padded stride preserve RGBA"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "tight-stride assumption is discriminated"
+    },
+    {
+      "actual": [
+        0,
+        255,
+        127,
+        129,
+        66,
+        3
+      ],
+      "expected": [
+        0,
+        255,
+        127,
+        129,
+        66,
+        3
+      ],
+      "name": "explicit RGBA alpha preserved"
+    },
+    {
+      "actual": "33221100997755ffefcdab7fcd01fe815634124220408003",
+      "expected": "33221100997755ffefcdab7fcd01fe815634124220408003",
+      "name": "ABGR register name is RGBA bytes; ARGB is BGRA bytes"
+    },
+    {
+      "actual": "11223300557799ffabcdef7ffe01cd811234564280402003",
+      "expected": "11223300557799ffabcdef7ffe01cd811234564280402003",
+      "name": "owned pixels survive native-pool overwrite"
+    },
+    {
+      "actual": "borrowed callback lifetime ended",
+      "expected": "borrowed callback lifetime ended",
+      "name": "expired borrowed read"
+    },
+    {
+      "actual": "borrowed callback lifetime ended",
+      "expected": "borrowed callback lifetime ended",
+      "name": "expired borrowed copy"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "idempotent owned release returns budget"
+    },
+    {
+      "actual": [
+        0
+      ],
+      "expected": [
+        0
+      ],
+      "name": "released modeled storage is zeroed"
+    },
+    {
+      "actual": "borrowed callback lifetime ended",
+      "expected": "borrowed callback lifetime ended",
+      "name": "lifetime expires during controlled copy"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "interrupted copy releases reservation"
+    },
+    {
+      "actual": "positive integer dimensions required",
+      "expected": "positive integer dimensions required",
+      "name": "zero width"
+    },
+    {
+      "actual": "positive integer dimensions required",
+      "expected": "positive integer dimensions required",
+      "name": "negative height"
+    },
+    {
+      "actual": "positive row stride too short",
+      "expected": "positive row stride too short",
+      "name": "short stride"
+    },
+    {
+      "actual": "source last row unavailable",
+      "expected": "source last row unavailable",
+      "name": "last byte unavailable"
+    },
+    {
+      "actual": "destination capacity too short",
+      "expected": "destination capacity too short",
+      "name": "short destination"
+    },
+    {
+      "actual": "owned budget exhausted",
+      "expected": "owned budget exhausted",
+      "name": "budget one byte short"
+    },
+    {
+      "actual": "bridge integer overflow",
+      "expected": "bridge integer overflow",
+      "name": "width times four overflow"
+    },
+    {
+      "actual": "bridge integer overflow",
+      "expected": "bridge integer overflow",
+      "name": "last row offset overflow"
+    },
+    {
+      "actual": "bridge integer overflow",
+      "expected": "bridge integer overflow",
+      "name": "last row end overflow"
+    },
+    {
+      "actual": "bridge integer overflow",
+      "expected": "bridge integer overflow",
+      "name": "height times row overflow"
+    },
+    {
+      "actual": [
+        26,
+        24
+      ],
+      "expected": [
+        26,
+        24
+      ],
+      "name": "valid final row needs no padding"
+    },
+    {
+      "actual": "owned budget exhausted",
+      "expected": "owned budget exhausted",
+      "name": "budget refusal occurs before pixel access"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "budget refusal leaves zero live bytes"
+    },
+    {
+      "actual": "0000ffff00f8e0071f00e0ffff071ff8",
+      "expected": "0000ffff00f8e0071f00e0ffff071ff8",
+      "name": "RGB565 named-color little-endian oracle"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "missing R/B shuffle fails red-blue oracle"
+    },
+    {
+      "actual": "e0071f0000f8",
+      "expected": "e0071f0000f8",
+      "name": "RGB565 odd tail retains red"
+    },
+    {
+      "actual": "YUY2 candidate requires even width",
+      "expected": "YUY2 candidate requires even width",
+      "name": "YUY2 rejects odd width before conversion"
+    },
+    {
+      "actual": [
+        7,
+        3,
+        7
+      ],
+      "expected": [
+        7,
+        3,
+        7
+      ],
+      "name": "RGB565 quantization discarded-bit bounds"
+    },
+    {
+      "actual": [
+        896,
+        384,
+        896
+      ],
+      "expected": [
+        896,
+        384,
+        896
+      ],
+      "name": "RGB565 ramp discarded-bit sums"
+    },
+    {
+      "actual": 64,
+      "expected": 64,
+      "name": "RGB565 gray ramp collisions"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "owned RGBA retains a one-channel one-unit difference"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "name": "RGB565 can erase that small change"
+    },
+    {
+      "actual": [
+        [
+          16,
+          128,
+          128
+        ],
+        [
+          235,
+          128,
+          128
+        ],
+        [
+          82,
+          90,
+          240
+        ],
+        [
+          144,
+          54,
+          34
+        ],
+        [
+          41,
+          240,
+          110
+        ],
+        [
+          210,
+          16,
+          146
+        ],
+        [
+          169,
+          166,
+          16
+        ],
+        [
+          107,
+          202,
+          222
+        ]
+      ],
+      "expected": [
+        [
+          16,
+          128,
+          128
+        ],
+        [
+          235,
+          128,
+          128
+        ],
+        [
+          82,
+          90,
+          240
+        ],
+        [
+          144,
+          54,
+          34
+        ],
+        [
+          41,
+          240,
+          110
+        ],
+        [
+          210,
+          16,
+          146
+        ],
+        [
+          169,
+          166,
+          16
+        ],
+        [
+          107,
+          202,
+          222
+        ]
+      ],
+      "name": "8-bit Y and sum_round UV solid color oracle"
+    },
+    {
+      "actual": [
+        [
+          82,
+          165,
+          41,
+          175
+        ],
+        [
+          82,
+          72,
+          144,
+          137
+        ],
+        [
+          144,
+          147,
+          41,
+          72
+        ],
+        [
+          16,
+          128,
+          235,
+          128
+        ],
+        [
+          82,
+          109,
+          235,
+          184
+        ],
+        [
+          16,
+          128,
+          16,
+          128
+        ]
+      ],
+      "expected": [
+        [
+          82,
+          165,
+          41,
+          175
+        ],
+        [
+          82,
+          72,
+          144,
+          137
+        ],
+        [
+          144,
+          147,
+          41,
+          72
+        ],
+        [
+          16,
+          128,
+          235,
+          128
+        ],
+        [
+          82,
+          109,
+          235,
+          184
+        ],
+        [
+          16,
+          128,
+          16,
+          128
+        ]
+      ],
+      "name": "YUY2 horizontal-only chroma with packed Y0 U Y1 V"
+    },
+    {
+      "actual": [
+        82,
+        109,
+        235,
+        183
+      ],
+      "expected": [
+        82,
+        109,
+        235,
+        183
+      ],
+      "name": "8-bit-Y pavgb_truncate differs on red-white V"
+    },
+    {
+      "actual": 129,
+      "expected": 129,
+      "name": "quantize UV before averaging is detectably wrong"
+    },
+    {
+      "actual": 128,
+      "expected": 128,
+      "name": "correct black/dim-blue shared U"
+    },
+    {
+      "actual": "525a52a0",
+      "expected": "525a52a0",
+      "name": "different per-pixel chroma order is lost in YUY2"
+    },
+    {
+      "actual": "525a52a0",
+      "expected": "525a52a0",
+      "name": "swapped equal-quantized-Y colors collide in YUY2"
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "RGBA distinguishes the chroma-order inputs"
+    },
+    {
+      "actual": [
+        0,
+        0,
+        130,
+        255,
+        255
+      ],
+      "expected": [
+        0,
+        0,
+        130,
+        255,
+        255
+      ],
+      "name": "limited versus full neutral-axis level oracle"
+    },
+    {
+      "actual": "owned budget exhausted",
+      "expected": "owned budget exhausted",
+      "name": "eighth 640x360 owned payload exceeds 7 MiB"
+    },
+    {
+      "actual": 6451200,
+      "expected": 6451200,
+      "name": "seven payload reservations"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "name": "all payload reservations returned"
+    },
+    {
+      "actual": "owned budget exhausted",
+      "expected": "owned budget exhausted",
+      "name": "single 1080 RGBA owned copy exceeds fixture budget"
+    }
+  ],
+  "checks_passed": 48,
+  "experiment_script_sha256": "47d54ab890a5386ef89069e10d2e8a8514d5c243b0cd6b701251156fb3d07fcb",
+  "limits": [
+    "No upstream code, native build, device, JNI, SIMD, or decoder executed.",
+    "Python arithmetic is unbounded; explicit checks model a signed 32-bit bridge bound.",
+    "Budget is payload accounting only; excludes Python objects, decoder, USB, JNI, pools, surfaces and pipeline copies.",
+    "Borrow lifetime is deterministic single-thread modeling, not a concurrency/stop proof.",
+    "8-bit Y modeled; special MSVC RGB7 branch and CPU dispatch are not.",
+    "No resizing, text readability, capture FPS, throughput, latency or acceptance claim."
+  ],
+  "memory_payload_estimates": [
+    {
+      "RGB565_or_even_YUY2_output": 460800,
+      "borrowed_RGBA_payload": 921600,
+      "fits_fixture_7MiB_owned": true,
+      "height": 360,
+      "max_whole_payloads_in_fixture_budget": 7,
+      "one_owned_RGBA": 921600,
+      "row_composed_YUY2_source_plus_output_plus_scratch": 1386240,
+      "row_scratch_ARGB_plus_YUV": 3840,
+      "source_plus_one_owned": 1843200,
+      "whole_frame_composed_YUY2_source_temp_output_scratch": 2764800,
+      "width": 640
+    },
+    {
+      "RGB565_or_even_YUY2_output": 4147200,
+      "borrowed_RGBA_payload": 8294400,
+      "fits_fixture_7MiB_owned": false,
+      "height": 1080,
+      "max_whole_payloads_in_fixture_budget": 0,
+      "one_owned_RGBA": 8294400,
+      "row_composed_YUY2_source_plus_output_plus_scratch": 12453120,
+      "row_scratch_ARGB_plus_YUV": 11520,
+      "source_plus_one_owned": 16588800,
+      "whole_frame_composed_YUY2_source_temp_output_scratch": 24883200,
+      "width": 1920
+    },
+    {
+      "RGB565_or_even_YUY2_output": 16588800,
+      "borrowed_RGBA_payload": 33177600,
+      "fits_fixture_7MiB_owned": false,
+      "height": 2160,
+      "max_whole_payloads_in_fixture_budget": 0,
+      "one_owned_RGBA": 33177600,
+      "row_composed_YUY2_source_plus_output_plus_scratch": 49789440,
+      "row_scratch_ARGB_plus_YUV": 23040,
+      "source_plus_one_owned": 66355200,
+      "whole_frame_composed_YUY2_source_temp_output_scratch": 99532800,
+      "width": 3840
+    }
+  ],
+  "patterns": {
+    "arbitrary_x_color_bars": {
+      "encoding": "RGBX",
+      "height": 1,
+      "hex": "00000000ffffff1fff00003e00ff005d0000ff7cffff009b00ffffbaff00ffd9",
+      "row_stride": 32,
+      "sha256": "8c8d6279fed6c5f109b0d3cfa4b8729e673aaccf819f942eb4297fb7d947b322",
+      "size": 32,
+      "width": 8
+    },
+    "equal_quantized_y_chroma_order_a": {
+      "height": 1,
+      "hex": "ff0000ff008200ff",
+      "sha256": "f2645799f2cbe973927293a6fac0e1deaeaefb9003ed3d1342aa47fb5992ad7a",
+      "size": 8,
+      "width": 2
+    },
+    "equal_quantized_y_chroma_order_b": {
+      "height": 1,
+      "hex": "008200ffff0000ff",
+      "sha256": "49e9ab47a468d8461216ae619a635be72feb85af33ebbddc370b1b28acad0edb",
+      "size": 8,
+      "width": 2
+    },
+    "gray_0_to_255": {
+      "encoding": "RGBA",
+      "height": 1,
+      "sha256": "f7721524360322232937cff69886be54d18f94dc172627061757855971b5db36",
+      "size": 1024,
+      "width": 256
+    },
+    "horizontal_chroma_pairs": {
+      "encoding": "RGBA",
+      "height": 6,
+      "hex": "ff0000ff0000ffffff0000ff00ff00ff00ff00ff0000ffff000000ffffffffffff0000ffffffffff000000ff000002ff",
+      "row_stride": 8,
+      "sha256": "96ac66dcf4ff0771cf09af9af3f22c80d21006aba2020f835a48f6a4f3a5350a",
+      "size": 48,
+      "width": 2
+    },
+    "odd_rgb565_tail": {
+      "encoding": "RGBA",
+      "height": 1,
+      "hex": "00ff00ff0000ffffff0000ff",
+      "sha256": "6922cf7c8cdad1267498e659370bd155acd22129c563a945322fca21111ddaf6",
+      "size": 12,
+      "width": 3
+    },
+    "odd_width_padded_rgba": {
+      "encoding": "RGBA",
+      "final_row_padding": false,
+      "height": 2,
+      "hex": "11223300557799ffabcdef7fdeadfe01cd811234564280402003",
+      "row_stride": 14,
+      "sha256": "fd5744d053bcdbf5988afe6f6e124abf8a220c1536eff75f8eb82517db6a087d",
+      "size": 26,
+      "width": 3
+    },
+    "one_pixel_change_after": {
+      "height": 1,
+      "hex": "404040ff414040ff404040ff",
+      "sha256": "8d6f3a219ba220628415752fa46594a2ed5fc5306a6e640c73685baa8ce4bbfa",
+      "size": 12,
+      "width": 3
+    },
+    "one_pixel_change_before": {
+      "height": 1,
+      "hex": "404040ff404040ff404040ff",
+      "sha256": "31f31fe48f5baed5df392792d51caa81f683bf990f2c3eedb392943ddc81a5e7",
+      "size": 12,
+      "width": 3
+    },
+    "opaque_color_bars": {
+      "encoding": "RGBA",
+      "height": 1,
+      "hex": "000000ffffffffffff0000ff00ff00ff0000ffffffff00ff00ffffffff00ffff",
+      "row_stride": 32,
+      "sha256": "a149908a5bcc4bce95312a2f7611c47a2e187bae67ee4432af4d831f06bf1d06",
+      "size": 32,
+      "width": 8
+    }
+  },
+  "range_prediction": {
+    "UV": [
+      128,
+      128
+    ],
+    "Y_samples": [
+      0,
+      16,
+      128,
+      235,
+      255
+    ],
+    "full_range_ideal_RGB_gray": [
+      0,
+      16,
+      128,
+      235,
+      255
+    ],
+    "kind": "analytic range prediction; not native decode output",
+    "limited_range_ideal_RGB_gray": [
+      0,
+      0,
+      130,
+      255,
+      255
+    ]
+  },
+  "rgb565_quantization": {
+    "distinct_gray_codes": 64,
+    "max_discarded_R_G_B": [
+      7,
+      3,
+      7
+    ],
+    "output_sha256": "056acc8af853c1d9952cab9d5de8c33163e90c7c7b51c73f6b4b9e7d1b29d685",
+    "reconstruction": "zero-fill discarded low bits",
+    "sum_discarded_R_G_B": [
+      896,
+      384,
+      896
+    ]
+  },
+  "schema": 1,
+  "source_evidence": {
+    "lock_sha256": "429e34d03abea5473e6ff6d4304e3e7d04c9fb49104629b38a53aa10391386ff",
+    "upstream_executed": false,
+    "verified_inputs": [
+      {
+        "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-docs-formats.md",
+        "sha256": "c0ed28e224f19669c5ca5cd34c8a39df221ec8ae35f52eca7e32c79c5c0fbaf1",
+        "size": 9567
+      },
+      {
+        "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-source-row_common.cc",
+        "sha256": "63bedd660e658e33091d2a589574ee2207c7e77cad98e1be5514c6a0fe911b57",
+        "size": 139286
+      },
+      {
+        "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-source-convert_argb.cc",
+        "sha256": "808d139cc5d9aa902b085b912d678c420c10145690a52d60a05b7146a2f70541",
+        "size": 236924
+      },
+      {
+        "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-source-convert_from_argb.cc",
+        "sha256": "e4212c896fe2802753164dccece651c0b19e22cfd9d27dfe538f617d4501c496",
+        "size": 79553
+      },
+      {
+        "name": "libjpeg-turbo-ecf021bc0d6f435daacff7c35ccaeef0145df1b9-turbojpeg.h",
+        "sha256": "b5889eb2c396f85bdd07af494fbc3623d9316b4bd4d852d20b50ba20fac94281",
+        "size": 74651
+      },
+      {
+        "name": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/FramePipeline.java",
+        "sha256": "8190fab701e3f577211d43747a44937950d72df9dcd1c256437072c1498e7353",
+        "size": 11996
+      },
+      {
+        "name": "android/uvc-sim/provenance/followup/video-alternatives/inputs.lock.json",
+        "sha256": "2593f7926b9e8d311ed40ab24ce542178986a47315a4f73e2161faf3194bc563",
+        "size": 1971
+      },
+      {
+        "name": "android/uvc-sim/provenance/followup/video-alternatives/evidence.json",
+        "sha256": "63a7b439af6ef0a54f67b6eee45eea86a12d9ad2c753c622a83af746a026e5d6",
+        "size": 285602
+      },
+      {
+        "name": "android/uvc-sim/provenance/followup/video-alternatives/README.md",
+        "sha256": "95c63618c0e0fc52fe085fe104de04d4fed7d2ab68523bed0c45de15e23ca909",
+        "size": 20111
+      }
+    ]
+  },
+  "yuy2": {
+    "pavgb_truncate_hex": "52a529af52489089909329481080eb80526debb71080107f",
+    "pavgb_truncate_sha256": "5f04446da6734f9c240eee5c79b96641c49240ecc59525fb784aaff1edf03a9f",
+    "sum_round_pairs": [
+      [
+        82,
+        165,
+        41,
+        175
+      ],
+      [
+        82,
+        72,
+        144,
+        137
+      ],
+      [
+        144,
+        147,
+        41,
+        72
+      ],
+      [
+        16,
+        128,
+        235,
+        128
+      ],
+      [
+        82,
+        109,
+        235,
+        184
+      ],
+      [
+        16,
+        128,
+        16,
+        128
+      ]
+    ],
+    "sum_round_sha256": "5b740bc9586540173df46ba6493ea5d7750005df45d4e78a51df099d50cf7e2d"
+  }
+}

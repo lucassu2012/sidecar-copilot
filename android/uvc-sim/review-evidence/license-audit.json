@@ -1,0 +1,2238 @@
+{
+  "inspected_at_utc": "2026-11-10T13:30:02.723625+00:00",
+  "source_commits": {
+    "UVCAndroid": "fcdae5f9a194e2111d57019176b53470a120415b",
+    "AndroidUSBCamera": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c"
+  },
+  "local": {
+    "artifacts": {
+      "UVCAndroid-1.0.13.aar": {
+        "bytes": 2761961,
+        "sha256": "4f1295a6c6b5e8590fb7dde3c60f30a94166db45c2d07efa63c85d5da8bfff17"
+      },
+      "UVCAndroid-1.0.13.pom": {
+        "bytes": 2664,
+        "sha256": "5b1ff27d872d1fa3720fa1e367bab05d6cf422695e7457fb44b5934be005add7"
+      },
+      "UVCAndroid-1.0.13.module": {
+        "bytes": 4327,
+        "sha256": "f22e2960d4eca439c19eebdc82d4ea51450735335fb889cded6511e1b07de20b"
+      }
+    },
+    "module_sha256_matches": true,
+    "pom": {
+      "licenses": [
+        {
+          "name": "The Apache Software License, Version 2.0",
+          "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+        }
+      ],
+      "dependencies": [
+        {
+          "groupId": "androidx.core",
+          "artifactId": "core",
+          "version": "1.13.1",
+          "scope": "runtime",
+          "optional": null
+        },
+        {
+          "groupId": "androidx.legacy",
+          "artifactId": "legacy-support-v4",
+          "version": "1.0.0",
+          "scope": "runtime",
+          "optional": null
+        },
+        {
+          "groupId": "androidx.appcompat",
+          "artifactId": "appcompat",
+          "version": "1.6.1",
+          "scope": "runtime",
+          "optional": null
+        },
+        {
+          "groupId": "androidx.annotation",
+          "artifactId": "annotation",
+          "version": "1.8.0",
+          "scope": "runtime",
+          "optional": null
+        },
+        {
+          "groupId": "cn.hutool",
+          "artifactId": "hutool-core",
+          "version": "5.8.35",
+          "scope": "runtime",
+          "optional": null
+        }
+      ],
+      "parent": null
+    },
+    "gradle_runtime_dependencies": [
+      [
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "androidx.legacy",
+          "module": "legacy-support-v4",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.6.1"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "cn.hutool",
+          "module": "hutool-core",
+          "version": {
+            "requires": "5.8.35"
+          }
+        }
+      ]
+    ],
+    "manifest": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "features": [
+        {
+          "android:name": "android.hardware.usb.host"
+        },
+        {
+          "android:glEsVersion": "0x00020000",
+          "android:required": "true"
+        }
+      ],
+      "sha256": "2b7b0e07626ccfda95ad392131b4265b8d480a64f4192d865402871b7d92cbcd"
+    },
+    "hutool_member_references": {
+      "com/serenegiant/utils/FileUtils.class": [
+        {
+          "tag": 10,
+          "owner": "cn/hutool/core/io/FileUtil",
+          "name": "getMimeType",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+        }
+      ]
+    },
+    "aar_license_named_entries": [],
+    "classes_license_named_entries": [],
+    "elf": {
+      "jni/arm64-v8a/libUVCCamera.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 206480,
+            "memsz": 206480,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 206480,
+            "vaddr": 222864,
+            "filesz": 3472,
+            "memsz": 3472,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 209952,
+            "vaddr": 242720,
+            "filesz": 3240,
+            "memsz": 5360,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libusb1.0.so",
+          "libuvc.so",
+          "libjpeg-turbo212.so",
+          "libyuv.so",
+          "libdl.so",
+          "liblog.so",
+          "libandroid.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so"
+        ],
+        "sha256": "55ca0722ac22719253ef3d008c1831810f61bcf641fa03588011b245b20ec502"
+      },
+      "jni/arm64-v8a/libjpeg-turbo212.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 433968,
+            "memsz": 433968,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 433968,
+            "vaddr": 450352,
+            "filesz": 3952,
+            "memsz": 3952,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 437920,
+            "vaddr": 470688,
+            "filesz": 272,
+            "memsz": 344,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libdl.so",
+          "libc.so",
+          "libm.so"
+        ],
+        "sha256": "a915c12257d797ec6eaf68be15af1c7822ee44dd7e667803c94c5a4a0126a80d"
+      },
+      "jni/arm64-v8a/libusb1.0.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 94560,
+            "memsz": 94560,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 94560,
+            "vaddr": 110944,
+            "filesz": 2280,
+            "memsz": 2280,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 96840,
+            "vaddr": 129608,
+            "filesz": 48,
+            "memsz": 352,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "75c50212da9c31cf80f76a689037000b108b0ad073b769634cdf1c695f94b47a"
+      },
+      "jni/arm64-v8a/libuvc.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 97024,
+            "memsz": 97024,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 97024,
+            "vaddr": 113408,
+            "filesz": 2288,
+            "memsz": 2288,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 99312,
+            "vaddr": 132080,
+            "filesz": 780,
+            "memsz": 780,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libusb1.0.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "5580c94c5be88a145aa007c7ee5fb567e6b4b4d8e54b99cda228efcf34edf80e"
+      },
+      "jni/arm64-v8a/libyuv.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 753696,
+            "memsz": 753696,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 753696,
+            "vaddr": 770080,
+            "filesz": 21848,
+            "memsz": 21848,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 775544,
+            "vaddr": 808312,
+            "filesz": 88,
+            "memsz": 2792,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so",
+          "libdl.so"
+        ],
+        "sha256": "d3f43cfa5a61bb45edb7f806a7eabeb9ea0339622501203e7fe7fbb39e95dbe7"
+      },
+      "jni/armeabi-v7a/libUVCCamera.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 157936,
+            "memsz": 157936,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 157936,
+            "vaddr": 174320,
+            "filesz": 1632,
+            "memsz": 1632,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 159568,
+            "vaddr": 192336,
+            "filesz": 1604,
+            "memsz": 1608,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libusb1.0.so",
+          "libuvc.so",
+          "libjpeg-turbo212.so",
+          "libyuv.so",
+          "libdl.so",
+          "liblog.so",
+          "libandroid.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so"
+        ],
+        "sha256": "ae337aa2aa4cbe8b69c5a08d3274de3ba098529f3f19931aaa66052cc244e9fd"
+      },
+      "jni/armeabi-v7a/libjpeg-turbo212.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 389648,
+            "memsz": 389648,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 389648,
+            "vaddr": 406032,
+            "filesz": 1976,
+            "memsz": 1976,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 391624,
+            "vaddr": 424392,
+            "filesz": 136,
+            "memsz": 164,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libdl.so",
+          "libc.so",
+          "libm.so"
+        ],
+        "sha256": "51fe39f76d8e125f7601b4a9a435393ddfa98ce9aa080ed524759a79fb4a2e37"
+      },
+      "jni/armeabi-v7a/libusb1.0.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 84288,
+            "memsz": 84288,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 84288,
+            "vaddr": 100672,
+            "filesz": 1128,
+            "memsz": 1128,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 85416,
+            "vaddr": 118184,
+            "filesz": 24,
+            "memsz": 124,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "81c67caa54e722d531fe695799c05938d3a78035c5be11e3e9ec56cd063060e6"
+      },
+      "jni/armeabi-v7a/libuvc.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 85952,
+            "memsz": 85952,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 85952,
+            "vaddr": 102336,
+            "filesz": 1160,
+            "memsz": 1160,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 87112,
+            "vaddr": 119880,
+            "filesz": 632,
+            "memsz": 632,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libusb1.0.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "4ff832aaae32b2715496b5d8d5117a335067edab7012a7a36298e2fef05f5b2f"
+      },
+      "jni/armeabi-v7a/libyuv.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 430144,
+            "memsz": 430144,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 430144,
+            "vaddr": 446528,
+            "filesz": 11284,
+            "memsz": 11284,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 441428,
+            "vaddr": 474196,
+            "filesz": 28,
+            "memsz": 565,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so",
+          "libdl.so"
+        ],
+        "sha256": "0c0c0662583b35d4372e3f90b9fd097cecb9f712e7b297f8a45d81b44a5aa574"
+      },
+      "jni/x86/libUVCCamera.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 198384,
+            "memsz": 198384,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 198384,
+            "vaddr": 214768,
+            "filesz": 1768,
+            "memsz": 1768,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 200152,
+            "vaddr": 232920,
+            "filesz": 1620,
+            "memsz": 2692,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libusb1.0.so",
+          "libuvc.so",
+          "libjpeg-turbo212.so",
+          "libyuv.so",
+          "libdl.so",
+          "liblog.so",
+          "libandroid.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so"
+        ],
+        "sha256": "e1ccdab61a8aaf7947775cba9005932bb4c8d4f6490265f3865a0cbd6e365e4a"
+      },
+      "jni/x86/libjpeg-turbo212.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 715040,
+            "memsz": 715040,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 715040,
+            "vaddr": 731424,
+            "filesz": 2412,
+            "memsz": 2412,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 717452,
+            "vaddr": 750220,
+            "filesz": 136,
+            "memsz": 160,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libdl.so",
+          "libc.so",
+          "libm.so"
+        ],
+        "sha256": "2748c7797e3bd32ce396eff7846b32fc4d39fe358b1ade1cd44f41795398c16b"
+      },
+      "jni/x86/libusb1.0.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 88416,
+            "memsz": 88416,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 88416,
+            "vaddr": 104800,
+            "filesz": 1112,
+            "memsz": 1112,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 89528,
+            "vaddr": 122296,
+            "filesz": 24,
+            "memsz": 124,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "9ad555d8b2479626a05a94431b09bc2669cac4eee94ad449dcc7edf0f5fc12de"
+      },
+      "jni/x86/libuvc.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 91056,
+            "memsz": 91056,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 91056,
+            "vaddr": 107440,
+            "filesz": 1152,
+            "memsz": 1152,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 92208,
+            "vaddr": 124976,
+            "filesz": 632,
+            "memsz": 632,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libusb1.0.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "9c0953b9b8774772606b817c3e51bd97c19cfbf12c8b5f9dadbd7acdb837a22a"
+      },
+      "jni/x86/libyuv.so": {
+        "bits": 32,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 856336,
+            "memsz": 856336,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 856336,
+            "vaddr": 872720,
+            "filesz": 12168,
+            "memsz": 12168,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 868504,
+            "vaddr": 901272,
+            "filesz": 44,
+            "memsz": 1652,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so",
+          "libdl.so"
+        ],
+        "sha256": "2dda8b000adb654c16f6970394f546f41d0ae4d445a9ec21ecf9ed1ac914ef84"
+      },
+      "jni/x86_64/libUVCCamera.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 204768,
+            "memsz": 204768,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 204768,
+            "vaddr": 221152,
+            "filesz": 3456,
+            "memsz": 3456,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 208224,
+            "vaddr": 240992,
+            "filesz": 3240,
+            "memsz": 5376,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libusb1.0.so",
+          "libuvc.so",
+          "libjpeg-turbo212.so",
+          "libyuv.so",
+          "libdl.so",
+          "liblog.so",
+          "libandroid.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so"
+        ],
+        "sha256": "7e4d8e44b9d970d73f81cb89b1b6b9f86e50e82e7136531a904ccc03c2ccb30c"
+      },
+      "jni/x86_64/libjpeg-turbo212.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 773712,
+            "memsz": 773712,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 773712,
+            "vaddr": 790096,
+            "filesz": 4304,
+            "memsz": 4304,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 778016,
+            "vaddr": 810784,
+            "filesz": 268,
+            "memsz": 340,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libdl.so",
+          "libc.so",
+          "libm.so"
+        ],
+        "sha256": "b05eb00352a208906f8a0dd211c0d471eeb5ea46c0f8781b2ad9cb683d176570"
+      },
+      "jni/x86_64/libusb1.0.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 92768,
+            "memsz": 92768,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 92768,
+            "vaddr": 109152,
+            "filesz": 2184,
+            "memsz": 2184,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 94952,
+            "vaddr": 127720,
+            "filesz": 48,
+            "memsz": 340,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "aa195ddfc6c323f575306385d20e7ba5737d4bc7120591cf1550f7185421acf4"
+      },
+      "jni/x86_64/libuvc.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 103504,
+            "memsz": 103504,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 103504,
+            "vaddr": 119888,
+            "filesz": 2296,
+            "memsz": 2296,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 105808,
+            "vaddr": 138576,
+            "filesz": 780,
+            "memsz": 780,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libusb1.0.so",
+          "liblog.so",
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "sha256": "4b2dba37b834b59b1ff436dd1a56d7ddf20947127da7ba760f3209df01f7dd53"
+      },
+      "jni/x86_64/libyuv.so": {
+        "bits": 64,
+        "loads": [
+          {
+            "offset": 0,
+            "vaddr": 0,
+            "filesz": 933344,
+            "memsz": 933344,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 933344,
+            "vaddr": 949728,
+            "filesz": 24328,
+            "memsz": 24328,
+            "align": 16384,
+            "congruent_16k": true
+          },
+          {
+            "offset": 957672,
+            "vaddr": 990440,
+            "filesz": 88,
+            "memsz": 2776,
+            "align": 16384,
+            "congruent_16k": true
+          }
+        ],
+        "needed": [
+          "libjpeg-turbo212.so",
+          "libc.so",
+          "libm.so",
+          "libstdc++.so",
+          "libdl.so"
+        ],
+        "sha256": "00aa2db7bf3915d5d70e224231f60cf4d6a6d7c28f40f1af497c18e3fd6951a8"
+      }
+    },
+    "external_needed_names": [
+      "libandroid.so",
+      "libc.so",
+      "libdl.so",
+      "liblog.so",
+      "libm.so",
+      "libstdc++.so"
+    ],
+    "limits": "No native loading, complete binary audit, final APK zip alignment or runtime/device verification."
+  },
+  "sources": {
+    "uvc_build": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/build.gradle",
+      "http_status": 200,
+      "sha256": "54e2ec4fb56c1ef2183f18b1e1e025f124dc526902e8a55a67caa732ef1d23dd",
+      "bytes": 2796,
+      "matching_lines": [
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 8,
+          "text": "*  you may not use this file except in compliance with the License."
+        },
+        {
+          "line": 9,
+          "text": "*   You may obtain a copy of the License at"
+        },
+        {
+          "line": 11,
+          "text": "*      http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "line": 14,
+          "text": "*   distributed under the License is distributed on an \"AS IS\" BASIS,"
+        },
+        {
+          "line": 16,
+          "text": "*   See the License for the specific language governing permissions and"
+        },
+        {
+          "line": 17,
+          "text": "*   limitations under the License."
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 21,
+          "text": "*  may have a different license, see the respective files."
+        },
+        {
+          "line": 68,
+          "text": "implementation fileTree(dir: 'libs', include: ['*.jar'])"
+        },
+        {
+          "line": 70,
+          "text": "implementation 'androidx.core:core:1.13.1'"
+        },
+        {
+          "line": 71,
+          "text": "implementation 'androidx.legacy:legacy-support-v4:1.0.0'"
+        },
+        {
+          "line": 72,
+          "text": "implementation 'androidx.appcompat:appcompat:1.6.1'"
+        },
+        {
+          "line": 73,
+          "text": "implementation 'androidx.annotation:annotation:1.8.0'"
+        },
+        {
+          "line": 77,
+          "text": "libraryVersion = '1.0.13'"
+        },
+        {
+          "line": 86,
+          "text": "licenseName = 'The Apache Software License, Version 2.0'"
+        },
+        {
+          "line": 87,
+          "text": "licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_publish": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/publish_aar.gradle",
+      "http_status": 200,
+      "sha256": "2083ef34dbf6e0b2dfc6a73a30200e57bc49a6779be3066a5379ab3d7010ee70",
+      "bytes": 744,
+      "matching_lines": [
+        {
+          "line": 3,
+          "text": "coordinates(publishedGroupId, artifact, libraryVersion)"
+        },
+        {
+          "line": 11,
+          "text": "licenses {"
+        },
+        {
+          "line": 12,
+          "text": "license {"
+        },
+        {
+          "line": 13,
+          "text": "name = licenseName"
+        },
+        {
+          "line": 14,
+          "text": "url = licenseUrl"
+        },
+        {
+          "line": 15,
+          "text": "distribution = licenseUrl"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_fileutils": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/utils/FileUtils.java",
+      "http_status": 200,
+      "sha256": "cbd2b6b3fc79da77f6a9262351248fb6e4e1e85151a23bbecb7dde5bb8ce929f",
+      "bytes": 7543,
+      "matching_lines": [],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_manifest": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/AndroidManifest.xml",
+      "http_status": 200,
+      "sha256": "d0b8d40035030f3fab43e5daa1f3ed03a56ee777e4c636a497a5916f7c10d28b",
+      "bytes": 1732,
+      "matching_lines": [
+        {
+          "line": 7,
+          "text": "~  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 8,
+          "text": "~  you may not use this file except in compliance with the License."
+        },
+        {
+          "line": 9,
+          "text": "~   You may obtain a copy of the License at"
+        },
+        {
+          "line": 11,
+          "text": "~      http://www.apache.org/licenses/LICENSE-2.0"
+        },
+        {
+          "line": 14,
+          "text": "~   distributed under the License is distributed on an \"AS IS\" BASIS,"
+        },
+        {
+          "line": 16,
+          "text": "~   See the License for the specific language governing permissions and"
+        },
+        {
+          "line": 17,
+          "text": "~   limitations under the License."
+        },
+        {
+          "line": 19,
+          "text": "~  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 21,
+          "text": "~  may have a different license, see the respective files."
+        },
+        {
+          "line": 27,
+          "text": "<uses-permission android:name=\"android.permission.CAMERA\" />"
+        },
+        {
+          "line": 28,
+          "text": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />"
+        },
+        {
+          "line": 29,
+          "text": "<uses-permission android:name=\"android.permission.MANAGE_EXTERNAL_STORAGE\" />"
+        },
+        {
+          "line": 30,
+          "text": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />"
+        },
+        {
+          "line": 31,
+          "text": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />"
+        },
+        {
+          "line": 32,
+          "text": "<uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\" />"
+        },
+        {
+          "line": 34,
+          "text": "<uses-feature android:name=\"android.hardware.usb.host\" />"
+        },
+        {
+          "line": 36,
+          "text": "<uses-feature"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_yuv_version": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/include/libyuv/version.h",
+      "http_status": 200,
+      "sha256": "f42a07c763dbd69c7a3e57a7fed6f25e20eea6ac6485decbe21f7e927ca3dae5",
+      "bytes": 560,
+      "matching_lines": [
+        {
+          "line": 2,
+          "text": "*  Copyright 2012 The LibYuv Project Authors. All rights reserved."
+        },
+        {
+          "line": 4,
+          "text": "*  Use of this source code is governed by a BSD-style license"
+        },
+        {
+          "line": 5,
+          "text": "*  that can be found in the LICENSE file in the root of the source"
+        },
+        {
+          "line": 7,
+          "text": "*  in the file PATENTS. All contributing project authors may"
+        },
+        {
+          "line": 8,
+          "text": "*  be found in the AUTHORS file in the root of the source tree."
+        },
+        {
+          "line": 11,
+          "text": "#ifndef INCLUDE_LIBYUV_VERSION_H_"
+        },
+        {
+          "line": 12,
+          "text": "#define INCLUDE_LIBYUV_VERSION_H_"
+        },
+        {
+          "line": 14,
+          "text": "#define LIBYUV_VERSION 1840"
+        },
+        {
+          "line": 16,
+          "text": "#endif  // INCLUDE_LIBYUV_VERSION_H_"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_yuv_convert": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/source/convert.cc",
+      "http_status": 200,
+      "sha256": "a4a0ba468af438c72166f75cc8780f92bc3f0b74bc1625ec91649402bb670d85",
+      "bytes": 104680,
+      "matching_lines": [
+        {
+          "line": 2,
+          "text": "*  Copyright 2011 The LibYuv Project Authors. All rights reserved."
+        },
+        {
+          "line": 4,
+          "text": "*  Use of this source code is governed by a BSD-style license"
+        },
+        {
+          "line": 5,
+          "text": "*  that can be found in the LICENSE file in the root of the source"
+        },
+        {
+          "line": 7,
+          "text": "*  in the file PATENTS. All contributing project authors may"
+        },
+        {
+          "line": 8,
+          "text": "*  be found in the AUTHORS file in the root of the source tree."
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_usb_terms": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libusb/libusb/core.c",
+      "http_status": 200,
+      "sha256": "2c8c4fccb5bac239bd1d7a2b957e4c2d8a584f2d64e348d9c18e7cceb1763094",
+      "bytes": 95604,
+      "matching_lines": [
+        {
+          "line": 9,
+          "text": "* modify it under the terms of the GNU Lesser General Public"
+        },
+        {
+          "line": 10,
+          "text": "* License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 11,
+          "text": "* version 2.1 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 16,
+          "text": "* Lesser General Public License for more details."
+        },
+        {
+          "line": 18,
+          "text": "* You should have received a copy of the GNU Lesser General Public"
+        },
+        {
+          "line": 19,
+          "text": "* License along with this library; if not, write to the Free Software"
+        },
+        {
+          "line": 36,
+          "text": "{ LIBUSB_MAJOR, LIBUSB_MINOR, LIBUSB_MICRO, LIBUSB_NANO,"
+        },
+        {
+          "line": 628,
+          "text": "* As an implementation detail, libusb_open() actually adds a reference to"
+        },
+        {
+          "line": 933,
+          "text": "* Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 1228,
+          "text": "* Since version 1.0.23, \\ref LIBUSB_API_VERSION >= 0x01000107"
+        },
+        {
+          "line": 1847,
+          "text": "* Since version 1.0.19, \\ref LIBUSB_API_VERSION >= 0x01000103"
+        },
+        {
+          "line": 1878,
+          "text": "* Since version 1.0.19, \\ref LIBUSB_API_VERSION >= 0x01000103"
+        },
+        {
+          "line": 1921,
+          "text": "* Since version 1.0.21, \\ref LIBUSB_API_VERSION >= 0x01000105"
+        },
+        {
+          "line": 2127,
+          "text": "* Since version 1.0.23, \\ref LIBUSB_API_VERSION >= 0x01000107"
+        },
+        {
+          "line": 2172,
+          "text": "* Since version 1.0.22, \\ref LIBUSB_API_VERSION >= 0x01000106"
+        },
+        {
+          "line": 2488,
+          "text": "* The below implementations guarantee NUL-terminated output and are"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_usb_version": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libusb/libusb/version.h",
+      "http_status": 200,
+      "sha256": "e5b185c43eeff4113e099dd23d5d499692d5c2680322eef5690c18d19980346c",
+      "bytes": 431,
+      "matching_lines": [
+        {
+          "line": 3,
+          "text": "#ifndef LIBUSB_MAJOR"
+        },
+        {
+          "line": 4,
+          "text": "#define LIBUSB_MAJOR 1"
+        },
+        {
+          "line": 6,
+          "text": "#ifndef LIBUSB_MINOR"
+        },
+        {
+          "line": 7,
+          "text": "#define LIBUSB_MINOR 0"
+        },
+        {
+          "line": 9,
+          "text": "#ifndef LIBUSB_MICRO"
+        },
+        {
+          "line": 10,
+          "text": "#define LIBUSB_MICRO 25"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_uvc_license": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libuvc/LICENSE.txt",
+      "http_status": 200,
+      "sha256": "57a7ba48475cb7f0aaddfb79ef32e742a19901908f0287b6827da336477b212e",
+      "bytes": 1522,
+      "matching_lines": [
+        {
+          "line": 1,
+          "text": "Software License Agreement (BSD License)"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_uvc_version": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libuvc/CMakeLists.txt",
+      "http_status": 200,
+      "sha256": "0d0404460d0994c12b7d28fcf7e3cb57a88bb99b5adbe16f3a964e08a06e4f26",
+      "bytes": 7034,
+      "matching_lines": [
+        {
+          "line": 1,
+          "text": "cmake_minimum_required(VERSION 3.1)"
+        },
+        {
+          "line": 2,
+          "text": "project(libuvc"
+        },
+        {
+          "line": 3,
+          "text": "VERSION 0.0.6"
+        },
+        {
+          "line": 86,
+          "text": "SOVERSION ${libuvc_VERSION_MAJOR}"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_jpeg_terms": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libjpeg-turbo/LICENSE.md",
+      "http_status": 200,
+      "sha256": "7d8683a7f048e715e08b4cada8b7f0d9a6ab8afad88ed09c1143ef764ecbc0f2",
+      "bytes": 5213,
+      "matching_lines": [
+        {
+          "line": 1,
+          "text": "libjpeg-turbo Licenses"
+        },
+        {
+          "line": 4,
+          "text": "libjpeg-turbo is covered by three compatible BSD-style open source licenses:"
+        },
+        {
+          "line": 6,
+          "text": "- The IJG (Independent JPEG Group) License, which is listed in"
+        },
+        {
+          "line": 9,
+          "text": "This license applies to the libjpeg API library and associated programs"
+        },
+        {
+          "line": 12,
+          "text": "- The Modified (3-clause) BSD License, which is listed below"
+        },
+        {
+          "line": 14,
+          "text": "This license covers the TurboJPEG API library and associated programs, as"
+        },
+        {
+          "line": 17,
+          "text": "- The [zlib License](https://opensource.org/licenses/Zlib)"
+        },
+        {
+          "line": 19,
+          "text": "This license is a subset of the other two, and it covers the libjpeg-turbo"
+        },
+        {
+          "line": 23,
+          "text": "Complying with the libjpeg-turbo Licenses"
+        },
+        {
+          "line": 32,
+          "text": "1.  You cannot alter or remove any existing copyright or license notices"
+        },
+        {
+          "line": 36,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 37,
+          "text": "- Clause 1 of the Modified BSD License"
+        },
+        {
+          "line": 38,
+          "text": "- Clauses 1 and 3 of the zlib License"
+        },
+        {
+          "line": 46,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 47,
+          "text": "- Clause 2 of the zlib License"
+        },
+        {
+          "line": 50,
+          "text": "copyright or license text in that file."
+        },
+        {
+          "line": 53,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 65,
+          "text": "- Clause 2 of the IJG license"
+        },
+        {
+          "line": 69,
+          "text": "License (see below.)"
+        },
+        {
+          "line": 72,
+          "text": "- Clause 2 of the Modified BSD License"
+        },
+        {
+          "line": 78,
+          "text": "- IJG License"
+        },
+        {
+          "line": 79,
+          "text": "- Clause 3 of the Modified BSD License"
+        },
+        {
+          "line": 86,
+          "text": "- IJG License"
+        },
+        {
+          "line": 87,
+          "text": "- Modified BSD License"
+        },
+        {
+          "line": 88,
+          "text": "- zlib License"
+        },
+        {
+          "line": 91,
+          "text": "The Modified (3-clause) BSD License"
+        },
+        {
+          "line": 122,
+          "text": "Why Three Licenses?"
+        },
+        {
+          "line": 125,
+          "text": "The zlib License could have been used instead of the Modified (3-clause) BSD"
+        },
+        {
+          "line": 126,
+          "text": "License, and since the IJG License effectively subsumes the distribution"
+        },
+        {
+          "line": 127,
+          "text": "conditions of the zlib License, this would have effectively placed"
+        },
+        {
+          "line": 128,
+          "text": "libjpeg-turbo binary distributions under the IJG License.  However, the IJG"
+        },
+        {
+          "line": 129,
+          "text": "License specifically refers to the Independent JPEG Group and does not extend"
+        },
+        {
+          "line": 131,
+          "text": "desirable to choose a license that granted us the same protections for new code"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_jpeg_version": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libjpeg-turbo/CMakeLists.txt",
+      "http_status": 200,
+      "sha256": "140ea670ea8233f1ac76f64ac62a5c71db5acbf77bad31a80ece960a0a0f0b4e",
+      "bytes": 63385,
+      "matching_lines": [
+        {
+          "line": 1,
+          "text": "cmake_minimum_required(VERSION 2.8.12)"
+        },
+        {
+          "line": 12,
+          "text": "project(libjpeg-turbo C)"
+        },
+        {
+          "line": 13,
+          "text": "set(VERSION 2.1.2)"
+        },
+        {
+          "line": 15,
+          "text": "list(GET VERSION_TRIPLET 0 VERSION_MAJOR)"
+        },
+        {
+          "line": 16,
+          "text": "list(GET VERSION_TRIPLET 1 VERSION_MINOR)"
+        },
+        {
+          "line": 29,
+          "text": "pad_number(VERSION_MINOR 3)"
+        },
+        {
+          "line": 31,
+          "text": "set(LIBJPEG_TURBO_VERSION_NUMBER ${VERSION_MAJOR}${VERSION_MINOR}${VERSION_REVISION})"
+        },
+        {
+          "line": 293,
+          "text": "set(JPEG_LIB_VERSION 80)"
+        },
+        {
+          "line": 295,
+          "text": "set(JPEG_LIB_VERSION 70)"
+        },
+        {
+          "line": 297,
+          "text": "set(JPEG_LIB_VERSION 62)"
+        },
+        {
+          "line": 308,
+          "text": "set(DEFAULT_SO_MINOR_VERSION 2)"
+        },
+        {
+          "line": 310,
+          "text": "set(DEFAULT_SO_MINOR_VERSION 0)"
+        },
+        {
+          "line": 338,
+          "text": "set(TURBOJPEG_SO_MAJOR_VERSION 0)"
+        },
+        {
+          "line": 339,
+          "text": "set(TURBOJPEG_SO_VERSION 0.2.0)"
+        },
+        {
+          "line": 1521,
+          "text": "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE.md DESTINATION ${CMAKE_INSTALL_DOCDIR})"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "uvc_rapidjson_terms": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/rapidjson/license.txt",
+      "http_status": 200,
+      "sha256": "d6c08187e0df5acaa0a4ad7fbe89986748b50dc076d00173d8bee6def0a3a770",
+      "bytes": 1051,
+      "matching_lines": [
+        {
+          "line": 6,
+          "text": "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+        },
+        {
+          "line": 16,
+          "text": "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_root_build": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/build.gradle",
+      "http_status": 200,
+      "sha256": "ee01a140ac3bccc53b562b25d4e3df135f1ee205ed601465b4c7802218b5c733",
+      "bytes": 1284,
+      "matching_lines": [
+        {
+          "line": 11,
+          "text": "classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20'"
+        },
+        {
+          "line": 28,
+          "text": "androidXVersion = '1.3.1'"
+        },
+        {
+          "line": 33,
+          "text": "versionNameString = '3.3.3'"
+        },
+        {
+          "line": 39,
+          "text": "kotlinCoreVersion = '1.3.2'"
+        },
+        {
+          "line": 40,
+          "text": "kotlinCoroutines = '1.3.9'"
+        },
+        {
+          "line": 41,
+          "text": "materialVersion = '1.3.0'"
+        },
+        {
+          "line": 42,
+          "text": "constraintlayoutVersion = '2.0.4'"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_library_build": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libausbc/build.gradle",
+      "http_status": 200,
+      "sha256": "e7da74dd15c7c60a269c809a3a1923d80bb0c30d4774eff7a5ae9d6df8758ccc",
+      "bytes": 1275,
+      "matching_lines": [
+        {
+          "line": 3,
+          "text": "id 'kotlin-android'"
+        },
+        {
+          "line": 13,
+          "text": "versionName rootProject.ext.versionNameString"
+        },
+        {
+          "line": 29,
+          "text": "kotlinOptions {"
+        },
+        {
+          "line": 35,
+          "text": "implementation \"androidx.appcompat:appcompat:${androidXVersion}\""
+        },
+        {
+          "line": 36,
+          "text": "implementation \"androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}\""
+        },
+        {
+          "line": 37,
+          "text": "implementation \"com.google.android.material:material:${materialVersion}\""
+        },
+        {
+          "line": 38,
+          "text": "api 'com.elvishew:xlog:1.11.0'"
+        },
+        {
+          "line": 39,
+          "text": "//    implementation fileTree(\"libs\")"
+        },
+        {
+          "line": 41,
+          "text": "implementation project(path: ':libuvc')"
+        },
+        {
+          "line": 42,
+          "text": "api project(path: ':libnative')"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_native_build": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libnative/build.gradle",
+      "http_status": 200,
+      "sha256": "5f00ff6a2d08bc6a2189bab62f11150433ab352800b14bf644530fc0c95333ae",
+      "bytes": 1435,
+      "matching_lines": [
+        {
+          "line": 3,
+          "text": "id 'kotlin-android'"
+        },
+        {
+          "line": 7,
+          "text": "compileSdkVersion 31"
+        },
+        {
+          "line": 10,
+          "text": "minSdkVersion 19"
+        },
+        {
+          "line": 11,
+          "text": "targetSdkVersion 31"
+        },
+        {
+          "line": 43,
+          "text": "kotlinOptions {"
+        },
+        {
+          "line": 50,
+          "text": "implementation 'androidx.core:core-ktx:1.3.2'"
+        },
+        {
+          "line": 51,
+          "text": "implementation 'androidx.appcompat:appcompat:1.2.0'"
+        },
+        {
+          "line": 52,
+          "text": "implementation 'com.google.android.material:material:1.3.0'"
+        },
+        {
+          "line": 53,
+          "text": "testImplementation 'junit:junit:4.+'"
+        },
+        {
+          "line": 54,
+          "text": "androidTestImplementation 'androidx.test.ext:junit:1.1.2'"
+        },
+        {
+          "line": 55,
+          "text": "androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_usb_terms": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jni/libusb/libusb/core.c",
+      "http_status": 200,
+      "sha256": "917db3ee4ed27562df35642a05e19188644b6e7595f807dcf206f0b0005d577e",
+      "bytes": 88560,
+      "matching_lines": [
+        {
+          "line": 13,
+          "text": "* modify it under the terms of the GNU Lesser General Public"
+        },
+        {
+          "line": 14,
+          "text": "* License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 15,
+          "text": "* version 2.1 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 20,
+          "text": "* Lesser General Public License for more details."
+        },
+        {
+          "line": 22,
+          "text": "* You should have received a copy of the GNU Lesser General Public"
+        },
+        {
+          "line": 23,
+          "text": "* License along with this library; if not, write to the Free Software"
+        },
+        {
+          "line": 87,
+          "text": "{ LIBUSB_MAJOR, LIBUSB_MINOR, LIBUSB_MICRO, LIBUSB_NANO,"
+        },
+        {
+          "line": 465,
+          "text": "* As an implementation detail, libusb_open() actually adds a reference to"
+        },
+        {
+          "line": 857,
+          "text": "* Since version 1.0.16, \\ref LIBUSB_API_VERSION >= 0x01000102"
+        },
+        {
+          "line": 1806,
+          "text": "* Since version 1.0.19, \\ref LIBUSB_API_VERSION >= 0x01000103"
+        },
+        {
+          "line": 1834,
+          "text": "* Since version 1.0.19, \\ref LIBUSB_API_VERSION >= 0x01000103"
+        },
+        {
+          "line": 2409,
+          "text": "* Implementation according to:"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_jpeg_version": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jni/libjpeg-turbo-1.5.0/CMakeLists.txt",
+      "http_status": 200,
+      "sha256": "a6286a7801234e1ed482d338b1fc5e3e357a54f73d88d8ccb67d558767434270",
+      "bytes": 37114,
+      "matching_lines": [
+        {
+          "line": 5,
+          "text": "cmake_minimum_required(VERSION 2.8.11)"
+        },
+        {
+          "line": 11,
+          "text": "project(libjpeg-turbo C)"
+        },
+        {
+          "line": 12,
+          "text": "set(VERSION 1.5.0)"
+        },
+        {
+          "line": 14,
+          "text": "list(GET VERSION_TRIPLET 0 VERSION_MAJOR)"
+        },
+        {
+          "line": 15,
+          "text": "list(GET VERSION_TRIPLET 1 VERSION_MINOR)"
+        },
+        {
+          "line": 28,
+          "text": "pad_number(VERSION_MINOR 3)"
+        },
+        {
+          "line": 30,
+          "text": "set(LIBJPEG_TURBO_VERSION_NUMBER ${VERSION_MAJOR}${VERSION_MINOR}${VERSION_REVISION})"
+        },
+        {
+          "line": 117,
+          "text": "set(JPEG_LIB_VERSION 62)"
+        },
+        {
+          "line": 121,
+          "text": "set(JPEG_LIB_VERSION 80)"
+        },
+        {
+          "line": 122,
+          "text": "set(DLL_VERSION 8)"
+        },
+        {
+          "line": 126,
+          "text": "set(JPEG_LIB_VERSION 70)"
+        },
+        {
+          "line": 127,
+          "text": "set(DLL_VERSION 7)"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_jpeg_terms": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md",
+      "http_status": 200,
+      "sha256": "fffd497be5f4ae0a10b8258e191125fb58b90250ecbf3c79398d79604dd00b7d",
+      "bytes": 2939,
+      "matching_lines": [
+        {
+          "line": 1,
+          "text": "libjpeg-turbo Licenses"
+        },
+        {
+          "line": 4,
+          "text": "libjpeg-turbo is covered by three compatible BSD-style open source licenses:"
+        },
+        {
+          "line": 6,
+          "text": "- The IJG (Independent JPEG Group) License, which is listed in"
+        },
+        {
+          "line": 9,
+          "text": "This license applies to the libjpeg API library and associated programs"
+        },
+        {
+          "line": 12,
+          "text": "- The Modified (3-clause) BSD License, which is listed in"
+        },
+        {
+          "line": 15,
+          "text": "This license covers the TurboJPEG API library and associated programs."
+        },
+        {
+          "line": 17,
+          "text": "- The zlib License, which is listed in [simd/jsimdext.inc](simd/jsimdext.inc)"
+        },
+        {
+          "line": 19,
+          "text": "This license is a subset of the other two, and it covers the libjpeg-turbo"
+        },
+        {
+          "line": 23,
+          "text": "Complying with the libjpeg-turbo Licenses"
+        },
+        {
+          "line": 32,
+          "text": "1.  You cannot alter or remove any existing copyright or license notices"
+        },
+        {
+          "line": 36,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 37,
+          "text": "- Clause 1 of the Modified BSD License"
+        },
+        {
+          "line": 38,
+          "text": "- Clauses 1 and 3 of the zlib License"
+        },
+        {
+          "line": 46,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 47,
+          "text": "- Clause 2 of the zlib License"
+        },
+        {
+          "line": 50,
+          "text": "copyright or license text in that file."
+        },
+        {
+          "line": 53,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 65,
+          "text": "- Clause 2 of the IJG license"
+        },
+        {
+          "line": 69,
+          "text": "License."
+        },
+        {
+          "line": 72,
+          "text": "- Clause 2 of the Modified BSD License"
+        },
+        {
+          "line": 78,
+          "text": "- IJG License"
+        },
+        {
+          "line": 79,
+          "text": "- Clause 3 of the Modified BSD License"
+        },
+        {
+          "line": 86,
+          "text": "- IJG License"
+        },
+        {
+          "line": 87,
+          "text": "- Modified BSD License"
+        },
+        {
+          "line": 88,
+          "text": "- zlib License"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_lame_terms": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libnative/src/main/cpp/module/mp3/lame/lame.h",
+      "http_status": 200,
+      "sha256": "414feb55113b48e4aba2f613ec0410084c438bf36eee8b7b19e8eeeafa0120c2",
+      "bytes": 48851,
+      "matching_lines": [
+        {
+          "line": 7,
+          "text": "* modify it under the terms of the GNU Library General Public"
+        },
+        {
+          "line": 8,
+          "text": "* License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 9,
+          "text": "* version 2 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 14,
+          "text": "* Library General Public License for more details."
+        },
+        {
+          "line": 16,
+          "text": "* You should have received a copy of the GNU Library General Public"
+        },
+        {
+          "line": 17,
+          "text": "* License along with this library; if not, write to the"
+        },
+        {
+          "line": 567,
+          "text": "/* version  0=MPEG-2  1=MPEG-1  (2=MPEG-2.5)     */"
+        },
+        {
+          "line": 1156,
+          "text": "* id3tag.h -- Interface to write ID3 version 1 and 2 tags."
+        },
+        {
+          "line": 1161,
+          "text": "* modify it under the terms of the GNU Library General Public"
+        },
+        {
+          "line": 1162,
+          "text": "* License as published by the Free Software Foundation; either"
+        },
+        {
+          "line": 1163,
+          "text": "* version 2 of the License, or (at your option) any later version."
+        },
+        {
+          "line": 1168,
+          "text": "* Library General Public License for more details."
+        },
+        {
+          "line": 1170,
+          "text": "* You should have received a copy of the GNU Library General Public"
+        },
+        {
+          "line": 1171,
+          "text": "* License along with this library; if not, write to the Free Software"
+        },
+        {
+          "line": 1182,
+          "text": "/* force addition of version 2 tag */"
+        },
+        {
+          "line": 1185,
+          "text": "/* add only a version 1 tag */"
+        },
+        {
+          "line": 1188,
+          "text": "/* add only a version 2 tag */"
+        },
+        {
+          "line": 1191,
+          "text": "/* pad version 1 tag with spaces instead of nulls */"
+        },
+        {
+          "line": 1194,
+          "text": "/* pad version 2 tag with extra 128 bytes */"
+        },
+        {
+          "line": 1197,
+          "text": "/* pad version 2 tag with extra n bytes */"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_lame_build": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libnative/src/main/cpp/CMakeLists.txt",
+      "http_status": 200,
+      "sha256": "dbaed033576879f275c13439480ac9bcfcee2b9c38bd75ff3c43eb3545f121cd",
+      "bytes": 526,
+      "matching_lines": [
+        {
+          "line": 2,
+          "text": "cmake_minimum_required(VERSION 3.10.2)"
+        },
+        {
+          "line": 5,
+          "text": "project(\"nativelib\")"
+        },
+        {
+          "line": 8,
+          "text": "include_directories(${CMAKE_SOURCE_DIR}/module/mp3/lame)"
+        },
+        {
+          "line": 9,
+          "text": "aux_source_directory(${CMAKE_SOURCE_DIR}/module/mp3/lame SRC_LAME)"
+        },
+        {
+          "line": 15,
+          "text": "${SRC_LAME}"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "ausbc_uac_loader": {
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+      "http_status": 200,
+      "sha256": "0006e79f34b501b1194e63cc5552c11452eb1b1ef32e1a1d1973d565c0dfed8a",
+      "bytes": 4321,
+      "matching_lines": [
+        {
+          "line": 26,
+          "text": "System.loadLibrary(\"UACAudio\");"
+        }
+      ],
+      "contains_hutool_case_insensitive": false
+    },
+    "hutool_core_pom": {
+      "url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-core/5.8.35/hutool-core-5.8.35.pom",
+      "http_status": 200,
+      "sha256": "441fc70fab6afd1b596402b888d6e8a4d014871acea4b484cc083d4335fdbdcf",
+      "bytes": 698,
+      "pom": {
+        "licenses": [],
+        "dependencies": [],
+        "parent": {
+          "groupId": "cn.hutool",
+          "artifactId": "hutool-parent",
+          "version": "5.8.35"
+        }
+      }
+    },
+    "hutool_parent_pom": {
+      "url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-parent/5.8.35/hutool-parent-5.8.35.pom",
+      "http_status": 200,
+      "sha256": "66a9b022d6fc105760e41888ce44a9ecceab6f598fc3f5ffe21f461d4e2d8475",
+      "bytes": 6425,
+      "pom": {
+        "licenses": [
+          {
+            "name": "Mulan Permissive Software License，Version 2",
+            "url": "https://license.coscl.org.cn/MulanPSL2"
+          }
+        ],
+        "dependencies": [
+          {
+            "groupId": "org.junit.jupiter",
+            "artifactId": "junit-jupiter-engine",
+            "version": "${junit.version}",
+            "scope": "test",
+            "optional": null
+          },
+          {
+            "groupId": "org.projectlombok",
+            "artifactId": "lombok",
+            "version": "${lombok.version}",
+            "scope": "test",
+            "optional": null
+          }
+        ],
+        "parent": null
+      }
+    },
+    "xlog_pom": {
+      "url": "https://repo.maven.apache.org/maven2/com/elvishew/xlog/1.11.0/xlog-1.11.0.pom",
+      "http_status": 200,
+      "sha256": "dd8b34e66ca61d393cb7e53d15339f90dc34fe44be2431ee48b2dcc5b9c8ec2b",
+      "bytes": 1144,
+      "pom": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "dependencies": [],
+        "parent": null
+      }
+    },
+    "appcompat_pom": {
+      "url": "https://dl.google.com/dl/android/maven2/androidx/appcompat/appcompat/1.3.1/appcompat-1.3.1.pom",
+      "http_status": 200,
+      "sha256": "28bdca3715efa81d60fb88c405336db779d5e27815ec969562aad0789f147a0f",
+      "bytes": 4025,
+      "pom": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "dependencies": [
+          {
+            "groupId": "androidx.annotation",
+            "artifactId": "annotation",
+            "version": "1.1.0",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.core",
+            "artifactId": "core",
+            "version": "1.5.0",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.cursoradapter",
+            "artifactId": "cursoradapter",
+            "version": "1.0.0",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.activity",
+            "artifactId": "activity",
+            "version": "1.2.4",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.fragment",
+            "artifactId": "fragment",
+            "version": "1.3.6",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.appcompat",
+            "artifactId": "appcompat-resources",
+            "version": "1.3.1",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.drawerlayout",
+            "artifactId": "drawerlayout",
+            "version": "1.0.0",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.savedstate",
+            "artifactId": "savedstate",
+            "version": "1.1.0",
+            "scope": "compile",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.collection",
+            "artifactId": "collection",
+            "version": "1.0.0",
+            "scope": "runtime",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.lifecycle",
+            "artifactId": "lifecycle-runtime",
+            "version": "2.3.1",
+            "scope": "runtime",
+            "optional": null
+          },
+          {
+            "groupId": "androidx.lifecycle",
+            "artifactId": "lifecycle-viewmodel",
+            "version": "2.3.1",
+            "scope": "runtime",
+            "optional": null
+          }
+        ],
+        "parent": null
+      }
+    },
+    "uvc_tree": {
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/trees/fcdae5f9a194e2111d57019176b53470a120415b?recursive=1",
+      "http_status": 200,
+      "sha256": "e93a04744721ec1ca81215dc1e9ffcb525794a25043cdb5028100ced87590ea2",
+      "bytes": 395071,
+      "truncated": false,
+      "path_count": 1473,
+      "yuv_root_materials": [],
+      "uac_paths": []
+    },
+    "ausbc_tree": {
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/git/trees/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c?recursive=1",
+      "http_status": 200,
+      "sha256": "f1546010eeb60e108db77311ca17407f66a3bd25750122c206ea451d019c7421",
+      "bytes": 374929,
+      "truncated": false,
+      "path_count": 1379,
+      "yuv_root_materials": [],
+      "uac_paths": [
+        "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "libuvc/src/main/java/com/jiangdg/uac",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+        "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+        "libuvc/src/main/jniLibs/x86/libUACAudio.so",
+        "libuvc/src/main/jniLibs/x86_64/libUACAudio.so"
+      ]
+    },
+    "uvc_yuv_license": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/LICENSE",
+      "http_status": 404
+    },
+    "uvc_yuv_patents": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/PATENTS",
+      "http_status": 404
+    },
+    "uvc_yuv_authors": {
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/AUTHORS",
+      "http_status": 404
+    }
+  },
+  "unexpected_source_results": {}
+}

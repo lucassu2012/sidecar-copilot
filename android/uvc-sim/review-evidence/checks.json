@@ -1,0 +1,36 @@
+{
+  "reviewedCommit": "b793449047021f102ec2ce59cebd9025cb57977b",
+  "sourceHeadAtRun": "b793449047021f102ec2ce59cebd9025cb57977b",
+  "baselineSourceUnchanged": true,
+  "recordedAtUtc": "2026-11-10T13:33:25.0878553Z",
+  "jdkRoot": "E:\\tools\\jdk-17.0.19+10",
+  "sdkRoot": "E:\\tools\\android-sdk",
+  "results": [
+    {
+      "name": "baseline",
+      "exitCode": 0,
+      "log": "baseline.txt"
+    },
+    {
+      "name": "review-compilation",
+      "exitCode": 0,
+      "log": "review-compilation.txt"
+    },
+    {
+      "name": "coordinator-review",
+      "exitCode": 1,
+      "log": "coordinator-review.txt"
+    },
+    {
+      "name": "pipeline-review",
+      "exitCode": 1,
+      "log": "pipeline-review.txt"
+    },
+    {
+      "name": "pipeline-safety-review",
+      "exitCode": 0,
+      "log": "pipeline-safety-review.txt"
+    }
+  ],
+  "note": "Nonzero review exits remain failures; no expected-failure conversion. Synthetic JVM tests and Android API compile only."
+}

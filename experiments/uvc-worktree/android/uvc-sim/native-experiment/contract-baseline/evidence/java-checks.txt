@@ -1,0 +1,3 @@
+Picked up _JAVA_OPTIONS: -Xmx256m
+PASS UVC contract: 352 assertions; identities, branch drain, immutable receipts, actual zeroing and concurrent close
+Trusted producer fixtures and host JVM only; no native/Android/USB, authorization, physical timing or PRD stage acceptance.

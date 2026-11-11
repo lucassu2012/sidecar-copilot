@@ -1,0 +1,611 @@
+{
+  "schema": 1,
+  "imported_utc": "2026-11-10T18:51:41.454640+00:00",
+  "scope": "Verbatim reviewed Java modules and selected source context; no historical result inheritance",
+  "origins": [
+    {
+      "module": "adapter",
+      "repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "clean_worktree_at_import": true,
+      "contract_comparisons": [
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+          "git_blob": "94d5b38046391a4900bc1e6e863937f8d463a97a",
+          "bytes": 4064,
+          "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+        },
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+          "git_blob": "2a40d45a5f4476d1113d0d785f6e44924c6f725f",
+          "bytes": 3891,
+          "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+        },
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/UvcContract.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/UvcContract.java",
+          "git_blob": "d54dabe29a79c476ca6cb6167eda35fec2e61174",
+          "bytes": 15549,
+          "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+        }
+      ]
+    },
+    {
+      "module": "owner",
+      "repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "clean_worktree_at_import": true,
+      "contract_comparisons": [
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+          "git_blob": "94d5b38046391a4900bc1e6e863937f8d463a97a",
+          "bytes": 4064,
+          "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+        },
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+          "git_blob": "2a40d45a5f4476d1113d0d785f6e44924c6f725f",
+          "bytes": 3891,
+          "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+        },
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/UvcContract.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/UvcContract.java",
+          "git_blob": "d54dabe29a79c476ca6cb6167eda35fec2e61174",
+          "bytes": 15549,
+          "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+        }
+      ]
+    },
+    {
+      "module": "bridge",
+      "repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "clean_worktree_at_import": true,
+      "contract_comparisons": [
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+          "git_blob": "94d5b38046391a4900bc1e6e863937f8d463a97a",
+          "bytes": 4064,
+          "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+        },
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+          "git_blob": "2a40d45a5f4476d1113d0d785f6e44924c6f725f",
+          "bytes": 3891,
+          "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+        },
+        {
+          "main_path": "android/uvc-contract/src/local/sidecar/copilot/uvccontract/UvcContract.java",
+          "source_path": "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/UvcContract.java",
+          "git_blob": "d54dabe29a79c476ca6cb6167eda35fec2e61174",
+          "bytes": 15549,
+          "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/CONTRACT_MAPPING.md",
+      "git_blob": "501db06549b12a6157bc95724245297909819865",
+      "target": "provenance/adapter/CONTRACT_MAPPING.md",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 13168,
+      "sha256": "38ce2b50c366ea80bc9b9cc4ee6e8ae02fa02660804ede9b233e413c10023c3a"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/GAPS_AND_LICENSE.md",
+      "git_blob": "c7ed0ab8f1dc096239f15a6cd35d1f9d3496ab89",
+      "target": "provenance/adapter/GAPS_AND_LICENSE.md",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 9748,
+      "sha256": "13ed13446a535912fc48a6f280eee9393e1978353144a9c8ac2c7d1341e1a186"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/BackendPort.java",
+      "git_blob": "124a569eae44b9b8da71118a3d9a09dc5636497d",
+      "target": "adapter/src/local/sidecar/copilot/uvcadapter/BackendPort.java",
+      "role": "production",
+      "bytes": 3807,
+      "sha256": "d063d51451e53acf960a0b9cd00e3e32ed7a0e152ae8fc0fc608c9aca59d1a4b"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/IsolatedCaptureSession.java",
+      "git_blob": "54d4e6a48363d8e0459f30e68d3fed3862f2c595",
+      "target": "adapter/src/local/sidecar/copilot/uvcadapter/IsolatedCaptureSession.java",
+      "role": "production",
+      "bytes": 25322,
+      "sha256": "fedcf080407c9d591f6ebd7f6140229bf7f076508483f4910617650e6000eefd"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/OwnedFrameBridge.java",
+      "git_blob": "c3091c72d501eaeb13fca7ca9c3471939d440763",
+      "target": "adapter/src/local/sidecar/copilot/uvcadapter/OwnedFrameBridge.java",
+      "role": "production",
+      "bytes": 10811,
+      "sha256": "c3ee156b548c6a17acdb33b6e7efc31f90d57d1c5726988fa37f09f469d408e8"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/test/AdapterChecks.java",
+      "git_blob": "10b97346bd6701a52ddb81c14bda42274500dc87",
+      "target": "adapter/test/AdapterChecks.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 41289,
+      "sha256": "b16d5b3c07df92db686c37d2ad2982cb09463af3c52a54b9e6ad042fdb6ddd55"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/test/ControlledBackend.java",
+      "git_blob": "533b609063f59ab2285b275fa0206e1641eb69cb",
+      "target": "adapter/test/ControlledBackend.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 9287,
+      "sha256": "730c70134e130e274fa362d29938befecd00f607b6a4c29bcfa9c21e546d9acd"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/test/TestSupport.java",
+      "git_blob": "eee9e49a3077e63c57abcef41ae62ab0aacdd320",
+      "target": "adapter/test/TestSupport.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 3677,
+      "sha256": "131b0bb568648c476ece60b958751b8323698cf3db83965249bdad2dd483d475"
+    },
+    {
+      "module": "adapter",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-adapter",
+      "source_commit": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+      "source_path": "android/uvc-sim/native-experiment/upstream-review.json",
+      "git_blob": "4bc7eb3fc2c6bf192ef6934d1d479eeda3e7029b",
+      "target": "provenance/adapter/upstream-review.json",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 1071,
+      "sha256": "212fd8760a1d64fef1b78c7b24ff393c9b5a793b6051dc470c038cab6d61f22b"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/SOURCE_AND_GAPS.md",
+      "git_blob": "f6e232a773f636c911f42fc163b8fb4eb05aa3a3",
+      "target": "provenance/owner/SOURCE_AND_GAPS.md",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 13479,
+      "sha256": "dd61357c62b5b3c011de0b9d25b415c111f314065083970a402bbbfc562c1934"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/inputs-lock.json",
+      "git_blob": "135847b5e18e55f9a3a3f91189794b6056f5804b",
+      "target": "provenance/owner/inputs-lock.json",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 4038,
+      "sha256": "981619046d1ee15db461116bfee3d3e67dc20bafc886811456d2a9b26754468c"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/PlatformUsbPort.java",
+      "git_blob": "6391398cd9df9fb3cedae17591432ca4db4071a4",
+      "target": "owner/src/local/sidecar/copilot/usbowner/PlatformUsbPort.java",
+      "role": "production",
+      "bytes": 2142,
+      "sha256": "f46ebe272b2a363363533103ccd54cf7ca23c088d4f4409c6d0973563de5dc26"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/UsbConnectionOwner.java",
+      "git_blob": "bf46b8152e3ec1af6e315ab19bc36c1f7a366c2f",
+      "target": "owner/src/local/sidecar/copilot/usbowner/UsbConnectionOwner.java",
+      "role": "production",
+      "bytes": 21946,
+      "sha256": "4929ba6a44201b9846a809ea2a4ee059e466d740eb0e0cbaad32ca6c4dcb227d"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/test/ControlledPlatform.java",
+      "git_blob": "fbe39fbd49e34e6b26d06404c0dec463c7e6b74a",
+      "target": "owner/test/ControlledPlatform.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 4782,
+      "sha256": "d6c99742dfd6d166680ee1056d411d5690ffc2bf6ff47772aa19a7f223ebe637"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/test/OwnerBackend.java",
+      "git_blob": "9b3e38dcc6fb03758124dc09a8b62e91c021fcf5",
+      "target": "owner/test/OwnerBackend.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 4737,
+      "sha256": "668e26b5cd44e40cdb07d8038c7b856a696be267fe4f771293410d453ed6844f"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/test/OwnerChecks.java",
+      "git_blob": "771ad6d36550d94d689a38cde0d4f16fc59a8890",
+      "target": "owner/test/OwnerChecks.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 40596,
+      "sha256": "e7db82a83b6a0c0f41cafd516b8fe2483af29731502f559a93bdbb91121b83d1"
+    },
+    {
+      "module": "owner",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner",
+      "source_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+      "source_path": "android/uvc-sim/native-experiment/usb-owner-experiment/test/OwnerTestSupport.java",
+      "git_blob": "8e7f3e0d686b4d7aea9ca2fffe6ebc074715652a",
+      "target": "owner/test/OwnerTestSupport.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 3453,
+      "sha256": "2c586d6a1bac0c921c03e622f3ee2dc08ce41d97766239fb0035ca91ba7c69c8"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/AndroidManifest.xml",
+      "git_blob": "73bd41cb932e96af070d72d09df8553823f576a6",
+      "target": "bridge/AndroidManifest.xml",
+      "role": "test-or-isolated-manifest",
+      "bytes": 337,
+      "sha256": "f0ac9b90b9400c7a16316ff9f639d65654b8d10a08fe6c58c9abb2f46adcaded"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/SOURCE_AND_GAPS.md",
+      "git_blob": "14b8c8521236e0aae339184978604fcea35d8617",
+      "target": "provenance/bridge/SOURCE_AND_GAPS.md",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 10393,
+      "sha256": "a66ae7efee96f3329cd05685df7274d8647f3b8085cd3aef2dbaf4323412b12c"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/inputs-lock.json",
+      "git_blob": "a0782be0d7bce89a84a81283fd66c265ccfa9088",
+      "target": "provenance/bridge/inputs-lock.json",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 6086,
+      "sha256": "fa4f960f95a435f3b282b150593066240ded606c20034e34d823a244d3a0b41f",
+      "original_source_identity": {
+        "bytes": 6087,
+        "sha256": "3e4b8d1a50f9a3653a49ca7eac23b4a9a5fd2f88245ae371a1500a68e854688a",
+        "git_blob": "d3008cfee8ac3495183555d58db4d5c59ec4a80a"
+      },
+      "publication_redaction": "Local account paths anonymized; this context file is not verbatim original source."
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/anchors.json",
+      "git_blob": "8c4bfcd98aa8be01b9c8b9f4831862a226eb1696",
+      "target": "provenance/bridge/source-evidence/anchors.json",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 15772,
+      "sha256": "f8c00e436d7174bea1d9e9409ab81fca890377017217cff4e535222415c1962e"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/inputs.json",
+      "git_blob": "a9469665e655ae4a2a4ab94e8e99f159a1fd13a3",
+      "target": "provenance/bridge/source-evidence/inputs.json",
+      "role": "archived-source-context-not-current-result",
+      "bytes": 16737,
+      "sha256": "d8cb63e4a0b02fc43dfc6d51e30dda693d95151ff119cea41c94f7e00b6c4ba9"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/AndroidPlatformUsbPort.java",
+      "git_blob": "5d5b9b7d62969a6c8cbb916470614a256d1e2738",
+      "target": "bridge/src/local/sidecar/copilot/usbbridge/AndroidPlatformUsbPort.java",
+      "role": "production",
+      "bytes": 16552,
+      "sha256": "cf4676a5ea2b6063f0edbd1c3f334dc194465ccb296ab266fbb1d941f80119ac"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/AndroidUsbLifecycleBridge.java",
+      "git_blob": "17e8e35aff565a3920561c1808d44060f2419c9b",
+      "target": "bridge/src/local/sidecar/copilot/usbbridge/AndroidUsbLifecycleBridge.java",
+      "role": "production",
+      "bytes": 5485,
+      "sha256": "49382eac050aa7a2dd7e541c76272543cb3e579171d0ce82b4c43318435c6047"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/PermissionReceiver.java",
+      "git_blob": "ba482376836caeb58594be28977acc90d192abd6",
+      "target": "bridge/src/local/sidecar/copilot/usbbridge/PermissionReceiver.java",
+      "role": "production",
+      "bytes": 1637,
+      "sha256": "500c52ed9c469649062c94273f97787a1d4650fa89614447ce3d7cb310c504fe"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/PermissionRegistry.java",
+      "git_blob": "ae6223710b0cfc52507a41fb72a5c4629b32ed3f",
+      "target": "bridge/src/local/sidecar/copilot/usbbridge/PermissionRegistry.java",
+      "role": "production",
+      "bytes": 2579,
+      "sha256": "4dbffaa18f3e7044ec8ca16c74e605dd10e0b13af355c208656edd3b7791bcb1"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/app/PendingIntent.java",
+      "git_blob": "65549b1e409beb4732598a062306055dea69ac1e",
+      "target": "bridge/test-android/android/app/PendingIntent.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 3915,
+      "sha256": "d807bfd4d2c10c8cf1e0d1f3f30426bbff0cbe89b297ea42dba10bb4bf189602"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/BroadcastReceiver.java",
+      "git_blob": "e1b74db0c7d7b43efc66a66a84947516a5f583a0",
+      "target": "bridge/test-android/android/content/BroadcastReceiver.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 249,
+      "sha256": "cf7fcc111ec7f7e961fc5c65983b659d1571f317d1f3b87e7810be229630fbcf"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/ComponentName.java",
+      "git_blob": "279241033509a3d18e2bb8918306ce2436853979",
+      "target": "bridge/test-android/android/content/ComponentName.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 968,
+      "sha256": "e23228286ef3bca89d06be4f546b71f38696e16e85d28cf06818f94120263a6d"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/Context.java",
+      "git_blob": "f21e0ae6761629e9fddfa983c8c2be0dae690d29",
+      "target": "bridge/test-android/android/content/Context.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 737,
+      "sha256": "639dc29a6aaf39aa00561dee724fef93068cfa0a71c744d1ea8260bc01a6e3aa"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/Intent.java",
+      "git_blob": "7fe6fc250c7818041c5cbfad11ada4dbc4c8e736",
+      "target": "bridge/test-android/android/content/Intent.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 2580,
+      "sha256": "ba12e649e03a2c55f37fe2b142cfb9865acf496245eb359f5ea93ba123092502"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/IntentFilter.java",
+      "git_blob": "4e34636cfa3ee778156bc11e9b6a5c03bc9f6bbd",
+      "target": "bridge/test-android/android/content/IntentFilter.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 410,
+      "sha256": "4e328a0ba1535b1bba60c6e6c2954ed46e71a4abd30844fb0fba4292bddda423"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/hardware/usb/UsbDevice.java",
+      "git_blob": "7c363007d56c183c241347961e166e736dc07232",
+      "target": "bridge/test-android/android/hardware/usb/UsbDevice.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 1172,
+      "sha256": "83f98077a1e4833cab3df45569c64e8e2571d71a1aaf8a08d0986cb5e48c6154"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/hardware/usb/UsbDeviceConnection.java",
+      "git_blob": "cb6ad21ebc0fc944efa0f9c71d1fd4b351ed3b17",
+      "target": "bridge/test-android/android/hardware/usb/UsbDeviceConnection.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 1969,
+      "sha256": "3060b147619445487642c42af75a541208ae9360b6df6b64b8c880c114050ba6"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/hardware/usb/UsbManager.java",
+      "git_blob": "f84a07a27f682d781596aece6ae270d34d57b02c",
+      "target": "bridge/test-android/android/hardware/usb/UsbManager.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 2324,
+      "sha256": "9098458124c0e0a1ffb114e96960a5aa37f9899a3fb56e4621d24b47ef415897"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/net/Uri.java",
+      "git_blob": "e963761b2f3dac2cf5fc8b72a97e61a51a6bbc0b",
+      "target": "bridge/test-android/android/net/Uri.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 568,
+      "sha256": "d097a9ded6d8f272faa27bea9fd1cbfc40a8d90d028818c88a5566f22a0a1b11"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/BaseBundle.java",
+      "git_blob": "7a0d63a7e4ede2b1b25285a5685cab9371a93550",
+      "target": "bridge/test-android/android/os/BaseBundle.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 634,
+      "sha256": "c031907829417eab04c559ac96e5f8237e739d664f3bf094041478f3a198b366"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/Build.java",
+      "git_blob": "609fd498299c9f350faafb3b974ac3146b99685b",
+      "target": "bridge/test-android/android/os/Build.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 270,
+      "sha256": "7f5952753a0ba59dffac6a23c4d3308e25596ee9bedd7cafff135d04ece20eaa"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/Bundle.java",
+      "git_blob": "7c1fea556525423cbe3823edd6700379597b5252",
+      "target": "bridge/test-android/android/os/Bundle.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 418,
+      "sha256": "8ca92aa928b29f14f6933124a8e16ee51a94c88c5b465b6c99c3927934375601"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/Parcelable.java",
+      "git_blob": "cafbdfc0d063e4f6b30178ed596b65f2e71fba85",
+      "target": "bridge/test-android/android/os/Parcelable.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 124,
+      "sha256": "2aaf46354bc722a8295d851f3a0089d9d2c5d20ec2e2b6133426644cab872441"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeBackend.java",
+      "git_blob": "e01f9d39dd826e324049f1236077078029a7bc6b",
+      "target": "bridge/test/BridgeBackend.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 5030,
+      "sha256": "d35f88a71d31406124a8848c96f3e297bf22fe7f36ec76d6de2aea5c5737f1e9"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeChecks.java",
+      "git_blob": "22962b2080634fe8ce71f97a69804743c4c78cba",
+      "target": "bridge/test/BridgeChecks.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 41868,
+      "sha256": "10c1086b004ffc4e7a8fe24435d96ea58270e682c6aa62d14ca0a2659e309677"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeContext.java",
+      "git_blob": "9e9ea7c831d2a09ec363a8004f835e36c4bf6b12",
+      "target": "bridge/test/BridgeContext.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 3433,
+      "sha256": "595d4dbd760f3c44761b987492be1ae618e254ec8e825f0f8f12ee03cf9965f6"
+    },
+    {
+      "module": "bridge",
+      "source_repository": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge",
+      "source_commit": "62eb3485a056c91720609f38ba436122bfdcb420",
+      "source_path": "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeTestSupport.java",
+      "git_blob": "08c9224867f6091821afbe4b3cd58ef7b4f33130",
+      "target": "bridge/test/BridgeTestSupport.java",
+      "role": "test-or-isolated-manifest",
+      "bytes": 3456,
+      "sha256": "df4cca42124769b979ef665892fa6866e4f803dbf9a641d5f4c1a4a1c99079cb"
+    }
+  ],
+  "main_contract_sources": {
+    "android/uvc-contract/src/local/sidecar/copilot/uvccontract/CaptureSession.java": {
+      "bytes": 4064,
+      "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+    },
+    "android/uvc-contract/src/local/sidecar/copilot/uvccontract/StopBarrier.java": {
+      "bytes": 3891,
+      "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+    },
+    "android/uvc-contract/src/local/sidecar/copilot/uvccontract/UvcContract.java": {
+      "bytes": 15549,
+      "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+    }
+  },
+  "not_copied": [
+    "all contract-baseline directories",
+    "historical test/build results",
+    "upstream runners",
+    "third-party native source/binaries",
+    "AOSP text caches",
+    "main app configuration"
+  ],
+  "runtime_dependencies_added": [],
+  "main_app_enabled": false,
+  "publication_note": "Public metadata copy: account paths are anonymized. Redacted context files retain their original Git blob and SHA-256 below; implementation source bytes are unchanged."
+}

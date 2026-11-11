@@ -1,0 +1,37 @@
+requirement,priority,status,evidence,remaining
+PR 01,P0,partial_native_and_synthetic,Explicit consent/tickets and permission gates; CONTROL_ISOLATION.md,Production policy/physical-source acceptance remains open
+PR 02,P0,未实现,无,完整PRD验收未通过
+PR 03,P0,未实现,无,完整PRD验收未通过
+PR 04,P0,未实现,无,完整PRD验收未通过
+PR 05,P0,partial_native_and_synthetic,Same-boot monotonic anchors; preserved callback clocks; known control and unknown recovery coverage; INTEGRATION_RECOVERY.md,Hardware clock calibration and trusted cross-boot recovery unverified
+PR 06,P0,partial_native_and_synthetic,F134E5D4 API35: native2031 includes isolation95; UI64; cold control44; mixed48; revocation16; FGS230; crash10/137; exact source APK and runtime receipts in F134_RUNTIME.md. Synthetic only; stage gates open,Real capture/API30/OEM/power-loss and sustained performance remain unverified
+PR 07,P0,局部模拟已实现,进程内幂等提交,完整PRD验收未通过
+PR 08,P0,partial_native_and_synthetic,Bound cold44 warm44 mixed48 UI33 interruption15/12 OSrevocation16 FGS230; original host failures retained,Historical873 timeout cause unknown; real input and renewed same-meeting consent completeness remain open
+PR 09,P0,partial_native_and_synthetic,Two-second PCM queue includes in-flight data; finite backpressure stop; isolated UVC synthetic pixel bounds,Total app/native memory and physical capacity/thermal/power thresholds not qualified
+PR 10,P0,局部本地已实现,三段式证据报告/IANA日界/缺口与来源质量,完整PRD验收未通过
+PR 11,P0,局部模拟已实现,合成证据引用,完整PRD验收未通过
+PR 12,P0,局部模拟已实现,更正版本检查,完整PRD验收未通过
+PR 13,P0,partial_native_and_synthetic,Current full native includes marker98 pending164 atomic100 WAL74; original fixture consent failures retained and one-line test repair validated,Unknown-copy homepage isolation and full snapshot/WAL/physical erasure boundaries remain open
+PR 14,P0,partial_native_and_synthetic,Current native includes owned-buffer320 and range-barrier120; UI33 source-bound; runtime logs and exact installed hashes,Immutable/provider/platform copies and hardware threat-model acceptance unresolved
+PR 15,P1,未实现,无,后续阶段未启用
+PR 16,P2,未实现,无,后续阶段未启用
+PR 17,P2,未实现,无,后续阶段未启用
+PR 18,P0,未实现,无,完整PRD验收未通过
+PR 19,P0,partial_native_and_synthetic,Original callback timestamps retained through PCM queue; existing buffer and range-deletion barriers,Real egress/provider and physical capture acceptance incomplete; current evidence in GATES.md
+PR 20,P0,局部模拟已实现,结束后输入齐备摘录,完整PRD验收未通过
+PR 21,P0,未实现,无,完整PRD验收未通过
+PR 22,P0,局部本地已实现,同会话boot联合证据候选窗/背景分离/权限过滤,完整PRD验收未通过
+PR 23,P0,局部模拟已实现,依赖产物整篇隔离,完整PRD验收未通过
+PR 24,P0,partial_native_and_synthetic,CaptureBoundary and pause/gap transaction; deletion-safe recovery markers; guarded unknown-tail warning with no fabricated endpoint,Physical sample-boundary and complete downstream gap presentation acceptance remain open
+PR 25,P0,partial_native_and_synthetic,Authenticated historical reads and blind frame writes; unknown clock blocks note body access and media replay,Physical lock/authentication/key lifecycle and trusted cross-boot recovery not accepted
+PR 26,P0,未实现,无,完整PRD验收未通过
+PR 27,P0,局部模拟已实现,模拟网络代次,完整PRD验收未通过
+PR 28,P0,未实现,无,完整PRD验收未通过
+PR 29,P0,未实现,无,完整PRD验收未通过
+PR 30,P0,partial_native_and_synthetic,Current synthetic FGS230 includes held-store26; same-boot OSrevocation16; explicit missing-warning and distinct diagnostics passed,No real route/arbitration/OEM acceptance; old timeout cause unknown; no complete stage approval
+PR 31,P0,局部模拟已实现,模拟归属/撤销,完整PRD验收未通过
+PR 32,P0,partial_native_and_synthetic,API35 service lifecycle; independent control/storage and UI workers; bounded PCM consumer,Actual device quotas/driver behavior and sustained operation unverified
+PR 33,P0,partial_native_and_synthetic,Source-health adapter and explicit backpressure/uncommitted/unknown coverage metadata; no auto-restart,Real arbitration/silencing/driver-loss scenarios and complete user-facing gap reporting unverified
+PR 34,P0,局部本地已实现,本轮取消/自动阻止/单次例外/策略版本发布屏障,完整PRD验收未通过
+PR 35,P0,partial_native_and_synthetic,Current native anchor32 clock quarantine89 retention subsets and scoped maintenance negatives pass; source unchanged apart from test precondition,Independent cross-reboot retention continuation pending; global homepage block and production policies unresolved
+PR 36,P0,partial_native_and_synthetic,Current UI33 controls cold/warm44 mixed48 revocation16 and native meeting53 passed with receipts,Real standalone recording and full meeting acceptance gated; unknown-copy homepage availability unfinished

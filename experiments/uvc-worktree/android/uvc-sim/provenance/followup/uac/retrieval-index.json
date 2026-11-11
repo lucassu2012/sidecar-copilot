@@ -1,0 +1,344 @@
+[
+  {
+    "url": "https://api.github.com/repos/jim0608/android_usbaudio/git/trees/35ba8eee66a5c212a6f7f90caab8814c392b137e?recursive=1",
+    "cache_file": "f50c15c0ea7684102feb6ee35407236170e3de7b39a8d9b7ae60bef4258489ab.response",
+    "bytes": 79337,
+    "sha256": "64e4d6e74445fcb8720532021fd4fbf9aa37f6c300ac3263b70a174b3c995b1e"
+  },
+  {
+    "url": "https://api.github.com/repos/jim0608/android_usbaudio",
+    "cache_file": "5f3ee4e454c342544f924ddc33ff341900ed9c33bec1dd628cd4d53a4ea752c4.response",
+    "bytes": 5314,
+    "sha256": "ecceca96e2b23e83cb623976e0423b106b6e07ea28be90da56109c74285e135c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/README.md",
+    "cache_file": "bfb6ebd6f2c7b83f937564800397be5c5b4689d43f2c41552f404bec773efb61.response",
+    "bytes": 2236,
+    "sha256": "8e4b91900bbfc1be9937bcb7861ce1e5be6258f57a4b279bc680e17e683d195f"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/build.gradle",
+    "cache_file": "600d3138aa3e63e8b08d42d8fa819332b46feb1f966f5d91d8ddb5b1715ecdcd.response",
+    "bytes": 2355,
+    "sha256": "75f9205856017ba071504c6d43b3a215b98b47a97e8462cce4db2377c8598ae4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/Application.mk",
+    "cache_file": "89b56b19c426ef9b321e8c44e13cd8f3df9eff36705c3e42624264595dd6bcf9.response",
+    "bytes": 151,
+    "sha256": "ebb2e80b6624778581b3290b25c1dbf53fabc7e400e72aa7aac9c6fb29c747de"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/Android.mk",
+    "cache_file": "d4adee3e42a74f6fd16e61bd59ad70ed3e400bb93721272ec679974c7eed0103.response",
+    "bytes": 1433,
+    "sha256": "763d3def45c7317719eeaf4ca9d9f35d9a70f07cc4ab1eb623060338b82fddcc"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/Android.mk",
+    "cache_file": "0bc1b50255f859c6d95bdd5fdb5a9c57279cca3227b7705c7c7dfefbc14c5122.response",
+    "bytes": 302,
+    "sha256": "3f62d8ed07656edc5bcb50a748fdaaf7d7e20ecacfc9c8f9de09ca72859c37c0"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/USBAudio.cpp",
+    "cache_file": "b4ee6ddc81b548604ae441f455ff198c22ee69b581a99cce3028791a0c3e6727.response",
+    "bytes": 13606,
+    "sha256": "675f7a86effb420976b286e886a15d7ed87fbe5abba0711eb15d2d8f2db3a63c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/USBAudio.h",
+    "cache_file": "2b3cae7d1bf9e1d2d6fe6c106da4b3fec1a41539226cbdc4e3b7f0cea2e84d14.response",
+    "bytes": 1861,
+    "sha256": "02084d86c2caabf9651c1d4e06d8f68c7d86d1e6caba31ab96c6a130762533ed"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/native_usb_audio.cpp",
+    "cache_file": "a557d492f95daab8644cb46c0c1ca0d1abd49464d2f1b83b62bce35e46cbe1ea.response",
+    "bytes": 5638,
+    "sha256": "43b27804842a70e3307146fe15cd3c423bdba27fea82bdc17503f454927de85b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/uac_stream.c",
+    "cache_file": "5eb84ab67c8531adf101b763d3896da2952a62e0b389f76328f4dd16a8343e7a.response",
+    "bytes": 3869,
+    "sha256": "cfa957a225d1c91451ad8a716d1630602d9f17221392d657784a25db975f18ba"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/uac_stream.h",
+    "cache_file": "98006cde8a2e290dabe2c9bad38b56885084bb2c31b2ddf60e1e19b6feb361de.response",
+    "bytes": 1363,
+    "sha256": "a67884f7d54531ca7f0bd2b7bfce9422402a4f53cfb2bc2d24955e65e5690618"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/libusb/COPYING",
+    "cache_file": "aec63d6ddf7d7c5bea442e0e8ade6b8414f018f920ee5430affdf2e7a3d5cc16.response",
+    "bytes": 26940,
+    "sha256": "319daefe38ebeead3df178e5937898a52d67c0c795f54f1c0bb10ac3b9cffb63"
+  },
+  {
+    "url": "https://api.github.com/repos/jim0608/android_usbaudio/commits?sha=35ba8eee66a5c212a6f7f90caab8814c392b137e&path=app%2Fsrc%2Fmain%2Fjni%2FusbAudio%2Fnative_usb_audio.cpp&per_page=100&page=1",
+    "cache_file": "abe23e99e5b6917675a35b9c89904f42af148237b22ff1518d8c35f5f71ea675.response",
+    "bytes": 3304,
+    "sha256": "c1deed2cf4af736b4cb10e7b4a60f2eb1a27ee0cc9d4c66efaa83d525d6c029f"
+  },
+  {
+    "url": "https://api.github.com/repos/jim0608/android_usbaudio/commits?sha=35ba8eee66a5c212a6f7f90caab8814c392b137e&path=app%2Fsrc%2Fmain%2Fjni%2FusbAudio%2Fuac_stream.c&per_page=100&page=1",
+    "cache_file": "c075512bcee4e95b98a4ec42374bcbd7d632bef4444004738e3e64688492d2ea.response",
+    "bytes": 3304,
+    "sha256": "c1deed2cf4af736b4cb10e7b4a60f2eb1a27ee0cc9d4c66efaa83d525d6c029f"
+  },
+  {
+    "url": "https://api.github.com/repos/sky22333/camplayer/git/trees/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b?recursive=1",
+    "cache_file": "45e6d13e8c5e6213cfc56e0f14fc9959f394829e0b575fd115dfe5d302a3ace3.response",
+    "bytes": 47682,
+    "sha256": "f9ab4f37791be4e2a5c204c674ed696c8d7fc13d345b0d5912fcc9d9b1ab7693"
+  },
+  {
+    "url": "https://api.github.com/repos/sky22333/camplayer",
+    "cache_file": "b5464948beef57965af64ac6c66c8ca336b3892e7ef6689f385bf53247da8f7b.response",
+    "bytes": 5294,
+    "sha256": "bd6463259a380636ac83973c091f3f3f4aa01f5ac388245f908077409049cb40"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/LICENSE",
+    "cache_file": "230a2bdd2b35ea3127fcd4e7a9562e8e689fc0b80b10c77dc7e6a00676070f8a.response",
+    "bytes": 35179,
+    "sha256": "5489e9f0f304b899ff1176ed36c40574a93cbde1a3e5068bd853645e9046efe6"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/README.md",
+    "cache_file": "ef71b86eeb6ba2416d24403cc3f7e17a3e591f0ddffe2384b7b2a5ccad6964cb.response",
+    "bytes": 1689,
+    "sha256": "111b321d5c3a0b4ec281065b19cd18a052f0ae11b3b272aed83ef8355149afe2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/build.gradle.kts",
+    "cache_file": "4c896323fcb8e2c84e4aeadc73be5acad1f7deb87a6fd34952a06e66e1d372ec.response",
+    "bytes": 4812,
+    "sha256": "2d2c1c1e063d6b84bd7eea7d8e49d8665ca9edda3bcdebfb513f3d38e161d9a8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/uac_jni.cpp",
+    "cache_file": "622110c44629a008c873ce051f10342653b2d7efe3f0a86d444db60f02809e43.response",
+    "bytes": 10114,
+    "sha256": "929d586b90c721788c1d0aab28b541cb5b9520e5cb44461338479d85349b6053"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/CMakeLists.txt",
+    "cache_file": "b559e0707a3bba7d07982dcd47603bbc8d477cba86b1c313b802ab4142e1dccd.response",
+    "bytes": 1438,
+    "sha256": "0f581a2a9c7d93fd4ff015621ad30265f9c966ab48a9df397e2691e5a503e057"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/third_party/libuac/LICENSE",
+    "cache_file": "db120dd1ace07d0ad1f503f720380a71eb3d825869569d6df1c9f5ef3c159224.response",
+    "bytes": 11357,
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/third_party/libuac/src/uac_context.cpp",
+    "cache_file": "24d82687ef14d78310d0583cd3da46f1f9cfbb70713f8f0a54906d3b73058a3a.response",
+    "bytes": 4574,
+    "sha256": "48e88923aef423a9ffcd490819d86c8de5e35e5308d21f2ae9d693eed44f6ebb"
+  },
+  {
+    "url": "https://api.github.com/repos/sky22333/camplayer/commits?sha=5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b&path=app%2Fsrc%2Fmain%2Fcpp%2Fuac_jni.cpp&per_page=100&page=1",
+    "cache_file": "0d65533834bbe62fd1f8ae1f37758b4406509d7a65711aede0d0470e6aa006e0.response",
+    "bytes": 3000,
+    "sha256": "94900fe2a8e6787786f83d1dd3f0ac2501d929c41e58872f6d9fdd0e89155740"
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/UVCCameraLib/git/trees/3d7186e73efe4d3c317b61992e5d200e8b21949d?recursive=1",
+    "cache_file": "1d913bf5e7885e588c372d31726e5d7990266791ab3f639c46cc952c8a1cec54.response",
+    "bytes": 598177,
+    "sha256": "8e8eca15f10b8ad67465e3c89f41c2d8fdbedd0af0b82d6211fd8f3b25932e91"
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/UVCCameraLib",
+    "cache_file": "ac19a0b552616acbf4bde772834bb56363d206c5a829cc7d1b9fb30c3ba860af.response",
+    "bytes": 5452,
+    "sha256": "77107505c9589e20926460b0c3768d074b2709036e71506d09eb6fba0893d180"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jiangdongguo/UVCCameraLib/3d7186e73efe4d3c317b61992e5d200e8b21949d/README.md",
+    "cache_file": "0335719d4111d04432c1024e2a91eec90db80155f29bb08da09c198c64e4a993.response",
+    "bytes": 907,
+    "sha256": "2586f08636c71de50b16753062ec0a9b07e387a2745f1bad00b066e195377c8b"
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidCamera/git/trees/ab1a097c8051fa955d0e65d32080c16e6e1bcf9a?recursive=1",
+    "cache_file": "78958a4ba7ac8c7fbdc4ba982942fe59bf5321e28d9807e5b718fc3638926bea.response",
+    "bytes": 195567,
+    "sha256": "4f5635dba9a2eabfb0727f353b5c488ddf5eaa428a04ca4a0e0656ee35c9d7ba"
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidCamera",
+    "cache_file": "0d0e6ea65fde170a498f77c9d933cbb67347b2cda1f45e2e240d44ddb69a1575.response",
+    "bytes": 18141,
+    "sha256": "bfbd414fb3c6f57b5bec4239a121f70ddd822ed3896315f1849de030ffbee3eb"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidCamera/ab1a097c8051fa955d0e65d32080c16e6e1bcf9a/README.md",
+    "cache_file": "2c4a8c1c656f4f4017e95ee4e5891e5462fcd65171bfe7d999908a5a883efcf2.response",
+    "bytes": 4569,
+    "sha256": "fe433e14bd757f6d4c48b82ad2252734a64d619dfeda034f760241c39cdcf273"
+  },
+  {
+    "url": "https://api.github.com/repos/nExtCamera/libuac/git/trees/17a6ba0a09309a6890ec338826de43a256f89813?recursive=1",
+    "cache_file": "9dc311e39043ceb055510548d629df67e689a4d0ad1a66a6d45468a6b48e8e18.response",
+    "bytes": 7959,
+    "sha256": "fec73dc0dbe8081cc8d7cbbd4cd72dc9fcf3fbc85962584597833318626b9ebc"
+  },
+  {
+    "url": "https://api.github.com/repos/nExtCamera/libuac",
+    "cache_file": "931f2727b8f8bc405574e847fac468062e82202cc9863ae167bc4b27d9aeef5d.response",
+    "bytes": 6194,
+    "sha256": "b6816a4152de81d892fa607ced093e1b59c1c26448ad9f24379a35fb3a3f0260"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/README.md",
+    "cache_file": "f4307556aebbe0597a9b56d584d588f9d566fac6eafc11db4ad193fcca7419e3.response",
+    "bytes": 1513,
+    "sha256": "1ee3a4ad1df4d4e924e1fc297020c3c3f4fbac4409c61464d89ee922591257a8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/LICENSE",
+    "cache_file": "4b89fb2c81edd662beed515e2fa9db7da2e2af127b21908db7e3c26e759d9af0.response",
+    "bytes": 11357,
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/CMakeLists.txt",
+    "cache_file": "3998de4962e3f4844db028b3981456f2bee947858ce7c4696d84ea7a113c864f.response",
+    "bytes": 1340,
+    "sha256": "a11e8f947ceef450505329ceb0a688ecb4286514e91c268b60a74a11ae2062ef"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/android/libuac.mk",
+    "cache_file": "6a7284cac8fdfa4bf8fb02990960010a1e9ca6d2aa3735c787f9523fb8a901e3.response",
+    "bytes": 547,
+    "sha256": "39dd10107d1234d5c78f12ef2eb63d620b72f4c1d58aaa3bfde34059d854d5dc"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/src/uac_context.cpp",
+    "cache_file": "ffc4416bf0d7cd8580ce25b1ba442e3b4ee2020f0576c1a3468d985dbe3f2e5b.response",
+    "bytes": 3384,
+    "sha256": "5e16a7da58a8f15efc15b9cf971bd89e88effc0f48a93103c52a557e5769383d"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/src/uac_streaming.cpp",
+    "cache_file": "8543d01353b347aad77a55a35634b9017797c223ee9bd1df21e905f18d8dede4.response",
+    "bytes": 14528,
+    "sha256": "05487be08560f198d32d5ca5fb49d4d8637b53d905c47217e40b603871c77e44"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/include/libuac.h",
+    "cache_file": "768ef25fa19147b927b202b9829fa1aa9c38a3db22e6aab7437ef7957786aafc.response",
+    "bytes": 9947,
+    "sha256": "b7bde2ce08dec1b6d60765d0cd35d4400ba49ddbb064d9c5107e428e1b551ec5"
+  },
+  {
+    "url": "https://api.github.com/repos/nExtCamera/libuac/commits?sha=17a6ba0a09309a6890ec338826de43a256f89813&path=src%2Fuac_context.cpp&per_page=100&page=1",
+    "cache_file": "5d36034c6a9a8f866f61f05b77b24e9bcfd3aa0319f4e3a67f7eac3fc18e0e60.response",
+    "bytes": 3275,
+    "sha256": "7c8031a6d67c9baac4e00fe8a39180244bd2179539952017498edbea1f5d2c4e"
+  },
+  {
+    "url": "https://api.github.com/repos/siddhesh-bhadale/AndroidUSBCamera-fork/git/trees/ffbf0fb17ad9baefd229e87ea990d11e56f421fe?recursive=1",
+    "cache_file": "e5d5db1dcd84eb289afd821452c7956dd98beb8ed79bac07e921941816c7f94c.response",
+    "bytes": 381301,
+    "sha256": "774920f0f2450157e5e384aea8e66400c8eb54f65e458a9db75328b249ab3479"
+  },
+  {
+    "url": "https://api.github.com/repos/siddhesh-bhadale/AndroidUSBCamera-fork",
+    "cache_file": "61f0d0bf25c1a3fe0f0ccdf1f954f1c8e6f47c97618cc5482af871dced63e809.response",
+    "bytes": 17943,
+    "sha256": "e9a6e97a24235b9766f3e09d5a35d2e97ee0949f310700457a6a2fb1f055a68d"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/siddhesh-bhadale/AndroidUSBCamera-fork/ffbf0fb17ad9baefd229e87ea990d11e56f421fe/LICENSE",
+    "cache_file": "5c0f8da9f3c192f09122648bb4b5b2ee96684e67e393aa6c6f9d3efa15029393.response",
+    "bytes": 11357,
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "url": "https://api.github.com/repos/jim0608/android_usbaudio/git/trees/7b0d728d0e5768c345e1fe797ddcc071092a04ca?recursive=1",
+    "cache_file": "559259a2800459137a48ccd1b73c14c3ca7e1b19192a214d12b4cdace99f145f.response",
+    "bytes": 415,
+    "sha256": "81b5e51461d721d6033eb355d8680a258dda2bbe4fa8f6b90ddd702dd999c939"
+  },
+  {
+    "url": "https://api.github.com/repos/jim0608/android_usbaudio/git/trees/79491886c7584a9a99b9dadab552ceac5a0004c8?recursive=1",
+    "cache_file": "3ce2f64e3b6e37c8777765043bb108a3ce01f1013942f654d5979967b933ef59.response",
+    "bytes": 79112,
+    "sha256": "f71427e7d0862556b539026e258b9f7d3b648617c0e4b9c1321c0023ac61837a"
+  },
+  {
+    "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1?format=JSON",
+    "cache_file": "212541a7869e5f768acdd22e773eb4f1d73b36f4ed569cc2fe096a0f00343561.response",
+    "bytes": 855,
+    "sha256": "c4dbe36e66d4c0fb47f0e232ab0ac987d71727847e671dfd98b58ea56827a94b"
+  },
+  {
+    "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioRecord.java?format=TEXT",
+    "cache_file": "81f2c737d289578316d9f3ff456cea2ed3a488c370bcbd85e971e9288f3289d2.response",
+    "bytes": 156072,
+    "sha256": "3d0fa6a878c8c05e9dad585cb60ad5223c981cfdbd5bc2fa49d7db56820d8ec1"
+  },
+  {
+    "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioDeviceInfo.java?format=TEXT",
+    "cache_file": "afb1da9bb0e0eb482599782e298d1ac38f6b00965a209ab11c52213b2e40b6cb.response",
+    "bytes": 41748,
+    "sha256": "047294ff7b4b75c6123e99640f3fc8cb835decd28ccafda2b1dc88b28e2f2efb"
+  },
+  {
+    "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioManager.java?format=TEXT",
+    "cache_file": "79638c19918b29c8af667d4a79b208ba62130130c577f0cd764addd37702d3cf.response",
+    "bytes": 578300,
+    "sha256": "e60f2de29d90afbebbc8e0103ee71a905175917bfa7937d3716f78947d495bb1"
+  },
+  {
+    "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioRouting.java?format=TEXT",
+    "cache_file": "f9b2b3ac037ca2233a2c373e85833a68535b026db95d84319821eddbfa911567.response",
+    "bytes": 4292,
+    "sha256": "8adadeb27b85d5d292dda6ce3f644812d509192e54a0b2fc642d32ee9afb892d"
+  },
+  {
+    "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioRecordingConfiguration.java?format=TEXT",
+    "cache_file": "470a5ccdc883bf6ba5899e6b2b18344c460b702c7ed0032935270b6fd0d95ef1.response",
+    "bytes": 22700,
+    "sha256": "11895ba3a410d557da0fe79cc3088f3156ea425e6670e04d3b405d2f457a644d"
+  },
+  {
+    "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/services/usb/java/com/android/server/usb/UsbAlsaManager.java?format=TEXT",
+    "cache_file": "05c38c3f9c8e8b6fc4fdc0534c0cb0d7762ece42b7e5379d3cb88d583569d80c.response",
+    "bytes": 31456,
+    "sha256": "7caf93a357f63e304efd08eb8d5b945b83a715a04a0092729911c1abbe61be5d"
+  },
+  {
+    "url": "https://source.android.com/docs/core/audio/usb",
+    "cache_file": "0099402176f93617e9d26c260b85a5c6ef40b71b82b8e1196180e90509c82f02.response",
+    "bytes": 198285,
+    "sha256": "a8b61240d057168ed7c85f7d19d13aef85085134b3ed3e5656bbbb9cc24a6d36"
+  },
+  {
+    "url": "https://developer.android.com/media/platform/sharing-audio-input",
+    "cache_file": "abdb6d3c11d8dd176f2fd29ffde54ca298735f8efe014dd85500e8c3a87cc16a.response",
+    "bytes": 324161,
+    "sha256": "e79368d34001382eff5eaa87c59adfcb09023afe8cc1ff07cc461d9f9bffd9ba"
+  },
+  {
+    "url": "https://developer.android.com/about/versions/11/privacy/foreground-services",
+    "cache_file": "95a00e3ce247aaa759fdc7c51e25d89b91e0ebbf2af7fcab1c276b1825224f1e.response",
+    "bytes": 265281,
+    "sha256": "8b6c9ae4fa5458b74b03ace0d8cdabd1d46181a582d3a64ab540db2bb54ec479"
+  },
+  {
+    "url": "https://developer.android.com/about/versions/14/changes/fgs-types-required",
+    "cache_file": "ebdfb34bbac2f03ace4b21c17d8719aebd3ac0f1b44538083d13c7c1b5152f17.response",
+    "bytes": 303948,
+    "sha256": "03873c42832d0c2c343b8dceabcc0985a2ca43d06300a9f87241afd2b68d416f"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "description": "Reviewed immutable input identities for this evidence set. Updates require explicit review; trace.py never rewrites this file.",
+  "inputs": {
+    "uvc-sources.jar": {
+      "request_url": "https://repo.maven.apache.org/maven2/com/herohan/UVCAndroid/1.0.13/UVCAndroid-1.0.13-sources.jar",
+      "sha256": "f2292812ab0d988a0b0a96c5c511b0702a55aa050fb9a4e5030c06b131a22ce0",
+      "bytes": 186307
+    },
+    "hutool-core.jar": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-core/5.8.35/hutool-core-5.8.35.jar",
+      "sha256": "69fb13e89d17fd0f254a77fd5c1df4783151a8d90999d0288d0732da6f82365e",
+      "bytes": 1466267
+    },
+    "hutool-sources.jar": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-core/5.8.35/hutool-core-5.8.35-sources.jar",
+      "sha256": "1bcf829a8cf3cbb52e551d7332581dc1ecb9192ac99a7039dee7b21f76b81662",
+      "bytes": 1129054
+    },
+    "hutool-core.pom": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-core/5.8.35/hutool-core-5.8.35.pom",
+      "sha256": "441fc70fab6afd1b596402b888d6e8a4d014871acea4b484cc083d4335fdbdcf",
+      "bytes": 698
+    },
+    "hutool-parent.pom": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-parent/5.8.35/hutool-parent-5.8.35.pom",
+      "sha256": "66a9b022d6fc105760e41888ce44a9ecceab6f598fc3f5ffe21f461d4e2d8475",
+      "bytes": 6425
+    },
+    "uvc-tag.json": {
+      "request_url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/ref/tags/1.0.13",
+      "sha256": "aa0fcb10e78af05bd08cef523a3d91c63ad275da31ffbc344074f06ffd4100dd",
+      "bytes": 343
+    },
+    "uvc-release.json": {
+      "request_url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits/6018c7f20238832929cf61427427bb7828056260",
+      "sha256": "726cb90b7764c7111cea06169f662c642b4d738b12dbe28ba30541f47f461aa6",
+      "bytes": 6704
+    },
+    "uvc-removal.json": {
+      "request_url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits/61e9f8fde9ee0071b661d230a33b58542ddf84bc",
+      "sha256": "3b326d2d5bbd061ec07b310d700181164b56ad9ed04df9bb38a732f7f6b7704a",
+      "bytes": 6237
+    },
+    "uvc-compare.json": {
+      "request_url": "https://api.github.com/repos/shiyinghan/UVCAndroid/compare/6018c7f20238832929cf61427427bb7828056260...fcdae5f9a194e2111d57019176b53470a120415b",
+      "sha256": "6aa7bcf4d0ce28302c577cdd9b77e4e30c97b6d28eabaaab3581d9ca5cc39ec7",
+      "bytes": 18457
+    },
+    "uvc-release-tree.json": {
+      "request_url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/trees/6018c7f20238832929cf61427427bb7828056260?recursive=1",
+      "sha256": "a40bc8a08971be4b6ace4e52e3a53b448b20d6d188cc539110a509e7e8c64d58",
+      "bytes": 395071
+    },
+    "uvc-file-history.json": {
+      "request_url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits?sha=fcdae5f9a194e2111d57019176b53470a120415b&path=libuvccamera/src/main/java/com/serenegiant/utils/FileUtils.java&per_page=100",
+      "sha256": "0a3950ccf100ae2c4ceb80d0e1ae249690e6317214ae233c5bea78c2ec9cfb0d",
+      "bytes": 6479
+    },
+    "uvc-release-FileUtils.java": {
+      "request_url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/6018c7f20238832929cf61427427bb7828056260/libuvccamera/src/main/java/com/serenegiant/utils/FileUtils.java",
+      "sha256": "a242c211fd83b2b3a417fda7a6aa956a86468abe7ecad9e305cefe0082438089",
+      "bytes": 7256
+    },
+    "uvc-release-build.gradle": {
+      "request_url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/6018c7f20238832929cf61427427bb7828056260/libuvccamera/build.gradle",
+      "sha256": "91babf60cce7d0e314187a68618fdc225b6816d5b9cbf479fbf90c7fe30973f0",
+      "bytes": 2846
+    },
+    "uvc-baseline-FileUtils.java": {
+      "request_url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/utils/FileUtils.java",
+      "sha256": "cbd2b6b3fc79da77f6a9262351248fb6e4e1e85151a23bbecb7dde5bb8ce929f",
+      "bytes": 7543
+    },
+    "hutool-tag.json": {
+      "request_url": "https://api.github.com/repos/chinabugotech/hutool/git/ref/tags/5.8.35",
+      "sha256": "663bb507fd7b6f1fb204f45fb2c465b8b6ffba6a1f310753b14404d85ad1cff3",
+      "bytes": 349
+    },
+    "hutool-commit.json": {
+      "request_url": "https://api.github.com/repos/chinabugotech/hutool/commits/ced8bf817ab4448e9b1162af6ce697cef8640827",
+      "sha256": "e103a301cf13fdabf0b6881c8b7e3e77ddfb3a245e5440008580eb0d31fad727",
+      "bytes": 110637
+    },
+    "hutool-tree.json": {
+      "request_url": "https://api.github.com/repos/chinabugotech/hutool/git/trees/ced8bf817ab4448e9b1162af6ce697cef8640827?recursive=1",
+      "sha256": "694b5c1358331091a458a8c86e5d0741aa4e44917827ab5fb0af87abcdb9d815",
+      "bytes": 769472
+    },
+    "hutool-LICENSE": {
+      "request_url": "https://raw.githubusercontent.com/chinabugotech/hutool/ced8bf817ab4448e9b1162af6ce697cef8640827/LICENSE",
+      "sha256": "d7136cebc1c0c2a50e02013928fc283b8d69cb805a994e21e6a8cc3983f45131",
+      "bytes": 9549
+    },
+    "hutool-source-parent.pom": {
+      "request_url": "https://raw.githubusercontent.com/chinabugotech/hutool/ced8bf817ab4448e9b1162af6ce697cef8640827/pom.xml",
+      "sha256": "66a9b022d6fc105760e41888ce44a9ecceab6f598fc3f5ffe21f461d4e2d8475",
+      "bytes": 6425
+    },
+    "hutool-source-core.pom": {
+      "request_url": "https://raw.githubusercontent.com/chinabugotech/hutool/ced8bf817ab4448e9b1162af6ce697cef8640827/hutool-core/pom.xml",
+      "sha256": "441fc70fab6afd1b596402b888d6e8a4d014871acea4b484cc083d4335fdbdcf",
+      "bytes": 698
+    },
+    "uvc-sources.jar.sha1": {
+      "request_url": "https://repo.maven.apache.org/maven2/com/herohan/UVCAndroid/1.0.13/UVCAndroid-1.0.13-sources.jar.sha1",
+      "sha256": "d0923e84680dbee1e13894e8059806ba3072cf16b74427655a744b8a98c1c67d",
+      "bytes": 40
+    },
+    "hutool-core.jar.sha1": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-core/5.8.35/hutool-core-5.8.35.jar.sha1",
+      "sha256": "9457a140200497574d5c4e4e235432eee07b9f778ecb27fe5947b40b7696e49f",
+      "bytes": 40
+    },
+    "hutool-sources.jar.sha1": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-core/5.8.35/hutool-core-5.8.35-sources.jar.sha1",
+      "sha256": "5afd5aaee500ebc866db06f1212c3d9447266589c2b6d0b8b85db69558bdac56",
+      "bytes": 40
+    },
+    "hutool-core.pom.sha1": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-core/5.8.35/hutool-core-5.8.35.pom.sha1",
+      "sha256": "6ae0aef4c670324d9869850d7cac06d920451f9fff55d663f2051ae39447b0e9",
+      "bytes": 40
+    },
+    "hutool-parent.pom.sha1": {
+      "request_url": "https://repo.maven.apache.org/maven2/cn/hutool/hutool-parent/5.8.35/hutool-parent-5.8.35.pom.sha1",
+      "sha256": "362535018a9dd58ba9f1442f607784bf56038e326cc8b40bf8343bc312cc00d3",
+      "bytes": 40
+    }
+  }
+}

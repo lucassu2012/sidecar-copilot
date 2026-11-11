@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "baseline": "c1afb3f61fa309bde0437fa2019c352ddc1792ba",
+  "project_sources": [
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/CaptureGate.java",
+      "bytes": 1747,
+      "sha256": "cf1e584bd6c094b6ff8618c0b4d344b7e880252bb6687796f1b82b1da7759b0b",
+      "git_bytes_sha256": "42b13e22a35a0e0e9434269755584cbca80cc243835e6b87c1f6ba9edd8f6b6f",
+      "comparison": "CRLF-to-LF only; source content must match baseline"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/FramePipeline.java",
+      "bytes": 11996,
+      "sha256": "8190fab701e3f577211d43747a44937950d72df9dcd1c256437072c1498e7353",
+      "git_bytes_sha256": "e82cdbcbe97a7f2a2513b4e9acf236be40f7b8b0a9ceac7bf4787b2605a35a36",
+      "comparison": "CRLF-to-LF only; source content must match baseline"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/SyntheticUvcDriver.java",
+      "bytes": 4491,
+      "sha256": "c8feae76a8bb75e122cd2b245db85e2c94a4134dd75bacfcde0d8752ff60cfd0",
+      "git_bytes_sha256": "0362a995bb3bea68f415e6853f4001dbe8d0e88d4b21c48df08a91b700778797",
+      "comparison": "CRLF-to-LF only; source content must match baseline"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/UvcCoordinator.java",
+      "bytes": 18071,
+      "sha256": "77da7e99a516ef2c11bb70a9f1188e963d8c962f8c5e7eefe5c461acbe1d2b34",
+      "git_bytes_sha256": "789cf058091585d623150e411be80843aeca84a1c463b325d067d8c5b908e65a",
+      "comparison": "CRLF-to-LF only; source content must match baseline"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/UvcDriver.java",
+      "bytes": 2637,
+      "sha256": "85b96d520573f4fbaa5736ecfc3878d314c4ab3a78327686cf517b63de9396b6",
+      "git_bytes_sha256": "bde69c9d529a0e08410fc07d4987b321e686a2f57d783d97071f1e4e173ea732",
+      "comparison": "CRLF-to-LF only; source content must match baseline"
+    },
+    {
+      "path": "android/uvc-sim/provenance/feasibility/bridge/PixelBridgeExperiment.java",
+      "bytes": 10199,
+      "sha256": "f35e3c3420bddc75590158027747080ef6fe88327f26eaf5f77b994a306eec7c"
+    }
+  ],
+  "jdk_version": "openjdk version \"17.0.19\" 2026-04-21\nOpenJDK Runtime Environment Temurin-17.0.19+10 (build 17.0.19+10)\nOpenJDK 64-Bit Server VM Temurin-17.0.19+10 (build 17.0.19+10, mixed mode, sharing)",
+  "runs": [
+    {
+      "command": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe",
+        "--release",
+        "8",
+        "-proc:none",
+        "-implicit:none",
+        "-classpath",
+        "<ignored-build-dir>\\empty",
+        "-sourcepath",
+        "<ignored-build-dir>\\empty",
+        "-encoding",
+        "UTF-8",
+        "-d",
+        "<ignored-build-dir>",
+        "<worktree>\\android\\uvc-sim\\src\\local\\sidecar\\copilot\\uvcsim\\CaptureGate.java",
+        "<worktree>\\android\\uvc-sim\\src\\local\\sidecar\\copilot\\uvcsim\\FramePipeline.java",
+        "<worktree>\\android\\uvc-sim\\src\\local\\sidecar\\copilot\\uvcsim\\SyntheticUvcDriver.java",
+        "<worktree>\\android\\uvc-sim\\src\\local\\sidecar\\copilot\\uvcsim\\UvcCoordinator.java",
+        "<worktree>\\android\\uvc-sim\\src\\local\\sidecar\\copilot\\uvcsim\\UvcDriver.java",
+        "<worktree>\\android\\uvc-sim\\provenance\\feasibility\\bridge\\PixelBridgeExperiment.java"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+        "-cp",
+        "<ignored-build-dir>",
+        "local.sidecar.copilot.uvcsim.PixelBridgeExperiment"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"passed\":true,\"scenarios\":4,\"checks\":42,\"native_code_executed\":false,\"hardware_tested\":false}",
+      "stderr": ""
+    }
+  ],
+  "outcome": {
+    "passed": true,
+    "scenarios": 4,
+    "checks": 42,
+    "native_code_executed": false,
+    "hardware_tested": false
+  },
+  "fault_control": {
+    "command": [
+      "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+      "-cp",
+      "<ignored-build-dir>",
+      "local.sidecar.copilot.uvcsim.PixelBridgeExperiment",
+      "--fault-hook"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Exception in thread \"main\" java.lang.AssertionError: no hook or asynchronous pipeline failure\n\tat local.sidecar.copilot.uvcsim.PixelBridgeExperiment.check(PixelBridgeExperiment.java:17)\n\tat local.sidecar.copilot.uvcsim.PixelBridgeExperiment.finish(PixelBridgeExperiment.java:74)\n\tat local.sidecar.copilot.uvcsim.PixelBridgeExperiment.stopDuringPublication(PixelBridgeExperiment.java:136)\n\tat local.sidecar.copilot.uvcsim.PixelBridgeExperiment.main(PixelBridgeExperiment.java:158)",
+    "expected_rejection": true
+  },
+  "launch_isolation": "Annotation processing and implicit source compilation disabled; explicit empty javac classpath/sourcepath; Java option/classpath environment variables removed for child processes.",
+  "scope": "Project-owned Java copy experiment against unchanged fixture pipeline, not libyuv/UVC/JNI execution.",
+  "not_proven": [
+    "official libyuv C/SIMD behavior",
+    "native callback buffer lifetime",
+    "USB transport or actual negotiated format",
+    "production performance or memory usage",
+    "real device stop barrier",
+    "desktop/audio PRD acceptance"
+  ]
+}

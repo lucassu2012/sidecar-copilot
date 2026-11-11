@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "purpose": "Static research input identities, not a runtime dependency lock or distribution clearance",
+  "bootstrap": "Two archive identities inherited from provenance/libyuv/artifact-lock.json; three official libjpeg-turbo metadata/header/license inputs inspected on 2026-11-10. Normal replay never rewrites this lock.",
+  "inputs": [
+    {
+      "name": "uvcandroid-fcdae5f9a194e2111d57019176b53470a120415b.tar.gz",
+      "archive_project": "UVCAndroid",
+      "url": "https://codeload.github.com/shiyinghan/UVCAndroid/tar.gz/fcdae5f9a194e2111d57019176b53470a120415b",
+      "sha256": "2b48b1f8b4fd71b92dcb9654c63ad70b2f757a819f62d2a054a7d606210a449f",
+      "size": 4188074
+    },
+    {
+      "name": "3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz",
+      "archive_project": "official_libyuv",
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+archive/3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz",
+      "sha256": "49998fb4ff4dd5438c7170d47c8861cbe33c842315bb0d021da4d8e4f993ff2f",
+      "size": 564884
+    },
+    {
+      "name": "libjpeg-turbo-2.1.2-ref.json",
+      "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/ref/tags/2.1.2",
+      "sha256": "6e5e379182747bd6fb890f8950a3066edf872dc2f934b4cdeb7a34f0f68128ac",
+      "size": 357
+    },
+    {
+      "name": "libjpeg-turbo-ecf021bc0d6f435daacff7c35ccaeef0145df1b9-turbojpeg.h",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/ecf021bc0d6f435daacff7c35ccaeef0145df1b9/turbojpeg.h",
+      "sha256": "b5889eb2c396f85bdd07af494fbc3623d9316b4bd4d852d20b50ba20fac94281",
+      "size": 74651
+    },
+    {
+      "name": "libjpeg-turbo-ecf021bc0d6f435daacff7c35ccaeef0145df1b9-LICENSE.md",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/ecf021bc0d6f435daacff7c35ccaeef0145df1b9/LICENSE.md",
+      "sha256": "7d8683a7f048e715e08b4cada8b7f0d9a6ab8afad88ed09c1143ef764ecbc0f2",
+      "size": 5213
+    }
+  ]
+}

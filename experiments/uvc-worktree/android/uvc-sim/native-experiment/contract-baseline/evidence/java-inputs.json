@@ -1,0 +1,22 @@
+[
+  {
+    "path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\run-checks.ps1",
+    "sha256": "EEC6C950D8CDD1C0CFBECB14C228F95C9F30E5F1547525E77B33D7B2E2D78A57"
+  },
+  {
+    "path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\src\\local\\sidecar\\copilot\\uvccontract\\CaptureSession.java",
+    "sha256": "02C53A6008AF3EFD41FFD4A5D2C0F8AC72CBA40CB34BED6A7116E407DE4B5DB8"
+  },
+  {
+    "path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\src\\local\\sidecar\\copilot\\uvccontract\\StopBarrier.java",
+    "sha256": "E6AA6FE91A7AC6528927511F356D82A18C865B2C68E52A77C201A381EF46AB47"
+  },
+  {
+    "path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\src\\local\\sidecar\\copilot\\uvccontract\\UvcContract.java",
+    "sha256": "2A065BB897AA9E1BB5A18516EB4501F281BEBCD5817CF5B1615D63AC311A20EC"
+  },
+  {
+    "path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\test\\ContractChecks.java",
+    "sha256": "CAC25BA83156A2202CD2DD0EE3B0DEF7F04B5CCA65976150106BAE84D9C5AD91"
+  }
+]

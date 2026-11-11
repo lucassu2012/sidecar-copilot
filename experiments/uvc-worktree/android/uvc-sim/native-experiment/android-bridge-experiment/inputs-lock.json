@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "git_baseline": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+  "collected_utc": "2026-11-10T18:31:03.045352+00:00",
+  "scope": "Isolated Android bridge source; installed SDK is a build input only",
+  "inherited_files": {
+    "android/uvc-sim/interface-contract/android-contract.json": {
+      "bytes": 29872,
+      "sha256": "b07f3fdccb60cdb8a5852419f34a6d001c852d4656cd7e9596e20d38fe1fe58b"
+    },
+    "android/uvc-sim/interface-contract/license-evidence.json": {
+      "bytes": 105307,
+      "sha256": "3ede09b71e69b10996687788bd842889ab1ad54508b709755948171eaa31be44"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/evidence/host-result.json": {
+      "bytes": 6741,
+      "sha256": "30947151de5d5c3c85d47856519972ac0058950ac213e785ad83e152b4a67e06"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/evidence/java-checks.txt": {
+      "bytes": 278,
+      "sha256": "255097a3c04e2059b1d5391d0c86a2cee454780031a66a885357560c9bb1166e"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/evidence/java-inputs.json": {
+      "bytes": 1244,
+      "sha256": "196921c036e5e9e08ecaec7fc163324f6552c45aef7e9f9992e43a27710a63ba"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/evidence/java-receipt.json": {
+      "bytes": 696,
+      "sha256": "a4c13c892fa6873e8c270eb0ddef1768a4b28e1d0f0d72c93084695eb6f3ff36"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/manifest.json": {
+      "bytes": 3755,
+      "sha256": "54c68bbb4115f42a4ad5d6685b7f897cc33999ef403825651f5b883c9984189d"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/README.md": {
+      "bytes": 10549,
+      "sha256": "f8317a192af8b16febe425ca9c75e4c96cf8e7d102536ce0318094f9f6ffedac"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/CaptureSession.java": {
+      "bytes": 4064,
+      "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/StopBarrier.java": {
+      "bytes": 3891,
+      "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/UvcContract.java": {
+      "bytes": 15549,
+      "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/VALIDATION.md": {
+      "bytes": 5366,
+      "sha256": "28b5e42a6baaad6889d9af0d494d15fd03dda899768d51255fb4cb060b0a0b48"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/BackendPort.java": {
+      "bytes": 3807,
+      "sha256": "d063d51451e53acf960a0b9cd00e3e32ed7a0e152ae8fc0fc608c9aca59d1a4b"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/IsolatedCaptureSession.java": {
+      "bytes": 25322,
+      "sha256": "fedcf080407c9d591f6ebd7f6140229bf7f076508483f4910617650e6000eefd"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/OwnedFrameBridge.java": {
+      "bytes": 10811,
+      "sha256": "c3ee156b548c6a17acdb33b6e7efc31f90d57d1c5726988fa37f09f469d408e8"
+    },
+    "android/uvc-sim/native-experiment/upstream-review.json": {
+      "bytes": 1071,
+      "sha256": "212fd8760a1d64fef1b78c7b24ff393c9b5a793b6051dc470c038cab6d61f22b"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/inputs-lock.json": {
+      "bytes": 4038,
+      "sha256": "981619046d1ee15db461116bfee3d3e67dc20bafc886811456d2a9b26754468c"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/PlatformUsbPort.java": {
+      "bytes": 2142,
+      "sha256": "f46ebe272b2a363363533103ccd54cf7ca23c088d4f4409c6d0973563de5dc26"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/UsbConnectionOwner.java": {
+      "bytes": 21946,
+      "sha256": "4929ba6a44201b9846a809ea2a4ee059e466d740eb0e0cbaad32ca6c4dcb227d"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/validation.json": {
+      "bytes": 9209,
+      "sha256": "86db865c786a05e7f59f5120b2955eee6f3b7bc2bdc9c0de48c19e3d251cb718"
+    },
+    "android/uvc-sim/native-experiment/validation.json": {
+      "bytes": 7763,
+      "sha256": "ff074d48cfa78c3ee4bf07c01894812d02b8dc20e22fcfa9629243450091106a"
+    },
+    "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json": {
+      "bytes": 6408,
+      "sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d"
+    }
+  },
+  "android_sdk_files": {
+    "platforms/android-35/android.jar": {
+      "bytes": 27092450,
+      "sha256": "4566663c3876e022b4fa4ced8c8697c4ab1688267f090114fd92d027b32e619b"
+    },
+    "platforms/android-35/source.properties": {
+      "bytes": 257,
+      "sha256": "2c3764446f335ad2cc44383a0360fe247620b7c774ec100d5087771ac8ed3b28"
+    },
+    "build-tools/35.0.0/lib/d8.jar": {
+      "bytes": 16614740,
+      "sha256": "305622ad00535684534eb8f742cbf5e628a9abc09d8ea4d39d1babb95bf0cee5"
+    },
+    "build-tools/35.0.0/aapt2.exe": {
+      "bytes": 4740896,
+      "sha256": "cbfe5deda5f7074ce47b6f33818b456ee8046a076a11af13e29c837d3c80c564"
+    },
+    "build-tools/35.0.0/source.properties": {
+      "bytes": 63,
+      "sha256": "084847d70abc41284feee7ea717e7c92eab0d1be05f048c27445a359cfe109d8"
+    }
+  },
+  "main_configuration_observed": {
+    "source_root": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot",
+    "files": {
+      "android/app/src/main/AndroidManifest.xml": {
+        "bytes": 1685,
+        "sha256": "ea1574b543278b3907089ded37bfab9f3cb751f581049bbf72823b7b28e5d18a"
+      },
+      "android/build.ps1": {
+        "bytes": 4360,
+        "sha256": "822b76d9a6f921b2a660199060f391c657cb2338001043508f9024f8bbfae114"
+      }
+    },
+    "min_sdk": 30,
+    "target_sdk": 35,
+    "uncommitted_main_files_not_modified_or_copied": true
+  },
+  "runtime_dependencies_added": [],
+  "real_capture_enabled": false
+}

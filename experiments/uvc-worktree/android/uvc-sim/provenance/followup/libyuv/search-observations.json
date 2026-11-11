@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "observed_date": "2026-11-10",
+  "searches": [
+    {
+      "query": "MJPGToABGR",
+      "provider": "GitHub connector code search",
+      "topn": 20,
+      "urls": [
+        "https://github.com/shiyinghan/UVCAndroid/blob/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+        "https://github.com/TechxArtisanStudio/Openterface_Android/blob/1174b2b0fce8df4f48568cc48c9fee83e83b2566/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+        "https://github.com/i30mb1/Bondcast/blob/14046ab2835926d21b03dfea5c4c6d57968d2b75/feature/camera/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+        "https://github.com/shiyinghan/UVCAndroid/blob/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/include/libyuv/convert_argb.h",
+        "https://github.com/TechxArtisanStudio/Openterface_Android/blob/1174b2b0fce8df4f48568cc48c9fee83e83b2566/libuvccamera/src/main/jni/libyuv/include/libyuv/convert_argb.h",
+        "https://github.com/i30mb1/Bondcast/blob/14046ab2835926d21b03dfea5c4c6d57968d2b75/feature/camera/libuvccamera/src/main/jni/libyuv/include/libyuv/convert_argb.h",
+        "https://github.com/LeongOoiTam/BlindNaviApp/blob/9fbd6ebe963dbe5788f1b9e69598960616a61a93/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+        "https://github.com/BEAR678/UVC/blob/790f3da063888891854b34110fc40ba0f0b11567/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+        "https://github.com/M6M-ar/SeaCucumberMonitor/blob/f242563e4a96242c2b9f33727580b32d2faed18f/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+        "https://github.com/catchpig/AndroidUVCCamera/blob/ebbed865f7eae5a241d37cff9d9d5b552895b794/libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc",
+        "https://github.com/LeongOoiTam/BlindNaviApp/blob/9fbd6ebe963dbe5788f1b9e69598960616a61a93/libuvccamera/src/main/jni/libyuv/include/libyuv/convert_argb.h",
+        "https://github.com/BEAR678/UVC/blob/790f3da063888891854b34110fc40ba0f0b11567/libuvccamera/src/main/jni/libyuv/include/libyuv/convert_argb.h",
+        "https://github.com/M6M-ar/SeaCucumberMonitor/blob/f242563e4a96242c2b9f33727580b32d2faed18f/libuvccamera/src/main/jni/libyuv/include/libyuv/convert_argb.h",
+        "https://github.com/catchpig/AndroidUVCCamera/blob/ebbed865f7eae5a241d37cff9d9d5b552895b794/libuvccamera/src/main/jni/libyuv/include/libyuv/convert_argb.h"
+      ]
+    },
+    {
+      "query": "ABGRToRGB565Row_C",
+      "provider": "GitHub connector code search",
+      "topn": 20,
+      "urls": [
+        "https://github.com/shiyinghan/UVCAndroid/blob/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+        "https://github.com/TechxArtisanStudio/Openterface_Android/blob/1174b2b0fce8df4f48568cc48c9fee83e83b2566/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+        "https://github.com/i30mb1/Bondcast/blob/14046ab2835926d21b03dfea5c4c6d57968d2b75/feature/camera/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+        "https://github.com/shiyinghan/UVCAndroid/blob/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/include/libyuv/row.h",
+        "https://github.com/shiyinghan/UVCAndroid/blob/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/libyuv/source/convert_from_argb.cc",
+        "https://github.com/TechxArtisanStudio/Openterface_Android/blob/1174b2b0fce8df4f48568cc48c9fee83e83b2566/libuvccamera/src/main/jni/libyuv/include/libyuv/row.h",
+        "https://github.com/TechxArtisanStudio/Openterface_Android/blob/1174b2b0fce8df4f48568cc48c9fee83e83b2566/libuvccamera/src/main/jni/libyuv/source/convert_from_argb.cc",
+        "https://github.com/i30mb1/Bondcast/blob/14046ab2835926d21b03dfea5c4c6d57968d2b75/feature/camera/libuvccamera/src/main/jni/libyuv/include/libyuv/row.h",
+        "https://github.com/i30mb1/Bondcast/blob/14046ab2835926d21b03dfea5c4c6d57968d2b75/feature/camera/libuvccamera/src/main/jni/libyuv/source/convert_from_argb.cc",
+        "https://github.com/LeongOoiTam/BlindNaviApp/blob/9fbd6ebe963dbe5788f1b9e69598960616a61a93/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+        "https://github.com/BEAR678/UVC/blob/790f3da063888891854b34110fc40ba0f0b11567/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+        "https://github.com/M6M-ar/SeaCucumberMonitor/blob/f242563e4a96242c2b9f33727580b32d2faed18f/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+        "https://github.com/catchpig/AndroidUVCCamera/blob/ebbed865f7eae5a241d37cff9d9d5b552895b794/libuvccamera/src/main/jni/libyuv/source/row_common.cc",
+        "https://github.com/LeongOoiTam/BlindNaviApp/blob/9fbd6ebe963dbe5788f1b9e69598960616a61a93/libuvccamera/src/main/jni/libyuv/include/libyuv/row.h",
+        "https://github.com/BEAR678/UVC/blob/790f3da063888891854b34110fc40ba0f0b11567/libuvccamera/src/main/jni/libyuv/include/libyuv/row.h",
+        "https://github.com/LeongOoiTam/BlindNaviApp/blob/9fbd6ebe963dbe5788f1b9e69598960616a61a93/libuvccamera/src/main/jni/libyuv/source/convert_from_argb.cc",
+        "https://github.com/BEAR678/UVC/blob/790f3da063888891854b34110fc40ba0f0b11567/libuvccamera/src/main/jni/libyuv/source/convert_from_argb.cc",
+        "https://github.com/M6M-ar/SeaCucumberMonitor/blob/f242563e4a96242c2b9f33727580b32d2faed18f/libuvccamera/src/main/jni/libyuv/include/libyuv/row.h",
+        "https://github.com/catchpig/AndroidUVCCamera/blob/ebbed865f7eae5a241d37cff9d9d5b552895b794/libuvccamera/src/main/jni/libyuv/include/libyuv/row.h",
+        "https://github.com/M6M-ar/SeaCucumberMonitor/blob/f242563e4a96242c2b9f33727580b32d2faed18f/libuvccamera/src/main/jni/libyuv/source/convert_from_argb.cc"
+      ]
+    }
+  ],
+  "path_history": [
+    {
+      "repo": "TechxArtisanStudio/Openterface_Android",
+      "fixed_search_head": "1174b2b0fce8df4f48568cc48c9fee83e83b2566",
+      "earliest_inspected_path_commit": "210ab6143e0a1bf50cf638b897656151deba67a4",
+      "committed": "2024-09-20T07:53:16Z",
+      "history_url": "https://api.github.com/repos/TechxArtisanStudio/Openterface_Android/commits?sha=1174b2b0fce8df4f48568cc48c9fee83e83b2566&path=libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc&per_page=100",
+      "commit_url": "https://github.com/TechxArtisanStudio/Openterface_Android/commit/210ab6143e0a1bf50cf638b897656151deba67a4"
+    },
+    {
+      "repo": "BEAR678/UVC",
+      "fixed_search_head": "790f3da063888891854b34110fc40ba0f0b11567",
+      "earliest_inspected_path_commit": "8f700cd500d7be3a55df3caf260bbf0a52f61f80",
+      "committed": "2025-09-04T12:42:49Z",
+      "history_url": "https://api.github.com/repos/BEAR678/UVC/commits?sha=790f3da063888891854b34110fc40ba0f0b11567&path=libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc&per_page=100",
+      "commit_url": "https://github.com/BEAR678/UVC/commit/8f700cd500d7be3a55df3caf260bbf0a52f61f80"
+    },
+    {
+      "repo": "catchpig/AndroidUVCCamera",
+      "fixed_search_head": "ebbed865f7eae5a241d37cff9d9d5b552895b794",
+      "earliest_inspected_path_commit": "c8db6fa0e33a95b0abc183bd4b643a788bc68b52",
+      "committed": "2024-12-26T12:48:28Z",
+      "history_url": "https://api.github.com/repos/catchpig/AndroidUVCCamera/commits?sha=ebbed865f7eae5a241d37cff9d9d5b552895b794&path=libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc&per_page=100",
+      "commit_url": "https://github.com/catchpig/AndroidUVCCamera/commit/c8db6fa0e33a95b0abc183bd4b643a788bc68b52"
+    },
+    {
+      "repo": "LeongOoiTam/BlindNaviApp",
+      "fixed_search_head": "9fbd6ebe963dbe5788f1b9e69598960616a61a93",
+      "earliest_inspected_path_commit": "05435d727fcdd74fc44fd2a3826ee57213dbb07e",
+      "committed": "2024-09-18T02:32:13Z",
+      "history_url": "https://api.github.com/repos/LeongOoiTam/BlindNaviApp/commits?sha=9fbd6ebe963dbe5788f1b9e69598960616a61a93&path=libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc&per_page=100",
+      "commit_url": "https://github.com/LeongOoiTam/BlindNaviApp/commit/05435d727fcdd74fc44fd2a3826ee57213dbb07e"
+    },
+    {
+      "repo": "M6M-ar/SeaCucumberMonitor",
+      "fixed_search_head": "f242563e4a96242c2b9f33727580b32d2faed18f",
+      "earliest_inspected_path_commit": "aef416f50a4d63bdb210e34b7769de22e8f1e664",
+      "committed": "2026-05-11T14:04:04Z",
+      "history_url": "https://api.github.com/repos/M6M-ar/SeaCucumberMonitor/commits?sha=f242563e4a96242c2b9f33727580b32d2faed18f&path=libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc&per_page=100",
+      "commit_url": "https://github.com/M6M-ar/SeaCucumberMonitor/commit/aef416f50a4d63bdb210e34b7769de22e8f1e664"
+    },
+    {
+      "repo": "i30mb1/Bondcast",
+      "fixed_search_head": "14046ab2835926d21b03dfea5c4c6d57968d2b75",
+      "earliest_inspected_path_commit": "91ec6e25e2fe2ae181ccb36ce5f19267a978947c",
+      "committed": "2026-07-05T09:01:06Z",
+      "history_url": "https://api.github.com/repos/i30mb1/Bondcast/commits?sha=14046ab2835926d21b03dfea5c4c6d57968d2b75&path=libuvccamera/src/main/jni/libyuv/source/convert_jpeg.cc&per_page=100",
+      "commit_url": "https://github.com/i30mb1/Bondcast/commit/91ec6e25e2fe2ae181ccb36ce5f19267a978947c"
+    }
+  ],
+  "scope_limits": [
+    "Search results are a bounded connector observation, not an exhaustive public-code index or a reproducible claim that no other source exists.",
+    "Fixed commit metadata and selected source bytes are independently locked in inputs.json; the mutable search itself is not an input to the deterministic comparison.",
+    "Git author/committer dates do not prove independent public publication time.",
+    "Bondcast moved the path to feature/camera/libuvccamera after the older root path; both were inspected.",
+    "BEAR author time is 2024-09-18 but committer time is 2025-09-04 and its whole tree equals UVCAndroid import tree f509ddce43bf7dd1a50590ce66f60aa6cadc96fb.",
+    "saki and libuvc negative symbol results are limited to the fixed files enumerated in inputs.json, not their complete histories."
+  ]
+}

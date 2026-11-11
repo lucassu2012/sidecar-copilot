@@ -1,0 +1,136 @@
+{
+  "schema": 2,
+  "artifacts": {
+    "1c5a8bb17ac4092da557e55cf519bf4df105d8f1.commit.json": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/1c5a8bb17ac4092da557e55cf519bf4df105d8f1?format=JSON",
+      "sha256": "c1eb698d5bf5d085fcebfac3eb3d12ab73999afeab5085501d3ba6449b372afd",
+      "size": 1972
+    },
+    "1c5a8bb17ac4092da557e55cf519bf4df105d8f1.version.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/1c5a8bb17ac4092da557e55cf519bf4df105d8f1/include/libyuv/version.h?format=TEXT",
+      "sha256": "4e82df65bda6427183483a2172937f1863f81dc005831d2059b3bb69d58df4b9",
+      "size": 728
+    },
+    "3e38ce50589d9319badc0501f96d6c5b2b177472.AUTHORS.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/AUTHORS?format=TEXT",
+      "sha256": "2adf73c365bab397f43aa89c63cd5240d63897961061973a4295e82824be08cb",
+      "size": 200
+    },
+    "3e38ce50589d9319badc0501f96d6c5b2b177472.LICENSE.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/LICENSE?format=TEXT",
+      "sha256": "dfb66f16b47c9bc2bfc1c7d70f0b398f65b3da9d6e98f2377140b399fd11055d",
+      "size": 2008
+    },
+    "3e38ce50589d9319badc0501f96d6c5b2b177472.PATENTS.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/PATENTS?format=TEXT",
+      "sha256": "0d6aec5f6114d1a823fefa19563e3421c4923404f783080ef5061268cc789e45",
+      "size": 1852
+    },
+    "3e38ce50589d9319badc0501f96d6c5b2b177472.commit.json": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472?format=JSON",
+      "sha256": "28627419afbcec6b6f65579415eefe9466612a1e7f0dff0416ce9038135ed271",
+      "size": 2569
+    },
+    "3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+archive/3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz",
+      "sha256": "49998fb4ff4dd5438c7170d47c8861cbe33c842315bb0d021da4d8e4f993ff2f",
+      "size": 564884
+    },
+    "3e38ce50589d9319badc0501f96d6c5b2b177472.tree.json": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/?format=JSON",
+      "sha256": "7a5e3e433bdfaa86737d20b2c434afb451c7d86a3f6247a9012d86776b8abf0a",
+      "size": 5225
+    },
+    "3e38ce50589d9319badc0501f96d6c5b2b177472.version.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/include/libyuv/version.h?format=TEXT",
+      "sha256": "ad1c94a6ef4742dbfe3f25c48a27d7497e9998f961a84f19b5cd2150d101d5a2",
+      "size": 728
+    },
+    "65e7c9d5706a77d1949da59bfcb0817c252ef8d6.AUTHORS.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/65e7c9d5706a77d1949da59bfcb0817c252ef8d6/AUTHORS?format=TEXT",
+      "sha256": "2adf73c365bab397f43aa89c63cd5240d63897961061973a4295e82824be08cb",
+      "size": 200
+    },
+    "65e7c9d5706a77d1949da59bfcb0817c252ef8d6.LICENSE.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/65e7c9d5706a77d1949da59bfcb0817c252ef8d6/LICENSE?format=TEXT",
+      "sha256": "dfb66f16b47c9bc2bfc1c7d70f0b398f65b3da9d6e98f2377140b399fd11055d",
+      "size": 2008
+    },
+    "65e7c9d5706a77d1949da59bfcb0817c252ef8d6.PATENTS.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/65e7c9d5706a77d1949da59bfcb0817c252ef8d6/PATENTS?format=TEXT",
+      "sha256": "0d6aec5f6114d1a823fefa19563e3421c4923404f783080ef5061268cc789e45",
+      "size": 1852
+    },
+    "65e7c9d5706a77d1949da59bfcb0817c252ef8d6.commit.json": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/65e7c9d5706a77d1949da59bfcb0817c252ef8d6?format=JSON",
+      "sha256": "e311e42c7f963129e1e0536e60c2ffce43fd8331b05fb121e37d58a0df7edacf",
+      "size": 6438
+    },
+    "65e7c9d5706a77d1949da59bfcb0817c252ef8d6.tar.gz": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+archive/65e7c9d5706a77d1949da59bfcb0817c252ef8d6.tar.gz",
+      "sha256": "eba71ca14b22816ad197479d6701560f0f3a68a8c3e17a48937429598dd67933",
+      "size": 564604
+    },
+    "65e7c9d5706a77d1949da59bfcb0817c252ef8d6.tree.json": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/65e7c9d5706a77d1949da59bfcb0817c252ef8d6/?format=JSON",
+      "sha256": "3b2752aff8735a523e784ca9288a322fe77f7175eef5ae7a2c703847784ffc9b",
+      "size": 5225
+    },
+    "65e7c9d5706a77d1949da59bfcb0817c252ef8d6.version.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/65e7c9d5706a77d1949da59bfcb0817c252ef8d6/include/libyuv/version.h?format=TEXT",
+      "sha256": "ad1c94a6ef4742dbfe3f25c48a27d7497e9998f961a84f19b5cd2150d101d5a2",
+      "size": 728
+    },
+    "f71c83552d373f0ff41833b17e2880632d8561d7.commit.json": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/f71c83552d373f0ff41833b17e2880632d8561d7?format=JSON",
+      "sha256": "79259b26eda415b995493c6acb9099ced2fcae7acc8a463ab8fde5c263339f01",
+      "size": 6633
+    },
+    "f71c83552d373f0ff41833b17e2880632d8561d7.version.base64": {
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/f71c83552d373f0ff41833b17e2880632d8561d7/include/libyuv/version.h?format=TEXT",
+      "sha256": "d6e636f982df889a854ae416ed8bebeaaa569d715312ae5f1298bebd30fa9eec",
+      "size": 728
+    },
+    "import-tree.json": {
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/trees/129b2465e047bc1be9d8a3597cbf65ecdec8fab5?recursive=1",
+      "sha256": "ed6c07d408f446fa5c535330c09f14a29969a85ef1ebd8d562103baa4a30cc9d",
+      "size": 12782,
+      "representation": "github-tree-semantic-v1",
+      "observed_raw": [
+        {
+          "source": "GitHub connector JSON representation",
+          "sha256": "b6c5c5aa5b3f18093c06447644476f801d0b303c306b55400fe5b980176a75ce",
+          "size": 30176
+        },
+        {
+          "source": "HTTP GET original response",
+          "sha256": "695acc063b7fc02ae9853d690020e66b155f215de2ceaa8cdcb27dcd3aa62ab7",
+          "size": 24221
+        }
+      ]
+    },
+    "uvcandroid-fcdae5f9a194e2111d57019176b53470a120415b.tar.gz": {
+      "url": "https://codeload.github.com/shiyinghan/UVCAndroid/tar.gz/fcdae5f9a194e2111d57019176b53470a120415b",
+      "sha256": "2b48b1f8b4fd71b92dcb9654c63ad70b2f757a819f62d2a054a7d606210a449f",
+      "size": 4188074
+    },
+    "vendor-history.json": {
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits?sha=fcdae5f9a194e2111d57019176b53470a120415b&path=libuvccamera/src/main/jni/libyuv&per_page=100",
+      "sha256": "326e9058710e1d001ff57cebf7f45ccb1c69577d0d7cf41c9401593d3e9a661d",
+      "size": 1559,
+      "representation": "github-commit-history-semantic-v1",
+      "observed_raw": [
+        {
+          "source": "GitHub connector JSON representation",
+          "sha256": "2962666765582a0700024c3c0207f0e8c2d8701297688243e6afc21f560b11f7",
+          "size": 11886
+        },
+        {
+          "source": "HTTP GET original response",
+          "sha256": "444a35cd574ad9e2aa3af717640417370b009d5c7b8b42ca1a339d98c3a18b89",
+          "size": 9958
+        }
+      ]
+    }
+  }
+}

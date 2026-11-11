@@ -1,0 +1,775 @@
+{
+  "contract_version": "proposal-1",
+  "execution_status": "design_only_not_implemented_or_run",
+  "baseline_commit": "c1afb3f61fa309bde0437fa2019c352ddc1792ba",
+  "purpose": "Synthetic behavior checks under frozen PRD; scenario keys are descriptive fixture keys, not new PRD acceptance IDs or product states.",
+  "constraints": {
+    "network": false,
+    "devices": false,
+    "native_execution": false,
+    "real_microphone": false,
+    "real_speaker": false,
+    "production_changes": false,
+    "claim_g2_exit": false,
+    "auto_resume": false,
+    "default_microphone_fallback": false
+  },
+  "prd": {
+    "library_id": "PRIVATE_ARTIFACT_REFERENCE_OMITTED",
+    "version": 0,
+    "definition_source": "Parent integration agent's verified Library sections 5.1-5.4; no local PRD reconstruction",
+    "sections": [
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
+    ],
+    "paths": {
+      "A": "remote participant -> user ears",
+      "B": "local microphone -> computer conference",
+      "C": "remote participant -> Android recording",
+      "D": "local microphone -> Android recording"
+    }
+  },
+  "fixture": {
+    "device_tokens": [
+      "usb-remote",
+      "usb-local",
+      "usb-shared",
+      "video-independent",
+      "built-in"
+    ],
+    "device_tokens_are": "Synthetic identities, not UsbDevice IDs or Android AudioDeviceInfo mappings.",
+    "scopes": [
+      "C",
+      "D",
+      "video"
+    ],
+    "leases": "Opaque per-selection tokens; invalidation is irreversible, stale callbacks cannot invalidate a newer token.",
+    "pcm": "Generated deterministic in-memory tokens only; no files need contain audio, no playback.",
+    "event_order": "Schedule array order is the deterministic delivery order; blocked workers advance only on explicit release events.",
+    "driver_control": "Synthetic request-stop/drain/release actors; timeout is an observation, not proof of physical closure.",
+    "origin_oracle": "Fixture-only truth. Android APIs do not expose per-PCM-frame physical origin with the atomicity assumed by an oracle.",
+    "health": "read>0, file growth, preferred-device success and not-silenced are insufficient on their own.",
+    "projection": "Assertions address admission, ownership, evidence and existing affected-stream behavior; do not add UI states, modes or acceptance IDs."
+  },
+  "predicates": {
+    "no_default_input_request": "No request selecting null/default/built-in input as fallback.",
+    "no_accepted_pcm": "No PCM token reaches the committed/recognized evidence sink for the specified tokens or scope.",
+    "accepted_tokens": "Exact synthetic token set accepted after all fixture admission evidence is present; no hardware claim.",
+    "invalidated_before_stop_io": "Admission token invalidation precedes a possibly blocked driver stop.",
+    "stale_generation_rejected": "Frames/control callbacks tagged with an old lease cannot publish or alter a newer lease.",
+    "stop_scope": "Only scopes actually mapped to the failed input are automatically interrupted.",
+    "unaffected_scope_not_auto_stopped": "Source-specific failure alone does not stop independent healthy scopes.",
+    "no_auto_restart": "Attach, permission grant, unmute or late callbacks alone cannot reopen input.",
+    "explicit_reselect_after_drain": "Fresh admission requires explicit user selection plus prior operation drain and current permission/evidence.",
+    "physical_close_not_claimed": "Do not claim device closure/release completed while the synthetic driver remains blocked.",
+    "release_attempts": "Each synthetic handle gets at most one release attempt; a timeout does not invent successful completion.",
+    "health_not_promoted": "Do not infer verified audio health from the listed insufficient signals.",
+    "route_window_evidence_insufficient": "Indistinguishable public observations with different oracle origins cannot prove zero unintended-origin samples.",
+    "bidirectional_claim": "Whether C and D coverage supports a bidirectional claim; G2 acceptance is still false.",
+    "mute_not_substituted": "One mute/stop action is not evidence that the other two controls or all four physical paths are affected.",
+    "format_change_not_reinterpreted": "Previously buffered PCM retains its original rate/channel/timing attribution; do not relabel under new settings.",
+    "uncertainty_retained": "Missing/contradictory route or source evidence remains unknown rather than being filled from another path."
+  },
+  "scenarios": [
+    {
+      "key": "preferred_route_mismatch",
+      "setup": {
+        "selected_scope": "C",
+        "selected_device": "usb-remote",
+        "lease": "c0"
+      },
+      "schedule": [
+        {
+          "event": "devices_enumerated",
+          "inputs": [
+            "usb-remote",
+            "built-in"
+          ]
+        },
+        {
+          "event": "set_preferred_result",
+          "requested": "usb-remote",
+          "success": true
+        },
+        {
+          "event": "actual_route_observed",
+          "device": "built-in"
+        },
+        {
+          "event": "pcm_read",
+          "token": "wrong-origin",
+          "lease": "c0",
+          "bytes": 320
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "no_default_input_request"
+        },
+        {
+          "predicate": "no_accepted_pcm",
+          "tokens": [
+            "wrong-origin"
+          ]
+        },
+        {
+          "predicate": "health_not_promoted",
+          "signals": [
+            "enumerated",
+            "preferred_success",
+            "positive_read"
+          ]
+        },
+        {
+          "predicate": "uncertainty_retained",
+          "scopes": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "route_or_configuration_unknown",
+      "setup": {
+        "selected_scope": "C",
+        "selected_device": "usb-remote",
+        "lease": "c0"
+      },
+      "variants": [
+        {
+          "unknown": "actual_route",
+          "value": null
+        },
+        {
+          "unknown": "recording_configuration",
+          "value": null
+        },
+        {
+          "unknown": "configuration_revision",
+          "value": "stale"
+        }
+      ],
+      "schedule": [
+        {
+          "event": "preferred_result",
+          "success": true
+        },
+        {
+          "event": "apply_unknown_variant"
+        },
+        {
+          "event": "pcm_read",
+          "token": "unverified",
+          "bytes": 320
+        },
+        {
+          "event": "synthetic_file_growth",
+          "bytes": 320
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "no_accepted_pcm",
+          "tokens": [
+            "unverified"
+          ]
+        },
+        {
+          "predicate": "health_not_promoted",
+          "signals": [
+            "positive_read",
+            "file_growth",
+            "preferred_success"
+          ]
+        },
+        {
+          "predicate": "uncertainty_retained",
+          "scopes": [
+            "C"
+          ]
+        },
+        {
+          "predicate": "no_default_input_request"
+        }
+      ]
+    },
+    {
+      "key": "system_silence_is_not_coverage",
+      "setup": {
+        "selected_scope": "D",
+        "selected_device": "usb-local",
+        "lease": "d0"
+      },
+      "schedule": [
+        {
+          "event": "actual_route_observed",
+          "device": "usb-local"
+        },
+        {
+          "event": "recording_configuration",
+          "client_silenced": true
+        },
+        {
+          "event": "pcm_read",
+          "token": "policy-silence",
+          "bytes": 320,
+          "synthetic_content": "zero"
+        },
+        {
+          "event": "client_silenced_changed",
+          "value": false
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "no_accepted_pcm",
+          "tokens": [
+            "policy-silence"
+          ]
+        },
+        {
+          "predicate": "health_not_promoted",
+          "signals": [
+            "positive_read",
+            "zero_data",
+            "not_silenced_afterward"
+          ]
+        },
+        {
+          "predicate": "uncertainty_retained",
+          "scopes": [
+            "D"
+          ]
+        },
+        {
+          "predicate": "no_auto_restart"
+        }
+      ],
+      "limitation": "A non-silenced flag also cannot prove acoustic content, local/remote identity or correct gain."
+    },
+    {
+      "key": "delayed_route_callback_window",
+      "setup": {
+        "selected_scope": "C",
+        "selected_device": "usb-remote",
+        "lease": "c0"
+      },
+      "public_observations_identical_in_both_traces": [
+        {
+          "event": "route_query",
+          "device": "usb-remote"
+        },
+        {
+          "event": "pcm_read",
+          "token": "window",
+          "bytes": 320
+        },
+        {
+          "event": "route_query",
+          "device": "usb-remote"
+        }
+      ],
+      "oracle_only_traces": [
+        {
+          "truth": "USB route remained stable",
+          "pcm_origin": "usb-remote"
+        },
+        {
+          "truth": "route briefly switched to built-in then returned before queries; callback delayed",
+          "pcm_origin": "built-in"
+        }
+      ],
+      "expected_evidence_verdict": "insufficient_for_zero_unintended_origin_claim",
+      "expect": [
+        {
+          "predicate": "route_window_evidence_insufficient"
+        },
+        {
+          "predicate": "uncertainty_retained",
+          "scopes": [
+            "C"
+          ]
+        }
+      ],
+      "limitation": "A mock must not expose its oracle to the proposed runtime and then declare platform atomicity solved. Any quarantine/drop policy still requires target-platform evidence."
+    },
+    {
+      "key": "detach_scoped_by_attachment",
+      "variants": [
+        {
+          "attachment": "usb-remote",
+          "scope_attachment_map": {"C": "usb-remote", "D": "usb-local", "video": "video-independent"},
+          "affected": [
+            "C"
+          ],
+          "independent": [
+            "D",
+            "video"
+          ]
+        },
+        {
+          "attachment": "usb-shared",
+          "scope_attachment_map": {"C": "usb-shared", "D": "usb-shared", "video": "video-independent"},
+          "affected": [
+            "C",
+            "D"
+          ],
+          "independent": [
+            "video"
+          ]
+        },
+        {
+          "attachment": "usb-shared",
+          "scope_attachment_map": {"C": "usb-shared", "D": "usb-local", "video": "usb-shared"},
+          "affected": ["C", "video"],
+          "independent": ["D"]
+        }
+      ],
+      "schedule": [
+        {
+          "event": "synthetic_streams_active",
+          "leases": {
+            "C": "c0",
+            "D": "d0",
+            "video": "v0"
+          }
+        },
+        {
+          "event": "attachment_detached",
+          "use_variant": true
+        },
+        {
+          "event": "driver_stop_blocked"
+        },
+        {
+          "event": "late_pcm",
+          "token": "after-detach",
+          "lease": "c0"
+        },
+        {
+          "event": "late_video_frame",
+          "lease": "v0"
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "invalidated_before_stop_io",
+          "scopes_from": "variant.affected"
+        },
+        {
+          "predicate": "stop_scope",
+          "equals_from": "variant.affected"
+        },
+        {
+          "predicate": "stale_generation_rejected",
+          "scopes_from": "variant.affected"
+        },
+        {
+          "predicate": "unaffected_scope_not_auto_stopped",
+          "scopes_from": "variant.independent"
+        },
+        {
+          "predicate": "no_accepted_pcm",
+          "tokens": [
+            "after-detach"
+          ]
+        },
+        {
+          "predicate": "physical_close_not_claimed"
+        },
+        {
+          "predicate": "no_auto_restart"
+        }
+      ]
+    },
+    {
+      "key": "permission_revocation_and_late_completion",
+      "setup": {
+        "selected_scope": "D",
+        "lease": "d0",
+        "permission_revision": 7
+      },
+      "schedule": [
+        {
+          "event": "driver_open_pending",
+          "handle": "h0"
+        },
+        {
+          "event": "permission_revoked",
+          "revision": 8
+        },
+        {
+          "event": "old_open_completed",
+          "handle": "h0",
+          "lease": "d0",
+          "revision": 7
+        },
+        {
+          "event": "late_pcm",
+          "token": "old-permission",
+          "lease": "d0"
+        },
+        {
+          "event": "permission_granted",
+          "revision": 9
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "invalidated_before_stop_io",
+          "scopes": [
+            "D"
+          ]
+        },
+        {
+          "predicate": "no_accepted_pcm",
+          "tokens": [
+            "old-permission"
+          ]
+        },
+        {
+          "predicate": "release_attempts",
+          "handle": "h0",
+          "max": 1
+        },
+        {
+          "predicate": "no_auto_restart"
+        },
+        {
+          "predicate": "no_default_input_request"
+        }
+      ]
+    },
+    {
+      "key": "reconnect_requires_active_confirmation",
+      "setup": {
+        "selected_scope": "C",
+        "old_lease": "c0",
+        "old_handle": "h0"
+      },
+      "schedule": [
+        {
+          "event": "attachment_detached"
+        },
+        {
+          "event": "attachment_reconnected"
+        },
+        {
+          "event": "old_stop_timeout"
+        },
+        {
+          "event": "late_old_callback",
+          "lease": "c0"
+        },
+        {
+          "event": "driver_drained",
+          "handle": "h0"
+        },
+        {
+          "event": "user_explicit_reselect",
+          "device": "usb-remote",
+          "new_lease": "c1"
+        },
+        {
+          "event": "fixture_current_route_format_and_permission_verified",
+          "lease": "c1"
+        },
+        {
+          "event": "pcm_read",
+          "token": "fresh",
+          "lease": "c1"
+        },
+        {
+          "event": "late_old_failure",
+          "lease": "c0"
+        },
+        {
+          "event": "late_pcm",
+          "token": "stale",
+          "lease": "c0"
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "no_auto_restart"
+        },
+        {
+          "predicate": "explicit_reselect_after_drain",
+          "lease": "c1"
+        },
+        {
+          "predicate": "stale_generation_rejected",
+          "lease": "c0"
+        },
+        {
+          "predicate": "accepted_tokens",
+          "tokens": [
+            "fresh"
+          ]
+        },
+        {
+          "predicate": "no_accepted_pcm",
+          "tokens": [
+            "stale"
+          ]
+        },
+        {
+          "predicate": "release_attempts",
+          "handle": "h0",
+          "max": 1
+        }
+      ],
+      "limitation": "The fixture supplies verified evidence deliberately; this does not assert a real adapter can obtain all of it."
+    },
+    {
+      "key": "format_and_timebase_changed",
+      "setup": {
+        "scope": "C",
+        "lease": "c0",
+        "format": {
+          "sample_rate_hz": 48000,
+          "channels": 2,
+          "pcm_bits": 16
+        },
+        "timebase": "boot-a"
+      },
+      "schedule": [
+        {
+          "event": "buffer_pending",
+          "token": "old-format",
+          "lease": "c0"
+        },
+        {
+          "event": "format_observed",
+          "format": {
+            "sample_rate_hz": 44100,
+            "channels": 1,
+            "pcm_bits": 16
+          },
+          "timebase": "boot-b"
+        },
+        {
+          "event": "late_pcm",
+          "token": "old-tail",
+          "lease": "c0"
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "format_change_not_reinterpreted",
+          "tokens": [
+            "old-format",
+            "old-tail"
+          ]
+        },
+        {
+          "predicate": "invalidated_before_stop_io",
+          "scopes": [
+            "C"
+          ]
+        },
+        {
+          "predicate": "uncertainty_retained",
+          "scopes": [
+            "C"
+          ]
+        },
+        {
+          "predicate": "no_auto_restart"
+        }
+      ]
+    },
+    {
+      "key": "C_only_is_remote_recording",
+      "setup": {
+        "path_coverage": {
+          "A": "fixture_verified",
+          "B": "fixture_verified",
+          "C": "fixture_verified",
+          "D": "unknown"
+        }
+      },
+      "schedule": [
+        {
+          "event": "remote_marker_received",
+          "scope": "C"
+        },
+        {
+          "event": "local_marker_missing",
+          "scope": "D"
+        },
+        {
+          "event": "synthetic_recording_file_growth"
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "bidirectional_claim",
+          "equals": false
+        },
+        {
+          "predicate": "uncertainty_retained",
+          "scopes": [
+            "D"
+          ]
+        },
+        {
+          "predicate": "health_not_promoted",
+          "signals": [
+            "C_marker",
+            "file_growth"
+          ]
+        }
+      ],
+      "allowed_label": "remote-only recording, subject to existing consent and PRD presentation; not a new mode"
+    },
+    {
+      "key": "mute_and_stop_are_distinct",
+      "variants": [
+        {
+          "action": "computer_conference_mute",
+          "fixture_signal_paths": {
+            "B": false,
+            "D": true
+          }
+        },
+        {
+          "action": "physical_mute_before_split",
+          "fixture_signal_paths": {
+            "B": false,
+            "D": false
+          }
+        },
+        {
+          "action": "physical_mute_after_D_tap",
+          "fixture_signal_paths": {
+            "B": false,
+            "D": true
+          }
+        },
+        {
+          "action": "sidecar_stop",
+          "fixture_signal_presence_before_admission": {
+            "A": true,
+            "B": true,
+            "C": true,
+            "D": true
+          },
+          "fixture_android_admission": {
+            "C": false,
+            "D": false
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "event": "apply_configured_fixture_action"
+        },
+        {
+          "event": "observe_all_four_path_markers"
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "mute_not_substituted"
+        }
+      ],
+      "limitation": "These are deliberately different wiring fixtures, not claims about an actual interface. Physical mute position and conferencing behavior must be checked in G2; Sidecar stop does not claim to mute the PC."
+    },
+    {
+      "key": "stop_while_sink_and_close_stall",
+      "setup": {
+        "active_leases": {
+          "C": "c0",
+          "D": "d0"
+        },
+        "handles": [
+          "hc",
+          "hd"
+        ]
+      },
+      "schedule": [
+        {
+          "event": "sink_append_blocked",
+          "token": "pending-before-stop"
+        },
+        {
+          "event": "user_sidecar_stop"
+        },
+        {
+          "event": "driver_stop_and_close_blocked"
+        },
+        {
+          "event": "pcm_read",
+          "token": "after-stop",
+          "lease": "c0"
+        },
+        {
+          "event": "timeout_observed"
+        },
+        {
+          "event": "unblock_driver_and_sink"
+        },
+        {
+          "event": "driver_drained",
+          "handles": [
+            "hc",
+            "hd"
+          ]
+        }
+      ],
+      "expect": [
+        {
+          "predicate": "invalidated_before_stop_io",
+          "scopes": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "predicate": "no_accepted_pcm",
+          "tokens": [
+            "after-stop"
+          ]
+        },
+        {
+          "predicate": "physical_close_not_claimed",
+          "before": "driver_drained"
+        },
+        {
+          "predicate": "release_attempts",
+          "handle": "hc",
+          "max": 1
+        },
+        {
+          "predicate": "release_attempts",
+          "handle": "hd",
+          "max": 1
+        },
+        {
+          "predicate": "uncertainty_retained",
+          "scopes": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "predicate": "no_default_input_request"
+        }
+      ],
+      "limitation": "Pre-stop pending data must follow existing sealing/cancellation policy; this proposal does not overwrite retention or boundary rules."
+    }
+  ],
+  "cannot_establish": [
+    "USB descriptor/OEM enumeration support",
+    "real per-frame origin or absence of route-switch windows",
+    "A/B/C/D audibility and conference mix-minus",
+    "physical mute topology",
+    "latency/clock calibration/echo/gain",
+    "USB power and simultaneous host/charging",
+    "native license/source-to-binary closure",
+    "G2 or any complete stage exit"
+  ]
+}

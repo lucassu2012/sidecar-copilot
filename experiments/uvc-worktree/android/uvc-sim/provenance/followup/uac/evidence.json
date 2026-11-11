@@ -1,0 +1,1211 @@
+{
+  "scope": "static research; no native execution/device/build/integration",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "dependencies": "Python standard library only for this follow-up script; prior ELF audit used preinstalled pyelftools 0.33",
+  "baseline_evidence_sha256": "87769e5964fb7b0b3ae2c2e304ae22d9bd1c93039a77a05944b63e445b92ae1e",
+  "baseline_binaries": [
+    {
+      "abi": "arm64-v8a",
+      "sha256": "e4c6af125ef73573e9334fb9ac6eff2a50856c33f34ab758c7bb830499dc054f",
+      "git_blob_sha1": "67d3f29decb2594babb06370387deea105ebba18"
+    },
+    {
+      "abi": "armeabi-v7a",
+      "sha256": "adcde2a84392d9ce95a6db2b6a169792cb6c2a077d7eef224ff28c07afd28672",
+      "git_blob_sha1": "1d85d6f9fc2843b48fe6b3941d47abdff6b8d330"
+    },
+    {
+      "abi": "x86",
+      "sha256": "8c3ba934a42a833d95f772e60eff2ebcfeb4dd42dd7bcd85f1de4b3c9e0d673d",
+      "git_blob_sha1": "97608acbd5f14a068af72dc464565c6732be92e1"
+    },
+    {
+      "abi": "x86_64",
+      "sha256": "e0b7e998d24fcfb41d401c2b139bef67ccaa6f0689dc26cbf90dc6082f06ca38",
+      "git_blob_sha1": "ed02062380e2d99b422c45fa7f0439890a1ba42c"
+    }
+  ],
+  "repositories": [
+    {
+      "repository": "jim0608/android_usbaudio",
+      "commit": "35ba8eee66a5c212a6f7f90caab8814c392b137e",
+      "fork_snapshot": false,
+      "parent_snapshot": null,
+      "license_api_snapshot": null,
+      "license_paths": [
+        "app/src/main/jni/libusb/COPYING"
+      ],
+      "uac_related_paths": [
+        "app/src/main/java/au/id/jms/usbaudio",
+        "app/src/main/java/au/id/jms/usbaudio/AudioCallback.java",
+        "app/src/main/java/au/id/jms/usbaudio/AudioPlayback.java",
+        "app/src/main/java/au/id/jms/usbaudio/USBAudio.java",
+        "app/src/main/java/au/id/jms/usbaudiodemo",
+        "app/src/main/java/au/id/jms/usbaudiodemo/AudioCallback.java",
+        "app/src/main/java/au/id/jms/usbaudiodemo/DeviceFilter.java",
+        "app/src/main/java/au/id/jms/usbaudiodemo/MainActivity.java",
+        "app/src/main/java/au/id/jms/usbaudiodemo/USBAudio.java",
+        "app/src/main/java/au/id/jms/usbaudiodemo/USBMonitor.java",
+        "app/src/main/java/au/id/jms/usbaudiodemo/USBVendorId.java",
+        "app/src/main/jni/usbAudio",
+        "app/src/main/jni/usbAudio/Android.mk",
+        "app/src/main/jni/usbAudio/USBAudio.cpp",
+        "app/src/main/jni/usbAudio/USBAudio.h",
+        "app/src/main/jni/usbAudio/native_usb_audio.cpp",
+        "app/src/main/jni/usbAudio/uac_stream.c",
+        "app/src/main/jni/usbAudio/uac_stream.h"
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/README.md",
+          "sha256": "8e4b91900bbfc1be9937bcb7861ce1e5be6258f57a4b279bc680e17e683d195f",
+          "lines": 37,
+          "markers": {
+            "rights": [],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "779afc9a59f9bc6ab52fc4a22cf6e68e37d155f9"
+        },
+        {
+          "path": "app/build.gradle",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/build.gradle",
+          "sha256": "75f9205856017ba071504c6d43b3a215b98b47a97e8462cce4db2377c8598ae4",
+          "lines": 83,
+          "markers": {
+            "rights": [],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "670b50e0e23e6f2d4f19fda2f4d75be45a77e2ed"
+        },
+        {
+          "path": "app/src/main/jni/Application.mk",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/Application.mk",
+          "sha256": "ebb2e80b6624778581b3290b25c1dbf53fabc7e400e72aa7aac9c6fb29c747de",
+          "lines": 6,
+          "markers": {
+            "rights": [],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "9f4b50d45b49e6da6605bf7ed9b92e5ecc201335"
+        },
+        {
+          "path": "app/src/main/jni/Android.mk",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/Android.mk",
+          "sha256": "763d3def45c7317719eeaf4ca9d9f35d9a70f07cc4ab1eb623060338b82fddcc",
+          "lines": 48,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              10,
+              19,
+              27,
+              35,
+              43
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "39bfc7b58a153097110f145f916990bfb2064027"
+        },
+        {
+          "path": "app/src/main/jni/usbAudio/Android.mk",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/Android.mk",
+          "sha256": "3f62d8ed07656edc5bcb50a748fdaaf7d7e20ecacfc9c8f9de09ca72859c37c0",
+          "lines": 19,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              7,
+              14
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "175fbfcb8e2a587c00aef2d41db1d1ddedbe9fab"
+        },
+        {
+          "path": "app/src/main/jni/usbAudio/USBAudio.cpp",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/USBAudio.cpp",
+          "sha256": "675f7a86effb420976b286e886a15d7ed87fbe5abba0711eb15d2d8f2db3a63c",
+          "lines": 416,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              36,
+              53,
+              100,
+              133,
+              156,
+              205,
+              257,
+              260,
+              326,
+              360,
+              364,
+              368,
+              372,
+              378,
+              396,
+              402
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [
+            "USBAudio",
+            "closeAudio",
+            "fill_iso_transfer",
+            "getBitResolution",
+            "getChannelCount",
+            "getSampleRate",
+            "initAudio",
+            "interface_claim_if",
+            "isRunning",
+            "operate_interface",
+            "scan_audio_interface",
+            "setCallback",
+            "set_audio_stream_desc",
+            "set_sample_rate_v1",
+            "startCapture",
+            "stopCapture"
+          ],
+          "git_blob_sha1": "56c74c50bcc98aeceaa19b879e6085a6549a47e7"
+        },
+        {
+          "path": "app/src/main/jni/usbAudio/USBAudio.h",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/USBAudio.h",
+          "sha256": "02084d86c2caabf9651c1d4e06d8f68c7d86d1e6caba31ab96c6a130762533ed",
+          "lines": 88,
+          "markers": {
+            "rights": [],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "93e8436b483085e69334d132758466821b70b036"
+        },
+        {
+          "path": "app/src/main/jni/usbAudio/native_usb_audio.cpp",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/native_usb_audio.cpp",
+          "sha256": "43b27804842a70e3307146fe15cd3c423bdba27fea82bdc17503f454927de85b",
+          "lines": 193,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              39,
+              50,
+              64,
+              86,
+              98,
+              111,
+              125,
+              138,
+              152
+            ],
+            "routing": []
+          },
+          "jni_exports": [
+            "Java_au_id_jms_usbaudio_USBAudio_nativeClose",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeCreate",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeGetBitResolution",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeGetChannelCount",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeGetSampleRate",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeInit",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeIsRunning",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeStartCapture",
+            "Java_au_id_jms_usbaudio_USBAudio_nativeStopCapture"
+          ],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "d4d5eac41db910431fc3ae0dd117e321a1abb20a"
+        },
+        {
+          "path": "app/src/main/jni/usbAudio/uac_stream.c",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/uac_stream.c",
+          "sha256": "cfa957a225d1c91451ad8a716d1630602d9f17221392d657784a25db975f18ba",
+          "lines": 115,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              22,
+              40
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "77dcad0c5e1998b9f0bf05098b479a1c7bf120cd"
+        },
+        {
+          "path": "app/src/main/jni/usbAudio/uac_stream.h",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/usbAudio/uac_stream.h",
+          "sha256": "a67884f7d54531ca7f0bd2b7bfce9422402a4f53cfb2bc2d24955e65e5690618",
+          "lines": 59,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              56
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "762b5032dc3a03ac22a82e9cb1c51c19d16557b9"
+        },
+        {
+          "path": "app/src/main/jni/libusb/COPYING",
+          "url": "https://raw.githubusercontent.com/jim0608/android_usbaudio/35ba8eee66a5c212a6f7f90caab8814c392b137e/app/src/main/jni/libusb/COPYING",
+          "sha256": "319daefe38ebeead3df178e5937898a52d67c0c795f54f1c0bb10ac3b9cffb63",
+          "lines": 513,
+          "markers": {
+            "rights": [
+              1,
+              4,
+              9,
+              48,
+              117,
+              121,
+              133,
+              155,
+              286,
+              287,
+              413,
+              414,
+              437,
+              480,
+              483,
+              502,
+              505
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "5faba9d48ce750f6f718874fbd6732c89353dc08"
+        }
+      ],
+      "history": [
+        {
+          "path": "app/src/main/jni/usbAudio/native_usb_audio.cpp",
+          "commits": [
+            {
+              "sha": "79491886c7584a9a99b9dadab552ceac5a0004c8",
+              "date": "2021-11-26T02:47:23Z",
+              "message": "Android基于libusb，无驱动获取音频数据"
+            }
+          ],
+          "pages": 1
+        },
+        {
+          "path": "app/src/main/jni/usbAudio/uac_stream.c",
+          "commits": [
+            {
+              "sha": "79491886c7584a9a99b9dadab552ceac5a0004c8",
+              "date": "2021-11-26T02:47:23Z",
+              "message": "Android基于libusb，无驱动获取音频数据"
+            }
+          ],
+          "pages": 1
+        }
+      ]
+    },
+    {
+      "repository": "sky22333/camplayer",
+      "commit": "5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b",
+      "fork_snapshot": false,
+      "parent_snapshot": null,
+      "license_api_snapshot": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "license_paths": [
+        "LICENSE",
+        "app/src/main/cpp/third_party/libuac/LICENSE"
+      ],
+      "uac_related_paths": [
+        "app/src/main/cpp/third_party/libuac",
+        "app/src/main/cpp/third_party/libuac/LICENSE",
+        "app/src/main/cpp/third_party/libuac/include",
+        "app/src/main/cpp/third_party/libuac/include/libuac.h",
+        "app/src/main/cpp/third_party/libuac/src",
+        "app/src/main/cpp/third_party/libuac/src/config.h",
+        "app/src/main/cpp/third_party/libuac/src/logging.h",
+        "app/src/main/cpp/third_party/libuac/src/uac_context.cpp",
+        "app/src/main/cpp/third_party/libuac/src/uac_context.h",
+        "app/src/main/cpp/third_party/libuac/src/uac_device.cpp",
+        "app/src/main/cpp/third_party/libuac/src/uac_device.h",
+        "app/src/main/cpp/third_party/libuac/src/uac_exceptions.cpp",
+        "app/src/main/cpp/third_party/libuac/src/uac_exceptions.h",
+        "app/src/main/cpp/third_party/libuac/src/uac_parser.cpp",
+        "app/src/main/cpp/third_party/libuac/src/uac_parser.h",
+        "app/src/main/cpp/third_party/libuac/src/uac_streaming.cpp",
+        "app/src/main/cpp/third_party/libuac/src/uac_streaming.h",
+        "app/src/main/cpp/third_party/libuac/src/usb_audio.h",
+        "app/src/main/cpp/uac_jni.cpp"
+      ],
+      "sources": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/LICENSE",
+          "sha256": "5489e9f0f304b899ff1176ed36c40574a93cbde1a3e5068bd853645e9046efe6",
+          "lines": 676,
+          "markers": {
+            "rights": [
+              1,
+              3,
+              6,
+              42,
+              43,
+              46,
+              48,
+              58,
+              61,
+              67,
+              79,
+              82,
+              87,
+              96,
+              107,
+              159,
+              164,
+              172,
+              175,
+              185,
+              201,
+              241,
+              361,
+              364,
+              418,
+              419,
+              420,
+              424,
+              425,
+              428,
+              444,
+              475,
+              588,
+              634,
+              637,
+              657,
+              667,
+              668
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "8c7716d6925334d0f3ce26cd0750b9b0b1eebe33"
+        },
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/README.md",
+          "sha256": "111b321d5c3a0b4ec281065b19cd18a052f0ae11b3b272aed83ef8355149afe2",
+          "lines": 39,
+          "markers": {
+            "rights": [],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "28511e752eb6c7c4e7671de6e51b427dbd82fab1"
+        },
+        {
+          "path": "app/build.gradle.kts",
+          "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/build.gradle.kts",
+          "sha256": "2d2c1c1e063d6b84bd7eea7d8e49d8665ca9edda3bcdebfb513f3d38e161d9a8",
+          "lines": 157,
+          "markers": {
+            "rights": [
+              97
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "78c477ff2b60a9bb9e438c5730cf2aff8fe99362"
+        },
+        {
+          "path": "app/src/main/cpp/uac_jni.cpp",
+          "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/uac_jni.cpp",
+          "sha256": "929d586b90c721788c1d0aab28b541cb5b9520e5cb44461338479d85349b6053",
+          "lines": 304,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              148,
+              200,
+              231,
+              257,
+              283,
+              289,
+              295,
+              301
+            ],
+            "routing": []
+          },
+          "jni_exports": [
+            "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+            "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+            "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+            "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+            "Java_com_jiangdg_uac_UACAudio_nativeInit",
+            "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+            "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+            "Java_com_jiangdg_uac_UACAudio_nativeStopRecord"
+          ],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "94cc21bf496eb1aa453fb9f28974e7857c7f4e68"
+        },
+        {
+          "path": "app/src/main/cpp/CMakeLists.txt",
+          "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/CMakeLists.txt",
+          "sha256": "0f581a2a9c7d93fd4ff015621ad30265f9c966ab48a9df397e2691e5a503e057",
+          "lines": 56,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              17,
+              19,
+              29
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "6e7558e03d931d0d3358d8e25998d86c8842611e"
+        },
+        {
+          "path": "app/src/main/cpp/third_party/libuac/LICENSE",
+          "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/third_party/libuac/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "lines": 201,
+          "markers": {
+            "rights": [
+              1,
+              12,
+              13,
+              37,
+              51,
+              53,
+              60,
+              66,
+              69,
+              101,
+              123,
+              178,
+              180,
+              186,
+              189,
+              191
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "app/src/main/cpp/third_party/libuac/src/uac_context.cpp",
+          "url": "https://raw.githubusercontent.com/sky22333/camplayer/5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b/app/src/main/cpp/third_party/libuac/src/uac_context.cpp",
+          "sha256": "48e88923aef423a9ffcd490819d86c8de5e35e5308d21f2ae9d693eed44f6ebb",
+          "lines": 125,
+          "markers": {
+            "rights": [
+              1,
+              4
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "38ea18bea5f337875627d8edb386528f22b0914d"
+        }
+      ],
+      "history": [
+        {
+          "path": "app/src/main/cpp/uac_jni.cpp",
+          "commits": [
+            {
+              "sha": "765b3a9cec3a01c508fecd8b45cc30ea9592f515",
+              "date": "2026-07-19T14:53:05Z",
+              "message": "add"
+            }
+          ],
+          "pages": 1
+        }
+      ]
+    },
+    {
+      "repository": "jiangdongguo/UVCCameraLib",
+      "commit": "3d7186e73efe4d3c317b61992e5d200e8b21949d",
+      "fork_snapshot": false,
+      "parent_snapshot": null,
+      "license_api_snapshot": null,
+      "license_paths": [
+        "libuvccamera/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md",
+        "libuvccamera/src/main/jni/libjpeg-turbo-1.5.0/release/License.rtf",
+        "libuvccamera/src/main/jni/libusb/COPYING",
+        "libuvccamera/src/main/jni/rapidjson/license.txt",
+        "libuvccamera/src/main/jni/rapidjson/thirdparty/jsoncpp/LICENSE",
+        "libuvccamera/src/main/jni/rapidjson/thirdparty/yajl/COPYING"
+      ],
+      "uac_related_paths": [],
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/jiangdongguo/UVCCameraLib/3d7186e73efe4d3c317b61992e5d200e8b21949d/README.md",
+          "sha256": "2586f08636c71de50b16753062ec0a9b07e387a2745f1bad00b066e195377c8b",
+          "lines": 33,
+          "markers": {
+            "rights": [
+              21,
+              23
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "114a908f89e99935b4aedd02a9d4f910b65333df"
+        }
+      ],
+      "history": []
+    },
+    {
+      "repository": "jiangdongguo/AndroidCamera",
+      "commit": "ab1a097c8051fa955d0e65d32080c16e6e1bcf9a",
+      "fork_snapshot": true,
+      "parent_snapshot": "aserbao/AndroidCamera",
+      "license_api_snapshot": null,
+      "license_paths": [
+        "app/src/main/res/drawable-hdpi/notice_select.png",
+        "app/src/main/res/drawable-hdpi/notice_unselect.png"
+      ],
+      "uac_related_paths": [],
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidCamera/ab1a097c8051fa955d0e65d32080c16e6e1bcf9a/README.md",
+          "sha256": "fe433e14bd757f6d4c48b82ad2252734a64d619dfeda034f760241c39cdcf273",
+          "lines": 71,
+          "markers": {
+            "rights": [],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "eba6e07ca625034f5b9ee5fd9f81f53faffca80e"
+        }
+      ],
+      "history": []
+    },
+    {
+      "repository": "nExtCamera/libuac",
+      "commit": "17a6ba0a09309a6890ec338826de43a256f89813",
+      "fork_snapshot": false,
+      "parent_snapshot": null,
+      "license_api_snapshot": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "license_paths": [
+        "LICENSE"
+      ],
+      "uac_related_paths": [
+        "android/libuac.mk",
+        "include/libuac.h",
+        "src/uac_context.cpp",
+        "src/uac_context.h",
+        "src/uac_device.cpp",
+        "src/uac_device.h",
+        "src/uac_exceptions.cpp",
+        "src/uac_exceptions.h",
+        "src/uac_parser.cpp",
+        "src/uac_parser.h",
+        "src/uac_streaming.cpp",
+        "src/uac_streaming.h"
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/README.md",
+          "sha256": "1ee3a4ad1df4d4e924e1fc297020c3c3f4fbac4409c61464d89ee922591257a8",
+          "lines": 66,
+          "markers": {
+            "rights": [
+              64
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "f3340b76268283cfda179d0f06769bca36334838"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "lines": 201,
+          "markers": {
+            "rights": [
+              1,
+              12,
+              13,
+              37,
+              51,
+              53,
+              60,
+              66,
+              69,
+              101,
+              123,
+              178,
+              180,
+              186,
+              189,
+              191
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        },
+        {
+          "path": "CMakeLists.txt",
+          "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/CMakeLists.txt",
+          "sha256": "a11e8f947ceef450505329ceb0a688ecb4286514e91c268b60a74a11ae2062ef",
+          "lines": 59,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              38
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "c67b3a2cc53b2649eaff8a7e9bbec31207a47f6c"
+        },
+        {
+          "path": "android/libuac.mk",
+          "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/android/libuac.mk",
+          "sha256": "39dd10107d1234d5c78f12ef2eb63d620b72f4c1d58aaa3bfde34059d854d5dc",
+          "lines": 33,
+          "markers": {
+            "rights": [],
+            "uac_identity": [
+              9
+            ],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "129ea23adf481200e98c6c6faf395dfa59fa40d8"
+        },
+        {
+          "path": "src/uac_context.cpp",
+          "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/src/uac_context.cpp",
+          "sha256": "5e16a7da58a8f15efc15b9cf971bd89e88effc0f48a93103c52a557e5769383d",
+          "lines": 97,
+          "markers": {
+            "rights": [
+              1,
+              3
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "990811bf956f02d0a57cac213c50f668c8c3c491"
+        },
+        {
+          "path": "src/uac_streaming.cpp",
+          "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/src/uac_streaming.cpp",
+          "sha256": "05487be08560f198d32d5ca5fb49d4d8637b53d905c47217e40b603871c77e44",
+          "lines": 347,
+          "markers": {
+            "rights": [
+              1,
+              3
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "ffa611e8ba10a65bbbd8999bcae1e66cd8ecf290"
+        },
+        {
+          "path": "include/libuac.h",
+          "url": "https://raw.githubusercontent.com/nExtCamera/libuac/17a6ba0a09309a6890ec338826de43a256f89813/include/libuac.h",
+          "sha256": "b7bde2ce08dec1b6d60765d0cd35d4400ba49ddbb064d9c5107e428e1b551ec5",
+          "lines": 298,
+          "markers": {
+            "rights": [
+              1,
+              3
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "005f170429f2582feebc4d480deb7af8d8a6cd8e"
+        }
+      ],
+      "history": [
+        {
+          "path": "src/uac_context.cpp",
+          "commits": [
+            {
+              "sha": "1baeef6c64d0e5fa529189c70b2395d6e99300c8",
+              "date": "2023-06-18T09:34:56Z",
+              "message": "First working version"
+            }
+          ],
+          "pages": 1
+        }
+      ]
+    },
+    {
+      "repository": "siddhesh-bhadale/AndroidUSBCamera-fork",
+      "commit": "ffbf0fb17ad9baefd229e87ea990d11e56f421fe",
+      "fork_snapshot": true,
+      "parent_snapshot": "jiangdongguo/AndroidUSBCamera",
+      "license_api_snapshot": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "license_paths": [
+        "LICENSE",
+        "libuvc/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md",
+        "libuvc/src/main/jni/libjpeg-turbo-1.5.0/release/License.rtf",
+        "libuvc/src/main/jni/libusb/COPYING",
+        "libuvc/src/main/jni/rapidjson/license.txt",
+        "libuvc/src/main/jni/rapidjson/thirdparty/jsoncpp/LICENSE",
+        "libuvc/src/main/jni/rapidjson/thirdparty/yajl/COPYING"
+      ],
+      "uac_related_paths": [
+        "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+        "libuvc/src/main/java/com/jiangdg/uac",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java"
+      ],
+      "sources": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/siddhesh-bhadale/AndroidUSBCamera-fork/ffbf0fb17ad9baefd229e87ea990d11e56f421fe/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "lines": 201,
+          "markers": {
+            "rights": [
+              1,
+              12,
+              13,
+              37,
+              51,
+              53,
+              60,
+              66,
+              69,
+              101,
+              123,
+              178,
+              180,
+              186,
+              189,
+              191
+            ],
+            "uac_identity": [],
+            "routing": []
+          },
+          "jni_exports": [],
+          "usbaudio_methods": [],
+          "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+        }
+      ],
+      "history": []
+    }
+  ],
+  "aosp": [
+    {
+      "path": "media/java/android/media/AudioRecord.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioRecord.java?format=TEXT",
+      "sha256": "0cc01010e28709b8ca198db1ac0948866cf13350535082ecf2812f500e9b43ba",
+      "lines": 2631,
+      "markers": {
+        "rights": [
+          2,
+          4
+        ],
+        "uac_identity": [],
+        "routing": [
+          90,
+          327,
+          365,
+          969,
+          1911,
+          1914,
+          1915,
+          2070,
+          2073,
+          2076,
+          2078,
+          2153,
+          2155,
+          2170,
+          2174,
+          2188,
+          2208,
+          2233,
+          2497
+        ]
+      },
+      "jni_exports": [],
+      "usbaudio_methods": []
+    },
+    {
+      "path": "media/java/android/media/AudioDeviceInfo.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioDeviceInfo.java?format=TEXT",
+      "sha256": "a9dafde2c6b1e89679d1e2eafeca9b1f7ed3b1c80de8f1fb7d882404c339d050",
+      "lines": 756,
+      "markers": {
+        "rights": [
+          2,
+          4
+        ],
+        "uac_identity": [],
+        "routing": [
+          87,
+          91,
+          134,
+          151,
+          205,
+          206,
+          207,
+          241,
+          242,
+          243,
+          270,
+          271,
+          272,
+          303,
+          304,
+          305,
+          337,
+          338,
+          339,
+          455,
+          646,
+          647,
+          648,
+          674,
+          675,
+          676,
+          704,
+          705,
+          706,
+          735,
+          736,
+          737
+        ]
+      },
+      "jni_exports": [],
+      "usbaudio_methods": []
+    },
+    {
+      "path": "media/java/android/media/AudioManager.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioManager.java?format=TEXT",
+      "sha256": "bb07ff33c2be266090786561c8c4ba1b903674737411c7e0d7f3115fb4d68278",
+      "lines": 10314,
+      "markers": {
+        "rights": [
+          2,
+          4
+        ],
+        "uac_identity": [],
+        "routing": [
+          2011,
+          2013,
+          2019,
+          2020,
+          2041,
+          2042,
+          2051,
+          2053,
+          2072,
+          2085,
+          2095,
+          2096,
+          2103,
+          2107,
+          2188,
+          2189,
+          2194,
+          2196,
+          2218,
+          2219,
+          2227,
+          2228,
+          2230,
+          2317,
+          2318,
+          2465,
+          2467,
+          2495,
+          2502,
+          2508,
+          2514,
+          2530,
+          2542,
+          2548,
+          2550,
+          3186,
+          3219,
+          6870,
+          6893,
+          6912,
+          7822,
+          7835,
+          7839,
+          7845,
+          7859,
+          7887,
+          7889,
+          7939,
+          8005,
+          8056,
+          8078,
+          8080
+        ]
+      },
+      "jni_exports": [],
+      "usbaudio_methods": []
+    },
+    {
+      "path": "media/java/android/media/AudioRouting.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioRouting.java?format=TEXT",
+      "sha256": "be8ddcd57cea42b2340620fd4ae0d32198cb3be9506edb9e5fcd8e67ecb7bc22",
+      "lines": 78,
+      "markers": {
+        "rights": [
+          2,
+          4
+        ],
+        "uac_identity": [],
+        "routing": [
+          35,
+          38,
+          41,
+          47,
+          49,
+          76
+        ]
+      },
+      "jni_exports": [],
+      "usbaudio_methods": []
+    },
+    {
+      "path": "media/java/android/media/AudioRecordingConfiguration.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/media/java/android/media/AudioRecordingConfiguration.java?format=TEXT",
+      "sha256": "32e9789a98a029ca0c015bc2a82bd6cce91d916618cd4fb03118b948efb938e1",
+      "lines": 413,
+      "markers": {
+        "rights": [
+          2,
+          4
+        ],
+        "uac_identity": [],
+        "routing": [
+          146,
+          287,
+          289,
+          290,
+          292
+        ]
+      },
+      "jni_exports": [],
+      "usbaudio_methods": []
+    },
+    {
+      "path": "services/usb/java/com/android/server/usb/UsbAlsaManager.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-15.0.0_r1/services/usb/java/com/android/server/usb/UsbAlsaManager.java?format=TEXT",
+      "sha256": "e26f673a40aff7f337ecd1ef1e5e03f001289ffc1b8370b2eb9b6f6f26e42696",
+      "lines": 608,
+      "markers": {
+        "rights": [
+          2,
+          4
+        ],
+        "uac_identity": [],
+        "routing": [
+          183,
+          253,
+          255,
+          316,
+          323,
+          325,
+          337,
+          423,
+          424
+        ]
+      },
+      "jni_exports": [],
+      "usbaudio_methods": []
+    }
+  ],
+  "official_document_snapshots": [
+    {
+      "url": "https://source.android.com/docs/core/audio/usb",
+      "sha256": "a8b61240d057168ed7c85f7d19d13aef85085134b3ed3e5656bbbb9cc24a6d36",
+      "bytes": 198285,
+      "limit": "Mutable documentation snapshot; fixed AOSP tag separately recorded."
+    },
+    {
+      "url": "https://developer.android.com/media/platform/sharing-audio-input",
+      "sha256": "e79368d34001382eff5eaa87c59adfcb09023afe8cc1ff07cc461d9f9bffd9ba",
+      "bytes": 324161,
+      "limit": "Mutable documentation snapshot; fixed AOSP tag separately recorded."
+    },
+    {
+      "url": "https://developer.android.com/about/versions/11/privacy/foreground-services",
+      "sha256": "8b6c9ae4fa5458b74b03ace0d8cdabd1d46181a582d3a64ab540db2bb54ec479",
+      "bytes": 265281,
+      "limit": "Mutable documentation snapshot; fixed AOSP tag separately recorded."
+    },
+    {
+      "url": "https://developer.android.com/about/versions/14/changes/fgs-types-required",
+      "sha256": "03873c42832d0c2c343b8dceabcc0985a2ca43d06300a9f87241afd2b68d416f",
+      "bytes": 303948,
+      "limit": "Mutable documentation snapshot; fixed AOSP tag separately recorded."
+    }
+  ],
+  "jim_import": {
+    "parent": "7b0d728d0e5768c345e1fe797ddcc071092a04ca",
+    "commit": "79491886c7584a9a99b9dadab552ceac5a0004c8",
+    "parent_uac_paths": [],
+    "introduced_blobs": [
+      {
+        "path": "app/src/main/jni/usbAudio/Android.mk",
+        "sha": "175fbfcb8e2a587c00aef2d41db1d1ddedbe9fab"
+      },
+      {
+        "path": "app/src/main/jni/usbAudio/USBAudio.cpp",
+        "sha": "56c74c50bcc98aeceaa19b879e6085a6549a47e7"
+      },
+      {
+        "path": "app/src/main/jni/usbAudio/USBAudio.h",
+        "sha": "93e8436b483085e69334d132758466821b70b036"
+      },
+      {
+        "path": "app/src/main/jni/usbAudio/native_usb_audio.cpp",
+        "sha": "d4d5eac41db910431fc3ae0dd117e321a1abb20a"
+      },
+      {
+        "path": "app/src/main/jni/usbAudio/uac_stream.c",
+        "sha": "77dcad0c5e1998b9f0bf05098b479a1c7bf120cd"
+      },
+      {
+        "path": "app/src/main/jni/usbAudio/uac_stream.h",
+        "sha": "762b5032dc3a03ac22a82e9cb1c51c19d16557b9"
+      }
+    ]
+  },
+  "identity_comparison": {
+    "baseline_usbaudio_methods": [
+      "closeAudio",
+      "fill_iso_transfer",
+      "getBitResolution",
+      "getChannelCount",
+      "getSampleRate",
+      "initAudio",
+      "interface_claim_if",
+      "isRunning",
+      "operate_interface",
+      "scan_audio_interface",
+      "setCallback",
+      "set_audio_stream_desc",
+      "set_sample_rate_v1",
+      "startCapture",
+      "stopCapture"
+    ],
+    "jim_method_name_overlap": [
+      "closeAudio",
+      "fill_iso_transfer",
+      "getBitResolution",
+      "getChannelCount",
+      "getSampleRate",
+      "initAudio",
+      "interface_claim_if",
+      "isRunning",
+      "operate_interface",
+      "scan_audio_interface",
+      "setCallback",
+      "set_audio_stream_desc",
+      "set_sample_rate_v1",
+      "startCapture",
+      "stopCapture"
+    ],
+    "baseline_jni": [
+      "Java_com_jiangdg_uac_UACAudio_nativeGetBitResolution",
+      "Java_com_jiangdg_uac_UACAudio_nativeGetChannelCount",
+      "Java_com_jiangdg_uac_UACAudio_nativeGetRecordingState",
+      "Java_com_jiangdg_uac_UACAudio_nativeGetSampleRate",
+      "Java_com_jiangdg_uac_UACAudio_nativeInit",
+      "Java_com_jiangdg_uac_UACAudio_nativeRelease",
+      "Java_com_jiangdg_uac_UACAudio_nativeStartRecord",
+      "Java_com_jiangdg_uac_UACAudio_nativeStopRecord"
+    ],
+    "jim_jni": [
+      "Java_au_id_jms_usbaudio_USBAudio_nativeClose",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeCreate",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeGetBitResolution",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeGetChannelCount",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeGetSampleRate",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeInit",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeIsRunning",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeStartCapture",
+      "Java_au_id_jms_usbaudio_USBAudio_nativeStopCapture"
+    ],
+    "exact_jni_overlap": [],
+    "limit": "Names are provenance clues only; no disassembly, compilation, ABI equivalence, copyright or binary-source identity established."
+  },
+  "aosp_release": {
+    "tag": "android-15.0.0_r1",
+    "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+    "tree": "9583c6d9586b84169697623a44af09e8ac3d79b9"
+  }
+}

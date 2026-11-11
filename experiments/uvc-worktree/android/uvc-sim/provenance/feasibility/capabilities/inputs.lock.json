@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "baseline": "c1afb3f61fa309bde0437fa2019c352ddc1792ba",
+  "scope": "Immutable input identities, not a runtime dependency or build lock",
+  "inputs": [
+    {
+      "id": "driver",
+      "kind": "local",
+      "path": "src/local/sidecar/copilot/uvcsim/UvcDriver.java",
+      "bytes": 2637,
+      "sha256": "85b96d520573f4fbaa5736ecfc3878d314c4ab3a78327686cf517b63de9396b6"
+    },
+    {
+      "id": "pipeline",
+      "kind": "local",
+      "path": "src/local/sidecar/copilot/uvcsim/FramePipeline.java",
+      "bytes": 11996,
+      "sha256": "8190fab701e3f577211d43747a44937950d72df9dcd1c256437072c1498e7353"
+    },
+    {
+      "id": "coordinator",
+      "kind": "local",
+      "path": "src/local/sidecar/copilot/uvcsim/UvcCoordinator.java",
+      "bytes": 18071,
+      "sha256": "77da7e99a516ef2c11bb70a9f1188e963d8c962f8c5e7eefe5c461acbe1d2b34"
+    },
+    {
+      "id": "gate",
+      "kind": "local",
+      "path": "src/local/sidecar/copilot/uvcsim/CaptureGate.java",
+      "bytes": 1747,
+      "sha256": "cf1e584bd6c094b6ff8618c0b4d344b7e880252bb6687796f1b82b1da7759b0b"
+    },
+    {
+      "id": "discovery",
+      "kind": "local",
+      "path": "android/local/sidecar/copilot/uvc/AndroidUvcDiscovery.java",
+      "bytes": 1931,
+      "sha256": "e20f51ac6e48683920d60e4303c0893c78176e6426d6b482c5f87934816a1a47"
+    },
+    {
+      "id": "transitives",
+      "kind": "local",
+      "path": "provenance/transitives/inventory.json",
+      "bytes": 858288,
+      "sha256": "9d1708a62018a89cbe8b3acd4c18d7c374ceb52b2c696089b013e6722c0039ae"
+    },
+    {
+      "id": "uvc_archive",
+      "kind": "archive",
+      "path": "uvcandroid-fcdae5f9a194e2111d57019176b53470a120415b.tar.gz",
+      "bytes": 4188074,
+      "sha256": "2b48b1f8b4fd71b92dcb9654c63ad70b2f757a819f62d2a054a7d606210a449f",
+      "url": "https://codeload.github.com/shiyinghan/UVCAndroid/tar.gz/fcdae5f9a194e2111d57019176b53470a120415b"
+    },
+    {
+      "id": "libyuv_archive",
+      "kind": "archive",
+      "path": "3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz",
+      "bytes": 564884,
+      "sha256": "49998fb4ff4dd5438c7170d47c8861cbe33c842315bb0d021da4d8e4f993ff2f",
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+archive/3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz"
+    }
+  ]
+}

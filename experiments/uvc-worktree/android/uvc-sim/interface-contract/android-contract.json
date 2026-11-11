@@ -1,0 +1,678 @@
+{
+  "schema": 1,
+  "baseline_commit": "3dbbcb17f26816689d4b51b714996d937b9f4acd",
+  "observed_utc_date": "2026-11-10",
+  "scope": "Static Android API 35 authorization/FD contract matrix only; inherited text and metadata, no model/native/device/emulator execution or new downloads.",
+  "reference_not_target_firmware": true,
+  "classification": {
+    "new_static_mapping": "New exact signature/failure/call-chain review of already inherited fixed inputs.",
+    "inherited_rechecked": "Inherited finding located and rechecked in the same fixed input.",
+    "new_project_contract": "Application integration requirement inferred from API limits; not an Android API guarantee or completed implementation."
+  },
+  "sources": [
+    {
+      "id": "usb-manager",
+      "inherited_lock": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "inherited_lock_sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d",
+      "input_id": "usb-manager",
+      "cache_path": "platform/usb-manager.raw",
+      "encoding": "gitiles-base64",
+      "wire_bytes": 89616,
+      "wire_sha256": "edc6b8b4b6e4d0a60eb27744ea0191c481b48b48d7a54b424de6ba40586228cc",
+      "source_sha256": "e3e05f4b5441e640896b0d7b36b710a6d8a31142c5c667f9ed65fc0119ca7603",
+      "git_blob_sha1": "41f344a03e77810aa420d7a12b26a7842c8e3d19",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/usb/UsbManager.java?format=TEXT",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "license_header": "Apache-2.0; AOSP attribution retained in referenced source",
+      "new_or_inherited": "inherited_fixed_input_rechecked",
+      "membership_limit": "Fixed commit URL and content identity, not an independent complete Git tree membership proof."
+    },
+    {
+      "id": "usb-connection",
+      "inherited_lock": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "inherited_lock_sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d",
+      "input_id": "usb-connection",
+      "cache_path": "platform/usb-connection.raw",
+      "encoding": "gitiles-base64",
+      "wire_bytes": 23412,
+      "wire_sha256": "dd3919aabd7383dee6c1e224366bb2ff4ad0a7ee466e400369766202ec7bcf34",
+      "source_sha256": "dd42714a8708b72557d084cc4daed1e4e02bfec2526733c39d952956d1eb6808",
+      "git_blob_sha1": "44144d92f56a46f8f56958f7f5a17387991c2517",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/usb/UsbDeviceConnection.java?format=TEXT",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "license_header": "Apache-2.0; AOSP attribution retained in referenced source",
+      "new_or_inherited": "inherited_fixed_input_rechecked",
+      "membership_limit": "Fixed commit URL and content identity, not an independent complete Git tree membership proof."
+    },
+    {
+      "id": "usb-connection-jni",
+      "inherited_lock": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "inherited_lock_sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d",
+      "input_id": "usb-connection-jni",
+      "cache_path": "platform/usb-connection-jni.raw",
+      "encoding": "gitiles-base64",
+      "wire_bytes": 14332,
+      "wire_sha256": "0198172f395e54bd571902d8ab1a5a6324dae113b4f7f5468c4617e9ee5a962f",
+      "source_sha256": "76ca328e2892d5357c908024b87065884576067e22f7066d4c1d588aff47a133",
+      "git_blob_sha1": "a0228428e90e53b439765922c942e0b08e61b84a",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/jni/android_hardware_UsbDeviceConnection.cpp?format=TEXT",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "license_header": "Apache-2.0; AOSP attribution retained in referenced source",
+      "new_or_inherited": "inherited_fixed_input_rechecked",
+      "membership_limit": "Fixed commit URL and content identity, not an independent complete Git tree membership proof."
+    },
+    {
+      "id": "usbhost",
+      "inherited_lock": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "inherited_lock_sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d",
+      "input_id": "usbhost",
+      "cache_path": "platform/usbhost.raw",
+      "encoding": "gitiles-base64",
+      "wire_bytes": 33080,
+      "wire_sha256": "72fec253a0ffa294ce9024d2cfc70f77cf4c251c4bfd6ff7557ed1626dd5d83a",
+      "source_sha256": "fd339a0f1768450a84caff86b6a3d00c858c9c62edb9d250e311c9afdf127c0d",
+      "git_blob_sha1": "d8f15cd6c58c652125f7fa94a8c61c55e77c0400",
+      "url": "https://android.googlesource.com/platform/system/core/+/fc7bc8c4bfb4c6095e34ea784509dae56f25b486/libusbhost/usbhost.c?format=TEXT",
+      "commit": "fc7bc8c4bfb4c6095e34ea784509dae56f25b486",
+      "license_header": "Apache-2.0; AOSP attribution retained in referenced source",
+      "new_or_inherited": "inherited_fixed_input_rechecked",
+      "membership_limit": "Fixed commit URL and content identity, not an independent complete Git tree membership proof."
+    }
+  ],
+  "contracts": [
+    {
+      "id": "enumerate",
+      "symbol": "android.hardware.usb.UsbManager.getDeviceList",
+      "signature": "public HashMap<String,UsbDevice> getDeviceList()",
+      "owner": "Caller owns its candidate observations; no connection or FD acquired.",
+      "conditions": {
+        "preconditions": [
+          "Platform API requires USB host feature; application treats returned entries as observations."
+        ],
+        "postconditions": [
+          "Returns a HashMap keyed by device name; does not authorize a selection or create a connection."
+        ],
+        "failure": [
+          "Empty if no attached devices, host inactive/unsupported, or mService is null in this reference implementation.",
+          "RemoteException is rethrown from the system server; empty map is not the only failure outcome."
+        ]
+      },
+      "limitations": [
+        "Map keys do not provide a cross-detach session identity.",
+        "Enumeration, permission check and open are separate observations, not one atomic transaction."
+      ],
+      "new_or_inherited": "new_static_mapping",
+      "source_refs": [
+        {
+          "source_id": "usb-manager",
+          "start_line": 833,
+          "end_line": 857,
+          "contains": [
+            "public HashMap<String,UsbDevice> getDeviceList()",
+            "if (mService == null)",
+            "throw e.rethrowFromSystemServer();"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "check-permission",
+      "symbol": "android.hardware.usb.UsbManager.hasPermission",
+      "signature": "public boolean hasPermission(UsbDevice device)",
+      "owner": "System manages caller permission; application separately owns product run authorization.",
+      "conditions": {
+        "preconditions": [
+          "Use the candidate bound to the current application selection.",
+          "Applicable video-class clients targeting P or above additionally require CAMERA permission according to this API documentation."
+        ],
+        "postconditions": [
+          "True reports current caller access; permission may come from temporary permission or a default-application association."
+        ],
+        "failure": [
+          "mService null returns false.",
+          "RemoteException is rethrown from the system server.",
+          "Project rule: false or exception never grants acquisition admission."
+        ]
+      },
+      "limitations": [
+        "True is not fresh Sidecar consent, continued permission, guaranteed open success, or RECORD_AUDIO authorization."
+      ],
+      "new_or_inherited": "new_static_mapping",
+      "source_refs": [
+        {
+          "source_id": "usb-manager",
+          "start_line": 946,
+          "end_line": 968,
+          "contains": [
+            "public boolean hasPermission(UsbDevice device)",
+            "default application",
+            "Manifest.permission#CAMERA",
+            "return false;",
+            "throw e.rethrowFromSystemServer();"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-permission",
+      "symbol": "android.hardware.usb.UsbManager.requestPermission",
+      "signature": "public void requestPermission(UsbDevice device, PendingIntent pi)",
+      "owner": "Caller creates and correlates PendingIntent; system delivers permission result.",
+      "conditions": {
+        "preconditions": [
+          "Project rule: register the outstanding nonce and selection/epoch/revision binding before invoking this API.",
+          "Applicable video-class/target-P CAMERA requirement remains in force."
+        ],
+        "postconditions": [
+          "Return is void, not a permission decision.",
+          "A dialog may be displayed if permission was not already granted.",
+          "Granted temporary access lasts only until device disconnect."
+        ],
+        "failure": [
+          "Permission result may be false.",
+          "RemoteException is rethrown; this does not create a grant.",
+          "Project rule: invocation failure invalidates the pending correlation rather than leaving it able to admit a late result."
+        ]
+      },
+      "limitations": [
+        "This method forwards the supplied PendingIntent; its construction, matching identity, receiver exposure and flags are not implemented or audited here."
+      ],
+      "new_or_inherited": "new_static_mapping",
+      "source_refs": [
+        {
+          "source_id": "usb-manager",
+          "start_line": 1035,
+          "end_line": 1063,
+          "contains": [
+            "public void requestPermission(UsbDevice device, PendingIntent pi)",
+            "until the device is disconnected.",
+            "mService.requestDevicePermission(device, mContext.getPackageName(), pi);",
+            "throw e.rethrowFromSystemServer();"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "permission-result",
+      "symbol": "android.hardware.usb.UsbManager permission PendingIntent extras",
+      "signature": "EXTRA_DEVICE = \"device\"; EXTRA_PERMISSION_GRANTED = \"permission\"",
+      "owner": "System populates documented extras; application owns interpretation and request correlation.",
+      "conditions": {
+        "preconditions": [
+          "A result must belong to a request the application still recognizes as outstanding. This is a project requirement."
+        ],
+        "postconditions": [
+          "API promises the device passed into that request and a boolean permission decision."
+        ],
+        "failure": [
+          "Project rule: missing/mismatched extras, false decision, stale nonce, old epoch/revision or duplicate consumption cannot open/start."
+        ]
+      },
+      "limitations": [
+        "The extras do not contain an attachment epoch, application session, request nonce or authorization revision.",
+        "No guarantee here that the device remains attached at delivery, or that callbacks are ordered across requests/detach/reconnect.",
+        "A parcelled device object reference, deviceName or VID/PID cannot alone validate the current application session."
+      ],
+      "new_or_inherited": "inherited_rechecked",
+      "source_refs": [
+        {
+          "source_id": "usb-manager",
+          "start_line": 381,
+          "end_line": 386,
+          "contains": [
+            "EXTRA_DEVICE = \"device\""
+          ]
+        },
+        {
+          "source_id": "usb-manager",
+          "start_line": 442,
+          "end_line": 448,
+          "contains": [
+            "EXTRA_PERMISSION_GRANTED = \"permission\""
+          ]
+        },
+        {
+          "source_id": "usb-manager",
+          "start_line": 1042,
+          "end_line": 1047,
+          "contains": [
+            "containing the device passed into this call",
+            "permission was granted by the user"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "detach-reconnect",
+      "symbol": "android.hardware.usb.UsbManager attach/detach actions",
+      "signature": "ACTION_USB_DEVICE_ATTACHED; ACTION_USB_DEVICE_DETACHED",
+      "owner": "Platform reports attachment events; application owns lifecycle epoch invalidation.",
+      "conditions": {
+        "preconditions": [
+          "Host attachment observations must be reconciled with the currently selected application binding."
+        ],
+        "postconditions": [
+          "Documented attached and detached events contain EXTRA_DEVICE.",
+          "Project rule: disconnect invalidates the old epoch and outstanding permission request bindings; reconnect requires a new epoch and current permission/run authorization."
+        ],
+        "failure": [
+          "Project rule: ambiguous identity or event ordering keeps admission closed; it cannot revalidate an old epoch."
+        ]
+      },
+      "limitations": [
+        "The reference comments do not promise a never-reused deviceName, application epoch, global event ordering or no missed observation.",
+        "No automatic capture restart follows a reconnect or an old grant. These are project requirements, not added platform API behavior."
+      ],
+      "new_or_inherited": "inherited_rechecked",
+      "source_refs": [
+        {
+          "source_id": "usb-manager",
+          "start_line": 142,
+          "end_line": 166,
+          "contains": [
+            "ACTION_USB_DEVICE_ATTACHED",
+            "ACTION_USB_DEVICE_DETACHED",
+            "EXTRA_DEVICE"
+          ]
+        },
+        {
+          "source_id": "usb-manager",
+          "start_line": 1035,
+          "end_line": 1040,
+          "contains": [
+            "until the device is disconnected."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open-connection",
+      "symbol": "android.hardware.usb.UsbManager.openDevice",
+      "signature": "public UsbDeviceConnection openDevice(UsbDevice device)",
+      "owner": "Application allocates a unique owner for every successfully returned connection, including late results.",
+      "conditions": {
+        "preconditions": [
+          "Project rule: current explicit selection, attachment epoch and accepted system/product authorization must match.",
+          "Project rule: blocking platform work runs outside control/publication locks, on its designated worker."
+        ],
+        "postconditions": [
+          "Implementation opens by device.getDeviceName(), creates a connection and closes the intermediate PFD.",
+          "Successful return provides a new connection resource; project revalidates its initiating binding before any borrow.",
+          "A stale successful return is cleaned up by its own owner and is never reassigned to a new session."
+        ],
+        "failure": [
+          "Null PFD, unsuccessful connection.open or caught Exception result in null in this fixed implementation.",
+          "This is not a claim that every platform failure or Error is converted to null."
+        ]
+      },
+      "limitations": [
+        "hasPermission true and a prior device list do not guarantee open success or eliminate detach races.",
+        "The API uses a name to reach the service; that does not turn the name into a durable session identity."
+      ],
+      "new_or_inherited": "new_static_mapping",
+      "source_refs": [
+        {
+          "source_id": "usb-manager",
+          "start_line": 859,
+          "end_line": 882,
+          "contains": [
+            "public UsbDeviceConnection openDevice(UsbDevice device)",
+            "String deviceName = device.getDeviceName();",
+            "pfd.close();",
+            "catch (Exception e)",
+            "return null;"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "get-fd",
+      "symbol": "android.hardware.usb.UsbDeviceConnection.getFileDescriptor",
+      "signature": "public int getFileDescriptor()",
+      "owner": "Connection retains FD ownership; native receives only a borrow.",
+      "conditions": {
+        "preconditions": [
+          "Project rule: acquire an owner-bound borrow before reading/using FD, and prohibit owner close until accepted borrowers exit."
+        ],
+        "postconditions": [
+          "Returns the native descriptor; documented unopened value is -1.",
+          "Getter does not duplicate the descriptor or transfer ownership in the normal Java-open path.",
+          "Project rule: reject negative results; integer 0 is not a failure sentinel."
+        ],
+        "failure": [
+          "JNI returns -1 if its device context is absent.",
+          "usb_device_get_fd also returns -1 when reopening writable access fails."
+        ]
+      },
+      "limitations": [
+        "getFileDescriptor directly invokes native_get_fd without the Java close mLock.",
+        "A nonnegative integer does not prove current authorization, attachment, transport readiness or a safe lifetime.",
+        "Generic usbhost getter calls reopen_writeable; do not generalize the normal Java-open path into an immutable integer for every backend path."
+      ],
+      "new_or_inherited": "new_static_mapping",
+      "source_refs": [
+        {
+          "source_id": "usb-connection",
+          "start_line": 153,
+          "end_line": 162,
+          "contains": [
+            "-1 if the device is not opened.",
+            "public int getFileDescriptor()",
+            "return native_get_fd();"
+          ]
+        },
+        {
+          "source_id": "usb-connection-jni",
+          "start_line": 79,
+          "end_line": 87,
+          "contains": [
+            "return -1;",
+            "return usb_device_get_fd(device);"
+          ]
+        },
+        {
+          "source_id": "usbhost",
+          "start_line": 393,
+          "end_line": 414,
+          "contains": [
+            "device->fd = fd;",
+            "return device->fd;"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fd-copy-at-open",
+      "symbol": "UsbDeviceConnection native_open and usb_device_new",
+      "signature": "static jboolean android_hardware_UsbDeviceConnection_open(JNIEnv*, jobject, jstring, jobject)",
+      "owner": "Intermediate PFD owns its original; connection owns the successful JNI duplicate; borrower owns neither.",
+      "conditions": {
+        "preconditions": [
+          "The service-provided PFD is passed to connection.open."
+        ],
+        "postconditions": [
+          "JNI duplicates the PFD using F_DUPFD_CLOEXEC once during opening.",
+          "usb_device_new records the duplicate as device->fd and marks writeable=1 in the normal Java-open path.",
+          "UsbManager then closes its intermediate PFD copy."
+        ],
+        "failure": [
+          "fcntl duplicate failure returns JNI_FALSE.",
+          "See framework-open-failure-boundary for overlapping cleanup sites on later failure; this contract does not certify every framework failure unwind."
+        ]
+      },
+      "limitations": [
+        "getFileDescriptor is not another dup.",
+        "Project-selectable explicit dup would require a second distinct owner/cleanup policy and is not implemented or verified here.",
+        "Dup does not preserve authorization across detach, stop or revoke."
+      ],
+      "new_or_inherited": "inherited_rechecked",
+      "source_refs": [
+        {
+          "source_id": "usb-connection-jni",
+          "start_line": 45,
+          "end_line": 65,
+          "contains": [
+            "fd = fcntl(fd, F_DUPFD_CLOEXEC, 0);",
+            "if (fd < 0)",
+            "return JNI_FALSE;"
+          ]
+        },
+        {
+          "source_id": "usbhost",
+          "start_line": 378,
+          "end_line": 383,
+          "contains": [
+            "device->fd = fd;",
+            "device->writeable = 1;"
+          ]
+        },
+        {
+          "source_id": "usb-manager",
+          "start_line": 870,
+          "end_line": 876,
+          "contains": [
+            "pfd.close();"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close-connection",
+      "symbol": "android.hardware.usb.UsbDeviceConnection.close",
+      "signature": "public void close()",
+      "owner": "Unique application connection owner invokes Java close; native borrower must not close the borrowed FD.",
+      "conditions": {
+        "preconditions": [
+          "Project rule: atomically reject new borrow first, then await all admitted native users and required driver drain evidence without holding control/publication locks."
+        ],
+        "postconditions": [
+          "Reference Java implementation synchronizes mLock and invokes native_close only while open.",
+          "Native close invokes usb_device_close and clears the context; usb_device_close closes its held fd and frees the device.",
+          "Closed connection cannot be reused; communication requires a new openDevice result."
+        ],
+        "failure": [
+          "Void return provides no structured I/O error, native transfer-drain receipt or application pixel-erasure receipt.",
+          "Project rule: unknown/failed or missing drain evidence remains pending; it cannot be converted into safe close by deadline alone."
+        ]
+      },
+      "limitations": [
+        "Java repeated-close guard does not manage external native borrowers or independently duplicated descriptors.",
+        "Driver stopping, connection closure and Java-owned pixel zeroization are distinct obligations; inherit the protocol mapping rather than treating this method as the entire stop barrier."
+      ],
+      "new_or_inherited": "new_static_mapping",
+      "source_refs": [
+        {
+          "source_id": "usb-connection",
+          "start_line": 138,
+          "end_line": 151,
+          "contains": [
+            "public void close()",
+            "synchronized (mLock)",
+            "if (isOpen())",
+            "cannot be used again"
+          ]
+        },
+        {
+          "source_id": "usb-connection-jni",
+          "start_line": 68,
+          "end_line": 76,
+          "contains": [
+            "usb_device_close(device);",
+            "env->SetLongField(thiz, field_context, 0);"
+          ]
+        },
+        {
+          "source_id": "usbhost",
+          "start_line": 358,
+          "end_line": 362,
+          "contains": [
+            "close(device->fd);",
+            "free(device);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "request-correlation-project",
+      "symbol": "Sidecar permission callback correlation",
+      "signature": "Project contract; no Android public method with this signature.",
+      "owner": "Main integration owns selection_token, attachment_epoch, authorization_revision and permission_request_nonce.",
+      "conditions": {
+        "preconditions": [
+          "Bind a fresh single-use nonce to the current selection/epoch and request-time revision before requestPermission.",
+          "Design and verify a PendingIntent/receiver association that cannot mix requests; nonce in arbitrary extras is not by itself established proof."
+        ],
+        "postconditions": [
+          "Consume only the matching current outstanding request once.",
+          "Recheck current candidate attachment observations and hasPermission before open; recheck the initiating identity after open returns.",
+          "Accepted authorization changes/revocation use monotone revisions; old results cannot restore current admission."
+        ],
+        "failure": [
+          "Deny, missing extras, stale/duplicate/mismatched results or correlation ambiguity must not open/start.",
+          "Detach/stop/revoke invalidates outstanding correlation first; late results are ignored or clean up only their own returned resource."
+        ]
+      },
+      "limitations": [
+        "These are proposed application fields, not fields guaranteed by UsbManager.",
+        "PendingIntent construction/matching, target-SDK mutability/flags and receiver-source/security enforcement were not available in the four selected inputs and remain separately required.",
+        "No atomicity is promised across callback, permission recheck and open."
+      ],
+      "new_or_inherited": "new_project_contract",
+      "source_refs": [
+        {
+          "source_id": "usb-manager",
+          "start_line": 1035,
+          "end_line": 1063,
+          "contains": [
+            "PendingIntent",
+            "containing the device passed into this call",
+            "until the device is disconnected."
+          ]
+        },
+        {
+          "source_id": "usb-manager",
+          "start_line": 959,
+          "end_line": 968,
+          "contains": [
+            "public boolean hasPermission(UsbDevice device)"
+          ]
+        },
+        {
+          "source_id": "usb-manager",
+          "start_line": 867,
+          "end_line": 882,
+          "contains": [
+            "public UsbDeviceConnection openDevice(UsbDevice device)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "borrow-owner-project",
+      "symbol": "Sidecar connection owner and native borrow ledger",
+      "signature": "Project contract; connection_owner_token + connection_generation + borrow_token.",
+      "owner": "One owner per connection; each admitted native operation holds an owner-bound borrow until its final use exits.",
+      "conditions": {
+        "preconditions": [
+          "Identity is an application owner/generation binding, never a lookup by FD number alone.",
+          "Register a borrow before getFileDescriptor/native entry; closing rejects new borrowers."
+        ],
+        "postconditions": [
+          "Only the matching owner can release its connection after all admitted users and required native operations drain.",
+          "Old callbacks, same-number reused FDs and old permission/open results cannot close or mutate a newer owner.",
+          "Explicit duplicated descriptors, if later added, require independent acquisition/failure/close accounting."
+        ],
+        "failure": [
+          "No response or uncertain native drain leaves owner and FD retained with admission revoked; it does not justify forced free or a false stopped acknowledgment."
+        ]
+      },
+      "limitations": [
+        "This is not implemented by UsbDeviceConnection.mLock or the public getter.",
+        "VID/PID, deviceName, a UsbDevice object reference and integer FD are identifiers/observations, not complete session authorization.",
+        "No new PRD product state or test number is introduced by these internal contract fields."
+      ],
+      "new_or_inherited": "new_project_contract",
+      "source_refs": [
+        {
+          "source_id": "usb-connection",
+          "start_line": 138,
+          "end_line": 162,
+          "contains": [
+            "synchronized (mLock)",
+            "return native_get_fd();"
+          ]
+        },
+        {
+          "source_id": "usb-connection-jni",
+          "start_line": 79,
+          "end_line": 87,
+          "contains": [
+            "return usb_device_get_fd(device);"
+          ]
+        },
+        {
+          "source_id": "usbhost",
+          "start_line": 358,
+          "end_line": 362,
+          "contains": [
+            "close(device->fd);"
+          ]
+        },
+        {
+          "source_id": "usb-manager",
+          "start_line": 834,
+          "end_line": 837,
+          "contains": [
+            "USB device name is the key"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "framework-open-failure-boundary",
+      "symbol": "JNI open failure cleanup vs usb_device_new failure cleanup",
+      "signature": "Static cross-file observation; not a new API or project implementation.",
+      "owner": "Fixed framework/reference implementation has both visible close sites; project adds no speculative bare-FD cleanup.",
+      "conditions": {
+        "preconditions": [
+          "JNI calls usb_device_new with its newly duplicated descriptor."
+        ],
+        "postconditions": [
+          "On null return JNI contains close(fd).",
+          "The callee failure label also contains close(fd) before returning NULL."
+        ],
+        "failure": [
+          "This prevents certifying that every fixed framework open-failure path closes its descriptor exactly once."
+        ]
+      },
+      "limitations": [
+        "No runtime reproduction, exploitability assessment, target-firmware claim or framework patch performed.",
+        "Normal successful-path connection ownership remains unchanged.",
+        "Do not compensate by closing a guessed/reused raw integer in application code."
+      ],
+      "new_or_inherited": "new_static_mapping",
+      "source_refs": [
+        {
+          "source_id": "usb-connection-jni",
+          "start_line": 55,
+          "end_line": 65,
+          "contains": [
+            "struct usb_device* device = usb_device_new(deviceNameStr, fd);",
+            "close(fd);"
+          ]
+        },
+        {
+          "source_id": "usbhost",
+          "start_line": 385,
+          "end_line": 390,
+          "contains": [
+            "failed:",
+            "close(fd);",
+            "return NULL;"
+          ]
+        }
+      ]
+    }
+  ],
+  "companion_document": {
+    "path": "android/uvc-sim/interface-contract/ANDROID_CONTRACT.md",
+    "bytes": 12249,
+    "sha256": "d0c4d2ca0d8f3c1d0090a47a7029e298a6e19861b2e317126fdd94d0032f999b"
+  },
+  "replay": {
+    "cache_root_hint": "../sidecar-uvc-route/android/uvc-sim/build/routes",
+    "default": "offline read-only; missing/mismatched input fails; no refresh or network fallback",
+    "tooling": "Python standard library only",
+    "source_count": 4,
+    "contract_count": 12,
+    "source_ref_count": 27
+  },
+  "excluded": [
+    "Actual permission PendingIntent construction/flags/receiver implementation",
+    "Android adapter or JNI code",
+    "UVC driver/transfer drain implementation",
+    "Target OEM, card or hub validation",
+    "New PRD states or test numbers",
+    "Native build/package/license gate approval"
+  ]
+}

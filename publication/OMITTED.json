@@ -1,0 +1,387 @@
+{
+  "main_excluded_files": [
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/index.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/inputs.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/pytest.stderr.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/pytest.stdout.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/result.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/README.md",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/android/app/src/main/java/local/sidecar/copilot/AudioCaptureCoordinator.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/android/app/src/main/java/local/sidecar/copilot/AudioSegmentStore.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/android/app/src/main/java/local/sidecar/copilot/CaptureService.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/android/tests/BufferedCaptureChecks.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/android/tests/RangeBarrierChecks.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/docs/DURABLE_TRANSFER.md",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/pyproject.toml",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/__init__.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/api.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/core.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/demo.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/evidence.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/process_lock.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/server.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/transfer_contract.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/transfer_http.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/transfer_queue.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/transfer_receiver.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/sidecar/transfer_server.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_core.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_evidence_api.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_faults.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_http_loopback.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_transfer_http.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_transfer_queue.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_transfer_receiver.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182354Z/source/tests/test_transfer_server.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/index.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/inputs.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/pytest.stderr.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/pytest.stdout.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/result.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/README.md",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/android/app/src/main/java/local/sidecar/copilot/AudioCaptureCoordinator.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/android/app/src/main/java/local/sidecar/copilot/AudioSegmentStore.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/android/app/src/main/java/local/sidecar/copilot/CaptureService.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/android/tests/BufferedCaptureChecks.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/android/tests/RangeBarrierChecks.java",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/docs/DURABLE_TRANSFER.md",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/pyproject.toml",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/__init__.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/api.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/core.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/demo.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/evidence.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/process_lock.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/server.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/transfer_contract.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/transfer_http.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/transfer_queue.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/transfer_receiver.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/sidecar/transfer_server.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_cancel_receipt.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_cancel_receipt_failures.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_core.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_evidence_api.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_faults.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_http_loopback.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_transfer_http.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_transfer_queue.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_transfer_receiver.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/durable-transfer-20261110T182602Z/source/tests/test_transfer_server.py",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/transfer-cli-smoke-20261110T182656Z/first.stderr.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/transfer-cli-smoke-20261110T182656Z/first.stdout.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/transfer-cli-smoke-20261110T182656Z/index.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/transfer-cli-smoke-20261110T182656Z/receiver/receiver.sqlite",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/transfer-cli-smoke-20261110T182656Z/reopen.stderr.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/transfer-cli-smoke-20261110T182656Z/reopen.stdout.log",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    },
+    {
+      "source_group": "main",
+      "path": "validation/transfer-cli-smoke-20261110T182656Z/result.json",
+      "reason": "Generated evidence/cache/runtime/private or third-party binary excluded"
+    }
+  ],
+  "other_excluded_categories": [
+    "all build/cache directories",
+    "private signing material",
+    "raw runtime evidence and databases",
+    "upstream downloaded source and binaries",
+    "older APKs and unsigned/aligned build intermediates",
+    "local Git history"
+  ]
+}

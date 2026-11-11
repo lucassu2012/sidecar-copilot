@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sidecar-copilot-g0"
+version = "0.1.0"
+description = "Synthetic-only executable reference for frozen Sidecar Copilot PRD v1.5"
+requires-python = ">=3.11"
+dependencies = ["cryptography==48.0.0"]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "httpx==0.28.1", "fastapi==0.136.1", "tzdata"]
+api = ["fastapi==0.136.1", "uvicorn==0.46.0", "tzdata"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

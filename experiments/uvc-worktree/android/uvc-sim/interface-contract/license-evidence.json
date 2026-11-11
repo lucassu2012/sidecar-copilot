@@ -1,0 +1,3460 @@
+{
+  "schema": 1,
+  "study": "fixed-source-license-boundary-and-generated-control-text-provenance",
+  "observed_utc_date": "2026-11-10",
+  "repository_baseline": "3dbbcb17f26816689d4b51b714996d937b9f4acd",
+  "baseline_commit": "3dbbcb17f26816689d4b51b714996d937b9f4acd",
+  "scope": "Selected text evidence only; no upstream code execution, regeneration, native build, binary inspection or device use.",
+  "cache_roots": {
+    "new": "android/uvc-sim/build/interface-contract/licenses",
+    "route": "../sidecar-uvc-route/android/uvc-sim/build/routes"
+  },
+  "hash_semantics": {
+    "wire_sha256": "SHA-256 of the stored observed text representation. For connector content this is UTF-8 encoding of content, not an assertion about raw HTTP transport bytes.",
+    "source_sha256": "Same source bytes: no newline, Unicode, or JSON normalization.",
+    "git_blob_sha1": "SHA-1(blob + space + decimal byte length + NUL + bytes), verified against fixed tree member; null for API JSON metadata.",
+    "metadata": "Inherited metadata bytes remain pinned to the existing lock. No JSON reserialization/bootstrap is claimed here."
+  },
+  "inherited_artifacts": [
+    {
+      "path": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "bytes": 21783,
+      "sha256": "8ff898d5acce58c697f0b3326555cfdfb65c466572f5e9c1ec234a9b72e56ae4"
+    },
+    {
+      "path": "android/uvc-sim/protocol-research/source-baseline.json",
+      "bytes": 21573,
+      "sha256": "fec52d6acc9a39d5e41301a9136dacef6e34e4659bbcf401da78b0688c2090bd"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/upstream-driver/REPORT.md",
+      "bytes": 21732,
+      "sha256": "dd46a7c7217f167ebc46353379468ec9667acb4af2609dac7627387a5c3795e4"
+    }
+  ],
+  "projects": {
+    "libusb": {
+      "tag": "v1.0.30",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f"
+    },
+    "libuvc": {
+      "tag": "v0.0.9",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957"
+    }
+  },
+  "sources": [
+    {
+      "id": "libusb-commit.json",
+      "kind": "git_commit",
+      "url": "https://api.github.com/repos/libusb/libusb/git/commits/87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": null,
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb-commit.json",
+      "encoding": "utf-8",
+      "bytes": 1139,
+      "wire_sha256": "b867fafe29c845f7f66c23889b434ebe58776a9e74e80950da2922f8d07e4ab7",
+      "source_sha256": "b867fafe29c845f7f66c23889b434ebe58776a9e74e80950da2922f8d07e4ab7",
+      "git_blob_sha1": null,
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb-commit.json"
+    },
+    {
+      "id": "libusb-tree.json",
+      "kind": "git_tree",
+      "url": "https://api.github.com/repos/libusb/libusb/git/trees/1dab476e854bb3605113e4ff3e78f9130aac5d95?recursive=1",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": null,
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb-tree.json",
+      "encoding": "utf-8",
+      "bytes": 42820,
+      "wire_sha256": "efba3c77e11c1344f701d124551b1496099654ff031316f6a76ddbb9a269d43d",
+      "source_sha256": "efba3c77e11c1344f701d124551b1496099654ff031316f6a76ddbb9a269d43d",
+      "git_blob_sha1": null,
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb-tree.json"
+    },
+    {
+      "id": "libuvc-commit.json",
+      "kind": "git_commit",
+      "url": "https://api.github.com/repos/libuvc/libuvc/git/commits/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": null,
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc-commit.json",
+      "encoding": "utf-8",
+      "bytes": 2620,
+      "wire_sha256": "a84ef6dd1a74ba525aa7f1c216ba9c2670cc204bbc51e89184281212bdc1bfe9",
+      "source_sha256": "a84ef6dd1a74ba525aa7f1c216ba9c2670cc204bbc51e89184281212bdc1bfe9",
+      "git_blob_sha1": null,
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc-commit.json"
+    },
+    {
+      "id": "libuvc-tree.json",
+      "kind": "git_tree",
+      "url": "https://api.github.com/repos/libuvc/libuvc/git/trees/aba6b4797dba55ec02e394216f5a346ed8b8271f?recursive=1",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": null,
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc-tree.json",
+      "encoding": "utf-8",
+      "bytes": 18601,
+      "wire_sha256": "26ee08e6142c9c9666d607529a6a71b186f3c288aed4c4d3dc9b38970dae6440",
+      "source_sha256": "26ee08e6142c9c9666d607529a6a71b186f3c288aed4c4d3dc9b38970dae6440",
+      "git_blob_sha1": null,
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc-tree.json"
+    },
+    {
+      "id": "libusb/COPYING",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/COPYING",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "COPYING",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/COPYING",
+      "encoding": "utf-8",
+      "bytes": 26436,
+      "wire_sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a",
+      "source_sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a",
+      "git_blob_sha1": "5ab7695ab8cabe0c5c8a814bb0ab1e8066578fbb",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/COPYING",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "COPYING",
+        "git_blob_sha1": "5ab7695ab8cabe0c5c8a814bb0ab1e8066578fbb"
+      }
+    },
+    {
+      "id": "libusb/android/jni/libusb.mk",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/android/jni/libusb.mk",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "android/jni/libusb.mk",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/android/jni/libusb.mk",
+      "encoding": "utf-8",
+      "bytes": 1996,
+      "wire_sha256": "ea80ada1ec9d777bd8ff0139eb787dc048eb7a9bbd18bf881ce1dc9ac54d5bbe",
+      "source_sha256": "ea80ada1ec9d777bd8ff0139eb787dc048eb7a9bbd18bf881ce1dc9ac54d5bbe",
+      "git_blob_sha1": "8786626eb88718bd55e7de9df77903317ff8f133",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/android/jni/libusb.mk",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "android/jni/libusb.mk",
+        "git_blob_sha1": "8786626eb88718bd55e7de9df77903317ff8f133"
+      }
+    },
+    {
+      "id": "libusb/libusb/core.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/core.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/core.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/core.c",
+      "encoding": "utf-8",
+      "bytes": 108326,
+      "wire_sha256": "33db091fdf75b690f9c5daf65ca8e3124978e897c2824d97fbc97567afea1d7b",
+      "source_sha256": "33db091fdf75b690f9c5daf65ca8e3124978e897c2824d97fbc97567afea1d7b",
+      "git_blob_sha1": "507066af16560b2ea1bf564b8aac58f6fcb30b68",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/core.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/core.c",
+        "git_blob_sha1": "507066af16560b2ea1bf564b8aac58f6fcb30b68"
+      }
+    },
+    {
+      "id": "libusb/libusb/descriptor.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/descriptor.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/descriptor.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/descriptor.c",
+      "encoding": "utf-8",
+      "bytes": 55764,
+      "wire_sha256": "4e80077f28a033ba07befceac0347a64ea0e23c34c93b96cfaf8b188d69e401d",
+      "source_sha256": "4e80077f28a033ba07befceac0347a64ea0e23c34c93b96cfaf8b188d69e401d",
+      "git_blob_sha1": "15130e658956935bddeaa84e7051e0d2f2ab151e",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/descriptor.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/descriptor.c",
+        "git_blob_sha1": "15130e658956935bddeaa84e7051e0d2f2ab151e"
+      }
+    },
+    {
+      "id": "libusb/libusb/hotplug.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/hotplug.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/hotplug.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/hotplug.c",
+      "encoding": "utf-8",
+      "bytes": 15858,
+      "wire_sha256": "7cf1e723dbae5427dd93fe8419d8efa3f3502d6def30a763b8c210e9780529fb",
+      "source_sha256": "7cf1e723dbae5427dd93fe8419d8efa3f3502d6def30a763b8c210e9780529fb",
+      "git_blob_sha1": "026e11d5a39ac1826bf8cad0c8e0d66e198e3fb2",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/hotplug.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/hotplug.c",
+        "git_blob_sha1": "026e11d5a39ac1826bf8cad0c8e0d66e198e3fb2"
+      }
+    },
+    {
+      "id": "libusb/libusb/io.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/io.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/io.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/io.c",
+      "encoding": "utf-8",
+      "bytes": 112226,
+      "wire_sha256": "c83a9e14b9ff8b9566e42d23d1e90c919e223fd1e04721c5ca1a3aff13239a3d",
+      "source_sha256": "c83a9e14b9ff8b9566e42d23d1e90c919e223fd1e04721c5ca1a3aff13239a3d",
+      "git_blob_sha1": "3dfc6c64b23e422fc446a13544405aca354d0675",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/io.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/io.c",
+        "git_blob_sha1": "3dfc6c64b23e422fc446a13544405aca354d0675"
+      }
+    },
+    {
+      "id": "libusb/libusb/sync.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/sync.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/sync.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/sync.c",
+      "encoding": "utf-8",
+      "bytes": 13110,
+      "wire_sha256": "3bf6e788084956a3226933580f2cb2957c2de9e0a2ebeeec1a26e6c7529bfa68",
+      "source_sha256": "3bf6e788084956a3226933580f2cb2957c2de9e0a2ebeeec1a26e6c7529bfa68",
+      "git_blob_sha1": "733927d9622536a6f28c39c380d5ce457019ff3d",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/sync.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/sync.c",
+        "git_blob_sha1": "733927d9622536a6f28c39c380d5ce457019ff3d"
+      }
+    },
+    {
+      "id": "libusb/libusb/strerror.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/strerror.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/strerror.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/strerror.c",
+      "encoding": "utf-8",
+      "bytes": 8559,
+      "wire_sha256": "17ee9b6cf5b07b39adce9806339799a5085fde8c5f17ed86af324b856ca7d1ec",
+      "source_sha256": "17ee9b6cf5b07b39adce9806339799a5085fde8c5f17ed86af324b856ca7d1ec",
+      "git_blob_sha1": "eb355034b198fa04178456f9146999b34b70419c",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/strerror.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/strerror.c",
+        "git_blob_sha1": "eb355034b198fa04178456f9146999b34b70419c"
+      }
+    },
+    {
+      "id": "libusb/libusb/os/linux_usbfs.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/linux_usbfs.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/os/linux_usbfs.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/os/linux_usbfs.c",
+      "encoding": "utf-8",
+      "bytes": 81273,
+      "wire_sha256": "ac4401cec575cc2f12b71377cced5e5943e72366eedeffbe42e951134b26bd54",
+      "source_sha256": "ac4401cec575cc2f12b71377cced5e5943e72366eedeffbe42e951134b26bd54",
+      "git_blob_sha1": "74e73f9a81091f854167c6fe4a40b104074bdc22",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/os/linux_usbfs.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/os/linux_usbfs.c",
+        "git_blob_sha1": "74e73f9a81091f854167c6fe4a40b104074bdc22"
+      }
+    },
+    {
+      "id": "libusb/libusb/os/events_posix.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/events_posix.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/os/events_posix.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/os/events_posix.c",
+      "encoding": "utf-8",
+      "bytes": 9187,
+      "wire_sha256": "aabddcc6ca86faba726ca87862eef9fc5d3b3168faef99c5be22827ac5b66ec0",
+      "source_sha256": "aabddcc6ca86faba726ca87862eef9fc5d3b3168faef99c5be22827ac5b66ec0",
+      "git_blob_sha1": "bf984b91a68d0034012ac8df4176d3f49256cb69",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/os/events_posix.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/os/events_posix.c",
+        "git_blob_sha1": "bf984b91a68d0034012ac8df4176d3f49256cb69"
+      }
+    },
+    {
+      "id": "libusb/libusb/os/threads_posix.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/threads_posix.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/os/threads_posix.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/os/threads_posix.c",
+      "encoding": "utf-8",
+      "bytes": 3319,
+      "wire_sha256": "779daa724575cd82c607563c9fe396b53d6f20c6a512444661e29ac30b82210a",
+      "source_sha256": "779daa724575cd82c607563c9fe396b53d6f20c6a512444661e29ac30b82210a",
+      "git_blob_sha1": "786a334999d00c98bd41fbc201740feddaf3e0c2",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/os/threads_posix.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/os/threads_posix.c",
+        "git_blob_sha1": "786a334999d00c98bd41fbc201740feddaf3e0c2"
+      }
+    },
+    {
+      "id": "libusb/libusb/os/linux_netlink.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/linux_netlink.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/os/linux_netlink.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libusb/libusb/os/linux_netlink.c",
+      "encoding": "utf-8",
+      "bytes": 10377,
+      "wire_sha256": "6ad9b928501ad36dd9fffdbe713a9cdd9d4533b8324190bd060001528d8374f0",
+      "source_sha256": "6ad9b928501ad36dd9fffdbe713a9cdd9d4533b8324190bd060001528d8374f0",
+      "git_blob_sha1": "899084f222711db823cc0362a137360a42377354",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/os/linux_netlink.c",
+      "tree_membership": {
+        "tree_source_id": "libusb-tree.json",
+        "commit_source_id": "libusb-commit.json",
+        "path": "libusb/os/linux_netlink.c",
+        "git_blob_sha1": "899084f222711db823cc0362a137360a42377354"
+      }
+    },
+    {
+      "id": "libuvc/LICENSE.txt",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/LICENSE.txt",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "LICENSE.txt",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/LICENSE.txt",
+      "encoding": "utf-8",
+      "bytes": 1522,
+      "wire_sha256": "57a7ba48475cb7f0aaddfb79ef32e742a19901908f0287b6827da336477b212e",
+      "source_sha256": "57a7ba48475cb7f0aaddfb79ef32e742a19901908f0287b6827da336477b212e",
+      "git_blob_sha1": "4acc5ddeaffa636e6c31c3545d497c2e1f3f407b",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/LICENSE.txt",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "LICENSE.txt",
+        "git_blob_sha1": "4acc5ddeaffa636e6c31c3545d497c2e1f3f407b"
+      }
+    },
+    {
+      "id": "libuvc/CMakeLists.txt",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/CMakeLists.txt",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "CMakeLists.txt",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/CMakeLists.txt",
+      "encoding": "utf-8",
+      "bytes": 8326,
+      "wire_sha256": "6ae03d315ee9a3e4ada21d8519a24a702a2104df1d8a5ba8f60274c76dee6dcd",
+      "source_sha256": "6ae03d315ee9a3e4ada21d8519a24a702a2104df1d8a5ba8f60274c76dee6dcd",
+      "git_blob_sha1": "57cacb0d456daa455d7141a9373afbfced866da2",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/CMakeLists.txt",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "CMakeLists.txt",
+        "git_blob_sha1": "57cacb0d456daa455d7141a9373afbfced866da2"
+      }
+    },
+    {
+      "id": "libuvc/include/utlist.h",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/include/utlist.h",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "include/utlist.h",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/include/utlist.h",
+      "encoding": "utf-8",
+      "bytes": 67496,
+      "wire_sha256": "4e134ae0e448a1d57a9fb38cb0597859d4c25959d917073b8b35c508e35e76fc",
+      "source_sha256": "4e134ae0e448a1d57a9fb38cb0597859d4c25959d917073b8b35c508e35e76fc",
+      "git_blob_sha1": "bb097a2668d0336de2c8b734608e977f02c88fbc",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/include/utlist.h",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "include/utlist.h",
+        "git_blob_sha1": "bb097a2668d0336de2c8b734608e977f02c88fbc"
+      }
+    },
+    {
+      "id": "libuvc/src/ctrl-gen.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/ctrl-gen.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/ctrl-gen.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/ctrl-gen.c",
+      "encoding": "utf-8",
+      "bytes": 57243,
+      "wire_sha256": "65b88f17f403bf3f11da0a246349d4297d2f84bd09c46b7b89255e3ca32f9f38",
+      "source_sha256": "65b88f17f403bf3f11da0a246349d4297d2f84bd09c46b7b89255e3ca32f9f38",
+      "git_blob_sha1": "0b99f3d784239a16c62159a9f2da79ff1c150bc1",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/ctrl-gen.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/ctrl-gen.c",
+        "git_blob_sha1": "0b99f3d784239a16c62159a9f2da79ff1c150bc1"
+      }
+    },
+    {
+      "id": "libuvc/src/frame-mjpeg.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/frame-mjpeg.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/frame-mjpeg.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/frame-mjpeg.c",
+      "encoding": "utf-8",
+      "bytes": 10391,
+      "wire_sha256": "a9584ebe1cff99c7f5d4664faacc77786006d9ae356069268b0dbf8c2a4d9b65",
+      "source_sha256": "a9584ebe1cff99c7f5d4664faacc77786006d9ae356069268b0dbf8c2a4d9b65",
+      "git_blob_sha1": "44e468c9c26270ee5b3d7afd13a751e169e69895",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/frame-mjpeg.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/frame-mjpeg.c",
+        "git_blob_sha1": "44e468c9c26270ee5b3d7afd13a751e169e69895"
+      }
+    },
+    {
+      "id": "libuvc/src/ctrl.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/ctrl.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/ctrl.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/ctrl.c",
+      "encoding": "utf-8",
+      "bytes": 5633,
+      "wire_sha256": "d21fb90d2b953d7f9505c234bbd2a08b0eae6ea5741b76433bfca12a0fcb25f1",
+      "source_sha256": "d21fb90d2b953d7f9505c234bbd2a08b0eae6ea5741b76433bfca12a0fcb25f1",
+      "git_blob_sha1": "3dffe790736a9fe8d1b2ca73056da15246dfb6eb",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/ctrl.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/ctrl.c",
+        "git_blob_sha1": "3dffe790736a9fe8d1b2ca73056da15246dfb6eb"
+      }
+    },
+    {
+      "id": "libuvc/src/device.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/device.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/device.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/device.c",
+      "encoding": "utf-8",
+      "bytes": 60988,
+      "wire_sha256": "a350afb1e39239d223b1e937fa4375505c9339019837d3c61ab9125062af04d2",
+      "source_sha256": "a350afb1e39239d223b1e937fa4375505c9339019837d3c61ab9125062af04d2",
+      "git_blob_sha1": "180432e94be77b344e32cf8f2be30b36eae74586",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/device.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/device.c",
+        "git_blob_sha1": "180432e94be77b344e32cf8f2be30b36eae74586"
+      }
+    },
+    {
+      "id": "libuvc/src/diag.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/diag.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/diag.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/diag.c",
+      "encoding": "utf-8",
+      "bytes": 13846,
+      "wire_sha256": "1aeac1754326bff2dd284439fe0123f00147be9dc915ee5502c97e2f7140b927",
+      "source_sha256": "1aeac1754326bff2dd284439fe0123f00147be9dc915ee5502c97e2f7140b927",
+      "git_blob_sha1": "221c767ed1987c4dd93ba312bf126ed5a719e385",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/diag.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/diag.c",
+        "git_blob_sha1": "221c767ed1987c4dd93ba312bf126ed5a719e385"
+      }
+    },
+    {
+      "id": "libuvc/src/frame.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/frame.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/frame.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/frame.c",
+      "encoding": "utf-8",
+      "bytes": 16801,
+      "wire_sha256": "641f326cdbe283914ef11f547df7967c4b91ba92158d3886cec0c6d6391e6b1b",
+      "source_sha256": "641f326cdbe283914ef11f547df7967c4b91ba92158d3886cec0c6d6391e6b1b",
+      "git_blob_sha1": "5d240043ae1e62a974fbfb31d4b03811cadf1c50",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/frame.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/frame.c",
+        "git_blob_sha1": "5d240043ae1e62a974fbfb31d4b03811cadf1c50"
+      }
+    },
+    {
+      "id": "libuvc/src/init.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/init.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/init.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/init.c",
+      "encoding": "utf-8",
+      "bytes": 5316,
+      "wire_sha256": "a4d085d05a1b6c3350ee8ca199e27c852caee982679a629bd5c90a65b6c06631",
+      "source_sha256": "a4d085d05a1b6c3350ee8ca199e27c852caee982679a629bd5c90a65b6c06631",
+      "git_blob_sha1": "48028357468af549bab368ac24a7e412f9915644",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/init.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/init.c",
+        "git_blob_sha1": "48028357468af549bab368ac24a7e412f9915644"
+      }
+    },
+    {
+      "id": "libuvc/src/stream.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/stream.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/stream.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/stream.c",
+      "encoding": "utf-8",
+      "bytes": 51005,
+      "wire_sha256": "03c5895161f45160656e07169a9ea910986d077fdb9fe1206eacf92586e6eb27",
+      "source_sha256": "03c5895161f45160656e07169a9ea910986d077fdb9fe1206eacf92586e6eb27",
+      "git_blob_sha1": "ea261e45f36de8dd498251ef6f24bfef52b67d56",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/stream.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/stream.c",
+        "git_blob_sha1": "ea261e45f36de8dd498251ef6f24bfef52b67d56"
+      }
+    },
+    {
+      "id": "libuvc/src/misc.c",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/misc.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/misc.c",
+      "cache_root": "route",
+      "cache_path": "upstream-driver/libuvc/src/misc.c",
+      "encoding": "utf-8",
+      "bytes": 2043,
+      "wire_sha256": "2bb49ea467af99a2c737ebbccbf6c3a1c13a52d308c338a320599514b6f9727e",
+      "source_sha256": "2bb49ea467af99a2c737ebbccbf6c3a1c13a52d308c338a320599514b6f9727e",
+      "git_blob_sha1": "8ce850fdc44fc619058ed8f2693add5d3aa95b44",
+      "byte_representation": "inherited locked cache bytes, unnormalized",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/misc.c",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/misc.c",
+        "git_blob_sha1": "8ce850fdc44fc619058ed8f2693add5d3aa95b44"
+      }
+    },
+    {
+      "id": "libuvc/src/ctrl-gen.py",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/ctrl-gen.py",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/ctrl-gen.py",
+      "cache_root": "new",
+      "cache_path": "libuvc/src/ctrl-gen.py",
+      "encoding": "utf-8",
+      "bytes": 10235,
+      "wire_sha256": "8f7051a8d4446e55163e47a072157d04ea2883e9871c4e19269d3b6a6ad201a5",
+      "source_sha256": "8f7051a8d4446e55163e47a072157d04ea2883e9871c4e19269d3b6a6ad201a5",
+      "git_blob_sha1": "68994453affce7a76eacf92eae5d285b7fec24bf",
+      "byte_representation": "connector UTF-8 content, unnormalized",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "src/ctrl-gen.py",
+        "git_blob_sha1": "68994453affce7a76eacf92eae5d285b7fec24bf"
+      }
+    },
+    {
+      "id": "libuvc/standard-units.yaml",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/standard-units.yaml",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "standard-units.yaml",
+      "cache_root": "new",
+      "cache_path": "libuvc/standard-units.yaml",
+      "encoding": "utf-8",
+      "bytes": 13101,
+      "wire_sha256": "cb97e20756479e9db58fd17f795476fa8d5647f4e601a922121d7e4200152bee",
+      "source_sha256": "cb97e20756479e9db58fd17f795476fa8d5647f4e601a922121d7e4200152bee",
+      "git_blob_sha1": "198c401647a225070593f04b06bdac020cc7f02a",
+      "byte_representation": "connector UTF-8 content, unnormalized",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "standard-units.yaml",
+        "git_blob_sha1": "198c401647a225070593f04b06bdac020cc7f02a"
+      }
+    },
+    {
+      "id": "libuvc/README.md",
+      "kind": "text",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/README.md",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "README.md",
+      "cache_root": "new",
+      "cache_path": "libuvc/README.md",
+      "encoding": "utf-8",
+      "bytes": 1747,
+      "wire_sha256": "ff9983a8a096ea8f3aed42c721c19312adc8a0cd8080a18894a90a98d150a844",
+      "source_sha256": "ff9983a8a096ea8f3aed42c721c19312adc8a0cd8080a18894a90a98d150a844",
+      "git_blob_sha1": "031b755610c9c97f56d0d1ea0f9e239945d45c5a",
+      "byte_representation": "connector UTF-8 content, unnormalized",
+      "tree_membership": {
+        "tree_source_id": "libuvc-tree.json",
+        "commit_source_id": "libuvc-commit.json",
+        "path": "README.md",
+        "git_blob_sha1": "031b755610c9c97f56d0d1ea0f9e239945d45c5a"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "libusb-license-text",
+      "statement": "Root COPYING is the LGPL version 2.1 text; the or-later election is established separately by selected file notices.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libusb/COPYING",
+          "start_line": 1,
+          "end_line": 7,
+          "contains": [
+            "GNU LESSER GENERAL PUBLIC LICENSE",
+            "Version 2.1, February 1999"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "selected-libusb-c-grants",
+      "statement": "The ten C files named by the fixed Android libusb.mk each explicitly elect LGPL-2.1-or-later; this is a selected-source statement, not a complete header or binary inventory.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libusb/android/jni/libusb.mk",
+          "start_line": 27,
+          "end_line": 37,
+          "contains": [
+            "libusb/core.c",
+            "libusb/os/linux_netlink.c"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/core.c",
+          "start_line": 1,
+          "end_line": 11,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/descriptor.c",
+          "start_line": 1,
+          "end_line": 10,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/hotplug.c",
+          "start_line": 1,
+          "end_line": 10,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/io.c",
+          "start_line": 1,
+          "end_line": 12,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/sync.c",
+          "start_line": 1,
+          "end_line": 11,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/strerror.c",
+          "start_line": 1,
+          "end_line": 8,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/os/linux_usbfs.c",
+          "start_line": 1,
+          "end_line": 13,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/os/events_posix.c",
+          "start_line": 1,
+          "end_line": 9,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/os/threads_posix.c",
+          "start_line": 1,
+          "end_line": 10,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/os/linux_netlink.c",
+          "start_line": 1,
+          "end_line": 12,
+          "contains": [
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "libusb-shared-build-is-not-compliance-proof",
+      "statement": "libusb.mk selects BUILD_SHARED_LIBRARY. LGPL section 6 additionally addresses notices, user modification/debugging and alternative distribution mechanisms; a build flag alone does not demonstrate the chosen mechanism works in an Android package.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libusb/android/jni/libusb.mk",
+          "start_line": 60,
+          "end_line": 60,
+          "contains": [
+            "BUILD_SHARED_LIBRARY"
+          ]
+        },
+        {
+          "source_id": "libusb/COPYING",
+          "start_line": 276,
+          "end_line": 309,
+          "contains": [
+            "reverse",
+            "You must give prominent notice",
+            "complete corresponding",
+            "Use a suitable shared library mechanism",
+            "will operate properly with a modified version"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "libuvc-root-grant",
+      "statement": "Fixed libuvc root LICENSE.txt positively provides the three-clause BSD repository-level grant and Ken Tossell notice. It is distinct from per-file notices and is not a proof of each contribution history.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/LICENSE.txt",
+          "start_line": 1,
+          "end_line": 31,
+          "contains": [
+            "Copyright (C) 2010-2015 Ken Tossell",
+            "Redistribution and use in source and binary forms",
+            "Neither the name of the author"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "selected-libuvc-c-notices",
+      "statement": "Seven non-generated base C files each contain their own BSD three-clause notice for Ken Tossell 2010-2012.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/src/ctrl.c",
+          "start_line": 1,
+          "end_line": 33,
+          "contains": [
+            "Copyright (C) 2010-2012 Ken Tossell",
+            "Redistributions in binary form",
+            "Neither the name of the author"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/device.c",
+          "start_line": 1,
+          "end_line": 33,
+          "contains": [
+            "Copyright (C) 2010-2012 Ken Tossell",
+            "Redistributions in binary form",
+            "Neither the name of the author"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/diag.c",
+          "start_line": 1,
+          "end_line": 33,
+          "contains": [
+            "Copyright (C) 2010-2012 Ken Tossell",
+            "Redistributions in binary form",
+            "Neither the name of the author"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/frame.c",
+          "start_line": 1,
+          "end_line": 33,
+          "contains": [
+            "Copyright (C) 2010-2012 Ken Tossell",
+            "Redistributions in binary form",
+            "Neither the name of the author"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/init.c",
+          "start_line": 1,
+          "end_line": 33,
+          "contains": [
+            "Copyright (C) 2010-2012 Ken Tossell",
+            "Redistributions in binary form",
+            "Neither the name of the author"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/stream.c",
+          "start_line": 1,
+          "end_line": 33,
+          "contains": [
+            "Copyright (C) 2010-2012 Ken Tossell",
+            "Redistributions in binary form",
+            "Neither the name of the author"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/misc.c",
+          "start_line": 1,
+          "end_line": 33,
+          "contains": [
+            "Copyright (C) 2010-2012 Ken Tossell",
+            "Redistributions in binary form",
+            "Neither the name of the author"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utlist-notice",
+      "statement": "Bundled utlist.h self-identifies 2.0.2 and has Troy D. Hanson 2007-2017 BSD-1-Clause text; preserve this separate notice. This inspection does not establish a complete external uthash release identity.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/include/utlist.h",
+          "start_line": 1,
+          "end_line": 27,
+          "contains": [
+            "Copyright (c) 2007-2017, Troy D. Hanson",
+            "Redistributions of source code must retain",
+            "#define UTLIST_VERSION 2.0.2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "generated-c-marker",
+      "statement": "Committed ctrl-gen.c explicitly names ctrl-gen.py def as its generation source and contains a shared generated prologue.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1,
+          "end_line": 6,
+          "contains": [
+            "AUTO-GENERATED",
+            "ctrl-gen.py def",
+            "REQ_TYPE_GET = 0xa1"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.py",
+          "start_line": 279,
+          "end_line": 287,
+          "contains": [
+            "AUTO-GENERATED",
+            "ctrl-gen.py def",
+            "REQ_TYPE_GET = 0xa1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inline-generator-templates",
+      "statement": "GETTER_TEMPLATE and SETTER_TEMPLATE are embedded in the fixed Python file and gen_ctrl formats them using control metadata; no separate template is read in this examined generator.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/src/ctrl-gen.py",
+          "start_line": 74,
+          "end_line": 127,
+          "contains": [
+            "GETTER_TEMPLATE =",
+            "SETTER_TEMPLATE =",
+            "uvc_get_{control_name}",
+            "uvc_set_{control_name}"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.py",
+          "start_line": 179,
+          "end_line": 202,
+          "contains": [
+            "control_code = 'UVC_'",
+            "return GETTER_TEMPLATE.format(",
+            "SETTER_TEMPLATE.format("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explicit-generator-input",
+      "statement": "The generator accepts -i/--input and reads supplied YAML files with SafeLoader. inputs starts empty; the generated header shorthand supplies no input, so it is not a complete reconstruction recipe. standard-units.yaml is an observed matching input candidate in the same tree, not a proven historical invocation.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/src/ctrl-gen.py",
+          "start_line": 239,
+          "end_line": 258,
+          "contains": [
+            "[-i|--input FILE]",
+            "inputs = []",
+            "inputs.append(val)"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.py",
+          "start_line": 272,
+          "end_line": 277,
+          "contains": [
+            "for input_file in inputs:",
+            "with open(input_file, \"r\") as fp:",
+            "yaml.load(fp, Loader=yaml.SafeLoader)['units']"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.py",
+          "start_line": 298,
+          "end_line": 301,
+          "contains": [
+            "unit_details['controls'].items()",
+            "print(code)"
+          ]
+        },
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 1,
+          "end_line": 15,
+          "contains": [
+            "units:",
+            "camera_terminal:",
+            "scanning_mode:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "committed-generated-c-is-build-input",
+      "statement": "The examined CMakeLists.txt compiles committed src/ctrl-gen.c as a base source and links LibUSB. It does not declare a ctrl-gen.py/standard-units generation rule; this is a statement about this file, not every possible build path.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/CMakeLists.txt",
+          "start_line": 62,
+          "end_line": 71,
+          "contains": [
+            "set(SOURCES",
+            "src/ctrl-gen.c"
+          ]
+        },
+        {
+          "source_id": "libuvc/CMakeLists.txt",
+          "start_line": 152,
+          "end_line": 155,
+          "contains": [
+            "PRIVATE LibUSB::LibUSB"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optional-jpeg-source-and-library",
+      "statement": "The JPEG branch is conditional in CMake; it can add frame-mjpeg.c and link JPEG::JPEG. Source and actual selected JPEG implementation must be inventoried separately. DISABLE_JPEG is not permission to remove a required capture format.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/CMakeLists.txt",
+          "start_line": 27,
+          "end_line": 27,
+          "contains": [
+            "option(DISABLE_JPEG \"Disable JPEG support\" OFF)"
+          ]
+        },
+        {
+          "source_id": "libuvc/CMakeLists.txt",
+          "start_line": 75,
+          "end_line": 87,
+          "contains": [
+            "if(DISABLE_JPEG)",
+            "find_package(JpegPkg QUIET)",
+            "list(APPEND SOURCES src/frame-mjpeg.c)"
+          ]
+        },
+        {
+          "source_id": "libuvc/CMakeLists.txt",
+          "start_line": 156,
+          "end_line": 160,
+          "contains": [
+            "if(JPEG_FOUND)",
+            "PRIVATE JPEG::JPEG"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optional-jpeg-notices-and-api",
+      "statement": "frame-mjpeg.c carries Robert Xiao 2014 BSD three-clause text, a default Huffman-table source attribution, and uses jpeglib/JCS_EXT_BGR. Those facts do not identify the selected linked JPEG distribution or close its notices.",
+      "evidence_level": "source_text",
+      "source_refs": [
+        {
+          "source_id": "libuvc/src/frame-mjpeg.c",
+          "start_line": 1,
+          "end_line": 40,
+          "contains": [
+            "Copyright (C) 2014 Robert Xiao",
+            "Neither the name of the author",
+            "#include <jpeglib.h>"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/frame-mjpeg.c",
+          "start_line": 56,
+          "end_line": 57,
+          "contains": [
+            "ISO/IEC 10918-1:1993(E) K.3.3."
+          ]
+        },
+        {
+          "source_id": "libuvc/src/frame-mjpeg.c",
+          "start_line": 146,
+          "end_line": 150,
+          "contains": [
+            "JCS_RGB",
+            "JCS_EXT_BGR",
+            "JCS_GRAYSCALE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-scanning_mode",
+      "statement": "scanning_mode: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 7,
+          "end_line": 7,
+          "contains": [
+            "      scanning_mode:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 14,
+          "end_line": 14,
+          "contains": [
+            "uvc_get_scanning_mode("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 41,
+          "end_line": 41,
+          "contains": [
+            "uvc_set_scanning_mode("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-ae_mode",
+      "statement": "ae_mode: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 16,
+          "end_line": 16,
+          "contains": [
+            "      ae_mode:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 70,
+          "end_line": 70,
+          "contains": [
+            "uvc_get_ae_mode("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 105,
+          "end_line": 105,
+          "contains": [
+            "uvc_set_ae_mode("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-ae_priority",
+      "statement": "ae_priority: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 41,
+          "end_line": 41,
+          "contains": [
+            "      ae_priority:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 133,
+          "end_line": 133,
+          "contains": [
+            "uvc_get_ae_priority("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 163,
+          "end_line": 163,
+          "contains": [
+            "uvc_set_ae_priority("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-exposure_abs",
+      "statement": "exposure_abs: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 60,
+          "end_line": 60,
+          "contains": [
+            "      exposure_abs:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 192,
+          "end_line": 192,
+          "contains": [
+            "uvc_get_exposure_abs("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 223,
+          "end_line": 223,
+          "contains": [
+            "uvc_set_exposure_abs("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-exposure_rel",
+      "statement": "exposure_rel: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 80,
+          "end_line": 80,
+          "contains": [
+            "      exposure_rel:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 250,
+          "end_line": 250,
+          "contains": [
+            "uvc_get_exposure_rel("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 277,
+          "end_line": 277,
+          "contains": [
+            "uvc_set_exposure_rel("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-focus_abs",
+      "statement": "focus_abs: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 92,
+          "end_line": 92,
+          "contains": [
+            "      focus_abs:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 304,
+          "end_line": 304,
+          "contains": [
+            "uvc_get_focus_abs("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 331,
+          "end_line": 331,
+          "contains": [
+            "uvc_set_focus_abs("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-focus_rel",
+      "statement": "focus_rel: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 102,
+          "end_line": 102,
+          "contains": [
+            "      focus_rel:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 359,
+          "end_line": 359,
+          "contains": [
+            "uvc_get_focus_rel("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 388,
+          "end_line": 388,
+          "contains": [
+            "uvc_set_focus_rel("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-focus_simple_range",
+      "statement": "focus_simple_range: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 117,
+          "end_line": 117,
+          "contains": [
+            "      focus_simple_range:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 416,
+          "end_line": 416,
+          "contains": [
+            "uvc_get_focus_simple_range("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 443,
+          "end_line": 443,
+          "contains": [
+            "uvc_set_focus_simple_range("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-focus_auto",
+      "statement": "focus_auto: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 126,
+          "end_line": 126,
+          "contains": [
+            "      focus_auto:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 470,
+          "end_line": 470,
+          "contains": [
+            "uvc_get_focus_auto("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 497,
+          "end_line": 497,
+          "contains": [
+            "uvc_set_focus_auto("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-iris_abs",
+      "statement": "iris_abs: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 135,
+          "end_line": 135,
+          "contains": [
+            "      iris_abs:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 524,
+          "end_line": 524,
+          "contains": [
+            "uvc_get_iris_abs("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 551,
+          "end_line": 551,
+          "contains": [
+            "uvc_set_iris_abs("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-iris_rel",
+      "statement": "iris_rel: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 144,
+          "end_line": 144,
+          "contains": [
+            "      iris_rel:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 578,
+          "end_line": 578,
+          "contains": [
+            "uvc_get_iris_rel("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 605,
+          "end_line": 605,
+          "contains": [
+            "uvc_set_iris_rel("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-zoom_abs",
+      "statement": "zoom_abs: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 153,
+          "end_line": 153,
+          "contains": [
+            "      zoom_abs:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 632,
+          "end_line": 632,
+          "contains": [
+            "uvc_get_zoom_abs("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 659,
+          "end_line": 659,
+          "contains": [
+            "uvc_set_zoom_abs("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-zoom_rel",
+      "statement": "zoom_rel: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 162,
+          "end_line": 162,
+          "contains": [
+            "      zoom_rel:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 688,
+          "end_line": 688,
+          "contains": [
+            "uvc_get_zoom_rel("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 719,
+          "end_line": 719,
+          "contains": [
+            "uvc_set_zoom_rel("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-pantilt_abs",
+      "statement": "pantilt_abs: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 182,
+          "end_line": 182,
+          "contains": [
+            "      pantilt_abs:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 749,
+          "end_line": 749,
+          "contains": [
+            "uvc_get_pantilt_abs("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 778,
+          "end_line": 778,
+          "contains": [
+            "uvc_set_pantilt_abs("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-pantilt_rel",
+      "statement": "pantilt_rel: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 198,
+          "end_line": 198,
+          "contains": [
+            "      pantilt_rel:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 809,
+          "end_line": 809,
+          "contains": [
+            "uvc_get_pantilt_rel("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 842,
+          "end_line": 842,
+          "contains": [
+            "uvc_set_pantilt_rel("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-roll_abs",
+      "statement": "roll_abs: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 224,
+          "end_line": 224,
+          "contains": [
+            "      roll_abs:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 872,
+          "end_line": 872,
+          "contains": [
+            "uvc_get_roll_abs("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 899,
+          "end_line": 899,
+          "contains": [
+            "uvc_set_roll_abs("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-roll_rel",
+      "statement": "roll_rel: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 234,
+          "end_line": 234,
+          "contains": [
+            "      roll_rel:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 927,
+          "end_line": 927,
+          "contains": [
+            "uvc_get_roll_rel("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 956,
+          "end_line": 956,
+          "contains": [
+            "uvc_set_roll_rel("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-privacy",
+      "statement": "privacy: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 249,
+          "end_line": 249,
+          "contains": [
+            "      privacy:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 984,
+          "end_line": 984,
+          "contains": [
+            "uvc_get_privacy("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1011,
+          "end_line": 1011,
+          "contains": [
+            "uvc_set_privacy("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-digital_window",
+      "statement": "digital_window: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 258,
+          "end_line": 258,
+          "contains": [
+            "      digital_window:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1043,
+          "end_line": 1043,
+          "contains": [
+            "uvc_get_digital_window("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1080,
+          "end_line": 1080,
+          "contains": [
+            "uvc_set_digital_window("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-digital_roi",
+      "statement": "digital_roi: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 292,
+          "end_line": 292,
+          "contains": [
+            "      digital_roi:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1116,
+          "end_line": 1116,
+          "contains": [
+            "uvc_get_digital_roi("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1151,
+          "end_line": 1151,
+          "contains": [
+            "uvc_set_digital_roi("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-backlight_compensation",
+      "statement": "backlight_compensation: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 326,
+          "end_line": 326,
+          "contains": [
+            "      backlight_compensation:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1182,
+          "end_line": 1182,
+          "contains": [
+            "uvc_get_backlight_compensation("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1209,
+          "end_line": 1209,
+          "contains": [
+            "uvc_set_backlight_compensation("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-brightness",
+      "statement": "brightness: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 336,
+          "end_line": 336,
+          "contains": [
+            "      brightness:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1236,
+          "end_line": 1236,
+          "contains": [
+            "uvc_get_brightness("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1263,
+          "end_line": 1263,
+          "contains": [
+            "uvc_set_brightness("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-contrast",
+      "statement": "contrast: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 346,
+          "end_line": 346,
+          "contains": [
+            "      contrast:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1290,
+          "end_line": 1290,
+          "contains": [
+            "uvc_get_contrast("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1317,
+          "end_line": 1317,
+          "contains": [
+            "uvc_set_contrast("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-contrast_auto",
+      "statement": "contrast_auto: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 355,
+          "end_line": 355,
+          "contains": [
+            "      contrast_auto:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1344,
+          "end_line": 1344,
+          "contains": [
+            "uvc_get_contrast_auto("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1371,
+          "end_line": 1371,
+          "contains": [
+            "uvc_set_contrast_auto("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-gain",
+      "statement": "gain: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 364,
+          "end_line": 364,
+          "contains": [
+            "      gain:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1398,
+          "end_line": 1398,
+          "contains": [
+            "uvc_get_gain("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1425,
+          "end_line": 1425,
+          "contains": [
+            "uvc_set_gain("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-power_line_frequency",
+      "statement": "power_line_frequency: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 373,
+          "end_line": 373,
+          "contains": [
+            "      power_line_frequency:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1452,
+          "end_line": 1452,
+          "contains": [
+            "uvc_get_power_line_frequency("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1479,
+          "end_line": 1479,
+          "contains": [
+            "uvc_set_power_line_frequency("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-hue",
+      "statement": "hue: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 382,
+          "end_line": 382,
+          "contains": [
+            "      hue:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1506,
+          "end_line": 1506,
+          "contains": [
+            "uvc_get_hue("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1533,
+          "end_line": 1533,
+          "contains": [
+            "uvc_set_hue("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-hue_auto",
+      "statement": "hue_auto: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 392,
+          "end_line": 392,
+          "contains": [
+            "      hue_auto:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1560,
+          "end_line": 1560,
+          "contains": [
+            "uvc_get_hue_auto("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1587,
+          "end_line": 1587,
+          "contains": [
+            "uvc_set_hue_auto("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-saturation",
+      "statement": "saturation: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 401,
+          "end_line": 401,
+          "contains": [
+            "      saturation:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1614,
+          "end_line": 1614,
+          "contains": [
+            "uvc_get_saturation("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1641,
+          "end_line": 1641,
+          "contains": [
+            "uvc_set_saturation("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-sharpness",
+      "statement": "sharpness: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 410,
+          "end_line": 410,
+          "contains": [
+            "      sharpness:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1668,
+          "end_line": 1668,
+          "contains": [
+            "uvc_get_sharpness("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1695,
+          "end_line": 1695,
+          "contains": [
+            "uvc_set_sharpness("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-gamma",
+      "statement": "gamma: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 419,
+          "end_line": 419,
+          "contains": [
+            "      gamma:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1722,
+          "end_line": 1722,
+          "contains": [
+            "uvc_get_gamma("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1749,
+          "end_line": 1749,
+          "contains": [
+            "uvc_set_gamma("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-white_balance_temperature",
+      "statement": "white_balance_temperature: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 428,
+          "end_line": 428,
+          "contains": [
+            "      white_balance_temperature:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1776,
+          "end_line": 1776,
+          "contains": [
+            "uvc_get_white_balance_temperature("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1803,
+          "end_line": 1803,
+          "contains": [
+            "uvc_set_white_balance_temperature("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-white_balance_temperature_auto",
+      "statement": "white_balance_temperature_auto: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 437,
+          "end_line": 437,
+          "contains": [
+            "      white_balance_temperature_auto:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1830,
+          "end_line": 1830,
+          "contains": [
+            "uvc_get_white_balance_temperature_auto("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1857,
+          "end_line": 1857,
+          "contains": [
+            "uvc_set_white_balance_temperature_auto("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-white_balance_component",
+      "statement": "white_balance_component: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 446,
+          "end_line": 446,
+          "contains": [
+            "      white_balance_component:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1885,
+          "end_line": 1885,
+          "contains": [
+            "uvc_get_white_balance_component("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1914,
+          "end_line": 1914,
+          "contains": [
+            "uvc_set_white_balance_component("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-white_balance_component_auto",
+      "statement": "white_balance_component_auto: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 460,
+          "end_line": 460,
+          "contains": [
+            "      white_balance_component_auto:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1942,
+          "end_line": 1942,
+          "contains": [
+            "uvc_get_white_balance_component_auto("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1969,
+          "end_line": 1969,
+          "contains": [
+            "uvc_set_white_balance_component_auto("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-digital_multiplier",
+      "statement": "digital_multiplier: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 469,
+          "end_line": 469,
+          "contains": [
+            "      digital_multiplier:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1996,
+          "end_line": 1996,
+          "contains": [
+            "uvc_get_digital_multiplier("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2023,
+          "end_line": 2023,
+          "contains": [
+            "uvc_set_digital_multiplier("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-digital_multiplier_limit",
+      "statement": "digital_multiplier_limit: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 478,
+          "end_line": 478,
+          "contains": [
+            "      digital_multiplier_limit:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2050,
+          "end_line": 2050,
+          "contains": [
+            "uvc_get_digital_multiplier_limit("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2077,
+          "end_line": 2077,
+          "contains": [
+            "uvc_set_digital_multiplier_limit("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-analog_video_standard",
+      "statement": "analog_video_standard: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 487,
+          "end_line": 487,
+          "contains": [
+            "      analog_video_standard:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2104,
+          "end_line": 2104,
+          "contains": [
+            "uvc_get_analog_video_standard("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2131,
+          "end_line": 2131,
+          "contains": [
+            "uvc_set_analog_video_standard("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-analog_video_lock_status",
+      "statement": "analog_video_lock_status: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 496,
+          "end_line": 496,
+          "contains": [
+            "      analog_video_lock_status:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2158,
+          "end_line": 2158,
+          "contains": [
+            "uvc_get_analog_video_lock_status("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2185,
+          "end_line": 2185,
+          "contains": [
+            "uvc_set_analog_video_lock_status("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control-name-input_select",
+      "statement": "input_select: fixed YAML control name and corresponding get/set signature names.",
+      "evidence_level": "static_name_correspondence_only",
+      "source_refs": [
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 510,
+          "end_line": 510,
+          "contains": [
+            "      input_select:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2212,
+          "end_line": 2212,
+          "contains": [
+            "uvc_get_input_select("
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 2239,
+          "end_line": 2239,
+          "contains": [
+            "uvc_set_input_select("
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no-independent-notice-in-three-generation-files",
+      "statement": "The inspected generation files have no independent copyright/SPDX/license-agreement notice. This does not negate the positive root BSD grant and does not mean unauthorized; it leaves separate per-contribution ownership/history unexamined.",
+      "evidence_level": "bounded_negative_text_scan_plus_manual_read",
+      "source_refs": [
+        {
+          "source_id": "libuvc/src/ctrl-gen.py",
+          "start_line": 1,
+          "end_line": 5,
+          "contains": [
+            "#!/usr/bin/env python3",
+            "import yaml"
+          ]
+        },
+        {
+          "source_id": "libuvc/standard-units.yaml",
+          "start_line": 1,
+          "end_line": 5,
+          "contains": [
+            "units:",
+            "camera_terminal:"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1,
+          "end_line": 6,
+          "contains": [
+            "AUTO-GENERATED"
+          ]
+        }
+      ]
+    }
+  ],
+  "generation_correspondence": {
+    "yaml_source_id": "libuvc/standard-units.yaml",
+    "c_source_id": "libuvc/src/ctrl-gen.c",
+    "yaml_control_regex": "^      ([a-z_]+):$",
+    "c_function_regex": "^uvc_error_t uvc_(get|set)_([a-z_]+)\\(",
+    "regex_flags": "MULTILINE",
+    "yaml_controls": [
+      "scanning_mode",
+      "ae_mode",
+      "ae_priority",
+      "exposure_abs",
+      "exposure_rel",
+      "focus_abs",
+      "focus_rel",
+      "focus_simple_range",
+      "focus_auto",
+      "iris_abs",
+      "iris_rel",
+      "zoom_abs",
+      "zoom_rel",
+      "pantilt_abs",
+      "pantilt_rel",
+      "roll_abs",
+      "roll_rel",
+      "privacy",
+      "digital_window",
+      "digital_roi",
+      "backlight_compensation",
+      "brightness",
+      "contrast",
+      "contrast_auto",
+      "gain",
+      "power_line_frequency",
+      "hue",
+      "hue_auto",
+      "saturation",
+      "sharpness",
+      "gamma",
+      "white_balance_temperature",
+      "white_balance_temperature_auto",
+      "white_balance_component",
+      "white_balance_component_auto",
+      "digital_multiplier",
+      "digital_multiplier_limit",
+      "analog_video_standard",
+      "analog_video_lock_status",
+      "input_select"
+    ],
+    "c_functions": [
+      {
+        "kind": "get",
+        "name": "scanning_mode"
+      },
+      {
+        "kind": "set",
+        "name": "scanning_mode"
+      },
+      {
+        "kind": "get",
+        "name": "ae_mode"
+      },
+      {
+        "kind": "set",
+        "name": "ae_mode"
+      },
+      {
+        "kind": "get",
+        "name": "ae_priority"
+      },
+      {
+        "kind": "set",
+        "name": "ae_priority"
+      },
+      {
+        "kind": "get",
+        "name": "exposure_abs"
+      },
+      {
+        "kind": "set",
+        "name": "exposure_abs"
+      },
+      {
+        "kind": "get",
+        "name": "exposure_rel"
+      },
+      {
+        "kind": "set",
+        "name": "exposure_rel"
+      },
+      {
+        "kind": "get",
+        "name": "focus_abs"
+      },
+      {
+        "kind": "set",
+        "name": "focus_abs"
+      },
+      {
+        "kind": "get",
+        "name": "focus_rel"
+      },
+      {
+        "kind": "set",
+        "name": "focus_rel"
+      },
+      {
+        "kind": "get",
+        "name": "focus_simple_range"
+      },
+      {
+        "kind": "set",
+        "name": "focus_simple_range"
+      },
+      {
+        "kind": "get",
+        "name": "focus_auto"
+      },
+      {
+        "kind": "set",
+        "name": "focus_auto"
+      },
+      {
+        "kind": "get",
+        "name": "iris_abs"
+      },
+      {
+        "kind": "set",
+        "name": "iris_abs"
+      },
+      {
+        "kind": "get",
+        "name": "iris_rel"
+      },
+      {
+        "kind": "set",
+        "name": "iris_rel"
+      },
+      {
+        "kind": "get",
+        "name": "zoom_abs"
+      },
+      {
+        "kind": "set",
+        "name": "zoom_abs"
+      },
+      {
+        "kind": "get",
+        "name": "zoom_rel"
+      },
+      {
+        "kind": "set",
+        "name": "zoom_rel"
+      },
+      {
+        "kind": "get",
+        "name": "pantilt_abs"
+      },
+      {
+        "kind": "set",
+        "name": "pantilt_abs"
+      },
+      {
+        "kind": "get",
+        "name": "pantilt_rel"
+      },
+      {
+        "kind": "set",
+        "name": "pantilt_rel"
+      },
+      {
+        "kind": "get",
+        "name": "roll_abs"
+      },
+      {
+        "kind": "set",
+        "name": "roll_abs"
+      },
+      {
+        "kind": "get",
+        "name": "roll_rel"
+      },
+      {
+        "kind": "set",
+        "name": "roll_rel"
+      },
+      {
+        "kind": "get",
+        "name": "privacy"
+      },
+      {
+        "kind": "set",
+        "name": "privacy"
+      },
+      {
+        "kind": "get",
+        "name": "digital_window"
+      },
+      {
+        "kind": "set",
+        "name": "digital_window"
+      },
+      {
+        "kind": "get",
+        "name": "digital_roi"
+      },
+      {
+        "kind": "set",
+        "name": "digital_roi"
+      },
+      {
+        "kind": "get",
+        "name": "backlight_compensation"
+      },
+      {
+        "kind": "set",
+        "name": "backlight_compensation"
+      },
+      {
+        "kind": "get",
+        "name": "brightness"
+      },
+      {
+        "kind": "set",
+        "name": "brightness"
+      },
+      {
+        "kind": "get",
+        "name": "contrast"
+      },
+      {
+        "kind": "set",
+        "name": "contrast"
+      },
+      {
+        "kind": "get",
+        "name": "contrast_auto"
+      },
+      {
+        "kind": "set",
+        "name": "contrast_auto"
+      },
+      {
+        "kind": "get",
+        "name": "gain"
+      },
+      {
+        "kind": "set",
+        "name": "gain"
+      },
+      {
+        "kind": "get",
+        "name": "power_line_frequency"
+      },
+      {
+        "kind": "set",
+        "name": "power_line_frequency"
+      },
+      {
+        "kind": "get",
+        "name": "hue"
+      },
+      {
+        "kind": "set",
+        "name": "hue"
+      },
+      {
+        "kind": "get",
+        "name": "hue_auto"
+      },
+      {
+        "kind": "set",
+        "name": "hue_auto"
+      },
+      {
+        "kind": "get",
+        "name": "saturation"
+      },
+      {
+        "kind": "set",
+        "name": "saturation"
+      },
+      {
+        "kind": "get",
+        "name": "sharpness"
+      },
+      {
+        "kind": "set",
+        "name": "sharpness"
+      },
+      {
+        "kind": "get",
+        "name": "gamma"
+      },
+      {
+        "kind": "set",
+        "name": "gamma"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_temperature"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_temperature"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_temperature_auto"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_temperature_auto"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_component"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_component"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_component_auto"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_component_auto"
+      },
+      {
+        "kind": "get",
+        "name": "digital_multiplier"
+      },
+      {
+        "kind": "set",
+        "name": "digital_multiplier"
+      },
+      {
+        "kind": "get",
+        "name": "digital_multiplier_limit"
+      },
+      {
+        "kind": "set",
+        "name": "digital_multiplier_limit"
+      },
+      {
+        "kind": "get",
+        "name": "analog_video_standard"
+      },
+      {
+        "kind": "set",
+        "name": "analog_video_standard"
+      },
+      {
+        "kind": "get",
+        "name": "analog_video_lock_status"
+      },
+      {
+        "kind": "set",
+        "name": "analog_video_lock_status"
+      },
+      {
+        "kind": "get",
+        "name": "input_select"
+      },
+      {
+        "kind": "set",
+        "name": "input_select"
+      }
+    ],
+    "expected_c_functions": [
+      {
+        "kind": "get",
+        "name": "scanning_mode"
+      },
+      {
+        "kind": "set",
+        "name": "scanning_mode"
+      },
+      {
+        "kind": "get",
+        "name": "ae_mode"
+      },
+      {
+        "kind": "set",
+        "name": "ae_mode"
+      },
+      {
+        "kind": "get",
+        "name": "ae_priority"
+      },
+      {
+        "kind": "set",
+        "name": "ae_priority"
+      },
+      {
+        "kind": "get",
+        "name": "exposure_abs"
+      },
+      {
+        "kind": "set",
+        "name": "exposure_abs"
+      },
+      {
+        "kind": "get",
+        "name": "exposure_rel"
+      },
+      {
+        "kind": "set",
+        "name": "exposure_rel"
+      },
+      {
+        "kind": "get",
+        "name": "focus_abs"
+      },
+      {
+        "kind": "set",
+        "name": "focus_abs"
+      },
+      {
+        "kind": "get",
+        "name": "focus_rel"
+      },
+      {
+        "kind": "set",
+        "name": "focus_rel"
+      },
+      {
+        "kind": "get",
+        "name": "focus_simple_range"
+      },
+      {
+        "kind": "set",
+        "name": "focus_simple_range"
+      },
+      {
+        "kind": "get",
+        "name": "focus_auto"
+      },
+      {
+        "kind": "set",
+        "name": "focus_auto"
+      },
+      {
+        "kind": "get",
+        "name": "iris_abs"
+      },
+      {
+        "kind": "set",
+        "name": "iris_abs"
+      },
+      {
+        "kind": "get",
+        "name": "iris_rel"
+      },
+      {
+        "kind": "set",
+        "name": "iris_rel"
+      },
+      {
+        "kind": "get",
+        "name": "zoom_abs"
+      },
+      {
+        "kind": "set",
+        "name": "zoom_abs"
+      },
+      {
+        "kind": "get",
+        "name": "zoom_rel"
+      },
+      {
+        "kind": "set",
+        "name": "zoom_rel"
+      },
+      {
+        "kind": "get",
+        "name": "pantilt_abs"
+      },
+      {
+        "kind": "set",
+        "name": "pantilt_abs"
+      },
+      {
+        "kind": "get",
+        "name": "pantilt_rel"
+      },
+      {
+        "kind": "set",
+        "name": "pantilt_rel"
+      },
+      {
+        "kind": "get",
+        "name": "roll_abs"
+      },
+      {
+        "kind": "set",
+        "name": "roll_abs"
+      },
+      {
+        "kind": "get",
+        "name": "roll_rel"
+      },
+      {
+        "kind": "set",
+        "name": "roll_rel"
+      },
+      {
+        "kind": "get",
+        "name": "privacy"
+      },
+      {
+        "kind": "set",
+        "name": "privacy"
+      },
+      {
+        "kind": "get",
+        "name": "digital_window"
+      },
+      {
+        "kind": "set",
+        "name": "digital_window"
+      },
+      {
+        "kind": "get",
+        "name": "digital_roi"
+      },
+      {
+        "kind": "set",
+        "name": "digital_roi"
+      },
+      {
+        "kind": "get",
+        "name": "backlight_compensation"
+      },
+      {
+        "kind": "set",
+        "name": "backlight_compensation"
+      },
+      {
+        "kind": "get",
+        "name": "brightness"
+      },
+      {
+        "kind": "set",
+        "name": "brightness"
+      },
+      {
+        "kind": "get",
+        "name": "contrast"
+      },
+      {
+        "kind": "set",
+        "name": "contrast"
+      },
+      {
+        "kind": "get",
+        "name": "contrast_auto"
+      },
+      {
+        "kind": "set",
+        "name": "contrast_auto"
+      },
+      {
+        "kind": "get",
+        "name": "gain"
+      },
+      {
+        "kind": "set",
+        "name": "gain"
+      },
+      {
+        "kind": "get",
+        "name": "power_line_frequency"
+      },
+      {
+        "kind": "set",
+        "name": "power_line_frequency"
+      },
+      {
+        "kind": "get",
+        "name": "hue"
+      },
+      {
+        "kind": "set",
+        "name": "hue"
+      },
+      {
+        "kind": "get",
+        "name": "hue_auto"
+      },
+      {
+        "kind": "set",
+        "name": "hue_auto"
+      },
+      {
+        "kind": "get",
+        "name": "saturation"
+      },
+      {
+        "kind": "set",
+        "name": "saturation"
+      },
+      {
+        "kind": "get",
+        "name": "sharpness"
+      },
+      {
+        "kind": "set",
+        "name": "sharpness"
+      },
+      {
+        "kind": "get",
+        "name": "gamma"
+      },
+      {
+        "kind": "set",
+        "name": "gamma"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_temperature"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_temperature"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_temperature_auto"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_temperature_auto"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_component"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_component"
+      },
+      {
+        "kind": "get",
+        "name": "white_balance_component_auto"
+      },
+      {
+        "kind": "set",
+        "name": "white_balance_component_auto"
+      },
+      {
+        "kind": "get",
+        "name": "digital_multiplier"
+      },
+      {
+        "kind": "set",
+        "name": "digital_multiplier"
+      },
+      {
+        "kind": "get",
+        "name": "digital_multiplier_limit"
+      },
+      {
+        "kind": "set",
+        "name": "digital_multiplier_limit"
+      },
+      {
+        "kind": "get",
+        "name": "analog_video_standard"
+      },
+      {
+        "kind": "set",
+        "name": "analog_video_standard"
+      },
+      {
+        "kind": "get",
+        "name": "analog_video_lock_status"
+      },
+      {
+        "kind": "set",
+        "name": "analog_video_lock_status"
+      },
+      {
+        "kind": "get",
+        "name": "input_select"
+      },
+      {
+        "kind": "set",
+        "name": "input_select"
+      }
+    ],
+    "yaml_control_count": 40,
+    "c_function_count": 80,
+    "name_order_match": true,
+    "matrix": [
+      {
+        "name": "scanning_mode",
+        "yaml_line": 7,
+        "get_line": 14,
+        "set_line": 41
+      },
+      {
+        "name": "ae_mode",
+        "yaml_line": 16,
+        "get_line": 70,
+        "set_line": 105
+      },
+      {
+        "name": "ae_priority",
+        "yaml_line": 41,
+        "get_line": 133,
+        "set_line": 163
+      },
+      {
+        "name": "exposure_abs",
+        "yaml_line": 60,
+        "get_line": 192,
+        "set_line": 223
+      },
+      {
+        "name": "exposure_rel",
+        "yaml_line": 80,
+        "get_line": 250,
+        "set_line": 277
+      },
+      {
+        "name": "focus_abs",
+        "yaml_line": 92,
+        "get_line": 304,
+        "set_line": 331
+      },
+      {
+        "name": "focus_rel",
+        "yaml_line": 102,
+        "get_line": 359,
+        "set_line": 388
+      },
+      {
+        "name": "focus_simple_range",
+        "yaml_line": 117,
+        "get_line": 416,
+        "set_line": 443
+      },
+      {
+        "name": "focus_auto",
+        "yaml_line": 126,
+        "get_line": 470,
+        "set_line": 497
+      },
+      {
+        "name": "iris_abs",
+        "yaml_line": 135,
+        "get_line": 524,
+        "set_line": 551
+      },
+      {
+        "name": "iris_rel",
+        "yaml_line": 144,
+        "get_line": 578,
+        "set_line": 605
+      },
+      {
+        "name": "zoom_abs",
+        "yaml_line": 153,
+        "get_line": 632,
+        "set_line": 659
+      },
+      {
+        "name": "zoom_rel",
+        "yaml_line": 162,
+        "get_line": 688,
+        "set_line": 719
+      },
+      {
+        "name": "pantilt_abs",
+        "yaml_line": 182,
+        "get_line": 749,
+        "set_line": 778
+      },
+      {
+        "name": "pantilt_rel",
+        "yaml_line": 198,
+        "get_line": 809,
+        "set_line": 842
+      },
+      {
+        "name": "roll_abs",
+        "yaml_line": 224,
+        "get_line": 872,
+        "set_line": 899
+      },
+      {
+        "name": "roll_rel",
+        "yaml_line": 234,
+        "get_line": 927,
+        "set_line": 956
+      },
+      {
+        "name": "privacy",
+        "yaml_line": 249,
+        "get_line": 984,
+        "set_line": 1011
+      },
+      {
+        "name": "digital_window",
+        "yaml_line": 258,
+        "get_line": 1043,
+        "set_line": 1080
+      },
+      {
+        "name": "digital_roi",
+        "yaml_line": 292,
+        "get_line": 1116,
+        "set_line": 1151
+      },
+      {
+        "name": "backlight_compensation",
+        "yaml_line": 326,
+        "get_line": 1182,
+        "set_line": 1209
+      },
+      {
+        "name": "brightness",
+        "yaml_line": 336,
+        "get_line": 1236,
+        "set_line": 1263
+      },
+      {
+        "name": "contrast",
+        "yaml_line": 346,
+        "get_line": 1290,
+        "set_line": 1317
+      },
+      {
+        "name": "contrast_auto",
+        "yaml_line": 355,
+        "get_line": 1344,
+        "set_line": 1371
+      },
+      {
+        "name": "gain",
+        "yaml_line": 364,
+        "get_line": 1398,
+        "set_line": 1425
+      },
+      {
+        "name": "power_line_frequency",
+        "yaml_line": 373,
+        "get_line": 1452,
+        "set_line": 1479
+      },
+      {
+        "name": "hue",
+        "yaml_line": 382,
+        "get_line": 1506,
+        "set_line": 1533
+      },
+      {
+        "name": "hue_auto",
+        "yaml_line": 392,
+        "get_line": 1560,
+        "set_line": 1587
+      },
+      {
+        "name": "saturation",
+        "yaml_line": 401,
+        "get_line": 1614,
+        "set_line": 1641
+      },
+      {
+        "name": "sharpness",
+        "yaml_line": 410,
+        "get_line": 1668,
+        "set_line": 1695
+      },
+      {
+        "name": "gamma",
+        "yaml_line": 419,
+        "get_line": 1722,
+        "set_line": 1749
+      },
+      {
+        "name": "white_balance_temperature",
+        "yaml_line": 428,
+        "get_line": 1776,
+        "set_line": 1803
+      },
+      {
+        "name": "white_balance_temperature_auto",
+        "yaml_line": 437,
+        "get_line": 1830,
+        "set_line": 1857
+      },
+      {
+        "name": "white_balance_component",
+        "yaml_line": 446,
+        "get_line": 1885,
+        "set_line": 1914
+      },
+      {
+        "name": "white_balance_component_auto",
+        "yaml_line": 460,
+        "get_line": 1942,
+        "set_line": 1969
+      },
+      {
+        "name": "digital_multiplier",
+        "yaml_line": 469,
+        "get_line": 1996,
+        "set_line": 2023
+      },
+      {
+        "name": "digital_multiplier_limit",
+        "yaml_line": 478,
+        "get_line": 2050,
+        "set_line": 2077
+      },
+      {
+        "name": "analog_video_standard",
+        "yaml_line": 487,
+        "get_line": 2104,
+        "set_line": 2131
+      },
+      {
+        "name": "analog_video_lock_status",
+        "yaml_line": 496,
+        "get_line": 2158,
+        "set_line": 2185
+      },
+      {
+        "name": "input_select",
+        "yaml_line": 510,
+        "get_line": 2212,
+        "set_line": 2239
+      }
+    ],
+    "regeneration_executed": false,
+    "full_generated_bytes_equality_claimed": false,
+    "exclusions": [
+      "No function-body equivalence",
+      "No generated enum/type/header completeness",
+      "No pinned PyYAML or historical generator invocation",
+      "No complete build graph or packaged artifact identity"
+    ]
+  },
+  "absence_checks": [
+    {
+      "source_id": "libuvc/src/ctrl-gen.py",
+      "regex": "(?i)copyright|SPDX-License-Identifier|Software License Agreement",
+      "expected_match_count": 0
+    },
+    {
+      "source_id": "libuvc/standard-units.yaml",
+      "regex": "(?i)copyright|SPDX-License-Identifier|Software License Agreement",
+      "expected_match_count": 0
+    },
+    {
+      "source_id": "libuvc/src/ctrl-gen.c",
+      "regex": "(?i)copyright|SPDX-License-Identifier|Software License Agreement",
+      "expected_match_count": 0
+    },
+    {
+      "source_id": "libuvc/CMakeLists.txt",
+      "regex": "ctrl-gen\\.py|standard-units\\.yaml",
+      "expected_match_count": 0
+    },
+    {
+      "source_id": "libuvc/README.md",
+      "regex": "ctrl-gen|standard-units",
+      "expected_match_count": 0
+    }
+  ],
+  "static_negative_controls": [
+    {
+      "case": "remove_yaml_control",
+      "detected": true,
+      "in_memory_only": true
+    },
+    {
+      "case": "rename_c_getter",
+      "detected": true,
+      "in_memory_only": true
+    },
+    {
+      "case": "swap_first_get_and_set_labels",
+      "detected": true,
+      "in_memory_only": true
+    },
+    {
+      "case": "append_generator_byte_changes_locked_blob",
+      "detected": true,
+      "in_memory_only": true
+    }
+  ],
+  "summary": {
+    "source_count": 31,
+    "new_source_count": 3,
+    "claim_count": 53,
+    "downloaded_code_executed": false,
+    "devices_or_native_builds": false,
+    "result": "Generation textual provenance improved; distribution closure not established."
+  },
+  "unresolved_material": [
+    "Complete selected source/header/config/generated-input inventory and local patch attribution for the eventual build.",
+    "Actual per-ABI source-to-object/library/package provenance and linked dependency inventory, including selected JPEG implementation if enabled.",
+    "Preserved root and per-file copyright/license notices, including utlist and optional frame-mjpeg attribution.",
+    "Chosen LGPL distribution mechanism with inspectable matching source/modifications, notices and the materials or replaceability/relink evidence applicable to that mechanism.",
+    "If claiming byte-reproducible regeneration: exact invocation, input order, Python/PyYAML versions and generated-byte comparison in a separate controlled build/regeneration stage.",
+    "Per-contribution history/ownership was not audited; missing individual headers alone do not create an unauthorized-use conclusion."
+  ]
+}

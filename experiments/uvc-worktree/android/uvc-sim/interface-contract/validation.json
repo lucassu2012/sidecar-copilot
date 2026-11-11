@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "baseline_commit": "3dbbcb17f26816689d4b51b714996d937b9f4acd",
+  "observed_at_utc": "2026-11-10T16:27:56.405816+00:00",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "Static text and previous-record verification only",
+  "network_requests": 0,
+  "upstream_generators_executed": 0,
+  "protocol_model_runs": 0,
+  "native_or_device_executions": 0,
+  "files": {
+    ".gitattributes": {
+      "bytes": 61,
+      "sha256": "22106984a6c1274ead5c283789ca11d75b303658949aaa627698747e7b2d6160"
+    },
+    "android-contract.json": {
+      "bytes": 29872,
+      "sha256": "b07f3fdccb60cdb8a5852419f34a6d001c852d4656cd7e9596e20d38fe1fe58b"
+    },
+    "ANDROID_CONTRACT.md": {
+      "bytes": 12249,
+      "sha256": "d0c4d2ca0d8f3c1d0090a47a7029e298a6e19861b2e317126fdd94d0032f999b"
+    },
+    "check_contracts.py": {
+      "bytes": 14955,
+      "sha256": "1fd9e16206391b7199dc223eac16147872f2c72c30252f8b05f3ba9e470e9c0a"
+    },
+    "DEVICE_PREREQUISITES.md": {
+      "bytes": 17049,
+      "sha256": "e5c711746303bdbd82ead416a5bc227142d89162d1a3880744a032d1c1e2cba2"
+    },
+    "license-evidence.json": {
+      "bytes": 105307,
+      "sha256": "3ede09b71e69b10996687788bd842889ab1ad54508b709755948171eaa31be44"
+    },
+    "LICENSE_BOUNDARY.md": {
+      "bytes": 8399,
+      "sha256": "2095bebdb36a91504195f8bda7f309d941c6975461319fea85920c7f4f127260"
+    },
+    "native-contract.json": {
+      "bytes": 49383,
+      "sha256": "f6adfac08b0db8548e3cad44075b7ce6663c26932130e61b98f7448651b3f60d"
+    },
+    "NATIVE_CONTRACT.md": {
+      "bytes": 11944,
+      "sha256": "a07d0a0be919770efdaac3ed95039fbd791ea54762e320b05bd78b2d8aa222ce"
+    },
+    "README.md": {
+      "bytes": 9615,
+      "sha256": "bcc8bf1de429dcab866b14d57ec645a9ebf1cbcad844086256f979f345c6a8aa"
+    },
+    "verification-boundary.json": {
+      "bytes": 16371,
+      "sha256": "c19aa55449ef2e2a418cc61dd5dd0ad10043fec7dc55a30ce52ac6de2db135f8"
+    }
+  },
+  "checks": {
+    "native-contract.json": {
+      "source_references": 9,
+      "contracts_or_claims": 16,
+      "literal_anchors_checked": 134,
+      "tree_membership_checks": 0,
+      "bounded_text_absence_checks": 0,
+      "owner_recorded_static_negative_controls": 0,
+      "static_negative_controls_reexecuted": 0,
+      "generation_name_comparison": null
+    },
+    "android-contract.json": {
+      "source_references": 4,
+      "contracts_or_claims": 12,
+      "literal_anchors_checked": 61,
+      "tree_membership_checks": 0,
+      "bounded_text_absence_checks": 0,
+      "owner_recorded_static_negative_controls": 0,
+      "static_negative_controls_reexecuted": 0,
+      "generation_name_comparison": null
+    },
+    "license-evidence.json": {
+      "source_references": 31,
+      "contracts_or_claims": 53,
+      "literal_anchors_checked": 212,
+      "tree_membership_checks": 27,
+      "bounded_text_absence_checks": 5,
+      "owner_recorded_static_negative_controls": 4,
+      "static_negative_controls_reexecuted": 0,
+      "generation_name_comparison": {
+        "yaml_controls": 40,
+        "c_functions": 80,
+        "name_order_match": true,
+        "generator_executed": false
+      }
+    },
+    "model_boundary": {
+      "recorded_inputs_checked": 5,
+      "old_model_executed": false,
+      "counts_match_recorded_evidence": true
+    },
+    "inherited_lock_sha256": {
+      "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json": "8ff898d5acce58c697f0b3326555cfdfb65c466572f5e9c1ec234a9b72e56ae4",
+      "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d"
+    }
+  }
+}

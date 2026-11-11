@@ -1,0 +1,299 @@
+{
+  "baseline": "bbd053664bebb06ce83539a3f95e6fa5758745b7",
+  "inherited_evidence": [
+    {
+      "path": "android/uvc-sim/provenance/libyuv/report.json",
+      "sha256": "31536dac831fb12c5417e958293ad4258a1f09d6d0cd326f31562d4c43e62bb8",
+      "size": 175998
+    },
+    {
+      "path": "android/uvc-sim/provenance/followup/libyuv/report.json",
+      "sha256": "74660a491cd2e0192e56446a14e4fe6ef935189bbcb9e603724ef5059f1c8cbe",
+      "size": 76290
+    },
+    {
+      "path": "android/uvc-sim/provenance/followup/video-alternatives/evidence.json",
+      "sha256": "63a7b439af6ef0a54f67b6eee45eea86a12d9ad2c753c622a83af746a026e5d6",
+      "size": 285602
+    },
+    {
+      "path": "android/uvc-sim/provenance/uac/static-evidence.json",
+      "sha256": "87769e5964fb7b0b3ae2c2e304ae22d9bd1c93039a77a05944b63e445b92ae1e",
+      "size": 134833
+    },
+    {
+      "path": "android/uvc-sim/provenance/followup/uac/evidence.json",
+      "sha256": "295a8aaf93c8b8d82eb548b657c1fb1c1e1cd8c27d84ce6b7e709b21f706dab7",
+      "size": 40893
+    }
+  ],
+  "observations": {
+    "file": "observations.json",
+    "sha256": "650c57117a6b3dc16a3386d2e1b6c89b7cb95fe46a585e8772b233a2a87ce8ec",
+    "size": 126317
+  },
+  "schema": 1,
+  "source_retrieval": "Only raw UTF-8 text at fixed commits; check size, Git blob SHA1 and SHA256. No binary/source archive downloads.",
+  "sources": [
+    {
+      "cache_file": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "path": "LICENSE",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/LICENSE"
+    },
+    {
+      "cache_file": "ebd3841b8e467e2b397467b4ed9beccc303681ee.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "ebd3841b8e467e2b397467b4ed9beccc303681ee",
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "4de4ba806ceb99a86b054b6ff731b839b9871c3d40776f03ad72a58275306074",
+      "size": 53975,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java"
+    },
+    {
+      "cache_file": "d2dc867ca2e56b97ebbdaa8621f5a56f5855f1f4.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "d2dc867ca2e56b97ebbdaa8621f5a56f5855f1f4",
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "29f6c70876341a3ef7320d73cab2a35265a3aff655123770f5664e8755b21582",
+      "size": 21213,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java"
+    },
+    {
+      "cache_file": "320e3bea7778c2725bd289c350a9d449220abbb7.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "320e3bea7778c2725bd289c350a9d449220abbb7",
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "12c11937d5bfc01ad64da6ee9952956ac6fb88435f52fb769425b810960114f2",
+      "size": 6183,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp"
+    },
+    {
+      "cache_file": "fd2433ff338c708ca7cbe44d5efe2179212e78b1.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "fd2433ff338c708ca7cbe44d5efe2179212e78b1",
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "5b9819d4bb7f02a0f192225f331fdbec33a273aeec398b15da456610fa109e98",
+      "size": 28274,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp"
+    },
+    {
+      "cache_file": "63c63c9bc61ff98969b8c6c0d80d215313f02855.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "63c63c9bc61ff98969b8c6c0d80d215313f02855",
+      "path": "libuvccamera/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "a2c39a6e41df8ed5af81a14bf9c99afad045c174d9bd18278a512d3ece7d4e3a",
+      "size": 9639,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java"
+    },
+    {
+      "cache_file": "a6bdc99dd33a653f87a1db349abc2e1111fc5904.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "a6bdc99dd33a653f87a1db349abc2e1111fc5904",
+      "path": "README.md",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "ead03b974f7a88764fc1686d58d3584421a9d174ea2a63a1e974effaa7fad00a",
+      "size": 8253,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/README.md"
+    },
+    {
+      "cache_file": "722dd3613b14f838a4535c05c9e2e3806c7b0c73.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "722dd3613b14f838a4535c05c9e2e3806c7b0c73",
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "2cca1f54e16ba1416d2a8ba51e5b4b018a3ca36bcd35acca87bf8a071fb79a2f",
+      "size": 45219,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java"
+    },
+    {
+      "cache_file": "924255906ea8c93f3b4360805c737e2a172602db.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "924255906ea8c93f3b4360805c737e2a172602db",
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "9881946eba02cb53d73645d64d8d7c1bb88966d99b314ff73ada4e61591d884e",
+      "size": 46710,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java"
+    },
+    {
+      "cache_file": "7dfa2e13c037a17b54760dd8cb852f86b38a85b0.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "7dfa2e13c037a17b54760dd8cb852f86b38a85b0",
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "a5a78053de2edeed357f4f4e39656ad4967c085a31d6430b625034ef29c86967",
+      "size": 65661,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp"
+    },
+    {
+      "cache_file": "02c1a60b81d18c97a19f18962bbd49095cd11517.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "02c1a60b81d18c97a19f18962bbd49095cd11517",
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "859f32ef5440f5f0c484fd75e30c13bf8aeb4a6b193bf7d6f252ae180e8e1551",
+      "size": 23720,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp"
+    },
+    {
+      "cache_file": "a6a9010f665e263ee28eb89a93de49edb272495f.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "a6a9010f665e263ee28eb89a93de49edb272495f",
+      "path": "usbCameraCommon/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "915ed9482eb8cb67aa4e2ae72c68a3414565ce26823df9d19da76f363afed246",
+      "size": 7956,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/usbCameraCommon/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java"
+    },
+    {
+      "cache_file": "65346f74a7277c8866d5aeec9f3a3bae391c87c5.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "65346f74a7277c8866d5aeec9f3a3bae391c87c5",
+      "path": "libuvccamera/src/main/jni/libusb/libusb/core.c",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "917db3ee4ed27562df35642a05e19188644b6e7595f807dcf206f0b0005d577e",
+      "size": 88560,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libusb/libusb/core.c"
+    },
+    {
+      "cache_file": "16ab87350a951111d1b44624c14b6bb5754c6782.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "16ab87350a951111d1b44624c14b6bb5754c6782",
+      "path": "libuvccamera/src/main/jni/libuvc/src/device.c",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "e23f230886ede3d11da210b0c8c9d705f45ec065679da3fae9c4340c63b2dcdf",
+      "size": 51286,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libuvc/src/device.c"
+    },
+    {
+      "cache_file": "a7d67e4c5fbd3e5939f9f7200fd7330a8cc86b4d.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "a7d67e4c5fbd3e5939f9f7200fd7330a8cc86b4d",
+      "path": "libuvccamera/src/main/jni/UVCCamera/Android.mk",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "5488effcdd4b80956256db023dffc7b494b0f10aa618e95534723b2c5183b947",
+      "size": 2128,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/UVCCamera/Android.mk"
+    },
+    {
+      "cache_file": "4623e29425071a1151dc4b004d5a241ea93efaba.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "4623e29425071a1151dc4b004d5a241ea93efaba",
+      "path": "libuvccamera/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "fffd497be5f4ae0a10b8258e191125fb58b90250ecbf3c79398d79604dd00b7d",
+      "size": 2939,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md"
+    },
+    {
+      "cache_file": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "path": "LICENSE",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/LICENSE"
+    },
+    {
+      "cache_file": "4134b117532bb8a43864baec9a515d2bca1e2dc1.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "4134b117532bb8a43864baec9a515d2bca1e2dc1",
+      "path": "libuvc/src/main/java/com/jiangdg/usb/USBMonitor.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "be883fe8cf2fe01f74223a16875e4c68ffa713db109668ef465a4a78938d8dd8",
+      "size": 48308,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/usb/USBMonitor.java"
+    },
+    {
+      "cache_file": "a5e576b8f8df5ac5651735c69122801c2cd47b12.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "a5e576b8f8df5ac5651735c69122801c2cd47b12",
+      "path": "libuvc/src/main/java/com/jiangdg/uvc/UVCCamera.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "bac08d47eb4159ba68017bf304c201d43765d49393283c774b3eb8273ce1be74",
+      "size": 48534,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/uvc/UVCCamera.java"
+    },
+    {
+      "cache_file": "471556991e4401a5f2eed662ce57ddac77186070.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "471556991e4401a5f2eed662ce57ddac77186070",
+      "path": "libuvc/src/main/jni/UVCCamera/UVCCamera.cpp",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "aa464ef1d41ff63ca18a739fdf945ff653c57ff182224113534e5b965142c966",
+      "size": 66146,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jni/UVCCamera/UVCCamera.cpp"
+    },
+    {
+      "cache_file": "584cb4019f8ea1ea9d85dcf4a51b21087c1735d7.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "584cb4019f8ea1ea9d85dcf4a51b21087c1735d7",
+      "path": "libuvc/src/main/jni/UVCCamera/UVCPreview.cpp",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "ca389642e01cbab4a025f78a7a09faa69355d42d112a42fa9b964b06f04b74ee",
+      "size": 25476,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jni/UVCCamera/UVCPreview.cpp"
+    },
+    {
+      "cache_file": "002f9a7aa0a9815d15edbbfbc1d694bf9afc8e4f.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "002f9a7aa0a9815d15edbbfbc1d694bf9afc8e4f",
+      "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/CameraUVC.kt",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "9bf0887c3336078f081b04aeb297e86cf0502318cb1f59a2f3f891db797c664a",
+      "size": 16820,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libausbc/src/main/java/com/jiangdg/ausbc/camera/CameraUVC.kt"
+    },
+    {
+      "cache_file": "9ade4bb57832c72e78e253ced219a96c749889de.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "9ade4bb57832c72e78e253ced219a96c749889de",
+      "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "66c702207d169457c2eafde0fe4440c6cf52cf1846e29c714d1fde2a7ae007a7",
+      "size": 3372,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt"
+    },
+    {
+      "cache_file": "d8c760fb27c30f66dc6a818bddafc03719dc7d10.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "d8c760fb27c30f66dc6a818bddafc03719dc7d10",
+      "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "0006e79f34b501b1194e63cc5552c11452eb1b1ef32e1a1d1973d565c0dfed8a",
+      "size": 4321,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/uac/UACAudio.java"
+    },
+    {
+      "cache_file": "88ad4950767fd02d7c03b10f9e4cf2fa0e8f9a24.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "88ad4950767fd02d7c03b10f9e4cf2fa0e8f9a24",
+      "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "cb3885d8e502948d4ce45c1318194033bb1df723d3a65a0333cd7e4b5dfce8a9",
+      "size": 10920,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java"
+    },
+    {
+      "cache_file": "3a89f05b9a68a236050e7ef770299773596ae58d.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "3a89f05b9a68a236050e7ef770299773596ae58d",
+      "path": "libuvc/build.gradle",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "750574fe5f6347c35c4bf8ed29b56779a1141fce7d535717803b504c2842fb1f",
+      "size": 2253,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/build.gradle"
+    }
+  ]
+}

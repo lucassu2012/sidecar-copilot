@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "cache_started_empty": true,
+  "downloaded_files": [
+    "import-tree.json",
+    "vendor-history.json"
+  ],
+  "source_archives_downloaded_or_processed": false,
+  "source_report_sha256_unchanged": "31536dac831fb12c5417e958293ad4258a1f09d6d0cd326f31562d4c43e62bb8",
+  "results": [
+    {
+      "check": "empty_metadata_cache_downloads_and_verifies",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--metadata-only",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\metadata-rebuild-6181ef3ac155464cb68b32c56c48fd35"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout": "PASS GitHub semantic metadata checks: 2 of 21 locked artifacts; offline=False\n",
+      "stderr": ""
+    },
+    {
+      "check": "downloaded_metadata_offline",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--metadata-only",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\metadata-rebuild-6181ef3ac155464cb68b32c56c48fd35",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout": "PASS GitHub semantic metadata checks: 2 of 21 locked artifacts; offline=True\n",
+      "stderr": ""
+    },
+    {
+      "check": "format_and_account_display_changes_preserve_identity",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--metadata-only",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\metadata-rebuild-6181ef3ac155464cb68b32c56c48fd35",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout": "PASS GitHub semantic metadata checks: 2 of 21 locked artifacts; offline=True\n",
+      "stderr": ""
+    },
+    {
+      "check": "commit_message_tampering_rejected",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--metadata-only",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\metadata-rebuild-6181ef3ac155464cb68b32c56c48fd35",
+        "--offline"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 318, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 172, in main\n    _, checked_metadata[name] = fetch(LOCK[name][\"url\"], name, args.refresh)\n                                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 108, in fetch\n    raise ValueError(\"Cached artifact SHA-256/size mismatch: \" + name)\nValueError: Cached artifact SHA-256/size mismatch: vendor-history.json\n"
+    },
+    {
+      "check": "tree_blob_tampering_rejected",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--metadata-only",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\metadata-rebuild-6181ef3ac155464cb68b32c56c48fd35",
+        "--offline"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 318, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 172, in main\n    _, checked_metadata[name] = fetch(LOCK[name][\"url\"], name, args.refresh)\n                                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 108, in fetch\n    raise ValueError(\"Cached artifact SHA-256/size mismatch: \" + name)\nValueError: Cached artifact SHA-256/size mismatch: import-tree.json\n"
+    }
+  ]
+}

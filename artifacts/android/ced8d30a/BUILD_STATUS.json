@@ -1,0 +1,23 @@
+{
+  "finished_utc": "2026-11-10T18:53:16.529408+00:00",
+  "input_count": 76,
+  "apk_count": 5,
+  "build_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "signature_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_drift": [],
+  "installed_at_freeze": false,
+  "device_tests_executed_at_freeze": false,
+  "final_wrapper_exit": 0,
+  "publication_note": "Sanitized build receipt summary; original local path omitted. No new device execution performed for publication."
+}

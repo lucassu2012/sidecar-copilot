@@ -1,0 +1,26 @@
+{
+  "observed_at_utc": "2026-11-10T15:25:33Z",
+  "scope": "Mutable API observation only, not a future latest-version assertion. No release assets downloaded.",
+  "release": {
+    "id": 425977474,
+    "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/releases/425977474",
+    "html_url": "https://github.com/libjpeg-turbo/libjpeg-turbo/releases/tag/3.2.1",
+    "tag_name": "3.2.1",
+    "published_at": "2026-10-27T20:58:25Z",
+    "draft": false,
+    "prerelease": false
+  },
+  "repository": {
+    "full_name": "libjpeg-turbo/libjpeg-turbo",
+    "archived": false,
+    "default_branch": "main"
+  },
+  "tag": {
+    "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/refs/tags/3.2.1",
+    "object": {
+      "sha": "7b4993786d856cbccabfc0ed2f923ba000e326cc",
+      "type": "commit",
+      "url": "https://api.github.com/repos/libjpeg-turbo/libjpeg-turbo/git/commits/7b4993786d856cbccabfc0ed2f923ba000e326cc"
+    }
+  }
+}

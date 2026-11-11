@@ -1,0 +1,1 @@
+commit sequences=[2], previewPixel=222222ff, coordinator lastAcceptedSequence=2

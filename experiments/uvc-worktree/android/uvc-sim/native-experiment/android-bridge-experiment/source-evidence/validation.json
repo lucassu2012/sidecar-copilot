@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "checked_utc": "2026-11-10T18:37:11.045264+00:00",
+  "command": [
+    "python",
+    "-B",
+    "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/verify_sources.py"
+  ],
+  "exit_code": 0,
+  "stdout": "Verified 15 sources and 41 anchors; restored 0 missing files.\n",
+  "network_fetch": false,
+  "source_code_compiled_or_executed": false,
+  "inputs": {
+    "inputs.json": {
+      "bytes": 16737,
+      "sha256": "d8cb63e4a0b02fc43dfc6d51e30dda693d95151ff119cea41c94f7e00b6c4ba9"
+    },
+    "anchors.json": {
+      "bytes": 15772,
+      "sha256": "f8c00e436d7174bea1d9e9409ab81fca890377017217cff4e535222415c1962e"
+    },
+    "verify_sources.py": {
+      "bytes": 11169,
+      "sha256": "0680aff2c2df1be04293e28791951d13273fa7794390a89482d35cc69c8340de"
+    }
+  }
+}

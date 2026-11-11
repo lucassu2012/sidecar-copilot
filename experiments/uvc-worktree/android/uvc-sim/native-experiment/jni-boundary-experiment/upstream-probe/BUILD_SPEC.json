@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "status": "authored_not_compiled_or_run_by_owner",
+  "path_base": "android/uvc-sim/native-experiment/jni-boundary-experiment",
+  "compiler": "Installed MSVC 14.50 x64 after vcvars64; compile C with /TC /std:c11",
+  "placeholders": {
+    "probe": "upstream-probe",
+    "cache": "source-evidence/cache",
+    "build": "build/<unique-root-run>/upstream-probe (ignored output, runner creates it)"
+  },
+  "public_upstreams": {
+    "libuvc_commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+    "libusb_commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f"
+  },
+  "pinned_inputs": [
+    {"path": "source-evidence/cache/libuvc/src/ctrl-gen.c", "sha256": "65b88f17f403bf3f11da0a246349d4297d2f84bd09c46b7b89255e3ca32f9f38"},
+    {"path": "source-evidence/cache/libuvc/include/libuvc/libuvc.h", "sha256": "1474abaf0c4591c05259bc8b71e9a4f747f3db2a6424e26e839896a2eecd563f"},
+    {"path": "source-evidence/cache/libusb/libusb/libusb.h", "sha256": "a61260ab145b051b86df2b0575956f01810190abe2c7df6aca831c33bdc8082c"}
+  ],
+  "input_verification": "Verify source-evidence/inputs.json sizes/SHA/blob before and after compiling; source paths above are unmodified inputs. Record project-owned source hashes and actual compiler commands separately.",
+  "commands": [
+    {
+      "label": "upstream-public-signature-compile",
+      "argv": ["cl.exe", "/nologo", "/TC", "/std:c11", "/W3", "/WX", "/c", "/I{probe}/fixtures", "/I{cache}/libuvc/include", "/I{cache}/libusb/libusb", "{probe}/api_signature_gate.c", "/Fo{build}/api_signature_gate.obj"],
+      "expect_exit": 0,
+      "note": "Seven _Static_assert/_Generic gates. Compile-only object is deliberately never linked or executed."
+    },
+    {
+      "label": "unmodified-upstream-control-compile",
+      "argv": ["cl.exe", "/nologo", "/TC", "/std:c11", "/W3", "/c", "/I{probe}/fixtures", "/I{cache}/libuvc/include", "/I{cache}/libusb/libusb", "{cache}/libuvc/src/ctrl-gen.c", "/Fo{build}/ctrl-gen.obj"],
+      "expect_exit": 0,
+      "note": "Retain upstream conversion/sign warnings in evidence; do not edit upstream source or claim warning-free build."
+    },
+    {
+      "label": "project-control-harness-compile",
+      "argv": ["cl.exe", "/nologo", "/TC", "/std:c11", "/W3", "/WX", "/c", "/I{probe}/fixtures", "/I{cache}/libuvc/include", "/I{cache}/libusb/libusb", "{probe}/control_probe.c", "/Fo{build}/control_probe.obj"],
+      "expect_exit": 0
+    },
+    {
+      "label": "control-probe-link",
+      "argv": ["link.exe", "/nologo", "{build}/control_probe.obj", "{build}/ctrl-gen.obj", "/OUT:{build}/control_probe.exe"],
+      "expect_exit": 0,
+      "note": "No libusb/libuvc import or static library. Only installed compiler runtime/OS toolchain inputs."
+    },
+    {
+      "label": "upstream-control-probe",
+      "argv": ["{build}/control_probe.exe"],
+      "expect_exit": 0,
+      "expect_stderr": "",
+      "required_stdout": ["OBSERVED GET_ZERO_RETURNS_SUCCESS_WITH_UNCHANGED_OUTPUT", "OBSERVED SET_ZERO_RETURNS_SUCCESS_WITHOUT_FULL_WRITE", "UPSTREAM_CONTROL_PROBE_OK cases=14", "calls=14 timeout_zero_calls=14"]
+    },
+    {
+      "label": "upstream-control-oracle-negative",
+      "argv": ["{build}/control_probe.exe", "--negative-request"],
+      "expect_exit": 1,
+      "required_stderr": "PROBE_ASSERTION_FAILED case=negative_request_oracle check=scripted_request_code",
+      "forbidden_output": "NEGATIVE_CONTROL_NOT_DETECTED"
+    }
+  ],
+  "not_proven": [
+    "Real libusb or libuvc library linkage/internal structure ABI",
+    "Android ARM/NDK/ART runtime or JNI behavior",
+    "USB permission, real descriptor/FD acquisition, capture or hardware compatibility",
+    "Device/status/image callbacks, cancel completion, event pumping or native drain",
+    "A zero timeout returning promptly or blocking control being cancellable",
+    "Safety or correctness of every control function in ctrl-gen.c",
+    "A fixed upstream short-transfer bug; the surprising return values are preserved observations"
+  ]
+}

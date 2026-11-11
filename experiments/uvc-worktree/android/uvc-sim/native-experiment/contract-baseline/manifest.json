@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "adapter_git_baseline": "e02b3fd93da49d4e1a6f76c3e3dd0f7d99c325c5",
+  "main_git_head": "496afd3936c7a601a5fcb34af4a4820aa76d51f3",
+  "main_public_module_git_status": "untracked at collection; hashes define this delivery, not main HEAD",
+  "collected_utc": "2026-11-10T18:00:23.867038+00:00",
+  "source_root": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract",
+  "scope": "Exact authorized public-contract snapshot and inherited receipts; no class/executable/native artifact copied; original document links remain relative to original module.",
+  "snapshot_files": [
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\README.md",
+      "snapshot": "README.md",
+      "bytes": 10549,
+      "sha256": "f8317a192af8b16febe425ca9c75e4c96cf8e7d102536ce0318094f9f6ffedac"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\VALIDATION.md",
+      "snapshot": "VALIDATION.md",
+      "bytes": 5366,
+      "sha256": "28b5e42a6baaad6889d9af0d494d15fd03dda899768d51255fb4cb060b0a0b48"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\src\\local\\sidecar\\copilot\\uvccontract\\UvcContract.java",
+      "snapshot": "src/local/sidecar/copilot/uvccontract/UvcContract.java",
+      "bytes": 15549,
+      "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\src\\local\\sidecar\\copilot\\uvccontract\\CaptureSession.java",
+      "snapshot": "src/local/sidecar/copilot/uvccontract/CaptureSession.java",
+      "bytes": 4064,
+      "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\src\\local\\sidecar\\copilot\\uvccontract\\StopBarrier.java",
+      "snapshot": "src/local/sidecar/copilot/uvccontract/StopBarrier.java",
+      "bytes": 3891,
+      "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\build\\4d06488ff9994d7fb6ea0ac1db475db2\\inputs.json",
+      "snapshot": "evidence/java-inputs.json",
+      "bytes": 1244,
+      "sha256": "196921c036e5e9e08ecaec7fc163324f6552c45aef7e9f9992e43a27710a63ba"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\build\\4d06488ff9994d7fb6ea0ac1db475db2\\receipt.json",
+      "snapshot": "evidence/java-receipt.json",
+      "bytes": 696,
+      "sha256": "a4c13c892fa6873e8c270eb0ddef1768a4b28e1d0f0d72c93084695eb6f3ff36"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\build\\4d06488ff9994d7fb6ea0ac1db475db2\\checks.txt",
+      "snapshot": "evidence/java-checks.txt",
+      "bytes": 278,
+      "sha256": "255097a3c04e2059b1d5391d0c86a2cee454780031a66a885357560c9bb1166e"
+    },
+    {
+      "source_path": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task\\sidecar-copilot\\android\\uvc-contract\\host-experiment\\build\\run-20261110T175508.399869Z\\result.json",
+      "snapshot": "evidence/host-result.json",
+      "bytes": 6741,
+      "sha256": "30947151de5d5c3c85d47856519972ac0058950ac213e785ad83e152b4a67e06"
+    }
+  ],
+  "receipt_inputs_verified_against_live_main": 5,
+  "inherited_tests_reexecuted": false
+}

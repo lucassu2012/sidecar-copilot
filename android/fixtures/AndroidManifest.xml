@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.sidecar.copilot.fixture">
+    <uses-sdk android:minSdkVersion="30" android:targetSdkVersion="35" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <application android:label="Sidecar SYNTHETIC fixture" android:allowBackup="false" android:fullBackupContent="false" android:dataExtractionRules="@xml/data_extraction_rules" android:debuggable="true" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <activity android:name="local.sidecar.copilot.MainActivity" android:exported="false" />
+        <activity android:name="local.sidecar.copilot.MeetingPreparationActivity" android:exported="false" />
+        <activity android:name="local.sidecar.copilot.RecordingActivity" android:exported="false" />
+        <service android:name="local.sidecar.copilot.FixtureCaptureService" android:exported="false" android:foregroundServiceType="microphone" android:stopWithTask="true" />
+    </application>
+</manifest>

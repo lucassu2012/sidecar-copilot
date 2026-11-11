@@ -1,0 +1,515 @@
+{
+  "schema": 1,
+  "observed_utc_date": "2026-11-10",
+  "workspace_base_commit": "c8874f6f39dddcd39a63289787fc3ba7a42b2cad",
+  "scope": "Read-only mapping of inherited fixed text sources to an original deterministic Python protocol fixture; not a native driver, patch, build, device result or complete dependency lock.",
+  "evidence_classes": {
+    "source_fact": "Static observation at exact fixed input and line span.",
+    "model_rule": "Deliberate protocol abstraction; not an assertion about upstream implementation.",
+    "unpatched_condition": "Source gap or prerequisite not remedied by this fixture."
+  },
+  "local_inputs": [
+    {
+      "path": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "bytes": 21783,
+      "sha256": "8ff898d5acce58c697f0b3326555cfdfb65c466572f5e9c1ec234a9b72e56ae4"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/upstream-driver/evidence.json",
+      "bytes": 11333,
+      "sha256": "4e416f198aea305d75020f8148dfa944b0a97db44128b3ac44604ef54f2cc228"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/upstream-driver/REPORT.md",
+      "bytes": 21732,
+      "sha256": "dd46a7c7217f167ebc46353379468ec9667acb4af2609dac7627387a5c3795e4"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "bytes": 6408,
+      "sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/platform/static-evidence.json",
+      "bytes": 19983,
+      "sha256": "c00f7ab1f93c2b1ae0babb482748afca82118f4b6c9f9562665d23be5f97cb90"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/platform/REPORT.md",
+      "bytes": 15781,
+      "sha256": "5c1481e9aa4e4f6f4ecf6511ab0a9f4a799833ab1a888a5a1e42e1a5f79167da"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/adapter-plan/README.md",
+      "bytes": 18442,
+      "sha256": "264a4d00904d7af54f3b3c9baa484befe2355cba26f2fc1837a557da8501f385"
+    },
+    {
+      "path": "android/uvc-sim/provenance/routes/mjpeg-decoder/README.md",
+      "bytes": 4926,
+      "sha256": "f38b26797c1fe2d7908ff52ff98782b28693506ea9094bc239a41d2d0f9fa2a0"
+    },
+    {
+      "path": "android/uvc-sim/provenance/followup/uac/REPORT.md",
+      "bytes": 17285,
+      "sha256": "c2de02391fadfd6b4a6937db3740fd008a67c30b286da19d94e68e71ac161af3"
+    },
+    {
+      "path": "android/uvc-sim/android/local/sidecar/copilot/uvc/AndroidUvcDiscovery.java",
+      "bytes": 1931,
+      "sha256": "e20f51ac6e48683920d60e4303c0893c78176e6426d6b482c5f87934816a1a47"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/UvcDriver.java",
+      "bytes": 2637,
+      "sha256": "85b96d520573f4fbaa5736ecfc3878d314c4ab3a78327686cf517b63de9396b6"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/UvcCoordinator.java",
+      "bytes": 18071,
+      "sha256": "77da7e99a516ef2c11bb70a9f1188e963d8c962f8c5e7eefe5c461acbe1d2b34"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/CaptureGate.java",
+      "bytes": 1747,
+      "sha256": "cf1e584bd6c094b6ff8618c0b4d344b7e880252bb6687796f1b82b1da7759b0b"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/FramePipeline.java",
+      "bytes": 11996,
+      "sha256": "8190fab701e3f577211d43747a44937950d72df9dcd1c256437072c1498e7353"
+    },
+    {
+      "path": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/SyntheticUvcDriver.java",
+      "bytes": 4491,
+      "sha256": "c8feae76a8bb75e122cd2b245db85e2c94a4134dd75bacfcde0d8752ff60cfd0"
+    }
+  ],
+  "mapping_document": {
+    "path": "android/uvc-sim/protocol-research/SOURCE_MAPPING.md",
+    "bytes": 21024,
+    "sha256": "56fad01acac28285c5d2b56e2e5c7456faad4a9fe519c5bfc4e0e792c36bc840"
+  },
+  "official_inputs": [
+    {
+      "id": "libusb/libusb/core.c",
+      "upstream": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/core.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/core.c",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libusb/libusb/core.c",
+      "encoding": "utf-8",
+      "wire_bytes": 108326,
+      "wire_sha256": "33db091fdf75b690f9c5daf65ca8e3124978e897c2824d97fbc97567afea1d7b",
+      "source_sha256": "33db091fdf75b690f9c5daf65ca8e3124978e897c2824d97fbc97567afea1d7b",
+      "git_blob_sha1": "507066af16560b2ea1bf564b8aac58f6fcb30b68",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "borrowed-system-handle",
+          "start": 1371,
+          "end": 1407,
+          "contains": "The system device handle will not be closed by libusb_close()."
+        },
+        {
+          "label": "close-is-not-transfer-drain",
+          "start": 1557,
+          "end": 1593,
+          "contains": "A cancellation hasn't even been scheduled"
+        }
+      ]
+    },
+    {
+      "id": "libusb/libusb/io.c",
+      "upstream": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/io.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/io.c",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libusb/libusb/io.c",
+      "encoding": "utf-8",
+      "wire_bytes": 112226,
+      "wire_sha256": "c83a9e14b9ff8b9566e42d23d1e90c919e223fd1e04721c5ca1a3aff13239a3d",
+      "source_sha256": "c83a9e14b9ff8b9566e42d23d1e90c919e223fd1e04721c5ca1a3aff13239a3d",
+      "git_blob_sha1": "3dfc6c64b23e422fc446a13544405aca354d0675",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "no-active-transfer-free",
+          "start": 1313,
+          "end": 1326,
+          "contains": "It is not legal to free an active transfer"
+        },
+        {
+          "label": "cancel-not-completion",
+          "start": 1573,
+          "end": 1579,
+          "contains": "does not indicate cancellation"
+        },
+        {
+          "label": "not-found-ambiguous",
+          "start": 1603,
+          "end": 1623,
+          "contains": "already complete, or already cancelled."
+        },
+        {
+          "label": "cancel-call-borrows-until-return",
+          "start": 1609,
+          "end": 1639,
+          "contains": "usbi_mutex_unlock(&itransfer->lock);"
+        },
+        {
+          "label": "completed-event-api",
+          "start": 905,
+          "end": 920,
+          "contains": "libusb_handle_events_completed"
+        }
+      ]
+    },
+    {
+      "id": "libusb/libusb/os/linux_usbfs.c",
+      "upstream": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/os/linux_usbfs.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/linux_usbfs.c",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libusb/libusb/os/linux_usbfs.c",
+      "encoding": "utf-8",
+      "wire_bytes": 81273,
+      "wire_sha256": "ac4401cec575cc2f12b71377cced5e5943e72366eedeffbe42e951134b26bd54",
+      "source_sha256": "ac4401cec575cc2f12b71377cced5e5943e72366eedeffbe42e951134b26bd54",
+      "git_blob_sha1": "74e73f9a81091f854167c6fe4a40b104074bdc22",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "fd-is-kept",
+          "start": 1446,
+          "end": 1454,
+          "contains": "hpriv->fd_keep = 1;"
+        },
+        {
+          "label": "only-owned-fd-close",
+          "start": 1488,
+          "end": 1492,
+          "contains": "if (!hpriv->fd_keep)"
+        }
+      ]
+    },
+    {
+      "id": "libusb/libusb/sync.c",
+      "upstream": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "source_path": "libusb/sync.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/sync.c",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libusb/libusb/sync.c",
+      "encoding": "utf-8",
+      "wire_bytes": 13110,
+      "wire_sha256": "3bf6e788084956a3226933580f2cb2957c2de9e0a2ebeeec1a26e6c7529bfa68",
+      "source_sha256": "3bf6e788084956a3226933580f2cb2957c2de9e0a2ebeeec1a26e6c7529bfa68",
+      "git_blob_sha1": "733927d9622536a6f28c39c380d5ce457019ff3d",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "sync-return-waits-for-completion",
+          "start": 49,
+          "end": 69,
+          "contains": "while (!*completed)"
+        },
+        {
+          "label": "zero-timeout-unlimited",
+          "start": 90,
+          "end": 92,
+          "contains": "timeout, use value 0."
+        },
+        {
+          "label": "sync-control-internal-transfer",
+          "start": 103,
+          "end": 171,
+          "contains": "sync_transfer_wait_for_completion(transfer);"
+        }
+      ]
+    },
+    {
+      "id": "libuvc/include/libuvc/libuvc.h",
+      "upstream": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "include/libuvc/libuvc.h",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/include/libuvc/libuvc.h",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libuvc/include/libuvc/libuvc.h",
+      "encoding": "utf-8",
+      "wire_bytes": 31044,
+      "wire_sha256": "1474abaf0c4591c05259bc8b71e9a4f747f3db2a6424e26e839896a2eecd563f",
+      "source_sha256": "1474abaf0c4591c05259bc8b71e9a4f747f3db2a6424e26e839896a2eecd563f",
+      "git_blob_sha1": "447b3e7d4c6136c2af32d0016145eeadeabacba0",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "no-uvc-call-in-callback",
+          "start": 480,
+          "end": 486,
+          "contains": "You must not call any uvc_* functions during a callback."
+        }
+      ]
+    },
+    {
+      "id": "libuvc/src/device.c",
+      "upstream": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/device.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/device.c",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libuvc/src/device.c",
+      "encoding": "utf-8",
+      "wire_bytes": 60988,
+      "wire_sha256": "a350afb1e39239d223b1e937fa4375505c9339019837d3c61ab9125062af04d2",
+      "source_sha256": "a350afb1e39239d223b1e937fa4375505c9339019837d3c61ab9125062af04d2",
+      "git_blob_sha1": "180432e94be77b344e32cf8f2be30b36eae74586",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "uvc-wrap-borrows",
+          "start": 260,
+          "end": 298,
+          "contains": "libusb_wrap_sys_device(context->usb_ctx, sys_dev, &usb_devh)"
+        },
+        {
+          "label": "status-submit",
+          "start": 358,
+          "end": 379,
+          "contains": "libusb_submit_transfer(internal_devh->status_xfer)"
+        },
+        {
+          "label": "status-free-and-device-close",
+          "start": 1907,
+          "end": 1958,
+          "contains": "libusb_free_transfer(devh->status_xfer)"
+        },
+        {
+          "label": "status-resubmit",
+          "start": 2116,
+          "end": 2144,
+          "contains": "libusb_submit_transfer(transfer)"
+        }
+      ]
+    },
+    {
+      "id": "libuvc/src/init.c",
+      "upstream": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/init.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/init.c",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libuvc/src/init.c",
+      "encoding": "utf-8",
+      "wire_bytes": 5316,
+      "wire_sha256": "a4d085d05a1b6c3350ee8ca199e27c852caee982679a629bd5c90a65b6c06631",
+      "source_sha256": "a4d085d05a1b6c3350ee8ca199e27c852caee982679a629bd5c90a65b6c06631",
+      "git_blob_sha1": "48028357468af549bab368ac24a7e412f9915644",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "external-context-event-duty",
+          "start": 94,
+          "end": 118,
+          "contains": "libusb event processing"
+        },
+        {
+          "label": "only-owned-context-starts-pump",
+          "start": 151,
+          "end": 161,
+          "contains": "if (ctx->own_usb_ctx)"
+        }
+      ]
+    },
+    {
+      "id": "libuvc/src/stream.c",
+      "upstream": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "source_path": "src/stream.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/stream.c",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "cache_path": "upstream-driver/libuvc/src/stream.c",
+      "encoding": "utf-8",
+      "wire_bytes": 51005,
+      "wire_sha256": "03c5895161f45160656e07169a9ea910986d077fdb9fe1206eacf92586e6eb27",
+      "source_sha256": "03c5895161f45160656e07169a9ea910986d077fdb9fe1206eacf92586e6eb27",
+      "git_blob_sha1": "ea261e45f36de8dd498251ef6f24bfef52b67d56",
+      "membership_evidence": "Inherited fixed commit and non-truncated tree entry verified by upstream-driver collection.",
+      "anchors": [
+        {
+          "label": "control-zero-timeout",
+          "start": 249,
+          "end": 256,
+          "contains": "buf, len, 0"
+        },
+        {
+          "label": "probe-result-not-handled",
+          "start": 636,
+          "end": 647,
+          "contains": "uvc_query_stream_ctrl( devh, ctrl, 1, UVC_SET_CUR );"
+        },
+        {
+          "label": "reused-callback-frame",
+          "start": 1373,
+          "end": 1379,
+          "contains": "strmh->user_cb(&strmh->frame, strmh->user_ptr)"
+        },
+        {
+          "label": "reallocated-frame-data",
+          "start": 1388,
+          "end": 1439,
+          "contains": "frame->data = realloc(frame->data, strmh->hold_bytes);"
+        },
+        {
+          "label": "stream-cancel-wait-join",
+          "start": 1554,
+          "end": 1594,
+          "contains": "pthread_cond_wait(&strmh->cb_cond, &strmh->cb_mutex);"
+        }
+      ]
+    },
+    {
+      "id": "aosp/usb-manager",
+      "upstream": "AOSP frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "source_path": "core/java/android/hardware/usb/UsbManager.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/usb/UsbManager.java?format=TEXT",
+      "inherited_lock": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "cache_path": "platform/usb-manager.raw",
+      "encoding": "base64",
+      "wire_bytes": 89616,
+      "wire_sha256": "edc6b8b4b6e4d0a60eb27744ea0191c481b48b48d7a54b424de6ba40586228cc",
+      "source_sha256": "e3e05f4b5441e640896b0d7b36b710a6d8a31142c5c667f9ed65fc0119ca7603",
+      "git_blob_sha1": "41f344a03e77810aa420d7a12b26a7842c8e3d19",
+      "membership_evidence": "Fixed commit URL plus content identity; no independent full Git tree membership proof.",
+      "anchors": [
+        {
+          "label": "permission-is-attachment-bound",
+          "start": 1035,
+          "end": 1051,
+          "contains": "until the device is disconnected."
+        },
+        {
+          "label": "open-can-fail",
+          "start": 867,
+          "end": 882,
+          "contains": "return null;"
+        }
+      ]
+    },
+    {
+      "id": "aosp/usb-connection-jni",
+      "upstream": "AOSP frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "source_path": "core/jni/android_hardware_UsbDeviceConnection.cpp",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/jni/android_hardware_UsbDeviceConnection.cpp?format=TEXT",
+      "inherited_lock": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "cache_path": "platform/usb-connection-jni.raw",
+      "encoding": "base64",
+      "wire_bytes": 14332,
+      "wire_sha256": "0198172f395e54bd571902d8ab1a5a6324dae113b4f7f5468c4617e9ee5a962f",
+      "source_sha256": "76ca328e2892d5357c908024b87065884576067e22f7066d4c1d588aff47a133",
+      "git_blob_sha1": "a0228428e90e53b439765922c942e0b08e61b84a",
+      "membership_evidence": "Fixed commit URL plus content identity; no independent full Git tree membership proof.",
+      "anchors": [
+        {
+          "label": "open-duplicates-pfd-once",
+          "start": 45,
+          "end": 65,
+          "contains": "F_DUPFD_CLOEXEC"
+        },
+        {
+          "label": "connection-close",
+          "start": 68,
+          "end": 76,
+          "contains": "usb_device_close(device);"
+        },
+        {
+          "label": "fd-getter-borrows",
+          "start": 79,
+          "end": 87,
+          "contains": "return usb_device_get_fd(device);"
+        }
+      ]
+    },
+    {
+      "id": "aosp/usbhost",
+      "upstream": "AOSP system/core",
+      "commit": "fc7bc8c4bfb4c6095e34ea784509dae56f25b486",
+      "source_path": "libusbhost/usbhost.c",
+      "url": "https://android.googlesource.com/platform/system/core/+/fc7bc8c4bfb4c6095e34ea784509dae56f25b486/libusbhost/usbhost.c?format=TEXT",
+      "inherited_lock": "android/uvc-sim/provenance/routes/platform/INPUT_LOCK.json",
+      "cache_path": "platform/usbhost.raw",
+      "encoding": "base64",
+      "wire_bytes": 33080,
+      "wire_sha256": "72fec253a0ffa294ce9024d2cfc70f77cf4c251c4bfd6ff7557ed1626dd5d83a",
+      "source_sha256": "fd339a0f1768450a84caff86b6a3d00c858c9c62edb9d250e311c9afdf127c0d",
+      "git_blob_sha1": "d8f15cd6c58c652125f7fa94a8c61c55e77c0400",
+      "membership_evidence": "Fixed commit URL plus content identity; no independent full Git tree membership proof.",
+      "anchors": [
+        {
+          "label": "connection-owns-close",
+          "start": 358,
+          "end": 362,
+          "contains": "close(device->fd);"
+        },
+        {
+          "label": "native-fd-getter",
+          "start": 409,
+          "end": 414,
+          "contains": "return device->fd;"
+        }
+      ]
+    }
+  ],
+  "model_boundary": {
+    "files_owned_elsewhere": [
+      "protocol_model.py",
+      "test_protocol.py",
+      "run_validation.py"
+    ],
+    "original_source_no_upstream_copy_or_execution": true,
+    "fd_path": "Single owner and native borrow of opaque token; no OS fd or dual-fd dup proof.",
+    "authorization": "Synthetic immutable binding only; current system permission/attachment validity are external prerequisites.",
+    "completion": "Async submissions require matching completion, callback exit and outstanding cancel-call return; sync control requires its real return.",
+    "cancel_result": "Atomic already-returned cancellation notification only; cancel_call_enter/return model a separately active API stack.",
+    "timeout": "Requester deadline is not terminal completion; no response may remain pending indefinitely.",
+    "barriers": [
+      "publication invalidated",
+      "native obligations drained and ownership released",
+      "application-owned pixels zeroed and released"
+    ],
+    "not_claimed": [
+      "real JNI binding",
+      "native status-close patch",
+      "bounded native close",
+      "hardware compatibility",
+      "native/JNI allocation or memory budget validation",
+      "OS response or scheduling guarantee",
+      "new PRD state or test number"
+    ]
+  },
+  "unpatched_conditions": [
+    "status interrupt cancellation/completion drain before device free",
+    "control deadline and probe return-code propagation",
+    "allocation/thread/failure unwind coverage",
+    "native/JNI/FD ownership implementation and complete drain receipts",
+    "isolated source build, ABI and actual package verification",
+    "complete shipped-source and LGPL/BSD/JPEG/UAC authorization review",
+    "authorized device-specific validation"
+  ],
+  "validation": {
+    "method": "Python standard library; read-only byte/hash/Git-blob/anchor comparisons against inherited locks and working-tree baseline",
+    "new_network_fetches": 0,
+    "cache_mutations": 0,
+    "native_execution": false,
+    "device_execution": false,
+    "expected_local_inputs": 15,
+    "expected_official_inputs": 11,
+    "cache_location_hint": "../sidecar-uvc-route/android/uvc-sim/build/routes",
+    "failure_policy": "Missing/mismatched inputs fail; no fetch, auto-refresh or lock overwrite fallback."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "python_optimization": 0,
+  "checks": {
+    "offline_missing_input": {
+      "passed": true,
+      "error": "missing cached input: missing-348bd1312cd242a1a1d2efe35508c3c6"
+    },
+    "changed_payload": {
+      "passed": true,
+      "error": "cache metadata mismatch: tamper.bin"
+    },
+    "changed_payload_and_cache_metadata": {
+      "passed": true,
+      "error": "locked input mismatch: tamper.bin"
+    },
+    "offline_main_missing_inputs": {
+      "passed": true,
+      "error": "missing cached input: uvc-sources.jar"
+    }
+  },
+  "failed_run_preserved_report_sha256": "ec530242fdafe4ebd214a845c0d2331bde05d7d3cede4dad8669e075a28acc6e"
+}

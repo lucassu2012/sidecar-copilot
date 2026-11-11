@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "git_baseline": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+  "scope": "Android SDK compilation/DEX/manifest validation plus host doubles; no Android runtime execution",
+  "completed_utc": "2026-11-10T18:42:37.520043+00:00",
+  "pass": true,
+  "failure": null,
+  "locked_inputs_verified": {
+    "inherited_files": 22,
+    "sdk_files": 5
+  },
+  "inputs": {
+    "android/uvc-sim/native-experiment/android-bridge-experiment/AndroidManifest.xml": {
+      "bytes": 337,
+      "sha256": "f0ac9b90b9400c7a16316ff9f639d65654b8d10a08fe6c58c9abb2f46adcaded"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/inputs-lock.json": {
+      "bytes": 6087,
+      "sha256": "3e4b8d1a50f9a3653a49ca7eac23b4a9a5fd2f88245ae371a1500a68e854688a"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/run_checks.py": {
+      "bytes": 10258,
+      "sha256": "a0b4e24ceda547a5ea9aebe4ab33ee5f2bd7926f6c94da673fa0dae29afb9b2a"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/.gitignore": {
+      "bytes": 126,
+      "sha256": "a037b1df21948e3e994694b56ec655aaf7ec3ef7c71ce3d5a5bc1bd26153c4fc"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/anchors.json": {
+      "bytes": 15772,
+      "sha256": "f8c00e436d7174bea1d9e9409ab81fca890377017217cff4e535222415c1962e"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/inputs.json": {
+      "bytes": 16737,
+      "sha256": "d8cb63e4a0b02fc43dfc6d51e30dda693d95151ff119cea41c94f7e00b6c4ba9"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/validation.json": {
+      "bytes": 807,
+      "sha256": "fe7a1a0d8c1d352de0c3d857e917023762baa87b31723bee232722e14bb06c1a"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/source-evidence/verify_sources.py": {
+      "bytes": 11169,
+      "sha256": "0680aff2c2df1be04293e28791951d13273fa7794390a89482d35cc69c8340de"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/AndroidPlatformUsbPort.java": {
+      "bytes": 16552,
+      "sha256": "cf4676a5ea2b6063f0edbd1c3f334dc194465ccb296ab266fbb1d941f80119ac"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/AndroidUsbLifecycleBridge.java": {
+      "bytes": 5485,
+      "sha256": "49382eac050aa7a2dd7e541c76272543cb3e579171d0ce82b4c43318435c6047"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/PermissionReceiver.java": {
+      "bytes": 1637,
+      "sha256": "500c52ed9c469649062c94273f97787a1d4650fa89614447ce3d7cb310c504fe"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/src/local/sidecar/copilot/usbbridge/PermissionRegistry.java": {
+      "bytes": 2579,
+      "sha256": "4dbffaa18f3e7044ec8ca16c74e605dd10e0b13af355c208656edd3b7791bcb1"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeBackend.java": {
+      "bytes": 5030,
+      "sha256": "d35f88a71d31406124a8848c96f3e297bf22fe7f36ec76d6de2aea5c5737f1e9"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeChecks.java": {
+      "bytes": 41868,
+      "sha256": "10c1086b004ffc4e7a8fe24435d96ea58270e682c6aa62d14ca0a2659e309677"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeContext.java": {
+      "bytes": 3433,
+      "sha256": "595d4dbd760f3c44761b987492be1ae618e254ec8e825f0f8f12ee03cf9965f6"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test/BridgeTestSupport.java": {
+      "bytes": 3456,
+      "sha256": "df4cca42124769b979ef665892fa6866e4f803dbf9a641d5f4c1a4a1c99079cb"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/app/PendingIntent.java": {
+      "bytes": 3915,
+      "sha256": "d807bfd4d2c10c8cf1e0d1f3f30426bbff0cbe89b297ea42dba10bb4bf189602"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/BroadcastReceiver.java": {
+      "bytes": 249,
+      "sha256": "cf7fcc111ec7f7e961fc5c65983b659d1571f317d1f3b87e7810be229630fbcf"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/ComponentName.java": {
+      "bytes": 968,
+      "sha256": "e23228286ef3bca89d06be4f546b71f38696e16e85d28cf06818f94120263a6d"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/Context.java": {
+      "bytes": 737,
+      "sha256": "639dc29a6aaf39aa00561dee724fef93068cfa0a71c744d1ea8260bc01a6e3aa"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/Intent.java": {
+      "bytes": 2580,
+      "sha256": "ba12e649e03a2c55f37fe2b142cfb9865acf496245eb359f5ea93ba123092502"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/content/IntentFilter.java": {
+      "bytes": 410,
+      "sha256": "4e328a0ba1535b1bba60c6e6c2954ed46e71a4abd30844fb0fba4292bddda423"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/hardware/usb/UsbDevice.java": {
+      "bytes": 1172,
+      "sha256": "83f98077a1e4833cab3df45569c64e8e2571d71a1aaf8a08d0986cb5e48c6154"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/hardware/usb/UsbDeviceConnection.java": {
+      "bytes": 1969,
+      "sha256": "3060b147619445487642c42af75a541208ae9360b6df6b64b8c880c114050ba6"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/hardware/usb/UsbManager.java": {
+      "bytes": 2324,
+      "sha256": "9098458124c0e0a1ffb114e96960a5aa37f9899a3fb56e4621d24b47ef415897"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/net/Uri.java": {
+      "bytes": 568,
+      "sha256": "d097a9ded6d8f272faa27bea9fd1cbfc40a8d90d028818c88a5566f22a0a1b11"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/BaseBundle.java": {
+      "bytes": 634,
+      "sha256": "c031907829417eab04c559ac96e5f8237e739d664f3bf094041478f3a198b366"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/Build.java": {
+      "bytes": 270,
+      "sha256": "7f5952753a0ba59dffac6a23c4d3308e25596ee9bedd7cafff135d04ece20eaa"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/Bundle.java": {
+      "bytes": 418,
+      "sha256": "8ca92aa928b29f14f6933124a8e16ee51a94c88c5b465b6c99c3927934375601"
+    },
+    "android/uvc-sim/native-experiment/android-bridge-experiment/test-android/android/os/Parcelable.java": {
+      "bytes": 124,
+      "sha256": "2aaf46354bc722a8295d851f3a0089d9d2c5d20ec2e2b6133426644cab872441"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/CaptureSession.java": {
+      "bytes": 4064,
+      "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/StopBarrier.java": {
+      "bytes": 3891,
+      "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/UvcContract.java": {
+      "bytes": 15549,
+      "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/BackendPort.java": {
+      "bytes": 3807,
+      "sha256": "d063d51451e53acf960a0b9cd00e3e32ed7a0e152ae8fc0fc608c9aca59d1a4b"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/IsolatedCaptureSession.java": {
+      "bytes": 25322,
+      "sha256": "fedcf080407c9d591f6ebd7f6140229bf7f076508483f4910617650e6000eefd"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/OwnedFrameBridge.java": {
+      "bytes": 10811,
+      "sha256": "c3ee156b548c6a17acdb33b6e7efc31f90d57d1c5726988fa37f09f469d408e8"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/PlatformUsbPort.java": {
+      "bytes": 2142,
+      "sha256": "f46ebe272b2a363363533103ccd54cf7ca23c088d4f4409c6d0973563de5dc26"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/UsbConnectionOwner.java": {
+      "bytes": 21946,
+      "sha256": "4929ba6a44201b9846a809ea2a4ee059e466d740eb0e0cbaad32ca6c4dcb227d"
+    }
+  },
+  "commands": [
+    {
+      "label": "jdk-version",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+        "-version"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": "openjdk version \"17.0.19\" 2026-04-21\nOpenJDK Runtime Environment Temurin-17.0.19+10 (build 17.0.19+10)\nOpenJDK 64-Bit Server VM Temurin-17.0.19+10 (build 17.0.19+10, mixed mode, sharing)\n"
+    },
+    {
+      "label": "aapt2-version",
+      "argv": [
+        "E:\\tools\\android-sdk\\build-tools\\35.0.0\\aapt2.exe",
+        "version"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": "Android Asset Packaging Tool (aapt) 2.19-11948202\n"
+    },
+    {
+      "label": "d8-version",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+        "-cp",
+        "E:\\tools\\android-sdk\\build-tools\\35.0.0\\lib\\d8.jar",
+        "com.android.tools.r8.D8",
+        "--version"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "D8 8.6.2-dev (build abaab469b5ebd4dd2bb91ba0ed6f45277faae4ca from go/r8bot (luci-r8-custom-ci-archive-0-77gl))\n",
+      "stderr": ""
+    },
+    {
+      "label": "android-sdk-compile",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe",
+        "--release",
+        "8",
+        "-encoding",
+        "UTF-8",
+        "-Xlint:all",
+        "-Werror",
+        "-proc:none",
+        "-implicit:none",
+        "-sourcepath",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\empty-path",
+        "-classpath",
+        "E:\\tools\\android-sdk\\platforms\\android-35\\android.jar",
+        "-d",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\product-classes",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\contract-baseline\\src\\local\\sidecar\\copilot\\uvccontract\\CaptureSession.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\contract-baseline\\src\\local\\sidecar\\copilot\\uvccontract\\StopBarrier.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\contract-baseline\\src\\local\\sidecar\\copilot\\uvccontract\\UvcContract.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\src\\local\\sidecar\\copilot\\uvcadapter\\BackendPort.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\src\\local\\sidecar\\copilot\\uvcadapter\\IsolatedCaptureSession.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\src\\local\\sidecar\\copilot\\uvcadapter\\OwnedFrameBridge.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\src\\local\\sidecar\\copilot\\usbowner\\PlatformUsbPort.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\src\\local\\sidecar\\copilot\\usbowner\\UsbConnectionOwner.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\src\\local\\sidecar\\copilot\\usbbridge\\AndroidPlatformUsbPort.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\src\\local\\sidecar\\copilot\\usbbridge\\AndroidUsbLifecycleBridge.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\src\\local\\sidecar\\copilot\\usbbridge\\PermissionReceiver.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\src\\local\\sidecar\\copilot\\usbbridge\\PermissionRegistry.java"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "product-jar",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\jar.exe",
+        "cf",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\bridge.jar",
+        "-C",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\product-classes",
+        "."
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "dex-build",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+        "-cp",
+        "E:\\tools\\android-sdk\\build-tools\\35.0.0\\lib\\d8.jar",
+        "com.android.tools.r8.D8",
+        "--lib",
+        "E:\\tools\\android-sdk\\platforms\\android-35\\android.jar",
+        "--min-api",
+        "30",
+        "--output",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\dex",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\bridge.jar"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "manifest-link",
+      "argv": [
+        "E:\\tools\\android-sdk\\build-tools\\35.0.0\\aapt2.exe",
+        "link",
+        "-I",
+        "E:\\tools\\android-sdk\\platforms\\android-35\\android.jar",
+        "--manifest",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\AndroidManifest.xml",
+        "-o",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\manifest-check.apk"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "android-doubles-compile",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe",
+        "--release",
+        "8",
+        "-encoding",
+        "UTF-8",
+        "-Xlint:all",
+        "-Werror",
+        "-proc:none",
+        "-implicit:none",
+        "-sourcepath",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\empty-path",
+        "-classpath",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\empty-path",
+        "-d",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\fake-classes",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\app\\PendingIntent.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\content\\BroadcastReceiver.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\content\\ComponentName.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\content\\Context.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\content\\Intent.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\content\\IntentFilter.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\hardware\\usb\\UsbDevice.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\hardware\\usb\\UsbDeviceConnection.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\hardware\\usb\\UsbManager.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\net\\Uri.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\os\\BaseBundle.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\os\\Build.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\os\\Bundle.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test-android\\android\\os\\Parcelable.java"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "host-tests-compile",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe",
+        "--release",
+        "8",
+        "-encoding",
+        "UTF-8",
+        "-Xlint:all",
+        "-Werror",
+        "-proc:none",
+        "-implicit:none",
+        "-sourcepath",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\empty-path",
+        "-classpath",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\product-classes;C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\fake-classes",
+        "-d",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\test-classes",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test\\BridgeBackend.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test\\BridgeChecks.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test\\BridgeContext.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\test\\BridgeTestSupport.java"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "bridge-checks",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+        "-cp",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\test-classes;C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\fake-classes;C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-android-usb-bridge\\android\\uvc-sim\\native-experiment\\android-bridge-experiment\\build\\run-20261110T184229-39f250db\\product-classes",
+        "local.sidecar.copilot.usbbridge.BridgeChecks"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "PASS only_explicit_actions_request_and_open\nPASS malformed_permission_does_not_consume_registry\nPASS synchronous_denial_stops_without_open\nPASS asynchronous_denial_revokes_without_root_hook\nPASS early_callback_request_stack_and_stop\nPASS revocation_cancel_unregister_and_late_callback\nPASS isolated_loader_has_empty_process_registry\nPASS permission_identity_is_unique_and_not_extras_only\nPASS detach_and_same_numeric_fd_new_owner\nPASS lifecycle_and_permission_revocation_order\nPASS preacquisition_permission_recheck_has_no_unknown_handle\nPASS detach_during_open_keeps_late_handle_old\nPASS lifecycle_stop_during_getfd\nPASS negative_fd_rejected_and_old_connection_closed\nPASS actual_parent_adapter_owner_and_stop_barrier\nPASS stop_during_receiver_registration\nPASS late_pending_intent_factory_return_is_cancelled\nPASS port_executor_inline_and_reject_keep_cleanup_pending\nPASS publication_gate_reentry_is_bounded\nPASS publication_gate_failure_cannot_fake_full_stop\nPASS sdk30_31_35_surface_branches_model_only\nPASS double_pending_intent_fill_rules\nPASS independent_dispatcher_negative_controls\nBRIDGE_CHECKS_OK cases=23 assertions=425 negative_controls=2\n",
+      "stderr": ""
+    }
+  ],
+  "artifacts": {
+    "bridge.jar": {
+      "bytes": 91492,
+      "sha256": "5985e212265e0534239c269759ed7ed940e10d7b96e9e134093abbd486b74317"
+    },
+    "manifest-check.apk": {
+      "bytes": 771,
+      "sha256": "fafc66cbaff8ff2ff89f79ed046948cfef4728fd5bd4d1319ccf2325c0861a48"
+    },
+    "dex/classes.dex": {
+      "bytes": 77160,
+      "sha256": "86c8aa6e22a5498e91474a87848a828da40cf9cf85991b44451b8ba205699338"
+    }
+  },
+  "source_counts": {
+    "production": 12,
+    "android_doubles": 14,
+    "tests": 4
+  },
+  "removed_java_environment_keys": [],
+  "jdk_launchers": {
+    "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe": {
+      "bytes": 50344,
+      "sha256": "b3afe83e1ab067da4c56f1a7b2ba4c14ec832d694333f35b2b45178e9ac596ef"
+    },
+    "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe": {
+      "bytes": 24232,
+      "sha256": "988446ceec6e33ce0420ddf2489bb13d3a2278b4c8745309123dfa8f2c0dd0ce"
+    },
+    "E:\\tools\\jdk-17.0.19+10\\bin\\jar.exe": {
+      "bytes": 24232,
+      "sha256": "0882b8c840b13799d64c76d0c84da6c033cc76661ee7972ddc88b7b213bf4dd6"
+    }
+  },
+  "not_executed": [
+    "old owner/adapter/public/C++/Python suites",
+    "Android framework or Binder runtime",
+    "actual permission dialog/USB FD/physical device",
+    "ADB/emulator/installation/signing",
+    "JNI/native backend/real capture/UAC",
+    "deployment or publication"
+  ]
+}

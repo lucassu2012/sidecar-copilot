@@ -1,0 +1,65 @@
+{
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "result": "pass",
+  "scope": "Audit-tool guards only; not runtime, native, USB or PRD acceptance tests",
+  "input_lock_sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d",
+  "evidence_sha256": "c00f7ab1f93c2b1ae0babb482748afca82118f4b6c9f9562665d23be5f97cb90",
+  "checks": [
+    {
+      "label": "offline result replay",
+      "expected_success": true,
+      "return_code": 0,
+      "matched_diagnostic": "\"inputs_verified\": 20",
+      "trusted_evidence_unchanged": true
+    },
+    {
+      "label": "missing cache",
+      "expected_success": false,
+      "return_code": 1,
+      "matched_diagnostic": "missing locked input",
+      "trusted_evidence_unchanged": true
+    },
+    {
+      "label": "busy collection lock",
+      "expected_success": false,
+      "return_code": 1,
+      "matched_diagnostic": "collection lock busy",
+      "trusted_evidence_unchanged": true
+    },
+    {
+      "label": "offline changed cache",
+      "expected_success": false,
+      "return_code": 1,
+      "matched_diagnostic": "input integrity mismatch",
+      "trusted_evidence_unchanged": true
+    },
+    {
+      "label": "online changed cache",
+      "expected_success": false,
+      "return_code": 1,
+      "matched_diagnostic": "input integrity mismatch",
+      "trusted_evidence_unchanged": true
+    },
+    {
+      "label": "existing lock cannot be bootstrapped again",
+      "expected_success": false,
+      "return_code": 1,
+      "matched_diagnostic": "bootstrap refuses to overwrite existing input lock",
+      "trusted_evidence_unchanged": true
+    },
+    {
+      "label": "changed computed report",
+      "expected_success": false,
+      "return_code": 1,
+      "matched_diagnostic": "recomputed evidence differs",
+      "trusted_evidence_unchanged": true
+    },
+    {
+      "label": "missing computed report",
+      "expected_success": false,
+      "return_code": 1,
+      "matched_diagnostic": "missing tracked report",
+      "trusted_evidence_unchanged": true
+    }
+  ]
+}

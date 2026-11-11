@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "repository": "libjpeg-turbo/libjpeg-turbo",
+  "tag": "3.2.1",
+  "commit": "7b4993786d856cbccabfc0ed2f923ba000e326cc",
+  "observed_at_utc": "2026-11-10T15:25:33Z",
+  "scope": "Six immutable source/license/build text inputs; no complete tree membership, build, decoder execution, binary or hardware assertion.",
+  "inputs": [
+    {
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7b4993786d856cbccabfc0ed2f923ba000e326cc/LICENSE.md",
+      "bytes": 6077,
+      "sha256": "ba6bceebcba0fdd35488477c2cca8c4632ce82c74dbfbc87d886ce6fc4433579",
+      "git_blob_sha1": "37a489b245eeb16c9ad8fae217b54f07ca00a65c",
+      "github_root_contents_blob_verified": true
+    },
+    {
+      "path": "README.ijg",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7b4993786d856cbccabfc0ed2f923ba000e326cc/README.ijg",
+      "bytes": 12799,
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6",
+      "git_blob_sha1": "dbf8070cac812bcfd7eb4d407062919f69c777c8",
+      "github_root_contents_blob_verified": true
+    },
+    {
+      "path": "BUILDING.md",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7b4993786d856cbccabfc0ed2f923ba000e326cc/BUILDING.md",
+      "bytes": 24753,
+      "sha256": "77e8862f0d003bacda8df973519dffcb1991a46dd21d6ece0323c479ba674a3d",
+      "git_blob_sha1": "8ae7eb755a41efc25d9bdb2757c7bdf4a772d5c4",
+      "github_root_contents_blob_verified": true
+    },
+    {
+      "path": "CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7b4993786d856cbccabfc0ed2f923ba000e326cc/CMakeLists.txt",
+      "bytes": 88875,
+      "sha256": "066ec13df2aa82442771b755f202dba5d2f826515ad801f6ed451d63672730a4",
+      "git_blob_sha1": "a6637f92bac31e804965d0443b2de9dccc0be3d4",
+      "github_root_contents_blob_verified": true
+    },
+    {
+      "path": "src/jpeglib.h",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7b4993786d856cbccabfc0ed2f923ba000e326cc/src/jpeglib.h",
+      "bytes": 55794,
+      "sha256": "dc3e8220f34b7e9f9e48620f5cb8dc070834feb3214bb12bbad78478ebb29e60",
+      "git_blob_sha1": "f7076a18d0106f28c608ac06272dcb397916a0c1",
+      "github_root_contents_blob_verified": false
+    },
+    {
+      "path": "sharedlib/CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/7b4993786d856cbccabfc0ed2f923ba000e326cc/sharedlib/CMakeLists.txt",
+      "bytes": 6814,
+      "sha256": "da27b7741ff8c33d24fd774faff5f35f244123e3f71e2627933a7dbc216f92bd",
+      "git_blob_sha1": "e2302d23162e99cd85222db1d505d07ea3657509",
+      "github_root_contents_blob_verified": false
+    }
+  ]
+}

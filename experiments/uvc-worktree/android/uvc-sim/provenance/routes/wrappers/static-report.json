@@ -1,0 +1,1787 @@
+{
+  "inherited_evidence": [
+    {
+      "path": "android/uvc-sim/provenance/libyuv/report.json",
+      "sha256": "31536dac831fb12c5417e958293ad4258a1f09d6d0cd326f31562d4c43e62bb8",
+      "size": 175998
+    },
+    {
+      "path": "android/uvc-sim/provenance/followup/libyuv/report.json",
+      "sha256": "74660a491cd2e0192e56446a14e4fe6ef935189bbcb9e603724ef5059f1c8cbe",
+      "size": 76290
+    },
+    {
+      "path": "android/uvc-sim/provenance/followup/video-alternatives/evidence.json",
+      "sha256": "63a7b439af6ef0a54f67b6eee45eea86a12d9ad2c753c622a83af746a026e5d6",
+      "size": 285602
+    },
+    {
+      "path": "android/uvc-sim/provenance/uac/static-evidence.json",
+      "sha256": "87769e5964fb7b0b3ae2c2e304ae22d9bd1c93039a77a05944b63e445b92ae1e",
+      "size": 134833
+    },
+    {
+      "path": "android/uvc-sim/provenance/followup/uac/evidence.json",
+      "sha256": "295a8aaf93c8b8d82eb548b657c1fb1c1e1cd8c27d84ce6b7e709b21f706dab7",
+      "size": 40893
+    }
+  ],
+  "lock_sha256": "281d6ebb0435cb4003f8a2a043c08bfeaf40b785ec4072e2191d3e074344d19a",
+  "metadata_observations": 32,
+  "schema": 1,
+  "scope": "Static evidence replay only. No binary download, upstream execution, build, device or compatibility/security clearance.",
+  "script_sha256": "b322dd6d5d999ceaaa0562ba4d5d181eec7f6ea7c30eb01409476688d7990aa8",
+  "snapshot_collection_began_utc": "2026-11-10T15:15:44Z",
+  "snapshot_sha256": "650c57117a6b3dc16a3386d2e1b6c89b7cb95fe46a585e8772b233a2a87ce8ec",
+  "source_bytes_total_including_duplicates": 710580,
+  "source_count": 26,
+  "source_report": [
+    {
+      "cache_file": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "line_count": 201,
+      "marker_lines": [
+        {
+          "line": 1,
+          "text": "Apache License"
+        },
+        {
+          "line": 66,
+          "text": "2. Grant of Copyright License. Subject to the terms and conditions of"
+        },
+        {
+          "line": 178,
+          "text": "APPENDIX: How to apply the Apache License to your work."
+        },
+        {
+          "line": 180,
+          "text": "To apply the Apache License to your work, attach the following"
+        },
+        {
+          "line": 189,
+          "text": "Copyright [yyyy] [name of copyright owner]"
+        },
+        {
+          "line": 191,
+          "text": "Licensed under the Apache License, Version 2.0 (the \"License\");"
+        }
+      ],
+      "path": "LICENSE",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/LICENSE"
+    },
+    {
+      "cache_file": "ebd3841b8e467e2b397467b4ed9beccc303681ee.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "ebd3841b8e467e2b397467b4ed9beccc303681ee",
+      "line_count": 1428,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 377,
+          "text": "return getDeviceList().size();"
+        },
+        {
+          "line": 383,
+          "text": "public List<UsbDevice> getDeviceList() {"
+        },
+        {
+          "line": 388,
+          "text": "return getDeviceList(mDeviceFilters);"
+        },
+        {
+          "line": 396,
+          "text": "public List<UsbDevice> getDeviceList(final List<DeviceFilter> filters) {"
+        },
+        {
+          "line": 401,
+          "text": "final HashMap<String, UsbDevice> deviceList = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 428,
+          "text": "public List<UsbDevice> getDeviceList(final DeviceFilter filter) {"
+        },
+        {
+          "line": 433,
+          "text": "final HashMap<String, UsbDevice> deviceList = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 454,
+          "text": "final HashMap<String, UsbDevice> list = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 464,
+          "text": "final HashMap<String, UsbDevice> list = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 492,
+          "text": "public boolean hasPermission(final UsbDevice device) {"
+        },
+        {
+          "line": 497,
+          "text": "return device != null && mUsbManager.hasPermission(device);"
+        },
+        {
+          "line": 533,
+          "text": "public void requestPermission(final UsbDevice device) {"
+        },
+        {
+          "line": 538,
+          "text": "if (mUsbManager.hasPermission(device)) {"
+        },
+        {
+          "line": 544,
+          "text": "mUsbManager.requestPermission(device, mPermissionIntent);"
+        },
+        {
+          "line": 587,
+          "text": "updateDeviceKeys(device, hasPermission(device));"
+        },
+        {
+          "line": 620,
+          "text": "final List<UsbDevice> devices = getDeviceList();"
+        },
+        {
+          "line": 628,
+          "text": "boolean hasPermission = hasPermission(device);"
+        },
+        {
+          "line": 994,
+          "text": "(manager != null && manager.hasPermission(device))) {"
+        },
+        {
+          "line": 1001,
+          "text": "if ((manager != null) && manager.hasPermission(device)) {"
+        },
+        {
+          "line": 1004,
+          "text": "connection = manager.openDevice(device);"
+        },
+        {
+          "line": 1100,
+          "text": "mConnection = monitor.mUsbManager.openDevice(device);"
+        },
+        {
+          "line": 1115,
+          "text": "final int desc = mConnection.getFileDescriptor();"
+        },
+        {
+          "line": 1231,
+          "text": "public synchronized int getFileDescriptor() throws IllegalStateException {"
+        },
+        {
+          "line": 1233,
+          "text": "return mConnection.getFileDescriptor();"
+        }
+      ],
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "4de4ba806ceb99a86b054b6ff731b839b9871c3d40776f03ad72a58275306074",
+      "size": 53975,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java"
+    },
+    {
+      "cache_file": "d2dc867ca2e56b97ebbdaa8621f5a56f5855f1f4.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "d2dc867ca2e56b97ebbdaa8621f5a56f5855f1f4",
+      "line_count": 632,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 100,
+          "text": "System.loadLibrary(\"jpeg-turbo212\");"
+        },
+        {
+          "line": 101,
+          "text": "System.loadLibrary(\"usb1.0\");"
+        },
+        {
+          "line": 102,
+          "text": "System.loadLibrary(\"uvc\");"
+        },
+        {
+          "line": 103,
+          "text": "System.loadLibrary(\"UVCCamera\");"
+        },
+        {
+          "line": 138,
+          "text": "result = nativeConnect(mNativePtr, mCtrlBlock.getFileDescriptor(), mParam.getQuirks());"
+        },
+        {
+          "line": 277,
+          "text": "public List<Size> getSupportedSizeList() {"
+        },
+        {
+          "line": 295,
+          "text": "List<Size> sizeList = getSupportedSizeList();"
+        },
+        {
+          "line": 411,
+          "text": "List<Size> sizeList = getSupportedSizeList();"
+        },
+        {
+          "line": 528,
+          "text": "public void setFrameCallback(final IFrameCallback callback, final int pixelFormat) {"
+        },
+        {
+          "line": 539,
+          "text": "nativeStartPreview(mNativePtr);"
+        },
+        {
+          "line": 547,
+          "text": "//        setFrameCallback(null, 0);"
+        },
+        {
+          "line": 549,
+          "text": "nativeStopPreview(mNativePtr);"
+        },
+        {
+          "line": 608,
+          "text": "private native int nativeConnect(long id_camera, int fileDescriptor, int quirks);"
+        },
+        {
+          "line": 622,
+          "text": "private native int nativeStartPreview(final long id_camera);"
+        },
+        {
+          "line": 624,
+          "text": "private native int nativeStopPreview(final long id_camera);"
+        }
+      ],
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "29f6c70876341a3ef7320d73cab2a35265a3aff655123770f5664e8755b21582",
+      "size": 21213,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java"
+    },
+    {
+      "cache_file": "320e3bea7778c2725bd289c350a9d449220abbb7.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "320e3bea7778c2725bd289c350a9d449220abbb7",
+      "line_count": 229,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 9,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 21,
+          "text": "* All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 103,
+          "text": "fd = dup(fd);"
+        },
+        {
+          "line": 106,
+          "text": "result = uvc_wrap(fd, mContext, &mDeviceHandle);"
+        },
+        {
+          "line": 140,
+          "text": "uvc_close(mDeviceHandle);"
+        },
+        {
+          "line": 195,
+          "text": "int UVCCamera::setFrameCallback(JNIEnv *env, jobject frame_callback_obj, int pixel_format) {"
+        },
+        {
+          "line": 199,
+          "text": "result = mPreview->setFrameCallback(env, frame_callback_obj, pixel_format);"
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "12c11937d5bfc01ad64da6ee9952956ac6fb88435f52fb769425b810960114f2",
+      "size": 6183,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp"
+    },
+    {
+      "cache_file": "fd2433ff338c708ca7cbe44d5efe2179212e78b1.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "fd2433ff338c708ca7cbe44d5efe2179212e78b1",
+      "line_count": 885,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 9,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 21,
+          "text": "* All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 232,
+          "text": "int UVCPreview::setFrameCallback(JNIEnv *env, jobject frame_callback_obj, int pixel_format) {"
+        },
+        {
+          "line": 562,
+          "text": "int result = uvc_start_streaming("
+        },
+        {
+          "line": 582,
+          "text": "result = uvc_mjpeg2rgbx_tj(frame_mjpeg, frame);   // MJPEG => yuyv"
+        },
+        {
+          "line": 584,
+          "text": "//                    LOGI(\"uvc_mjpeg2yuyv time: %f\", (double) (c_end - c_start) / CLOCKS_PER_SEC);"
+        },
+        {
+          "line": 603,
+          "text": "result = uvc_yuyv2rgbx(frame_yuv, frame);   // YUYV => RGBX"
+        },
+        {
+          "line": 605,
+          "text": "//                    LOGI(\"uvc_yuyv2rgbx time: %f\", (double) (c_end - c_start) / CLOCKS_PER_SEC);"
+        },
+        {
+          "line": 623,
+          "text": "uvc_stop_streaming(mDeviceHandle);"
+        },
+        {
+          "line": 876,
+          "text": "jobject buf = env->NewDirectByteBuffer(callback_frame->data, callbackPixelBytes);"
+        },
+        {
+          "line": 882,
+          "text": "recycle_frame(callback_frame);"
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "5b9819d4bb7f02a0f192225f331fdbec33a273aeec398b15da456610fa109e98",
+      "size": 28274,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp"
+    },
+    {
+      "cache_file": "63c63c9bc61ff98969b8c6c0d80d215313f02855.txt",
+      "commit": "fcdae5f9a194e2111d57019176b53470a120415b",
+      "git_blob_sha": "63c63c9bc61ff98969b8c6c0d80d215313f02855",
+      "line_count": 238,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 108,
+          "text": "MediaRecorder.AudioSource.DEFAULT,"
+        },
+        {
+          "line": 109,
+          "text": "MediaRecorder.AudioSource.MIC,"
+        },
+        {
+          "line": 110,
+          "text": "MediaRecorder.AudioSource.CAMCORDER,"
+        },
+        {
+          "line": 132,
+          "text": "audioRecord = new AudioRecord(src,"
+        }
+      ],
+      "path": "libuvccamera/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java",
+      "repo": "shiyinghan/UVCAndroid",
+      "sha256": "a2c39a6e41df8ed5af81a14bf9c99afad045c174d9bd18278a512d3ece7d4e3a",
+      "size": 9639,
+      "url": "https://raw.githubusercontent.com/shiyinghan/UVCAndroid/fcdae5f9a194e2111d57019176b53470a120415b/libuvccamera/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java"
+    },
+    {
+      "cache_file": "a6bdc99dd33a653f87a1db349abc2e1111fc5904.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "a6bdc99dd33a653f87a1db349abc2e1111fc5904",
+      "line_count": 167,
+      "marker_lines": [
+        {
+          "line": 6,
+          "text": "Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 8,
+          "text": "Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 20,
+          "text": "All files in the folder are under this Apache License, Version 2.0."
+        }
+      ],
+      "path": "README.md",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "ead03b974f7a88764fc1686d58d3584421a9d174ea2a63a1e974effaa7fad00a",
+      "size": 8253,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/README.md"
+    },
+    {
+      "cache_file": "722dd3613b14f838a4535c05c9e2e3806c7b0c73.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "722dd3613b14f838a4535c05c9e2e3806c7b0c73",
+      "line_count": 1346,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 278,
+          "text": "return getDeviceList().size();"
+        },
+        {
+          "line": 286,
+          "text": "public List<UsbDevice> getDeviceList() throws IllegalStateException {"
+        },
+        {
+          "line": 288,
+          "text": "return getDeviceList(mDeviceFilters);"
+        },
+        {
+          "line": 297,
+          "text": "public List<UsbDevice> getDeviceList(final List<DeviceFilter> filters) throws IllegalStateException {"
+        },
+        {
+          "line": 299,
+          "text": "final HashMap<String, UsbDevice> deviceList = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 327,
+          "text": "public List<UsbDevice> getDeviceList(final DeviceFilter filter) throws IllegalStateException {"
+        },
+        {
+          "line": 329,
+          "text": "final HashMap<String, UsbDevice> deviceList = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 349,
+          "text": "final HashMap<String, UsbDevice> list = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 359,
+          "text": "final HashMap<String, UsbDevice> list = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 387,
+          "text": "public final boolean hasPermission(final UsbDevice device) throws IllegalStateException {"
+        },
+        {
+          "line": 389,
+          "text": "return updatePermission(device, device != null && mUsbManager.hasPermission(device));"
+        },
+        {
+          "line": 417,
+          "text": "public synchronized boolean requestPermission(final UsbDevice device) {"
+        },
+        {
+          "line": 422,
+          "text": "if (mUsbManager.hasPermission(device)) {"
+        },
+        {
+          "line": 428,
+          "text": "mUsbManager.requestPermission(device, mPermissionIntent);"
+        },
+        {
+          "line": 453,
+          "text": "public UsbControlBlock openDevice(final UsbDevice device) throws SecurityException {"
+        },
+        {
+          "line": 454,
+          "text": "if (hasPermission(device)) {"
+        },
+        {
+          "line": 491,
+          "text": "updatePermission(device, hasPermission(device));"
+        },
+        {
+          "line": 518,
+          "text": "final List<UsbDevice> devices = getDeviceList();"
+        },
+        {
+          "line": 526,
+          "text": "hasPermission(device);"
+        },
+        {
+          "line": 898,
+          "text": "if ((manager != null) && manager.hasPermission(device)) {"
+        },
+        {
+          "line": 899,
+          "text": "final UsbDeviceConnection connection = manager.openDevice(device);"
+        },
+        {
+          "line": 973,
+          "text": "mConnection = monitor.mUsbManager.openDevice(device);"
+        },
+        {
+          "line": 987,
+          "text": "final int desc = mConnection.getFileDescriptor();"
+        },
+        {
+          "line": 1007,
+          "text": "mConnection = monitor.mUsbManager.openDevice(device);"
+        },
+        {
+          "line": 1134,
+          "text": "public synchronized int getFileDescriptor() throws IllegalStateException {"
+        },
+        {
+          "line": 1136,
+          "text": "return mConnection.getFileDescriptor();"
+        }
+      ],
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "2cca1f54e16ba1416d2a8ba51e5b4b018a3ca36bcd35acca87bf8a071fb79a2f",
+      "size": 45219,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java"
+    },
+    {
+      "cache_file": "924255906ea8c93f3b4360805c737e2a172602db.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "924255906ea8c93f3b4360805c737e2a172602db",
+      "line_count": 1224,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 119,
+          "text": "System.loadLibrary(\"jpeg-turbo1500\");"
+        },
+        {
+          "line": 120,
+          "text": "System.loadLibrary(\"usb100\");"
+        },
+        {
+          "line": 121,
+          "text": "System.loadLibrary(\"uvc\");"
+        },
+        {
+          "line": 122,
+          "text": "System.loadLibrary(\"UVCCamera\");"
+        },
+        {
+          "line": 193,
+          "text": "result = nativeConnect(mNativePtr,"
+        },
+        {
+          "line": 195,
+          "text": "mCtrlBlock.getFileDescriptor(),"
+        },
+        {
+          "line": 272,
+          "text": "final List<Size> list = getSupportedSizeList();"
+        },
+        {
+          "line": 336,
+          "text": "public List<Size> getSupportedSizeList() {"
+        },
+        {
+          "line": 408,
+          "text": "public void setFrameCallback(final IFrameCallback callback, final int pixelFormat) {"
+        },
+        {
+          "line": 419,
+          "text": "nativeStartPreview(mNativePtr);"
+        },
+        {
+          "line": 427,
+          "text": "setFrameCallback(null, 0);"
+        },
+        {
+          "line": 429,
+          "text": "nativeStopPreview(mNativePtr);"
+        },
+        {
+          "line": 1035,
+          "text": "private final native int nativeConnect(long id_camera, int venderId, int productId, int fileDescriptor, int busNum, int devAddr, String usbfs);"
+        },
+        {
+          "line": 1043,
+          "text": "private static final native int nativeStartPreview(final long id_camera);"
+        },
+        {
+          "line": 1044,
+          "text": "private static final native int nativeStopPreview(final long id_camera);"
+        }
+      ],
+      "path": "libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "9881946eba02cb53d73645d64d8d7c1bb88966d99b314ff73ada4e61591d884e",
+      "size": 46710,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java"
+    },
+    {
+      "cache_file": "7dfa2e13c037a17b54760dd8cb852f86b38a85b0.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "7dfa2e13c037a17b54760dd8cb852f86b38a85b0",
+      "line_count": 2285,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 9,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 21,
+          "text": "* All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 154,
+          "text": "fd = dup(fd);"
+        },
+        {
+          "line": 157,
+          "text": "result = uvc_get_device_with_fd(mContext, &mDevice, vid, pid, NULL, fd, busnum, devaddr);"
+        },
+        {
+          "line": 160,
+          "text": "result = uvc_open(mDevice, &mDeviceHandle);"
+        },
+        {
+          "line": 203,
+          "text": "uvc_close(mDeviceHandle);"
+        },
+        {
+          "line": 267,
+          "text": "int UVCCamera::setFrameCallback(JNIEnv *env, jobject frame_callback_obj, int pixel_format) {"
+        },
+        {
+          "line": 271,
+          "text": "result = mPreview->setFrameCallback(env, frame_callback_obj, pixel_format);"
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "a5a78053de2edeed357f4f4e39656ad4967c085a31d6430b625034ef29c86967",
+      "size": 65661,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp"
+    },
+    {
+      "cache_file": "02c1a60b81d18c97a19f18962bbd49095cd11517.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "02c1a60b81d18c97a19f18962bbd49095cd11517",
+      "line_count": 876,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 9,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 21,
+          "text": "* All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 209,
+          "text": "int UVCPreview::setFrameCallback(JNIEnv *env, jobject frame_callback_obj, int pixel_format) {"
+        },
+        {
+          "line": 272,
+          "text": "mFrameCallbackFunc = uvc_any2rgbx;"
+        },
+        {
+          "line": 517,
+          "text": "uvc_error_t result = uvc_start_streaming_bandwidth("
+        },
+        {
+          "line": 533,
+          "text": "result = uvc_mjpeg2yuyv(frame_mjpeg, frame);   // MJPEG => yuyv"
+        },
+        {
+          "line": 536,
+          "text": "frame = draw_preview_one(frame, &mPreviewWindow, uvc_any2rgbx, 4);"
+        },
+        {
+          "line": 548,
+          "text": "frame = draw_preview_one(frame, &mPreviewWindow, uvc_any2rgbx, 4);"
+        },
+        {
+          "line": 557,
+          "text": "uvc_stop_streaming(mDeviceHandle);"
+        },
+        {
+          "line": 821,
+          "text": "int b = uvc_any2rgbx(frame, converted);"
+        },
+        {
+          "line": 867,
+          "text": "jobject buf = env->NewDirectByteBuffer(callback_frame->data, callbackPixelBytes);"
+        },
+        {
+          "line": 873,
+          "text": "recycle_frame(callback_frame);"
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "859f32ef5440f5f0c484fd75e30c13bf8aeb4a6b193bf7d6f252ae180e8e1551",
+      "size": 23720,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp"
+    },
+    {
+      "cache_file": "a6a9010f665e263ee28eb89a93de49edb272495f.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "a6a9010f665e263ee28eb89a93de49edb272495f",
+      "line_count": 233,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 106,
+          "text": "MediaRecorder.AudioSource.DEFAULT,"
+        },
+        {
+          "line": 107,
+          "text": "MediaRecorder.AudioSource.MIC,"
+        },
+        {
+          "line": 108,
+          "text": "MediaRecorder.AudioSource.CAMCORDER,"
+        },
+        {
+          "line": 129,
+          "text": "audioRecord = new AudioRecord(src,"
+        }
+      ],
+      "path": "usbCameraCommon/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "915ed9482eb8cb67aa4e2ae72c68a3414565ce26823df9d19da76f363afed246",
+      "size": 7956,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/usbCameraCommon/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java"
+    },
+    {
+      "cache_file": "65346f74a7277c8866d5aeec9f3a3bae391c87c5.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "65346f74a7277c8866d5aeec9f3a3bae391c87c5",
+      "line_count": 2682,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright \u00a9 2014-2017 saki <t_saki@serenegiant.com>"
+        },
+        {
+          "line": 8,
+          "text": "* Copyright \u00a9 2012-2013 Nathan Hjelm <hjelmn@cs.unm.edu>"
+        },
+        {
+          "line": 9,
+          "text": "* Copyright \u00a9 2007-2008 Daniel Drake <dsd@gentoo.org>"
+        },
+        {
+          "line": 10,
+          "text": "* Copyright \u00a9 2001 Johannes Erdfelt <johannes@erdfelt.com>"
+        },
+        {
+          "line": 20,
+          "text": "* Lesser General Public License for more details."
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/libusb/libusb/core.c",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "917db3ee4ed27562df35642a05e19188644b6e7595f807dcf206f0b0005d577e",
+      "size": 88560,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libusb/libusb/core.c"
+    },
+    {
+      "cache_file": "16ab87350a951111d1b44624c14b6bb5754c6782.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "16ab87350a951111d1b44624c14b6bb5754c6782",
+      "line_count": 1833,
+      "marker_lines": [
+        {
+          "line": 6,
+          "text": "* Copyright (C) 2014-2016 saki@serenegiant All rights reserved."
+        },
+        {
+          "line": 11,
+          "text": "*  Copyright (C) 2010-2012 Ken Tossell"
+        },
+        {
+          "line": 14,
+          "text": "*  Redistribution and use in source and binary forms, with or without"
+        },
+        {
+          "line": 223,
+          "text": "uvc_error_t uvc_get_device_with_fd(uvc_context_t *ctx, uvc_device_t **device,"
+        },
+        {
+          "line": 269,
+          "text": "uvc_error_t uvc_open(uvc_device_t *dev, uvc_device_handle_t **devh) {"
+        },
+        {
+          "line": 1555,
+          "text": "void uvc_close(uvc_device_handle_t *devh) {"
+        },
+        {
+          "line": 1562,
+          "text": "uvc_stop_streaming(devh);"
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/libuvc/src/device.c",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "e23f230886ede3d11da210b0c8c9d705f45ec065679da3fae9c4340c63b2dcdf",
+      "size": 51286,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libuvc/src/device.c"
+    },
+    {
+      "cache_file": "a7d67e4c5fbd3e5939f9f7200fd7330a8cc86b4d.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "a7d67e4c5fbd3e5939f9f7200fd7330a8cc86b4d",
+      "line_count": 66,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "# * Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 9,
+          "text": "# * Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 21,
+          "text": "# * All files in the folder are under this Apache License, Version 2.0."
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/UVCCamera/Android.mk",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "5488effcdd4b80956256db023dffc7b494b0f10aa618e95534723b2c5183b947",
+      "size": 2128,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/UVCCamera/Android.mk"
+    },
+    {
+      "cache_file": "4623e29425071a1151dc4b004d5a241ea93efaba.txt",
+      "commit": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+      "git_blob_sha": "4623e29425071a1151dc4b004d5a241ea93efaba",
+      "line_count": 88,
+      "marker_lines": [
+        {
+          "line": 6,
+          "text": "- The IJG (Independent JPEG Group) License, which is listed in"
+        },
+        {
+          "line": 17,
+          "text": "- The zlib License, which is listed in [simd/jsimdext.inc](simd/jsimdext.inc)"
+        },
+        {
+          "line": 36,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 38,
+          "text": "- Clauses 1 and 3 of the zlib License"
+        },
+        {
+          "line": 46,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 47,
+          "text": "- Clause 2 of the zlib License"
+        },
+        {
+          "line": 49,
+          "text": "3.  You must include the IJG README file, and you must not alter any of the"
+        },
+        {
+          "line": 53,
+          "text": "- Clause 1 of the IJG License"
+        },
+        {
+          "line": 65,
+          "text": "- Clause 2 of the IJG license"
+        },
+        {
+          "line": 74,
+          "text": "3.  You cannot use the name of the IJG or The libjpeg-turbo Project or the"
+        },
+        {
+          "line": 78,
+          "text": "- IJG License"
+        },
+        {
+          "line": 81,
+          "text": "4.  The IJG and The libjpeg-turbo Project do not warrant libjpeg-turbo to be"
+        },
+        {
+          "line": 86,
+          "text": "- IJG License"
+        },
+        {
+          "line": 88,
+          "text": "- zlib License"
+        }
+      ],
+      "path": "libuvccamera/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md",
+      "repo": "saki4510t/UVCCamera",
+      "sha256": "fffd497be5f4ae0a10b8258e191125fb58b90250ecbf3c79398d79604dd00b7d",
+      "size": 2939,
+      "url": "https://raw.githubusercontent.com/saki4510t/UVCCamera/c9399e63dfab4b6d260d8cbef92182abc6de0ee0/libuvccamera/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md"
+    },
+    {
+      "cache_file": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "line_count": 201,
+      "marker_lines": [
+        {
+          "line": 1,
+          "text": "Apache License"
+        },
+        {
+          "line": 66,
+          "text": "2. Grant of Copyright License. Subject to the terms and conditions of"
+        },
+        {
+          "line": 178,
+          "text": "APPENDIX: How to apply the Apache License to your work."
+        },
+        {
+          "line": 180,
+          "text": "To apply the Apache License to your work, attach the following"
+        },
+        {
+          "line": 189,
+          "text": "Copyright [yyyy] [name of copyright owner]"
+        },
+        {
+          "line": 191,
+          "text": "Licensed under the Apache License, Version 2.0 (the \"License\");"
+        }
+      ],
+      "path": "LICENSE",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/LICENSE"
+    },
+    {
+      "cache_file": "4134b117532bb8a43864baec9a515d2bca1e2dc1.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "4134b117532bb8a43864baec9a515d2bca1e2dc1",
+      "line_count": 1417,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 302,
+          "text": "return getDeviceList().size();"
+        },
+        {
+          "line": 310,
+          "text": "public List<UsbDevice> getDeviceList() throws IllegalStateException {"
+        },
+        {
+          "line": 312,
+          "text": "return getDeviceList(mDeviceFilters);"
+        },
+        {
+          "line": 321,
+          "text": "public List<UsbDevice> getDeviceList(final List<DeviceFilter> filters) throws IllegalStateException {"
+        },
+        {
+          "line": 324,
+          "text": "final HashMap<String, UsbDevice> deviceList = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 353,
+          "text": "public List<UsbDevice> getDeviceList(final DeviceFilter filter) throws IllegalStateException {"
+        },
+        {
+          "line": 355,
+          "text": "final HashMap<String, UsbDevice> deviceList = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 375,
+          "text": "final HashMap<String, UsbDevice> list = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 385,
+          "text": "final HashMap<String, UsbDevice> list = mUsbManager.getDeviceList();"
+        },
+        {
+          "line": 413,
+          "text": "public final boolean hasPermission(final UsbDevice device) throws IllegalStateException {"
+        },
+        {
+          "line": 418,
+          "text": "return updatePermission(device, device != null && mUsbManager.hasPermission(device));"
+        },
+        {
+          "line": 452,
+          "text": "public synchronized boolean requestPermission(final UsbDevice device) {"
+        },
+        {
+          "line": 457,
+          "text": "if (DEBUG) XLogWrapper.i(TAG,\"request permission, has permission: \" + mUsbManager.hasPermission(device));"
+        },
+        {
+          "line": 458,
+          "text": "if (mUsbManager.hasPermission(device)) {"
+        },
+        {
+          "line": 465,
+          "text": "mUsbManager.requestPermission(device, mPermissionIntent);"
+        },
+        {
+          "line": 494,
+          "text": "public UsbControlBlock openDevice(final UsbDevice device) throws SecurityException {"
+        },
+        {
+          "line": 495,
+          "text": "if (hasPermission(device)) {"
+        },
+        {
+          "line": 536,
+          "text": "updatePermission(device, hasPermission(device));"
+        },
+        {
+          "line": 563,
+          "text": "final List<UsbDevice> devices = getDeviceList();"
+        },
+        {
+          "line": 571,
+          "text": "hasPermission(device);"
+        },
+        {
+          "line": 947,
+          "text": "if ((manager != null) && manager.hasPermission(device)) {"
+        },
+        {
+          "line": 948,
+          "text": "final UsbDeviceConnection connection = manager.openDevice(device);"
+        },
+        {
+          "line": 1025,
+          "text": "mConnection = monitor.mUsbManager.openDevice(device);"
+        },
+        {
+          "line": 1033,
+          "text": "mConnection = monitor.mUsbManager.openDevice(device);"
+        },
+        {
+          "line": 1048,
+          "text": "final int desc = mConnection.getFileDescriptor();"
+        },
+        {
+          "line": 1068,
+          "text": "mConnection = monitor.mUsbManager.openDevice(device);"
+        },
+        {
+          "line": 1076,
+          "text": "mConnection = monitor.mUsbManager.openDevice(device);"
+        },
+        {
+          "line": 1204,
+          "text": "public synchronized int getFileDescriptor() throws IllegalStateException {"
+        },
+        {
+          "line": 1206,
+          "text": "return mConnection.getFileDescriptor();"
+        }
+      ],
+      "path": "libuvc/src/main/java/com/jiangdg/usb/USBMonitor.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "be883fe8cf2fe01f74223a16875e4c68ffa713db109668ef465a4a78938d8dd8",
+      "size": 48308,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/usb/USBMonitor.java"
+    },
+    {
+      "cache_file": "a5e576b8f8df5ac5651735c69122801c2cd47b12.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "a5e576b8f8df5ac5651735c69122801c2cd47b12",
+      "line_count": 1276,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 7,
+          "text": "*  Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 19,
+          "text": "*  All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 118,
+          "text": "System.loadLibrary(\"jpeg-turbo1500\");"
+        },
+        {
+          "line": 119,
+          "text": "System.loadLibrary(\"usb100\");"
+        },
+        {
+          "line": 120,
+          "text": "System.loadLibrary(\"uvc\");"
+        },
+        {
+          "line": 121,
+          "text": "System.loadLibrary(\"UVCCamera\");"
+        },
+        {
+          "line": 194,
+          "text": "result = nativeConnect(mNativePtr,"
+        },
+        {
+          "line": 196,
+          "text": "mCtrlBlock.getFileDescriptor(),"
+        },
+        {
+          "line": 215,
+          "text": "+\";productId=\"+(mCtrlBlock==null ? \"\": mCtrlBlock.getProductId())+\";fileDescriptor=\"+(mCtrlBlock==null ? \"\": mCtrlBlock.getFileDescriptor())"
+        },
+        {
+          "line": 226,
+          "text": "List<Size> supportedSizes = getSupportedSizeList();"
+        },
+        {
+          "line": 294,
+          "text": "final List<Size> list = getSupportedSizeList();"
+        },
+        {
+          "line": 358,
+          "text": "public List<Size> getSupportedSizeList() {"
+        },
+        {
+          "line": 365,
+          "text": "public List<Size> getSupportedSizeList(int frameFormat) {"
+        },
+        {
+          "line": 436,
+          "text": "public void setFrameCallback(final IFrameCallback callback, final int pixelFormat) {"
+        },
+        {
+          "line": 447,
+          "text": "nativeStartPreview(mNativePtr);"
+        },
+        {
+          "line": 455,
+          "text": "setFrameCallback(null, 0);"
+        },
+        {
+          "line": 457,
+          "text": "nativeStopPreview(mNativePtr);"
+        },
+        {
+          "line": 1085,
+          "text": "private final native int nativeConnect(long id_camera, int venderId, int productId, int fileDescriptor, int busNum, int devAddr, String usbfs);"
+        },
+        {
+          "line": 1093,
+          "text": "private static final native int nativeStartPreview(final long id_camera);"
+        },
+        {
+          "line": 1094,
+          "text": "private static final native int nativeStopPreview(final long id_camera);"
+        }
+      ],
+      "path": "libuvc/src/main/java/com/jiangdg/uvc/UVCCamera.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "bac08d47eb4159ba68017bf304c201d43765d49393283c774b3eb8273ce1be74",
+      "size": 48534,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/uvc/UVCCamera.java"
+    },
+    {
+      "cache_file": "471556991e4401a5f2eed662ce57ddac77186070.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "471556991e4401a5f2eed662ce57ddac77186070",
+      "line_count": 2304,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 9,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 21,
+          "text": "* All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 154,
+          "text": "fd = dup(fd);"
+        },
+        {
+          "line": 157,
+          "text": "result = uvc_get_device_with_fd(mContext, &mDevice, vid, pid, NULL, fd, busnum, devaddr);"
+        },
+        {
+          "line": 160,
+          "text": "result = uvc_open(mDevice, &mDeviceHandle);"
+        },
+        {
+          "line": 203,
+          "text": "uvc_close(mDeviceHandle);"
+        },
+        {
+          "line": 267,
+          "text": "int UVCCamera::setFrameCallback(JNIEnv *env, jobject frame_callback_obj, int pixel_format) {"
+        },
+        {
+          "line": 271,
+          "text": "result = mPreview->setFrameCallback(env, frame_callback_obj, pixel_format);"
+        }
+      ],
+      "path": "libuvc/src/main/jni/UVCCamera/UVCCamera.cpp",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "aa464ef1d41ff63ca18a739fdf945ff653c57ff182224113534e5b965142c966",
+      "size": 66146,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jni/UVCCamera/UVCCamera.cpp"
+    },
+    {
+      "cache_file": "584cb4019f8ea1ea9d85dcf4a51b21087c1735d7.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "584cb4019f8ea1ea9d85dcf4a51b21087c1735d7",
+      "line_count": 920,
+      "marker_lines": [
+        {
+          "line": 5,
+          "text": "* Copyright (c) 2014-2017 saki t_saki@serenegiant.com"
+        },
+        {
+          "line": 9,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 21,
+          "text": "* All files in the folder are under this Apache License, Version 2.0."
+        },
+        {
+          "line": 218,
+          "text": "int UVCPreview::setFrameCallback(JNIEnv *env, jobject frame_callback_obj, int pixel_format) {"
+        },
+        {
+          "line": 281,
+          "text": "mFrameCallbackFunc = uvc_any2rgbx;"
+        },
+        {
+          "line": 534,
+          "text": "uvc_error_t result = uvc_start_streaming_bandwidth("
+        },
+        {
+          "line": 554,
+          "text": "result = uvc_mjpeg2yuyv(frame_mjpeg, frame);   // MJPEG => yuyv"
+        },
+        {
+          "line": 557,
+          "text": "frame = draw_preview_one(frame, &mPreviewWindow, uvc_any2rgbx, 4);"
+        },
+        {
+          "line": 569,
+          "text": "frame = draw_preview_one(frame, &mPreviewWindow, uvc_any2rgbx, 4);"
+        },
+        {
+          "line": 578,
+          "text": "uvc_stop_streaming(mDeviceHandle);"
+        },
+        {
+          "line": 863,
+          "text": "int b = uvc_any2rgbx(frame, converted);"
+        },
+        {
+          "line": 909,
+          "text": "jobject buf = env->NewDirectByteBuffer(callback_frame->data, callbackPixelBytes);"
+        },
+        {
+          "line": 917,
+          "text": "recycle_frame(callback_frame);"
+        }
+      ],
+      "path": "libuvc/src/main/jni/UVCCamera/UVCPreview.cpp",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "ca389642e01cbab4a025f78a7a09faa69355d42d112a42fa9b964b06f04b74ee",
+      "size": 25476,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jni/UVCCamera/UVCPreview.cpp"
+    },
+    {
+      "cache_file": "002f9a7aa0a9815d15edbbfbc1d694bf9afc8e4f.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "002f9a7aa0a9815d15edbbfbc1d694bf9afc8e4f",
+      "line_count": 534,
+      "marker_lines": [
+        {
+          "line": 2,
+          "text": "* Copyright 2017-2023 Jiangdg"
+        },
+        {
+          "line": 4,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 84,
+          "text": "mUvcCamera?.getSupportedSizeList(UVCCamera.FRAME_FORMAT_YUYV)"
+        },
+        {
+          "line": 125,
+          "text": "open(mCtrlBlock)"
+        },
+        {
+          "line": 197,
+          "text": "mUvcCamera?.setFrameCallback(frameCallBack, UVCCamera.PIXEL_FORMAT_YUV420SP)"
+        }
+      ],
+      "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/CameraUVC.kt",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "9bf0887c3336078f081b04aeb297e86cf0502318cb1f59a2f3f891db797c664a",
+      "size": 16820,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libausbc/src/main/java/com/jiangdg/ausbc/camera/CameraUVC.kt"
+    },
+    {
+      "cache_file": "9ade4bb57832c72e78e253ced219a96c749889de.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "9ade4bb57832c72e78e253ced219a96c749889de",
+      "line_count": 110,
+      "marker_lines": [
+        {
+          "line": 2,
+          "text": "* Copyright 2017-2023 Jiangdg"
+        },
+        {
+          "line": 4,
+          "text": "* Licensed under the Apache License, Version 2.0 (the \"License\");"
+        },
+        {
+          "line": 22,
+          "text": "import com.jiangdg.uac.UACAudioCallBack"
+        },
+        {
+          "line": 23,
+          "text": "import com.jiangdg.uac.UACAudioHandler"
+        },
+        {
+          "line": 31,
+          "text": "class AudioStrategyUAC(private val ctrlBlock: USBMonitor.UsbControlBlock): IAudioStrategy {"
+        },
+        {
+          "line": 32,
+          "text": "private var mUacHandler: UACAudioHandler? = null"
+        },
+        {
+          "line": 35,
+          "text": "private val mCallback = UACAudioCallBack { data ->"
+        },
+        {
+          "line": 43,
+          "text": "mUacHandler = UACAudioHandler.createHandler(ctrlBlock)"
+        }
+      ],
+      "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "66c702207d169457c2eafde0fe4440c6cf52cf1846e29c714d1fde2a7ae007a7",
+      "size": 3372,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt"
+    },
+    {
+      "cache_file": "d8c760fb27c30f66dc6a818bddafc03719dc7d10.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "d8c760fb27c30f66dc6a818bddafc03719dc7d10",
+      "line_count": 151,
+      "marker_lines": [
+        {
+          "line": 12,
+          "text": "public class UACAudio {"
+        },
+        {
+          "line": 13,
+          "text": "private static final String TAG = \"UACAudio\";"
+        },
+        {
+          "line": 18,
+          "text": "public UACAudioCallBack mAudioCallBack;"
+        },
+        {
+          "line": 26,
+          "text": "System.loadLibrary(\"UACAudio\");"
+        },
+        {
+          "line": 32,
+          "text": "result = nativeInit(ctrlBlock.getVenderId(), ctrlBlock.getProductId(),"
+        },
+        {
+          "line": 35,
+          "text": "ctrlBlock.getFileDescriptor(),"
+        },
+        {
+          "line": 49,
+          "text": "if (nativeStartRecord(mNativePtr) < 0) {"
+        },
+        {
+          "line": 63,
+          "text": "if (nativeStopRecord(mNativePtr) < 0) {"
+        },
+        {
+          "line": 97,
+          "text": "public void addAudioCallBack(UACAudioCallBack callBack) {"
+        },
+        {
+          "line": 128,
+          "text": "private native int nativeInit(int vid, int pid, int busnum, int devaddr, int fd, String usbfs);"
+        },
+        {
+          "line": 132,
+          "text": "private native int nativeStartRecord(long id);"
+        },
+        {
+          "line": 134,
+          "text": "private native int nativeStopRecord(long id);"
+        }
+      ],
+      "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "0006e79f34b501b1194e63cc5552c11452eb1b1ef32e1a1d1973d565c0dfed8a",
+      "size": 4321,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/uac/UACAudio.java"
+    },
+    {
+      "cache_file": "88ad4950767fd02d7c03b10f9e4cf2fa0e8f9a24.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "88ad4950767fd02d7c03b10f9e4cf2fa0e8f9a24",
+      "line_count": 346,
+      "marker_lines": [
+        {
+          "line": 19,
+          "text": "public class UACAudioHandler extends Handler {"
+        },
+        {
+          "line": 20,
+          "text": "private static final String TAG = \"UACAudioHandler\";"
+        },
+        {
+          "line": 28,
+          "text": "public static UACAudioHandler createHandler(USBMonitor.UsbControlBlock ctrlBlock) {"
+        },
+        {
+          "line": 29,
+          "text": "AudioThread audioThread = new AudioThread(UACAudioHandler.class, ctrlBlock);"
+        },
+        {
+          "line": 34,
+          "text": "private UACAudioHandler(AudioThread thread) {"
+        },
+        {
+          "line": 66,
+          "text": "public UACAudio.AudioStatus getAudioStatus() {"
+        },
+        {
+          "line": 69,
+          "text": "return UACAudio.AudioStatus.ERROR;"
+        },
+        {
+          "line": 98,
+          "text": "public void addDataCallBack(UACAudioCallBack callBack) {"
+        },
+        {
+          "line": 109,
+          "text": "public void removeDataCallBack(UACAudioCallBack callBack) {"
+        },
+        {
+          "line": 163,
+          "text": "private final Class<UACAudioHandler> mHandlerClass;"
+        },
+        {
+          "line": 164,
+          "text": "private UACAudioHandler mUACHandler;"
+        },
+        {
+          "line": 165,
+          "text": "private UACAudio mUACAudio;"
+        },
+        {
+          "line": 167,
+          "text": "private final Set<UACAudioCallBack> mCallBackList = new CopyOnWriteArraySet<>();"
+        },
+        {
+          "line": 169,
+          "text": "public AudioThread(Class<UACAudioHandler> handlerClass, USBMonitor.UsbControlBlock ctrlBlock) {"
+        },
+        {
+          "line": 179,
+          "text": "mUACAudio = new UACAudio();"
+        },
+        {
+          "line": 180,
+          "text": "mUACAudio.init(mCtrlBlock);"
+        },
+        {
+          "line": 181,
+          "text": "mUACAudio.addAudioCallBack(this::callOnDataCallBack);"
+        },
+        {
+          "line": 188,
+          "text": "if (mUACAudio == null) {"
+        },
+        {
+          "line": 192,
+          "text": "mUACAudio.startRecording();"
+        },
+        {
+          "line": 197,
+          "text": "if (mUACAudio == null) {"
+        },
+        {
+          "line": 201,
+          "text": "mUACAudio.stopRecording();"
+        },
+        {
+          "line": 207,
+          "text": "if (mUACAudio != null) {"
+        },
+        {
+          "line": 208,
+          "text": "mUACAudio.release();"
+        },
+        {
+          "line": 209,
+          "text": "mUACAudio = null;"
+        },
+        {
+          "line": 224,
+          "text": "if (mUACAudio == null) {"
+        },
+        {
+          "line": 230,
+          "text": "return mUACAudio != null ? mUACAudio.getSampleRate() : -1;"
+        },
+        {
+          "line": 232,
+          "text": "return mUACAudio.getSampleRate();"
+        },
+        {
+          "line": 238,
+          "text": "if (mUACAudio == null) {"
+        },
+        {
+          "line": 244,
+          "text": "return mUACAudio != null ? mUACAudio.getChannelCount() : -1;"
+        },
+        {
+          "line": 246,
+          "text": "return mUACAudio.getChannelCount();"
+        },
+        {
+          "line": 252,
+          "text": "if (mUACAudio == null) {"
+        },
+        {
+          "line": 258,
+          "text": "return mUACAudio != null ? mUACAudio.getBitResolution() : -1;"
+        },
+        {
+          "line": 260,
+          "text": "return mUACAudio.getBitResolution();"
+        },
+        {
+          "line": 264,
+          "text": "public UACAudio.AudioStatus getAudioStatus() {"
+        },
+        {
+          "line": 266,
+          "text": "if (mUACAudio == null) {"
+        },
+        {
+          "line": 272,
+          "text": "return mUACAudio != null ? mUACAudio.getAudioStatus() : UACAudio.AudioStatus.ERROR;"
+        },
+        {
+          "line": 274,
+          "text": "return mUACAudio.getAudioStatus();"
+        },
+        {
+          "line": 280,
+          "text": "if (mUACAudio == null) {"
+        },
+        {
+          "line": 286,
+          "text": "return mUACAudio != null && mUACAudio.isRecording();"
+        },
+        {
+          "line": 288,
+          "text": "return mUACAudio.isRecording();"
+        },
+        {
+          "line": 296,
+          "text": "UACAudioHandler uacHandler = null;"
+        },
+        {
+          "line": 298,
+          "text": "Constructor<UACAudioHandler> constructor = mHandlerClass.getDeclaredConstructor(AudioThread.class);"
+        },
+        {
+          "line": 301,
+          "text": "Log.e(TAG, \"UACAudioHandler new failed, \" + e.getMessage());"
+        },
+        {
+          "line": 321,
+          "text": "public UACAudioHandler getHandler() {"
+        },
+        {
+          "line": 337,
+          "text": "for (UACAudioCallBack callBack: mCallBackList) {"
+        }
+      ],
+      "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "cb3885d8e502948d4ce45c1318194033bb1df723d3a65a0333cd7e4b5dfce8a9",
+      "size": 10920,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java"
+    },
+    {
+      "cache_file": "3a89f05b9a68a236050e7ef770299773596ae58d.txt",
+      "commit": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+      "git_blob_sha": "3a89f05b9a68a236050e7ef770299773596ae58d",
+      "line_count": 75,
+      "marker_lines": [
+        {
+          "line": 37,
+          "text": "compileTask -> compileTask.dependsOn ndkBuild"
+        },
+        {
+          "line": 41,
+          "text": "def ndkBuildingDir = System.getenv(\"NDK_HOME\")"
+        },
+        {
+          "line": 42,
+          "text": "if (ndkBuildingDir==null || ndkBuildingDir.isEmpty()) {"
+        },
+        {
+          "line": 45,
+          "text": "ndkBuildingDir = properties.getProperty(\"ndk.dir\")"
+        },
+        {
+          "line": 47,
+          "text": "def ndkBuildPath = ndkBuildingDir"
+        },
+        {
+          "line": 49,
+          "text": "ndkBuildPath = ndkBuildingDir + '/ndk-build.cmd'"
+        },
+        {
+          "line": 51,
+          "text": "ndkBuildPath = ndkBuildingDir + '/ndk-build'"
+        },
+        {
+          "line": 53,
+          "text": "return ndkBuildPath"
+        },
+        {
+          "line": 56,
+          "text": "task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {"
+        },
+        {
+          "line": 57,
+          "text": "println('executing ndkBuild')"
+        },
+        {
+          "line": 58,
+          "text": "def ndkBuildPath = getNdkBuildPath();"
+        },
+        {
+          "line": 59,
+          "text": "commandLine ndkBuildPath, '-j8', '-C', file('src/main').absolutePath"
+        },
+        {
+          "line": 63,
+          "text": "println('executing ndkBuild clean')"
+        },
+        {
+          "line": 64,
+          "text": "def ndkBuildPath = getNdkBuildPath();"
+        },
+        {
+          "line": 65,
+          "text": "commandLine ndkBuildPath, 'clean', '-C', file('src/main').absolutePath"
+        }
+      ],
+      "path": "libuvc/build.gradle",
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "sha256": "750574fe5f6347c35c4bf8ed29b56779a1141fce7d535717803b504c2842fb1f",
+      "size": 2253,
+      "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/build.gradle"
+    }
+  ],
+  "unique_source_blobs": 25
+}

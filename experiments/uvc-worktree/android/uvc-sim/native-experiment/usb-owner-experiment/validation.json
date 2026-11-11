@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "git_baseline": "ff46084debcfef8b29420fdb786c5ddfc3e19981",
+  "scope": "Original USB permission and connection owner boundary with controlled Java ports",
+  "completed_utc": "2026-11-10T18:22:31.604445+00:00",
+  "pass": true,
+  "failure": null,
+  "inherited_files_verified": 18,
+  "inputs": {
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/CaptureSession.java": {
+      "bytes": 4064,
+      "sha256": "02c53a6008af3efd41ffd4a5d2c0f8ac72cba40cb34bed6a7116e407de4b5db8"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/StopBarrier.java": {
+      "bytes": 3891,
+      "sha256": "e6aa6fe91a7ac6528927511f356d82a18c865b2c68e52a77c201a381ef46ab47"
+    },
+    "android/uvc-sim/native-experiment/contract-baseline/src/local/sidecar/copilot/uvccontract/UvcContract.java": {
+      "bytes": 15549,
+      "sha256": "2a065bb897aa9e1bb5a18516eb4501f281bebcd5817cf5b1615d63ac311a20ec"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/BackendPort.java": {
+      "bytes": 3807,
+      "sha256": "d063d51451e53acf960a0b9cd00e3e32ed7a0e152ae8fc0fc608c9aca59d1a4b"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/IsolatedCaptureSession.java": {
+      "bytes": 25322,
+      "sha256": "fedcf080407c9d591f6ebd7f6140229bf7f076508483f4910617650e6000eefd"
+    },
+    "android/uvc-sim/native-experiment/src/local/sidecar/copilot/uvcadapter/OwnedFrameBridge.java": {
+      "bytes": 10811,
+      "sha256": "c3ee156b548c6a17acdb33b6e7efc31f90d57d1c5726988fa37f09f469d408e8"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/inputs-lock.json": {
+      "bytes": 4038,
+      "sha256": "981619046d1ee15db461116bfee3d3e67dc20bafc886811456d2a9b26754468c"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/run_checks.py": {
+      "bytes": 5971,
+      "sha256": "1dc3b788fc8f6f2557bc0f40923e2f2623231d93ea6748626bf8de3ed25b8199"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/PlatformUsbPort.java": {
+      "bytes": 2142,
+      "sha256": "f46ebe272b2a363363533103ccd54cf7ca23c088d4f4409c6d0973563de5dc26"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/src/local/sidecar/copilot/usbowner/UsbConnectionOwner.java": {
+      "bytes": 21946,
+      "sha256": "4929ba6a44201b9846a809ea2a4ee059e466d740eb0e0cbaad32ca6c4dcb227d"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/test/ControlledPlatform.java": {
+      "bytes": 4782,
+      "sha256": "d6c99742dfd6d166680ee1056d411d5690ffc2bf6ff47772aa19a7f223ebe637"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/test/OwnerBackend.java": {
+      "bytes": 4737,
+      "sha256": "668e26b5cd44e40cdb07d8038c7b856a696be267fe4f771293410d453ed6844f"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/test/OwnerChecks.java": {
+      "bytes": 40596,
+      "sha256": "e7db82a83b6a0c0f41cafd516b8fe2483af29731502f559a93bdbb91121b83d1"
+    },
+    "android/uvc-sim/native-experiment/usb-owner-experiment/test/OwnerTestSupport.java": {
+      "bytes": 3453,
+      "sha256": "2c586d6a1bac0c921c03e622f3ee2dc08ce41d97766239fb0035ca91ba7c69c8"
+    }
+  },
+  "removed_java_environment_keys": [],
+  "commands": [
+    {
+      "label": "jdk-version",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+        "-version"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": "openjdk version \"17.0.19\" 2026-04-21\nOpenJDK Runtime Environment Temurin-17.0.19+10 (build 17.0.19+10)\nOpenJDK 64-Bit Server VM Temurin-17.0.19+10 (build 17.0.19+10, mixed mode, sharing)\n"
+    },
+    {
+      "label": "compile",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe",
+        "--release",
+        "8",
+        "-encoding",
+        "UTF-8",
+        "-Xlint:all",
+        "-Werror",
+        "-proc:none",
+        "-implicit:none",
+        "-classpath",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\build\\run-20261110T182229-0f45193b\\empty-path",
+        "-sourcepath",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\build\\run-20261110T182229-0f45193b\\empty-path",
+        "-d",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\build\\run-20261110T182229-0f45193b\\classes",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\contract-baseline\\src\\local\\sidecar\\copilot\\uvccontract\\CaptureSession.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\contract-baseline\\src\\local\\sidecar\\copilot\\uvccontract\\StopBarrier.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\contract-baseline\\src\\local\\sidecar\\copilot\\uvccontract\\UvcContract.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\src\\local\\sidecar\\copilot\\uvcadapter\\BackendPort.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\src\\local\\sidecar\\copilot\\uvcadapter\\IsolatedCaptureSession.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\src\\local\\sidecar\\copilot\\uvcadapter\\OwnedFrameBridge.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\src\\local\\sidecar\\copilot\\usbowner\\PlatformUsbPort.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\src\\local\\sidecar\\copilot\\usbowner\\UsbConnectionOwner.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\test\\ControlledPlatform.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\test\\OwnerBackend.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\test\\OwnerChecks.java",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\test\\OwnerTestSupport.java"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "owner-checks",
+      "argv": [
+        "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe",
+        "-cp",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-usb-owner\\android\\uvc-sim\\native-experiment\\usb-owner-experiment\\build\\run-20261110T182229-0f45193b\\classes",
+        "local.sidecar.copilot.usbowner.OwnerChecks"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "PASS construction_and_wrong_producer_identity\nPASS permission_denial_is_permanent\nPASS nonce_selection_attachment_revision_and_pending_request\nPASS early_grant_request_stack_and_late_throw\nPASS grant_is_only_hint_system_permission_rechecked\nPASS late_permission_after_terminal_stop\nPASS stop_during_system_permission_check\nPASS late_open_connection_remains_old_owner\nPASS stop_during_getfd\nPASS post_open_attachment_and_permission_rechecks\nPASS fd_zero_and_negative_rejection\nPASS borrow_capability_duplicate_return_and_fd_reuse\nPASS detach_revoke_and_native_admission_stop\nPASS native_stack_pending_after_borrow_return\nPASS actual_adapter_owner_and_application_buffer_stop\nPASS close_stack_wrong_keys_and_terminal_freeze\nPASS close_exception_pending_and_failure_sink_isolated\nPASS open_exception_acquisition_unknown_stays_pending\nPASS bound_producer_contradictions_block_close\nPASS native_stop_exception_cannot_certify_success\nPASS owner_executor_inline_and_rejection_stay_pending\nPASS independent_precise_early_close_negative_controls\nOWNER_CHECKS_OK cases=22 assertions=283 negative_controls=2\n",
+      "stderr": ""
+    }
+  ],
+  "jdk_launchers": {
+    "E:\\tools\\jdk-17.0.19+10\\bin\\java.exe": "b3afe83e1ab067da4c56f1a7b2ba4c14ec832d694333f35b2b45178e9ac596ef",
+    "E:\\tools\\jdk-17.0.19+10\\bin\\javac.exe": "988446ceec6e33ce0420ddf2489bb13d3a2278b4c8745309123dfa8f2c0dd0ce"
+  },
+  "not_executed": [
+    "parent adapter or public-contract test suites",
+    "old C++/ASan or Python model",
+    "Android SDK/receiver/PendingIntent implementation",
+    "JNI or native backend",
+    "real permission dialogs, USB FD or device",
+    "ADB/emulator/APK build",
+    "capture, UAC, deployment or publication"
+  ]
+}

@@ -1,0 +1,2364 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-11-10T14:39:05.350566+00:00",
+  "input_count": 21,
+  "input_lock_sha256": "122197150fde4917e57b626b8e3a85a01d3c7fbd4d32f38b2e2c505f9ddb9dbe",
+  "unit_spec_sha256": "1383a63938976c3d049be8cd7496f2f2bd122cc200daa11f9b37c25001d6ab69",
+  "comparison_policy": "Original bytes, CRLF-only, explicit replacement then exact bytes, replacement plus C token equality excluding comments/outside-string whitespace, and remaining token differences are separate evidence levels. Strings/assembly register text and numeric constants remain tokens. No level proves authorship, permission or functional equivalence.",
+  "unit_count": 37,
+  "levels": {
+    "related_but_tokens_differ": 11,
+    "rename_and_trivia_tokens_equal": 9,
+    "rename_only_equal": 17
+  },
+  "units": [
+    {
+      "path": "source/convert_argb.cc",
+      "kind": "function",
+      "name": "YUY2ToABGR",
+      "upstream_name": "YUY2ToARGB",
+      "vendored_lines": [
+        4115,
+        4186
+      ],
+      "upstream_lines": [
+        3965,
+        4036
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "376e01b15a2d5bf09246ed874073d55493fc4b0cb1c575d425b5624b097e46f7",
+      "lf_sha256": "d0cf2150f13017ada206a0a3658ad699ba14fec0f1119d6e1c6ccc6a9ac6d872",
+      "upstream_raw_sha256": "3c5f52fb275e77e7b871f83083e040ea34b7eb7bb05590ae2adb06cbfa759ecd",
+      "renamed_sha256": "f62098ea35d7a3bc6ad06bcf44f26776e6bff3472ede79c6eadeb1120dededae",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "3b408f5ca379b6423e96a11f6ed0de68122185d303d95f0548e86259af93fabe",
+      "upstream_token_sha256": "1762e50f2e3a6c105f3e05c329cdd22e58ad453bcedd67af44995e3a3e8c5522",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "kYuvI601Constants"
+          ],
+          "vendored_renamed_tokens": [
+            "kYvuI601Constants"
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.997283,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_from_argb.cc",
+      "kind": "function",
+      "name": "ABGRToYUY2",
+      "upstream_name": "ARGBToYUY2",
+      "vendored_lines": [
+        1047,
+        1206
+      ],
+      "upstream_lines": [
+        884,
+        1043
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "00eda432db866c98114c45b660dd1cbb357c7d6fea138bedc604b7453ed0e253",
+      "lf_sha256": "0ab5cd4a91b55d674d1775b4b76d005dbbea22b5dc7339dcd88eba26acb717bf",
+      "upstream_raw_sha256": "12361198635ac76a610dc96522ba2c66707356dc6dc1452508a2635769cb1c67",
+      "renamed_sha256": "af45b96e9464b082d789202c9d908f6c38c95531653db14f17eda8ad2676c368",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "5ffb76aee8dfaae34a286f944ef528a9f0283d429050d28728c123e23a3cd46d",
+      "upstream_token_sha256": "5ffb76aee8dfaae34a286f944ef528a9f0283d429050d28728c123e23a3cd46d",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_from_argb.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565",
+      "upstream_name": "ARGBToRGB565",
+      "vendored_lines": [
+        1700,
+        1770
+      ],
+      "upstream_lines": [
+        1537,
+        1607
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "41974b7b237679ecc165246c6e959f765fe98c842d91eca4891791b600d84481",
+      "lf_sha256": "66c09bb4dfdc82fc8e45baca2114b7df130404ab6d1e10c11b4c5ab92276b491",
+      "upstream_raw_sha256": "9ea08a05eb26236ac821480462f8b0c941ce6ac0884743cc4e96462c93a68ea3",
+      "renamed_sha256": "0cd5bf3ae397dc20aabb073cc96ff8723e2fc0c3a3e7f235db1b81cbfa6475d4",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "c7d7fa243944cb9d16ddaae9c4845a49da391591c0d2f89eee7859d5c767b1e6",
+      "upstream_token_sha256": "c7d7fa243944cb9d16ddaae9c4845a49da391591c0d2f89eee7859d5c767b1e6",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "struct",
+      "name": "ABGRBuffers",
+      "upstream_name": "ARGBBuffers",
+      "vendored_lines": [
+        597,
+        602
+      ],
+      "upstream_lines": [
+        465,
+        470
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "76b95af1bf8d579b97426a012de7365f64bbeffc0ad65fc2c78424415d3394a7",
+      "lf_sha256": "003c0cd00ebcfa2e080c6089ef13dbdf33dd24fd332e84e3ecdd5d9451fffb48",
+      "upstream_raw_sha256": "4b9789d2728c0d1b4aff59fb0268c53c9744738bba44279d0dc3750b82c1f7b4",
+      "renamed_sha256": "eeab28ed2e6654f62c025004511d317aae4a413ace5bfbadee32621485009bcd",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "648f31052f4a5c10f5182c1d3c72614cd1e290ec58ae0a7db3edd69b0fedab66",
+      "upstream_token_sha256": "648f31052f4a5c10f5182c1d3c72614cd1e290ec58ae0a7db3edd69b0fedab66",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI420ToABGR",
+      "upstream_name": "JpegI420ToARGB",
+      "vendored_lines": [
+        604,
+        613
+      ],
+      "upstream_lines": [
+        472,
+        481
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "ac81cd109ebd04b38513987c0d76840ba54323e190da512f33fe90cc18bf319e",
+      "lf_sha256": "7dcd7fade871cd089b50599860f6ed8299722fab77e25989e47678b3a9d478cb",
+      "upstream_raw_sha256": "b77b644454e10056a0f813d95e97433c7ab34cd0bba8cd217315d0971c462a51",
+      "renamed_sha256": "b77b644454e10056a0f813d95e97433c7ab34cd0bba8cd217315d0971c462a51",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "478f4655280f00b57f597f1b4060730ba4baa9959003c348c9de64f73aed108e",
+      "upstream_token_sha256": "478f4655280f00b57f597f1b4060730ba4baa9959003c348c9de64f73aed108e",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI422ToABGR",
+      "upstream_name": "JpegI422ToARGB",
+      "vendored_lines": [
+        615,
+        624
+      ],
+      "upstream_lines": [
+        483,
+        492
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "d87abf63414f35890df86cbb97f0cfb24724f4e39174922d5a4ca3e1c40e515a",
+      "lf_sha256": "e4f4f5c5ba985fa5bf3657d00b7ced310d3c84cf193bd65fd1bfde630754a52d",
+      "upstream_raw_sha256": "63c44ccec0e248bd433d0505869cd049d9ad8150729d10c680abf4ea7871b831",
+      "renamed_sha256": "63c44ccec0e248bd433d0505869cd049d9ad8150729d10c680abf4ea7871b831",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "442855174b11aca85994b1c25edca1873ae5ec99f971f153907f56d704f3ffab",
+      "upstream_token_sha256": "442855174b11aca85994b1c25edca1873ae5ec99f971f153907f56d704f3ffab",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI444ToABGR",
+      "upstream_name": "JpegI444ToARGB",
+      "vendored_lines": [
+        626,
+        635
+      ],
+      "upstream_lines": [
+        494,
+        503
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "dcefdc7c63dedb58ce9d221afe89950d2773309a9780d8cbd4b1ab90dadd4971",
+      "lf_sha256": "47301e83cadf22b794a77f58b05405ce158f162e04619bf7de22fad6b11a5788",
+      "upstream_raw_sha256": "52203ee35fab067052eb4ed891e980ae8936c324f2729a05dd93feb70b97f854",
+      "renamed_sha256": "52203ee35fab067052eb4ed891e980ae8936c324f2729a05dd93feb70b97f854",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "eadc24ae86519f541438ccdfa4ec8d03867a2fe7f8fa6dcb05d9b808fed61346",
+      "upstream_token_sha256": "eadc24ae86519f541438ccdfa4ec8d03867a2fe7f8fa6dcb05d9b808fed61346",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "JpegI400ToABGR",
+      "upstream_name": "JpegI400ToARGB",
+      "vendored_lines": [
+        637,
+        646
+      ],
+      "upstream_lines": [
+        505,
+        513
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "6b062df53c3737dade06b3bf27d486ca03c53d2de967105fb385974d48048b97",
+      "lf_sha256": "1715709095f080e5331e7686767eb4eea2dc006ee32d6f5f20e73307c115b0ed",
+      "upstream_raw_sha256": "c9ddabc264a8e93150fc7b1a2489ea0eddf189c57d61f57dd8551eb78e07b0d1",
+      "renamed_sha256": "66488a1ba91a9887607480faeb8568bff29aa6a3ff25b345458c3c7d5ad8eed5",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "9b2e7dbd49154f5ad64a994ec4f468fd0100870fb80a6e2ab15ea394e21e6ca1",
+      "upstream_token_sha256": "9b2e7dbd49154f5ad64a994ec4f468fd0100870fb80a6e2ab15ea394e21e6ca1",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "kind": "function",
+      "name": "MJPGToABGR",
+      "upstream_name": "MJPGToARGB",
+      "vendored_lines": [
+        652,
+        728
+      ],
+      "upstream_lines": [
+        519,
+        595
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "6cc4ced6b7bd92b557155b236de46fab25cdfd482a557838412b8d6ed48091a7",
+      "lf_sha256": "b61149ea4f107d5aa4a6d8811146c0dea6997f7aa208ab576fa9cafe21ad74a6",
+      "upstream_raw_sha256": "d9ffebc4a89903de0f1db66d5c375fd53aca39b9615cd55a3f65f4ca4f0773f4",
+      "renamed_sha256": "bdfbcd68bd89a19efe8a9b99eb559cd50ab527831b9c57626b5df025c673a601",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "2c3a772ab24b679835168c5ac0c0f94b8743e15012364c435c0a18e79f6bec03",
+      "upstream_token_sha256": "2c3a772ab24b679835168c5ac0c0f94b8743e15012364c435c0a18e79f6bec03",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_common.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565Row_C",
+      "upstream_name": "ARGBToRGB565Row_C",
+      "vendored_lines": [
+        305,
+        325
+      ],
+      "upstream_lines": [
+        305,
+        325
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "128d69b4768fcbd99a6301dc58a0bc43b66d8c111f0574c77b83b0e3f5c9fe45",
+      "lf_sha256": "77bd897c45fb46b35a74f2caecf8ca4f34c022e76a16da9ce5f201d4a3c57bec",
+      "upstream_raw_sha256": "ccc2e3d34d568b32fe656d1df2673abe4601ec88346e4e37b3251f47a0f14302",
+      "renamed_sha256": "41a81847eef71f426fd453f3d7d8458962818a836faf9821311b19c414dd92f7",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "78d8b24d5c80c08c66fa3cffa841d97de7c73405b27d8cd10f0a6ff28547a57c",
+      "upstream_token_sha256": "cfca181d3d8d255303322f15673a07a6c523cc40e142af3cd11492d3b53793c4",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "0"
+          ],
+          "vendored_renamed_tokens": [
+            "2"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "2"
+          ],
+          "vendored_renamed_tokens": [
+            "0"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "4"
+          ],
+          "vendored_renamed_tokens": [
+            "6"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "6"
+          ],
+          "vendored_renamed_tokens": [
+            "4"
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.982063,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_common.cc",
+      "kind": "function",
+      "name": "YUY2ToABGRRow_C",
+      "upstream_name": "YUY2ToARGBRow_C",
+      "vendored_lines": [
+        2587,
+        2607
+      ],
+      "upstream_lines": [
+        2521,
+        2541
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "844f03579f8574e921c98b8ec7eff716750df4cdf70c6bd33efde5e8f466a6fe",
+      "lf_sha256": "f27849866cfebbaf9413e5695753b0154ef75d193d1508f1386d1e7dda7ca611",
+      "upstream_raw_sha256": "f6b0b1fc11d28ab39700ffcb9bf11ecdee5b8157647e5dc28fe915888c70b578",
+      "renamed_sha256": "441f2572d918e0fccc47580f3b3a6e9e3ebebb3a69923112cebc9792de356086",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "cea74cd98ae42c877797ad5144e4e04271a1f64225c9a1fd72c4095cb4cefb71",
+      "upstream_token_sha256": "d532117bfbc8888e66a95fc9829b711bd252fedb8594560e50c30ff6d77e35d6",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "0"
+          ],
+          "vendored_renamed_tokens": [
+            "2"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "2"
+          ],
+          "vendored_renamed_tokens": [
+            "0"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "4"
+          ],
+          "vendored_renamed_tokens": [
+            "6"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "6"
+          ],
+          "vendored_renamed_tokens": [
+            "4"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "0"
+          ],
+          "vendored_renamed_tokens": [
+            "2"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "2"
+          ],
+          "vendored_renamed_tokens": [
+            "0"
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.966667,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "function",
+      "name": "YUY2ToABGRRow_NEON",
+      "upstream_name": "YUY2ToARGBRow_NEON",
+      "vendored_lines": [
+        599,
+        616
+      ],
+      "upstream_lines": [
+        520,
+        537
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "11caa1b75d8382567321d5e8527d5a2d08ce9c32ae01a232e4ac1bbb375b193b",
+      "lf_sha256": "5695f8ef88d630040399129d30183fe9b40233590e664251a6e67e2caaf4f34a",
+      "upstream_raw_sha256": "ec71c3db6857d32de6b602b34c2939bf7fb1b685f32f2b20b5e08c4b166d75e9",
+      "renamed_sha256": "d60acb926474b48dc267207d5075c3b0e8e220e54a0e0225b08afd4fde700375",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "e12f2f29ac96b5f3f17f2fb8f4b09a1c6852cd047e20972b57c76f45bb24ff85",
+      "upstream_token_sha256": "e12f2f29ac96b5f3f17f2fb8f4b09a1c6852cd047e20972b57c76f45bb24ff85",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565Row_NEON",
+      "upstream_name": "ARGBToRGB565Row_NEON",
+      "vendored_lines": [
+        1689,
+        1704
+      ],
+      "upstream_lines": [
+        1629,
+        1644
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "dfce3bdff0d99c0d0c519403c6b7158f9cb567ef3370b206e008742963bfcb98",
+      "lf_sha256": "e5144700febb96b5e80ae5517e98bea4ad59b93e943329fbb0e120f2e990bc32",
+      "upstream_raw_sha256": "60feca8fcbc08db05b1c2a149664fa75a0bdf7e95c6fe766a4a66a8d3e47afa6",
+      "renamed_sha256": "b014de16bcb66ce2bacaf21a4562ebabe6360260efb091efe4d642b487c5b6db",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "a25428d0ce07204f5e31fa11026d48506c3223fd87dd1affbbe09c142ef160c6",
+      "upstream_token_sha256": "a25428d0ce07204f5e31fa11026d48506c3223fd87dd1affbbe09c142ef160c6",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "YUVTOBGR",
+      "upstream_name": "YUVTORGB",
+      "vendored_lines": [
+        147,
+        161
+      ],
+      "upstream_lines": [
+        104,
+        118
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "402a2ef2729942dece832ce733d8ef5e5d0decd29b62e1544a9a075b47f8c73e",
+      "lf_sha256": "eb79c41d3c9cb1906e60c39c64ef122b7ae1fbf05736ebe52b110b158306a216",
+      "upstream_raw_sha256": "d443f86b0ba176910c83f9d74299970f735756fb30f741bea1993f188415a613",
+      "renamed_sha256": "a34c5491f34d05739f5dcb21c66a7f0827888556aef299bbf41b54646679e9b2",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "ca0c516eb970b679a55285c086c1f931e05e806009a0d3049e7a38a8865eb337",
+      "upstream_token_sha256": "0b7623926ae2329fb7feab63a307c05f14b7f2afa6b3a5314b421e6136f9bcdc",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"vadd.u16   q0, q0, q9                     \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"vadd.u16   q1, q0, q9                     \\n\"",
+            "\\",
+            "\"vqsub.u16  q0, q2, q12                    \\n\"",
+            "\\",
+            "\"vqsub.u16  q2, q1, q10                    \\n\""
+          ]
+        },
+        {
+          "operation": "delete",
+          "upstream_tokens": [
+            "\\",
+            "\"vqsub.u16  q0, q0, q10                    \\n\"",
+            "\\",
+            "\"vqsub.u16  q2, q2, q12                    \\n\""
+          ],
+          "vendored_renamed_tokens": []
+        }
+      ],
+      "token_similarity_round6": 0.83871,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "BGRTOBGR8",
+      "upstream_name": "RGBTORGB8",
+      "vendored_lines": [
+        164,
+        167
+      ],
+      "upstream_lines": [
+        121,
+        124
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "7aedb46f742bb4ec8f80feac65f167091941864b0ebf1bf5a2ac8688a25bebbb",
+      "lf_sha256": "d5a0ad55fa8f7a1650312095e1aa9dc6d9b787ca67b018253a0211ff340d654e",
+      "upstream_raw_sha256": "946a8ca2cf245df5b7ef1003aafaa7744fd72f270bbc3261b7b90f2e3a515deb",
+      "renamed_sha256": "c06d7cc4774099d97b7f2a59db18eb71752fd38c10b2f942719dfae0ffedd037",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "4b8fd10f41b8d52c3ecb760a3fb56c71a452c3edb13b0452e3f42ae475c51667",
+      "upstream_token_sha256": "4b8fd10f41b8d52c3ecb760a3fb56c71a452c3edb13b0452e3f42ae475c51667",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "ABGRTORGB565",
+      "upstream_name": "ARGBTORGB565",
+      "vendored_lines": [
+        322,
+        327
+      ],
+      "upstream_lines": [
+        281,
+        286
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "7c1ecc0f77977a20c9a6aa44ad19003d98ba732ac1d6c1bfa5e72c15170034eb",
+      "lf_sha256": "308007c366ee480a6e19f9eaf14fd9ba9daaf84b65dd2c5cad0106975bc38680",
+      "upstream_raw_sha256": "d928a9f781352d2f0738afc01dd60957426526faf9d71f8d4d55c56655d6f34c",
+      "renamed_sha256": "34ba8020d02e99dc1c4e068aadbb9282461da3d939304caa90390e72ae830669",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "b1de3480552085876f358735fa39c7dba6bf7883da64992ad3d327d7697ab047",
+      "upstream_token_sha256": "3c2be4c286035ec09a17ca86ef9b070c1a88085006dd9e41fff022146371890b",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"vshll.u8    q2, d4, #8                    \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"vshll.u8    q2, d0, #8                    \\n\""
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"vshll.u8    q0, d0, #8                    \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"vshll.u8    q0, d4, #8                    \\n\""
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.846154,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "function",
+      "name": "YUY2ToABGRRow_NEON",
+      "upstream_name": "YUY2ToARGBRow_NEON",
+      "vendored_lines": [
+        619,
+        638
+      ],
+      "upstream_lines": [
+        543,
+        562
+      ],
+      "level": "rename_and_trivia_tokens_equal",
+      "raw_sha256": "0dc1c5459cdd7c46fc3277188d9503afed2a9a8d4a057865ca4275a88c881446",
+      "lf_sha256": "f4b5f902c5d050a9af4848b3c04164f4c75c9d61599c9c22dffd16878ffff1da",
+      "upstream_raw_sha256": "9df8c59f99f5ce93d1b7c5c0ae3551a8f9ca73d023fc69c7ded9af64492df916",
+      "renamed_sha256": "cda3a838c3f2e05c2e74dc55f5ac8739306ab7a93bf90b9740e7420ebf7e2829",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "a8c5ff5bcb257e30813c9f9282fff935096a1c852c85a9d3a6501788db79333e",
+      "upstream_token_sha256": "a8c5ff5bcb257e30813c9f9282fff935096a1c852c85a9d3a6501788db79333e",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "function",
+      "name": "ABGRToRGB565Row_NEON",
+      "upstream_name": "ARGBToRGB565Row_NEON",
+      "vendored_lines": [
+        1913,
+        1929
+      ],
+      "upstream_lines": [
+        1858,
+        1874
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "7ca1ef05056631edbafb18dcd2793d383799b82439e699902baab08d6f783064",
+      "lf_sha256": "233e98f73c0e77962e793bfa17eb64469dcbf3e9339b7db1304b3d03d373c8f8",
+      "upstream_raw_sha256": "f33bb7134462345b7d25fd4d4b15c8c4e5d75ed0019821d6408cb83b3f757805",
+      "renamed_sha256": "7c22daf715f22e24ebb1d77af02a0b35c5bb9c3fe5448eea8c3969886c2fb2c5",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "d6b01e2a8490f7b5e11d9dc47e1ce7e2ed851b7a4ec51b0e21c68e62b3cb0611",
+      "upstream_token_sha256": "31542c10a26c233ccd3292a68f126890740f075bcef8cf0a7eaf564b725ca571",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"st1         {v18.16b}, [%1], #16          \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"st1         {v16.16b}, [%1], #16          \\n\""
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.982456,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "macro",
+      "name": "YUVTOBGR",
+      "upstream_name": "YUVTORGB",
+      "vendored_lines": [
+        126,
+        140
+      ],
+      "upstream_lines": [
+        95,
+        109
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "0effc405f46d64462d1384408af12fafab971933f0534f5f2b4a69d1d2ff073d",
+      "lf_sha256": "cd555d7b6e4585191e2b9791f34f23f99b32857a70d5ea0e01ae143058618ecb",
+      "upstream_raw_sha256": "9963ca6e290af3d8ea36d3de63963d19ed42102cf3bdacb6766b485ae34ede88",
+      "renamed_sha256": "90b23e14dfd07bd19c69fa90b1a72b8d74bc3fe921f7dadc3ad7fe9059c4a02b",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "d4f11e31607695b08f709539c9c34b59edc91606b4a3de5d1033dc3cae258a47",
+      "upstream_token_sha256": "6cff11087454d9d07eaac84e9715c9ed14a56615ecb3ba531c4ebfe37ce97b10",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"add        v16.8h, v0.8h, v4.8h           \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"add        v18.8h, v0.8h, v4.8h           \\n\""
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"add        v18.8h, v0.8h, v5.8h           \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"add        v16.8h, v0.8h, v5.8h           \\n\""
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"uqsub      v16.8h, v16.8h, v25.8h         \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"uqsub      v18.8h, v18.8h, v25.8h         \\n\""
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"uqsub      v18.8h, v18.8h, v27.8h         \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"uqsub      v16.8h, v16.8h, v27.8h         \\n\""
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.870968,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "macro",
+      "name": "BGRTOBGR8",
+      "upstream_name": "RGBTORGB8",
+      "vendored_lines": [
+        143,
+        146
+      ],
+      "upstream_lines": [
+        112,
+        115
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "062e113fce2e2149023e53dbd84dd0fe2be8e86d5e6abfdf665ea83db71cf078",
+      "lf_sha256": "07e5bc820b5bd26305d5d5326dcbea78f05e8265e06da94b87cc234ee48b5613",
+      "upstream_raw_sha256": "b70f067af687c1f2a15f7b05fc6a14e18fed440faa9daa5e6126f62a6b05ba75",
+      "renamed_sha256": "874f6c94a6323ed27a0ab9f8a64c8aae1c3c64a6a7cae33f2759cd33b2a61b92",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "c6b0ba5cf7f3b578be0b5e868133b33f409080506e0e86bdf560190bac8ff3e9",
+      "upstream_token_sha256": "db0b3552838bd33a8c2900af16861562e38458dad2ca3cc1868a7144654c2b63",
+      "token_differences": [
+        {
+          "operation": "insert",
+          "upstream_tokens": [],
+          "vendored_renamed_tokens": [
+            "\"uqshrn     v18.8b, v18.8h, #6             \\n\"",
+            "\\"
+          ]
+        },
+        {
+          "operation": "delete",
+          "upstream_tokens": [
+            "\\",
+            "\"uqshrn     v18.8b, v18.8h, #6             \\n\""
+          ],
+          "vendored_renamed_tokens": []
+        }
+      ],
+      "token_similarity_round6": 0.777778,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "kind": "macro",
+      "name": "ABGRTORGB565",
+      "upstream_name": "ARGBTORGB565",
+      "vendored_lines": [
+        302,
+        307
+      ],
+      "upstream_lines": [
+        268,
+        273
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "f871606658453d1f7befc601a269508a15537de6063de734c74c6fcf0b7155c7",
+      "lf_sha256": "ae532b26135e491a015306e94fcd2f2cc159815f7fa7f2ba3a5ef88a4e6724d1",
+      "upstream_raw_sha256": "fcf3c838ca83cfee76132f101d91fce02f5ad00bea97f7b608919d3165834d2e",
+      "renamed_sha256": "80e0b00506d7f42c0ea0203feb9b4b455a44d95762ee19b83d7d976aa8c918c5",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "b73c54d6ea5b6334608f776e636501d89339d6723777d75001e704ff56617699",
+      "upstream_token_sha256": "d8fddd56d8d8748ad65ca30dfdde70705b86638cf4966f318397c8712c6ae9ec",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"sri        v18.8h, v17.8h, #5             \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"sri        v16.8h, v17.8h, #5             \\n\""
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"sri        v18.8h, v16.8h, #11            \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"sri        v16.8h, v18.8h, #11            \\n\""
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.846154,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "kind": "macro",
+      "name": "STOREABGR",
+      "upstream_name": "STORERGBA",
+      "vendored_lines": [
+        135,
+        140
+      ],
+      "upstream_lines": [
+        129,
+        133
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "826d83cd23917e4f461944da3b90473101755ecc2f4f3b0a8665f7f70044e1b2",
+      "lf_sha256": "c328a5d655674af4d921ee2329d313529a054a8ee5aa3e30719ccfe7f9226999",
+      "upstream_raw_sha256": "8125b02482d84bb031b3d5bd74826070d9c96d30263622e14df0994fa3f4a6b4",
+      "renamed_sha256": "47c26c5fbbfb4c90c17ea038a8fa660580d255a1fe5705c1c8bb5bd5e6bee99d",
+      "renames": [
+        [
+          "STOREABGR",
+          "STORERGBA"
+        ],
+        [
+          "dst_abgr",
+          "dst_rgba"
+        ]
+      ],
+      "renamed_token_sha256": "51c2975395292379bc0ff0a969821383f319e94d78e8f2764214e92bf1283daf",
+      "upstream_token_sha256": "5937af05a24bc4a562c149ad4cc31769a1abd88c62eb4744f915919e46f258ad",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"vmov.u8    d1, d0                         \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"vmov.u8    d1, d2                         \\n\""
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"vmov.u8    d3, d4                         \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"vmov.u8    d2, d0                         \\n\""
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "\"vmov.u8    d0, d6                         \\n\""
+          ],
+          "vendored_renamed_tokens": [
+            "\"vmov.u8    d0, d4                         \\n\"",
+            "\\",
+            "\"vmov.u8    d3, d6                         \\n\""
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.666667,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_any.cc",
+      "kind": "wrapper",
+      "name": "ABGRToRGB565Row_Any_NEON",
+      "upstream_name": "ARGBToRGB565Row_Any_NEON",
+      "vendored_lines": [
+        942,
+        942
+      ],
+      "upstream_lines": [
+        921,
+        921
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "eea657025ec5e9bcca43d00418ecfa32d5cf653972d88b14f66c2eeafe9201a5",
+      "lf_sha256": "7d2f9f6859b931301b0104836bc37748f35e3a06fdd59d1e47cccfcf7c478330",
+      "upstream_raw_sha256": "db9383a270b1205985ac5db0201716d7ec606637e5bee5e6919296bfa0b54d1f",
+      "renamed_sha256": "db9383a270b1205985ac5db0201716d7ec606637e5bee5e6919296bfa0b54d1f",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "1a406e361475cec74a6f2b29f203fe2429a9937c9f11e9f3971358d68fd67130",
+      "upstream_token_sha256": "1a406e361475cec74a6f2b29f203fe2429a9937c9f11e9f3971358d68fd67130",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "source/row_any.cc",
+      "kind": "wrapper",
+      "name": "YUY2ToABGRRow_Any_NEON",
+      "upstream_name": "YUY2ToARGBRow_Any_NEON",
+      "vendored_lines": [
+        1638,
+        1638
+      ],
+      "upstream_lines": [
+        1623,
+        1623
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "c07ed457092871d56430bc38e438e164ec3a00cae13956dceccdf4886f75c1ef",
+      "lf_sha256": "342cd8ef794677bf16394afa38cc2a13af205e52824ffd675b5bc66d5e2d3a05",
+      "upstream_raw_sha256": "9cd29384914af3f1ebcae6c7ef8d1b27714ba1155cec8299b2f7913187a09df2",
+      "renamed_sha256": "9cd29384914af3f1ebcae6c7ef8d1b27714ba1155cec8299b2f7913187a09df2",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "7d94a43c2e2765fd97b6051c59316b49cde272fb7a324088add2dffa6296d695",
+      "upstream_token_sha256": "7d94a43c2e2765fd97b6051c59316b49cde272fb7a324088add2dffa6296d695",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/convert_argb.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGR",
+      "upstream_name": "YUY2ToARGB",
+      "vendored_lines": [
+        799,
+        804
+      ],
+      "upstream_lines": [
+        781,
+        786
+      ],
+      "level": "related_but_tokens_differ",
+      "raw_sha256": "6928e0d8348060161be9dc14ef5c844cb2d20c18e511563f98c3066492f44e16",
+      "lf_sha256": "18bfcd3c38728d3b5124cf27dff97dab93c1461c8d72ffa4d586bcb796427778",
+      "upstream_raw_sha256": "b7fa32f5672b1a329b6726d017af64791e6e02dedd6d08a71422755d30f36199",
+      "renamed_sha256": "404e047f0c6f4017e3ca36a9b750f78531bd7f52d81ac38fc2dc7a97f581a106",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "c1ab3ad50ada021e122211a0ffb3524474f4b8669260f8c261d72a924fa226e3",
+      "upstream_token_sha256": "40ca132d57db77945a20bf000c62bb043d7dba5a1a67b7360936db3b46b9fdc1",
+      "token_differences": [
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "dst_argb"
+          ],
+          "vendored_renamed_tokens": [
+            "dst_ARGB"
+          ]
+        },
+        {
+          "operation": "replace",
+          "upstream_tokens": [
+            "dst_stride_argb"
+          ],
+          "vendored_renamed_tokens": [
+            "dst_stride_ARGB"
+          ]
+        }
+      ],
+      "token_similarity_round6": 0.92,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/convert_argb.h",
+      "kind": "declaration",
+      "name": "MJPGToABGR",
+      "upstream_name": "MJPGToARGB",
+      "vendored_lines": [
+        1129,
+        1136
+      ],
+      "upstream_lines": [
+        1108,
+        1115
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "38be87c86a6f507c91b37b61a84e548761120aa3a8693f01e27f0394cea0f332",
+      "lf_sha256": "4bf0923b011da757ca44faf082674e33a94f982d3f16d4a8773bfbc471211fd5",
+      "upstream_raw_sha256": "227dcb5b32574e5658b1d6c9afd7904487f8accbc4be3884ae2db636d60b4235",
+      "renamed_sha256": "227dcb5b32574e5658b1d6c9afd7904487f8accbc4be3884ae2db636d60b4235",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "7881d85bfaba86c788413656e799db7a148c501d0643026dfec30e61c4926791",
+      "upstream_token_sha256": "7881d85bfaba86c788413656e799db7a148c501d0643026dfec30e61c4926791",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/convert_from_argb.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565",
+      "upstream_name": "ARGBToRGB565",
+      "vendored_lines": [
+        104,
+        109
+      ],
+      "upstream_lines": [
+        104,
+        109
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "cef8c0da894d7d1b192b2ed31f62dc1138197057569094664661ee092bed6686",
+      "lf_sha256": "9b88f037f2b1a60ec7c70f2aad6852bca664a64c989b2a189c73b1d98d11e158",
+      "upstream_raw_sha256": "da60a85a4d895a0e97996ac378b939370c49c17d27985bacff438061842f124c",
+      "renamed_sha256": "da60a85a4d895a0e97996ac378b939370c49c17d27985bacff438061842f124c",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "3ac3e8e4261808079b336bbdf83b015c062dfccfdf27b257365d8d798e194662",
+      "upstream_token_sha256": "3ac3e8e4261808079b336bbdf83b015c062dfccfdf27b257365d8d798e194662",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/convert_from_argb.h",
+      "kind": "declaration",
+      "name": "ABGRToYUY2",
+      "upstream_name": "ARGBToYUY2",
+      "vendored_lines": [
+        367,
+        372
+      ],
+      "upstream_lines": [
+        349,
+        354
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "f5a8716c9c3f6d619af7badc66197f8e28831f28b61bbfdb7cbc303e70494025",
+      "lf_sha256": "42ad5545b091b6d56786a61eb8d3f1d1cf7826e24534655f3b0bd5a547242dd4",
+      "upstream_raw_sha256": "77ac9d4dcb093531055dee96ebe44cadea81bf212dbdd2638bc59df7d4222046",
+      "renamed_sha256": "77ac9d4dcb093531055dee96ebe44cadea81bf212dbdd2638bc59df7d4222046",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "4156ec4245ea46c15ff9e6c666eb37a9b1537aa00e291312f8d36fe956942f15",
+      "upstream_token_sha256": "4156ec4245ea46c15ff9e6c666eb37a9b1537aa00e291312f8d36fe956942f15",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGRRow_NEON",
+      "upstream_name": "YUY2ToARGBRow_NEON",
+      "vendored_lines": [
+        996,
+        999
+      ],
+      "upstream_lines": [
+        985,
+        988
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "72b87e7cf56363cbc4590eea782cc49d7b189774a60817d3e2cdb17c85542a57",
+      "lf_sha256": "41ae2e6b21d893c86a2785b7d7bd690fa8f3ad4a653df405ab522b3d8a366305",
+      "upstream_raw_sha256": "0f5c6c933b7da01c077aaaf393eaa0ecc00c96d0eaf853b5578279524afe41bf",
+      "renamed_sha256": "0f5c6c933b7da01c077aaaf393eaa0ecc00c96d0eaf853b5578279524afe41bf",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "48b1d17703b4b01d8dd9ce09a67cadcd1d8ea5db54edece35d8cbacb99ef52f7",
+      "upstream_token_sha256": "48b1d17703b4b01d8dd9ce09a67cadcd1d8ea5db54edece35d8cbacb99ef52f7",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565Row_NEON",
+      "upstream_name": "ARGBToRGB565Row_NEON",
+      "vendored_lines": [
+        3049,
+        3051
+      ],
+      "upstream_lines": [
+        3042,
+        3044
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "289e7d5b60b81b6c705ab0f1ba11c5fac71607348fa61105104a6ea3e5e2fa2e",
+      "lf_sha256": "f832e5be6970dbe64a8c96cac68d8d4da209cf84b02dda0020273f6fb77aa22d",
+      "upstream_raw_sha256": "dfd7810d8f0d66b5b890af695e7ee3dd15f710092afa7d616a5dc510b5524de6",
+      "renamed_sha256": "dfd7810d8f0d66b5b890af695e7ee3dd15f710092afa7d616a5dc510b5524de6",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "bc12d21431e742892698bedf24e3133b32d13437a1874cf4be33506ffa206130",
+      "upstream_token_sha256": "bc12d21431e742892698bedf24e3133b32d13437a1874cf4be33506ffa206130",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565Row_C",
+      "upstream_name": "ARGBToRGB565Row_C",
+      "vendored_lines": [
+        3096,
+        3096
+      ],
+      "upstream_lines": [
+        3086,
+        3086
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "f00eeee8dcbeaf5254ad5e42c18a0871379d21fdb0f8a0572fbd57e93b3d3d5a",
+      "lf_sha256": "f00eeee8dcbeaf5254ad5e42c18a0871379d21fdb0f8a0572fbd57e93b3d3d5a",
+      "upstream_raw_sha256": "acc459618cc624a4f8dfbf2a85a88d1e29ebb3b1357a4e023f132c4d10466c46",
+      "renamed_sha256": "acc459618cc624a4f8dfbf2a85a88d1e29ebb3b1357a4e023f132c4d10466c46",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "a55896a2c9736604ecfe25cd6265d260ffd52a5a5fc4d0ea1ac04036b784fb88",
+      "upstream_token_sha256": "a55896a2c9736604ecfe25cd6265d260ffd52a5a5fc4d0ea1ac04036b784fb88",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGRRow_C",
+      "upstream_name": "YUY2ToARGBRow_C",
+      "vendored_lines": [
+        3305,
+        3308
+      ],
+      "upstream_lines": [
+        3286,
+        3289
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "33ed5a82a5e04d04afc50026a2bfa7549f43af732df26da6dc23f44a83478bde",
+      "lf_sha256": "1f8c34d703e8792d858ab1ca38c9b34bb470313a95fded9e88aa363ffbd18802",
+      "upstream_raw_sha256": "a4fd085f05e6f8af441f26462e26bcc7f34e9b4f440d4d62e0b8380d835c4066",
+      "renamed_sha256": "a4fd085f05e6f8af441f26462e26bcc7f34e9b4f440d4d62e0b8380d835c4066",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "42a25057b52ec069930f06e21560dc5d07ad1c2adf93075bd63a8b9f823b28a2",
+      "upstream_token_sha256": "42a25057b52ec069930f06e21560dc5d07ad1c2adf93075bd63a8b9f823b28a2",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "ABGRToRGB565Row_Any_NEON",
+      "upstream_name": "ARGBToRGB565Row_Any_NEON",
+      "vendored_lines": [
+        4343,
+        4345
+      ],
+      "upstream_lines": [
+        4328,
+        4330
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "0362e24e51335753b37711afb80e4d13c453ffbb2c93523746d289b2bf9a50eb",
+      "lf_sha256": "38b45863738958414a09803071dc524c572eae3423aa17d89865a3ef56d809eb",
+      "upstream_raw_sha256": "96799399fea18adf8a91e990be76d7e22bb84ef447b461b841839a6928499447",
+      "renamed_sha256": "96799399fea18adf8a91e990be76d7e22bb84ef447b461b841839a6928499447",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "e238e2ab9e4c9bc18dacd5090ca5edc16facb9f515f94222bf162572031d4e14",
+      "upstream_token_sha256": "e238e2ab9e4c9bc18dacd5090ca5edc16facb9f515f94222bf162572031d4e14",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "declaration",
+      "name": "YUY2ToABGRRow_Any_NEON",
+      "upstream_name": "YUY2ToARGBRow_Any_NEON",
+      "vendored_lines": [
+        4488,
+        4491
+      ],
+      "upstream_lines": [
+        4462,
+        4465
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "c61a9b70a53618a4e8e96713fb8a04326f8b9f05cea52d2e807209c594e3f48c",
+      "lf_sha256": "13be9ec30da67a4ee40981f1d05b0d6a3c118ca3725bd1f6a8b9a6d2d33ee03c",
+      "upstream_raw_sha256": "c0d439f15d754655c8174bd60b000e9071788cb94ac60ce00950d1c79576d41d",
+      "renamed_sha256": "c0d439f15d754655c8174bd60b000e9071788cb94ac60ce00950d1c79576d41d",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "6ee988c607741cb64559e6624b8bd5aab1b3b9e2dd87d5bcfc8931a5055cefb5",
+      "upstream_token_sha256": "6ee988c607741cb64559e6624b8bd5aab1b3b9e2dd87d5bcfc8931a5055cefb5",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "macro",
+      "name": "HAS_ABGRTORGB24ROW_NEON",
+      "upstream_name": "HAS_ARGBTORGB24ROW_NEON",
+      "vendored_lines": [
+        436,
+        436
+      ],
+      "upstream_lines": [
+        436,
+        436
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "dc82c97568d463420cad862f2fd8fb2d7e679582acf64b5909676dabe09096ad",
+      "lf_sha256": "20a28eee15289d6e8f621918b51d1589dd624c95337c2e8d4afa7c4eb565e669",
+      "upstream_raw_sha256": "f39160f984def7e1a25f687209620ca860778bcc8dc0f8c79c2c01e8192451cb",
+      "renamed_sha256": "f39160f984def7e1a25f687209620ca860778bcc8dc0f8c79c2c01e8192451cb",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "dfeccb62f69e6254b6ecedd122c7f9b4cf95221dbbc131f065c67b2c6150690b",
+      "upstream_token_sha256": "dfeccb62f69e6254b6ecedd122c7f9b4cf95221dbbc131f065c67b2c6150690b",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "macro",
+      "name": "HAS_ABGRTORGB565ROW_NEON",
+      "upstream_name": "HAS_ARGBTORGB565ROW_NEON",
+      "vendored_lines": [
+        440,
+        440
+      ],
+      "upstream_lines": [
+        438,
+        438
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "f961759f5cf0f699fb19846c631383acc591a6128632b32652dd36cd4c6c1df4",
+      "lf_sha256": "132bd6128c73da31733fd267f7833abf9a763637e70499a449a3eb8607524f6d",
+      "upstream_raw_sha256": "6425b2f4d3de76ecc4ead76ba393c27803347a442ecb05b96b07abdc4af32ea4",
+      "renamed_sha256": "6425b2f4d3de76ecc4ead76ba393c27803347a442ecb05b96b07abdc4af32ea4",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "bf59d89de070ebba8626fcfc8e58f3c3ad9976109b9b7d28c8ca25d7cca5e136",
+      "upstream_token_sha256": "bf59d89de070ebba8626fcfc8e58f3c3ad9976109b9b7d28c8ca25d7cca5e136",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "kind": "macro",
+      "name": "HAS_YUY2TOABGRROW_NEON",
+      "upstream_name": "HAS_YUY2TOARGBROW_NEON",
+      "vendored_lines": [
+        529,
+        529
+      ],
+      "upstream_lines": [
+        523,
+        523
+      ],
+      "level": "rename_only_equal",
+      "raw_sha256": "9c5edacf4cf26ac7d6cadd33d80607b95d1ebdd0337d44a41d6d6708c78b1632",
+      "lf_sha256": "563f2ae14208c7d118a463aa8e270982af9661fb0255f4167117a1d84eb1fa30",
+      "upstream_raw_sha256": "efa3db51a3c90afbe59d7fae864f3685f58ed77418b3191bd76ab3b69e600ce3",
+      "renamed_sha256": "efa3db51a3c90afbe59d7fae864f3685f58ed77418b3191bd76ab3b69e600ce3",
+      "renames": [
+        [
+          "YUVTOBGR",
+          "YUVTORGB"
+        ],
+        [
+          "BGRTOBGR8",
+          "RGBTORGB8"
+        ],
+        [
+          "ABGR",
+          "ARGB"
+        ],
+        [
+          "abgr",
+          "argb"
+        ]
+      ],
+      "renamed_token_sha256": "0daaa771ecb1747a18da7f7f98e03ca4735dfc976e08f015a5a765b7c75527a4",
+      "upstream_token_sha256": "0daaa771ecb1747a18da7f7f98e03ca4735dfc976e08f015a5a765b7c75527a4",
+      "token_differences": [],
+      "token_similarity_round6": 1.0,
+      "licensing_conclusion": "No independent authorization inferred from content similarity"
+    }
+  ],
+  "files": [
+    {
+      "path": "Android.mk",
+      "added": 6,
+      "removed": 30,
+      "added_line_coverage": {
+        "build_recipe_diff": 6
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [],
+      "vendored_blob": "09439662c1536c5e948b60f3aa581f1aad0b272c",
+      "upstream_blob": "45d9daa8e3f00f7d9da353c7f843db54e52b574e",
+      "same_opening_comment_after_lf": false,
+      "opening_comment_sha256": null
+    },
+    {
+      "path": "include/libyuv/convert_argb.h",
+      "added": 21,
+      "removed": 0,
+      "added_line_coverage": {
+        "blank_or_comment": 5,
+        "export_marker": 2,
+        "named_unit": 10,
+        "identical_existing_unit_diff_alignment": 4
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [
+        {
+          "line": 1121,
+          "unit": "MJPGToARGB",
+          "unit_lf_sha256": "227dcb5b32574e5658b1d6c9afd7904487f8accbc4be3884ae2db636d60b4235"
+        },
+        {
+          "line": 1122,
+          "unit": "MJPGToARGB",
+          "unit_lf_sha256": "227dcb5b32574e5658b1d6c9afd7904487f8accbc4be3884ae2db636d60b4235"
+        },
+        {
+          "line": 1123,
+          "unit": "MJPGToARGB",
+          "unit_lf_sha256": "227dcb5b32574e5658b1d6c9afd7904487f8accbc4be3884ae2db636d60b4235"
+        },
+        {
+          "line": 1124,
+          "unit": "MJPGToARGB",
+          "unit_lf_sha256": "227dcb5b32574e5658b1d6c9afd7904487f8accbc4be3884ae2db636d60b4235"
+        }
+      ],
+      "vendored_blob": "2e87c3ab179ef6b85e9f08a060f1d462d1fb7453",
+      "upstream_blob": "8c92a9c6deaf7d03d5d5627e55648ee97a3791cc",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "9bc086b08125cbcb62678405aa435b5bb7cede53c2e70acb8be32abf55021627"
+    },
+    {
+      "path": "include/libyuv/convert_from_argb.h",
+      "added": 18,
+      "removed": 0,
+      "added_line_coverage": {
+        "blank_or_comment": 4,
+        "export_marker": 2,
+        "named_unit": 12
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [],
+      "vendored_blob": "0c59b1e6cd3fad0e92f5bcffeb942437e4c95a72",
+      "upstream_blob": "ff2a581ac4286c8e626497c717dbb54f9bb7f406",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "9bc086b08125cbcb62678405aa435b5bb7cede53c2e70acb8be32abf55021627"
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "added": 22,
+      "removed": 0,
+      "added_line_coverage": {
+        "named_unit": 13,
+        "identical_existing_unit_diff_alignment": 9
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [
+        {
+          "line": 993,
+          "unit": "UYVYToARGBRow_NEON",
+          "unit_lf_sha256": "3afc525af1081c2057099b83ad49b02c0905b799ed5199539c4859cbf3b69ea6"
+        },
+        {
+          "line": 994,
+          "unit": "UYVYToARGBRow_NEON",
+          "unit_lf_sha256": "3afc525af1081c2057099b83ad49b02c0905b799ed5199539c4859cbf3b69ea6"
+        },
+        {
+          "line": 995,
+          "unit": "UYVYToARGBRow_NEON",
+          "unit_lf_sha256": "3afc525af1081c2057099b83ad49b02c0905b799ed5199539c4859cbf3b69ea6"
+        },
+        {
+          "line": 3302,
+          "unit": "UYVYToARGBRow_C",
+          "unit_lf_sha256": "6139bd544f3d6ae6cd73057d083d42d3dfa0687cd613c50cbdab327a9ae03dbb"
+        },
+        {
+          "line": 3303,
+          "unit": "UYVYToARGBRow_C",
+          "unit_lf_sha256": "6139bd544f3d6ae6cd73057d083d42d3dfa0687cd613c50cbdab327a9ae03dbb"
+        },
+        {
+          "line": 3304,
+          "unit": "UYVYToARGBRow_C",
+          "unit_lf_sha256": "6139bd544f3d6ae6cd73057d083d42d3dfa0687cd613c50cbdab327a9ae03dbb"
+        },
+        {
+          "line": 4485,
+          "unit": "UYVYToARGBRow_Any_NEON",
+          "unit_lf_sha256": "6302d36ef2e5f53c02b79cc8019fd98e0f8dfd0f5306053119ab8d2e7ab47572"
+        },
+        {
+          "line": 4486,
+          "unit": "UYVYToARGBRow_Any_NEON",
+          "unit_lf_sha256": "6302d36ef2e5f53c02b79cc8019fd98e0f8dfd0f5306053119ab8d2e7ab47572"
+        },
+        {
+          "line": 4487,
+          "unit": "UYVYToARGBRow_Any_NEON",
+          "unit_lf_sha256": "6302d36ef2e5f53c02b79cc8019fd98e0f8dfd0f5306053119ab8d2e7ab47572"
+        }
+      ],
+      "vendored_blob": "aa16a3e9b599409e1f9f4122b1936d9bdfbc298b",
+      "upstream_blob": "70d789e29eef9412226a917addd806a8e5b86c34",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "61d925088b31f100610bbf70f62636b815cc48135673904e4c67e0a344290736"
+    },
+    {
+      "path": "source/convert_argb.cc",
+      "added": 76,
+      "removed": 0,
+      "added_line_coverage": {
+        "blank_or_comment": 3,
+        "export_marker": 1,
+        "named_unit": 72
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [],
+      "vendored_blob": "a93ba49ae759fcde134f49fd292a29a6852850b8",
+      "upstream_blob": "1ebb107a6af031a5c833b99c0d838e1c24efe7c0",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "61d925088b31f100610bbf70f62636b815cc48135673904e4c67e0a344290736"
+    },
+    {
+      "path": "source/convert_from_argb.cc",
+      "added": 238,
+      "removed": 0,
+      "added_line_coverage": {
+        "blank_or_comment": 5,
+        "export_marker": 2,
+        "named_unit": 227,
+        "identical_existing_unit_diff_alignment": 4
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [
+        {
+          "line": 1692,
+          "unit": "ARGBToRGB565Dither",
+          "unit_lf_sha256": "18a38e75c5d15bb9b0c5ef70de4ab94b8053d3e3ad366029bffc61dbe4d09d4b"
+        },
+        {
+          "line": 1693,
+          "unit": "ARGBToRGB565Dither",
+          "unit_lf_sha256": "18a38e75c5d15bb9b0c5ef70de4ab94b8053d3e3ad366029bffc61dbe4d09d4b"
+        },
+        {
+          "line": 1694,
+          "unit": "ARGBToRGB565Dither",
+          "unit_lf_sha256": "18a38e75c5d15bb9b0c5ef70de4ab94b8053d3e3ad366029bffc61dbe4d09d4b"
+        },
+        {
+          "line": 1695,
+          "unit": "ARGBToRGB565Dither",
+          "unit_lf_sha256": "18a38e75c5d15bb9b0c5ef70de4ab94b8053d3e3ad366029bffc61dbe4d09d4b"
+        }
+      ],
+      "vendored_blob": "02407b3554b581baee3325148ac13eed634c6a52",
+      "upstream_blob": "2f38a488216551683b824b01ddb96e877c3c85ba",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "9bc086b08125cbcb62678405aa435b5bb7cede53c2e70acb8be32abf55021627"
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "added": 133,
+      "removed": 0,
+      "added_line_coverage": {
+        "named_unit": 123,
+        "blank_or_comment": 9,
+        "export_marker": 1
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [],
+      "vendored_blob": "4e264eea6f3f4d14eb41d8255ede94e93c4698b0",
+      "upstream_blob": "d7556ee91baf3ebc94475db74102788c33f2f5fd",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "61d925088b31f100610bbf70f62636b815cc48135673904e4c67e0a344290736"
+    },
+    {
+      "path": "source/row_any.cc",
+      "added": 6,
+      "removed": 0,
+      "added_line_coverage": {
+        "wrapper_conditional": 4,
+        "named_unit": 2
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [],
+      "vendored_blob": "5d3bc8d364090e541be525464ec0fccd81b5f3e3",
+      "upstream_blob": "bd46ba1b5b87867b58c83c14f3f0525d0ef45e05",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "9bc086b08125cbcb62678405aa435b5bb7cede53c2e70acb8be32abf55021627"
+    },
+    {
+      "path": "source/row_common.cc",
+      "added": 44,
+      "removed": 0,
+      "added_line_coverage": {
+        "identical_existing_unit_diff_alignment": 2,
+        "blank_or_comment": 2,
+        "named_unit": 40
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [
+        {
+          "line": 302,
+          "unit": "ARGBToRAWRow_C",
+          "unit_lf_sha256": "f07940a466bffcd53b2c5bc4dd4430a3f75ac243ecf1e7dace3022eed0734ca5"
+        },
+        {
+          "line": 303,
+          "unit": "ARGBToRAWRow_C",
+          "unit_lf_sha256": "f07940a466bffcd53b2c5bc4dd4430a3f75ac243ecf1e7dace3022eed0734ca5"
+        }
+      ],
+      "vendored_blob": "8cc7e0bd056da3f856c0b09a52cb99d7e24e3d67",
+      "upstream_blob": "9d94ab289f813fe00f6c9c1ab8e4c22e6cbbfca6",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "61d925088b31f100610bbf70f62636b815cc48135673904e4c67e0a344290736"
+    },
+    {
+      "path": "source/row_neon.cc",
+      "added": 77,
+      "removed": 0,
+      "added_line_coverage": {
+        "blank_or_comment": 12,
+        "named_unit": 61,
+        "identical_existing_unit_diff_alignment": 4
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [
+        {
+          "line": 319,
+          "unit": "ARGBTORGB565",
+          "unit_lf_sha256": "d928a9f781352d2f0738afc01dd60957426526faf9d71f8d4d55c56655d6f34c"
+        },
+        {
+          "line": 320,
+          "unit": "ARGBTORGB565",
+          "unit_lf_sha256": "d928a9f781352d2f0738afc01dd60957426526faf9d71f8d4d55c56655d6f34c"
+        },
+        {
+          "line": 597,
+          "unit": "UYVYToARGBRow_NEON",
+          "unit_lf_sha256": "4d228d594dfb97772ae2f8b51804539729a76fc808a8fd4d337bca254d4a1451"
+        },
+        {
+          "line": 1687,
+          "unit": "I422ToUYVYRow_NEON",
+          "unit_lf_sha256": "6fa65bd214a5d2f9af4fb5be706fdad46a99a7b796b26d444c90e4f9ab43d4a1"
+        }
+      ],
+      "vendored_blob": "6c4706e3486f8d6251286e4dc09377c30fea7e98",
+      "upstream_blob": "82039e9f8f5efc8907e039857d18f03ef5c3887b",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "61d925088b31f100610bbf70f62636b815cc48135673904e4c67e0a344290736"
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "added": 73,
+      "removed": 0,
+      "added_line_coverage": {
+        "blank_or_comment": 11,
+        "named_unit": 60,
+        "identical_existing_unit_diff_alignment": 2
+      },
+      "unclassified_added_lines": [],
+      "unchanged_diff_alignment_context": [
+        {
+          "line": 617,
+          "unit": "UYVYToARGBRow_NEON",
+          "unit_lf_sha256": "e50e5693f84ff1023ccf05337279a4c62d3c4eac3c2f90dfeaaf99499e15a176"
+        },
+        {
+          "line": 1911,
+          "unit": "I422ToUYVYRow_NEON",
+          "unit_lf_sha256": "23097029a963289e997aef1dc11cf76a76d2d553da11ef881ba8651db95236cc"
+        }
+      ],
+      "vendored_blob": "6c8eb326cfa7fcb43186bfc5e86a8d5f0c9b69c9",
+      "upstream_blob": "e166ce0487f2f8ff95facc396334d3e8104e0ab1",
+      "same_opening_comment_after_lf": true,
+      "opening_comment_sha256": "55114ae7959e69f38d5af379860acc5c5ed56d366364b9fb70441f49b74e5203"
+    }
+  ],
+  "downstream": [
+    {
+      "input": "openterface-convert_jpeg.cc",
+      "path": "source/convert_jpeg.cc",
+      "raw_equal": false,
+      "lf_equal": true
+    },
+    {
+      "input": "openterface-row_common.cc",
+      "path": "source/row_common.cc",
+      "raw_equal": false,
+      "lf_equal": true
+    }
+  ],
+  "negative_symbol_scope": [
+    {
+      "input": "saki-frame.c",
+      "matches": []
+    },
+    {
+      "input": "saki-frame-mjpeg.c",
+      "matches": []
+    },
+    {
+      "input": "preimport-frame.c",
+      "matches": []
+    },
+    {
+      "input": "preimport-frame-mjpeg.c",
+      "matches": []
+    },
+    {
+      "input": "official-libuvc-frame.c",
+      "matches": []
+    }
+  ],
+  "license_evidence": {
+    "official": [
+      {
+        "path": "LICENSE",
+        "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f",
+        "git_blob": "c911747a6b53f063503992c3903d932f54cf6c57"
+      },
+      {
+        "path": "PATENTS",
+        "sha256": "4da84211f947c6f9f7dd8fbce513e1522e01833407ae732b8c9a2bbb75fed495",
+        "git_blob": "64aa5c90d8fd97484876870a6722163468e9c0e7"
+      },
+      {
+        "path": "AUTHORS",
+        "sha256": "406e9dee7651ff7a415ef126fe6f649b29312ea3f2b28f11bb7f0bf458edb3bd",
+        "git_blob": "28c08956a80bac2b06251909ccf03f6a490f9cad"
+      }
+    ],
+    "wrapper_root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "downstream_root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "conclusion": "The unchanged LibYuv file headers and official historical documents are identifiable. Root Apache-2.0 texts and later copies do not independently establish the authorship or authorization of added code."
+  },
+  "commits": {
+    "import.commit.json": {
+      "author": {
+        "date": "2024-09-18T02:32:13Z",
+        "email": "8811782@163.com",
+        "name": "hanshiying"
+      },
+      "committer": {
+        "date": "2024-09-18T02:32:13Z",
+        "email": "8811782@163.com",
+        "name": "hanshiying"
+      },
+      "message": "Optimize decoding process: Convert MJPG image data directly to RGBX",
+      "parents": [
+        "09cf0a27e5bbf8db3b20dfc76c7e0a0ed9dae2af"
+      ],
+      "sha": "05435d727fcdd74fc44fd2a3826ee57213dbb07e",
+      "tree": "f509ddce43bf7dd1a50590ce66f60aa6cadc96fb"
+    },
+    "max-page.commit.json": {
+      "author": {
+        "date": "2025-09-06T16:28:33Z",
+        "email": "pedrossgg1994@gmail.com",
+        "name": "pedroSG94"
+      },
+      "committer": {
+        "date": "2025-09-06T16:28:33Z",
+        "email": "pedrossgg1994@gmail.com",
+        "name": "pedroSG94"
+      },
+      "message": "support 16kb page",
+      "parents": [
+        "04197e835fa68422b59ab4d2deb26578cdf027e5"
+      ],
+      "sha": "569e118d7514193da204b953ebbe47c9c87cdbe9",
+      "tree": "917cf154581a0c771aea7abc6011d5a7b6f90151"
+    },
+    "common-page.commit.json": {
+      "author": {
+        "date": "2025-09-08T01:05:06Z",
+        "email": "8811782@163.com",
+        "name": "hanshiying"
+      },
+      "committer": {
+        "date": "2025-09-08T01:05:06Z",
+        "email": "8811782@163.com",
+        "name": "hanshiying"
+      },
+      "message": "optimize the fix:support 16kb page",
+      "parents": [
+        "294c0e010922222941f1d7b8a40b45ddd0c9f34c"
+      ],
+      "sha": "c06f4edf10b6e67bffc5364642857af75944f294",
+      "tree": "e9553eca932f67ab91001de658c7e8cdf2069b51"
+    },
+    "openterface.commit.json": {
+      "author": {
+        "date": "2024-09-20T07:53:16Z",
+        "email": "2445280534@qq.com",
+        "name": "Warren"
+      },
+      "committer": {
+        "date": "2024-09-20T07:53:16Z",
+        "email": "2445280534@qq.com",
+        "name": "Warren"
+      },
+      "message": "Initial commit",
+      "parents": [
+        "27b59c52599abedf73c528308e11a3d12386cb74"
+      ],
+      "sha": "210ab6143e0a1bf50cf638b897656151deba67a4",
+      "tree": "a3002798affd8170582d18dd076f924d1d8ead98"
+    },
+    "bear.commit.json": {
+      "author": {
+        "date": "2024-09-18T02:32:13Z",
+        "email": "8811782@163.com",
+        "name": "hanshiying"
+      },
+      "committer": {
+        "date": "2025-09-04T12:42:49Z",
+        "email": "546940192@qq.com",
+        "name": "xi"
+      },
+      "message": "Optimize decoding process: Convert MJPG image data directly to RGBX",
+      "parents": [
+        "fe296bdde5f85f1c211d14f8709045071d8b1b97"
+      ],
+      "sha": "8f700cd500d7be3a55df3caf260bbf0a52f61f80",
+      "tree": "f509ddce43bf7dd1a50590ce66f60aa6cadc96fb"
+    },
+    "catchpig.commit.json": {
+      "author": {
+        "date": "2024-12-26T12:48:28Z",
+        "email": "327785185@qq.com",
+        "name": "catch-pig"
+      },
+      "committer": {
+        "date": "2024-12-26T12:48:28Z",
+        "email": "327785185@qq.com",
+        "name": "catch-pig"
+      },
+      "message": "Initial commit",
+      "parents": [],
+      "sha": "c8db6fa0e33a95b0abc183bd4b643a788bc68b52",
+      "tree": "fe360fd78587e55a022a0dc2fe6545381908e0eb"
+    },
+    "leong.commit.json": {
+      "author": {
+        "date": "2024-09-18T02:32:13Z",
+        "email": "8811782@163.com",
+        "name": "hanshiying"
+      },
+      "committer": {
+        "date": "2024-09-18T02:32:13Z",
+        "email": "8811782@163.com",
+        "name": "hanshiying"
+      },
+      "message": "Optimize decoding process: Convert MJPG image data directly to RGBX",
+      "parents": [
+        "09cf0a27e5bbf8db3b20dfc76c7e0a0ed9dae2af"
+      ],
+      "sha": "05435d727fcdd74fc44fd2a3826ee57213dbb07e",
+      "tree": "f509ddce43bf7dd1a50590ce66f60aa6cadc96fb"
+    },
+    "m6m.commit.json": {
+      "author": {
+        "date": "2026-05-11T14:04:04Z",
+        "email": "m6_m@sina.com",
+        "name": "M1"
+      },
+      "committer": {
+        "date": "2026-05-11T14:04:04Z",
+        "email": "m6_m@sina.com",
+        "name": "M1"
+      },
+      "message": "Initial commit: 完成海参监测App基础框架与USB摄像头接入",
+      "parents": [],
+      "sha": "aef416f50a4d63bdb210e34b7769de22e8f1e664",
+      "tree": "ab617474d53690602dda7346520767767b487f65"
+    },
+    "bondcast.commit.json": {
+      "author": {
+        "date": "2026-07-05T08:57:53Z",
+        "email": "e.shuvagin@tbank.ru",
+        "name": "e.shuvagin"
+      },
+      "committer": {
+        "date": "2026-07-05T09:01:06Z",
+        "email": "e.shuvagin@tbank.ru",
+        "name": "e.shuvagin"
+      },
+      "message": "USB-камера ZV-E1: рабочее видео (фиксы libuvc)",
+      "parents": [
+        "6b5c339095d0a67153b6ee387b28980da56985c0"
+      ],
+      "sha": "91ec6e25e2fe2ae181ccb36ce5f19267a978947c",
+      "tree": "e53a3eb770f44c2d1ad4d995bc1fb19d90c45e7c"
+    }
+  }
+}

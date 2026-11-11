@@ -1,0 +1,156 @@
+{
+  "observed_date": "2026-11-10",
+  "provider": "Connected GitHub search tool; default-branch index, bounded results; replay is source snapshot replay, not search-index replay.",
+  "global_queries": [
+    {
+      "query": "native_usb_audio.cpp",
+      "topn": 10,
+      "selected": [
+        "jim0608/android_usbaudio"
+      ]
+    },
+    {
+      "query": "_uac_process_payload_iso",
+      "topn": 10,
+      "selected": [
+        "jim0608/android_usbaudio"
+      ],
+      "other_result": "tjh-l/HCD3100-8y; embedded-target function match not investigated as an Android binary source"
+    },
+    {
+      "query": "Java_com_jiangdg_uac_UACAudio_nativeInit",
+      "topn": 10,
+      "selected": [
+        "sky22333/camplayer"
+      ]
+    },
+    {
+      "query": "USBAudio fill_iso_transfer",
+      "topn": 10,
+      "selected": [
+        "jim0608/android_usbaudio"
+      ],
+      "limit": "Other generic libusb audio demos returned; not a full result or licensing review"
+    }
+  ],
+  "author_queries": [
+    {
+      "query": "native_usb_audio.cpp",
+      "org": "jiangdongguo",
+      "results": []
+    },
+    {
+      "query": "_uac_process_payload_iso",
+      "org": "jiangdongguo",
+      "results": []
+    },
+    {
+      "query": "USBAudio",
+      "org": "jiangdongguo",
+      "results": []
+    },
+    {
+      "query": "UACAudio",
+      "org": "jiangdongguo",
+      "results": [
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+        "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+        "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt"
+      ],
+      "repository": "jiangdongguo/AndroidUSBCamera"
+    }
+  ],
+  "author_repository_search": {
+    "query": "user:jiangdongguo",
+    "per_page": 100,
+    "returned": [
+      "jiangdongguo/AndroidUSBCamera",
+      "jiangdongguo/KeepingAppAlive",
+      "jiangdongguo/ChitChatAssistant",
+      "jiangdongguo/OpenCV4Android",
+      "jiangdongguo/AndroidYuvOsd",
+      "jiangdongguo/FFMPEG4Android",
+      "jiangdongguo/OkCamera",
+      "jiangdongguo/UVCCameraLib",
+      "jiangdongguo/Lame4Mp3",
+      "jiangdongguo/AndroidFastDevelop",
+      "jiangdongguo/JniLearning",
+      "jiangdongguo/SignalView",
+      "jiangdongguo/LearnOpenGL",
+      "jiangdongguo/OpenCVImageProc",
+      "jiangdongguo/NDK_OpenGLES_3_0",
+      "jiangdongguo/leetcode",
+      "jiangdongguo/OpenGLCamera2",
+      "jiangdongguo/LeetCodeAnimation",
+      "jiangdongguo/DesignPattern4Android",
+      "jiangdongguo/blogs",
+      "jiangdongguo/Coursera-ML-AndrewNg-Notes",
+      "jiangdongguo/JavaGuide",
+      "jiangdongguo/from_coder_to_expert",
+      "jiangdongguo/BlogExamples",
+      "jiangdongguo/LeetCode-Go",
+      "jiangdongguo/py12306",
+      "jiangdongguo/libcommon",
+      "jiangdongguo/heapsnap",
+      "jiangdongguo/tensorflow",
+      "jiangdongguo/rasa_chatbot_cn",
+      "jiangdongguo/screenshot",
+      "jiangdongguo/Python-100-Days",
+      "jiangdongguo/CS-Notes",
+      "jiangdongguo/WanFlutterModule",
+      "jiangdongguo/ndk-samples",
+      "jiangdongguo/LeifZhang",
+      "jiangdongguo/BaseRecyclerViewAdapterHelper",
+      "jiangdongguo/OSSRH-82538",
+      "jiangdongguo/MVVMLight",
+      "jiangdongguo/BasePopup",
+      "jiangdongguo/SmartRefreshLayout",
+      "jiangdongguo/CircleProgressView",
+      "jiangdongguo/PythonDemos",
+      "jiangdongguo/NewbieGuide",
+      "jiangdongguo/wanandroid",
+      "jiangdongguo/AthenaPlan",
+      "jiangdongguo/OkToast",
+      "jiangdongguo/NdkMediaCodecDemo",
+      "jiangdongguo/Markdown-Resume",
+      "jiangdongguo/UVCCamera",
+      "jiangdongguo/starter-pack-rasa-stack",
+      "jiangdongguo/sweet-alert-dialog",
+      "jiangdongguo/RxDownload",
+      "jiangdongguo/AndroidDataBinding",
+      "jiangdongguo/NLPDemos",
+      "jiangdongguo/JVips",
+      "jiangdongguo/YRouter",
+      "jiangdongguo/POIDemos",
+      "jiangdongguo/JIMU",
+      "jiangdongguo/WeatherBot",
+      "jiangdongguo/data",
+      "jiangdongguo/Android-MvvmComponent-App",
+      "jiangdongguo/Awesome-Android-Notebook",
+      "jiangdongguo/AndroidCamera",
+      "jiangdongguo/tess-two",
+      "jiangdongguo/butterknife",
+      "jiangdongguo/Rasa_NLU_Chi",
+      "jiangdongguo/AndroidCommon",
+      "jiangdongguo/OkRecyclerView",
+      "jiangdongguo/jiangdongguo",
+      "jiangdongguo/TestGlide",
+      "jiangdongguo/PuzzleView",
+      "jiangdongguo/WanFlutter",
+      "jiangdongguo/Algorithms",
+      "jiangdongguo/deeplearning_ai_books",
+      "jiangdongguo/Awesome-Android-Architecture",
+      "jiangdongguo/Hoo"
+    ]
+  },
+  "followed_candidates": [
+    "jim0608/android_usbaudio@35ba8eee66a5c212a6f7f90caab8814c392b137e",
+    "sky22333/camplayer@5ff668d0cd60a506c1db7fc8bbe0b4001c557d7b",
+    "nExtCamera/libuac@17a6ba0a09309a6890ec338826de43a256f89813",
+    "siddhesh-bhadale/AndroidUSBCamera-fork@ffbf0fb17ad9baefd229e87ea990d11e56f421fe",
+    "jiangdongguo/UVCCameraLib@3d7186e73efe4d3c317b61992e5d200e8b21949d",
+    "jiangdongguo/AndroidCamera@ab1a097c8051fa955d0e65d32080c16e6e1bcf9a"
+  ],
+  "limits": "Index may omit forks/private/deleted/nondefault branches; negative results not absence proof. No author contact, no fork binary adopted."
+}

@@ -1,0 +1,234 @@
+{
+  "input_lock_sha256": "8fa8afa096dcd5aa2f9da82c911dea426afab71cece78886dd9c6f56782c600b",
+  "inputs_verified": 9,
+  "limitations": [
+    "Static source evidence is not an OEM firmware or USB capture-card test.",
+    "Computed Git blob hashes identify decoded bytes but are not independent tree-membership verification.",
+    "Method anchors locate evidence; they do not prove behavior or device compatibility.",
+    "These sources are audit inputs only; no app or native dependency is introduced."
+  ],
+  "observations": [
+    {
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "committer": {
+        "email": "android-build-coastguard-worker@google.com",
+        "name": "Android Build Coastguard Worker",
+        "time": "Wed Aug 14 23:48:57 2024 +0000"
+      },
+      "id": "framework-commit",
+      "parents": [
+        "045f396b67c9da97c5b2f667dc79ab71f1a36e02",
+        "8cf068e046639b515eab4eb24f84200c780ae88e"
+      ],
+      "subject": "Merge cherrypicks of ['googleplex-android-review.googlesource.com/28535949'] into sparse-12210230-L62100030005810919.",
+      "tree": "9583c6d9586b84169697623a44af09e8ac3d79b9"
+    },
+    {
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "committer": {
+        "email": "android-build-coastguard-worker@google.com",
+        "name": "Android Build Coastguard Worker",
+        "time": "Fri Aug 02 22:32:02 2024 +0000"
+      },
+      "id": "hal-commit",
+      "parents": [
+        "250f176013df9f18d991fc1ec4baea47a29d3dfa",
+        "9ec2405e1ae2652763a76ca5f56f4ff2f5eec66f"
+      ],
+      "subject": "Merge cherrypicks of ['android-review.googlesource.com/3192000'] into 24Q3-release.",
+      "tree": "484d45fd7355830b7b66d1cffdb679f8bf484a6a"
+    },
+    {
+      "apache_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "708f8a173aba6bf4caf80d1b5c3b278b9d885405",
+      "decoded_sha256": "b41e4f2c9dab8ed3f147107d63f822510f27ed19aec0de2826535f4580d0d1dd",
+      "decoded_size": 157198,
+      "id": "camera-manager",
+      "line_count": 3327,
+      "path": "core/java/android/hardware/camera2/CameraManager.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "getCameraCharacteristics(": [
+          662,
+          710,
+          712,
+          735,
+          737,
+          744,
+          757,
+          833,
+          849,
+          947,
+          977
+        ],
+        "public String[] getCameraIdList()": [
+          309
+        ],
+        "registerAvailabilityCallback(": [
+          453,
+          455,
+          464,
+          490,
+          495,
+          508,
+          509,
+          3056,
+          3086
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraManager.java"
+    },
+    {
+      "apache_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "50d976f683cb2d22474ca66baf16435708492230",
+      "decoded_sha256": "ad3f007c65d0d676b702336b844b994285294c7d0fb1ff9c4cefe4e299fd4254",
+      "decoded_size": 130362,
+      "id": "camera-device",
+      "line_count": 1888,
+      "path": "core/java/android/hardware/camera2/CameraDevice.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "public abstract void close()": [
+          1387
+        ],
+        "public abstract void onDisconnected(": [
+          1589
+        ],
+        "public void onClosed(": [
+          1557
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraDevice.java"
+    },
+    {
+      "apache_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "4819f67cb5660ca8c438a2cdaa6780e3bbc633c9",
+      "decoded_sha256": "eb33084ba32da6cd960050059eb589c1b87395247f3e8fcc376378343d9ebba1",
+      "decoded_size": 209076,
+      "id": "camera-metadata",
+      "line_count": 4300,
+      "path": "core/java/android/hardware/camera2/CameraMetadata.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "INFO_SUPPORTED_HARDWARE_LEVEL_EXTERNAL = 4": [
+          1891
+        ],
+        "LENS_FACING_EXTERNAL = 2": [
+          379
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraMetadata.java"
+    },
+    {
+      "apache_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "55c8ed5debf89b96cb4329e9fc80a26ddc97b7f4",
+      "decoded_sha256": "daeca61aa9fe12364907f153415085d41e862b111cb641f84ee8a8f02e87bc65",
+      "decoded_size": 61127,
+      "id": "image-reader",
+      "line_count": 1519,
+      "path": "media/java/android/media/ImageReader.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "getMaxImages()": [
+          476
+        ],
+        "public Image acquireLatestImage()": [
+          541
+        ],
+        "public void close()": [
+          787,
+          1172
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/media/java/android/media/ImageReader.java"
+    },
+    {
+      "apache_header_present": true,
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "computed_git_blob": "54875abb2014787920fddf2044acef8bf032d529",
+      "decoded_sha256": "d1c7cdb1af6a743ff29fdbd032c95750a9d10c187170e6c06c3f6e7c1debabf8",
+      "decoded_size": 13197,
+      "id": "external-provider",
+      "line_count": 382,
+      "path": "camera/provider/default/ExternalCameraProvider.cpp",
+      "repo": "platform/hardware/interfaces",
+      "source_anchors": {
+        "CameraDeviceStatus::NOT_PRESENT": [
+          237
+        ],
+        "V4L2_CAP_VIDEO_CAPTURE": [
+          204
+        ],
+        "VIDIOC_QUERYCAP": [
+          198
+        ],
+        "deviceAdded(": [
+          189,
+          260,
+          368
+        ],
+        "deviceRemoved(": [
+          221,
+          370
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/provider/default/ExternalCameraProvider.cpp"
+    },
+    {
+      "apache_header_present": true,
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "computed_git_blob": "8e8474800f0a0529f794fcbccc78c8350ca07345",
+      "decoded_sha256": "b5e06cb829ef1e128e1d2b1dfe2c4b0f9595a81b7fee77650772c97002aa8405",
+      "decoded_size": 43792,
+      "id": "external-device",
+      "line_count": 1008,
+      "path": "camera/device/default/ExternalCameraDevice.cpp",
+      "repo": "platform/hardware/interfaces",
+      "source_anchors": {
+        "ANDROID_LENS_FACING_EXTERNAL": [
+          423
+        ],
+        "V4L2_PIX_FMT_MJPEG": [
+          43,
+          334,
+          639,
+          648,
+          673
+        ],
+        "initSupportedFormats": [
+          210,
+          628
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/device/default/ExternalCameraDevice.cpp"
+    },
+    {
+      "apache_header_present": true,
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "computed_git_blob": "10cee12cd1fd4849f8edff5927830acf3f030bf7",
+      "decoded_sha256": "c57808dfbe4935b7fbd0069cf1f9af262cb7ea5628d885db01bd53a4cbe39835",
+      "decoded_size": 2347,
+      "id": "external-build",
+      "line_count": 75,
+      "path": "camera/device/default/Android.bp",
+      "repo": "platform/hardware/interfaces",
+      "source_anchors": {
+        "Apache-2.0": [
+          23
+        ],
+        "libjpeg": [
+          59
+        ],
+        "libyuv": [
+          65
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/device/default/Android.bp"
+    }
+  ],
+  "schema": 1
+}

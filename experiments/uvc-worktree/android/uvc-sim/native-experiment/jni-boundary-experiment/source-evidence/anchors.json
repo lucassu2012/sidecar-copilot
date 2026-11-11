@@ -1,0 +1,459 @@
+{
+  "schema": 1,
+  "claims": [
+    {
+      "id": "probe-dependencies",
+      "statement": "ctrl-gen.c names its generator and includes public and internal UVC headers. Its selected scanning-mode GET/SET sends timeout zero; a short GET zero return leaves output untouched but returns UVC_SUCCESS numeric zero.",
+      "refs": [
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 1,
+          "end_line": 32,
+          "contains": [
+            "ctrl-gen.py def",
+            "#include \"libuvc/libuvc.h\"",
+            "#include \"libuvc/libuvc_internal.h\"",
+            "if (ret == sizeof(data))",
+            "return ret;"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/ctrl-gen.c",
+          "start_line": 41,
+          "end_line": 60,
+          "contains": [
+            "libusb_control_transfer(",
+            "sizeof(data),",
+            "0);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-header-portability",
+      "statement": "Real UVC public header requires sys/time.h and generated config, and declares timeval/timespec fields; these need an explicit host fixture or actual compatible platform headers under MSVC.",
+      "refs": [
+        {
+          "source_id": "libuvc/include/libuvc/libuvc.h",
+          "start_line": 8,
+          "end_line": 14,
+          "contains": [
+            "#include <sys/time.h>",
+            "#include <libuvc/libuvc_config.h>"
+          ]
+        },
+        {
+          "source_id": "libuvc/include/libuvc/libuvc.h",
+          "start_line": 470,
+          "end_line": 484,
+          "contains": [
+            "struct timeval capture_time;",
+            "struct timespec capture_time_finished;"
+          ]
+        },
+        {
+          "source_id": "libuvc/include/libuvc/libuvc_config.h.in",
+          "start_line": 4,
+          "end_line": 20,
+          "contains": [
+            "@libuvc_VERSION_MAJOR@",
+            "#cmakedefine LIBUVC_HAS_JPEG 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-internal-not-fixture",
+      "statement": "Real internal header includes pthread/libusb/utlist and defines packing helpers; the minimal fixture is intentionally not this ABI.",
+      "refs": [
+        {
+          "source_id": "libuvc/include/libuvc/libuvc_internal.h",
+          "start_line": 8,
+          "end_line": 31,
+          "contains": [
+            "#include <pthread.h>",
+            "#include <libusb.h>",
+            "#include \"utlist.h\"",
+            "#define DW_TO_UINT32",
+            "#define INT_TO_DW"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "msvc-libusb-declarations",
+      "statement": "Real libusb header has MSVC ssize_t/inline adjustments, Windows header use and LIBUSB_CALL calling convention; its declared control signature must be retained by a stub.",
+      "refs": [
+        {
+          "source_id": "libusb/libusb/libusb.h",
+          "start_line": 28,
+          "end_line": 50,
+          "contains": [
+            "#include <basetsd.h>",
+            "typedef SSIZE_T ssize_t;",
+            "#include <time.h>"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/libusb.h",
+          "start_line": 58,
+          "end_line": 68,
+          "contains": [
+            "#include <windows.h>"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/libusb.h",
+          "start_line": 111,
+          "end_line": 124,
+          "contains": [
+            "#define LIBUSB_CALL WINAPI"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/libusb.h",
+          "start_line": 2195,
+          "end_line": 2199,
+          "contains": [
+            "int LIBUSB_CALL libusb_control_transfer",
+            "uint16_t wLength, unsigned int timeout"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timeout-and-short-result",
+      "statement": "libusb control timeout zero is unlimited. Success reports actual bytes; synchronous wait calls event handling until completion. A fast fixture return cannot prove hardware timeout or cancellation.",
+      "refs": [
+        {
+          "source_id": "libusb/libusb/sync.c",
+          "start_line": 49,
+          "end_line": 69,
+          "contains": [
+            "while (!*completed)",
+            "libusb_handle_events_completed",
+            "libusb_cancel_transfer(transfer);"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/sync.c",
+          "start_line": 86,
+          "end_line": 101,
+          "contains": [
+            "timeout, use value 0.",
+            "number of bytes actually transferred",
+            "LIBUSB_ERROR_TIMEOUT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "borrowed-fd",
+      "statement": "libusb_wrap_sys_device takes intptr_t; on Linux the caller-provided fd must remain open through libusb_close and is not closed by it. No FD duplication is promised by this API.",
+      "refs": [
+        {
+          "source_id": "libusb/libusb/core.c",
+          "start_line": 1371,
+          "end_line": 1407,
+          "contains": [
+            "LIBUSB_OPTION_NO_DEVICE_DISCOVERY",
+            "must remain open until libusb_close()",
+            "will not be closed by libusb_close()",
+            "intptr_t sys_dev"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/os/linux_usbfs.c",
+          "start_line": 1443,
+          "end_line": 1450,
+          "contains": [
+            "initialize_handle(handle, fd)",
+            "hpriv->fd_keep = 1;"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/os/linux_usbfs.c",
+          "start_line": 1486,
+          "end_line": 1493,
+          "contains": [
+            "if (!hpriv->fd_keep)",
+            "close(hpriv->fd);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uvc-wrap",
+      "statement": "uvc_wrap exposes int sys_dev and delegates to libusb_wrap_sys_device, then opens internal UVC state. It is not implemented by the ctrl-gen probe.",
+      "refs": [
+        {
+          "source_id": "libuvc/src/device.c",
+          "start_line": 262,
+          "end_line": 297,
+          "contains": [
+            "must remain open until uvc_close()",
+            "uvc_error_t uvc_wrap(",
+            "int sys_dev,",
+            "libusb_wrap_sys_device(context->usb_ctx, sys_dev, &usb_devh)",
+            "uvc_open_internal(dev, usb_devh, devh)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cancel-not-complete",
+      "statement": "Cancellation is asynchronous. Return zero is not terminal drain; NOT_FOUND includes not-in-progress/already-complete/already-cancelled. Free before completion is undefined behavior.",
+      "refs": [
+        {
+          "source_id": "libusb/libusb/io.c",
+          "start_line": 305,
+          "end_line": 321,
+          "contains": [
+            "asynchronous/non-blocking",
+            "before cancellation",
+            "undefined behaviour"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/io.c",
+          "start_line": 1573,
+          "end_line": 1579,
+          "contains": [
+            "does not indicate cancellation",
+            "callback function will be invoked at some later time"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/io.c",
+          "start_line": 1603,
+          "end_line": 1623,
+          "contains": [
+            "LIBUSB_ERROR_NOT_FOUND",
+            "already complete, or already cancelled.",
+            "usbi_backend.cancel_transfer(itransfer)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "native-stack-borrow",
+      "statement": "libusb may call user callback in event handling and allows freeing completed transfer inside it. Adapter may conservatively retain its own borrow refs through concurrent submit/cancel/callback returns; this extra policy is not a claim upstream always delays free until callback exit.",
+      "refs": [
+        {
+          "source_id": "libusb/libusb/io.c",
+          "start_line": 130,
+          "end_line": 141,
+          "contains": [
+            "libusb does not create",
+            "callback has finished executing."
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/io.c",
+          "start_line": 544,
+          "end_line": 552,
+          "contains": [
+            "libusb does not invoke any callbacks",
+            "thread that calls the libusb_handle_events()"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/io.c",
+          "start_line": 1718,
+          "end_line": 1731,
+          "contains": [
+            "transfer->callback(transfer);",
+            "transfer might have been freed by the above call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "external-context-pump",
+      "statement": "When UVC uses caller-supplied libusb context, caller must handle events; own_usb_ctx is zero. Cancelling alone cannot replace keeping the event pump alive until terminal callbacks and borrows drain.",
+      "refs": [
+        {
+          "source_id": "libuvc/src/init.c",
+          "start_line": 94,
+          "end_line": 118,
+          "contains": [
+            "If you provide your own USB context",
+            "libusb event processing",
+            "ctx->own_usb_ctx = 0;"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "status-transfer-gap",
+      "statement": "Open submits a separate status interrupt transfer; callback may resubmit it. The inspected uvc_close function does not explicitly cancel/drain it before uvc_free_devh frees it. This is a fixed-source unresolved teardown gap, not a demonstrated target-device failure.",
+      "refs": [
+        {
+          "source_id": "libuvc/src/device.c",
+          "start_line": 358,
+          "end_line": 379,
+          "contains": [
+            "internal_devh->status_xfer = libusb_alloc_transfer(0);",
+            "libusb_submit_transfer(internal_devh->status_xfer)"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/device.c",
+          "start_line": 2116,
+          "end_line": 2144,
+          "contains": [
+            "LIBUSB_TRANSFER_CANCELLED",
+            "libusb_submit_transfer(transfer);"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/device.c",
+          "start_line": 1933,
+          "end_line": 1959,
+          "contains": [
+            "uvc_stop_streaming(devh);",
+            "libusb_close(devh->usb_devh);",
+            "pthread_join(ctx->handler_thread, NULL);",
+            "uvc_free_devh(devh);"
+          ]
+        },
+        {
+          "source_id": "libuvc/src/device.c",
+          "start_line": 1907,
+          "end_line": 1922,
+          "contains": [
+            "Streaming must be stopped, and threads must have died",
+            "libusb_free_transfer(devh->status_xfer)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close-not-drain",
+      "statement": "libusb close warns when transfers remain and invalidates their dev_handle; close return is not a synthetic substitute for expected terminal callback and borrower accounting.",
+      "refs": [
+        {
+          "source_id": "libusb/libusb/core.c",
+          "start_line": 1572,
+          "end_line": 1591,
+          "contains": [
+            "A cancellation hasn't even been scheduled",
+            "transfer->dev_handle = NULL;",
+            "it is up to the user to free up the actual transfer struct"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stream-stop-unbounded",
+      "statement": "UVC stream stop cancels image transfers then waits in a condition loop and may join a callback thread; it has no bounded timeout in this inspected function and does not cover the independent status transfer.",
+      "refs": [
+        {
+          "source_id": "libuvc/src/stream.c",
+          "start_line": 1562,
+          "end_line": 1594,
+          "contains": [
+            "libusb_cancel_transfer(strmh->transfers[i]);",
+            "pthread_cond_wait(&strmh->cb_cond, &strmh->cb_mutex);",
+            "pthread_join(strmh->cb_thread, NULL);"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "full-build-dependencies",
+      "statement": "CMake lists eight base C files, links LibUSB/threads and optionally JPEG; Android libusb recipe compiles ten C files including Linux USBFS and POSIX event/thread code, linking log. Three probe inputs are not this build closure.",
+      "refs": [
+        {
+          "source_id": "libuvc/CMakeLists.txt",
+          "start_line": 62,
+          "end_line": 94,
+          "contains": [
+            "src/ctrl-gen.c",
+            "src/device.c",
+            "find_package(LibUSB)",
+            "src/frame-mjpeg.c",
+            "find_package(Threads REQUIRED)"
+          ]
+        },
+        {
+          "source_id": "libuvc/CMakeLists.txt",
+          "start_line": 152,
+          "end_line": 159,
+          "contains": [
+            "PRIVATE LibUSB::LibUSB ${threads}",
+            "PRIVATE JPEG::JPEG"
+          ]
+        },
+        {
+          "source_id": "libusb/android/jni/libusb.mk",
+          "start_line": 27,
+          "end_line": 49,
+          "contains": [
+            "libusb/core.c",
+            "libusb/os/linux_usbfs.c",
+            "libusb/os/events_posix.c",
+            "libusb/os/threads_posix.c",
+            "LOCAL_LDLIBS := -llog"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "license-layers",
+      "statement": "libuvc root BSD3 notice applies at repository scope; ctrl-gen/public header absence of own notices is not proof of no license. libusb public header explicitly declares LGPL2.1-or-later. Real utlist has its own copyright/notice, although the fixture does not include it.",
+      "refs": [
+        {
+          "source_id": "libuvc/LICENSE.txt",
+          "start_line": 1,
+          "end_line": 18,
+          "contains": [
+            "Copyright (C) 2010-2015 Ken Tossell",
+            "Redistributions in binary form must reproduce",
+            "Neither the name of the author"
+          ]
+        },
+        {
+          "source_id": "libusb/libusb/libusb.h",
+          "start_line": 1,
+          "end_line": 22,
+          "contains": [
+            "Public libusb header file",
+            "version 2.1 of the License, or (at your option) any later version."
+          ]
+        },
+        {
+          "source_id": "libuvc/include/utlist.h",
+          "start_line": 1,
+          "end_line": 21,
+          "contains": [
+            "Copyright (c) 2007-2017, Troy D. Hanson",
+            "Redistributions of source code must retain"
+          ]
+        }
+      ]
+    }
+  ],
+  "limited_absence_checks": [
+    {
+      "source_id": "libuvc/src/device.c",
+      "start_line": 1933,
+      "end_line": 1959,
+      "absent": [
+        "libusb_cancel_transfer",
+        "status_xfer"
+      ],
+      "meaning": "Only this exact function body is checked, not every indirect path."
+    }
+  ],
+  "literal_metrics": [
+    {
+      "source_id": "libuvc/src/ctrl-gen.c",
+      "regex": "libusb_control_transfer\\((.*?)\\);",
+      "flags": "DOTALL",
+      "expected_count": 80,
+      "all_match_suffix_regex": ",\\s*0\\s*$",
+      "meaning": "80 literal direct calls end with timeout zero; no generator execution."
+    }
+  ]
+}

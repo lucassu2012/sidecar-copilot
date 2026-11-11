@@ -1,0 +1,1092 @@
+{
+  "schema": 1,
+  "baseline_commit": "3dbbcb17f26816689d4b51b714996d937b9f4acd",
+  "scope": "Fixed-source static native API contract delta; no model/native/JNI/device execution and no network fetch.",
+  "inherited_lock": {
+    "path": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+    "sha256": "8ff898d5acce58c697f0b3326555cfdfb65c466572f5e9c1ec234a9b72e56ae4",
+    "input_key": "name",
+    "verified_input_count": 49
+  },
+  "cache_base": "../sidecar-uvc-route/android/uvc-sim/build/routes",
+  "sources": [
+    {
+      "id": "usb_core",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/core.c",
+      "cache_path": "upstream-driver/libusb/libusb/core.c",
+      "encoding": "utf-8",
+      "wire_sha256": "33db091fdf75b690f9c5daf65ca8e3124978e897c2824d97fbc97567afea1d7b",
+      "source_sha256": "33db091fdf75b690f9c5daf65ca8e3124978e897c2824d97fbc97567afea1d7b",
+      "git_blob_sha1": "507066af16560b2ea1bf564b8aac58f6fcb30b68",
+      "bytes": 108326,
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/core.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/core.c",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "usb_io",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/io.c",
+      "cache_path": "upstream-driver/libusb/libusb/io.c",
+      "encoding": "utf-8",
+      "wire_sha256": "c83a9e14b9ff8b9566e42d23d1e90c919e223fd1e04721c5ca1a3aff13239a3d",
+      "source_sha256": "c83a9e14b9ff8b9566e42d23d1e90c919e223fd1e04721c5ca1a3aff13239a3d",
+      "git_blob_sha1": "3dfc6c64b23e422fc446a13544405aca354d0675",
+      "bytes": 112226,
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/io.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/io.c",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "usb_sync",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/sync.c",
+      "cache_path": "upstream-driver/libusb/libusb/sync.c",
+      "encoding": "utf-8",
+      "wire_sha256": "3bf6e788084956a3226933580f2cb2957c2de9e0a2ebeeec1a26e6c7529bfa68",
+      "source_sha256": "3bf6e788084956a3226933580f2cb2957c2de9e0a2ebeeec1a26e6c7529bfa68",
+      "git_blob_sha1": "733927d9622536a6f28c39c380d5ce457019ff3d",
+      "bytes": 13110,
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/sync.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/sync.c",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "usb_header",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/libusb.h",
+      "cache_path": "upstream-driver/libusb/libusb/libusb.h",
+      "encoding": "utf-8",
+      "wire_sha256": "a61260ab145b051b86df2b0575956f01810190abe2c7df6aca831c33bdc8082c",
+      "source_sha256": "a61260ab145b051b86df2b0575956f01810190abe2c7df6aca831c33bdc8082c",
+      "git_blob_sha1": "c641955f8b12321881daaada5abb2d4d6a7db2e8",
+      "bytes": 87738,
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/libusb.h",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/libusb.h",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "usb_linux",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libusb/libusb/os/linux_usbfs.c",
+      "cache_path": "upstream-driver/libusb/libusb/os/linux_usbfs.c",
+      "encoding": "utf-8",
+      "wire_sha256": "ac4401cec575cc2f12b71377cced5e5943e72366eedeffbe42e951134b26bd54",
+      "source_sha256": "ac4401cec575cc2f12b71377cced5e5943e72366eedeffbe42e951134b26bd54",
+      "git_blob_sha1": "74e73f9a81091f854167c6fe4a40b104074bdc22",
+      "bytes": 81273,
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/linux_usbfs.c",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/os/linux_usbfs.c",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "uvc_init",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/init.c",
+      "cache_path": "upstream-driver/libuvc/src/init.c",
+      "encoding": "utf-8",
+      "wire_sha256": "a4d085d05a1b6c3350ee8ca199e27c852caee982679a629bd5c90a65b6c06631",
+      "source_sha256": "a4d085d05a1b6c3350ee8ca199e27c852caee982679a629bd5c90a65b6c06631",
+      "git_blob_sha1": "48028357468af549bab368ac24a7e412f9915644",
+      "bytes": 5316,
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/init.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/init.c",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "uvc_device",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/device.c",
+      "cache_path": "upstream-driver/libuvc/src/device.c",
+      "encoding": "utf-8",
+      "wire_sha256": "a350afb1e39239d223b1e937fa4375505c9339019837d3c61ab9125062af04d2",
+      "source_sha256": "a350afb1e39239d223b1e937fa4375505c9339019837d3c61ab9125062af04d2",
+      "git_blob_sha1": "180432e94be77b344e32cf8f2be30b36eae74586",
+      "bytes": 60988,
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/device.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/device.c",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "uvc_stream",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/src/stream.c",
+      "cache_path": "upstream-driver/libuvc/src/stream.c",
+      "encoding": "utf-8",
+      "wire_sha256": "03c5895161f45160656e07169a9ea910986d077fdb9fe1206eacf92586e6eb27",
+      "source_sha256": "03c5895161f45160656e07169a9ea910986d077fdb9fe1206eacf92586e6eb27",
+      "git_blob_sha1": "ea261e45f36de8dd498251ef6f24bfef52b67d56",
+      "bytes": 51005,
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/stream.c",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/stream.c",
+      "new_or_inherited": "inherited"
+    },
+    {
+      "id": "uvc_header",
+      "inherited_lock": "android/uvc-sim/provenance/routes/upstream-driver/inputs.lock.json",
+      "input_id": "libuvc/include/libuvc/libuvc.h",
+      "cache_path": "upstream-driver/libuvc/include/libuvc/libuvc.h",
+      "encoding": "utf-8",
+      "wire_sha256": "1474abaf0c4591c05259bc8b71e9a4f747f3db2a6424e26e839896a2eecd563f",
+      "source_sha256": "1474abaf0c4591c05259bc8b71e9a4f747f3db2a6424e26e839896a2eecd563f",
+      "git_blob_sha1": "447b3e7d4c6136c2af32d0016145eeadeabacba0",
+      "bytes": 31044,
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/include/libuvc/libuvc.h",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "include/libuvc/libuvc.h",
+      "new_or_inherited": "inherited"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "usb-context-init",
+      "symbol": "libusb_init_context",
+      "signature": "int LIBUSB_CALL libusb_init_context(libusb_context **ctx, const struct libusb_init_option options[], int num_options);",
+      "new_or_inherited": "new",
+      "owner": "Adapter owns the explicitly returned context until libusb_exit; libuvc will only borrow it.",
+      "blocking": "Initialisation and internal locks; no documented end-to-end deadline.",
+      "return_codes": "0: output context valid; negative LIBUSB_ERROR: output not valid.",
+      "callback_last_reference": "No adapter transfer callback registered by this API; context must outlive all future calls/callbacks.",
+      "conditions": [
+        "Use non-NULL output ctx and exactly one NO_DEVICE_DISCOVERY init option on the new context.",
+        "Do not rely on options being applied when reusing a default context.",
+        "NO_DEVICE_DISCOVERY disables Linux scan/hotplug, not Android permission enforcement."
+      ],
+      "limitations": [
+        "Does not prove USB ioctl access or device support.",
+        "libusb_set_option(NULL,...) affects later contexts and is not equivalent isolation."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 1632,
+          "end_line": 1650,
+          "contains": [
+            "Hotplug functionality will also be deactivated.",
+            "This option should only be used with libusb_init_context()"
+          ]
+        },
+        {
+          "source_id": "usb_core",
+          "start_line": 2565,
+          "end_line": 2583,
+          "contains": [
+            "Only valid on return code 0.",
+            "options will",
+            "int API_EXPORTED libusb_init_context"
+          ]
+        },
+        {
+          "source_id": "usb_core",
+          "start_line": 2641,
+          "end_line": 2657,
+          "contains": [
+            "LIBUSB_OPTION_NO_DEVICE_DISCOVERY",
+            "libusb_set_option"
+          ]
+        },
+        {
+          "source_id": "usb_linux",
+          "start_line": 406,
+          "end_line": 418,
+          "contains": [
+            "if (cpriv->no_device_discovery)",
+            "linux_scan_devices(ctx)"
+          ]
+        }
+      ],
+      "conclusion": "New precision: init-time option and default-context reuse semantics are binding; Android hotplug must be owned outside this disabled discovery path.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "uvc-context-borrow",
+      "symbol": "uvc_init",
+      "signature": "uvc_error_t uvc_init(uvc_context_t **ctx, struct libusb_context *usb_ctx);",
+      "new_or_inherited": "inherited",
+      "owner": "Adapter owns libusb_context; libuvc owns its uvc_context allocation but does not take ownership of supplied USB context.",
+      "blocking": "Allocation/setup; no contractual deadline.",
+      "return_codes": "UVC_SUCCESS or initialisation error; this fixed code has an unchecked calloc before dereference.",
+      "callback_last_reference": "Caller supplies and keeps event processing alive when usb_ctx is supplied.",
+      "conditions": [
+        "Pass the already initialised dedicated USB context.",
+        "Keep USB context alive through all UVC calls and uvc_exit."
+      ],
+      "limitations": [
+        "uvc_init(NULL USB ctx) takes a different ownership path and uses legacy libusb_init.",
+        "OOM path is not shown to cleanly return error for every allocation."
+      ],
+      "source_refs": [
+        {
+          "source_id": "uvc_header",
+          "start_line": 538,
+          "end_line": 539,
+          "contains": [
+            "uvc_error_t uvc_init"
+          ]
+        },
+        {
+          "source_id": "uvc_init",
+          "start_line": 94,
+          "end_line": 123,
+          "contains": [
+            "you must handle",
+            "ctx->own_usb_ctx = 0;",
+            "ctx->usb_ctx = usb_ctx;"
+          ]
+        },
+        {
+          "source_id": "uvc_init",
+          "start_line": 159,
+          "end_line": 162,
+          "contains": [
+            "if (ctx->own_usb_ctx)",
+            "pthread_create"
+          ]
+        }
+      ],
+      "conclusion": "Borrowed context means no libuvc-owned event thread; lifecycle adapter must own the pump.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-wrap-fd",
+      "symbol": "libusb_wrap_sys_device",
+      "signature": "int LIBUSB_CALL libusb_wrap_sys_device(libusb_context *ctx, intptr_t sys_dev, libusb_device_handle **dev_handle);",
+      "new_or_inherited": "inherited",
+      "owner": "Android connection/explicit FD owner retains original fd; libusb owns wrapper handle, borrows fd.",
+      "blocking": "Documented non-blocking/no bus requests; allocation, locks and Linux ioctl/backend work still exist, no hard deadline proof.",
+      "return_codes": "0: output handle valid; NO_MEM, ACCESS, NOT_SUPPORTED or other LIBUSB_ERROR on failure.",
+      "callback_last_reference": "The borrowed original fd must stay open until wrapper close and all authorised users have returned.",
+      "conditions": [
+        "One owner closes original fd after native release.",
+        "Do not reopen the temporary libusb_device using libusb_open.",
+        "Bind fd to immutable session identity, not its numeric reuse alone."
+      ],
+      "limitations": [
+        "Linux backend stores fd directly and sets fd_keep; no dup ownership transfer is performed here.",
+        "Permission and live attachment must be established externally."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 1812,
+          "end_line": 1814,
+          "contains": [
+            "int LIBUSB_CALL libusb_wrap_sys_device"
+          ]
+        },
+        {
+          "source_id": "usb_core",
+          "start_line": 1381,
+          "end_line": 1407,
+          "contains": [
+            "will not be closed by libusb_close()",
+            "shall not be opened through libusb_open()",
+            "Only"
+          ]
+        },
+        {
+          "source_id": "usb_linux",
+          "start_line": 1407,
+          "end_line": 1454,
+          "contains": [
+            "int fd = (int)sys_dev;",
+            "hpriv->fd_keep = 1;"
+          ]
+        },
+        {
+          "source_id": "usb_linux",
+          "start_line": 1484,
+          "end_line": 1492,
+          "contains": [
+            "if (!hpriv->fd_keep)",
+            "close(hpriv->fd);"
+          ]
+        }
+      ],
+      "conclusion": "Inherited FD ownership contract confirmed at implementation level.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "uvc-wrap-open",
+      "symbol": "uvc_wrap",
+      "signature": "uvc_error_t uvc_wrap(int sys_dev, uvc_context_t *context, uvc_device_handle_t **devh);",
+      "new_or_inherited": "new",
+      "owner": "libuvc owns its internal libusb wrapper/device handle; caller retains original fd and UVC context.",
+      "blocking": "Not merely fd wrapping: descriptor access, interface claim and status transfer submission occur before return; no bounded open/cancellation API exposed.",
+      "return_codes": "Propagates wrap/open errors; success assigns *devh at end of uvc_open_internal.",
+      "callback_last_reference": "A status transfer can be submitted while open is still executing; independently running event processing can act before outer open returns.",
+      "conditions": [
+        "Do not call libusb_wrap_sys_device separately then pass its pointer as fd.",
+        "Hold open-call/session references before entering uvc_wrap; do not free context/FD while open returns late.",
+        "Only consume output devh on successful return."
+      ],
+      "limitations": [
+        "Header exposes this API only when LIBUSB_API_VERSION >= 0x01000107.",
+        "This static analysis does not establish a cancellation-safe public uvc_wrap implementation.",
+        "Internal allocation/status cleanup gaps from prior report remain."
+      ],
+      "source_refs": [
+        {
+          "source_id": "uvc_header",
+          "start_line": 565,
+          "end_line": 570,
+          "contains": [
+            "#if LIBUSB_API_VERSION >= 0x01000107",
+            "int sys_dev"
+          ]
+        },
+        {
+          "source_id": "uvc_device",
+          "start_line": 274,
+          "end_line": 297,
+          "contains": [
+            "libusb_wrap_sys_device(context->usb_ctx, sys_dev, &usb_devh)",
+            "uvc_open_internal(dev, usb_devh, devh)"
+          ]
+        },
+        {
+          "source_id": "uvc_device",
+          "start_line": 345,
+          "end_line": 388,
+          "contains": [
+            "uvc_claim_if",
+            "libusb_submit_transfer(internal_devh->status_xfer)",
+            "*devh = internal_devh;"
+          ]
+        }
+      ],
+      "conclusion": "New precision: public open can register asynchronous status work before publishing its returned handle; an atomic model open is insufficient evidence.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-submit-return-race",
+      "symbol": "libusb_submit_transfer",
+      "signature": "int LIBUSB_CALL libusb_submit_transfer(struct libusb_transfer *transfer);",
+      "new_or_inherited": "new",
+      "owner": "Transfer/buffer/user_data owner must establish operation identity and adapter call reference before submission; successful submission adds a callback obligation.",
+      "blocking": "Asynchronous/non-blocking API, but takes internal locks/backend call; API-return order is not a callback fence.",
+      "return_codes": "0: submitted; BUSY: already submitted, so prior live cycle is not retired; NO_DEVICE/NOT_SUPPORTED/INVALID_PARAM/other errors require per-cycle reconciliation.",
+      "callback_last_reference": "Success path unlocks transfer at io.c1562 before public return at1570. Another event thread can acquire transfer lock and invoke callback before that return; callback may free transfer. Success tail uses local r and does not dereference transfer.",
+      "conditions": [
+        "Pre-register operation/session/submission cycle before native call.",
+        "Hold separate adapter operation-state reference for the whole submit call; reconcile return exactly once without assuming callback has not already run.",
+        "Do not access a raw transfer after return if callback ownership may already have freed it.",
+        "Do not hold an adapter mutex across submit if callback needs it and the chosen implementation would wait cyclically."
+      ],
+      "limitations": [
+        "Source-permitted interleaving, not native reproduction, timing frequency or universal backend promise.",
+        "Failed attempt is not interchangeable with a known unsubmitted fresh transfer: BUSY explicitly denotes existing submission.",
+        "Library permitting callback-side free is not itself a libusb memory-safety defect."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 1933,
+          "end_line": 1936,
+          "contains": [
+            "libusb_submit_transfer"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1475,
+          "end_line": 1487,
+          "contains": [
+            "return immediately",
+            "LIBUSB_ERROR_BUSY"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1552,
+          "end_line": 1570,
+          "contains": [
+            "r = usbi_backend.submit_transfer(itransfer);",
+            "itransfer->state_flags |= USBI_TRANSFER_IN_FLIGHT;",
+            "usbi_mutex_unlock(&itransfer->lock);",
+            "return r;"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1696,
+          "end_line": 1732,
+          "contains": [
+            "itransfer->state_flags &= ~USBI_TRANSFER_IN_FLIGHT;",
+            "transfer->callback(transfer);",
+            "transfer might have been freed"
+          ]
+        },
+        {
+          "source_id": "usb_linux",
+          "start_line": 2530,
+          "end_line": 2536,
+          "contains": [
+            "usbi_mutex_unlock(&itransfer->lock);",
+            "usbi_handle_transfer_completion"
+          ]
+        }
+      ],
+      "conclusion": "With successful submit, independent event thread and already-arrived completion, callback-before-public-submit-return is a valid source-level interleaving.",
+      "evidence_level": "source_permitted_interleaving_independently_reviewed"
+    },
+    {
+      "id": "usb-callback-and-free",
+      "symbol": "libusb_free_transfer / completion callback",
+      "signature": "void LIBUSB_CALL libusb_free_transfer(struct libusb_transfer *transfer);",
+      "new_or_inherited": "new",
+      "owner": "Exactly one transfer-free owner; buffer-free flags and application-owned user_data have separate ownership.",
+      "blocking": "Free has no drain/wait semantics; callback executes in whichever thread handles events.",
+      "return_codes": "void; no success receipt proving associated application buffers drained.",
+      "callback_last_reference": "libusb allows free inside terminal callback. With FREE_TRANSFER flag libusb frees after callback returns; manually freeing there as well is invalid. Adapter may intentionally defer free until its own call/callback references reach zero.",
+      "conditions": [
+        "Do not free active submitted transfer.",
+        "Select automatic or manual transfer-free ownership, not both.",
+        "Protect user_data/session/pixel copies independently of the raw transfer object.",
+        "If deferring free until all adapter stack borrows return, disable conflicting auto-free ownership and account for internal libuvc-owned transfers."
+      ],
+      "limitations": [
+        "The protocol-model callback_exit->free ordering is a conservative adapter design, not a universal libusb requirement.",
+        "Cannot implement a private libuvc transfer ownership change solely by assuming public handles expose those transfers."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 1405,
+          "end_line": 1415,
+          "contains": [
+            "LIBUSB_TRANSFER_FREE_BUFFER",
+            "double-free",
+            "LIBUSB_TRANSFER_FREE_TRANSFER"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 279,
+          "end_line": 291,
+          "contains": [
+            "event",
+            "undefined behaviour"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1317,
+          "end_line": 1347,
+          "contains": [
+            "not legal to free an active transfer",
+            "void API_EXPORTED libusb_free_transfer"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1679,
+          "end_line": 1686,
+          "contains": [
+            "freeing the transfer",
+            "Do not call this function with the usbi_transfer lock held"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1717,
+          "end_line": 1732,
+          "contains": [
+            "flags = transfer->flags;",
+            "LIBUSB_TRANSFER_FREE_TRANSFER"
+          ]
+        }
+      ],
+      "conclusion": "New distinction: physical transfer deallocation may occur inside callback; application last-reference accounting is broader and remains mandatory.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-cancel-return",
+      "symbol": "libusb_cancel_transfer",
+      "signature": "int LIBUSB_CALL libusb_cancel_transfer(struct libusb_transfer *transfer);",
+      "new_or_inherited": "new",
+      "owner": "Caller borrows a still-live transfer throughout cancel call; completion callback and operation state retain separate obligations.",
+      "blocking": "Asynchronous cancellation request; internally locks transfer. Return is not cancellation completion.",
+      "return_codes": "0: cancellation request successful; NOT_FOUND: not in progress/already complete/already cancelling; other LIBUSB_ERROR may occur.",
+      "callback_last_reference": "Completion clears IN_FLIGHT before invoking callback, so NOT_FOUND does not establish callback exit. Repeated cancel can also see CANCELLING. After cancel unlock, callback may run/free before public cancel return.",
+      "conditions": [
+        "Keep explicit cancel-call reference or equivalent synchronisation; do not start cancel on retired transfer.",
+        "NOT_FOUND/NO_DEVICE/error must not remove completion or callback obligations.",
+        "A delayed result notification may be identity-only only if the native call has already ended and no pointer is retained."
+      ],
+      "limitations": [
+        "No API returns an all-callbacks-drained receipt.",
+        "Do not convert wrapper timeout or cancellation Future into native completion."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 1934,
+          "end_line": 1936,
+          "contains": [
+            "libusb_cancel_transfer"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1573,
+          "end_line": 1579,
+          "contains": [
+            "does not indicate cancellation",
+            "callback"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1603,
+          "end_line": 1639,
+          "contains": [
+            "LIBUSB_ERROR_NOT_FOUND",
+            "USBI_TRANSFER_CANCELLING",
+            "usbi_mutex_unlock(&itransfer->lock);"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1702,
+          "end_line": 1726,
+          "contains": [
+            "USBI_TRANSFER_IN_FLIGHT",
+            "transfer->callback(transfer);"
+          ]
+        }
+      ],
+      "conclusion": "New precision: NOT_FOUND can precede callback entry/exit, and cancel-call return itself is a separate last-reference boundary.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-sync-control-stack",
+      "symbol": "libusb_control_transfer",
+      "signature": "int LIBUSB_CALL libusb_control_transfer(libusb_device_handle *dev_handle, uint8_t bmRequestType, uint8_t bRequest, uint16_t wValue, uint16_t wIndex, unsigned char *data, uint16_t wLength, unsigned int timeout);",
+      "new_or_inherited": "new",
+      "owner": "Caller keeps handle/data/own call state alive through return. Internal transfer/buffer and stack completed flag are owned by synchronous implementation.",
+      "blocking": "Blocking; timeout=0 means unlimited. Internally submits asynchronous transfer and handles/waits for events.",
+      "return_codes": "Nonnegative byte count on success; TIMEOUT/PIPE/NO_DEVICE/BUSY/INVALID_PARAM/NO_MEM/OVERFLOW/IO/OTHER errors possible.",
+      "callback_last_reference": "Internal sync callback sets completed and must stop accessing transfer; submitting thread later reads result and frees transfer. Other callbacks may run on synchronous-call thread because it participates in event handling.",
+      "conditions": [
+        "Hold blocking-call reference until function truly returns, regardless of caller deadline.",
+        "Do not call synchronous libusb API from event handling callback; implementation returns BUSY.",
+        "Do not use close as an authorised substitute for cancellation/return.",
+        "Keep own event-thread assumptions compatible with synchronous API doing event handling."
+      ],
+      "limitations": [
+        "sync wait loop contains a dev_handle==NULL fallback after close, but that is not a public concurrency/lifetime guarantee.",
+        "No public handle for cancelling this internally allocated transfer is returned to caller."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 2197,
+          "end_line": 2199,
+          "contains": [
+            "int LIBUSB_CALL libusb_control_transfer"
+          ]
+        },
+        {
+          "source_id": "usb_sync",
+          "start_line": 36,
+          "end_line": 69,
+          "contains": [
+            "*completed = 1;",
+            "another thread might free the transfer",
+            "libusb_handle_events_completed",
+            "libusb_cancel_transfer(transfer);"
+          ]
+        },
+        {
+          "source_id": "usb_sync",
+          "start_line": 90,
+          "end_line": 105,
+          "contains": [
+            "For an unlimited",
+            "timeout, use value 0.",
+            "LIBUSB_ERROR_BUSY"
+          ]
+        },
+        {
+          "source_id": "usb_sync",
+          "start_line": 112,
+          "end_line": 143,
+          "contains": [
+            "return LIBUSB_ERROR_BUSY;",
+            "libusb_submit_transfer(transfer);",
+            "sync_transfer_wait_for_completion(transfer);"
+          ]
+        },
+        {
+          "source_id": "usb_sync",
+          "start_line": 145,
+          "end_line": 172,
+          "contains": [
+            "LIBUSB_ERROR_TIMEOUT",
+            "libusb_free_transfer(transfer);",
+            "return r;"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1142,
+          "end_line": 1155,
+          "contains": [
+            "synchronous I/O functions do event",
+            "synchronous I/O functions you call from other threads"
+          ]
+        }
+      ],
+      "conclusion": "New precision: requester timeout is not synchronous-call return; pump callbacks are not confined to the designated pump thread when synchronous APIs are also used.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "uvc-probe-blocking",
+      "symbol": "uvc_probe_stream_ctrl",
+      "signature": "uvc_error_t uvc_probe_stream_ctrl(uvc_device_handle_t *devh, uvc_stream_ctrl_t *ctrl);",
+      "new_or_inherited": "inherited",
+      "owner": "Caller owns devh/ctrl lifetime for full probe call; libuvc uses internal stack control payload.",
+      "blocking": "Two synchronous USB control operations, internal timeout=0; no outer bounded guarantee.",
+      "return_codes": "Implementation returns INVALID_MODE if parameter comparison fails, otherwise SUCCESS; SET/GET return codes are not propagated here.",
+      "callback_last_reference": "Keep probe/open-control call reference until actual return; it is not a separately exposed asynchronous request.",
+      "conditions": [
+        "Do not treat UVC_SUCCESS alone as proof both control exchanges succeeded.",
+        "Resolve finite/control cancellation and error-propagation contract before implementing real adapter."
+      ],
+      "limitations": [
+        "Previously identified upstream gap remains unpatched.",
+        "No model result closes this native API gap."
+      ],
+      "source_refs": [
+        {
+          "source_id": "uvc_header",
+          "start_line": 621,
+          "end_line": 623,
+          "contains": [
+            "uvc_probe_stream_ctrl"
+          ]
+        },
+        {
+          "source_id": "uvc_stream",
+          "start_line": 249,
+          "end_line": 259,
+          "contains": [
+            "libusb_control_transfer(",
+            "buf, len, 0",
+            "return err;"
+          ]
+        },
+        {
+          "source_id": "uvc_stream",
+          "start_line": 636,
+          "end_line": 650,
+          "contains": [
+            "uvc_query_stream_ctrl( devh, ctrl, 1, UVC_SET_CUR );",
+            "uvc_query_stream_ctrl( devh, ctrl, 1, UVC_GET_CUR );",
+            "return UVC_SUCCESS;"
+          ]
+        }
+      ],
+      "conclusion": "Inherited blocking/error propagation gap retained without re-running protocol model.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-pump-timeout-completed",
+      "symbol": "libusb_handle_events_timeout_completed",
+      "signature": "int LIBUSB_CALL libusb_handle_events_timeout_completed(libusb_context *ctx, struct timeval *tv, int *completed);",
+      "new_or_inherited": "new",
+      "owner": "Pump/calling thread borrows context, timeval and optional completed integer until return; callback user_data has its own lifetime.",
+      "blocking": "tv bounds waiting for events, not total time executing callback/user code or all contention. Zero timeval polls pending events but can still execute callbacks.",
+      "return_codes": "0: event handling/wait successful, including ordinary timeout/no drain; INVALID_PARAM for invalid timeval; other LIBUSB_ERROR on failure.",
+      "callback_last_reference": "Callbacks run in event-handling context; completed checked after event lock, or waiters lock path. completed must be updated under the library event lock as documented, typically in callback.",
+      "conditions": [
+        "Do not interpret 0 or elapsed tv as all work drained.",
+        "Keep context alive until all pump/synchronous event-handler calls have returned.",
+        "If using completed, honour its library locking/lifetime rules; do not pass an unsynchronised stop bool as int pointer.",
+        "Keep event processing alive for cancel completions until independently counted obligations reach zero."
+      ],
+      "limitations": [
+        "A finite poll interval cannot preempt a callback blocked in application code.",
+        "Event-loop return is not an application/native full-drain receipt."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 2268,
+          "end_line": 2271,
+          "contains": [
+            "libusb_handle_events_timeout_completed"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 924,
+          "end_line": 927,
+          "contains": [
+            "must be modified while holding the event lock"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 2324,
+          "end_line": 2353,
+          "contains": [
+            "zero timeval",
+            "maximum time to block waiting for events",
+            "returns 0 on success"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 2369,
+          "end_line": 2405,
+          "contains": [
+            "libusb_try_lock_events(ctx)",
+            "if (completed == NULL || !*completed)",
+            "libusb_wait_for_event(ctx, &poll_timeout)"
+          ]
+        }
+      ],
+      "conclusion": "New precision: finite pump wait and completed race protection must not be confused with bounded callback duration or drain.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-pump-interrupt",
+      "symbol": "libusb_interrupt_event_handler",
+      "signature": "void LIBUSB_CALL libusb_interrupt_event_handler(libusb_context *ctx);",
+      "new_or_inherited": "new",
+      "owner": "Caller borrows live context while signalling; pump thread remains owned and joinable by adapter.",
+      "blocking": "Signals event source under event-data lock; does not cancel transfers, join thread or preempt running callback.",
+      "return_codes": "void; no returned termination/cancellation confirmation.",
+      "callback_last_reference": "Event-handler processing clears USER_INTERRUPT; adapter must observe its own stop condition and actually return/join.",
+      "conditions": [
+        "After transfer/callback obligations and non-pump business native calls are drained, request pump exit and interrupt its wait. The pump event-handler stack and context borrow remain live until actual return/join; keep context valid throughout and call libusb_exit only after join.",
+        "Do not stop pumping merely because stop or cancel was requested."
+      ],
+      "limitations": [
+        "No proof of a hard latency bound or callback interruption.",
+        "No guarantee interrupt makes a pending synchronous transfer return."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 2261,
+          "end_line": 2261,
+          "contains": [
+            "libusb_interrupt_event_handler"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 1941,
+          "end_line": 1966,
+          "contains": [
+            "Interrupt any active thread",
+            "USBI_EVENT_USER_INTERRUPT",
+            "usbi_signal_event"
+          ]
+        },
+        {
+          "source_id": "usb_io",
+          "start_line": 2126,
+          "end_line": 2129,
+          "contains": [
+            "USBI_EVENT_USER_INTERRUPT",
+            "&= ~USBI_EVENT_USER_INTERRUPT"
+          ]
+        }
+      ],
+      "conclusion": "New precision: interrupt is a wakeup mechanism, not cancellation/drain/termination.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-close",
+      "symbol": "libusb_close",
+      "signature": "void LIBUSB_CALL libusb_close(libusb_device_handle *dev_handle);",
+      "new_or_inherited": "new",
+      "owner": "Exactly one wrapper-handle owner closes after transfer/callback/all native call references are quiescent. Original wrapped fd stays externally owned.",
+      "blocking": "Documented non-blocking/no bus requests; implementation can acquire/wait on event handling lock. No hard latency proof.",
+      "return_codes": "void; NULL is accepted, but repeat-close of a non-NULL freed pointer is not idempotent.",
+      "callback_last_reference": "do_close removes in-flight records and clears dev_handle; it does not wait for cancellation callback completion. It warns on unfinished transfer.",
+      "conditions": [
+        "Use owner-level idempotency, not repeated native close of same pointer.",
+        "Prove status/image/control and submit/cancel/open/control call references drained before handle release.",
+        "Do not hold a lock needed by event callbacks while waiting for libusb_close event lock."
+      ],
+      "limitations": [
+        "Source contains defensive handling of unfinished transfers, not permission to use close as cancellation barrier.",
+        "Library handle close does not close borrowed Android fd."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 1814,
+          "end_line": 1814,
+          "contains": [
+            "libusb_close"
+          ]
+        },
+        {
+          "source_id": "usb_core",
+          "start_line": 1551,
+          "end_line": 1604,
+          "contains": [
+            "A cancellation hasn't even been scheduled",
+            "transfer->dev_handle = NULL;",
+            "free(dev_handle);"
+          ]
+        },
+        {
+          "source_id": "usb_core",
+          "start_line": 1607,
+          "end_line": 1668,
+          "contains": [
+            "non-blocking",
+            "if (!dev_handle)",
+            "libusb_lock_events(ctx);",
+            "do_close(ctx, dev_handle);"
+          ]
+        },
+        {
+          "source_id": "usb_linux",
+          "start_line": 1484,
+          "end_line": 1492,
+          "contains": [
+            "if (!hpriv->fd_keep)"
+          ]
+        }
+      ],
+      "conclusion": "New precision: close acquires library event lock but is not an all-transfer drain or a wrapper-level idempotency primitive.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "uvc-stream-stop",
+      "symbol": "uvc_stream_stop / uvc_stream_close",
+      "signature": "uvc_error_t uvc_stream_stop(uvc_stream_handle_t *strmh); void uvc_stream_close(uvc_stream_handle_t *strmh);",
+      "new_or_inherited": "inherited",
+      "owner": "libuvc owns stream transfers/callback thread/buffers; adapter must keep event pumping and its own callback work alive until return.",
+      "blocking": "Stop cancels then unbounded cond_wait and callback pthread_join; close can invoke stop then release/free buffers.",
+      "return_codes": "stop: INVALID_PARAM when not running, otherwise SUCCESS after waits; close: void.",
+      "callback_last_reference": "Stop waits until transfer slots cleared and user callback thread joined; this excludes separate status transfer and adapter/Java queues.",
+      "conditions": [
+        "Do not call stop synchronously from the same user callback thread.",
+        "Maintain event pump for cancellations.",
+        "Use broader status/control/all-call references and Java ownership conditions for full drain."
+      ],
+      "limitations": [
+        "No timeout; source camera-side stop TODO remains.",
+        "Not a whole-device or full-pixel-drain receipt."
+      ],
+      "source_refs": [
+        {
+          "source_id": "uvc_header",
+          "start_line": 659,
+          "end_line": 660,
+          "contains": [
+            "uvc_stream_stop",
+            "uvc_stream_close"
+          ]
+        },
+        {
+          "source_id": "uvc_stream",
+          "start_line": 1554,
+          "end_line": 1594,
+          "contains": [
+            "libusb_cancel_transfer(strmh->transfers[i]);",
+            "pthread_cond_wait",
+            "pthread_join",
+            "stop the actual stream"
+          ]
+        },
+        {
+          "source_id": "uvc_stream",
+          "start_line": 1604,
+          "end_line": 1626,
+          "contains": [
+            "uvc_stream_stop(strmh);",
+            "free(strmh->frame.data);",
+            "free(strmh);"
+          ]
+        }
+      ],
+      "conclusion": "Inherited stream-only drain limits remain.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "uvc-close-status-gap",
+      "symbol": "uvc_close",
+      "signature": "void uvc_close(uvc_device_handle_t *devh);",
+      "new_or_inherited": "inherited",
+      "owner": "libuvc frees UVC device handle and internal libusb handle; external fd/context owner retained when context borrowed.",
+      "blocking": "May stop/join stream; borrowed context event thread is not joined; no contractual bound.",
+      "return_codes": "void; cannot report a rich all-obligation completion result.",
+      "callback_last_reference": "Status callback resubmits, but close path lacks explicit status cancel/wait and free_devh frees status_xfer.",
+      "conditions": [
+        "Status lifecycle gap must be fixed or otherwise proven closed before actual integration.",
+        "Do not use public stream stop as proof status/call references are drained.",
+        "Do not close/release borrowed context or fd while uvc_close itself is on stack."
+      ],
+      "limitations": [
+        "Static inherited blocker, not a reproduced exploit/native fault.",
+        "No safe product stop receipt follows merely from calling this unmodified function."
+      ],
+      "source_refs": [
+        {
+          "source_id": "uvc_header",
+          "start_line": 575,
+          "end_line": 575,
+          "contains": [
+            "void uvc_close"
+          ]
+        },
+        {
+          "source_id": "uvc_device",
+          "start_line": 1911,
+          "end_line": 1918,
+          "contains": [
+            "libusb_free_transfer(devh->status_xfer);"
+          ]
+        },
+        {
+          "source_id": "uvc_device",
+          "start_line": 1933,
+          "end_line": 1958,
+          "contains": [
+            "uvc_stop_streaming(devh);",
+            "libusb_close(devh->usb_devh);",
+            "uvc_free_devh(devh);"
+          ]
+        },
+        {
+          "source_id": "uvc_device",
+          "start_line": 2116,
+          "end_line": 2142,
+          "contains": [
+            "LIBUSB_TRANSFER_CANCELLED",
+            "libusb_submit_transfer(transfer);"
+          ]
+        }
+      ],
+      "conclusion": "Inherited status cancellation/drain blocker remains a precondition, not solved by the new interface document.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "uvc-exit-context",
+      "symbol": "uvc_exit",
+      "signature": "void uvc_exit(uvc_context_t *ctx);",
+      "new_or_inherited": "new",
+      "owner": "libuvc frees its UVC context; only destroys USB context when own_usb_ctx is true. Adapter remains owner of a supplied USB context/pump.",
+      "blocking": "Calls uvc_close for remaining devices; can inherit its waits; no hard bound.",
+      "return_codes": "void; not idempotent for same freed context pointer.",
+      "callback_last_reference": "All references to UVC context/devices become invalid; borrowed USB context still alive until owner later exits it.",
+      "conditions": [
+        "Prefer explicit tracked device closure before UVC context teardown.",
+        "Require no concurrent UVC API calls before freeing context.",
+        "Keep borrowed USB context/pump alive through any needed close/cancel work."
+      ],
+      "limitations": [
+        "Does not free Java copies or prove application full drain.",
+        "Single active-device route only; this is not a multi-device iteration/concurrency audit."
+      ],
+      "source_refs": [
+        {
+          "source_id": "uvc_header",
+          "start_line": 538,
+          "end_line": 539,
+          "contains": [
+            "void uvc_exit"
+          ]
+        },
+        {
+          "source_id": "uvc_init",
+          "start_line": 126,
+          "end_line": 148,
+          "contains": [
+            "uvc_close(devh);",
+            "if (ctx->own_usb_ctx)",
+            "libusb_exit(ctx->usb_ctx);",
+            "free(ctx);"
+          ]
+        }
+      ],
+      "conclusion": "New precision: uvc_exit is not ownership transfer of a borrowed USB context and cannot substitute for pump join.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    },
+    {
+      "id": "usb-context-exit",
+      "symbol": "libusb_exit",
+      "signature": "void LIBUSB_CALL libusb_exit(libusb_context *ctx);",
+      "new_or_inherited": "new",
+      "owner": "Dedicated-context owner alone destroys context after devices closed and all context users/event threads returned.",
+      "blocking": "Teardown/locks; no caller deadline or thread-join guarantee.",
+      "return_codes": "void; explicit context must not be reused after free.",
+      "callback_last_reference": "Implementation explicitly assumes nobody accesses context during final unlocked teardown.",
+      "conditions": [
+        "Close devices first.",
+        "Interrupt and join dedicated pump after obligations drain, and wait every synchronous/native context borrower.",
+        "Only then call libusb_exit; separately close external original FD owner after its native users finish."
+      ],
+      "limitations": [
+        "Does not wait for a caller-created pump thread to exit.",
+        "Open-device warning and remaining-device handling are not a safe-cleanup protocol."
+      ],
+      "source_refs": [
+        {
+          "source_id": "usb_header",
+          "start_line": 1720,
+          "end_line": 1721,
+          "contains": [
+            "void LIBUSB_CALL libusb_exit"
+          ]
+        },
+        {
+          "source_id": "usb_core",
+          "start_line": 2731,
+          "end_line": 2736,
+          "contains": [
+            "after closing all open devices",
+            "void API_EXPORTED libusb_exit"
+          ]
+        },
+        {
+          "source_id": "usb_core",
+          "start_line": 2782,
+          "end_line": 2800,
+          "contains": [
+            "nobody will be accessing the context",
+            "application left some devices open",
+            "free(_ctx);"
+          ]
+        }
+      ],
+      "conclusion": "New precision: context teardown assumes quiescence; the adapter must establish it before exit.",
+      "evidence_level": "fixed_source_and_embedded_api_documentation"
+    }
+  ],
+  "validation": {
+    "selected_sources": 9,
+    "contracts": 16,
+    "anchors_checked": 134,
+    "verification": "all selected bytes, size and Git blob match inherited tracked lock; every exact anchor is within its recorded line range",
+    "runtime_verified": false,
+    "model_rerun": false,
+    "new_downloads": false
+  },
+  "open_boundaries": [
+    "No native reproduction of callback-before-public-return; source-level permitted schedule only.",
+    "No proof of finite open/submit/cancel/close/callback execution latency.",
+    "Unmodified libuvc status teardown and probe error/timeout gaps remain.",
+    "Adapter reference counting, lock order, JNI ownership and failure cleanup not implemented here.",
+    "Native drain is separate from Java/pixel full drain; product gate remains external."
+  ]
+}

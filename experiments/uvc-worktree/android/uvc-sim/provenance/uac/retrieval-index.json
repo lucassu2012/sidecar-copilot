@@ -1,0 +1,140 @@
+[
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/git/trees/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c?recursive=1",
+    "cache_file": "8714084ad0302253a4894647c84fce5f7b45bf25bc527564a6d9e578b71165e3.response",
+    "sha256": "f1546010eeb60e108db77311ca17407f66a3bd25750122c206ea451d019c7421",
+    "bytes": 374929
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+    "cache_file": "53448bd694f855235b054fb603e60cac28d6b98420b56bd2551cbf008eb1fcfe.response",
+    "sha256": "e4c6af125ef73573e9334fb9ac6eff2a50856c33f34ab758c7bb830499dc054f",
+    "bytes": 22432
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Fsrc%2Fmain%2FjniLibs%2Farm64-v8a%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "c613373d4211b716883f4cfe0bd4e3b69affd621c660b18950eadbf102be0c72.response",
+    "sha256": "f6c0c1815fe948fbd02c1aa8ed4b8dd54d4c6c71a07b38bf991ad0db3de27f47",
+    "bytes": 2969
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Flibs%2Farm64-v8a%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "0b891d2fa2f6670db6be40718678844f2fa73f681aa01e01172a37038ee0ec91.response",
+    "sha256": "b55d971384559bce17c45200ae1c02cc05a31acd3ed5e74b81fe47724cb8adcf",
+    "bytes": 2974
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+    "cache_file": "a1fc65f8fc3a3a5d22ab2234c93b8e38c6baf3f7e0898d255e5a5a3051ca4448.response",
+    "sha256": "adcde2a84392d9ce95a6db2b6a169792cb6c2a077d7eef224ff28c07afd28672",
+    "bytes": 26208
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Fsrc%2Fmain%2FjniLibs%2Farmeabi-v7a%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "8bfdc32e32a5bed8377d3e69aef893d02e2c55a42aa090bf801df7801d5c3f21.response",
+    "sha256": "f6c0c1815fe948fbd02c1aa8ed4b8dd54d4c6c71a07b38bf991ad0db3de27f47",
+    "bytes": 2969
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Flibs%2Farmeabi-v7a%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "2c853900439710981e65d0d22d0f5bebebb7faf623fd8d2f11e3154df4c2408e.response",
+    "sha256": "b55d971384559bce17c45200ae1c02cc05a31acd3ed5e74b81fe47724cb8adcf",
+    "bytes": 2974
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jniLibs/x86/libUACAudio.so",
+    "cache_file": "915300f21fd955b3d269c714a3679afbe3aac1b06c260b4972621e05c795e56a.response",
+    "sha256": "8c3ba934a42a833d95f772e60eff2ebcfeb4dd42dd7bcd85f1de4b3c9e0d673d",
+    "bytes": 17952
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Fsrc%2Fmain%2FjniLibs%2Fx86%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "3d7eaccd784372438d1206d27b63a583d05d0fb17357f8d10983ee5e558efd14.response",
+    "sha256": "b952711df8b30b9813d61f24fd967c29135e4e6828a2764e57ce18d01f5f67d3",
+    "bytes": 1470
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Flibs%2Fx86%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "448fb38ee2d0441689cd53ed988f7515edc6d0280c3801c6b02baee1ef4b4373.response",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  {
+    "url": "https://raw.githubusercontent.com/jiangdongguo/AndroidUSBCamera/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c/libuvc/src/main/jniLibs/x86_64/libUACAudio.so",
+    "cache_file": "775fa35c0ace621ee6dad7bbe092b37b87798742ec0874fe6148e3d3e1ad1949.response",
+    "sha256": "e0b7e998d24fcfb41d401c2b139bef67ccaa6f0689dc26cbf90dc6082f06ca38",
+    "bytes": 22696
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Fsrc%2Fmain%2FjniLibs%2Fx86_64%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "4b4086e6f6b82fcd2e4e72b19e330777552d45122f0dd8430269265033f1133c.response",
+    "sha256": "b952711df8b30b9813d61f24fd967c29135e4e6828a2764e57ce18d01f5f67d3",
+    "bytes": 1470
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Flibs%2Fx86_64%2FlibUACAudio.so&per_page=100&page=1",
+    "cache_file": "3444ba58da3fab91058e0886882919456ab4ce5c268c264e0860658e97108816.response",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/0781eb5c6fea87c69a81077c8bbc8564c39a15a3?per_page=100",
+    "cache_file": "b5dfc8b701fbf97414f94aa88d62a5c372accb9125c9e28b311dbb331b9e9113.response",
+    "sha256": "04893e5d716e38a095eab3c44cdb4886f381ba2fbe2cd77f8bfbffb11f6403d8",
+    "bytes": 73527
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/bd1d02fbfc9e14657194a93264577eeafb3c3b9f?per_page=100",
+    "cache_file": "171bfc07730d6ad6c3b8e2ca3451d626b25d7b5de38d640c3e264d9a233a604c.response",
+    "sha256": "642e414cd5666af3f066c45216f19e28ee9bbddb94afe6be119e117e4faf7b21",
+    "bytes": 10041
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/ccdb068d3aa0e89ce0147ba82228f4c48752c2a4?per_page=100",
+    "cache_file": "f2dd7f5780c7295b5577509863ba7172b15a9dab2eb41669af5fd92d9676a37e.response",
+    "sha256": "90e5aac90dc27774600358ee9492316f158eb0ed7d1dcb43471258789ef3899d",
+    "bytes": 363268
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/ccdb068d3aa0e89ce0147ba82228f4c48752c2a4?per_page=100&page=2",
+    "cache_file": "86ceb34eab2e40a751c73a238cd7d2f1c20ca9e23c17f082bdd8b432d07047e9.response",
+    "sha256": "be8e3c72bb2c76ccc38ebab3315cc819e894bae1e161f80a50412b1ac0660b47",
+    "bytes": 7484
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/829d32edf581bd9edf7766adfb1d30985f892db3?per_page=100",
+    "cache_file": "cbfe51f70f6df27990554a730e89fe23379ce8a59357f7205b394b84fb438666.response",
+    "sha256": "4f618d3101767b4790bbade12cc8d34ba0de7e34618707520b9b0d9671a78529",
+    "bytes": 10781
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/git/trees/0781eb5c6fea87c69a81077c8bbc8564c39a15a3?recursive=1",
+    "cache_file": "51b2374aabfbc714da6d5dd0c41b4ebf9bed85bbd5d4a3c7f8ad0a4a706cab99.response",
+    "sha256": "5cad2b62d53eaf2b49f8d6522a0073cd7567c5c886c77c6a6a00774e3fcb49f4",
+    "bytes": 504293
+  },
+  {
+    "url": "https://codeload.github.com/jiangdongguo/AndroidUSBCamera/zip/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+    "cache_file": "92b436a7dd837f89d1cab0dda2e2d32528be938588873329781e9b1104624fbd.response",
+    "sha256": "82037278a4016f20c112cceb9e87f17da300d11c6b24b1b3682257fdd8aec15e",
+    "bytes": 34898941
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/issues/comments/1321350701",
+    "cache_file": "b6b9dcdfe413ca3b011d5fdcd0dd19c131860dc430403223224b96828175c5e9.response",
+    "sha256": "24f08fbceb215a981fd5749405aba36eeb4ed4346a2ea4101f4d1e62f2d906cc",
+    "bytes": 1778
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/pulls/753",
+    "cache_file": "f55b7a39f53336e0f99a6aa46b07ae7e73d61e3a1010b7850a809549bf927618.response",
+    "sha256": "ab668ccfbdb080f78a740ffbbc53c8de20234ea6f5b42bc69d731a38664f8abf",
+    "bytes": 19760
+  },
+  {
+    "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/pulls/753/files?per_page=100",
+    "cache_file": "72eaea21a98978f74ee6b3482cf32c36ae5657f48ab95fd5a5d0a8e53d64e0cd.response",
+    "sha256": "d516c0a36082b5d4e280954d594c128c1e02c9c42523fc07e19e98dd8e1bbcc8",
+    "bytes": 78720
+  }
+]

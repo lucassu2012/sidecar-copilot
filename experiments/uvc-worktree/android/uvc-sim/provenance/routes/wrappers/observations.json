@@ -1,0 +1,3169 @@
+{
+  "collection_began_utc": "2026-11-10T15:15:44Z",
+  "limits": "Mutable metadata is an observation, not immutable truth; recent history is first 10 and each path history first 5 from a fixed HEAD; selected tree entries only.",
+  "method": "Primary GitHub connector GET; JSON projected by inspect_wrappers.project; original connector text is in ignored bootstrap cache.",
+  "observations": [
+    {
+      "connector_text_sha256": "4cd21d85ba206ea021dced0b4ea82f787d4a04047e4de9417b1558b0e17f8cd0",
+      "connector_text_size": 5431,
+      "kind": "repo",
+      "projection": {
+        "archived": false,
+        "default_branch": "main",
+        "disabled": false,
+        "full_name": "shiyinghan/UVCAndroid",
+        "html_url": "https://github.com/shiyinghan/UVCAndroid",
+        "id": 471281278,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "node_id": "MDc6TGljZW5zZTI=",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "pushed_at": "2026-06-24T07:49:22Z"
+      },
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid"
+    },
+    {
+      "connector_text_sha256": "ae2a265af227ef90eca39e158cf4c8ee07ab8742593cd1c5f3ffe164ddd3f421",
+      "connector_text_size": 7627,
+      "kind": "head",
+      "projection": {
+        "author_date": "2026-06-24T07:49:22Z",
+        "committer_date": "2026-06-24T07:49:22Z",
+        "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/fcdae5f9a194e2111d57019176b53470a120415b",
+        "message": "Merge pull request #148 from jawa0919/fix_mimeType\n\nrefactor(libuvccamera): \u79fb\u9664hutool\u4f9d\u8d56\u5e76\u4f18\u5316\u6587\u4ef6\u5de5\u5177\u7c7b",
+        "parents": [
+          "6018c7f20238832929cf61427427bb7828056260",
+          "61e9f8fde9ee0071b661d230a33b58542ddf84bc"
+        ],
+        "sha": "fcdae5f9a194e2111d57019176b53470a120415b",
+        "tree_sha": "ec303c62262ce3e384d1726064cfd745dd7343e8"
+      },
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits/main"
+    },
+    {
+      "connector_text_sha256": "2f3b2ae6511a5b9d910153930113314e2108aefa7e984e9314e4136013a0bf2d",
+      "connector_text_size": 47386,
+      "kind": "releases",
+      "projection": [
+        {
+          "body": "Set version to 1.0.13",
+          "created_at": "2026-06-10T02:09:04Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.13",
+          "id": 336969825,
+          "name": "1.0.13",
+          "prerelease": false,
+          "published_at": "2026-06-10T02:09:40Z",
+          "tag_name": "1.0.13",
+          "target_commitish": "main"
+        },
+        {
+          "body": "Set version to 1.0.12",
+          "created_at": "2026-05-13T09:57:23Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.12",
+          "id": 321776849,
+          "name": "1.0.12",
+          "prerelease": false,
+          "published_at": "2026-05-13T10:08:27Z",
+          "tag_name": "1.0.12",
+          "target_commitish": "main"
+        },
+        {
+          "body": "Set version to 1.0.11",
+          "created_at": "2025-10-30T08:32:23Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.11",
+          "id": 258677677,
+          "name": "1.0.11",
+          "prerelease": false,
+          "published_at": "2025-10-31T03:03:45Z",
+          "tag_name": "1.0.11",
+          "target_commitish": "main"
+        },
+        {
+          "body": "Set version to 1.0.10",
+          "created_at": "2025-09-08T02:56:41Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.10",
+          "id": 245399874,
+          "name": "1.0.10",
+          "prerelease": false,
+          "published_at": "2025-09-08T03:10:33Z",
+          "tag_name": "1.0.10",
+          "target_commitish": "main"
+        },
+        {
+          "body": "Set version to 1.0.9",
+          "created_at": "2025-02-13T08:22:18Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.9",
+          "id": 200056346,
+          "name": "1.0.9",
+          "prerelease": false,
+          "published_at": "2025-02-13T08:59:46Z",
+          "tag_name": "1.0.9",
+          "target_commitish": "main"
+        },
+        {
+          "body": "Set version to 1.0.8",
+          "created_at": "2025-01-10T02:33:37Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.8",
+          "id": 194030570,
+          "name": "1.0.8",
+          "prerelease": false,
+          "published_at": "2025-01-10T02:47:28Z",
+          "tag_name": "1.0.8",
+          "target_commitish": "main"
+        },
+        {
+          "body": "Target SDK 34 (Android 14)",
+          "created_at": "2024-06-21T07:11:15Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.7",
+          "id": 161610962,
+          "name": "1.0.7",
+          "prerelease": false,
+          "published_at": "2024-06-21T07:21:09Z",
+          "tag_name": "1.0.7",
+          "target_commitish": "9087f6acd7d60f7ce1155504996f6db8d0c2bd4a"
+        },
+        {
+          "body": "Set version to 1.0.6",
+          "created_at": "2024-05-06T08:54:25Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.6",
+          "id": 154368771,
+          "name": "1.0.6",
+          "prerelease": false,
+          "published_at": "2024-05-06T08:56:34Z",
+          "tag_name": "1.0.6",
+          "target_commitish": "03f5ec9b0a0234f0086c27221d564cbb4e6f4b3d"
+        },
+        {
+          "body": "",
+          "created_at": "2023-08-07T03:48:04Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.5",
+          "id": 115411282,
+          "name": "1.0.5",
+          "prerelease": false,
+          "published_at": "2023-08-07T05:58:13Z",
+          "tag_name": "1.0.5",
+          "target_commitish": "main"
+        },
+        {
+          "body": "",
+          "created_at": "2022-07-21T02:01:24Z",
+          "draft": false,
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.4",
+          "id": 72482440,
+          "name": "1.0.4",
+          "prerelease": false,
+          "published_at": "2022-07-21T02:04:44Z",
+          "tag_name": "1.0.4",
+          "target_commitish": "main"
+        }
+      ],
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/releases?per_page=10"
+    },
+    {
+      "connector_text_sha256": "4fab9344cc288b96e753ef280c88a63552dff7c3e20b918c3d673561bf498a9a",
+      "connector_text_size": 4823,
+      "kind": "latest",
+      "projection": {
+        "body": "Set version to 1.0.13",
+        "created_at": "2026-06-10T02:09:04Z",
+        "draft": false,
+        "html_url": "https://github.com/shiyinghan/UVCAndroid/releases/tag/1.0.13",
+        "id": 336969825,
+        "name": "1.0.13",
+        "prerelease": false,
+        "published_at": "2026-06-10T02:09:40Z",
+        "tag_name": "1.0.13",
+        "target_commitish": "main"
+      },
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/releases/latest"
+    },
+    {
+      "connector_text_sha256": "b486fb860362c6a056df5b358068a920a65ac52c0bf22e8f3ee72566526d43a7",
+      "connector_text_size": 4446,
+      "kind": "tagrefs",
+      "projection": [
+        {
+          "object": {
+            "sha": "92a848af4e2e4616845d5df4131914ac125426d5",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.0"
+        },
+        {
+          "object": {
+            "sha": "85886b5431a8a5811423379207f5f3521ab4b5f3",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.1"
+        },
+        {
+          "object": {
+            "sha": "02f586798f9c8682865c066c83323161ef1f2ea7",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.10"
+        },
+        {
+          "object": {
+            "sha": "a8636646214e94e5beac6eafd4276d405bcaca10",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.11"
+        },
+        {
+          "object": {
+            "sha": "d1f6d189495e7cfdb671e63aa9e966f5dde7da20",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.12"
+        },
+        {
+          "object": {
+            "sha": "6018c7f20238832929cf61427427bb7828056260",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.13"
+        },
+        {
+          "object": {
+            "sha": "c3a586913c1f052c58d3608b157e1db94941b0bd",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.2"
+        },
+        {
+          "object": {
+            "sha": "875aeb3ec2f7bde78170ac9a71c4ac8971eba2fc",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.4"
+        },
+        {
+          "object": {
+            "sha": "13ef337adab9246c09aeaedfb6c3197bd7511caa",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.5"
+        },
+        {
+          "object": {
+            "sha": "03f5ec9b0a0234f0086c27221d564cbb4e6f4b3d",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.6"
+        },
+        {
+          "object": {
+            "sha": "9087f6acd7d60f7ce1155504996f6db8d0c2bd4a",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.7"
+        },
+        {
+          "object": {
+            "sha": "6728c338c28c43005bffa07c1a871ff6b9f3a140",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.8"
+        },
+        {
+          "object": {
+            "sha": "04197e835fa68422b59ab4d2deb26578cdf027e5",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.0.9"
+        }
+      ],
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/matching-refs/tags/"
+    },
+    {
+      "connector_text_sha256": "039f3c96f05b16b9fcebbd3f8ccedbf98aa40be4e7d79830fa08dcac94efcaf1",
+      "connector_text_size": 36755,
+      "kind": "recent",
+      "projection": [
+        {
+          "author_date": "2026-06-24T07:49:22Z",
+          "committer_date": "2026-06-24T07:49:22Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/fcdae5f9a194e2111d57019176b53470a120415b",
+          "message": "Merge pull request #148 from jawa0919/fix_mimeType\n\nrefactor(libuvccamera): \u79fb\u9664hutool\u4f9d\u8d56\u5e76\u4f18\u5316\u6587\u4ef6\u5de5\u5177\u7c7b",
+          "parents": [
+            "6018c7f20238832929cf61427427bb7828056260",
+            "61e9f8fde9ee0071b661d230a33b58542ddf84bc"
+          ],
+          "sha": "fcdae5f9a194e2111d57019176b53470a120415b",
+          "tree_sha": "ec303c62262ce3e384d1726064cfd745dd7343e8"
+        },
+        {
+          "author_date": "2026-06-24T07:27:17Z",
+          "committer_date": "2026-06-24T07:27:17Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/61e9f8fde9ee0071b661d230a33b58542ddf84bc",
+          "message": "refactor(libuvccamera): \u79fb\u9664hutool\u4f9d\u8d56\u5e76\u4f18\u5316\u6587\u4ef6\u5de5\u5177\u7c7b\n\n\u79fb\u9664\u4e86\u5bf9cn.hutool:hutool-core\u7684\u4f9d\u8d56\uff0c\u6539\u7528Android\u539f\u751f\u7684MimeTypeMap\u6765\u83b7\u53d6\nMIME\u7c7b\u578b\uff0c\u51cf\u5c11\u5916\u90e8\u4f9d\u8d56\uff0c\u63d0\u9ad8\u4ee3\u7801\u7684\u72ec\u7acb\u6027\u3002",
+          "parents": [
+            "6018c7f20238832929cf61427427bb7828056260"
+          ],
+          "sha": "61e9f8fde9ee0071b661d230a33b58542ddf84bc",
+          "tree_sha": "ec303c62262ce3e384d1726064cfd745dd7343e8"
+        },
+        {
+          "author_date": "2026-06-10T02:09:04Z",
+          "committer_date": "2026-06-10T02:09:04Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/6018c7f20238832929cf61427427bb7828056260",
+          "message": "Set version to 1.0.13",
+          "parents": [
+            "5b3aa6800fc03ef308a63ab48d8c029119ce0c5e"
+          ],
+          "sha": "6018c7f20238832929cf61427427bb7828056260",
+          "tree_sha": "a7a6fa5bf73590094bf649858dd11fb54c7c9956"
+        },
+        {
+          "author_date": "2026-06-10T00:24:43Z",
+          "committer_date": "2026-06-10T00:28:10Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/5b3aa6800fc03ef308a63ab48d8c029119ce0c5e",
+          "message": "Fix black screen issue of MediaTek-based Android devices",
+          "parents": [
+            "d1f6d189495e7cfdb671e63aa9e966f5dde7da20"
+          ],
+          "sha": "5b3aa6800fc03ef308a63ab48d8c029119ce0c5e",
+          "tree_sha": "e59079adf371ac51b38ac36548a3f7f615af69f4"
+        },
+        {
+          "author_date": "2026-05-13T09:57:23Z",
+          "committer_date": "2026-05-13T09:57:23Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/d1f6d189495e7cfdb671e63aa9e966f5dde7da20",
+          "message": "Set version to 1.0.12",
+          "parents": [
+            "58f7d103fef245152c3cb23c23e4523089efbc28"
+          ],
+          "sha": "d1f6d189495e7cfdb671e63aa9e966f5dde7da20",
+          "tree_sha": "c5434a720fe526ccb6cb56b61f03a1ee3066b15a"
+        },
+        {
+          "author_date": "2026-05-13T08:41:06Z",
+          "committer_date": "2026-05-13T08:41:06Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/58f7d103fef245152c3cb23c23e4523089efbc28",
+          "message": "fix(libuvc): tune Android UVC transfer buffering\n\nReduce LIBUVC_NUM_TRANSFER_BUFS from 100 to 16 on Android to lower the\nnumber of concurrently queued URBs and reduce USB host memory pressure.\n\nRestore LIBUVC_PACKETS_PER_TRANSFER_MAX to the default value of 32. A larger\nper-transfer packet count reduces libusb callback and resubmission frequency,\nwhich helps lower CPU usage compared with smaller values.\n\nThis balances Android USB host stability with lower CPU overhead during\nisochronous UVC streaming.",
+          "parents": [
+            "4037487b11c5c55cfc845d28d7e1666dc55c805e"
+          ],
+          "sha": "58f7d103fef245152c3cb23c23e4523089efbc28",
+          "tree_sha": "6d925fdc4a828becc4bd4f5c36ea69a39e8b7522"
+        },
+        {
+          "author_date": "2026-05-13T06:24:08Z",
+          "committer_date": "2026-05-13T06:24:08Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/4037487b11c5c55cfc845d28d7e1666dc55c805e",
+          "message": "Merge pull request #145 from preceeder/main\n\nResolve MTK preview black screen",
+          "parents": [
+            "c265143bd5741273d230d40d85efde994f1e9cfd",
+            "0e27e49e0ae879a81e90522283a26a2367367443"
+          ],
+          "sha": "4037487b11c5c55cfc845d28d7e1666dc55c805e",
+          "tree_sha": "5d8fe8adffdd96bf08cca7717a0e25f1e12b566c"
+        },
+        {
+          "author_date": "2026-05-13T04:03:16Z",
+          "committer_date": "2026-05-13T04:03:16Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/0e27e49e0ae879a81e90522283a26a2367367443",
+          "message": "Resolve MTK preview black screen",
+          "parents": [
+            "c265143bd5741273d230d40d85efde994f1e9cfd"
+          ],
+          "sha": "0e27e49e0ae879a81e90522283a26a2367367443",
+          "tree_sha": "5d8fe8adffdd96bf08cca7717a0e25f1e12b566c"
+        },
+        {
+          "author_date": "2025-12-05T06:49:34Z",
+          "committer_date": "2025-12-05T06:49:34Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/c265143bd5741273d230d40d85efde994f1e9cfd",
+          "message": "Fixes #131:A null pointer exception in CameraInternal",
+          "parents": [
+            "a8636646214e94e5beac6eafd4276d405bcaca10"
+          ],
+          "sha": "c265143bd5741273d230d40d85efde994f1e9cfd",
+          "tree_sha": "2a7d14cf56d4f7164aba7151b930f8bd5ff1ace6"
+        },
+        {
+          "author_date": "2025-10-30T08:32:23Z",
+          "committer_date": "2025-10-30T08:32:23Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/a8636646214e94e5beac6eafd4276d405bcaca10",
+          "message": "Set version to 1.0.11",
+          "parents": [
+            "418285db5d716a17a3766e97aad8140e73f4189c"
+          ],
+          "sha": "a8636646214e94e5beac6eafd4276d405bcaca10",
+          "tree_sha": "320378776026b1356fd1d05533db6aa47741ced4"
+        }
+      ],
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits?sha=fcdae5f9a194e2111d57019176b53470a120415b&per_page=10"
+    },
+    {
+      "connector_text_sha256": "c2474012dd9c6105047ed004cca3f5e57945f6eaeb386dfee1d246f444c55bb5",
+      "connector_text_size": 17103,
+      "kind": "native",
+      "projection": [
+        {
+          "author_date": "2026-06-10T00:24:43Z",
+          "committer_date": "2026-06-10T00:28:10Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/5b3aa6800fc03ef308a63ab48d8c029119ce0c5e",
+          "message": "Fix black screen issue of MediaTek-based Android devices",
+          "parents": [
+            "d1f6d189495e7cfdb671e63aa9e966f5dde7da20"
+          ],
+          "sha": "5b3aa6800fc03ef308a63ab48d8c029119ce0c5e",
+          "tree_sha": "e59079adf371ac51b38ac36548a3f7f615af69f4"
+        },
+        {
+          "author_date": "2026-05-13T08:41:06Z",
+          "committer_date": "2026-05-13T08:41:06Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/58f7d103fef245152c3cb23c23e4523089efbc28",
+          "message": "fix(libuvc): tune Android UVC transfer buffering\n\nReduce LIBUVC_NUM_TRANSFER_BUFS from 100 to 16 on Android to lower the\nnumber of concurrently queued URBs and reduce USB host memory pressure.\n\nRestore LIBUVC_PACKETS_PER_TRANSFER_MAX to the default value of 32. A larger\nper-transfer packet count reduces libusb callback and resubmission frequency,\nwhich helps lower CPU usage compared with smaller values.\n\nThis balances Android USB host stability with lower CPU overhead during\nisochronous UVC streaming.",
+          "parents": [
+            "4037487b11c5c55cfc845d28d7e1666dc55c805e"
+          ],
+          "sha": "58f7d103fef245152c3cb23c23e4523089efbc28",
+          "tree_sha": "6d925fdc4a828becc4bd4f5c36ea69a39e8b7522"
+        },
+        {
+          "author_date": "2026-05-13T04:03:16Z",
+          "committer_date": "2026-05-13T04:03:16Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/0e27e49e0ae879a81e90522283a26a2367367443",
+          "message": "Resolve MTK preview black screen",
+          "parents": [
+            "c265143bd5741273d230d40d85efde994f1e9cfd"
+          ],
+          "sha": "0e27e49e0ae879a81e90522283a26a2367367443",
+          "tree_sha": "5d8fe8adffdd96bf08cca7717a0e25f1e12b566c"
+        },
+        {
+          "author_date": "2025-10-30T08:22:36Z",
+          "committer_date": "2025-10-30T08:22:36Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/418285db5d716a17a3766e97aad8140e73f4189c",
+          "message": "1.Fix image cache memory leak\n2.Add memory leak test",
+          "parents": [
+            "506192e5d33b3ef49e85f150f849eef1a8b92973"
+          ],
+          "sha": "418285db5d716a17a3766e97aad8140e73f4189c",
+          "tree_sha": "0fe8b85b99565880cab7d681188a953c04efd8c0"
+        },
+        {
+          "author_date": "2025-09-08T01:05:06Z",
+          "committer_date": "2025-09-08T01:05:06Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/c06f4edf10b6e67bffc5364642857af75944f294",
+          "message": "optimize the fix:support 16kb page",
+          "parents": [
+            "294c0e010922222941f1d7b8a40b45ddd0c9f34c"
+          ],
+          "sha": "c06f4edf10b6e67bffc5364642857af75944f294",
+          "tree_sha": "e9553eca932f67ab91001de658c7e8cdf2069b51"
+        }
+      ],
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits?sha=fcdae5f9a194e2111d57019176b53470a120415b&path=libuvccamera%2Fsrc%2Fmain%2Fjni&per_page=5"
+    },
+    {
+      "connector_text_sha256": "69502cb1832c4ceda48067c04a8bf0d929ce71baefa5a42848c0279c0c76611a",
+      "connector_text_size": 17783,
+      "kind": "usb",
+      "projection": [
+        {
+          "author_date": "2024-06-21T02:10:17Z",
+          "committer_date": "2024-06-21T02:10:17Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/4c2956ad6f3f2f45664e19118f3fee2d2d6290ca",
+          "message": "Optimize Target SDK 34 (Android 14):\n1.Update compileSdkVersion to 34\n2.Resolve request USB permission failed issue",
+          "parents": [
+            "eddc48f0c04c7671972b15b973bc3a8362f7f4f3"
+          ],
+          "sha": "4c2956ad6f3f2f45664e19118f3fee2d2d6290ca",
+          "tree_sha": "871f0d49dc8ec176cdedb8af7d2547a1ad73aece"
+        },
+        {
+          "author_date": "2024-05-14T04:22:09Z",
+          "committer_date": "2024-05-14T04:22:09Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/a3a05cb35c90d2dc29522870a259db91fd20f835",
+          "message": "Use ContextCompat to register USB receiver\n\nCamera device attach/detach events were not being received due to a SecurityException:\n\n> One of RECEIVER_EXPORTED or RECEIVER_NOT_EXPORTED should be specified when a receiver isn't being registered exclusively for system broadcasts",
+          "parents": [
+            "afb8024795059ee6db9782613cf75eb5968bc6ea"
+          ],
+          "sha": "a3a05cb35c90d2dc29522870a259db91fd20f835",
+          "tree_sha": "2cef596489c2b258e4ad7d57db7bfabf3a316637"
+        },
+        {
+          "author_date": "2024-05-13T03:02:14Z",
+          "committer_date": "2024-05-13T03:02:14Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/afb8024795059ee6db9782613cf75eb5968bc6ea",
+          "message": "Target SDK 34 (Android 14)\n\nIn addition to updating the target SDK versions, also updates USBMonitor to always use the FLAG_IMMUTABLE when attempting to request device permissions.\n\nThis fixes an issue when using the library with apps targeting 34, where CameraHelper would be unable to open devices due to USBMonitor attempting to build the device permissions intent using FLAG_MUTABLE. This is no longer allowed, and will throw a RemoteException with the message:\n\n > Targeting U+ (version 34 and above) disallows creating or retrieving a PendingIntent with FLAG_MUTABLE, an implicit Intent within and without FLAG_NO_CREATE and FLAG_ALLOW_UNSAFE_IMPLICIT_INTENT for security reasons. To retrieve an already existing PendingIntent, use FLAG_NO_CREATE, however, to create a new PendingIntent with an implicit Intent use FLAG_IMMUTABLE.",
+          "parents": [
+            "03f5ec9b0a0234f0086c27221d564cbb4e6f4b3d"
+          ],
+          "sha": "afb8024795059ee6db9782613cf75eb5968bc6ea",
+          "tree_sha": "d902dadfa5a7c1093b562850d5555091d032f780"
+        },
+        {
+          "author_date": "2023-08-07T02:41:23Z",
+          "committer_date": "2023-08-07T02:41:23Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/caf347c4fda040a155819dd8c265e048f41bb793",
+          "message": "1.Optimize exception catching when opening the camera\n2.Optimize resource release conflicts when opening and closing cameras in concurrent thread",
+          "parents": [
+            "50575c73aaa808b61ab502f704cb3abbe503e80f"
+          ],
+          "sha": "caf347c4fda040a155819dd8c265e048f41bb793",
+          "tree_sha": "6956531a7e75d73d9ca576f6e8db81c20bd1fa06"
+        },
+        {
+          "author_date": "2022-04-05T12:49:07Z",
+          "committer_date": "2022-04-05T12:49:07Z",
+          "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/8e6663b117d23fa5754a4f16dd2ab7bf85b56374",
+          "message": "1.optimize libuvccamera\n2.implement advanced usage of libuvccamera in CustomPreviewActivity",
+          "parents": [
+            "f076c7498cda89a984d7da6430884507a90cf237"
+          ],
+          "sha": "8e6663b117d23fa5754a4f16dd2ab7bf85b56374",
+          "tree_sha": "b2a55691984a6c6844be8efb3f7d58d4f28d074d"
+        }
+      ],
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits?sha=fcdae5f9a194e2111d57019176b53470a120415b&path=libuvccamera%2Fsrc%2Fmain%2Fjava%2Fcom%2Fserenegiant%2Fusb%2FUSBMonitor.java&per_page=5"
+    },
+    {
+      "connector_text_sha256": "6e0eb04cffdce7cbbcb69d162b6d8d24a9bc9d505c1abe2e8f94851d8191fea5",
+      "connector_text_size": 395071,
+      "kind": "tree",
+      "projection": {
+        "full_entry_count": 1473,
+        "selected_entries": [
+          {
+            "mode": "100644",
+            "path": ".gitignore",
+            "sha": "895276636e125cb1739c7ec81d141e8834757fbe",
+            "size": 1018,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "LICENSE",
+            "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+            "size": 11357,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "README.md",
+            "sha": "70a16587e07473ef0da35a0e13fea131da43bac9",
+            "size": 1115,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "app",
+            "sha": "3cf24f31b842b3f00c5254f2da2889c6eea120ce",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "build.gradle",
+            "sha": "79878576b7e43777392108c140f6eac7334852a8",
+            "size": 1011,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "demo",
+            "sha": "f0d0d786509610a2ad118f3392228a5f54b6db50",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "gradle.properties",
+            "sha": "768c0579b74c4cbcf840b49e3d373673b7fd373f",
+            "size": 904,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "gradle",
+            "sha": "92b16b0161bad329911d2fecb6846ff324020538",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "gradlew",
+            "sha": "91a7e269e19dfc62e27137a0b57ef3e430cee4fd",
+            "size": 5080,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "gradlew.bat",
+            "sha": "8a0b282aa6885fb573c106b3551f7275c5f17e8e",
+            "size": 2314,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera",
+            "sha": "5ea02fb9a8363132c1e1e76c9f64cc42a8664299",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java",
+            "sha": "63c63c9bc61ff98969b8c6c0d80d215313f02855",
+            "size": 9639,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java",
+            "sha": "ebd3841b8e467e2b397467b4ed9beccc303681ee",
+            "size": 53975,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java",
+            "sha": "d2dc867ca2e56b97ebbdaa8621f5a56f5855f1f4",
+            "size": 21213,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/Android.mk",
+            "sha": "db26be050f330d4c5b1b2642b67e0ce0f174bcd9",
+            "size": 284,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/Application.mk",
+            "sha": "2a716eb4af8ed60a169b652ac8cee37b52e40c96",
+            "size": 1383,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/CMakeLists.txt",
+            "sha": "34cb601723b29c89864a08ec824c79f1ae115212",
+            "size": 568,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/UVCCamera",
+            "sha": "10e64008ac3512c250838d54465cf0680204952f",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp",
+            "sha": "320e3bea7778c2725bd289c350a9d449220abbb7",
+            "size": 6183,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp",
+            "sha": "fd2433ff338c708ca7cbe44d5efe2179212e78b1",
+            "size": 28274,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/libjpeg-turbo",
+            "sha": "03863b6a0813a54ad90cb97d6c86298f64178d4a",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/libusb",
+            "sha": "d32f0860d3da0316bfbd4c2c3c041e2289782984",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/Android.mk",
+            "sha": "7cca32d418b17bb80d440464ec4c0e087bc5c0f3",
+            "size": 975,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/Android_origin.mk",
+            "sha": "2a9e5ec49dc17cb39c94b0e9102ffa003592cc7b",
+            "size": 973,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/Application.mk",
+            "sha": "c113726328feb458d2c94e406a46728e795313e8",
+            "size": 1330,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/examples.mk",
+            "sha": "3eb0ddd4f1230b804104285d3dc4f9b5e780a622",
+            "size": 3348,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/libusb.mk",
+            "sha": "d2bf9c694b7376748011b627afa69172e167587b",
+            "size": 2416,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/libusb_origin.mk",
+            "sha": "3d2faeb30c7ec3545d547ffc0d528cee56d4ae97",
+            "size": 1781,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/tests.mk",
+            "sha": "a32942a09783fe8c52b2f5dc9b7e2c8ca1274458",
+            "size": 1310,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/libuvc",
+            "sha": "c6cb41fba097ab2bca2fffab16282c82fde3bd8f",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libuvc/android/jni/Android.mk",
+            "sha": "5e0b7778bbf04a6be0bbdfb0d614f771f489798e",
+            "size": 3218,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/libyuv",
+            "sha": "b0ae177444ab6f818c4848180362308c3e8cfa9c",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/localdefines.h",
+            "sha": "99d37eda7a52ec3756b126713004effb66f518ed",
+            "size": 2408,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/rapidjson",
+            "sha": "b3eb1b5a591b65f9df3b2d2020916bf138896588",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/utilbase.h",
+            "sha": "c2d39c6394203796ae709e801442a809a0997605",
+            "size": 8226,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "publish_aar.gradle",
+            "sha": "02722cdcd4ed338215044c6ff5f004f5b47d6466",
+            "size": 744,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "settings.gradle",
+            "sha": "03deffd3375a548af2cd0c724d7f8d03f116600a",
+            "size": 988,
+            "type": "blob"
+          }
+        ],
+        "sha": "ec303c62262ce3e384d1726064cfd745dd7343e8",
+        "truncated": false
+      },
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/git/trees/ec303c62262ce3e384d1726064cfd745dd7343e8?recursive=1"
+    },
+    {
+      "connector_text_sha256": "96b2414d64165b941c889b82d95120c9cbe57ce59c9eeddf62085fa1d7d7adc1",
+      "connector_text_size": 5617,
+      "kind": "patch-buffer",
+      "projection": {
+        "author_date": "2026-05-13T08:41:06Z",
+        "committer_date": "2026-05-13T08:41:06Z",
+        "files": [
+          {
+            "additions": 11,
+            "deletions": 3,
+            "filename": "libuvccamera/src/main/jni/libuvc/include/libuvc/libuvc_internal.h",
+            "patch": "@@ -272,11 +272,19 @@ typedef struct uvc_device_info {\n #endif\r\n \r\n /*\r\n- Make a limit number of packets per transfer.\r\n- Big number may cause error (libusb: error [submit_iso_transfer] submiturb failed, errno=12)\r\n+ * Maximum number of isochronous packets in a single transfer.\r\n+ *\r\n+ * This controls the size of each individual iso transfer. Some Android USB\r\n+ * host stacks may fail large iso submissions with ENOMEM, for example:\r\n+ *\r\n+ *     libusb: error [submit_iso_transfer] submiturb failed, errno=12\r\n+ *\r\n+ * On Android, total in-flight URB pressure is now primarily reduced by using\r\n+ * a smaller LIBUVC_NUM_TRANSFER_BUFS value. Therefore keep this per-transfer\r\n+ * limit at the original default unless a specific platform needs tuning.\r\n  */\r\n #ifndef LIBUVC_PACKETS_PER_TRANSFER_MAX\r\n-#define LIBUVC_PACKETS_PER_TRANSFER_MAX 8\r\n+#define LIBUVC_PACKETS_PER_TRANSFER_MAX 32\r\n #endif\r\n \r\n #define LIBUVC_XFER_META_BUF_SIZE ( 4 * 1024 )\r",
+            "sha": "e3c4fe62e155ac97c4d2c2d2cb4c4fcec59b78c5",
+            "status": "modified"
+          }
+        ],
+        "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/58f7d103fef245152c3cb23c23e4523089efbc28",
+        "message": "fix(libuvc): tune Android UVC transfer buffering\n\nReduce LIBUVC_NUM_TRANSFER_BUFS from 100 to 16 on Android to lower the\nnumber of concurrently queued URBs and reduce USB host memory pressure.\n\nRestore LIBUVC_PACKETS_PER_TRANSFER_MAX to the default value of 32. A larger\nper-transfer packet count reduces libusb callback and resubmission frequency,\nwhich helps lower CPU usage compared with smaller values.\n\nThis balances Android USB host stability with lower CPU overhead during\nisochronous UVC streaming.",
+        "parents": [
+          "4037487b11c5c55cfc845d28d7e1666dc55c805e"
+        ],
+        "sha": "58f7d103fef245152c3cb23c23e4523089efbc28",
+        "tree_sha": "6d925fdc4a828becc4bd4f5c36ea69a39e8b7522"
+      },
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits/58f7d103fef245152c3cb23c23e4523089efbc28"
+    },
+    {
+      "connector_text_sha256": "58fe658f4e1e6169ef020d1f5236f2ff7dc7db9e8db47265c45770315c4b6c5f",
+      "connector_text_size": 4499,
+      "kind": "patch-preview",
+      "projection": {
+        "author_date": "2026-06-10T00:24:43Z",
+        "committer_date": "2026-06-10T00:28:10Z",
+        "files": [
+          {
+            "additions": 1,
+            "deletions": 1,
+            "filename": "libuvccamera/src/main/jni/libuvc/include/libuvc/libuvc_internal.h",
+            "patch": "@@ -284,7 +284,7 @@ typedef struct uvc_device_info {\n  * limit at the original default unless a specific platform needs tuning.\r\n  */\r\n #ifndef LIBUVC_PACKETS_PER_TRANSFER_MAX\r\n-#define LIBUVC_PACKETS_PER_TRANSFER_MAX 32\r\n+#define LIBUVC_PACKETS_PER_TRANSFER_MAX 4\r\n #endif\r\n \r\n #define LIBUVC_XFER_META_BUF_SIZE ( 4 * 1024 )\r",
+            "sha": "d3d0c644683c6d3a15e71d6e1bb1f35d392fd656",
+            "status": "modified"
+          }
+        ],
+        "html_url": "https://github.com/shiyinghan/UVCAndroid/commit/5b3aa6800fc03ef308a63ab48d8c029119ce0c5e",
+        "message": "Fix black screen issue of MediaTek-based Android devices",
+        "parents": [
+          "d1f6d189495e7cfdb671e63aa9e966f5dde7da20"
+        ],
+        "sha": "5b3aa6800fc03ef308a63ab48d8c029119ce0c5e",
+        "tree_sha": "e59079adf371ac51b38ac36548a3f7f615af69f4"
+      },
+      "repo": "shiyinghan/UVCAndroid",
+      "url": "https://api.github.com/repos/shiyinghan/UVCAndroid/commits/5b3aa6800fc03ef308a63ab48d8c029119ce0c5e"
+    },
+    {
+      "connector_text_sha256": "1def1f4122e0c8db64bba4e8eb91ad49da91cd996436fee61d296e8d773c478d",
+      "connector_text_size": 5246,
+      "kind": "repo",
+      "projection": {
+        "archived": false,
+        "default_branch": "master",
+        "disabled": false,
+        "full_name": "saki4510t/UVCCamera",
+        "html_url": "https://github.com/saki4510t/UVCCamera",
+        "id": 19403028,
+        "license": null,
+        "pushed_at": "2021-12-14T13:26:26Z"
+      },
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera"
+    },
+    {
+      "connector_text_sha256": "c66a8874e48875a31381478c34cfb0759d5126f83b5a75d4ba5a7a6eff81101d",
+      "connector_text_size": 25382,
+      "kind": "head",
+      "projection": {
+        "author_date": "2018-10-02T07:51:05Z",
+        "committer_date": "2018-10-02T07:51:05Z",
+        "html_url": "https://github.com/saki4510t/UVCCamera/commit/c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+        "message": "update dependancy and AS 3.1.x",
+        "parents": [
+          "3dd892872103317efc66234f541df0bf04094579"
+        ],
+        "sha": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+        "tree_sha": "dd338608090fe598d591998da75712c2ef060ef7"
+      },
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/commits/master"
+    },
+    {
+      "connector_text_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "connector_text_size": 2,
+      "kind": "releases",
+      "projection": [],
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/releases?per_page=10"
+    },
+    {
+      "connector_text_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "connector_text_size": 2,
+      "kind": "tagrefs",
+      "projection": [],
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/git/matching-refs/tags/"
+    },
+    {
+      "connector_text_sha256": "e6db62899833efd4a370b1df931edc0be2b81b340712ceb2b43b2a4958eba549",
+      "connector_text_size": 33290,
+      "kind": "recent",
+      "projection": [
+        {
+          "author_date": "2018-10-02T07:51:05Z",
+          "committer_date": "2018-10-02T07:51:05Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+          "message": "update dependancy and AS 3.1.x",
+          "parents": [
+            "3dd892872103317efc66234f541df0bf04094579"
+          ],
+          "sha": "c9399e63dfab4b6d260d8cbef92182abc6de0ee0",
+          "tree_sha": "dd338608090fe598d591998da75712c2ef060ef7"
+        },
+        {
+          "author_date": "2018-10-02T07:50:19Z",
+          "committer_date": "2018-10-02T07:50:19Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/3dd892872103317efc66234f541df0bf04094579",
+          "message": "update .gitignore",
+          "parents": [
+            "477aee87ba763d003b039ab26406724bba721e8e"
+          ],
+          "sha": "3dd892872103317efc66234f541df0bf04094579",
+          "tree_sha": "c0d1ec052afc0379ba7c4dd272e0d1fa96b24c1f"
+        },
+        {
+          "author_date": "2017-04-17T07:51:53Z",
+          "committer_date": "2017-04-17T07:51:53Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/477aee87ba763d003b039ab26406724bba721e8e",
+          "message": "Update README.md",
+          "parents": [
+            "1380bacf9dfb07daf72b195f05b6e6d3873661b4"
+          ],
+          "sha": "477aee87ba763d003b039ab26406724bba721e8e",
+          "tree_sha": "f8ff539e49779abc0d5511165c782fc0cd324895"
+        },
+        {
+          "author_date": "2017-04-17T06:55:57Z",
+          "committer_date": "2017-04-17T06:55:57Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/1380bacf9dfb07daf72b195f05b6e6d3873661b4",
+          "message": "specify min/max frame rate(this does not mean camera should follow this setting, actual frame rate is depending on exposure settings etc.)",
+          "parents": [
+            "ebaf03a18b577852bd6dc2bd57cedef5a8eef59f"
+          ],
+          "sha": "1380bacf9dfb07daf72b195f05b6e6d3873661b4",
+          "tree_sha": "b5334d4c8fb87388cc60bb07fdbcce6125fcfd8e"
+        },
+        {
+          "author_date": "2017-04-17T06:43:03Z",
+          "committer_date": "2017-04-17T06:43:03Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/ebaf03a18b577852bd6dc2bd57cedef5a8eef59f",
+          "message": "add fps calculation on UVCCameraTextureView",
+          "parents": [
+            "10500383b439136037a6b9887443a170443d8a3c"
+          ],
+          "sha": "ebaf03a18b577852bd6dc2bd57cedef5a8eef59f",
+          "tree_sha": "1e199ede7568bc48b6c07698ddd78a23ba5a97f9"
+        },
+        {
+          "author_date": "2017-04-17T05:57:06Z",
+          "committer_date": "2017-04-17T05:57:06Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/10500383b439136037a6b9887443a170443d8a3c",
+          "message": "typo",
+          "parents": [
+            "b19db6dda9d47b355ac9198cf5c736ee49c19164"
+          ],
+          "sha": "10500383b439136037a6b9887443a170443d8a3c",
+          "tree_sha": "56460f2cd1d6758373947355db3e28399fda23b6"
+        },
+        {
+          "author_date": "2017-04-17T05:34:16Z",
+          "committer_date": "2017-04-17T05:34:16Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/b19db6dda9d47b355ac9198cf5c736ee49c19164",
+          "message": "split UVCCameraTextureView into UVCCameraTextureView and AspectRatioTextureView",
+          "parents": [
+            "d999d73aa0991a7d2688650ce37f8d46001ced5c"
+          ],
+          "sha": "b19db6dda9d47b355ac9198cf5c736ee49c19164",
+          "tree_sha": "939c4888f74c5df1dd633cf2cd5067b99bd04f51"
+        },
+        {
+          "author_date": "2017-04-17T05:33:08Z",
+          "committer_date": "2017-04-17T05:33:08Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/d999d73aa0991a7d2688650ce37f8d46001ced5c",
+          "message": "remove AspectRatioViewInterface and use IAspectRatioView instead",
+          "parents": [
+            "b95ebd76fb7cf84849294e4a553b78a105468114"
+          ],
+          "sha": "d999d73aa0991a7d2688650ce37f8d46001ced5c",
+          "tree_sha": "32b17630825016c1d62e1eb072a23bc5f602c567"
+        },
+        {
+          "author_date": "2017-04-17T02:41:14Z",
+          "committer_date": "2017-04-17T02:41:14Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/b95ebd76fb7cf84849294e4a553b78a105468114",
+          "message": "update gradle plugin and libcommon",
+          "parents": [
+            "201194b3f495f3946f14310b62a55086aeb81993"
+          ],
+          "sha": "b95ebd76fb7cf84849294e4a553b78a105468114",
+          "tree_sha": "7b5784ab7e2abba91ca5e827eaab107528bf6f98"
+        },
+        {
+          "author_date": "2017-04-17T02:30:33Z",
+          "committer_date": "2017-04-17T02:30:33Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/201194b3f495f3946f14310b62a55086aeb81993",
+          "message": "Merge branch 'rehlma1989-patch-1' into develop",
+          "parents": [
+            "efe5f59566c85dbe2dcb03d93b599a95e50aa430",
+            "afea2e57c012cec3a40fabb7b0381251e11d7e64"
+          ],
+          "sha": "201194b3f495f3946f14310b62a55086aeb81993",
+          "tree_sha": "35183336ccc1e12c3ff2e8f1a7c00a5dd1fc2d77"
+        }
+      ],
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/commits?sha=c9399e63dfab4b6d260d8cbef92182abc6de0ee0&per_page=10"
+    },
+    {
+      "connector_text_sha256": "a8497c0872394a6d603e6ca92d231a95d208073bb82f44f8d0726120e77eaa65",
+      "connector_text_size": 16479,
+      "kind": "native",
+      "projection": [
+        {
+          "author_date": "2017-03-24T01:40:08Z",
+          "committer_date": "2017-03-24T01:40:08Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/cb433a3104abf7a6769da66584245ef6295c26ce",
+          "message": "inporve issue for mips build",
+          "parents": [
+            "444f1070abedefaf3d01e88ba937bf424ce776a7"
+          ],
+          "sha": "cb433a3104abf7a6769da66584245ef6295c26ce",
+          "tree_sha": "6015db2effa145204d3c51f07434c6bdabb2d0c2"
+        },
+        {
+          "author_date": "2017-01-17T04:07:22Z",
+          "committer_date": "2017-01-17T04:07:22Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/e59b047edf1b893c7f1db604c66cd7dd5c16bd55",
+          "message": "update copyright & README.md",
+          "parents": [
+            "80e4b369d36c39a18785026b2012b3500d012aea"
+          ],
+          "sha": "e59b047edf1b893c7f1db604c66cd7dd5c16bd55",
+          "tree_sha": "2d0ef4c97dfa610fe00c4d70b99422c0193e0d37"
+        },
+        {
+          "author_date": "2016-12-12T17:40:16Z",
+          "committer_date": "2016-12-12T17:40:16Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/810c5bca92d0d4886e42cc7f6ed9dcb30599336c",
+          "message": "add sources related to pipeline(not compile now)",
+          "parents": [
+            "1af3fbb70d306fa240538411d866e3d2f408e37c"
+          ],
+          "sha": "810c5bca92d0d4886e42cc7f6ed9dcb30599336c",
+          "tree_sha": "c93ac1133e5754b06e235357429a6db8f13bb918"
+        },
+        {
+          "author_date": "2016-11-20T09:17:53Z",
+          "committer_date": "2016-11-20T09:17:53Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/cbc1ab04b0f7e19fe818e7d23e072bf52e7c6e54",
+          "message": "update build environment and add features for Android 6&7",
+          "parents": [
+            "587207c8da7529c64f1ebfc096287b27daea1e7b"
+          ],
+          "sha": "cbc1ab04b0f7e19fe818e7d23e072bf52e7c6e54",
+          "tree_sha": "8066cf2ad3ad290d702b8af568c38c17fbf727fa"
+        },
+        {
+          "author_date": "2016-11-18T02:45:52Z",
+          "committer_date": "2016-11-18T02:45:52Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/587207c8da7529c64f1ebfc096287b27daea1e7b",
+          "message": "avoid warning of empty body",
+          "parents": [
+            "25962423ba7ec21f85d07886acf87a3cae7d9a5d"
+          ],
+          "sha": "587207c8da7529c64f1ebfc096287b27daea1e7b",
+          "tree_sha": "b68e7c8f443a52cf7d24697887bdca12436efef3"
+        }
+      ],
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/commits?sha=c9399e63dfab4b6d260d8cbef92182abc6de0ee0&path=libuvccamera/src/main/jni&per_page=5"
+    },
+    {
+      "connector_text_sha256": "e9ac5b1b948e02bbf7f78d4a4007fbe4683cace1e01f0b1102fe299c89c7cd04",
+      "connector_text_size": 16483,
+      "kind": "usb",
+      "projection": [
+        {
+          "author_date": "2017-01-17T04:07:22Z",
+          "committer_date": "2017-01-17T04:07:22Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/e59b047edf1b893c7f1db604c66cd7dd5c16bd55",
+          "message": "update copyright & README.md",
+          "parents": [
+            "80e4b369d36c39a18785026b2012b3500d012aea"
+          ],
+          "sha": "e59b047edf1b893c7f1db604c66cd7dd5c16bd55",
+          "tree_sha": "2d0ef4c97dfa610fe00c4d70b99422c0193e0d37"
+        },
+        {
+          "author_date": "2016-11-17T17:30:31Z",
+          "committer_date": "2016-11-17T17:30:31Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/9b9276161ff1e2f0f64a3d134161d8214da6628d",
+          "message": "update copyright",
+          "parents": [
+            "f702cd631aa352b66fc44b8115c69c14e599b02a"
+          ],
+          "sha": "9b9276161ff1e2f0f64a3d134161d8214da6628d",
+          "tree_sha": "30046439ef2a28062174a2c12fd9ae4f86ed2232"
+        },
+        {
+          "author_date": "2016-11-17T13:32:37Z",
+          "committer_date": "2016-11-17T13:32:37Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/847ddd447b2bc4d4d3efee689710ac200c974eb5",
+          "message": "updating repositiory",
+          "parents": [
+            "1f0b3d13254935a60bd3a5dda8c4a37b8d7be77e"
+          ],
+          "sha": "847ddd447b2bc4d4d3efee689710ac200c974eb5",
+          "tree_sha": "1ddeb10fa4887d69d7224009918c986fb81b7c5c"
+        },
+        {
+          "author_date": "2016-06-10T12:19:28Z",
+          "committer_date": "2016-06-14T14:18:18Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/4a25328b52d4cc7121dad43f3934fb1f0297221e",
+          "message": "AG-700 fix empty filters",
+          "parents": [
+            "dc413bc8da16362782bb35a5d27d4055e1012aed"
+          ],
+          "sha": "4a25328b52d4cc7121dad43f3934fb1f0297221e",
+          "tree_sha": "0c1ad07ce1d124a5fd1d6b2e21a10e7e81f2e162"
+        },
+        {
+          "author_date": "2015-11-25T12:28:34Z",
+          "committer_date": "2015-11-25T12:28:34Z",
+          "html_url": "https://github.com/saki4510t/UVCCamera/commit/a1ca50cc82559828cc7befe7f85937dcb2a11765",
+          "message": "fixed possible exception",
+          "parents": [
+            "e48cf113a4f863d6ec64acaded94b30d5bfbb74b"
+          ],
+          "sha": "a1ca50cc82559828cc7befe7f85937dcb2a11765",
+          "tree_sha": "34d30aede0043e162ae44d199a3b3d03244f1cd9"
+        }
+      ],
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/commits?sha=c9399e63dfab4b6d260d8cbef92182abc6de0ee0&path=libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java&per_page=5"
+    },
+    {
+      "connector_text_sha256": "4b8a3ef39bd56ebe184c952dce1f0fa4fa4c6e7719af6282a678bdd03048a91b",
+      "connector_text_size": 367108,
+      "kind": "tree",
+      "projection": {
+        "full_entry_count": 1388,
+        "selected_entries": [
+          {
+            "mode": "100644",
+            "path": ".gitignore",
+            "sha": "b219993c2f0660d866b1858127372b48148f9148",
+            "size": 971,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": ".idea",
+            "sha": "6fd94ab5c442108008c99e2edb3b031ef7e37e3c",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "README.md",
+            "sha": "a6bdc99dd33a653f87a1db349abc2e1111fc5904",
+            "size": 8253,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "UVCCamera.iml",
+            "sha": "e9836a27d6ce8b281595fb6bb0474cfae18efaae",
+            "size": 886,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "build.gradle",
+            "sha": "3287a8720b58750e30c1068ad4985f85ddd18d04",
+            "size": 885,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "gradle.properties",
+            "sha": "2c1f15099521e3bee1af6c12c21c33df79373b37",
+            "size": 851,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "gradle",
+            "sha": "1475a37b175b85427e2eb77aa30ffc0b1326914e",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100755",
+            "path": "gradlew",
+            "sha": "91a7e269e19dfc62e27137a0b57ef3e430cee4fd",
+            "size": 5080,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "gradlew.bat",
+            "sha": "aec99730b4e8fcd90b57a0e8e01544fea7c31a89",
+            "size": 2404,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera",
+            "sha": "f424bca4f286f3c50cd20e7dbbe3d0f1cf9122ca",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/java/com/serenegiant/usb/USBMonitor.java",
+            "sha": "722dd3613b14f838a4535c05c9e2e3806c7b0c73",
+            "size": 45219,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/java/com/serenegiant/usb/UVCCamera.java",
+            "sha": "924255906ea8c93f3b4360805c737e2a172602db",
+            "size": 46710,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/Android.mk",
+            "sha": "eb8ddeec091f52713f26a5454b88a8f841651c1b",
+            "size": 283,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/Application.mk",
+            "sha": "c6f7c2e1bf5d92d7a2528873c72ade1aba1001fc",
+            "size": 1297,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/UVCCamera",
+            "sha": "9c8e2936b5112a90e3eadaa941ab0bb6e5df3990",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/UVCCamera/Android.mk",
+            "sha": "a7d67e4c5fbd3e5939f9f7200fd7330a8cc86b4d",
+            "size": 2128,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/UVCCamera/UVCCamera.cpp",
+            "sha": "7dfa2e13c037a17b54760dd8cb852f86b38a85b0",
+            "size": 65661,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/UVCCamera/UVCPreview.cpp",
+            "sha": "02c1a60b81d18c97a19f18962bbd49095cd11517",
+            "size": 23720,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/libjpeg-turbo-1.5.0",
+            "sha": "0c562bbf0367bd69b8c286788af7e61e2ae802ea",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libjpeg-turbo-1.5.0/LICENSE.md",
+            "sha": "4623e29425071a1151dc4b004d5a241ea93efaba",
+            "size": 2939,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/libusb",
+            "sha": "007702d32a18d69cbe3ec638bf085432fb1da251",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/Android.mk",
+            "sha": "4952e87fd22e7574200d6c0c9343a27e08d86b99",
+            "size": 975,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/Android_original.mk",
+            "sha": "6a32b50149746bd7e4c781f9d78e7b53dbe72176",
+            "size": 973,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/Application.mk",
+            "sha": "f972a9e4298baa1a73b005df5d7a98cc6977366f",
+            "size": 1010,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/examples.mk",
+            "sha": "05609cc8e8738828fbf38c65f8d0e81aa1467688",
+            "size": 2612,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/libusb.mk",
+            "sha": "783be703edaaa84828e42aaffb02a76b7c69ffda",
+            "size": 2412,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/libusb_original.mk",
+            "sha": "d8db2a4003df5d5294e2d9574fc0d2c79d45ac94",
+            "size": 1889,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/android/jni/tests.mk",
+            "sha": "93d55161bf96bf6cd8c9fcfbe8db6da18691c5d7",
+            "size": 1440,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libusb/libusb/core.c",
+            "sha": "65346f74a7277c8866d5aeec9f3a3bae391c87c5",
+            "size": 88560,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/libuvc",
+            "sha": "b2be2828b11dafffef3b2bfb16b8080fa5212904",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libuvc/android/jni/Android.mk",
+            "sha": "c7adc634199f1d075ca3b1cb4aed306efa9c321a",
+            "size": 3167,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/libuvc/src/device.c",
+            "sha": "16ab87350a951111d1b44624c14b6bb5754c6782",
+            "size": 51286,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/localdefines.h",
+            "sha": "99d37eda7a52ec3756b126713004effb66f518ed",
+            "size": 2408,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvccamera/src/main/jni/rapidjson",
+            "sha": "b3eb1b5a591b65f9df3b2d2020916bf138896588",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvccamera/src/main/jni/utilbase.h",
+            "sha": "50ff22a442e2747ae92c688ed10cd8a5b84fe5e8",
+            "size": 8221,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "settings.gradle",
+            "sha": "5cb6cd14270c57958b806cfde0732fce02b88dff",
+            "size": 1217,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraCommon",
+            "sha": "a5ec0fffec782ea555ea45f82cc5a8a21be98415",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "usbCameraCommon/src/main/java/com/serenegiant/encoder/MediaAudioEncoder.java",
+            "sha": "a6a9010f665e263ee28eb89a93de49edb272495f",
+            "size": 7956,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest",
+            "sha": "79d4b5c59b20b32f4558196ab225c4a1ae1924ba",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest0",
+            "sha": "45fbca9f098a6b5bee9e8cdda83ac4391b9e054d",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest2",
+            "sha": "0667f6afb4fcf5dae155b23d085f727c78ee500d",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest3",
+            "sha": "05f0832ed9103179d73c1d4442864f68f676e427",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest4",
+            "sha": "c4a9695d6870d9f50552a95e664f2ac6d9825793",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest5",
+            "sha": "c9f3079f725a962c90c4ebbba8422e9fe0cca913",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest6",
+            "sha": "22779f976ccaf161cc44b37d56db2b5fe1ca1982",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest7",
+            "sha": "4199c05ad5b9d65d4bd065a7cd5c1da1ae8d1d77",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "usbCameraTest8",
+            "sha": "e598260d50c1542c979f64bbad2bf2794f93d2bf",
+            "size": null,
+            "type": "tree"
+          }
+        ],
+        "sha": "dd338608090fe598d591998da75712c2ef060ef7",
+        "truncated": false
+      },
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/git/trees/dd338608090fe598d591998da75712c2ef060ef7?recursive=1"
+    },
+    {
+      "connector_text_sha256": "ed2b6ea774796aa6b0ac9f8f83b0950119553afe4410a70e59776613e00f702f",
+      "connector_text_size": 72187,
+      "kind": "patch-fd",
+      "projection": {
+        "author_date": "2016-11-18T02:28:04Z",
+        "committer_date": "2016-11-18T02:28:04Z",
+        "files": [
+          {
+            "additions": 1,
+            "deletions": 1,
+            "filename": ".idea/misc.xml",
+            "sha": "5553569ebf241b1920b3c6b7bef98eb13c502189",
+            "status": "modified"
+          },
+          {
+            "additions": 8,
+            "deletions": 3,
+            "filename": "libuvccamera/src/main/jni/libusb/libusb/core.c",
+            "patch": "@@ -1071,11 +1071,13 @@ int API_EXPORTED libusb_get_max_iso_packet_size(libusb_device *dev,\n DEFAULT_VISIBILITY\n libusb_device * LIBUSB_CALL libusb_ref_device(libusb_device *dev) {\n \n+\tint refcnt;\n \tusbi_mutex_lock(&dev->lock);\n \t{\n-\t\tdev->refcnt++;\n+\t\trefcnt = ++dev->refcnt;\n \t}\n \tusbi_mutex_unlock(&dev->lock);\n+//\tLOGI(\"refcnt=%d\", refcnt);\n \treturn dev;\n }\n \n@@ -1096,6 +1098,7 @@ void API_EXPORTED libusb_unref_device(libusb_device *dev) {\n \t\trefcnt = --dev->refcnt;\n \t}\n \tusbi_mutex_unlock(&dev->lock);\n+//\tLOGI(\"refcnt=%d\", dev->refcnt);\n \n \tif (refcnt == 0) {\n \t\tusbi_dbg(\"destroy device %d.%d\", dev->bus_number, dev->device_address);\n@@ -1249,9 +1252,11 @@ libusb_device * LIBUSB_CALL libusb_get_device_with_fd(libusb_context *ctx,\n \tENTER();\n \n \tstruct libusb_device *device = NULL;\n+\t// android_generate_device\u5185\u3067usbi_alloc_device\u304c\u547c\u3070\u308c\u305f\u6642\u306b\u53c2\u7167\u30ab\u30a6\u30f3\u30bf\u306f1\n \tint ret = android_generate_device(ctx, &device, vid, pid, serial, fd, busnum, devaddr);\n-\tif (LIKELY(!ret)) {\n-\t\tlibusb_ref_device(device);\t// \u3053\u308c\u3044\u308b\u3093\u304b\u306a? usbi_alloc_device\u5185\u3067\u65e2\u306b\u547c\u3070\u308c\u3068\u308b\u3093\u3084\u3051\u3069\n+\tif (ret) {\n+\t\tLOGD(\"android_generate_device failed:err=%d\", ret);\n+\t\tdevice = NULL;\n \t}\n \n \tRET(device);",
+            "sha": "df80441155e596df9f798254cc0f5bffb9edd6a2",
+            "status": "modified"
+          },
+          {
+            "additions": 5,
+            "deletions": 5,
+            "filename": "libuvccamera/src/main/jni/libusb/libusb/os/android_usbfs.c",
+            "patch": "@@ -1300,7 +1300,6 @@ static int android_initialize_device(struct libusb_device *dev,\n \tstruct android_device_priv *priv = _device_priv(dev);\n \tstruct libusb_context *ctx = DEVICE_CTX(dev);\n \tuint8_t desc[4096]; // max descriptor size is 4096 bytes\n-\tint descriptors_size = 512; /* Begin with a 1024 byte alloc */\n \tint speed;\n \tssize_t r;\n \n@@ -1310,15 +1309,15 @@ static int android_initialize_device(struct libusb_device *dev,\n \tLOGD(\"cache descriptors in memory\");\n \n \tpriv->descriptors_len = 0;\n+\tpriv->fd = 0;\n \tmemset(desc, 0, sizeof(desc));\n     if (!lseek(fd, 0, SEEK_SET)) {\n         // \u30c7\u30a3\u30b9\u30af\u30ea\u30d7\u30bf\u3092\u8aad\u307f\u8fbc\u3093\u3067\u30ed\u30fc\u30ab\u30eb\u30ad\u30e3\u30c3\u30b7\u30e5\u3059\u308b\n         int length = read(fd, desc, sizeof(desc));\n         LOGD(\"Device::init read returned %d errno %d\\n\", length, errno);\n \t\tif (length > 0) {\n \t\t\tpriv->fd = fd;\n-\t\t\tdescriptors_size = length;\n-\t\t\tpriv->descriptors = usbi_reallocf(priv->descriptors, descriptors_size);\n+\t\t\tpriv->descriptors = usbi_reallocf(priv->descriptors, length);\n \t\t\tif (UNLIKELY(!priv->descriptors)) {\n \t\t\t\tRETURN(LIBUSB_ERROR_NO_MEM, int);\n \t\t\t}\n@@ -1389,7 +1388,7 @@ int android_generate_device(struct libusb_context *ctx, struct libusb_device **d\n  \t * a session ID. */\n \tsession_id = busnum << 8 | devaddr;\n  \tLOGD(\"allocating new device for %d/%d (session %ld)\", busnum, devaddr, session_id);\n- \t*dev = usbi_alloc_device(ctx, session_id);\n+ \t*dev = usbi_alloc_device(ctx, session_id);\t// \u3053\u306e\u6642\u70b9\u3067\u53c2\u7167\u30ab\u30a6\u30f3\u30bf=1\n  \tif (UNLIKELY(!dev)) {\n  \t\tRETURN(LIBUSB_ERROR_NO_MEM, int);\n  \t}\n@@ -1407,7 +1406,8 @@ int android_generate_device(struct libusb_context *ctx, struct libusb_device **d\n \n out:\n  \tif (UNLIKELY(r < 0)) {\n- \t\tlibusb_unref_device(*dev);\n+ \t\tlibusb_unref_device(*dev);\t// \u3053\u3053\u3067\u53c2\u7167\u30ab\u30a6\u30f3\u30bf\u304c0\u306b\u306a\u3063\u3066\u7834\u68c4\u3055\u308c\u308b\n+ \t\t*dev = NULL;\n  \t} else {\n  \t\tusbi_connect_device(*dev);\n  \t}",
+            "sha": "86265959ed4bb053615df173fa3f1edb2fbeec39",
+            "status": "modified"
+          },
+          {
+            "additions": 1,
+            "deletions": 1,
+            "filename": "libuvccamera/src/main/jni/libuvc/android/jni/Android.mk",
+            "patch": "@@ -74,7 +74,7 @@ LOCAL_MODULE := libuvc_static\n include $(BUILD_STATIC_LIBRARY)\n \n ######################################################################\n-# libuvc.so (shared library with static link to libjpeg-turbo)\n+# libuvc.so\n ######################################################################\n include $(CLEAR_VARS)\n LOCAL_MODULE_TAGS := optional",
+            "sha": "f9ba25fd365b112d6fb9413dd03d0b48f6db8d34",
+            "status": "modified"
+          },
+          {
+            "additions": 6,
+            "deletions": 4,
+            "filename": "libuvccamera/src/main/jni/libuvc/src/device.c",
+            "patch": "@@ -228,7 +228,7 @@ uvc_error_t uvc_get_device_with_fd(uvc_context_t *ctx, uvc_device_t **device,\n \tLOGD(\"call libusb_get_device_with_fd\");\n \tstruct libusb_device *usb_dev = libusb_get_device_with_fd(ctx->usb_ctx, vid, pid, serial, fd, busnum, devaddr);\n \n-\tif (usb_dev) {\n+\tif (LIKELY(usb_dev)) {\n \t\t*device = malloc(sizeof(uvc_device_t/* *device */));\n \t\t(*device)->ctx = ctx;\n \t\t(*device)->ref = 0;\n@@ -240,9 +240,9 @@ uvc_error_t uvc_get_device_with_fd(uvc_context_t *ctx, uvc_device_t **device,\n \t} else {\n \t\tLOGE(\"could not find specific device\");\n \t\t*device = NULL;\n+\t\tRETURN(UVC_ERROR_NO_DEVICE, int);\n \t}\n \n-\tRETURN(UVC_ERROR_NO_DEVICE, int);\n }\n \n /** @brief Get the number of the bus to which the device is attached\n@@ -791,7 +791,8 @@ const uvc_extension_unit_t *uvc_get_extension_units(uvc_device_handle_t *devh) {\n void uvc_ref_device(uvc_device_t *dev) {\n \tUVC_ENTER();\n \n-\tdev->ref++;\n+\tdev->ref++;\t// \u3053\u308c\u6392\u4ed6\u5236\u5fa1\u8981\u308b\u3093\u3061\u3083\u3046\u304b\u306a\u3041(\uff61\uff65_\uff65\uff61)\n+//\tLOGI(\"ref=%d\", dev->ref);\n \tlibusb_ref_device(dev->usb_dev);\n \n \tUVC_EXIT_VOID();\n@@ -808,8 +809,9 @@ void uvc_unref_device(uvc_device_t *dev) {\n \tUVC_ENTER();\n \n \tlibusb_unref_device(dev->usb_dev);\n-\tdev->ref--;\n+\tdev->ref--;\t// \u3053\u308c\u6392\u4ed6\u5236\u5fa1\u8981\u308b\u3093\u3061\u3083\u3046\u304b\u306a\u3041(\uff61\uff65_\uff65\uff61)\n \n+//\tLOGI(\"ref=%d\", dev->ref);\n \tif (dev->ref == 0) {\n \t\tfree(dev);\n \t\tdev = NULL;",
+            "sha": "16ab87350a951111d1b44624c14b6bb5754c6782",
+            "status": "modified"
+          },
+          {
+            "additions": 0,
+            "deletions": 108,
+            "filename": "usbCameraTest2/usbCameraTest2.iml",
+            "sha": "6db36280f2d42d67237b27f6455505ff2aac7789",
+            "status": "removed"
+          },
+          {
+            "additions": 0,
+            "deletions": 109,
+            "filename": "usbCameraTest3/usbCameraTest3.iml",
+            "sha": "012399ac754b25dbf6995a20fcb9492eae41d21c",
+            "status": "removed"
+          },
+          {
+            "additions": 0,
+            "deletions": 109,
+            "filename": "usbCameraTest4/usbCameraTest4.iml",
+            "sha": "31afe2938cffe450694ce50bbb41a6cb61247183",
+            "status": "removed"
+          },
+          {
+            "additions": 0,
+            "deletions": 109,
+            "filename": "usbCameraTest5/usbCameraTest5.iml",
+            "sha": "91398ec6cb6dd03bba047552241639bd3bb43cac",
+            "status": "removed"
+          },
+          {
+            "additions": 0,
+            "deletions": 109,
+            "filename": "usbCameraTest6/usbCameraTest6.iml",
+            "sha": "743f2896b62f0d7ce3e5389630f0dbcaa911537d",
+            "status": "removed"
+          },
+          {
+            "additions": 0,
+            "deletions": 109,
+            "filename": "usbCameraTest7/usbCameraTest7.iml",
+            "sha": "91385d995d0dda16473e742b964a7c6f3ce6d7cf",
+            "status": "removed"
+          }
+        ],
+        "html_url": "https://github.com/saki4510t/UVCCamera/commit/25962423ba7ec21f85d07886acf87a3cae7d9a5d",
+        "message": "improve issue that libusb_device instance leaked",
+        "parents": [
+          "d7044d3d67bd5d9498e20015bb1e95a86352ddf4"
+        ],
+        "sha": "25962423ba7ec21f85d07886acf87a3cae7d9a5d",
+        "tree_sha": "d82bd2a2943fb285cfcd914b340441e452cf7edb"
+      },
+      "repo": "saki4510t/UVCCamera",
+      "url": "https://api.github.com/repos/saki4510t/UVCCamera/commits/25962423ba7ec21f85d07886acf87a3cae7d9a5d"
+    },
+    {
+      "connector_text_sha256": "86d7c0acdc0bc47a7bd92fa482d30ab5e4ef6ed8a4792b22079d4703cd9f436c",
+      "connector_text_size": 5955,
+      "kind": "repo",
+      "projection": {
+        "archived": false,
+        "default_branch": "master",
+        "disabled": false,
+        "full_name": "jiangdongguo/AndroidUSBCamera",
+        "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera",
+        "id": 105255685,
+        "license": {
+          "key": "apache-2.0",
+          "name": "Apache License 2.0",
+          "node_id": "MDc6TGljZW5zZTI=",
+          "spdx_id": "Apache-2.0",
+          "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "pushed_at": "2024-09-02T07:43:31Z"
+      },
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera"
+    },
+    {
+      "connector_text_sha256": "358a5b1c5322a76439847fd01d255b35a05d630a2a471701e52e79be016161a4",
+      "connector_text_size": 6772,
+      "kind": "head",
+      "projection": {
+        "author_date": "2024-09-02T07:43:31Z",
+        "committer_date": "2024-09-02T07:43:31Z",
+        "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+        "message": "Merge pull request #668 from mahmoudramzy400/master\n\nFix bug on android 14  by adding this flag",
+        "parents": [
+          "53c8f3929ac87bc99ba630311df54b3f3c2dfcc8",
+          "3fd27aaf073356e2223ac26efa79e83b89906d67"
+        ],
+        "sha": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+        "tree_sha": "ca3b1f1af868196c1de3e4297d82196c907b269e"
+      },
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/master"
+    },
+    {
+      "connector_text_sha256": "8c441ec734cb1091437d90d24bafa8ef6452679b86bd6fbaa783104ca7a19d5c",
+      "connector_text_size": 18803,
+      "kind": "releases",
+      "projection": [
+        {
+          "body": "",
+          "created_at": "2023-02-13T07:32:47Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.3.3",
+          "id": 92179169,
+          "name": "version 3.3.3",
+          "prerelease": false,
+          "published_at": "2023-02-13T07:35:22Z",
+          "tag_name": "3.3.3",
+          "target_commitish": "master"
+        },
+        {
+          "body": "",
+          "created_at": "2023-02-11T14:54:46Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.3.2",
+          "id": 92112247,
+          "name": "3.3.2",
+          "prerelease": false,
+          "published_at": "2023-02-11T14:57:30Z",
+          "tag_name": "3.3.2",
+          "target_commitish": "master"
+        },
+        {
+          "body": "",
+          "created_at": "2023-02-11T13:43:48Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.3.1",
+          "id": 92110672,
+          "name": "version 3.3.1",
+          "prerelease": false,
+          "published_at": "2023-02-11T13:47:39Z",
+          "tag_name": "3.3.1",
+          "target_commitish": "master"
+        },
+        {
+          "body": "",
+          "created_at": "2022-10-10T02:21:43Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.2.10",
+          "id": 79385031,
+          "name": "3.2.10",
+          "prerelease": false,
+          "published_at": "2022-10-10T02:22:29Z",
+          "tag_name": "3.2.10",
+          "target_commitish": "master"
+        },
+        {
+          "body": "",
+          "created_at": "2022-08-30T02:25:15Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.2.8",
+          "id": 75730220,
+          "name": "3.2.8",
+          "prerelease": false,
+          "published_at": "2022-08-30T06:37:25Z",
+          "tag_name": "3.2.8",
+          "target_commitish": "master"
+        },
+        {
+          "body": "",
+          "created_at": "2022-08-25T09:39:25Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.2.7",
+          "id": 75323492,
+          "name": "3.2.7",
+          "prerelease": false,
+          "published_at": "2022-08-25T09:40:59Z",
+          "tag_name": "3.2.7",
+          "target_commitish": "master"
+        },
+        {
+          "body": "fix some device record audio failed",
+          "created_at": "2022-08-05T08:50:24Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.2.6",
+          "id": 73762826,
+          "name": "3.2.6",
+          "prerelease": false,
+          "published_at": "2022-08-05T14:43:27Z",
+          "tag_name": "3.2.6",
+          "target_commitish": "master"
+        },
+        {
+          "body": "support camera configures, like zoom/sharpness etc.",
+          "created_at": "2022-08-04T08:38:25Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.2.5",
+          "id": 73617799,
+          "name": "3.2.5",
+          "prerelease": false,
+          "published_at": "2022-08-04T08:39:38Z",
+          "tag_name": "3.2.5",
+          "target_commitish": "master"
+        },
+        {
+          "body": "1. fix some bugs\r\n2. fix Android S+ PendingIntent  expcetion",
+          "created_at": "2022-07-28T02:35:58Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.2.4",
+          "id": 73019759,
+          "name": "3.2.4",
+          "prerelease": false,
+          "published_at": "2022-07-28T02:37:47Z",
+          "tag_name": "3.2.4",
+          "target_commitish": "master"
+        },
+        {
+          "body": "",
+          "created_at": "2022-07-26T08:08:49Z",
+          "draft": false,
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.2.3",
+          "id": 72836158,
+          "name": "3.2.3",
+          "prerelease": false,
+          "published_at": "2022-07-26T09:23:08Z",
+          "tag_name": "3.2.3",
+          "target_commitish": "master"
+        }
+      ],
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/releases?per_page=10"
+    },
+    {
+      "connector_text_sha256": "e704b015580f96a8985af722e9d10831aa0024a93028d003ad5415ea566a4866",
+      "connector_text_size": 2053,
+      "kind": "latest",
+      "projection": {
+        "body": "",
+        "created_at": "2023-02-13T07:32:47Z",
+        "draft": false,
+        "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/releases/tag/3.3.3",
+        "id": 92179169,
+        "name": "version 3.3.3",
+        "prerelease": false,
+        "published_at": "2023-02-13T07:35:22Z",
+        "tag_name": "3.3.3",
+        "target_commitish": "master"
+      },
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/releases/latest"
+    },
+    {
+      "connector_text_sha256": "560748db347245f43f5af35fcfb53411100caf5f07cdef596e6d2730678815be",
+      "connector_text_size": 28201,
+      "kind": "tagrefs",
+      "projection": [
+        {
+          "object": {
+            "sha": "4566a85e6143dba378c6987f3f0f3292d2c08b89",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.3.3"
+        },
+        {
+          "object": {
+            "sha": "90cc8a62e05059319487692e8b0fc0435dd8817d",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.3.4"
+        },
+        {
+          "object": {
+            "sha": "b8a135e08180bf4ef37b4768d7b856829df37752",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.3.5"
+        },
+        {
+          "object": {
+            "sha": "4473547e1e1abbc8846f3ec354c5d04737a259d9",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.3.6"
+        },
+        {
+          "object": {
+            "sha": "f59f64be155aea0e0cafaa90804b9ce30eab2c1a",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.3.7"
+        },
+        {
+          "object": {
+            "sha": "db0e66d74dee28a003a4de46ce468c1d90101a08",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.3.8"
+        },
+        {
+          "object": {
+            "sha": "be8986d2edfc50a2b5957de052c50af953f04f1e",
+            "type": "commit"
+          },
+          "ref": "refs/tags/1.3.9"
+        },
+        {
+          "object": {
+            "sha": "1a85002fa86bda0d3e7a1531f33447a1227a376b",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.0"
+        },
+        {
+          "object": {
+            "sha": "2a54ac54e88eb8a3690b26cd5f9b11646dfe2e44",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.0.1"
+        },
+        {
+          "object": {
+            "sha": "e07b26472a74f248917d2e566c1f9c78e1651e68",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.0.2"
+        },
+        {
+          "object": {
+            "sha": "9b7838c55f2fe4b18957cef5a6efbf03db5effaf",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.0.3"
+        },
+        {
+          "object": {
+            "sha": "b5a11fd5e38a842135137d54a5066e6545397215",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.1.0"
+        },
+        {
+          "object": {
+            "sha": "fb43197f4e37c45b22630eed54ad79c03c56eb04",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.1.1"
+        },
+        {
+          "object": {
+            "sha": "f6dfe16101bd3c954d5a6772d7250ea63b6225a6",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.1.2"
+        },
+        {
+          "object": {
+            "sha": "bf84cc1f79302ee34d869725c7874c7a099347f8",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.1.3"
+        },
+        {
+          "object": {
+            "sha": "57765b67659bdc0c7f8068ac4c31bec7206ead50",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.1.4"
+        },
+        {
+          "object": {
+            "sha": "8e8b761083a9b3e1e760159eb2bb7561ea8c6c43",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.1.5"
+        },
+        {
+          "object": {
+            "sha": "002f0abf728ce2e9812fdfe8e1595e0defe84ee3",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.0"
+        },
+        {
+          "object": {
+            "sha": "e35df065a220d9a37c9140da746525670ae60ce1",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.1"
+        },
+        {
+          "object": {
+            "sha": "a8537c29299537293d3f8e71c02ccfab29e8542c",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.2"
+        },
+        {
+          "object": {
+            "sha": "2c74e715a01a4eda539bee471a68fbf40034449c",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.3"
+        },
+        {
+          "object": {
+            "sha": "35254c5d4e969247c5a76bad555f7c44dc61a85b",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.4"
+        },
+        {
+          "object": {
+            "sha": "5c62614b16c5f91eeca9ac0790a6eddb063f985d",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.5"
+        },
+        {
+          "object": {
+            "sha": "b73b41f26d7b18ccd13f02aa0ce598060f9d9eb3",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.6"
+        },
+        {
+          "object": {
+            "sha": "8f7b9e6f29356a4a47a19b7d156550aaa106b4d9",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.7"
+        },
+        {
+          "object": {
+            "sha": "b4a1b8f5db68f5e1a920067fbf2e96a67a8ee1db",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.2.8"
+        },
+        {
+          "object": {
+            "sha": "9092e8c9e041471f520f31c2d716f0f14b44d7fb",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.0"
+        },
+        {
+          "object": {
+            "sha": "7958ab149a5828582c647aa18b150ad3fa421689",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.1"
+        },
+        {
+          "object": {
+            "sha": "e405a16ebe3a3effdb519c34bb7086535ec7384e",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.2"
+        },
+        {
+          "object": {
+            "sha": "85279c014fb0f296cbf6aee5714edcdbc45319db",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.3"
+        },
+        {
+          "object": {
+            "sha": "f73d22c00a251c570ff7851300f1add9e871dde0",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.4"
+        },
+        {
+          "object": {
+            "sha": "27d3a25473db4d34d9cf13b75a68c162b43f71fb",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.5"
+        },
+        {
+          "object": {
+            "sha": "3b1c2cae3b69a915d7887d66f58b407ac7ecef0a",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.6"
+        },
+        {
+          "object": {
+            "sha": "8edbe9b16a12d351820572e06441ef6cf4524836",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.7"
+        },
+        {
+          "object": {
+            "sha": "2fd133bd9f19b0eeb6c594f1c8f434dd6f844dc6",
+            "type": "commit"
+          },
+          "ref": "refs/tags/2.3.8"
+        },
+        {
+          "object": {
+            "sha": "16fbd4a993f71c57dc9a854ffab019f82533ee85",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1"
+        },
+        {
+          "object": {
+            "sha": "7b35f4ee9e476ccde7cd109f6ae548d20047128e",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.0"
+        },
+        {
+          "object": {
+            "sha": "3a7792f15a20eef9f2cf5f168e9f1707de7a1acd",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.1"
+        },
+        {
+          "object": {
+            "sha": "5dcaf44ee290a3ba9ffa9c00672abd9af4adbf36",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.2"
+        },
+        {
+          "object": {
+            "sha": "3af9519b34710a4a6bf1b362db3769fa954f533e",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.3"
+        },
+        {
+          "object": {
+            "sha": "de608ff84ef14154a5612a3f15933eb839883721",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.5"
+        },
+        {
+          "object": {
+            "sha": "04ef036697e1dc6538ed638ed0c9d6666ce25d06",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.6"
+        },
+        {
+          "object": {
+            "sha": "109a8e6ead092049fe2f3dcb7866e73c0f498a7b",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.7"
+        },
+        {
+          "object": {
+            "sha": "22f117c6ee382dca5124edfde83468b0efae0905",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.1.8"
+        },
+        {
+          "object": {
+            "sha": "c64a0a3cc5cfac54c44537c8722b3745bf087534",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.0"
+        },
+        {
+          "object": {
+            "sha": "24c7b7d387ef6eae9de93e0105c8f4b1084e790b",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.1"
+        },
+        {
+          "object": {
+            "sha": "cc8a202f3fba31f448b2521b98e6e6ec2a7ec076",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.10"
+        },
+        {
+          "object": {
+            "sha": "1fddd12c678233c5663634ccb4583c79ffa43b9d",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.2"
+        },
+        {
+          "object": {
+            "sha": "b811c7aa9a64af7ec3a0c1df4aa92223be305f09",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.3"
+        },
+        {
+          "object": {
+            "sha": "9c29f6a7dac4cb376dfda7eb373b592390bbc71f",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.4"
+        },
+        {
+          "object": {
+            "sha": "31412b4d7598f09e5e636e5de1dbef054c9f9f2e",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.5"
+        },
+        {
+          "object": {
+            "sha": "f58a9c490fd6bb706efe73efaca916f7fe23f92f",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.6"
+        },
+        {
+          "object": {
+            "sha": "7fa7a99996e242a83c2c6258009b590d6ad51f8d",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.7"
+        },
+        {
+          "object": {
+            "sha": "8d4851a9132b565566f932a6c82c701dd4175068",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.8"
+        },
+        {
+          "object": {
+            "sha": "5689b65137150b3aedcec47667bbcac655ab0645",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.2.9"
+        },
+        {
+          "object": {
+            "sha": "ae646ab7d0e0a03e4f49a9c439cc06fb0bcf133f",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.3.0"
+        },
+        {
+          "object": {
+            "sha": "66f6c7c45fc9a206e67662e975cf738acb239d4c",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.3.1"
+        },
+        {
+          "object": {
+            "sha": "c28525b5058a27d12087b0b551d451d7dda0f69b",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.3.2"
+        },
+        {
+          "object": {
+            "sha": "cd2a301ff5bd76f70930fccfe4b8e1073edc51f7",
+            "type": "commit"
+          },
+          "ref": "refs/tags/3.3.3"
+        },
+        {
+          "object": {
+            "sha": "0b2ea3ac809fc8d74693324540c8f40ae299d914",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.0.0"
+        },
+        {
+          "object": {
+            "sha": "11584e9b8876d6e2c3a0403bb0b4023e6e950457",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.0.1"
+        },
+        {
+          "object": {
+            "sha": "b5a12a116016e04d4e69d46a9a8785b13b9dced6",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.0.2"
+        },
+        {
+          "object": {
+            "sha": "b48e7919dfc7b63bd43e58ab49f4d308fe28a91e",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.0.3"
+        },
+        {
+          "object": {
+            "sha": "ed01595195aeeaf08361e225817146b4963916a7",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.0.4"
+        },
+        {
+          "object": {
+            "sha": "a411918d28c807f355fcfce45c62eb8e3318b5bb",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.05"
+        },
+        {
+          "object": {
+            "sha": "9fb33c83078e0282beef7554bb881bc5d1a2bc69",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.06"
+        },
+        {
+          "object": {
+            "sha": "33810d538462c53599d8177868d2a14a8d79d739",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.1.0"
+        },
+        {
+          "object": {
+            "sha": "15d33ce804ba1e94b03ee64d7b6a906349b8844b",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.1.1"
+        },
+        {
+          "object": {
+            "sha": "0f6f4f5da97f8fc09c111f3a640e35ec61dd8a55",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.2.0"
+        },
+        {
+          "object": {
+            "sha": "764b71daacaecefa37db6b122b4dfd3ec9dbbe0c",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.2.1"
+        },
+        {
+          "object": {
+            "sha": "60972afcffe7eca1089bef1a060594b0081780d1",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.2.2"
+        },
+        {
+          "object": {
+            "sha": "6a66709ca893026b7c61d73a338ff5134f8162c2",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.2.3"
+        },
+        {
+          "object": {
+            "sha": "086dee5c9530d3c79a108994c26391b3d6aec989",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.2.4"
+        },
+        {
+          "object": {
+            "sha": "15e7ef3aa45eca37d45e57d9dafe8251ddce03c7",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.2.5"
+        },
+        {
+          "object": {
+            "sha": "82b2e8f68bd47dc9f417bc89dd3889e779faf3f7",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.3.0"
+        },
+        {
+          "object": {
+            "sha": "21c2c2f45babd940d3f38e5c44e5ad26b01daced",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.3.1"
+        },
+        {
+          "object": {
+            "sha": "1bd2eb24ee4b3566a2249fbbc8ffa55f75901eca",
+            "type": "commit"
+          },
+          "ref": "refs/tags/v1.3.2"
+        }
+      ],
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/git/matching-refs/tags/"
+    },
+    {
+      "connector_text_sha256": "c797a1a99b98be41ae00ff5749dcaffaf40533eb8112b4fc6a615b896ca35ec0",
+      "connector_text_size": 39090,
+      "kind": "recent",
+      "projection": [
+        {
+          "author_date": "2024-09-02T07:43:31Z",
+          "committer_date": "2024-09-02T07:43:31Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+          "message": "Merge pull request #668 from mahmoudramzy400/master\n\nFix bug on android 14  by adding this flag",
+          "parents": [
+            "53c8f3929ac87bc99ba630311df54b3f3c2dfcc8",
+            "3fd27aaf073356e2223ac26efa79e83b89906d67"
+          ],
+          "sha": "426ed0a5da2c826197761cc5a89ba3ae9c52bd7c",
+          "tree_sha": "ca3b1f1af868196c1de3e4297d82196c907b269e"
+        },
+        {
+          "author_date": "2024-09-02T07:43:19Z",
+          "committer_date": "2024-09-02T07:43:19Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/3fd27aaf073356e2223ac26efa79e83b89906d67",
+          "message": "Merge branch 'master' into master",
+          "parents": [
+            "b76acea26b8d5f9880a66990474be2cae38eb34c",
+            "53c8f3929ac87bc99ba630311df54b3f3c2dfcc8"
+          ],
+          "sha": "3fd27aaf073356e2223ac26efa79e83b89906d67",
+          "tree_sha": "ca3b1f1af868196c1de3e4297d82196c907b269e"
+        },
+        {
+          "author_date": "2024-09-02T07:13:16Z",
+          "committer_date": "2024-09-02T07:13:16Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/53c8f3929ac87bc99ba630311df54b3f3c2dfcc8",
+          "message": "Merge pull request #636 from RobbieElias/master\n\nFix no frames on format change",
+          "parents": [
+            "f6878e4be1e304b2b4af5d967435f847e74f59dd",
+            "1c08dc57ae5685cd7375966dd07dcd44f1053805"
+          ],
+          "sha": "53c8f3929ac87bc99ba630311df54b3f3c2dfcc8",
+          "tree_sha": "a1a159870841cd58b296ff59cef2f6dfb612e385"
+        },
+        {
+          "author_date": "2024-09-02T07:12:07Z",
+          "committer_date": "2024-09-02T07:12:07Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/f6878e4be1e304b2b4af5d967435f847e74f59dd",
+          "message": "Merge pull request #647 from joaompneves/fix-crash-android-14\n\nFix crash on android 14",
+          "parents": [
+            "ebfd9437eb6e23e30f583a0151474b2fa6267fca",
+            "bd3c69023a9c278a6fe0ad88945307ca667a7b24"
+          ],
+          "sha": "f6878e4be1e304b2b4af5d967435f847e74f59dd",
+          "tree_sha": "7a2140eccd092f6fe96610d2f81a013bf7218ed2"
+        },
+        {
+          "author_date": "2024-06-10T10:06:50Z",
+          "committer_date": "2024-06-10T10:06:50Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/b76acea26b8d5f9880a66990474be2cae38eb34c",
+          "message": "Fix bug on android 14  by adding this flag\nPendingIntent.FLAG_IMMUTABLE\nto USBMonitor",
+          "parents": [
+            "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+          ],
+          "sha": "b76acea26b8d5f9880a66990474be2cae38eb34c",
+          "tree_sha": "f37f4b0ba26d9c23a35aa1253f02152fb885adff"
+        },
+        {
+          "author_date": "2024-03-11T21:09:02Z",
+          "committer_date": "2024-03-11T21:09:02Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/bd3c69023a9c278a6fe0ad88945307ca667a7b24",
+          "message": "Fix flag value",
+          "parents": [
+            "83d0438b5b43e84096bc46b0daeba4b7e13f24ed"
+          ],
+          "sha": "bd3c69023a9c278a6fe0ad88945307ca667a7b24",
+          "tree_sha": "7a2140eccd092f6fe96610d2f81a013bf7218ed2"
+        },
+        {
+          "author_date": "2024-03-10T12:20:13Z",
+          "committer_date": "2024-03-10T12:20:13Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/83d0438b5b43e84096bc46b0daeba4b7e13f24ed",
+          "message": "Move variable",
+          "parents": [
+            "71aa6e69e8570f30a760b24001c08e5022427fd6"
+          ],
+          "sha": "83d0438b5b43e84096bc46b0daeba4b7e13f24ed",
+          "tree_sha": "bb54b173694faddf017eb0a9a9377265edfc83ef"
+        },
+        {
+          "author_date": "2024-03-10T12:01:26Z",
+          "committer_date": "2024-03-10T12:01:26Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/71aa6e69e8570f30a760b24001c08e5022427fd6",
+          "message": "Fix crash on android 14",
+          "parents": [
+            "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+          ],
+          "sha": "71aa6e69e8570f30a760b24001c08e5022427fd6",
+          "tree_sha": "766b00fc68f6fc9003d212e33a3c1d016adfe0fc"
+        },
+        {
+          "author_date": "2024-01-17T01:03:25Z",
+          "committer_date": "2024-01-17T01:03:25Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/1c08dc57ae5685cd7375966dd07dcd44f1053805",
+          "message": "Fix no frames on format change",
+          "parents": [
+            "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+          ],
+          "sha": "1c08dc57ae5685cd7375966dd07dcd44f1053805",
+          "tree_sha": "407329e8486ff1860a006375d20b9deb11eba061"
+        },
+        {
+          "author_date": "2023-12-05T07:10:36Z",
+          "committer_date": "2023-12-05T07:10:36Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/ebfd9437eb6e23e30f583a0151474b2fa6267fca",
+          "message": "[opt] fix CameraActivity mCurrentCamera=null exception",
+          "parents": [
+            "fb93b736c3663a4a58630677050ff84d4a11538b"
+          ],
+          "sha": "ebfd9437eb6e23e30f583a0151474b2fa6267fca",
+          "tree_sha": "ec3638128ae75060a36bee7026a6ac1195cf08a8"
+        }
+      ],
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&per_page=10"
+    },
+    {
+      "connector_text_sha256": "5d621dda3cea069716cb9b074fd5dc1adcdab8d13f637f4c08f49a5ab8f46799",
+      "connector_text_size": 12307,
+      "kind": "native",
+      "projection": [
+        {
+          "author_date": "2024-01-17T01:03:25Z",
+          "committer_date": "2024-01-17T01:03:25Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/1c08dc57ae5685cd7375966dd07dcd44f1053805",
+          "message": "Fix no frames on format change",
+          "parents": [
+            "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+          ],
+          "sha": "1c08dc57ae5685cd7375966dd07dcd44f1053805",
+          "tree_sha": "407329e8486ff1860a006375d20b9deb11eba061"
+        },
+        {
+          "author_date": "2023-10-27T09:47:22Z",
+          "committer_date": "2023-10-27T09:47:22Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/fb93b736c3663a4a58630677050ff84d4a11538b",
+          "message": "[opt] fix video  recording continuity failed etc",
+          "parents": [
+            "9b0843ff75b120cdc2a05b154d19f6d7d9adfdee"
+          ],
+          "sha": "fb93b736c3663a4a58630677050ff84d4a11538b",
+          "tree_sha": "884527f9f9ce9a22789cc990b59e6a4cda0db6a9"
+        },
+        {
+          "author_date": "2023-02-11T14:54:46Z",
+          "committer_date": "2023-02-11T14:54:46Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/c28525b5058a27d12087b0b551d451d7dda0f69b",
+          "message": "[fix] jitpack build failed2",
+          "parents": [
+            "66f6c7c45fc9a206e67662e975cf738acb239d4c"
+          ],
+          "sha": "c28525b5058a27d12087b0b551d451d7dda0f69b",
+          "tree_sha": "265cebb863e14b9942badfb67c91848b6e485232"
+        },
+        {
+          "author_date": "2023-02-10T09:39:04Z",
+          "committer_date": "2023-02-10T09:39:04Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/829d32edf581bd9edf7766adfb1d30985f892db3",
+          "message": "[dev] support x86 & x86_64",
+          "parents": [
+            "ccdb068d3aa0e89ce0147ba82228f4c48752c2a4"
+          ],
+          "sha": "829d32edf581bd9edf7766adfb1d30985f892db3",
+          "tree_sha": "4d98320fa8545b41b1ea3bc4ffce7141fd97d742"
+        },
+        {
+          "author_date": "2022-09-14T10:22:09Z",
+          "committer_date": "2022-09-14T10:22:09Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/0781eb5c6fea87c69a81077c8bbc8564c39a15a3",
+          "message": "[dev] support record device mic(UAC)",
+          "parents": [
+            "cb97eed264f971fc8638b6b16dc5e1e4fb406ef0"
+          ],
+          "sha": "0781eb5c6fea87c69a81077c8bbc8564c39a15a3",
+          "tree_sha": "c99c399044cc1adc376ab11a44abf4998d03f374"
+        }
+      ],
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Fsrc%2Fmain%2Fjni&per_page=5"
+    },
+    {
+      "connector_text_sha256": "1e4b7a172d6a726ad4514febca2bc3dd99008f605a387e0340b71d9ff3901bf9",
+      "connector_text_size": 18523,
+      "kind": "usb",
+      "projection": [
+        {
+          "author_date": "2024-09-02T07:43:19Z",
+          "committer_date": "2024-09-02T07:43:19Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/3fd27aaf073356e2223ac26efa79e83b89906d67",
+          "message": "Merge branch 'master' into master",
+          "parents": [
+            "b76acea26b8d5f9880a66990474be2cae38eb34c",
+            "53c8f3929ac87bc99ba630311df54b3f3c2dfcc8"
+          ],
+          "sha": "3fd27aaf073356e2223ac26efa79e83b89906d67",
+          "tree_sha": "ca3b1f1af868196c1de3e4297d82196c907b269e"
+        },
+        {
+          "author_date": "2024-06-10T10:06:50Z",
+          "committer_date": "2024-06-10T10:06:50Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/b76acea26b8d5f9880a66990474be2cae38eb34c",
+          "message": "Fix bug on android 14  by adding this flag\nPendingIntent.FLAG_IMMUTABLE\nto USBMonitor",
+          "parents": [
+            "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+          ],
+          "sha": "b76acea26b8d5f9880a66990474be2cae38eb34c",
+          "tree_sha": "f37f4b0ba26d9c23a35aa1253f02152fb885adff"
+        },
+        {
+          "author_date": "2024-03-11T21:09:02Z",
+          "committer_date": "2024-03-11T21:09:02Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/bd3c69023a9c278a6fe0ad88945307ca667a7b24",
+          "message": "Fix flag value",
+          "parents": [
+            "83d0438b5b43e84096bc46b0daeba4b7e13f24ed"
+          ],
+          "sha": "bd3c69023a9c278a6fe0ad88945307ca667a7b24",
+          "tree_sha": "7a2140eccd092f6fe96610d2f81a013bf7218ed2"
+        },
+        {
+          "author_date": "2024-03-10T12:20:13Z",
+          "committer_date": "2024-03-10T12:20:13Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/83d0438b5b43e84096bc46b0daeba4b7e13f24ed",
+          "message": "Move variable",
+          "parents": [
+            "71aa6e69e8570f30a760b24001c08e5022427fd6"
+          ],
+          "sha": "83d0438b5b43e84096bc46b0daeba4b7e13f24ed",
+          "tree_sha": "bb54b173694faddf017eb0a9a9377265edfc83ef"
+        },
+        {
+          "author_date": "2024-03-10T12:01:26Z",
+          "committer_date": "2024-03-10T12:01:26Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/71aa6e69e8570f30a760b24001c08e5022427fd6",
+          "message": "Fix crash on android 14",
+          "parents": [
+            "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+          ],
+          "sha": "71aa6e69e8570f30a760b24001c08e5022427fd6",
+          "tree_sha": "766b00fc68f6fc9003d212e33a3c1d016adfe0fc"
+        }
+      ],
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Fsrc%2Fmain%2Fjava%2Fcom%2Fjiangdg%2Fusb%2FUSBMonitor.java&per_page=5"
+    },
+    {
+      "connector_text_sha256": "a10c21101cdc24eeffb9ea3d64a55f9a39075ab7e5f2bffef28ecfce2a325130",
+      "connector_text_size": 4433,
+      "kind": "uac",
+      "projection": [
+        {
+          "author_date": "2023-02-10T09:14:55Z",
+          "committer_date": "2023-02-10T09:14:55Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/ccdb068d3aa0e89ce0147ba82228f4c48752c2a4",
+          "message": "[dev] version 3.3.0 development",
+          "parents": [
+            "7a9a9cfc9c4810ddf26c4d218ccb50ce9aebaedb"
+          ],
+          "sha": "ccdb068d3aa0e89ce0147ba82228f4c48752c2a4",
+          "tree_sha": "713310e57131661d266ce17c4d46317259c1f90a"
+        },
+        {
+          "author_date": "2022-09-14T10:22:09Z",
+          "committer_date": "2022-09-14T10:22:09Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/0781eb5c6fea87c69a81077c8bbc8564c39a15a3",
+          "message": "[dev] support record device mic(UAC)",
+          "parents": [
+            "cb97eed264f971fc8638b6b16dc5e1e4fb406ef0"
+          ],
+          "sha": "0781eb5c6fea87c69a81077c8bbc8564c39a15a3",
+          "tree_sha": "c99c399044cc1adc376ab11a44abf4998d03f374"
+        },
+        {
+          "author_date": "2022-09-09T07:54:00Z",
+          "committer_date": "2022-09-09T07:54:00Z",
+          "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/cb97eed264f971fc8638b6b16dc5e1e4fb406ef0",
+          "message": "[opt] project structure optimization",
+          "parents": [
+            "5689b65137150b3aedcec47667bbcac655ab0645"
+          ],
+          "sha": "cb97eed264f971fc8638b6b16dc5e1e4fb406ef0",
+          "tree_sha": "7d9db6562a7f9df09d464e22bbfa4a9e39de246a"
+        }
+      ],
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits?sha=426ed0a5da2c826197761cc5a89ba3ae9c52bd7c&path=libuvc%2Fsrc%2Fmain%2Fjava%2Fcom%2Fjiangdg%2Fuac&per_page=5"
+    },
+    {
+      "connector_text_sha256": "73d0e8d5e211f3a7cad2a9771253b7886851fa3ae73200e766a4631d8e9a3c79",
+      "connector_text_size": 374929,
+      "kind": "tree",
+      "projection": {
+        "full_entry_count": 1379,
+        "selected_entries": [
+          {
+            "mode": "100644",
+            "path": ".gitignore",
+            "sha": "46dbe0b5f05b5a281d57674ae2bbbd2a2ff54974",
+            "size": 137,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "FAQ.md",
+            "sha": "ae36cc4607f115c9c1f0ce95f43294428da275cb",
+            "size": 1677,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "LICENSE",
+            "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+            "size": 11357,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "README.md",
+            "sha": "c01fc4a6372403b3c73f0b252d6b1f60744734eb",
+            "size": 11497,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "VERSION.md",
+            "sha": "01fce6de96fd207d47039e570551921f428ba15e",
+            "size": 2170,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "app",
+            "sha": "da34bc90db1551697af972f74de9311bc66e6b59",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "build.gradle",
+            "sha": "0ee35c9171141a4c13b16c6fe27c13ae2b87f382",
+            "size": 1284,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "gradle.properties",
+            "sha": "e6e5dee34e172c51dd1b46dc0e52b628451e3723",
+            "size": 1145,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "gradle",
+            "sha": "ccba52355285b54db8d77f0dce9508ba2e3c93a1",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "gradlew",
+            "sha": "1852d6311d2b55dc6807266e49aa63fe25940eaf",
+            "size": 4972,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "gradlew.bat",
+            "sha": "72e7733d3ff834f7c487498b72d5a4b88a6f3d7e",
+            "size": 2315,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "images",
+            "sha": "2e2498ad318e7085fe06ee93fe8a899531d5f0a5",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "libausbc",
+            "sha": "17479c5d68bda6582ebc4146ed2946114df81331",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libausbc/src/main/java/com/jiangdg/ausbc/camera/CameraUVC.kt",
+            "sha": "002f9a7aa0a9815d15edbbfbc1d694bf9afc8e4f",
+            "size": 16820,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libausbc/src/main/java/com/jiangdg/ausbc/encode/audio/AudioStrategyUAC.kt",
+            "sha": "9ade4bb57832c72e78e253ced219a96c749889de",
+            "size": 3372,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libnative",
+            "sha": "3227653bc7cc4ee2363a75af1569344ac75c35cb",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvc",
+            "sha": "b5ae16a5351a42375e9d43b2a7ca275ce7e72577",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/build.gradle",
+            "sha": "3a89f05b9a68a236050e7ef770299773596ae58d",
+            "size": 2253,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvc/src/main/java/com/jiangdg/uac",
+            "sha": "f4ceb1fcd2be660673a250dab2f998b57c771a6b",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudio.java",
+            "sha": "d8c760fb27c30f66dc6a818bddafc03719dc7d10",
+            "size": 4321,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioCallBack.java",
+            "sha": "d5bac2bf211701130c53394fd58413e24c376276",
+            "size": 167,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/java/com/jiangdg/uac/UACAudioHandler.java",
+            "sha": "88ad4950767fd02d7c03b10f9e4cf2fa0e8f9a24",
+            "size": 10920,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/java/com/jiangdg/usb/USBMonitor.java",
+            "sha": "4134b117532bb8a43864baec9a515d2bca1e2dc1",
+            "size": 48308,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/java/com/jiangdg/uvc/UVCCamera.java",
+            "sha": "a5e576b8f8df5ac5651735c69122801c2cd47b12",
+            "size": 48534,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/Android.mk",
+            "sha": "eb8ddeec091f52713f26a5454b88a8f841651c1b",
+            "size": 283,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/Application.mk",
+            "sha": "6d7b33f440b124c3aa11c072c476344fa915da20",
+            "size": 1381,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvc/src/main/jni/UVCCamera",
+            "sha": "0d5c5086e51b3341aae4d3a86654550873d0e026",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/UVCCamera/UVCCamera.cpp",
+            "sha": "471556991e4401a5f2eed662ce57ddac77186070",
+            "size": 66146,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/UVCCamera/UVCPreview.cpp",
+            "sha": "584cb4019f8ea1ea9d85dcf4a51b21087c1735d7",
+            "size": 25476,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvc/src/main/jni/libjpeg-turbo-1.5.0",
+            "sha": "01e18f2e7acb9f2d5e67967568149ab04b4ff212",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvc/src/main/jni/libusb",
+            "sha": "8cbd47fbdb2f81215e35b680d052c76282f738e0",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libusb/android/jni/Android.mk",
+            "sha": "4952e87fd22e7574200d6c0c9343a27e08d86b99",
+            "size": 975,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libusb/android/jni/Android_original.mk",
+            "sha": "6a32b50149746bd7e4c781f9d78e7b53dbe72176",
+            "size": 973,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libusb/android/jni/Application.mk",
+            "sha": "f972a9e4298baa1a73b005df5d7a98cc6977366f",
+            "size": 1010,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libusb/android/jni/examples.mk",
+            "sha": "05609cc8e8738828fbf38c65f8d0e81aa1467688",
+            "size": 2612,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libusb/android/jni/libusb.mk",
+            "sha": "783be703edaaa84828e42aaffb02a76b7c69ffda",
+            "size": 2412,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libusb/android/jni/libusb_original.mk",
+            "sha": "d8db2a4003df5d5294e2d9574fc0d2c79d45ac94",
+            "size": 1889,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libusb/android/jni/tests.mk",
+            "sha": "93d55161bf96bf6cd8c9fcfbe8db6da18691c5d7",
+            "size": 1440,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvc/src/main/jni/libuvc",
+            "sha": "4e324ad9bdb61c5497810d6a7c5176cd5f09462e",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/libuvc/android/jni/Android.mk",
+            "sha": "c7adc634199f1d075ca3b1cb4aed306efa9c321a",
+            "size": 3167,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/localdefines.h",
+            "sha": "99d37eda7a52ec3756b126713004effb66f518ed",
+            "size": 2408,
+            "type": "blob"
+          },
+          {
+            "mode": "040000",
+            "path": "libuvc/src/main/jni/rapidjson",
+            "sha": "b3eb1b5a591b65f9df3b2d2020916bf138896588",
+            "size": null,
+            "type": "tree"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jni/utilbase.h",
+            "sha": "50ff22a442e2747ae92c688ed10cd8a5b84fe5e8",
+            "size": 8221,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/arm64-v8a/libUACAudio.so",
+            "sha": "67d3f29decb2594babb06370387deea105ebba18",
+            "size": 22432,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/arm64-v8a/libUVCCamera.so",
+            "sha": "f1435bb131dfcfed354d9e1724405f64c65be8ae",
+            "size": 168904,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/arm64-v8a/libjpeg-turbo1500.so",
+            "sha": "809079942a1395e92f2bb69cc87a192557c3fdf9",
+            "size": 333928,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/arm64-v8a/libusb100.so",
+            "sha": "f4fcc0170279f636cb23eaf4deecd810700065f6",
+            "size": 108496,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/arm64-v8a/libuvc.so",
+            "sha": "f9b9b6e14ec14144f8535f06e2e1188fd87622df",
+            "size": 96504,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/armeabi-v7a/libUACAudio.so",
+            "sha": "1d85d6f9fc2843b48fe6b3941d47abdff6b8d330",
+            "size": 26208,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/armeabi-v7a/libUVCCamera.so",
+            "sha": "c5589c72593b5a7ed9de26fde7428666c130ef3a",
+            "size": 154736,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/armeabi-v7a/libjpeg-turbo1500.so",
+            "sha": "5bc114a983864330d147cc400ff793ef12d0fbea",
+            "size": 317220,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/armeabi-v7a/libusb100.so",
+            "sha": "611e2047c004d08554c108c7ade7b4af33925775",
+            "size": 108168,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/armeabi-v7a/libuvc.so",
+            "sha": "5f1a42dcd2fb016266a5e6d9d98a96393f8e8389",
+            "size": 104304,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86/libUACAudio.so",
+            "sha": "97608acbd5f14a068af72dc464565c6732be92e1",
+            "size": 17952,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86/libUVCCamera.so",
+            "sha": "09b47d6c0397159e907d8d0a2928343256bff7c5",
+            "size": 158768,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86/libjpeg-turbo1500.so",
+            "sha": "531ba729e110455676130d46fe698d7396109c2e",
+            "size": 554724,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86/libusb100.so",
+            "sha": "b7af58af5b7aa243461344dd112c9e3da884858f",
+            "size": 99912,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86/libuvc.so",
+            "sha": "f700102429a59a1234f0aad4d796eea77bc8d55f",
+            "size": 108336,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86_64/libUACAudio.so",
+            "sha": "ed02062380e2d99b422c45fa7f0439890a1ba42c",
+            "size": 22696,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86_64/libUVCCamera.so",
+            "sha": "d97fcdbe5898bcb982372337a0df211d7a1deab6",
+            "size": 177360,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86_64/libjpeg-turbo1500.so",
+            "sha": "d8b7b9cb1bb982ba0447a803f85f743b7e6ffd4c",
+            "size": 526704,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86_64/libusb100.so",
+            "sha": "9a03b5f2e6beed605af5e8723b723f651435b228",
+            "size": 108752,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "libuvc/src/main/jniLibs/x86_64/libuvc.so",
+            "sha": "ff0968fd55f6913af8a8d7eecbca283eef710303",
+            "size": 109056,
+            "type": "blob"
+          },
+          {
+            "mode": "100644",
+            "path": "settings.gradle",
+            "sha": "2e2b475c8bff027eb5b0e7198b39938029fa3a3c",
+            "size": 96,
+            "type": "blob"
+          }
+        ],
+        "sha": "ca3b1f1af868196c1de3e4297d82196c907b269e",
+        "truncated": false
+      },
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/git/trees/ca3b1f1af868196c1de3e4297d82196c907b269e?recursive=1"
+    },
+    {
+      "connector_text_sha256": "76f7dea0225e819bcefcf18c492e4f46c122d94670fe069be96209908758f4e7",
+      "connector_text_size": 5637,
+      "kind": "patch-format",
+      "projection": {
+        "author_date": "2024-01-17T01:03:25Z",
+        "committer_date": "2024-01-17T01:03:25Z",
+        "files": [
+          {
+            "additions": 1,
+            "deletions": 0,
+            "filename": "libuvc/src/main/jni/libuvc/src/stream.c",
+            "patch": "@@ -990,6 +990,7 @@ static void _uvc_stream_callback(struct libusb_transfer *transfer) {\n \t\t// pass through to following lines\n \tcase LIBUSB_TRANSFER_CANCELLED:\n \tcase LIBUSB_TRANSFER_ERROR:\n+\t\tlibusb_clear_halt(strmh->devh->usb_devh, strmh->stream_if->bEndpointAddress);\n \t\tUVC_DEBUG(\"not retrying transfer, status = %d\", transfer->status);\n //\t\tMARK(\"not retrying transfer, status = %d\", transfer->status);\n //\t\t_uvc_delete_transfer(transfer);",
+            "sha": "2dda28300a25c8d3307f2e69a001e78d803ca772",
+            "status": "modified"
+          }
+        ],
+        "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/1c08dc57ae5685cd7375966dd07dcd44f1053805",
+        "message": "Fix no frames on format change",
+        "parents": [
+          "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+        ],
+        "sha": "1c08dc57ae5685cd7375966dd07dcd44f1053805",
+        "tree_sha": "407329e8486ff1860a006375d20b9deb11eba061"
+      },
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/1c08dc57ae5685cd7375966dd07dcd44f1053805"
+    },
+    {
+      "connector_text_sha256": "b61cc9521bc7aa9ff5eeb391d55d497ad0f120aa8a732e5baa749b933b790ba5",
+      "connector_text_size": 5046,
+      "kind": "patch-usb",
+      "projection": {
+        "author_date": "2024-06-10T10:06:50Z",
+        "committer_date": "2024-06-10T10:06:50Z",
+        "files": [
+          {
+            "additions": 1,
+            "deletions": 1,
+            "filename": "libuvc/src/main/java/com/jiangdg/usb/USBMonitor.java",
+            "patch": "@@ -178,7 +178,7 @@ public synchronized void register() throws IllegalStateException {\n \t\t\t\t\t// when using PendingIntent.FLAG_IMMUTABLE\n \t\t\t\t\t// because it means Intent can't be modified anywhere -- jiangdg/20220929\n \t\t\t\t\tint PENDING_FLAG_IMMUTABLE = 1<<25;\n-\t\t\t\t\tmPermissionIntent = PendingIntent.getBroadcast(context, 0, new Intent(ACTION_USB_PERMISSION), PENDING_FLAG_IMMUTABLE);\n+\t\t\t\t\tmPermissionIntent = PendingIntent.getBroadcast(context, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);\n \t\t\t\t} else {\n \t\t\t\t\tmPermissionIntent = PendingIntent.getBroadcast(context, 0, new Intent(ACTION_USB_PERMISSION), 0);\n \t\t\t\t}",
+            "sha": "9c3c58299189b8965c0e85433ee14f6865542b98",
+            "status": "modified"
+          }
+        ],
+        "html_url": "https://github.com/jiangdongguo/AndroidUSBCamera/commit/b76acea26b8d5f9880a66990474be2cae38eb34c",
+        "message": "Fix bug on android 14  by adding this flag\nPendingIntent.FLAG_IMMUTABLE\nto USBMonitor",
+        "parents": [
+          "ebfd9437eb6e23e30f583a0151474b2fa6267fca"
+        ],
+        "sha": "b76acea26b8d5f9880a66990474be2cae38eb34c",
+        "tree_sha": "f37f4b0ba26d9c23a35aa1253f02152fb885adff"
+      },
+      "repo": "jiangdongguo/AndroidUSBCamera",
+      "url": "https://api.github.com/repos/jiangdongguo/AndroidUSBCamera/commits/b76acea26b8d5f9880a66990474be2cae38eb34c"
+    }
+  ],
+  "schema": 1
+}

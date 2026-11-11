@@ -1,0 +1,467 @@
+{
+  "schema": 1,
+  "observed_utc_date": "2026-11-10",
+  "scope": "Fixed official release metadata and selected text source files; not a complete source/package or build lock",
+  "projects": {
+    "libusb": {
+      "tag": "v1.0.30",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f"
+    },
+    "libuvc": {
+      "tag": "v0.0.9",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957"
+    }
+  },
+  "inputs": [
+    {
+      "name": "libusb-commit.json",
+      "url": "https://api.github.com/repos/libusb/libusb/git/commits/87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "bytes": 1139,
+      "sha256": "b867fafe29c845f7f66c23889b434ebe58776a9e74e80950da2922f8d07e4ab7"
+    },
+    {
+      "name": "libusb-release.json",
+      "url": "https://api.github.com/repos/libusb/libusb/releases/323975582",
+      "bytes": 11511,
+      "sha256": "bfdd1e670e68a4f9eabe99f319109b753ae8842ae2391ccd97418bd66cef556a"
+    },
+    {
+      "name": "libusb-tag.json",
+      "url": "https://api.github.com/repos/libusb/libusb/git/ref/tags/v1.0.30",
+      "bytes": 337,
+      "sha256": "5e2e2d63022bd63e3aace50c4f8af0028a1a37e039e1d5696b52f09422d03290"
+    },
+    {
+      "name": "libusb-tree.json",
+      "url": "https://api.github.com/repos/libusb/libusb/git/trees/1dab476e854bb3605113e4ff3e78f9130aac5d95?recursive=1",
+      "bytes": 42820,
+      "sha256": "efba3c77e11c1344f701d124551b1496099654ff031316f6a76ddbb9a269d43d"
+    },
+    {
+      "name": "libusb/.github/workflows/android.yml",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/.github/workflows/android.yml",
+      "bytes": 1610,
+      "sha256": "176bc72a71d85bb99f98065d06b999ccf59435474410f2321b4e9482901ceda0",
+      "git_blob_sha1": "6aa062a7e50dc099ac618a612bf441a6d74e0a90",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": ".github/workflows/android.yml"
+    },
+    {
+      "name": "libusb/COPYING",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/COPYING",
+      "bytes": 26436,
+      "sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a",
+      "git_blob_sha1": "5ab7695ab8cabe0c5c8a814bb0ab1e8066578fbb",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "COPYING"
+    },
+    {
+      "name": "libusb/android/README",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/android/README",
+      "bytes": 4804,
+      "sha256": "0bdd9a4efb556105693121aa9bd57d9c63eb5fc4e2a64fb8164b4fa69744990e",
+      "git_blob_sha1": "4af4c3d4b26d1859478941b8e0f1ac198adcb940",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "android/README"
+    },
+    {
+      "name": "libusb/android/config.h",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/android/config.h",
+      "bytes": 1961,
+      "sha256": "3ecaf0bf1970b4ff2e67e60cb604529666800785038f3630d102fff927d9ca46",
+      "git_blob_sha1": "1092f65e51ccc5047a30de5e2e4a95cd942e636e",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "android/config.h"
+    },
+    {
+      "name": "libusb/android/examples/unrooted_android.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/android/examples/unrooted_android.c",
+      "bytes": 11118,
+      "sha256": "eda3792a2aabd5f1210a82edc247bda281f45f9e5225495536dd99f1ef41ed5a",
+      "git_blob_sha1": "5134c54e0810fd4503d90c3fde5551ab7eb5dfbb",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "android/examples/unrooted_android.c"
+    },
+    {
+      "name": "libusb/android/jni/Android.mk",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/android/jni/Android.mk",
+      "bytes": 974,
+      "sha256": "2419fbe06b654a0ad0283c2a6639b2b3502bf48b584f0fd3e31f4b8a159a2b93",
+      "git_blob_sha1": "29146b2982e2fd4f9f39566a1d593bc03d0984a7",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "android/jni/Android.mk"
+    },
+    {
+      "name": "libusb/android/jni/Application.mk",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/android/jni/Application.mk",
+      "bytes": 1330,
+      "sha256": "b07b54e7d193d57e02ae25db71d9333026f13bafb9e473081f9bd7ae0ec4feaa",
+      "git_blob_sha1": "c113726328feb458d2c94e406a46728e795313e8",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "android/jni/Application.mk"
+    },
+    {
+      "name": "libusb/android/jni/libusb.mk",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/android/jni/libusb.mk",
+      "bytes": 1996,
+      "sha256": "ea80ada1ec9d777bd8ff0139eb787dc048eb7a9bbd18bf881ce1dc9ac54d5bbe",
+      "git_blob_sha1": "8786626eb88718bd55e7de9df77903317ff8f133",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "android/jni/libusb.mk"
+    },
+    {
+      "name": "libusb/libusb/core.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/core.c",
+      "bytes": 108326,
+      "sha256": "33db091fdf75b690f9c5daf65ca8e3124978e897c2824d97fbc97567afea1d7b",
+      "git_blob_sha1": "507066af16560b2ea1bf564b8aac58f6fcb30b68",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/core.c"
+    },
+    {
+      "name": "libusb/libusb/descriptor.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/descriptor.c",
+      "bytes": 55764,
+      "sha256": "4e80077f28a033ba07befceac0347a64ea0e23c34c93b96cfaf8b188d69e401d",
+      "git_blob_sha1": "15130e658956935bddeaa84e7051e0d2f2ab151e",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/descriptor.c"
+    },
+    {
+      "name": "libusb/libusb/hotplug.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/hotplug.c",
+      "bytes": 15858,
+      "sha256": "7cf1e723dbae5427dd93fe8419d8efa3f3502d6def30a763b8c210e9780529fb",
+      "git_blob_sha1": "026e11d5a39ac1826bf8cad0c8e0d66e198e3fb2",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/hotplug.c"
+    },
+    {
+      "name": "libusb/libusb/io.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/io.c",
+      "bytes": 112226,
+      "sha256": "c83a9e14b9ff8b9566e42d23d1e90c919e223fd1e04721c5ca1a3aff13239a3d",
+      "git_blob_sha1": "3dfc6c64b23e422fc446a13544405aca354d0675",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/io.c"
+    },
+    {
+      "name": "libusb/libusb/libusb.h",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/libusb.h",
+      "bytes": 87738,
+      "sha256": "a61260ab145b051b86df2b0575956f01810190abe2c7df6aca831c33bdc8082c",
+      "git_blob_sha1": "c641955f8b12321881daaada5abb2d4d6a7db2e8",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/libusb.h"
+    },
+    {
+      "name": "libusb/libusb/libusbi.h",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/libusbi.h",
+      "bytes": 54908,
+      "sha256": "cc234f9532988e492459b877cfd2e5e90704555a2a0a5310ee4add39627c7ed9",
+      "git_blob_sha1": "0fcbdd200132e6c7254dcc0c45a2174c4effae1b",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/libusbi.h"
+    },
+    {
+      "name": "libusb/libusb/os/events_posix.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/events_posix.c",
+      "bytes": 9187,
+      "sha256": "aabddcc6ca86faba726ca87862eef9fc5d3b3168faef99c5be22827ac5b66ec0",
+      "git_blob_sha1": "bf984b91a68d0034012ac8df4176d3f49256cb69",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/os/events_posix.c"
+    },
+    {
+      "name": "libusb/libusb/os/linux_netlink.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/linux_netlink.c",
+      "bytes": 10377,
+      "sha256": "6ad9b928501ad36dd9fffdbe713a9cdd9d4533b8324190bd060001528d8374f0",
+      "git_blob_sha1": "899084f222711db823cc0362a137360a42377354",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/os/linux_netlink.c"
+    },
+    {
+      "name": "libusb/libusb/os/linux_usbfs.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/linux_usbfs.c",
+      "bytes": 81273,
+      "sha256": "ac4401cec575cc2f12b71377cced5e5943e72366eedeffbe42e951134b26bd54",
+      "git_blob_sha1": "74e73f9a81091f854167c6fe4a40b104074bdc22",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/os/linux_usbfs.c"
+    },
+    {
+      "name": "libusb/libusb/os/threads_posix.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/os/threads_posix.c",
+      "bytes": 3319,
+      "sha256": "779daa724575cd82c607563c9fe396b53d6f20c6a512444661e29ac30b82210a",
+      "git_blob_sha1": "786a334999d00c98bd41fbc201740feddaf3e0c2",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/os/threads_posix.c"
+    },
+    {
+      "name": "libusb/libusb/strerror.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/strerror.c",
+      "bytes": 8559,
+      "sha256": "17ee9b6cf5b07b39adce9806339799a5085fde8c5f17ed86af324b856ca7d1ec",
+      "git_blob_sha1": "eb355034b198fa04178456f9146999b34b70419c",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/strerror.c"
+    },
+    {
+      "name": "libusb/libusb/sync.c",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/sync.c",
+      "bytes": 13110,
+      "sha256": "3bf6e788084956a3226933580f2cb2957c2de9e0a2ebeeec1a26e6c7529bfa68",
+      "git_blob_sha1": "733927d9622536a6f28c39c380d5ce457019ff3d",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/sync.c"
+    },
+    {
+      "name": "libusb/libusb/version.h",
+      "url": "https://raw.githubusercontent.com/libusb/libusb/87a55632db62c9bdc58cd31d3ccfa673f1bb017f/libusb/version.h",
+      "bytes": 431,
+      "sha256": "8ef05de838404213f63f3a27a073aee0e2bc072dc4415734772e756d34def7f8",
+      "git_blob_sha1": "2a926583259212f2523b9b28626bfe86e23f6540",
+      "repo": "libusb",
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "path": "libusb/version.h"
+    },
+    {
+      "name": "libuvc-0.0.8-release.json",
+      "url": "https://api.github.com/repos/libuvc/libuvc/releases/387794961",
+      "bytes": 4860,
+      "sha256": "266c6b330da5490527254e7ceb7c8f923d75ac62e700ccca49a67f533f3e16c0"
+    },
+    {
+      "name": "libuvc-0.0.8-tag.json",
+      "url": "https://api.github.com/repos/libuvc/libuvc/git/ref/tags/v0.0.8",
+      "bytes": 331,
+      "sha256": "e860c0129c78cd5f38d63855970adbb6b9dbb0d9f1d569531ff88edb0c438570"
+    },
+    {
+      "name": "libuvc-commit.json",
+      "url": "https://api.github.com/repos/libuvc/libuvc/git/commits/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "bytes": 2620,
+      "sha256": "a84ef6dd1a74ba525aa7f1c216ba9c2670cc204bbc51e89184281212bdc1bfe9"
+    },
+    {
+      "name": "libuvc-release.json",
+      "url": "https://api.github.com/repos/libuvc/libuvc/releases/427579727",
+      "bytes": 4846,
+      "sha256": "34e32a6dd5a9932571608ee178f8779a8a4b3d5dfcc307fa389ff8df9479c685"
+    },
+    {
+      "name": "libuvc-tag.json",
+      "url": "https://api.github.com/repos/libuvc/libuvc/git/ref/tags/v0.0.9",
+      "bytes": 331,
+      "sha256": "98b8994423e64e5aa8f8d2c238ddb8876129287bd92bddbce5dc2d4d3d693d37"
+    },
+    {
+      "name": "libuvc-tree.json",
+      "url": "https://api.github.com/repos/libuvc/libuvc/git/trees/aba6b4797dba55ec02e394216f5a346ed8b8271f?recursive=1",
+      "bytes": 18601,
+      "sha256": "26ee08e6142c9c9666d607529a6a71b186f3c288aed4c4d3dc9b38970dae6440"
+    },
+    {
+      "name": "libuvc/.github/workflows/android.yml",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/.github/workflows/android.yml",
+      "bytes": 6220,
+      "sha256": "06bd48793c838206b8e3626a3ea859175ab32bb54f4e82b97ab07f1cafae8f21",
+      "git_blob_sha1": "0c55db6c796092a777f099276e14d1637c282d63",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": ".github/workflows/android.yml"
+    },
+    {
+      "name": "libuvc/CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/CMakeLists.txt",
+      "bytes": 8326,
+      "sha256": "6ae03d315ee9a3e4ada21d8519a24a702a2104df1d8a5ba8f60274c76dee6dcd",
+      "git_blob_sha1": "57cacb0d456daa455d7141a9373afbfced866da2",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "CMakeLists.txt"
+    },
+    {
+      "name": "libuvc/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/LICENSE.txt",
+      "bytes": 1522,
+      "sha256": "57a7ba48475cb7f0aaddfb79ef32e742a19901908f0287b6827da336477b212e",
+      "git_blob_sha1": "4acc5ddeaffa636e6c31c3545d497c2e1f3f407b",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "LICENSE.txt"
+    },
+    {
+      "name": "libuvc/cmake/FindJpegPkg.cmake",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/cmake/FindJpegPkg.cmake",
+      "bytes": 2294,
+      "sha256": "23671b4a0497857ae98462dd67af55d873c121150a3c31c448326a752b06eb70",
+      "git_blob_sha1": "b533d9c237f21606b2f57c1fd77081b53feca6be",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "cmake/FindJpegPkg.cmake"
+    },
+    {
+      "name": "libuvc/cmake/FindLibUSB.cmake",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/cmake/FindLibUSB.cmake",
+      "bytes": 1304,
+      "sha256": "0d231ab9976fb54ddfb0eff1bbdba67af7e3470a7fcc90ddd52fc939e0ab4d66",
+      "git_blob_sha1": "43f3201fb710c3884ca6acae19d1c0da818d60e3",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "cmake/FindLibUSB.cmake"
+    },
+    {
+      "name": "libuvc/include/libuvc/libuvc.h",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/include/libuvc/libuvc.h",
+      "bytes": 31044,
+      "sha256": "1474abaf0c4591c05259bc8b71e9a4f747f3db2a6424e26e839896a2eecd563f",
+      "git_blob_sha1": "447b3e7d4c6136c2af32d0016145eeadeabacba0",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "include/libuvc/libuvc.h"
+    },
+    {
+      "name": "libuvc/include/libuvc/libuvc_config.h.in",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/include/libuvc/libuvc_config.h.in",
+      "bytes": 802,
+      "sha256": "d42c3b6fc6da5f813ea889dc4a8eabe85edf7d84680d5c6e79ef1e863e1e713c",
+      "git_blob_sha1": "e5d3d8c3740fd53e21daa2d22c04fce5b5a671f4",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "include/libuvc/libuvc_config.h.in"
+    },
+    {
+      "name": "libuvc/include/libuvc/libuvc_internal.h",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/include/libuvc/libuvc_internal.h",
+      "bytes": 11154,
+      "sha256": "ee8152076cc6b212288a32f96669f3e427aa9abb2310db96b9face5ba07bd67c",
+      "git_blob_sha1": "0b6fe9bf99995492f9e4b86214ae46002e84a045",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "include/libuvc/libuvc_internal.h"
+    },
+    {
+      "name": "libuvc/include/utlist.h",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/include/utlist.h",
+      "bytes": 67496,
+      "sha256": "4e134ae0e448a1d57a9fb38cb0597859d4c25959d917073b8b35c508e35e76fc",
+      "git_blob_sha1": "bb097a2668d0336de2c8b734608e977f02c88fbc",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "include/utlist.h"
+    },
+    {
+      "name": "libuvc/src/ctrl-gen.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/ctrl-gen.c",
+      "bytes": 57243,
+      "sha256": "65b88f17f403bf3f11da0a246349d4297d2f84bd09c46b7b89255e3ca32f9f38",
+      "git_blob_sha1": "0b99f3d784239a16c62159a9f2da79ff1c150bc1",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/ctrl-gen.c"
+    },
+    {
+      "name": "libuvc/src/ctrl.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/ctrl.c",
+      "bytes": 5633,
+      "sha256": "d21fb90d2b953d7f9505c234bbd2a08b0eae6ea5741b76433bfca12a0fcb25f1",
+      "git_blob_sha1": "3dffe790736a9fe8d1b2ca73056da15246dfb6eb",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/ctrl.c"
+    },
+    {
+      "name": "libuvc/src/device.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/device.c",
+      "bytes": 60988,
+      "sha256": "a350afb1e39239d223b1e937fa4375505c9339019837d3c61ab9125062af04d2",
+      "git_blob_sha1": "180432e94be77b344e32cf8f2be30b36eae74586",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/device.c"
+    },
+    {
+      "name": "libuvc/src/diag.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/diag.c",
+      "bytes": 13846,
+      "sha256": "1aeac1754326bff2dd284439fe0123f00147be9dc915ee5502c97e2f7140b927",
+      "git_blob_sha1": "221c767ed1987c4dd93ba312bf126ed5a719e385",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/diag.c"
+    },
+    {
+      "name": "libuvc/src/frame-mjpeg.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/frame-mjpeg.c",
+      "bytes": 10391,
+      "sha256": "a9584ebe1cff99c7f5d4664faacc77786006d9ae356069268b0dbf8c2a4d9b65",
+      "git_blob_sha1": "44e468c9c26270ee5b3d7afd13a751e169e69895",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/frame-mjpeg.c"
+    },
+    {
+      "name": "libuvc/src/frame.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/frame.c",
+      "bytes": 16801,
+      "sha256": "641f326cdbe283914ef11f547df7967c4b91ba92158d3886cec0c6d6391e6b1b",
+      "git_blob_sha1": "5d240043ae1e62a974fbfb31d4b03811cadf1c50",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/frame.c"
+    },
+    {
+      "name": "libuvc/src/init.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/init.c",
+      "bytes": 5316,
+      "sha256": "a4d085d05a1b6c3350ee8ca199e27c852caee982679a629bd5c90a65b6c06631",
+      "git_blob_sha1": "48028357468af549bab368ac24a7e412f9915644",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/init.c"
+    },
+    {
+      "name": "libuvc/src/misc.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/misc.c",
+      "bytes": 2043,
+      "sha256": "2bb49ea467af99a2c737ebbccbf6c3a1c13a52d308c338a320599514b6f9727e",
+      "git_blob_sha1": "8ce850fdc44fc619058ed8f2693add5d3aa95b44",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/misc.c"
+    },
+    {
+      "name": "libuvc/src/stream.c",
+      "url": "https://raw.githubusercontent.com/libuvc/libuvc/448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957/src/stream.c",
+      "bytes": 51005,
+      "sha256": "03c5895161f45160656e07169a9ea910986d077fdb9fe1206eacf92586e6eb27",
+      "git_blob_sha1": "ea261e45f36de8dd498251ef6f24bfef52b67d56",
+      "repo": "libuvc",
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "path": "src/stream.c"
+    }
+  ]
+}

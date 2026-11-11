@@ -1,0 +1,382 @@
+[
+  {
+    "path": "app\\src\\main\\AndroidManifest.xml",
+    "sha256": "ea1574b543278b3907089ded37bfab9f3cb751f581049bbf72823b7b28e5d18a",
+    "bytes": 1685
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\AndroidPcmSource.java",
+    "sha256": "5cf4457c10e5db698e7138cadbb77cb901d025fbe675240999da961a362bf0b0",
+    "bytes": 7756
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\AudioCaptureCoordinator.java",
+    "sha256": "c56d9d574e160c975ddc01b5cdb37a66a14d5584fe6165d8e0648b8a61c74825",
+    "bytes": 14910
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\AudioFrameReplay.java",
+    "sha256": "40d8d84a2dae1fcc796d4f979b6a128fcf97900ca28b48e7f3a3a9175fd8fbdf",
+    "bytes": 3622
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\AudioRetentionJob.java",
+    "sha256": "136e6220438a505b95390d314b9899047fcc29f59b9792ea5643152a4611680f",
+    "bytes": 2444
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\AudioSegmentStore.java",
+    "sha256": "cda27813178196dc752f96e38d1b5d0c046ecb0a82cb603f9aadda6d054b5a38",
+    "bytes": 51583
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\AudioSourceReference.java",
+    "sha256": "0ccd8094dc62662eb0b9652e38aad030dbb57ff929b2b7c3d67abcc315797725",
+    "bytes": 6707
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\BoundedPcmQueue.java",
+    "sha256": "254bad220506f2395e26bbb23fa12448acada01b05a0eb35ef0e2b97a0bc812d",
+    "bytes": 11572
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\CaptureBoundary.java",
+    "sha256": "518e6a00837ae97169fbd9d31601f8c8dcdbf0129a5a15f5caca06ce06754b70",
+    "bytes": 1044
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\CaptureEnvironment.java",
+    "sha256": "10f3ace39d3cb249211ef68a08475f42b7d439d28131b48fa55ecf393e21a27a",
+    "bytes": 2198
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\CaptureService.java",
+    "sha256": "eec2c90342d878f3fefadf627465d6516316b72cb331dacb0c969845028f839f",
+    "bytes": 14884
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\CaptureStartGate.java",
+    "sha256": "8499743baf77f0790f84debc562d5f14bed6cc1b5bc9ecf7a56f6f47c1e6e3d0",
+    "bytes": 1013
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\DurableDeletionMarkers.java",
+    "sha256": "f000bffbcb05351a847b39fe4fdf3dd17ebc039ae6b235c8657e891978857300",
+    "bytes": 9006
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\MainActivity.java",
+    "sha256": "4abe0901f1e9d1e762e7ea89a04db9a6c7cc8cfa4ef3138d8d91a453bed355af",
+    "bytes": 15814
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\MeetingPreparationActivity.java",
+    "sha256": "49e5539f4bfb1e063523fe74cf6fa99b0bc700da91875a1ce0542b1499adc3f1",
+    "bytes": 6595
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\MeetingPrivacy.java",
+    "sha256": "4d26a411352b0ce04c6213f881919351d32d450351c3207b5c41bf17e1b0b385",
+    "bytes": 318
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\MeetingSessionRepository.java",
+    "sha256": "64a00ce78ccae0a7aeaf7b6b0e6fda2a6ca6aee8cc0696f24460bb0e137b58ab",
+    "bytes": 1697
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\NoteFileSet.java",
+    "sha256": "d59c1f8223c5bf246e008c2f43c977c97ba7ab42b32ae24c37f34730c10b24e6",
+    "bytes": 7669
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\NotePolicy.java",
+    "sha256": "4b47281743700e1d4a36a8db2067d2112e0a3aa3dd4ef2212e3972349478b82d",
+    "bytes": 1287
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\NoteStore.java",
+    "sha256": "4bb6b7e6313feb9cd9fe4d7292dc66d35e7eba923b8278371420a10b92be5f30",
+    "bytes": 39314
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\PcmFrameAssembler.java",
+    "sha256": "acbad21defcea0ef7d63ec42a6718826787d82cddbdfeaa9bde0400e6b17b812",
+    "bytes": 3324
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\PcmSource.java",
+    "sha256": "b826361685401dfcbbc1dad8073446647f23a9008c7117cefc8b79d46f21b48f",
+    "bytes": 861
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\PcmSourceLifecycle.java",
+    "sha256": "585a3845409719d3df503da23142af793218c3086853ebdce39c414f292eb6de",
+    "bytes": 1684
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\PendingNotePolicy.java",
+    "sha256": "1e2fb2e5442db9d868d462016aa7a31f8f06592af57bf7f9b670f774761ea52a",
+    "bytes": 6757
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\RecordingActivity.java",
+    "sha256": "49a29335f31eef8e81d712a6fe18b78adc4d2133a95560027bba14fb12c962b6",
+    "bytes": 15201
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\RetentionClock.java",
+    "sha256": "62146538fdfcb5d196a2d8dc92b10feff94123f4eb6e5f500fe9e0e133fa2cf4",
+    "bytes": 2202
+  },
+  {
+    "path": "app\\src\\main\\java\\local\\sidecar\\copilot\\RetentionEnvelope.java",
+    "sha256": "93374e9bd8cba88d19d0f91f57cba367039d569b61278b5dfdf18f404c94f720",
+    "bytes": 2213
+  },
+  {
+    "path": "app\\src\\main\\res\\xml\\data_extraction_rules.xml",
+    "sha256": "4a575d79fa32e0850cb454a0d9ec381316b3ff1b2c172fb221356f894c4683f0",
+    "bytes": 1138
+  },
+  {
+    "path": "build-crash-tests.ps1",
+    "sha256": "df458154bec97047ae48853178be2afa4cbff4deb563ce6db6c43729beaf31bf",
+    "bytes": 1835
+  },
+  {
+    "path": "build-fixture.ps1",
+    "sha256": "393482539b7d2272a0fe1643bd54695990315b834a34866fc4bc2d18b5a71d84",
+    "bytes": 3005
+  },
+  {
+    "path": "build-tests.ps1",
+    "sha256": "78376efbe7590d29acdc3b48d8e01805619a1fb3db9cb942e9767da52d960670",
+    "bytes": 2536
+  },
+  {
+    "path": "build.ps1",
+    "sha256": "822b76d9a6f921b2a660199060f391c657cb2338001043508f9024f8bbfae114",
+    "bytes": 4360
+  },
+  {
+    "path": "fixtures\\AndroidManifest.xml",
+    "sha256": "57687b8da52cadee50afaf39e7b92047d8b43ab1793e56c8aad47d98bf13f8ad",
+    "bytes": 1279
+  },
+  {
+    "path": "fixtures\\ControlUiInstrumentation.java",
+    "sha256": "cfbc9a2034c6145217d44798a8aaa170c419edddc074b17e0ca932a23ddd7d71",
+    "bytes": 39680
+  },
+  {
+    "path": "fixtures\\FixtureCaptureService.java",
+    "sha256": "0d93d73743a0f6325a72e4272a0c45e4d678d98c40881f57e6b40f2cdb5024e2",
+    "bytes": 12901
+  },
+  {
+    "path": "fixtures\\FixtureInstrumentation.java",
+    "sha256": "921c3ba890713f8b7c821cefdedbfae177fd8c71af4019b1b40b6906ea1c98b7",
+    "bytes": 30651
+  },
+  {
+    "path": "fixtures\\InterruptionDiagnosticInstrumentation.java",
+    "sha256": "8bd39cc54102f838e0bb53489000815c6415404f7919312e23fddd9031a8838a",
+    "bytes": 17193
+  },
+  {
+    "path": "fixtures\\TestManifest.xml",
+    "sha256": "439ba2b10ff83d7782ab6f24d1fb977c0c2e840c84c872b6237c29bc74aca7f0",
+    "bytes": 864
+  },
+  {
+    "path": "fixtures\\UiPrivacyInstrumentation.java",
+    "sha256": "c56273a6787a9dd765bc9f6fe84e027a7ab8ca4fec3963b9ae3771839051ba54",
+    "bytes": 32153
+  },
+  {
+    "path": "run-control-tests.ps1",
+    "sha256": "018b90158afdc5a0d48946a05befec47664b05677cdba69a45cc29e82fb7d040",
+    "bytes": 28482
+  },
+  {
+    "path": "run-crash-tests.ps1",
+    "sha256": "09d8186b3de505c33852e2a37535264180bbbaddf4a9a8996520b9aa4650f7f8",
+    "bytes": 2729
+  },
+  {
+    "path": "tests\\AndroidManifest.xml",
+    "sha256": "fc4f87eb71647539b2d0dcc4b58b6839604e697119586fcff8e846a6e3def983",
+    "bytes": 417
+  },
+  {
+    "path": "tests\\AtomicNoteFileChecks.java",
+    "sha256": "532f318b2677092e0e21827dc52c82f0395143f29f1f7af414f2dfa94f1451bc",
+    "bytes": 34693
+  },
+  {
+    "path": "tests\\AudioRetentionChecks.java",
+    "sha256": "683d9e53087dadcd0c82f2552ca258eb1df1ef9eed3cfa2ab7722f9254640e13",
+    "bytes": 3944
+  },
+  {
+    "path": "tests\\AudioSourceReferenceChecks.java",
+    "sha256": "ee9e15062e01aee7601ea35e828c589e3c7066a5a681ee6ceead55dfe0597a74",
+    "bytes": 11420
+  },
+  {
+    "path": "tests\\AudioSourceReferenceTest.java",
+    "sha256": "59f03eb6c9cea6d3244b7514e6be83cbb42884b413cb150f7783121d437bc2cf",
+    "bytes": 15437
+  },
+  {
+    "path": "tests\\AudioStoreChecks.java",
+    "sha256": "bb199b581ad1ad2e79ad97d14530aebab78e53b2d0b618b41b9513a7a0147390",
+    "bytes": 10610
+  },
+  {
+    "path": "tests\\BoundedPcmQueueTest.java",
+    "sha256": "85352db4f4f308bde8d6490f52255933d919166c4672d339d24cfd5ebfdfa727",
+    "bytes": 32121
+  },
+  {
+    "path": "tests\\BufferedCaptureChecks.java",
+    "sha256": "051f1e07e8250670718f57e429f312b36de29d1949bbad9db449f9a26bf8bca2",
+    "bytes": 29834
+  },
+  {
+    "path": "tests\\CaptureServiceChecks.java",
+    "sha256": "27fe086f0f24bfd9f60b7b59fba78a0674fbed74c7449d0ae6d297c72fd69621",
+    "bytes": 5536
+  },
+  {
+    "path": "tests\\CaptureStartGateTest.java",
+    "sha256": "01cc4a757c275241889cdd3b4dc0b1342eead7be1110e12c72b913b397d9675b",
+    "bytes": 1710
+  },
+  {
+    "path": "tests\\ClockQuarantineChecks.java",
+    "sha256": "66ca9aa834f557ffc0d65cde66b9bbdf996930f427923da37f520791301be76c",
+    "bytes": 14087
+  },
+  {
+    "path": "tests\\ControlRecoveryChecks.java",
+    "sha256": "f1ef5d64ba4e9de7d2140d0604363f3532e4cf8500ad0c15f9d4b73affcad12a",
+    "bytes": 18236
+  },
+  {
+    "path": "tests\\CrashFaultInstrumentation.java",
+    "sha256": "4890621e6f9a1da9bfc4d4bca00a0845af813a259a312f5aa928fdce8c355935",
+    "bytes": 14430
+  },
+  {
+    "path": "tests\\CrashFaultManifest.xml",
+    "sha256": "b9c0f0007cba7e7d400dcb342845305e76ff613fa0a88101a54112ef4576f49a",
+    "bytes": 425
+  },
+  {
+    "path": "tests\\DeletionMarkerChecks.java",
+    "sha256": "fdfef89f09cf80f1feedd48529836625ed6d491e5af6deb696b0a4036f92c287",
+    "bytes": 26212
+  },
+  {
+    "path": "tests\\MeetingIsolationChecks.java",
+    "sha256": "18b1398582e244290f7ff768543588a7a02233771ddbf9ea78224771ce01b32b",
+    "bytes": 23289
+  },
+  {
+    "path": "tests\\MeetingSessionChecks.java",
+    "sha256": "aa706c72c3e642de2b989b17eebf1b3bfcc5c33376bcd3a8f254086fb82b94bb",
+    "bytes": 12306
+  },
+  {
+    "path": "tests\\NoteAnchorFailureChecks.java",
+    "sha256": "0c630ea4e2bb4b3ef6f50ed2052ba3a4a2117b778c40d9b7ad2be96e72109be6",
+    "bytes": 13171
+  },
+  {
+    "path": "tests\\NoteConcurrencyChecks.java",
+    "sha256": "e693f2fff587beb7b9d353947d1cccd45ed03a2fd7044336c05fbdc343975986",
+    "bytes": 2646
+  },
+  {
+    "path": "tests\\NoteFileSetTest.java",
+    "sha256": "1e9c50dff4d0b162c5588cc9292317e4a42ac95ff3573eddd04c7be68025e688",
+    "bytes": 32066
+  },
+  {
+    "path": "tests\\NotePolicyTest.java",
+    "sha256": "4304f758ebbadd4ba53038fd23be375d3bed439774c88d93ca4707f9af5552d2",
+    "bytes": 4431
+  },
+  {
+    "path": "tests\\NoteRetentionChecks.java",
+    "sha256": "97f96c5ddfb3fd9ec0df464fa3b55a0ad35d6faefd051fb64c6acc9e55c9d1c8",
+    "bytes": 9858
+  },
+  {
+    "path": "tests\\OwnedBufferChecks.java",
+    "sha256": "d7653b00ea52e1bda62f9d7f1c8d9b392b34178da29ff42e1737a061370cb5f7",
+    "bytes": 14801
+  },
+  {
+    "path": "tests\\PcmFrameAssemblerTest.java",
+    "sha256": "a9754cef3f3f2c2f0e1243070aac9d588bf696b62710cfb1bc37dac3789aeb5f",
+    "bytes": 1911
+  },
+  {
+    "path": "tests\\PcmSourceLifecycleTest.java",
+    "sha256": "7dea6a2c076d9f9ce1d75797a50cfbaa39f4fc1f04c9dd28ccfe8cfbab95d111",
+    "bytes": 7564
+  },
+  {
+    "path": "tests\\PendingNoteCopyChecks.java",
+    "sha256": "9a76b2ad5469471848a15d597d2f7ec75a282c7c13d96bb14bddce8e1f19b372",
+    "bytes": 39295
+  },
+  {
+    "path": "tests\\RangeBarrierChecks.java",
+    "sha256": "8c8d5b3fe78c7036482544f32af04faaa80eb9db04531e55987659bcfb035caa",
+    "bytes": 29332
+  },
+  {
+    "path": "tests\\ReadCompletionChecks.java",
+    "sha256": "6388cf0a7f5ead3fad1d8c5d16cbca236344fc27abec73095a119bda716a1183",
+    "bytes": 8693
+  },
+  {
+    "path": "tests\\RecoveryProjectionChecks.java",
+    "sha256": "0202d86a0d3b77d7d0809c80aa05b485339fe2ed108871fe7ec2c092a6a84059",
+    "bytes": 14462
+  },
+  {
+    "path": "tests\\ReplayAdmissionChecks.java",
+    "sha256": "4eec7a6cab6e8a01ca543adaedaaa1de865f24716101bb0fbf87cd20efd1df6b",
+    "bytes": 6824
+  },
+  {
+    "path": "tests\\RetentionCleanupChecks.java",
+    "sha256": "f97de09c317f4ce00471a6ee7a1d0a7d708b72895637c8e0057dee32f7c72d5c",
+    "bytes": 37656
+  },
+  {
+    "path": "tests\\RetentionEnvelopeTest.java",
+    "sha256": "1383199769e99b3e4d29a70546369a7fd120e279b3c3a6e774b1e9ea09cd28a1",
+    "bytes": 2573
+  },
+  {
+    "path": "tests\\StoreInstrumentation.java",
+    "sha256": "ea5b458c55ab95d9027a0d357264fdee3fee5dd23cef1f0328e4538c505f0af4",
+    "bytes": 11695
+  },
+  {
+    "path": "tests\\UiResponsivenessChecks.java",
+    "sha256": "12a0623ed1a9ebb5ea8ad81023f005159431a36ddbe8a41a662a0ccdc810daf7",
+    "bytes": 6053
+  },
+  {
+    "path": "tests\\WalConfigurationChecks.java",
+    "sha256": "a5edfb8b5591641a2399e7d0cd0bb4e28644db8b8d9cde2588d5d30114b904b7",
+    "bytes": 17388
+  }
+]

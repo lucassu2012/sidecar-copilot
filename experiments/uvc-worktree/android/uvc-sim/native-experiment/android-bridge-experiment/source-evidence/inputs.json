@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "baseline_commit": "3e5abb1b880040ceff775c5cd43d5ad61115af9b",
+  "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+  "source_role": "Reference-only fixed Android 15/API 35 AOSP text; not compiled, copied into runtime or evidence of the target OEM firmware.",
+  "license_scope": "Each listed file retains an Apache-2.0 source header in the ignored local cache. New original bridge code adds no third-party runtime dependency; inherited native license gates remain open.",
+  "reproducibility": "Decoded cache hashes and anchor ranges are checked offline. --fetch uses the fixed official URL and recorded wire/source hashes, never refreshes a lock. Git blob SHA is computed over fetched content; a complete Git tree membership proof was not performed.",
+  "sources": [
+    {
+      "path": "core/java/android/app/ActivityManager.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/app/ActivityManager.java?format=TEXT",
+      "file": "ActivityManager.java.txt",
+      "wire_bytes": 338160,
+      "wire_sha256": "2fca076d8d6f63f0614227ea59be7743814a2e2da5d4f56657775e09f629b1ab",
+      "source_bytes": 253618,
+      "source_sha256": "1f87c9df2f0b6ae818a3e28bed8b6aaf1493768efd691470d3a1a440dca6f2e4",
+      "git_blob_sha1": "74e95839b2f507891d46d70a4a62ffdf7b53b144",
+      "id": "ActivityManager",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2007 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "core/java/android/app/PendingIntent.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/app/PendingIntent.java?format=TEXT",
+      "file": "PendingIntent.java.txt",
+      "wire_bytes": 95416,
+      "wire_sha256": "745c829018fe911792cc25aa9b069420ad67a4b5de4bdc94cd3301b7621d6c93",
+      "source_bytes": 71561,
+      "source_sha256": "a6726b3c774ff248d8dd1f06c81e3d286dd68b3219fa7d5cb9b169059210a655",
+      "git_blob_sha1": "3714e5de23ca4280e96522fca87a87934841ff9b",
+      "id": "PendingIntent",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2006 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "core/java/android/content/Intent.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/content/Intent.java?format=TEXT",
+      "file": "Intent.java.txt",
+      "wire_bytes": 728336,
+      "wire_sha256": "77ae338c46179123385ffc2180036a1819554ca0e0105903d3a35a9faa6ae8c4",
+      "source_bytes": 546252,
+      "source_sha256": "6302bb5501ac5050de8b7f4e58eef5fd7f1ca0e8042a4588c37dd6b53ec25cfc",
+      "git_blob_sha1": "dfa2973816bdd92d486d812c24deed662f790739",
+      "id": "Intent",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2006 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "core/java/com/android/internal/os/ZygoteInit.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/com/android/internal/os/ZygoteInit.java?format=TEXT",
+      "file": "ZygoteInit.java.txt",
+      "wire_bytes": 54524,
+      "wire_sha256": "e4214796cf242d238ddaafdf3290ad8049f2d78671a2bdc90612c770e4087eaa",
+      "source_bytes": 40893,
+      "source_sha256": "e6089e42ca8761a30f56855f6029a4c97d96792817232dfab0ddc75c09936a92",
+      "git_blob_sha1": "b9cc457fecc92de8cdd8127f8c7ae060d79908b2",
+      "id": "ZygoteInit",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2007 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "core/res/AndroidManifest.xml",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/res/AndroidManifest.xml?format=TEXT",
+      "file": "AndroidManifest.xml.txt",
+      "wire_bytes": 637708,
+      "wire_sha256": "87daf074cdfd849a152616f05923556eb821012e164216a14ae4d7e122bcc017",
+      "source_bytes": 478281,
+      "source_sha256": "c66715acdf5029b617b34263b348e88cc616ac331e3e61a57efd4c73982e02fe",
+      "git_blob_sha1": "c71f9bde6bf1cd8d3c86ad25f4aa8ea8833fcc35",
+      "id": "AndroidManifest",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright 2006, The Android Open Source Project"
+        ],
+        "license_anchor": 7
+      }
+    },
+    {
+      "path": "packages/SystemUI/src/com/android/systemui/usb/UsbDialogHelper.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/packages/SystemUI/src/com/android/systemui/usb/UsbDialogHelper.java?format=TEXT",
+      "file": "UsbDialogHelper.java.txt",
+      "wire_bytes": 14988,
+      "wire_sha256": "2391cfdc41619a982d7bd9e1e2e081a88e111fdae62b97d7765ee0318d0db3fd",
+      "source_bytes": 11239,
+      "source_sha256": "309bf9f037da5991ea5e7fc60951b73b99be417dc6966c656248d276a47c6b22",
+      "git_blob_sha1": "3f061d3113be3ebc294d3340dcf397f2a0121fae",
+      "id": "UsbDialogHelper",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2021 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/core/java/com/android/server/am/ActivityManagerService.java?format=TEXT",
+      "file": "ActivityManagerService.java.txt",
+      "wire_bytes": 1265536,
+      "wire_sha256": "8c2c33211b7c6f5c44a5178903cd38815262ca470635bc19aec5e95614897315",
+      "source_bytes": 949150,
+      "source_sha256": "e713ead4798bf56ec8b590202e3473384eb8d1f4986a2b05c5124c3acb824285",
+      "git_blob_sha1": "d41de38ce2a8cf30b3541ce323d759f1bb05c093",
+      "id": "ActivityManagerService",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2006-2008 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/core/java/com/android/server/am/BroadcastSkipPolicy.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/core/java/com/android/server/am/BroadcastSkipPolicy.java?format=TEXT",
+      "file": "BroadcastSkipPolicy.java.txt",
+      "wire_bytes": 53800,
+      "wire_sha256": "51d2b24051c4738f9f640e0471715094120818bb8d05d2b18576a795b30b0ed7",
+      "source_bytes": 40348,
+      "source_sha256": "de43df1efcca1e8fb2c9c5dde037dec9fd2aa34fb24275e277c976b15f74b02a",
+      "git_blob_sha1": "f4a931f89551309bd35a7e46ec8cadb342d7d2b2",
+      "id": "BroadcastSkipPolicy",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2022 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/core/java/com/android/server/am/PendingIntentController.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/core/java/com/android/server/am/PendingIntentController.java?format=TEXT",
+      "file": "PendingIntentController.java.txt",
+      "wire_bytes": 33856,
+      "wire_sha256": "893669ddf48c22f8b88165f0bd7fe265b0c502541456bae125560de83c7816ae",
+      "source_bytes": 25392,
+      "source_sha256": "65f5a05e617f9b2b11147ae63e35cd1fb98612707c2e8b2fbb81f418359550b2",
+      "git_blob_sha1": "f3361203c44aedf7dd174e219aee070b83711fed",
+      "id": "PendingIntentController",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2018 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/core/java/com/android/server/am/PendingIntentRecord.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/core/java/com/android/server/am/PendingIntentRecord.java?format=TEXT",
+      "file": "PendingIntentRecord.java.txt",
+      "wire_bytes": 51952,
+      "wire_sha256": "b86dbe547cee30dbacaef4faa640ee88d14929042d1a5f1b5f9ac0603a10fe61",
+      "source_bytes": 38964,
+      "source_sha256": "85d5410e51c23988723b6b46ef3033a1f714bf8e3216b6ad069bbc7f2d4a5414",
+      "git_blob_sha1": "8eef71e603b2f041be433afceaa4195f1fca0c74",
+      "id": "PendingIntentRecord",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2006 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/java/com/android/server/SystemServer.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/java/com/android/server/SystemServer.java?format=TEXT",
+      "file": "SystemServer.java.txt",
+      "wire_bytes": 207888,
+      "wire_sha256": "9a42f1c27f2998b76b02d27eef9b5c914eeffddea381936472c6cff541f7a2a7",
+      "source_bytes": 155914,
+      "source_sha256": "9c25841942a67ba8eb23cb2f34ed8ff3751c39aa5e84b3e3bb1d0a0faeeb675d",
+      "git_blob_sha1": "107c2947c550534c8b1b4d5dd6cc1fda7ac0c426",
+      "id": "SystemServer",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2006 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/usb/java/com/android/server/usb/UsbHostManager.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/usb/java/com/android/server/usb/UsbHostManager.java?format=TEXT",
+      "file": "UsbHostManager.java.txt",
+      "wire_bytes": 37980,
+      "wire_sha256": "a735330a1fb93c45dd1654bb2dbddd29ae52084cd950c5b1795c57dbd2c734bf",
+      "source_bytes": 28484,
+      "source_sha256": "65ab7421d25483affe1bd672a4482150bacb08df481d96cb2f85b38d1ea7c855",
+      "git_blob_sha1": "36adeec74e3692ed1336e0f6c20a9a35c559ff07",
+      "id": "UsbHostManager",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2011 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/usb/java/com/android/server/usb/UsbPermissionManager.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/usb/java/com/android/server/usb/UsbPermissionManager.java?format=TEXT",
+      "file": "UsbPermissionManager.java.txt",
+      "wire_bytes": 6748,
+      "wire_sha256": "8b2bfd91456d862bc19d428c2d09389e8f6a0a7bee70b7791cfcabfc32a6d083",
+      "source_bytes": 5061,
+      "source_sha256": "ebb3d2a0f3043160cc66bee5932e38395863f88e61fea286158b2440970f2e3f",
+      "git_blob_sha1": "5d3ed4fc6acf0eb396f2ce06fbc75422435475bb",
+      "id": "UsbPermissionManager",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2019 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/usb/java/com/android/server/usb/UsbService.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/usb/java/com/android/server/usb/UsbService.java?format=TEXT",
+      "file": "UsbService.java.txt",
+      "wire_bytes": 82564,
+      "wire_sha256": "f43c46475f1f7f48a52bbfab9d7efdd62a3b7648fc5183d6279c786bc31bdbd4",
+      "source_bytes": 61923,
+      "source_sha256": "cacd1046095e0fa588df4592f222befd87175770a78c924ccef8f0f85d80274f",
+      "git_blob_sha1": "9470c0a944c23314efdc35a25bf169191d7c47cd",
+      "id": "UsbService",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2010 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    },
+    {
+      "path": "services/usb/java/com/android/server/usb/UsbUserPermissionManager.java",
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/usb/java/com/android/server/usb/UsbUserPermissionManager.java?format=TEXT",
+      "file": "UsbUserPermissionManager.java.txt",
+      "wire_bytes": 45684,
+      "wire_sha256": "e65f5c207455d7b80e590ee0af6b20e533620fde4ad32d7faf58a5b6347ac1dd",
+      "source_bytes": 34262,
+      "source_sha256": "76a37dcc7ce921daf2c44d11d4e3d6ccae273591b7d108020e046d98436943bc",
+      "git_blob_sha1": "f39cb3934d9a4501e20e3edb0cdb6a810608d434",
+      "id": "UsbUserPermissionManager",
+      "repo": "platform/frameworks/base",
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "encoding": "gitiles-base64",
+      "new_or_inherited": "new_fixed_official_text",
+      "license_header": {
+        "observed": "Apache-2.0",
+        "copyright_lines": [
+          "Copyright (C) 2018 The Android Open Source Project"
+        ],
+        "license_anchor": 4
+      }
+    }
+  ]
+}

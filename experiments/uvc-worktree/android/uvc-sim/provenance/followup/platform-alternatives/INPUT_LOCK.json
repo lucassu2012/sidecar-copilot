@@ -1,0 +1,60 @@
+{
+  "inputs": [
+    {
+      "id": "framework-commit",
+      "sha256": "c4dbe36e66d4c0fb47f0e232ab0ac987d71727847e671dfd98b58ea56827a94b",
+      "size": 855,
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3?format=JSON"
+    },
+    {
+      "id": "hal-commit",
+      "sha256": "a4c777e6f244b82457a23431615946edcfa54e659631f50941e184b0367eb459",
+      "size": 763,
+      "url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6?format=JSON"
+    },
+    {
+      "id": "camera-manager",
+      "sha256": "14f9fd083cd667dd37d3709505827c4e22584ee4c2df67b0625b2bd1f151099f",
+      "size": 209600,
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraManager.java?format=TEXT"
+    },
+    {
+      "id": "camera-device",
+      "sha256": "70fdd921d2fed2dde6764ff7af55754b5f8b192282ead162438965e3b00db8a0",
+      "size": 173816,
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraDevice.java?format=TEXT"
+    },
+    {
+      "id": "camera-metadata",
+      "sha256": "0d37fe5cab1c1ade99228ee57c7565b7237d0ac23f131c47236238af9b00ad72",
+      "size": 278768,
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraMetadata.java?format=TEXT"
+    },
+    {
+      "id": "image-reader",
+      "sha256": "fd8509939b9d3d6eed4ad9f6a06af34ec49525d3be5468c1ab977e3368381757",
+      "size": 81504,
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/media/java/android/media/ImageReader.java?format=TEXT"
+    },
+    {
+      "id": "external-provider",
+      "sha256": "3dbd8c6b9abc1012103e6ed8676e97fe7d5e625842a24f05e4476edc2f4ee700",
+      "size": 17596,
+      "url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/provider/default/ExternalCameraProvider.cpp?format=TEXT"
+    },
+    {
+      "id": "external-device",
+      "sha256": "2dfccbc45a5e5f68535d6a378e68c79bc4c7f1f710b27bb1d02fa87f73e72b05",
+      "size": 58392,
+      "url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/device/default/ExternalCameraDevice.cpp?format=TEXT"
+    },
+    {
+      "id": "external-build",
+      "sha256": "6d03af6105ca85e79de218f95fdec8af4bd91cb1aa7d13e5e87c9b309bed3f94",
+      "size": 3132,
+      "url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/device/default/Android.bp?format=TEXT"
+    }
+  ],
+  "schema": 1,
+  "scope": "Fixed AOSP source/metadata only; no runtime execution"
+}

@@ -1,0 +1,5 @@
+commit sequences=[2, 1], previewPixel=111111ff, coordinator lastAcceptedSequence=2
+Exception in thread "main" java.lang.AssertionError: concurrent admitted frames published out of order
+	at CoordinatorReviewChecks.require(CoordinatorReviewChecks.java:29)
+	at CoordinatorReviewChecks.concurrentFrameOrder(CoordinatorReviewChecks.java:80)
+	at CoordinatorReviewChecks.main(CoordinatorReviewChecks.java:37)

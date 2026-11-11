@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "unchanged_report_sha256": "74660a491cd2e0192e56446a14e4fe6ef935189bbcb9e603724ef5059f1c8cbe",
+  "note": "Only ignored cache copies were changed; no upstream code was executed.",
+  "results": [
+    {
+      "check": "offline_replay_equals_recorded_report",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34",
+        "--check-report"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS stored report equality (observation timestamp excluded)\nPASS 21 locked inputs; 37 named units; {'related_but_tokens_differ': 11, 'rename_and_trivia_tokens_equal': 9, 'rename_only_equal': 17}\nCode/header additions: 708\n",
+      "stderr": ""
+    },
+    {
+      "check": "changed_source_archive_rejected",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34",
+        "--inputs-only"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 268, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 167, in main\n    lock, loaded = inputs(cache, args.fetch_missing)\n                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 68, in inputs\n    raise ValueError(\"cache integrity mismatch: \" + name)\nValueError: cache integrity mismatch: libyuv-official.tar.gz\n"
+    },
+    {
+      "check": "missing_source_cache_rejected",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34",
+        "--inputs-only"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 268, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 167, in main\n    lock, loaded = inputs(cache, args.fetch_missing)\n                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 58, in inputs\n    raise FileNotFoundError(\"missing locked cache input: \" + name)\nFileNotFoundError: missing locked cache input: saki-frame.c\n"
+    },
+    {
+      "check": "metadata_format_and_display_changes_accepted",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34",
+        "--inputs-only"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS 21 locked static inputs\n",
+      "stderr": ""
+    },
+    {
+      "check": "metadata_commit_change_rejected",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34",
+        "--inputs-only"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 268, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 167, in main\n    lock, loaded = inputs(cache, args.fetch_missing)\n                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 68, in inputs\n    raise ValueError(\"cache integrity mismatch: \" + name)\nValueError: cache integrity mismatch: import.commit.json\n"
+    },
+    {
+      "check": "missing_metadata_rebuilt_by_verified_http",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34",
+        "--inputs-only",
+        "--fetch-missing"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS 21 locked static inputs\n",
+      "stderr": ""
+    },
+    {
+      "check": "modified_report_rejected",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34",
+        "--check-report",
+        "--report-file",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\build\\native-research\\libyuv\\replay-check-39d64ff814f44bb58ff421dab5287e34\\modified-report.json"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 268, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-native-research\\android\\uvc-sim\\provenance\\followup\\libyuv\\verify_sources.py\", line 261, in main\n    raise ValueError(\"Stored report differs from recomputed provenance evidence\")\nValueError: Stored report differs from recomputed provenance evidence\n"
+    }
+  ]
+}

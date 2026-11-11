@@ -1,0 +1,2 @@
+PASS: 12060 assertions; 1000 deterministic detach/start repetitions; synthetic metadata only
+Android discovery compiled against API 35; no device invocation.

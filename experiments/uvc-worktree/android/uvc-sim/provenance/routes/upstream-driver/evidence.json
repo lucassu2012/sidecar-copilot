@@ -1,0 +1,399 @@
+{
+  "anchors": [
+    {
+      "anchor": "Call libusb_init_context with the LIBUSB_OPTION_NO_DEVICE_DISCOVERY",
+      "input": "libusb/libusb/core.c",
+      "lines": [
+        1376
+      ]
+    },
+    {
+      "anchor": "The system device handle will not be closed by libusb_close().",
+      "input": "libusb/libusb/core.c",
+      "lines": [
+        1385
+      ]
+    },
+    {
+      "anchor": "int API_EXPORTED libusb_wrap_sys_device",
+      "input": "libusb/libusb/core.c",
+      "lines": [
+        1406
+      ]
+    },
+    {
+      "anchor": "A cancellation hasn't even been scheduled",
+      "input": "libusb/libusb/core.c",
+      "lines": [
+        1578
+      ]
+    },
+    {
+      "anchor": "hpriv->fd_keep = 1;",
+      "input": "libusb/libusb/os/linux_usbfs.c",
+      "lines": [
+        1449
+      ]
+    },
+    {
+      "anchor": "if (!hpriv->fd_keep)",
+      "input": "libusb/libusb/os/linux_usbfs.c",
+      "lines": [
+        1491
+      ]
+    },
+    {
+      "anchor": "int err = libusb_wrap_sys_device(context->usb_ctx, sys_dev, &usb_devh);",
+      "input": "libuvc/src/device.c",
+      "lines": [
+        284
+      ]
+    },
+    {
+      "anchor": "ctx->own_usb_ctx = 0;",
+      "input": "libuvc/src/init.c",
+      "lines": [
+        116
+      ]
+    },
+    {
+      "anchor": "libusb event processing using a function such as libusb_handle_events.",
+      "input": "libuvc/src/init.c",
+      "lines": [
+        98
+      ]
+    },
+    {
+      "anchor": "ret = libusb_submit_transfer(internal_devh->status_xfer);",
+      "input": "libuvc/src/device.c",
+      "lines": [
+        373
+      ]
+    },
+    {
+      "anchor": "libusb_free_transfer(devh->status_xfer);",
+      "input": "libuvc/src/device.c",
+      "lines": [
+        1918
+      ]
+    },
+    {
+      "anchor": "uvc_error_t uvc_get_stream_ctrl_format_size(",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        498
+      ]
+    },
+    {
+      "anchor": "uvc_query_stream_ctrl( devh, ctrl, 1, UVC_SET_CUR );",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        641
+      ]
+    },
+    {
+      "anchor": "buf, len, 0",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        255,
+        335
+      ]
+    },
+    {
+      "anchor": "isochronous = interface->num_altsetting > 1;",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1176
+      ]
+    },
+    {
+      "anchor": "libusb_fill_iso_transfer(",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1263
+      ]
+    },
+    {
+      "anchor": "libusb_fill_bulk_transfer (",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1277
+      ]
+    },
+    {
+      "anchor": "libusb_cancel_transfer(strmh->transfers[i]);",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1569
+      ]
+    },
+    {
+      "anchor": "pthread_cond_wait(&strmh->cb_cond, &strmh->cb_mutex);",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1365,
+        1480,
+        1580
+      ]
+    },
+    {
+      "anchor": "pthread_join(strmh->cb_thread, NULL);",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1591
+      ]
+    },
+    {
+      "anchor": "@todo stop the actual stream, camera side?",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1586
+      ]
+    },
+    {
+      "anchor": "frame->data_bytes = strmh->hold_bytes;",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        1438
+      ]
+    },
+    {
+      "anchor": "You must not call any uvc_* functions during a callback.",
+      "input": "libuvc/include/libuvc/libuvc.h",
+      "lines": [
+        481
+      ]
+    },
+    {
+      "anchor": "FMT(UVC_FRAME_FORMAT_H264,",
+      "input": "libuvc/src/stream.c",
+      "lines": [
+        147
+      ]
+    },
+    {
+      "anchor": "uvc_error_t uvc_any2rgb(",
+      "input": "libuvc/src/frame.c",
+      "lines": [
+        500
+      ]
+    },
+    {
+      "anchor": "jpeg_mem_src(&dinfo, in->data, in->data_bytes);",
+      "input": "libuvc/src/frame-mjpeg.c",
+      "lines": [
+        137
+      ]
+    },
+    {
+      "anchor": "dinfo.output_width != out->width",
+      "input": "libuvc/src/frame-mjpeg.c",
+      "lines": [
+        169
+      ]
+    },
+    {
+      "anchor": "#define LIBUVC_NUM_TRANSFER_BUFS 100",
+      "input": "libuvc/include/libuvc/libuvc_internal.h",
+      "lines": [
+        231
+      ]
+    },
+    {
+      "anchor": "#define LIBUVC_PACKETS_PER_TRANSFER_MAX 32",
+      "input": "libuvc/include/libuvc/libuvc_internal.h",
+      "lines": [
+        248
+      ]
+    },
+    {
+      "anchor": "LIBUSB_VERSION: 1.0.30",
+      "input": "libuvc/.github/workflows/android.yml",
+      "lines": [
+        39
+      ]
+    },
+    {
+      "anchor": "-DDISABLE_JPEG=ON",
+      "input": "libuvc/.github/workflows/android.yml",
+      "lines": [
+        120
+      ]
+    },
+    {
+      "anchor": "LOCAL_LDLIBS := -llog",
+      "input": "libusb/android/jni/libusb.mk",
+      "lines": [
+        49
+      ]
+    },
+    {
+      "anchor": "#define UTLIST_VERSION 2.0.2",
+      "input": "libuvc/include/utlist.h",
+      "lines": [
+        27
+      ]
+    }
+  ],
+  "declared_libusb_android_c_sources": [
+    "libusb/core.c",
+    "libusb/descriptor.c",
+    "libusb/hotplug.c",
+    "libusb/io.c",
+    "libusb/sync.c",
+    "libusb/strerror.c",
+    "libusb/os/linux_usbfs.c",
+    "libusb/os/events_posix.c",
+    "libusb/os/threads_posix.c",
+    "libusb/os/linux_netlink.c"
+  ],
+  "declared_libuvc_base_c_sources": [
+    "src/ctrl.c",
+    "src/ctrl-gen.c",
+    "src/device.c",
+    "src/diag.c",
+    "src/frame.c",
+    "src/init.c",
+    "src/stream.c",
+    "src/misc.c"
+  ],
+  "declared_libuvc_optional_jpeg_c_source": "src/frame-mjpeg.c",
+  "input_bytes": 1052129,
+  "input_count": 49,
+  "inputs_lock_sha256": "36ad5dcb06f84f774825badf659e7b222c7a1189fe2b9c9da353b20f90a93266",
+  "open_conditions": [
+    "status interrupt transfer cancel/drain before free",
+    "bounded/failure-aware probe, stop and close",
+    "unchecked allocation/thread failures and resource limits",
+    "Android isolated build and packaging verification",
+    "exact mode/color/layout/ownership/clock contracts",
+    "device/permission/iso/bulk/detach/reconnect evidence",
+    "complete shipped-source/license and optional JPEG dependency review"
+  ],
+  "readiness": "NOT_ESTABLISHED",
+  "releases": {
+    "libusb": {
+      "commit": "87a55632db62c9bdc58cd31d3ccfa673f1bb017f",
+      "commit_committer_date": "2026-05-17T14:37:21Z",
+      "published_at": "2026-05-17T22:06:02Z",
+      "release_url": "https://github.com/libusb/libusb/releases/tag/v1.0.30",
+      "tag": "v1.0.30",
+      "tree": "1dab476e854bb3605113e4ff3e78f9130aac5d95"
+    },
+    "libuvc": {
+      "commit": "448d78b9aa4f54172c1ca5b5d1b4a6b9b93f7957",
+      "commit_committer_date": "2026-10-29T07:40:50Z",
+      "published_at": "2026-10-29T07:43:16Z",
+      "release_url": "https://github.com/libuvc/libuvc/releases/tag/v0.0.9",
+      "tag": "v0.0.9",
+      "tree": "aba6b4797dba55ec02e394216f5a346ed8b8271f"
+    },
+    "libuvc_previous": {
+      "commit": "4e9fc773914377ec0bcf2f31621f56da5a0fa09f",
+      "published_at": "2026-09-13T04:48:49Z",
+      "release_url": "https://github.com/libuvc/libuvc/releases/tag/v0.0.8",
+      "tag": "v0.0.8"
+    }
+  },
+  "schema": 1,
+  "scope": "literal anchors and manually reviewed fixed source; not compiled call graph, binary audit or hardware validation",
+  "selected_runtime_c_license_headers": [
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/core.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/descriptor.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/hotplug.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/io.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/sync.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/strerror.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/os/linux_usbfs.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/os/events_posix.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/os/threads_posix.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "LGPL-2.1-or-later",
+      "input": "libusb/libusb/os/linux_netlink.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/ctrl.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "UNCLASSIFIED",
+      "input": "libuvc/src/ctrl-gen.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/device.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/diag.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/frame.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/init.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/stream.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/misc.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    },
+    {
+      "header_classification": "BSD-3-Clause text",
+      "input": "libuvc/src/frame-mjpeg.c",
+      "scope": "first 34 lines only; does not clear all embedded material"
+    }
+  ],
+  "uvc_close_body_contains_literal_libusb_cancel_transfer": false,
+  "verification": "locked selected text input replay passed"
+}

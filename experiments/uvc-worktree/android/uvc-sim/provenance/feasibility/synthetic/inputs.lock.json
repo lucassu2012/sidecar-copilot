@@ -1,0 +1,97 @@
+{
+  "baseline": "c1afb3f61fa309bde0437fa2019c352ddc1792ba",
+  "formula_basis": {
+    "FramePipeline": [
+      "FramePipeline.java:WIDTH,HEIGHT,FRAME_BYTES,OWNED_BYTE_LIMIT,accept,redact,previewPixel"
+    ],
+    "RGB565": [
+      "source/row_common.cc:305-324"
+    ],
+    "RGBX_RGBA_alpha": [
+      "turbojpeg.h:180-185,214-220"
+    ],
+    "RGB_to_YUV_branches": [
+      "source/row_common.cc:33-49,531-661"
+    ],
+    "YUY2_even_width_rows": [
+      "source/convert_from_argb.cc:884-914,1026-1040",
+      "source/row_common.cc:3577-3598"
+    ],
+    "byte_order": [
+      "docs/formats.md:137-165",
+      "source/convert_argb.cc:2755-2756,2790-2800"
+    ],
+    "neutral_range_prediction": [
+      "source/row_common.cc:1473-1500,1509-1513"
+    ]
+  },
+  "legacy_archive_seed": {
+    "name": "3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz",
+    "sha256": "49998fb4ff4dd5438c7170d47c8861cbe33c842315bb0d021da4d8e4f993ff2f",
+    "size": 564884
+  },
+  "local_inputs": [
+    {
+      "name": "android/uvc-sim/src/local/sidecar/copilot/uvcsim/FramePipeline.java",
+      "sha256": "8190fab701e3f577211d43747a44937950d72df9dcd1c256437072c1498e7353",
+      "size": 11996
+    },
+    {
+      "name": "android/uvc-sim/provenance/followup/video-alternatives/inputs.lock.json",
+      "sha256": "2593f7926b9e8d311ed40ab24ce542178986a47315a4f73e2161faf3194bc563",
+      "size": 1971
+    },
+    {
+      "name": "android/uvc-sim/provenance/followup/video-alternatives/evidence.json",
+      "sha256": "63a7b439af6ef0a54f67b6eee45eea86a12d9ad2c753c622a83af746a026e5d6",
+      "size": 285602
+    },
+    {
+      "name": "android/uvc-sim/provenance/followup/video-alternatives/README.md",
+      "sha256": "95c63618c0e0fc52fe085fe104de04d4fed7d2ab68523bed0c45de15e23ca909",
+      "size": 20111
+    }
+  ],
+  "purpose": "Static source bytes for own Python contract study; no dependency or upstream execution. Exact file hashes inherited from the locked official archive. Gitiles TEXT transport is base64-decoded before exact SHA/size verification; observed raw transport receipt remains in ignored cache. This avoids gzip-container instability without relaxing source identity.",
+  "remote_inputs": [
+    {
+      "archive_seed_member": "docs/formats.md",
+      "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-docs-formats.md",
+      "sha256": "c0ed28e224f19669c5ca5cd34c8a39df221ec8ae35f52eca7e32c79c5c0fbaf1",
+      "size": 9567,
+      "transport_encoding": "base64",
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/docs/formats.md?format=TEXT"
+    },
+    {
+      "archive_seed_member": "source/row_common.cc",
+      "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-source-row_common.cc",
+      "sha256": "63bedd660e658e33091d2a589574ee2207c7e77cad98e1be5514c6a0fe911b57",
+      "size": 139286,
+      "transport_encoding": "base64",
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/source/row_common.cc?format=TEXT"
+    },
+    {
+      "archive_seed_member": "source/convert_argb.cc",
+      "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-source-convert_argb.cc",
+      "sha256": "808d139cc5d9aa902b085b912d678c420c10145690a52d60a05b7146a2f70541",
+      "size": 236924,
+      "transport_encoding": "base64",
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/source/convert_argb.cc?format=TEXT"
+    },
+    {
+      "archive_seed_member": "source/convert_from_argb.cc",
+      "name": "libyuv-3e38ce50589d9319badc0501f96d6c5b2b177472-source-convert_from_argb.cc",
+      "sha256": "e4212c896fe2802753164dccece651c0b19e22cfd9d27dfe538f617d4501c496",
+      "size": 79553,
+      "transport_encoding": "base64",
+      "url": "https://chromium.googlesource.com/libyuv/libyuv/+/3e38ce50589d9319badc0501f96d6c5b2b177472/source/convert_from_argb.cc?format=TEXT"
+    },
+    {
+      "name": "libjpeg-turbo-ecf021bc0d6f435daacff7c35ccaeef0145df1b9-turbojpeg.h",
+      "sha256": "b5889eb2c396f85bdd07af494fbc3623d9316b4bd4d852d20b50ba20fac94281",
+      "size": 74651,
+      "url": "https://raw.githubusercontent.com/libjpeg-turbo/libjpeg-turbo/ecf021bc0d6f435daacff7c35ccaeef0145df1b9/turbojpeg.h"
+    }
+  ],
+  "schema": 1
+}

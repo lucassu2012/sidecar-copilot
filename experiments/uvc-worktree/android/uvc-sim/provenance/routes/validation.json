@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "baseline_commit": "bbd053664bebb06ce83539a3f95e6fa5758745b7",
+  "observed_at_utc": "2026-11-10T15:38:22.469613+00:00",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "Offline evidence integrity only",
+  "upstream_native_executed": false,
+  "hardware_accessed": false,
+  "native_capture_or_decode_tests_executed": 0,
+  "command_groups_passed": 7,
+  "local_links_checked": 36,
+  "files": {
+    "adapter-plan/README.md": {
+      "bytes": 18442,
+      "sha256": "264a4d00904d7af54f3b3c9baa484befe2355cba26f2fc1837a557da8501f385"
+    },
+    "mjpeg-decoder/audit_decoder.py": {
+      "bytes": 3645,
+      "sha256": "a7ab4665a6e103e8935c3ce40c7774db7d471731d96e5fb9c4a14a0708ad69dc"
+    },
+    "mjpeg-decoder/inputs.lock.json": {
+      "bytes": 2751,
+      "sha256": "fe261892e2a8010161b376cff9917bc44370f9dc4873b6c458ff61d293686fca"
+    },
+    "mjpeg-decoder/observation.json": {
+      "bytes": 948,
+      "sha256": "e1da0af2eeb0c12896a7fec5db3cd131896582079bc8bacd52f813831aa9155a"
+    },
+    "mjpeg-decoder/README.md": {
+      "bytes": 4926,
+      "sha256": "f38b26797c1fe2d7908ff52ff98782b28693506ea9094bc239a41d2d0f9fa2a0"
+    },
+    "platform/audit_platform_route.py": {
+      "bytes": 12142,
+      "sha256": "9bf4bc5e53783db1c56bd5b89fe7f6e568945f0ffaab4da9d6300c29323297ca"
+    },
+    "platform/check_integrity.py": {
+      "bytes": 5154,
+      "sha256": "22778dd480c2553c1fabfc32431596b89c99fde22cf61fc8664af2185b9b2936"
+    },
+    "platform/INPUT_LOCK.json": {
+      "bytes": 6408,
+      "sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d"
+    },
+    "platform/integrity-results.json": {
+      "bytes": 2157,
+      "sha256": "7f4e0f9f18637518a3f275e1cd1cb011cca5d05ad057ee09677ededf368b6a08"
+    },
+    "platform/REPORT.md": {
+      "bytes": 15781,
+      "sha256": "5c1481e9aa4e4f6f4ecf6511ab0a9f4a799833ab1a888a5a1e42e1a5f79167da"
+    },
+    "platform/static-evidence.json": {
+      "bytes": 19983,
+      "sha256": "c00f7ab1f93c2b1ae0babb482748afca82118f4b6c9f9562665d23be5f97cb90"
+    },
+    "REPORT.md": {
+      "bytes": 14214,
+      "sha256": "6135214d41e1993b97c39d1a9f159d2a9e9e0efa07d6da6b9830fc6344cfb8d0"
+    },
+    "upstream-driver/evidence.json": {
+      "bytes": 11333,
+      "sha256": "4e416f198aea305d75020f8148dfa944b0a97db44128b3ac44604ef54f2cc228"
+    },
+    "upstream-driver/inputs.lock.json": {
+      "bytes": 21783,
+      "sha256": "8ff898d5acce58c697f0b3326555cfdfb65c466572f5e9c1ec234a9b72e56ae4"
+    },
+    "upstream-driver/inspect_sources.py": {
+      "bytes": 11497,
+      "sha256": "01b2889b56f46b48f55580d8790b4b94d2b712dca87faa00be7abb2d3826c5c7"
+    },
+    "upstream-driver/README.md": {
+      "bytes": 2016,
+      "sha256": "af8a8615d7e8152a5fa935ccfeaac2008183ff550449db59ba421cc5c15e2035"
+    },
+    "upstream-driver/REPORT.md": {
+      "bytes": 21732,
+      "sha256": "dd46a7c7217f167ebc46353379468ec9667acb4af2609dac7627387a5c3795e4"
+    },
+    "upstream-driver/test_inspect_sources.py": {
+      "bytes": 4408,
+      "sha256": "a8d09d62383d87235fdfb6415c96427e7438bebb48f745acfdec3e35f1cf1a43"
+    },
+    "validate_routes.py": {
+      "bytes": 5086,
+      "sha256": "1ca90ec3ae7a7066733d66315e73c23d91a486a2b0389deb122bcf1dab13b3e9"
+    },
+    "wrappers/inputs.lock.json": {
+      "bytes": 16529,
+      "sha256": "281d6ebb0435cb4003f8a2a043c08bfeaf40b785ec4072e2191d3e074344d19a"
+    },
+    "wrappers/inspect_wrappers.py": {
+      "bytes": 12044,
+      "sha256": "b322dd6d5d999ceaaa0562ba4d5d181eec7f6ea7c30eb01409476688d7990aa8"
+    },
+    "wrappers/observations.json": {
+      "bytes": 126317,
+      "sha256": "650c57117a6b3dc16a3386d2e1b6c89b7cb95fe46a585e8772b233a2a87ce8ec"
+    },
+    "wrappers/README.md": {
+      "bytes": 17020,
+      "sha256": "fd219e713c4487769dfdb30dbdfcf3b87c346d7b68fa576104e03e7610d03109"
+    },
+    "wrappers/static-report.json": {
+      "bytes": 59873,
+      "sha256": "49e75f520b0f5af7c0880d29c4a59556e116a4f6fcba8aa5c2c346d546976490"
+    },
+    "wrappers/test_replay.py": {
+      "bytes": 3457,
+      "sha256": "adf7238148ffd3f33b88a425a0a4458c1903524d10edcaf094bfa9b22b9866d5"
+    }
+  },
+  "results": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "android/uvc-sim/provenance/routes/upstream-driver/inspect_sources.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS_STATIC_REPLAY\", \"inputs\": 49, \"readiness\": \"NOT_ESTABLISHED\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "android/uvc-sim/provenance/routes/upstream-driver/test_inspect_sources.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_01_full_locked_offline_replay (__main__.IntegrityChecks.test_01_full_locked_offline_replay) ... ok\ntest_02_missing_input_fails_offline (__main__.IntegrityChecks.test_02_missing_input_fails_offline) ... ok\ntest_03_same_length_modified_input_fails (__main__.IntegrityChecks.test_03_same_length_modified_input_fails) ... ok\ntest_04_payload_plus_receipt_does_not_override_tracked_lock (__main__.IntegrityChecks.test_04_payload_plus_receipt_does_not_override_tracked_lock) ... ok\ntest_05_missing_report_fails (__main__.IntegrityChecks.test_05_missing_report_fails) ... ok\ntest_06_modified_report_fails (__main__.IntegrityChecks.test_06_modified_report_fails) ... ok\ntest_07_explicit_write_does_not_replace_changed_report (__main__.IntegrityChecks.test_07_explicit_write_does_not_replace_changed_report) ... ok\ntest_08_cache_escape_rejected (__main__.IntegrityChecks.test_08_cache_escape_rejected) ... ok\ntest_09_tree_identity_rejected (__main__.IntegrityChecks.test_09_tree_identity_rejected) ... ok\ntest_10_release_identity_rejected (__main__.IntegrityChecks.test_10_release_identity_rejected) ... ok\ntest_11_blob_identity_rejected (__main__.IntegrityChecks.test_11_blob_identity_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.083s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "android/uvc-sim/provenance/routes/platform/audit_platform_route.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"result\": \"pass\", \"inputs_verified\": 20}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "android/uvc-sim/provenance/routes/platform/check_integrity.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: offline replay, input/report tamper and missing-input/report rejection, busy lock, no repinning; evidence unchanged\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "android/uvc-sim/provenance/routes/wrappers/inspect_wrappers.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"metadata_observations\": 32, \"source_count\": 26, \"unique_source_blobs\": 25, \"report_sha256\": \"49e75f520b0f5af7c0880d29c4a59556e116a4f6fcba8aa5c2c346d546976490\", \"stored_report_match\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "android/uvc-sim/provenance/routes/wrappers",
+        "-p",
+        "test_replay.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_corrupt_existing_source_not_replaced (test_replay.IntegrityTests.test_corrupt_existing_source_not_replaced) ... ok\ntest_empty_cache_download_preserves_source_bytes (test_replay.IntegrityTests.test_empty_cache_download_preserves_source_bytes) ... ok\ntest_existing_lock_cannot_be_bootstrapped_again (test_replay.IntegrityTests.test_existing_lock_cannot_be_bootstrapped_again) ... ok\ntest_metadata_serialization_does_not_change_projection (test_replay.IntegrityTests.test_metadata_serialization_does_not_change_projection) ... ok\ntest_missing_offline_source_refused (test_replay.IntegrityTests.test_missing_offline_source_refused) ... ok\ntest_popularity_excluded_but_archived_drift_detectable (test_replay.IntegrityTests.test_popularity_excluded_but_archived_drift_detectable) ... ok\ntest_stored_report_replays (test_replay.IntegrityTests.test_stored_report_replays) ... ok\ntest_wrong_download_is_not_saved (test_replay.IntegrityTests.test_wrong_download_is_not_saved) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.068s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "android/uvc-sim/provenance/routes/mjpeg-decoder/audit_decoder.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"fixed_text_inputs\": 6,\n  \"tamper_rejections\": 12,\n  \"capabilities\": {\n    \"png_branch_guard_at_top_level\": true,\n    \"png_branch_guard_at_shared_library_level\": true,\n    \"jna_can_force_turbojpeg\": true,\n    \"rgba_and_opaque_alpha_documented\": true,\n    \"libjpeg_memory_source_api_declared\": true,\n    \"android_build_documentation\": true\n  },\n  \"native_execution\": false,\n  \"decode_tests_executed\": 0,\n  \"binary_closure_verified\": false\n}\n",
+      "stderr": ""
+    }
+  ]
+}

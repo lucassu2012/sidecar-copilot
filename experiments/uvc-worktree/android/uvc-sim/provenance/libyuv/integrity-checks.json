@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "source_report_sha256_unchanged": "a8cd0b7c78259519c4b165eb60b916fa3ef2890294507cfeb3e020c24f8af30d",
+  "cache_copy": "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\integrity-check-6bcd60adb7ea476bbe8a40c52e25c491",
+  "results": [
+    {
+      "check": "offline_intact_cache",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--offline",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\integrity-check-6bcd60adb7ea476bbe8a40c52e25c491"
+      ],
+      "exit_code": 0,
+      "expected_success": true,
+      "stdout": "65e7c9d5706a77d1949da59bfcb0817c252ef8d6 {'identical_bytes': 0, 'crlf_only': 83, 'modified_content': 15, 'not_in_upstream': 0} omitted 84\n3e38ce50589d9319badc0501f96d6c5b2b177472 {'identical_bytes': 0, 'crlf_only': 87, 'modified_content': 11, 'not_in_upstream': 0} omitted 84\nPASS static provenance checks; verified 21 locked artifacts; offline=True\n",
+      "stderr": ""
+    },
+    {
+      "check": "offline_tampered_official_archive",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--offline",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\integrity-check-6bcd60adb7ea476bbe8a40c52e25c491"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 242, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 119, in main\n    downloaded = list(pool.map(lambda item: fetch(*item, refresh=args.refresh), jobs))\n  File \"C:\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 639, in result_iterator\n    yield _result_or_cancel(fs.pop())\n          ~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 311, in _result_or_cancel\n    return fut.result(timeout)\n           ~~~~~~~~~~^^^^^^^^^\n  File \"C:\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 443, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Python314\\Lib\\concurrent\\futures\\_base.py\", line 395, in __get_result\n    raise self._exception\n  File \"C:\\Python314\\Lib\\concurrent\\futures\\thread.py\", line 86, in run\n    result = ctx.run(self.task)\n  File \"C:\\Python314\\Lib\\concurrent\\futures\\thread.py\", line 73, in run\n    return fn(*args, **kwargs)\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 119, in <lambda>\n    downloaded = list(pool.map(lambda item: fetch(*item, refresh=args.refresh), jobs))\n                                            ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 62, in fetch\n    raise ValueError(\"Cached artifact SHA-256/size mismatch: \" + name)\nValueError: Cached artifact SHA-256/size mismatch: 3e38ce50589d9319badc0501f96d6c5b2b177472.tar.gz\n"
+    },
+    {
+      "check": "offline_missing_license_material",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py",
+        "--offline",
+        "--cache-dir",
+        "C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\integrity-check-6bcd60adb7ea476bbe8a40c52e25c491"
+      ],
+      "exit_code": 1,
+      "expected_success": false,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 242, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 196, in main\n    text_data, text_artifact = fetch(license_item[\"raw_base64_url\"], commit + \".\" + name + \".base64\", args.refresh)\n                               ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py\", line 53, in fetch\n    raise FileNotFoundError(\"Offline artifact missing: \" + str(target))\nFileNotFoundError: Offline artifact missing: C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\sidecar-uvc-licenses\\android\\uvc-sim\\build\\provenance\\libyuv\\integrity-check-6bcd60adb7ea476bbe8a40c52e25c491\\3e38ce50589d9319badc0501f96d6c5b2b177472.LICENSE.base64\n"
+    }
+  ],
+  "note": "Only copied cache files changed; primary cache, historical evidence and upstream code were not modified/executed."
+}

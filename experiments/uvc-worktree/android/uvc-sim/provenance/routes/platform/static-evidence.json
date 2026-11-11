@@ -1,0 +1,639 @@
+{
+  "input_lock_sha256": "378bad2e98663d4ca80d7235705ed1cefff5a55a8d39f0605c7e49445eec6f2d",
+  "inputs_verified": 20,
+  "limitations": [
+    "Static platform reference, not a tested OEM firmware/card combination.",
+    "Computed source Git blob IDs are byte identities, not independent full-tree membership proofs.",
+    "Anchors locate review evidence; they do not prove class-driver completeness or hardware compatibility.",
+    "Audit reads only source text/metadata; no implementation copied into the application."
+  ],
+  "observations": [
+    {
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "id": "framework-commit",
+      "parents": [
+        "045f396b67c9da97c5b2f667dc79ab71f1a36e02",
+        "8cf068e046639b515eab4eb24f84200c780ae88e"
+      ],
+      "tree": "9583c6d9586b84169697623a44af09e8ac3d79b9"
+    },
+    {
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "id": "hal-commit",
+      "parents": [
+        "250f176013df9f18d991fc1ec4baea47a29d3dfa",
+        "9ec2405e1ae2652763a76ca5f56f4ff2f5eec66f"
+      ],
+      "tree": "484d45fd7355830b7b66d1cffdb679f8bf484a6a"
+    },
+    {
+      "commit": "fc7bc8c4bfb4c6095e34ea784509dae56f25b486",
+      "id": "core-commit",
+      "parents": [
+        "6ef90fce6200cd13dbb904608345aa5a07673e2b",
+        "e3a3d903aa0d724de5bce81d84d876798f801a0b"
+      ],
+      "tree": "5cf82bdcf8760455bc4ef94b2d5a75e0bbfa3fd6"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "41f344a03e77810aa420d7a12b26a7842c8e3d19",
+      "copyright_notices": [
+        "* Copyright (C) 2010 The Android Open Source Project"
+      ],
+      "decoded_sha256": "e3e05f4b5441e640896b0d7b36b710a6d8a31142c5c667f9ed65fc0119ca7603",
+      "decoded_size": 67212,
+      "id": "usb-manager",
+      "path": "core/java/android/hardware/usb/UsbManager.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "Manifest.permission#CAMERA": [
+          953,
+          1051
+        ],
+        "getDeviceList()": [
+          842
+        ],
+        "hasPermission(UsbDevice": [
+          959,
+          972
+        ],
+        "openDevice(UsbDevice": [
+          867
+        ],
+        "requestPermission(UsbDevice": [
+          444,
+          949,
+          1057
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/usb/UsbManager.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "44144d92f56a46f8f56958f7f5a17387991c2517",
+      "copyright_notices": [
+        "* Copyright (C) 2011 The Android Open Source Project"
+      ],
+      "decoded_sha256": "dd42714a8708b72557d084cc4daed1e4e02bfec2526733c39d952956d1eb6808",
+      "decoded_size": 17557,
+      "id": "usb-connection",
+      "path": "core/java/android/hardware/usb/UsbDeviceConnection.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "bulkTransfer(": [
+          278,
+          292,
+          294,
+          312
+        ],
+        "claimInterface(": [
+          184
+        ],
+        "getFileDescriptor()": [
+          69,
+          160
+        ],
+        "public void close()": [
+          144
+        ],
+        "releaseInterface(": [
+          193
+        ],
+        "requestWait(": [
+          356,
+          380,
+          393
+        ],
+        "setInterface(": [
+          203
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/usb/UsbDeviceConnection.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "beb0f8d336d5e6d6866eade80dfc50e83c2b6b7d",
+      "copyright_notices": [
+        "* Copyright (C) 2010 The Android Open Source Project"
+      ],
+      "decoded_sha256": "22655c5fa5f4bf0a0f819df2cdfa7f4b6daad4df53d45e89468cc260a1860986",
+      "decoded_size": 17725,
+      "id": "usb-request",
+      "path": "core/java/android/hardware/usb/UsbRequest.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "bulk and interrupt": [
+          36
+        ],
+        "endpoint zero": [
+          41,
+          42
+        ],
+        "public boolean cancel()": [
+          411
+        ],
+        "public boolean initialize(": [
+          98
+        ],
+        "public boolean queue(": [
+          195,
+          269
+        ],
+        "public void close()": [
+          115
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/usb/UsbRequest.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "82117e725a7b1efca17947c5044a8ef6b22c54a5",
+      "copyright_notices": [
+        "* Copyright (C) 2010 The Android Open Source Project"
+      ],
+      "decoded_sha256": "75a649c7adae6c4f1f4dc55da3955026fff383a9e2797e18760fcf3022f6ee7d",
+      "decoded_size": 5010,
+      "id": "usb-endpoint",
+      "path": "core/java/android/hardware/usb/UsbEndpoint.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "USB_ENDPOINT_XFER_ISOC": [
+          101
+        ],
+        "getType()": [
+          108
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/usb/UsbEndpoint.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "a0228428e90e53b439765922c942e0b08e61b84a",
+      "copyright_notices": [
+        "* Copyright (C) 2011 The Android Open Source Project"
+      ],
+      "decoded_sha256": "76ca328e2892d5357c908024b87065884576067e22f7066d4c1d588aff47a133",
+      "decoded_size": 10747,
+      "id": "usb-connection-jni",
+      "path": "core/jni/android_hardware_UsbDeviceConnection.cpp",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "F_DUPFD_CLOEXEC": [
+          51
+        ],
+        "usb_device_bulk_transfer": [
+          198
+        ],
+        "usb_device_close": [
+          74
+        ],
+        "usb_device_get_fd": [
+          87
+        ],
+        "usb_request_wait": [
+          218,
+          223,
+          227
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/jni/android_hardware_UsbDeviceConnection.cpp"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "9bdb60542858b691e193c886007711c9967f13a1",
+      "copyright_notices": [
+        "* Copyright (C) 2010 The Android Open Source Project"
+      ],
+      "decoded_sha256": "b349b64b6c46b78f68eedcb1afd05a7e3b1cb5c7216f769ab40f4b60861befe5",
+      "decoded_size": 8458,
+      "id": "usb-request-jni",
+      "path": "core/jni/android_hardware_UsbRequest.cpp",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "usb_request_cancel": [
+          222
+        ],
+        "usb_request_free": [
+          74
+        ],
+        "usb_request_new": [
+          62
+        ],
+        "usb_request_queue": [
+          106,
+          108,
+          161,
+          191
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/jni/android_hardware_UsbRequest.cpp"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "fc7bc8c4bfb4c6095e34ea784509dae56f25b486",
+      "computed_git_blob": "d8f15cd6c58c652125f7fa94a8c61c55e77c0400",
+      "copyright_notices": [
+        "* Copyright (C) 2010 The Android Open Source Project"
+      ],
+      "decoded_sha256": "fd339a0f1768450a84caff86b6a3d00c858c9c62edb9d250e311c9afdf127c0d",
+      "decoded_size": 24810,
+      "id": "usbhost",
+      "path": "libusbhost/usbhost.c",
+      "repo": "platform/system/core",
+      "source_anchors": {
+        "USBDEVFS_BULK": [
+          678
+        ],
+        "USBDEVFS_DISCARDURB": [
+          778
+        ],
+        "USBDEVFS_REAPURB": [
+          758,
+          759,
+          760
+        ],
+        "USBDEVFS_SUBMITURB": [
+          735
+        ],
+        "USB_ENDPOINT_XFER_BULK": [
+          693
+        ],
+        "USB_ENDPOINT_XFER_INT": [
+          695
+        ],
+        "Unsupported endpoint type": [
+          698
+        ],
+        "int usb_device_get_fd": [
+          409
+        ],
+        "void usb_device_close": [
+          358
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/system/core/+/fc7bc8c4bfb4c6095e34ea784509dae56f25b486/libusbhost/usbhost.c"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "708f8a173aba6bf4caf80d1b5c3b278b9d885405",
+      "copyright_notices": [
+        "* Copyright (C) 2013 The Android Open Source Project"
+      ],
+      "decoded_sha256": "b41e4f2c9dab8ed3f147107d63f822510f27ed19aec0de2826535f4580d0d1dd",
+      "decoded_size": 157198,
+      "id": "camera-manager",
+      "path": "core/java/android/hardware/camera2/CameraManager.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "getCameraCharacteristics(": [
+          662,
+          710,
+          712,
+          735,
+          737,
+          744,
+          757,
+          833,
+          849,
+          947,
+          977
+        ],
+        "public String[] getCameraIdList()": [
+          309
+        ],
+        "registerAvailabilityCallback(": [
+          453,
+          455,
+          464,
+          490,
+          495,
+          508,
+          509,
+          3056,
+          3086
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraManager.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "50d976f683cb2d22474ca66baf16435708492230",
+      "copyright_notices": [
+        "* Copyright (C) 2013 The Android Open Source Project"
+      ],
+      "decoded_sha256": "ad3f007c65d0d676b702336b844b994285294c7d0fb1ff9c4cefe4e299fd4254",
+      "decoded_size": 130362,
+      "id": "camera-device",
+      "path": "core/java/android/hardware/camera2/CameraDevice.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "public abstract void close()": [
+          1387
+        ],
+        "public abstract void onDisconnected(": [
+          1589
+        ],
+        "public void onClosed(": [
+          1557
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/core/java/android/hardware/camera2/CameraDevice.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "55c8ed5debf89b96cb4329e9fc80a26ddc97b7f4",
+      "copyright_notices": [
+        "* Copyright (C) 2013 The Android Open Source Project"
+      ],
+      "decoded_sha256": "daeca61aa9fe12364907f153415085d41e862b111cb641f84ee8a8f02e87bc65",
+      "decoded_size": 61127,
+      "id": "image-reader",
+      "path": "media/java/android/media/ImageReader.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "getMaxImages()": [
+          476
+        ],
+        "public Image acquireLatestImage()": [
+          541
+        ],
+        "public void close()": [
+          787,
+          1172
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/media/java/android/media/ImageReader.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "computed_git_blob": "54875abb2014787920fddf2044acef8bf032d529",
+      "copyright_notices": [
+        "* Copyright (C) 2022 The Android Open Source Project"
+      ],
+      "decoded_sha256": "d1c7cdb1af6a743ff29fdbd032c95750a9d10c187170e6c06c3f6e7c1debabf8",
+      "decoded_size": 13197,
+      "id": "external-provider",
+      "path": "camera/provider/default/ExternalCameraProvider.cpp",
+      "repo": "platform/hardware/interfaces",
+      "source_anchors": {
+        "CameraDeviceStatus::NOT_PRESENT": [
+          237
+        ],
+        "V4L2_CAP_VIDEO_CAPTURE": [
+          204
+        ],
+        "VIDIOC_QUERYCAP": [
+          198
+        ],
+        "deviceAdded(": [
+          189,
+          260,
+          368
+        ],
+        "deviceRemoved(": [
+          221,
+          370
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/provider/default/ExternalCameraProvider.cpp"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "computed_git_blob": "8e8474800f0a0529f794fcbccc78c8350ca07345",
+      "copyright_notices": [
+        "* Copyright (C) 2022 The Android Open Source Project"
+      ],
+      "decoded_sha256": "b5e06cb829ef1e128e1d2b1dfe2c4b0f9595a81b7fee77650772c97002aa8405",
+      "decoded_size": 43792,
+      "id": "external-device",
+      "path": "camera/device/default/ExternalCameraDevice.cpp",
+      "repo": "platform/hardware/interfaces",
+      "source_anchors": {
+        "ANDROID_LENS_FACING_EXTERNAL": [
+          423
+        ],
+        "V4L2_PIX_FMT_MJPEG": [
+          43,
+          334,
+          639,
+          648,
+          673
+        ],
+        "V4L2_PIX_FMT_Z16": [
+          43,
+          331,
+          637,
+          645,
+          660,
+          933
+        ],
+        "initSupportedFormats": [
+          210,
+          628
+        ],
+        "kSupportedFourCCs": [
+          42,
+          900,
+          901
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/device/default/ExternalCameraDevice.cpp"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6",
+      "computed_git_blob": "10cee12cd1fd4849f8edff5927830acf3f030bf7",
+      "copyright_notices": [
+        "// Copyright (C) 2020 The Android Open Source Project"
+      ],
+      "decoded_sha256": "c57808dfbe4935b7fbd0069cf1f9af262cb7ea5628d885db01bd53a4cbe39835",
+      "decoded_size": 2347,
+      "id": "external-build",
+      "path": "camera/device/default/Android.bp",
+      "repo": "platform/hardware/interfaces",
+      "source_anchors": {
+        "Apache-2.0": [
+          23
+        ],
+        "libjpeg": [
+          59
+        ],
+        "libyuv": [
+          65
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/hardware/interfaces/+/488942f82bd1bc9ad1cb65a02c71421dc3a6a3d6/camera/device/default/Android.bp"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "80e57193d0dcbe8b823c3c6eb3b2ca5ea7031f3d",
+      "copyright_notices": [
+        "* Copyright (C) 2008 The Android Open Source Project"
+      ],
+      "decoded_sha256": "0cc01010e28709b8ca198db1ac0948866cf13350535082ecf2812f500e9b43ba",
+      "decoded_size": 117054,
+      "id": "audio-record",
+      "path": "media/java/android/media/AudioRecord.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "RECORD_AUDIO": [
+          90,
+          327,
+          365,
+          969
+        ],
+        "getPreferredDevice()": [
+          2174
+        ],
+        "getRoutedDevice()": [
+          1911,
+          1914,
+          2070,
+          2208
+        ],
+        "registerAudioRecordingCallback(": [
+          2237,
+          2239,
+          2244,
+          2247,
+          2248
+        ],
+        "setPreferredDevice(": [
+          2153
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/media/java/android/media/AudioRecord.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "a4d0c1714e2336cf27a837f4777f7026eed2499d",
+      "copyright_notices": [
+        "* Copyright (C) 2007 The Android Open Source Project"
+      ],
+      "decoded_sha256": "bb07ff33c2be266090786561c8c4ba1b903674737411c7e0d7f3115fb4d68278",
+      "decoded_size": 433725,
+      "id": "audio-manager",
+      "path": "media/java/android/media/AudioManager.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "GET_DEVICES_INPUTS": [
+          7842,
+          7852,
+          7862,
+          7868,
+          7872,
+          7892,
+          7900,
+          7935,
+          8008,
+          8029,
+          8096,
+          8143
+        ],
+        "getDevices(int": [
+          3186,
+          3219,
+          7835,
+          7839,
+          7845,
+          7859,
+          8005
+        ],
+        "registerAudioDeviceCallback(": [
+          8056,
+          8080
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/media/java/android/media/AudioManager.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "1a3d7b7d5868d5b1772e8b1560dd188d3ec1e401",
+      "copyright_notices": [
+        "* Copyright (C) 2014 The Android Open Source Project"
+      ],
+      "decoded_sha256": "a9dafde2c6b1e89679d1e2eafeca9b1f7ed3b1c80de8f1fb7d882404c339d050",
+      "decoded_size": 31309,
+      "id": "audio-device-info",
+      "path": "media/java/android/media/AudioDeviceInfo.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "TYPE_USB_DEVICE": [
+          87,
+          206,
+          242,
+          271,
+          304,
+          338,
+          647,
+          675,
+          704,
+          736
+        ],
+        "TYPE_USB_HEADSET": [
+          134,
+          207,
+          243,
+          272,
+          305,
+          339,
+          648,
+          676,
+          705,
+          737
+        ],
+        "boolean isSource()": [
+          455
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/media/java/android/media/AudioDeviceInfo.java"
+    },
+    {
+      "apache_2_header_present": true,
+      "commit": "4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3",
+      "computed_git_blob": "5ef0fe346dc68355d00e7d37c44e24efe2df8ed7",
+      "copyright_notices": [
+        "* Copyright (C) 2014 The Android Open Source Project"
+      ],
+      "decoded_sha256": "e26f673a40aff7f337ecd1ef1e5e03f001289ffc1b8370b2eb9b6f6f26e42696",
+      "decoded_size": 23591,
+      "id": "usb-alsa-manager",
+      "path": "services/usb/java/com/android/server/usb/UsbAlsaManager.java",
+      "repo": "platform/frameworks/base",
+      "source_anchors": {
+        "USB_AUDIO_AUTOMATIC_ROUTING_DISABLED": [
+          183
+        ],
+        "hasInput": [
+          316,
+          323,
+          325,
+          337
+        ],
+        "selectDefaultDevice(": [
+          253,
+          255,
+          423,
+          424
+        ]
+      },
+      "source_url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/services/usb/java/com/android/server/usb/UsbAlsaManager.java"
+    }
+  ],
+  "schema": 1
+}

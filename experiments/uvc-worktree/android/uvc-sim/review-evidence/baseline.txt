@@ -1,0 +1,5 @@
+PASS CoordinatorChecks: 204 assertions; controlled synthetic lifecycle and race scenarios
+PASS FramePipelineChecks: 10 scenarios, 77 assertions
+Owned pixel peak bytes=3686400; blocked-worker stop admission observation ns=22500 (JVM fixture only)
+PASS IntegrationChecks: 3 end-to-end synthetic scenarios, 43 assertions
+PASS Android discovery API 35 compilation only; no device used.

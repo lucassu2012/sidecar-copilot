@@ -1,0 +1,3 @@
+coordinator last accepted sequence=2
+publication sequences=2
+preview pixel=222222ff; newest frame expected=222222ff

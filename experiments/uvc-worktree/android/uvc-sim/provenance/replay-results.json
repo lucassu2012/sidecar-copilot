@@ -1,0 +1,32 @@
+{
+  "recordedAtUtc": "2026-11-10T14:15:43.876Z",
+  "projectBaseline": "fd9825ee57c1eec9e773ac8853195664adbb5038",
+  "checks": [
+    {
+      "name": "hutool_integrity",
+      "command": "python -B android\\uvc-sim\\provenance\\hutool\\check_integrity.py --existing-artifacts C:\\Users\\USER\\Documents\\Codex\\2026-11-10\\task-4\\uvc-slice\\audit",
+      "exitCode": 0,
+      "output": "{\"passed\": 4, \"python_optimization\": 0, \"report_preserved\": true}\r\n"
+    },
+    {
+      "name": "libyuv_offline",
+      "command": "python -B android\\uvc-sim\\provenance\\libyuv\\verify_libyuv.py --offline",
+      "exitCode": 0,
+      "output": "65e7c9d5706a77d1949da59bfcb0817c252ef8d6 {'identical_bytes': 0, 'crlf_only': 83, 'modified_content': 15, 'not_in_upstream': 0} omitted 84\r\n3e38ce50589d9319badc0501f96d6c5b2b177472 {'identical_bytes': 0, 'crlf_only': 87, 'modified_content': 11, 'not_in_upstream': 0} omitted 84\r\nPASS static provenance checks; verified 21 locked artifacts; offline=True\r\n"
+    },
+    {
+      "name": "uac_offline",
+      "command": "python -B android\\uvc-sim\\provenance\\uac\\collect_uac.py --offline --verify-only",
+      "exitCode": 0,
+      "output": "{\r\n  \"binaries\": [\r\n    {\r\n      \"abi\": \"arm64-v8a\",\r\n      \"bytes\": 22432,\r\n      \"sha256\": \"e4c6af125ef73573e9334fb9ac6eff2a50856c33f34ab758c7bb830499dc054f\",\r\n      \"needed\": [\r\n        \"libusb100.so\",\r\n        \"liblog.so\",\r\n        \"libc.so\",\r\n        \"libm.so\",\r\n        \"libstdc++.so\",\r\n        \"libdl.so\"\r\n      ]\r\n    },\r\n    {\r\n      \"abi\": \"armeabi-v7a\",\r\n      \"bytes\": 26208,\r\n      \"sha256\": \"adcde2a84392d9ce95a6db2b6a169792cb6c2a077d7eef224ff28c07afd28672\",\r\n      \"needed\": [\r\n        \"libdl.so\",\r\n        \"libusb100.so\",\r\n        \"liblog.so\",\r\n        \"libc.so\",\r\n        \"libm.so\",\r\n        \"libstdc++.so\"\r\n      ]\r\n    },\r\n    {\r\n      \"abi\": \"x86\",\r\n      \"bytes\": 17952,\r\n      \"sha256\": \"8c3ba934a42a833d95f772e60eff2ebcfeb4dd42dd7bcd85f1de4b3c9e0d673d\",\r\n      \"needed\": [\r\n        \"libusb100.so\",\r\n        \"liblog.so\",\r\n        \"libc.so\",\r\n        \"libm.so\",\r\n        \"libstdc++.so\",\r\n        \"libdl.so\"\r\n      ]\r\n    },\r\n    {\r\n      \"abi\": \"x86_64\",\r\n      \"bytes\": 22696,\r\n      \"sha256\": \"e0b7e998d24fcfb41d401c2b139bef67ccaa6f0689dc26cbf90dc6082f06ca38\",\r\n      \"needed\": [\r\n        \"libusb100.so\",\r\n        \"liblog.so\",\r\n        \"libc.so\",\r\n        \"libm.so\",\r\n        \"libstdc++.so\",\r\n        \"libdl.so\"\r\n      ]\r\n    }\r\n  ],\r\n  \"native_source_files_scanned\": 427,\r\n  \"native_matches\": 0,\r\n  \"output\": \"C:\\\\Users\\\\USER\\\\Documents\\\\Codex\\\\2026-11-10\\\\task-4\\\\sidecar-uvc-licenses\\\\android\\\\uvc-sim\\\\provenance\\\\uac\\\\static-evidence.json\"\r\n}\r\n"
+    },
+    {
+      "name": "transitive_tool_tests",
+      "command": "python -B -m unittest discover -s android\\uvc-sim\\provenance\\transitives -p test_audit_transitives.py -v",
+      "exitCode": 0,
+      "output": "test_bom_over_parent_and_local_over_bom (test_audit_transitives.ParserChecks.test_bom_over_parent_and_local_over_bom) ... ok\r\ntest_cache_tampering_is_rejected (test_audit_transitives.ParserChecks.test_cache_tampering_is_rejected) ... ok\r\ntest_confirmed_404_is_distinct_from_transport_error (test_audit_transitives.ParserChecks.test_confirmed_404_is_distinct_from_transport_error) ... ok\r\ntest_dynamic_ranges_remain_unresolved (test_audit_transitives.ParserChecks.test_dynamic_ranges_remain_unresolved) ... ok\r\ntest_entities_rejected (test_audit_transitives.ParserChecks.test_entities_rejected) ... ok\r\ntest_input_lock_bootstrap_never_overwrites (test_audit_transitives.ParserChecks.test_input_lock_bootstrap_never_overwrites) ... ok\r\ntest_license_and_property_inheritance (test_audit_transitives.ParserChecks.test_license_and_property_inheritance) ... ok\r\ntest_offline_missing_cache_is_unknown_not_404 (test_audit_transitives.ParserChecks.test_offline_missing_cache_is_unknown_not_404) ... ok\r\ntest_offline_missing_inputs_report_incomplete_and_fail (test_audit_transitives.ParserChecks.test_offline_missing_inputs_report_incomplete_and_fail) ... ok\r\ntest_payload_and_receipt_tampering_rejected_by_tracked_pin (test_audit_transitives.ParserChecks.test_payload_and_receipt_tampering_rejected_by_tracked_pin) ... ok\r\ntest_profiles_recorded_not_activated (test_audit_transitives.ParserChecks.test_profiles_recorded_not_activated) ... ok\r\ntest_scope_optional_exclusion_and_singleton (test_audit_transitives.ParserChecks.test_scope_optional_exclusion_and_singleton) ... ok\r\ntest_zip_notice_scan_counts_nested_entries (test_audit_transitives.ParserChecks.test_zip_notice_scan_counts_nested_entries) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 13 tests in 0.082s\r\n\r\nOK\r\n"
+    }
+  ],
+  "note": "Root verification of component evidence. Full transitive archive replay is recorded separately in transitives/VALIDATION.md. No downloaded candidate code or native library executed.",
+  "initialInvocationCorrection": "The first Hutool integrity invocation omitted required --existing-artifacts and exited at argument parsing. The corrected command above passed."
+}

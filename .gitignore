@@ -1,0 +1,20 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+runtime/
+*.egg-info/
+android/build/
+android/.gradle/
+android/local.properties
+
+# Public snapshot safety exclusions
+**/build/
+**/cache/
+*.p12
+*.pfx
+*.jks
+*.keystore
+.env
+*.sqlite
+*.db

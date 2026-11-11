@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sidecar-copilot:transfer:wire-v1",
+  "title": "Sidecar synthetic loopback transfer wire v1",
+  "description": "JSON bodies emitted or accepted by the existing synthetic receiver. Select the endpoint-specific $defs reference; binary parts, HTTP headers and runtime admission are outside JSON body validation.",
+  "$comment": "v1 is the schema/document revision, not a new wire field, header or route prefix. JSON Schema integer accepts mathematically integral floating representations; the implementation additionally requires strict parsed integers, rejects duplicate keys/nonfinite numbers, and enforces cross-field and durable admission rules. See docs/TRANSFER_WIRE_V1.md.",
+  "anyOf": [
+    { "$ref": "#/$defs/InitRequest" },
+    { "$ref": "#/$defs/CommitRequest" },
+    { "$ref": "#/$defs/DeletionRequest" },
+    { "$ref": "#/$defs/ObjectReceipt" },
+    { "$ref": "#/$defs/DeletionReceipt" },
+    { "$ref": "#/$defs/ErrorResponse" }
+  ],
+  "$defs": {
+    "Identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "not": { "pattern": "[^A-Za-z0-9_.:@-]" }
+    },
+    "UInt63": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9223372036854775807,
+      "$comment": "Runtime additionally requires type(value) is int, excluding bool, 1.0 and 1e0. Strings are not accepted."
+    },
+    "PositiveUInt63": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9223372036854775807
+    },
+    "Digest": {
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64,
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "DecimalText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 19,
+      "pattern": "^(0|[1-9][0-9]{0,18})$",
+      "not": { "pattern": "[^0-9]" },
+      "$comment": "For existing HTTP header/query/path scalar text only, not JSON integer fields. Runtime must also parse and check <= 9223372036854775807."
+    },
+    "Binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Server-owned bearer-token mapping and canonical hash input; never a caller-selected request body.",
+      "required": ["owner_id", "tenant_id", "device_id", "binding_generation", "policy_scope_id", "processor_id", "key_scope"],
+      "properties": {
+        "owner_id": { "$ref": "#/$defs/Identifier" },
+        "tenant_id": { "$ref": "#/$defs/Identifier" },
+        "device_id": { "$ref": "#/$defs/Identifier" },
+        "binding_generation": { "$ref": "#/$defs/PositiveUInt63" },
+        "policy_scope_id": { "$ref": "#/$defs/Identifier" },
+        "processor_id": { "$ref": "#/$defs/Identifier" },
+        "key_scope": { "$ref": "#/$defs/Identifier" }
+      }
+    },
+    "Manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "$comment": "Code must enforce source range and eligible_at_ns >= sample_end_ns + 900000000000, using overflow-safe arithmetic. All fields are immutable for a binding/frame identity. Capture generation may be zero.",
+      "required": ["frame_id", "session_id", "stream_id", "source_type", "boot_id", "clock_basis", "sample_start_ns", "sample_end_ns", "eligible_at_ns", "expires_at_utc_ns", "capture_generation", "media_version", "byte_length", "sha256", "key_ref"],
+      "properties": {
+        "frame_id": { "$ref": "#/$defs/Identifier" },
+        "session_id": { "$ref": "#/$defs/Identifier" },
+        "stream_id": { "$ref": "#/$defs/Identifier" },
+        "source_type": { "type": "string", "enum": ["audio", "desktop_frame", "manual_note"] },
+        "boot_id": { "$ref": "#/$defs/Identifier" },
+        "clock_basis": { "type": "string", "const": "monotonic_ns" },
+        "sample_start_ns": { "$ref": "#/$defs/UInt63", "description": "Inclusive source start, monotonic nanoseconds within boot_id." },
+        "sample_end_ns": { "$ref": "#/$defs/UInt63", "description": "Exclusive source end; only manual_note may have start == end." },
+        "eligible_at_ns": { "$ref": "#/$defs/UInt63", "description": "Earliest send time in the same boot's monotonic nanoseconds." },
+        "expires_at_utc_ns": { "$ref": "#/$defs/UInt63", "description": "Immutable deadline, nanoseconds since Unix epoch UTC." },
+        "capture_generation": { "$ref": "#/$defs/UInt63" },
+        "media_version": { "type": "integer", "const": 1 },
+        "byte_length": { "type": "integer", "minimum": 1, "maximum": 8388608, "description": "Opaque ciphertext byte count; 8 MiB is a local experiment limit." },
+        "sha256": { "$ref": "#/$defs/Digest", "description": "SHA-256 of the entire opaque ciphertext, lowercase hexadecimal." },
+        "key_ref": { "$ref": "#/$defs/Identifier", "description": "Opaque key reference, not a key or exported DEK." }
+      }
+    },
+    "Deletion": {
+      "type": "object",
+      "additionalProperties": false,
+      "$comment": "Code requires start_ns < end_ns and enforces durable generation ordering. boot_id is required; null explicitly means a legacy all-boot range, not an inferred current boot.",
+      "required": ["deletion_id", "session_id", "boot_id", "start_ns", "end_ns", "generation"],
+      "properties": {
+        "deletion_id": { "$ref": "#/$defs/Identifier" },
+        "session_id": { "$ref": "#/$defs/Identifier" },
+        "boot_id": { "anyOf": [{ "$ref": "#/$defs/Identifier" }, { "type": "null" }] },
+        "start_ns": { "$ref": "#/$defs/UInt63", "description": "Inclusive monotonic nanosecond boundary." },
+        "end_ns": { "$ref": "#/$defs/UInt63", "description": "Exclusive monotonic nanosecond boundary." },
+        "generation": { "$ref": "#/$defs/PositiveUInt63" }
+      }
+    },
+    "InitRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manifest", "deletion_generation"],
+      "properties": {
+        "manifest": { "$ref": "#/$defs/Manifest" },
+        "deletion_generation": { "$ref": "#/$defs/UInt63" }
+      }
+    },
+    "CommitRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["deletion_generation"],
+      "properties": {
+        "deletion_generation": { "$ref": "#/$defs/UInt63" }
+      }
+    },
+    "DeletionRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["deletion"],
+      "properties": {
+        "deletion": { "$ref": "#/$defs/Deletion" }
+      }
+    },
+    "ObjectReceipt": {
+      "type": "object",
+      "additionalProperties": true,
+      "$comment": "Describes the receiver's emitted fields. Current consumers do not reject unknown outer response fields; nested Manifest is exact. Runtime verifies hashes, sorted complete indices and current admission. verified means byte/hash integrity, not AEAD verification.",
+      "required": ["upload_id", "state", "manifest", "manifest_hash", "deletion_generation", "received_parts", "part_bytes", "verified"],
+      "properties": {
+        "upload_id": { "$ref": "#/$defs/Digest" },
+        "state": { "type": "string", "enum": ["staging", "committed"] },
+        "manifest": { "$ref": "#/$defs/Manifest" },
+        "manifest_hash": { "$ref": "#/$defs/Digest" },
+        "deletion_generation": { "$ref": "#/$defs/UInt63" },
+        "received_parts": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 128,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0, "maximum": 127 }
+        },
+        "part_bytes": { "type": "integer", "const": 65536 },
+        "verified": { "type": "boolean" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "state": { "const": "committed" } }, "required": ["state"] },
+          "then": { "properties": { "verified": { "const": true } } },
+          "else": { "properties": { "verified": { "const": false } } }
+        }
+      ]
+    },
+    "DeletionReceipt": {
+      "type": "object",
+      "additionalProperties": true,
+      "$comment": "A pending cleanup remains blocked. complete describes managed part cleanup, not flash/WAL/backup erasure. Current consumers tolerate extra outer fields.",
+      "required": ["deletion_id", "generation", "blocked", "cleanup", "physical_erasure"],
+      "properties": {
+        "deletion_id": { "$ref": "#/$defs/Identifier" },
+        "generation": { "$ref": "#/$defs/PositiveUInt63" },
+        "blocked": { "type": "boolean", "const": true },
+        "cleanup": { "type": "string", "enum": ["pending", "complete"] },
+        "physical_erasure": { "type": "string", "const": "not_guaranteed" }
+      }
+    },
+    "ErrorResponse": {
+      "type": "object",
+      "additionalProperties": true,
+      "$comment": "TransferError/middleware error envelope, not a guarantee about framework 404/405 responses. Unknown syntactically valid codes are possible; see the descriptive status catalog.",
+      "required": ["code"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[a-z][a-z0-9_]{0,63}$",
+          "not": { "pattern": "[^a-z0-9_]" }
+        }
+      }
+    }
+  }
+}

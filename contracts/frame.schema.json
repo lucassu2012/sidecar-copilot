@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sidecar G0 frame location contract draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["frame_id", "session_id", "owner_id", "source_type", "boot_id", "sample_start", "sample_end", "eligible_at", "expires_at", "capture_generation", "segment_id", "byte_offset", "byte_length", "sha256"],
+  "properties": {
+    "frame_id": {"type": "string", "minLength": 1},
+    "session_id": {"type": "string", "minLength": 1},
+    "owner_id": {"type": "string", "minLength": 1},
+    "source_type": {"enum": ["audio", "desktop_frame", "manual_note"]},
+    "boot_id": {"type": "string", "minLength": 1},
+    "sample_start": {"type": "number", "minimum": 0},
+    "sample_end": {"type": "number", "minimum": 0},
+    "eligible_at": {"type": "number", "minimum": 0},
+    "expires_at": {"type": "number"},
+    "capture_generation": {"type": "integer", "minimum": 0},
+    "segment_id": {"type": "string", "minLength": 1},
+    "byte_offset": {"type": "integer", "minimum": 0},
+    "byte_length": {"type": "integer", "minimum": 1},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "repository": "shiyinghan/UVCAndroid",
+  "ref": "fcdae5f9a194e2111d57019176b53470a120415b",
+  "prefix": "libuvccamera/src/main/jni/libyuv/",
+  "tree_sha": "b0ae177444ab6f818c4848180362308c3e8cfa9c",
+  "entries": [
+    {
+      "path": "Android.mk",
+      "sha": "09439662c1536c5e948b60f3aa581f1aad0b272c",
+      "size": 2603
+    },
+    {
+      "path": "docs/deprecated_builds.md",
+      "sha": "6c4d15025a6cc8bb8bebf69eb8648d0b89a62c64",
+      "size": 13530
+    },
+    {
+      "path": "docs/environment_variables.md",
+      "sha": "da7a3d566c249c6442d01ce3786705c462f51511",
+      "size": 1535
+    },
+    {
+      "path": "docs/filtering.md",
+      "sha": "4c8449bdc4571e82f513ec7c4331af67f902680c",
+      "size": 10557
+    },
+    {
+      "path": "docs/formats.md",
+      "sha": "2309741e134982c1369d5447d8f3c95c48f5374a",
+      "size": 9775
+    },
+    {
+      "path": "docs/getting_started.md",
+      "sha": "406766fdbc76117bcfefb02192312194c0028fb5",
+      "size": 9510
+    },
+    {
+      "path": "docs/rotation.md",
+      "sha": "63a519de0c9fb0c6ec4374aa015a1d756e3baefe",
+      "size": 5016
+    },
+    {
+      "path": "include/libyuv.h",
+      "sha": "a3062cb579d542d4ec17d5f23601409a921df37c",
+      "size": 1075
+    },
+    {
+      "path": "include/libyuv/basic_types.h",
+      "sha": "be0ace8c5aea5e2ad531ff340a02784b89e96e55",
+      "size": 2226
+    },
+    {
+      "path": "include/libyuv/compare.h",
+      "sha": "7f457daa82175733d205f266e8923dcd9a915ff0",
+      "size": 3518
+    },
+    {
+      "path": "include/libyuv/compare_row.h",
+      "sha": "c6784b79a73e4658ba3f414675a9a4baa22cf27a",
+      "size": 4854
+    },
+    {
+      "path": "include/libyuv/convert.h",
+      "sha": "b1a0fe745e74b63b9f625c643865920ff0e3febc",
+      "size": 28570
+    },
+    {
+      "path": "include/libyuv/convert_argb.h",
+      "sha": "2e87c3ab179ef6b85e9f08a060f1d462d1fb7453",
+      "size": 77154
+    },
+    {
+      "path": "include/libyuv/convert_from.h",
+      "sha": "79a97a21803b84ba007369ae322e7411461e486e",
+      "size": 6210
+    },
+    {
+      "path": "include/libyuv/convert_from_argb.h",
+      "sha": "0c59b1e6cd3fad0e92f5bcffeb942437e4c95a72",
+      "size": 11446
+    },
+    {
+      "path": "include/libyuv/cpu_id.h",
+      "sha": "e622e99989acfe09870a56bfcbedd5844637f776",
+      "size": 4613
+    },
+    {
+      "path": "include/libyuv/loongson_intrinsics.h",
+      "sha": "f27b13b85d7102e347f89b3e6d0505656bc19672",
+      "size": 99889
+    },
+    {
+      "path": "include/libyuv/macros_msa.h",
+      "sha": "a57f99902051d50f39dce4d944e03d31781a1bb8",
+      "size": 11429
+    },
+    {
+      "path": "include/libyuv/mjpeg_decoder.h",
+      "sha": "af88b4ce58e2dc3dfd62eec76d9d74c747fd0320",
+      "size": 6150
+    },
+    {
+      "path": "include/libyuv/planar_functions.h",
+      "sha": "d2a053b2539da8bf42a0874346b07e1d54e2e472",
+      "size": 37360
+    },
+    {
+      "path": "include/libyuv/rotate.h",
+      "sha": "9c0537c31774b27439a13d6c3109943ca878d504",
+      "size": 7407
+    },
+    {
+      "path": "include/libyuv/rotate_argb.h",
+      "sha": "5caf8278dbd207f5f47e48b2b3119f4b7dbe3793",
+      "size": 1052
+    },
+    {
+      "path": "include/libyuv/rotate_row.h",
+      "sha": "d4f948b3eb315c102d3668f232a643d3266564fc",
+      "size": 8365
+    },
+    {
+      "path": "include/libyuv/row.h",
+      "sha": "aa16a3e9b599409e1f9f4122b1936d9bdfbc298b",
+      "size": 256218
+    },
+    {
+      "path": "include/libyuv/scale.h",
+      "sha": "375549d78b32a5acc5cc2bc36df33cc10495dba3",
+      "size": 10807
+    },
+    {
+      "path": "include/libyuv/scale_argb.h",
+      "sha": "fc23490055d32739f7c89a51a8f56cd73502e84f",
+      "size": 2520
+    },
+    {
+      "path": "include/libyuv/scale_rgb.h",
+      "sha": "9cf343357c4170d2c819975cd72565956373dade",
+      "size": 1294
+    },
+    {
+      "path": "include/libyuv/scale_row.h",
+      "sha": "f4b2ed85cb740e8e201f952fae4f7d781013d3a9",
+      "size": 80863
+    },
+    {
+      "path": "include/libyuv/scale_uv.h",
+      "sha": "4d0b49aa7d13d139f76bd2b41e8d218cb778c75b",
+      "size": 1475
+    },
+    {
+      "path": "include/libyuv/version.h",
+      "sha": "79e834efec4d3caeabd48a4659fa3ad54af36f0c",
+      "size": 560
+    },
+    {
+      "path": "include/libyuv/video_common.h",
+      "sha": "15dedab0db4f33c1f70ee1e8ceff613915684ada",
+      "size": 9046
+    },
+    {
+      "path": "source/compare.cc",
+      "sha": "aefb68396c996747c4da2c4faae91967094f78ac",
+      "size": 13162
+    },
+    {
+      "path": "source/compare_common.cc",
+      "sha": "c7c9c3cc02b68f29738ea0605d634a721f707f10",
+      "size": 2010
+    },
+    {
+      "path": "source/compare_gcc.cc",
+      "sha": "4b927bc1de67e10bfb864e9c7363ebe96e348de1",
+      "size": 14591
+    },
+    {
+      "path": "source/compare_mmi.cc",
+      "sha": "b447766fe73d46d44f93ea2445b45dc3062ff165",
+      "size": 5226
+    },
+    {
+      "path": "source/compare_msa.cc",
+      "sha": "e944235f02060baaae70f29da4c427d549dd810c",
+      "size": 3069
+    },
+    {
+      "path": "source/compare_neon.cc",
+      "sha": "ec0c503c40a43f7499f679d0f7719f2394169fe5",
+      "size": 3618
+    },
+    {
+      "path": "source/compare_neon64.cc",
+      "sha": "6e5bc4066f454d875d404ff3b0216d1803b6b3c0",
+      "size": 3629
+    },
+    {
+      "path": "source/compare_win.cc",
+      "sha": "33baa1982ee7a12e1a58ef5a60f40fa14367d4d0",
+      "size": 7015
+    },
+    {
+      "path": "source/convert.cc",
+      "sha": "b4b45311152c61c80797fde9f82b91534d2645dd",
+      "size": 104680
+    },
+    {
+      "path": "source/convert_argb.cc",
+      "sha": "a93ba49ae759fcde134f49fd292a29a6852850b8",
+      "size": 246505
+    },
+    {
+      "path": "source/convert_from.cc",
+      "sha": "6766124fdf5d995b189d801f5a74e48806213d67",
+      "size": 28949
+    },
+    {
+      "path": "source/convert_from_argb.cc",
+      "sha": "02407b3554b581baee3325148ac13eed634c6a52",
+      "size": 89483
+    },
+    {
+      "path": "source/convert_jpeg.cc",
+      "sha": "4e264eea6f3f4d14eb41d8255ede94e93c4698b0",
+      "size": 29797
+    },
+    {
+      "path": "source/convert_to_argb.cc",
+      "sha": "e6e2930589f4b36d8f07407f45983d26d3288654",
+      "size": 15651
+    },
+    {
+      "path": "source/convert_to_i420.cc",
+      "sha": "8162e7fdf20c739146ddff43814a64f209f25e75",
+      "size": 11762
+    },
+    {
+      "path": "source/cpu_id.cc",
+      "sha": "14e692044c7df990b746a12722595ffb2f4f2912",
+      "size": 10082
+    },
+    {
+      "path": "source/mjpeg_decoder.cc",
+      "sha": "aa13d86bdef546585ae1e588dfc871741fa5d57c",
+      "size": 19679
+    },
+    {
+      "path": "source/mjpeg_validate.cc",
+      "sha": "b1b80c004cbee5e7dd19bf8a6e9fd073f29fd9fd",
+      "size": 2371
+    },
+    {
+      "path": "source/planar_functions.cc",
+      "sha": "9bc6fd2b7a0fd0a3bb626eaf6830c59353d6c6f9",
+      "size": 163716
+    },
+    {
+      "path": "source/rotate.cc",
+      "sha": "854209d16cb41b7c8707756750a63d5bef8ff278",
+      "size": 27886
+    },
+    {
+      "path": "source/rotate_any.cc",
+      "sha": "bb2fbb1642bea24cdf36e86273ed6f141bd620e4",
+      "size": 3184
+    },
+    {
+      "path": "source/rotate_argb.cc",
+      "sha": "78eb0c4a6ed514bb88a8296b4d45f8708e733e84",
+      "size": 8107
+    },
+    {
+      "path": "source/rotate_common.cc",
+      "sha": "af4ae8eafd1663d8f265a4330353c136b3528460",
+      "size": 3184
+    },
+    {
+      "path": "source/rotate_gcc.cc",
+      "sha": "1e9a9219a9431bef558eed1eccecd9103a16c9d1",
+      "size": 18417
+    },
+    {
+      "path": "source/rotate_lsx.cc",
+      "sha": "7e9f0ddfb34c90089a9bec02b56762726d3efbd7",
+      "size": 10017
+    },
+    {
+      "path": "source/rotate_mmi.cc",
+      "sha": "3c0ba9121cfc541eb2907f60b734d8adb7c5eae6",
+      "size": 15675
+    },
+    {
+      "path": "source/rotate_msa.cc",
+      "sha": "cfd0fc2127dc66e24594fcb68dacd9e9ce6d4ef4",
+      "size": 10114
+    },
+    {
+      "path": "source/rotate_neon.cc",
+      "sha": "7b6a7a2b17821a4fcc7dc4f210f7c27e6b6e4134",
+      "size": 17890
+    },
+    {
+      "path": "source/rotate_neon64.cc",
+      "sha": "aa9da4d192ba9c821fb16c1889206fcd2f47fd1d",
+      "size": 19997
+    },
+    {
+      "path": "source/rotate_win.cc",
+      "sha": "d402778ed1e775406051233530f874f1eeddecd5",
+      "size": 7992
+    },
+    {
+      "path": "source/row_any.cc",
+      "sha": "5d3bc8d364090e541be525464ec0fccd81b5f3e3",
+      "size": 94565
+    },
+    {
+      "path": "source/row_common.cc",
+      "sha": "8cc7e0bd056da3f856c0b09a52cb99d7e24e3d67",
+      "size": 145121
+    },
+    {
+      "path": "source/row_gcc.cc",
+      "sha": "2eb356ff9e2eb8642ee7972ec799e30a6c761082",
+      "size": 425927
+    },
+    {
+      "path": "source/row_lasx.cc",
+      "sha": "964ab1337ff1050bfd8d94eb6efb9a720327b2e0",
+      "size": 90691
+    },
+    {
+      "path": "source/row_lsx.cc",
+      "sha": "55d361d632863d3fd106c4a2e8d46a647cf2c18f",
+      "size": 71021
+    },
+    {
+      "path": "source/row_mmi.cc",
+      "sha": "ed8954e0970ab701395a9e4b570075ef44367ffb",
+      "size": 486231
+    },
+    {
+      "path": "source/row_msa.cc",
+      "sha": "4da2dff8a7b4cb9b1660d64002ad4122f5c17341",
+      "size": 147437
+    },
+    {
+      "path": "source/row_neon.cc",
+      "sha": "6c4706e3486f8d6251286e4dc09377c30fea7e98",
+      "size": 191557
+    },
+    {
+      "path": "source/row_neon64.cc",
+      "sha": "6c8eb326cfa7fcb43186bfc5e86a8d5f0c9b69c9",
+      "size": 216547
+    },
+    {
+      "path": "source/row_win.cc",
+      "sha": "f1b7ebb9dd6fd59cf6e46db3526899fb2398cf27",
+      "size": 220159
+    },
+    {
+      "path": "source/scale.cc",
+      "sha": "11a5031fabcaedd0cf15142ed87f5244fc5c406c",
+      "size": 88305
+    },
+    {
+      "path": "source/scale_any.cc",
+      "sha": "0871226c47db939efefafdd12804a9da4ee3cf7a",
+      "size": 33090
+    },
+    {
+      "path": "source/scale_argb.cc",
+      "sha": "3396cbc3b7561ba6516a20354a85ea039dafed16",
+      "size": 39000
+    },
+    {
+      "path": "source/scale_common.cc",
+      "sha": "9a73c39c86c923ddf6850fd5b17860ed16cca984",
+      "size": 58658
+    },
+    {
+      "path": "source/scale_gcc.cc",
+      "sha": "17c804757af3e1dded74fc0501e7b1fd61362bc0",
+      "size": 144835
+    },
+    {
+      "path": "source/scale_lsx.cc",
+      "sha": "8af2fcc3aa505383f999a10eac0fa43b045c7764",
+      "size": 29370
+    },
+    {
+      "path": "source/scale_mmi.cc",
+      "sha": "1eb9ff9529b95318f19c10427b7002ca25ab1f13",
+      "size": 58557
+    },
+    {
+      "path": "source/scale_msa.cc",
+      "sha": "9224ee95abf9d139f51c5ee4fdc1b23bf46b5615",
+      "size": 35622
+    },
+    {
+      "path": "source/scale_neon.cc",
+      "sha": "e14955f32c6230d49a1a453bebb6b9114604529d",
+      "size": 64634
+    },
+    {
+      "path": "source/scale_neon64.cc",
+      "sha": "4f33606389a020206af24ff89faceb806fa3d378",
+      "size": 74028
+    },
+    {
+      "path": "source/scale_rgb.cc",
+      "sha": "3c8f66083d97b2ff770a84f7b46c0b5ed673bbd2",
+      "size": 1867
+    },
+    {
+      "path": "source/scale_uv.cc",
+      "sha": "b23202ac9593dbd48798b28f51323449c8fac319",
+      "size": 38453
+    },
+    {
+      "path": "source/scale_win.cc",
+      "sha": "cabaa2288407610d8e7dfaeb38bcea1def797f43",
+      "size": 46433
+    },
+    {
+      "path": "source/test.sh",
+      "sha": "65095319c45f3e952e894a21d6e74a90d255b23e",
+      "size": 1023
+    },
+    {
+      "path": "source/video_common.cc",
+      "sha": "46410c2b9e594aa86290583c44fd5a5323960711",
+      "size": 2020
+    },
+    {
+      "path": "util/Makefile",
+      "sha": "caf35b8a7192e9b6e29264e4b0003de2c74b81e1",
+      "size": 324
+    },
+    {
+      "path": "util/color.cc",
+      "sha": "4ce441cf35678efd8f72075b3e0e02190981642d",
+      "size": 4206
+    },
+    {
+      "path": "util/compare.cc",
+      "sha": "eae2ff5e2660d9c87cc4dceb77f509d277e26a7c",
+      "size": 2047
+    },
+    {
+      "path": "util/cpuid.c",
+      "sha": "a0e92cdf8076f7cd45eca4913128aa447eb58909",
+      "size": 4410
+    },
+    {
+      "path": "util/i444tonv12_eg.cc",
+      "sha": "1505774de45afd7e5ac17ecd6aabed4b1d2dc8cd",
+      "size": 954
+    },
+    {
+      "path": "util/psnr.cc",
+      "sha": "0f9bb3f57d98cc3d61d19d1e52a77690c1fda44d",
+      "size": 10494
+    },
+    {
+      "path": "util/psnr.h",
+      "sha": "57e8130149fd6c509b77ee17d5403462e7d4f1ed",
+      "size": 1463
+    },
+    {
+      "path": "util/psnr_main.cc",
+      "sha": "9ecca76301dbddf8236c258d4e4a5b7646533e5e",
+      "size": 22087
+    },
+    {
+      "path": "util/ssim.cc",
+      "sha": "41f9d3efe0fdb3efbdba72d17abe65153782a705",
+      "size": 13427
+    },
+    {
+      "path": "util/ssim.h",
+      "sha": "31c9c9e7b77b3cff54707e5041bdbf8e4714b560",
+      "size": 1015
+    },
+    {
+      "path": "util/yuvconstants.c",
+      "sha": "eedfa945d771b9569469aae29161bc3db75c0e58",
+      "size": 3826
+    },
+    {
+      "path": "util/yuvconvert.cc",
+      "sha": "1634b2fc87e5b1f27fbd533131b87525526bf30d",
+      "size": 13103
+    }
+  ],
+  "publication_ref": "6018c7f20238832929cf61427427bb7828056260",
+  "publication_tree_sha": "b0ae177444ab6f818c4848180362308c3e8cfa9c"
+}
